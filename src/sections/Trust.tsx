@@ -1,9 +1,8 @@
-import { motion } from "framer-motion";
 import { useI18n } from "@/context/I18nContext";
 import { trustFeatures } from "@/data/trust";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
-import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion";
+import { CardSlider } from "@/components/ui/CardSlider";
 
 export function Trust() {
   const { c, tr } = useI18n();
@@ -17,18 +16,16 @@ export function Trust() {
           subtitle={c.trust_subtitle}
         />
 
-        <motion.ul
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5"
+        <CardSlider
+          className="mt-12"
+          ariaLabel={tr({ al: "Pse Jara Pharmacy", en: "Why Jara Pharmacy" })}
+          prevLabel={tr({ al: "Kartat e mëparshme", en: "Previous cards" })}
+          nextLabel={tr({ al: "Kartat e radhës", en: "Next cards" })}
         >
           {trustFeatures.map(({ id, icon: Icon, title, text }) => (
-            <motion.li
+            <div
               key={id}
-              variants={fadeUp}
-              className="card-surface group flex flex-col gap-3 p-6"
+              className="card-surface group flex h-full w-full flex-col gap-3 p-6"
             >
               {/* Story-highlight style disc from the brand's Instagram profile. */}
               <span className="inline-flex h-12 w-12 items-center justify-center rounded-full bg-brand-panel text-lime ring-1 ring-lime/35 transition-all duration-300 group-hover:shadow-glow">
@@ -36,9 +33,9 @@ export function Trust() {
               </span>
               <h3 className="text-base font-bold text-ink-strong">{tr(title)}</h3>
               <p className="text-sm leading-relaxed text-ink-muted">{tr(text)}</p>
-            </motion.li>
+            </div>
           ))}
-        </motion.ul>
+        </CardSlider>
       </Container>
     </section>
   );
