@@ -134,6 +134,11 @@ export interface SocialPost {
   caption: Bilingual;
   category: Bilingual;
   visual: ProductVisual;
+  /**
+   * Real Instagram-post image, served from `public` (e.g. "/social/s-x.jpg").
+   * When present it replaces the generated `visual` scene in the feed card.
+   */
+  image?: string;
   likes: number;
 }
 

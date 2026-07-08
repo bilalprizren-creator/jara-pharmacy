@@ -34,7 +34,6 @@ export function SectionHeading({
             light && "text-lime-soft",
           )}
         >
-          <span className={cn("h-1 w-1 rounded-full", light ? "bg-lime" : "bg-emerald2")} />
           {eyebrow}
         </span>
       )}

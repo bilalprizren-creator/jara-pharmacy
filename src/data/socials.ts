@@ -2,20 +2,21 @@ import type { SocialPost } from "@/types";
 import { brand } from "./brand";
 
 /**
- * Designed, brand-consistent "Instagram-inspired" cards — not raw embeds.
- * Each reuses the generated product-visual system for its imagery.
+ * Real Instagram posts from the brand's feed (cropped from the actual posts).
+ * Each keeps a generated `visual` as a fallback, but renders `image` when set.
  */
 export const socialPosts: SocialPost[] = [
   {
     id: "s1",
     handle: brand.instagramHandle,
     likes: 128,
-    category: { al: "Lëkurë", en: "Skincare" },
+    category: { al: "Flokë", en: "Hair" },
     caption: {
-      al: "Lëkura që shkëlqen nuk është fat — është kujdesi i duhur. ✨",
-      en: "Glowing skin isn't luck — it's the right care. ✨",
+      al: "Flokët janë kurora e çdo mashkulli — kujdesu për ta çdo ditë. 💚",
+      en: "Hair is every man's crown — care for it every day. 💚",
     },
-    visual: { form: "spray", palette: "rose", label: "FACE SPRAY" },
+    visual: { form: "gummies", palette: "green", label: "MEN'S HAIR" },
+    image: "/social/s-mens-hair.jpg",
   },
   {
     id: "s2",
@@ -27,6 +28,7 @@ export const socialPosts: SocialPost[] = [
       en: "The power of rosemary for strong, full and vibrant hair. 🌿",
     },
     visual: { form: "bottle", palette: "green", label: "ROSEMARY" },
+    image: "/social/s-rosemary.jpg",
   },
   {
     id: "s3",
@@ -34,10 +36,11 @@ export const socialPosts: SocialPost[] = [
     likes: 143,
     category: { al: "Bukuri", en: "Beauty" },
     caption: {
-      al: "Bukuri që nis nga brenda — rutina jote ditore e kolagjenit. 💚",
-      en: "Beauty that starts from within — your daily collagen routine. 💚",
+      al: "Kur ta marrësh kolagjenin? Çdo ditë, pa përjashtim. ✨",
+      en: "When to take your collagen? Every day, no exceptions. ✨",
     },
     visual: { form: "jar", palette: "violet", label: "COLLAGEN" },
+    image: "/social/s-collagen.jpg",
   },
   {
     id: "s4",
@@ -45,31 +48,34 @@ export const socialPosts: SocialPost[] = [
     likes: 76,
     category: { al: "Familje", en: "Family" },
     caption: {
-      al: "Mbështetje e lehtë dhe e shijshme për rutinën e fëmijëve. 🧸",
-      en: "Easy, tasty support for children's daily routine. 🧸",
+      al: "Shije frutash + mbështetje e përditshme për rritje të shëndetshme. 🧸",
+      en: "Fruity taste + daily support for healthy growth. 🧸",
     },
     visual: { form: "gummies", palette: "amber", label: "KIDS" },
+    image: "/social/s-kids.jpg",
   },
   {
     id: "s5",
     handle: brand.instagramHandle,
     likes: 88,
-    category: { al: "Shëndet", en: "Health" },
+    category: { al: "Energji", en: "Energy" },
     caption: {
-      al: "Magnezi: mbështetje e përditshme për energji, nerva dhe muskuj. ⚡",
-      en: "Magnesium: daily support for energy, nerves and muscles. ⚡",
+      al: "Fuqia që e ndjen. Shija që e shijon. 💪",
+      en: "Power you feel. Taste you enjoy. 💪",
     },
-    visual: { form: "box", palette: "amber", label: "MAGNESIUM" },
+    visual: { form: "jar", palette: "amber", label: "PROTEIN" },
+    image: "/social/s-protein.jpg",
   },
   {
     id: "s6",
     handle: brand.instagramHandle,
     likes: 64,
-    category: { al: "Këmbë", en: "Foot care" },
+    category: { al: "Bukuri", en: "Beauty" },
     caption: {
-      al: "Këmbët tuaja meritojnë pak freski — veprim i menjëhershëm çdo ditë. 🌬️",
-      en: "Your feet deserve some freshness — instant action every day. 🌬️",
+      al: "Bukuri që nis nga brenda — IvyBears Women's Hair. 💗",
+      en: "Beauty that starts from within — IvyBears Women's Hair. 💗",
     },
-    visual: { form: "spray", palette: "orange", label: "FOOT GUARD" },
+    visual: { form: "gummies", palette: "rose", label: "WOMEN'S HAIR" },
+    image: "/social/s-womens-hair.jpg",
   },
 ];

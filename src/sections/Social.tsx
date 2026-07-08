@@ -58,32 +58,45 @@ export function Social() {
               </div>
 
               <div className="relative aspect-square overflow-hidden">
-                <ProductVisual
-                  visual={post.visual}
-                  rounded="rounded-none"
-                  className="transition-transform duration-500 group-hover:scale-[1.05]"
-                />
-                {/* Curved deep-green band with the brand logo — the signature
-                    footer of the real Instagram posts. */}
-                <div className="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden="true">
-                  <svg
-                    viewBox="0 0 400 64"
-                    preserveAspectRatio="none"
-                    className="block h-12 w-full sm:h-14"
-                  >
-                    <path d="M0 30 Q 100 -6 220 16 Q 320 34 400 8 L400 64 L0 64 Z" fill="#0A5C44" />
-                    <path
-                      d="M0 30 Q 100 -6 220 16 Q 320 34 400 8"
-                      fill="none"
-                      stroke="#B7E532"
-                      strokeWidth="2.5"
-                      opacity="0.85"
+                {post.image ? (
+                  // Real Instagram post — already brand-composed, so no overlay.
+                  <img
+                    src={post.image}
+                    alt={tr(post.caption)}
+                    loading="lazy"
+                    decoding="async"
+                    className="h-full w-full object-cover transition-transform duration-500 group-hover:scale-[1.05]"
+                  />
+                ) : (
+                  <>
+                    <ProductVisual
+                      visual={post.visual}
+                      rounded="rounded-none"
+                      className="transition-transform duration-500 group-hover:scale-[1.05]"
                     />
-                  </svg>
-                  <div className="absolute bottom-1.5 left-4 origin-bottom-left scale-[0.8]">
-                    <BrandLogo variant="footer" markClassName="h-7 w-7" />
-                  </div>
-                </div>
+                    {/* Curved deep-green band with the brand logo — the signature
+                        footer of the real Instagram posts. */}
+                    <div className="pointer-events-none absolute inset-x-0 bottom-0" aria-hidden="true">
+                      <svg
+                        viewBox="0 0 400 64"
+                        preserveAspectRatio="none"
+                        className="block h-12 w-full sm:h-14"
+                      >
+                        <path d="M0 30 Q 100 -6 220 16 Q 320 34 400 8 L400 64 L0 64 Z" fill="#0A5C44" />
+                        <path
+                          d="M0 30 Q 100 -6 220 16 Q 320 34 400 8"
+                          fill="none"
+                          stroke="#B7E532"
+                          strokeWidth="2.5"
+                          opacity="0.85"
+                        />
+                      </svg>
+                      <div className="absolute bottom-1.5 left-4 origin-bottom-left scale-[0.8]">
+                        <BrandLogo variant="footer" markClassName="h-7 w-7" />
+                      </div>
+                    </div>
+                  </>
+                )}
               </div>
 
               <div className="flex flex-1 flex-col px-4 py-3">
