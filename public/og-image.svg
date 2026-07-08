@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 630" width="1200" height="630" font-family="Inter, system-ui, sans-serif">
+  <defs>
+    <radialGradient id="bg" cx="16%" cy="10%" r="120%">
+      <stop offset="0%" stop-color="#0F7A57"/>
+      <stop offset="45%" stop-color="#0A5C44"/>
+      <stop offset="100%" stop-color="#073B2D"/>
+    </radialGradient>
+    <mask id="weave-og">
+      <rect width="120" height="120" fill="white"/>
+      <circle cx="42" cy="42" r="12" fill="black"/>
+      <circle cx="78" cy="78" r="12" fill="black"/>
+    </mask>
+  </defs>
+  <rect width="1200" height="630" fill="url(#bg)"/>
+  <circle cx="1010" cy="150" r="360" fill="#B7E532" opacity="0.10"/>
+  <circle cx="150" cy="560" r="240" fill="#B7E532" opacity="0.08"/>
+
+  <g transform="translate(96 150)">
+    <circle cx="60" cy="60" r="60" fill="#ffffff" opacity="0.06"/>
+    <g transform="translate(60 60) scale(0.66) translate(-60 -60)">
+      <rect x="42" y="18" width="36" height="84" rx="18" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round"/>
+      <g mask="url(#weave-og)">
+        <rect x="18" y="42" width="84" height="36" rx="18" fill="none" stroke="#B7E532" stroke-width="13" stroke-linejoin="round"/>
+      </g>
+    </g>
+    <text x="150" y="55" fill="#FFFFFF" font-size="52" font-weight="800">JARA</text>
+    <text x="151" y="95" fill="#B7E532" font-size="24" font-weight="700" letter-spacing="9">PHARMACY</text>
+  </g>
+
+  <text x="96" y="360" fill="#FFFFFF" font-size="60" font-weight="800">Farmaci moderne në Prizren</text>
+  <text x="96" y="430" fill="#DDF38A" font-size="34" font-weight="500">për shëndet, bukuri dhe mirëqenie</text>
+  <text x="96" y="520" fill="#B7E532" font-size="24" font-weight="700" letter-spacing="4">CILËSI · BESIM · KUJDES</text>
+</svg>
