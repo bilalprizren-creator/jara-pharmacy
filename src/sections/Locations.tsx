@@ -6,8 +6,9 @@ import { brand } from "@/data/brand";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
+import { CardSlider } from "@/components/ui/CardSlider";
 import { mapsHref, telHref } from "@/lib/links";
-import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion";
+import { fadeUp, viewportOnce } from "@/lib/motion";
 
 export function Locations() {
   const { c, tr } = useI18n();
@@ -90,19 +91,18 @@ export function Locations() {
           </div>
         </motion.div>
 
-        {/* All other branches — modern responsive grid. */}
-        <motion.ul
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="show"
-          viewport={viewportOnce}
-          className="mt-5 grid gap-4 sm:grid-cols-2 lg:grid-cols-3"
+        {/* All other branches — single-row horizontal slider (compact). */}
+        <CardSlider
+          className="mt-5"
+          ariaLabel={c.locations_title}
+          prevLabel={c.locations_prev}
+          nextLabel={c.locations_next}
+          itemClassName="w-[82%] sm:w-[46%] md:w-[300px] xl:w-[320px]"
         >
           {rest.map((location) => (
-            <motion.li
+            <div
               key={location.id}
-              variants={fadeUp}
-              className="group flex h-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+              className="group flex h-full w-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
             >
               <div className="flex items-center justify-between">
                 <span className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-forest/5 px-2 text-sm font-bold text-forest ring-1 ring-forest/10 transition-colors duration-300 group-hover:bg-forest group-hover:text-white">
@@ -126,9 +126,9 @@ export function Locations() {
                 <Navigation className="h-4 w-4" aria-hidden="true" />
                 {c.location_directions}
               </a>
-            </motion.li>
+            </div>
           ))}
-        </motion.ul>
+        </CardSlider>
       </Container>
     </section>
   );

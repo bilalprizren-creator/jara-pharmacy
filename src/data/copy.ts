@@ -106,6 +106,8 @@ const al = {
   maps_open: "Hap në Google Maps",
   location_directions: "Udhëzime",
   all_locations: "Shiko të gjitha lokacionet",
+  locations_prev: "Shfaq lokacionet e mëparshme",
+  locations_next: "Shfaq lokacionet e ardhshme",
 
   // About
   about_eyebrow: "Rreth nesh",
@@ -275,6 +277,8 @@ const en: CopyShape = {
   maps_open: "Open in Google Maps",
   location_directions: "Directions",
   all_locations: "View all locations",
+  locations_prev: "Show previous locations",
+  locations_next: "Show next locations",
 
   about_eyebrow: "About us",
   about_title: "A modern pharmacy, built on trust",
