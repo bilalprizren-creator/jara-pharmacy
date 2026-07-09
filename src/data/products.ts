@@ -1,5 +1,15 @@
 import type { Product } from "@/types";
 import { importedProducts } from "@/data/imported";
+import { featuredOverrideCodes } from "@/data/curationOverrides";
+
+/**
+ * Real SHEMO products already represented above via a curated entry with the
+ * same photo (better name/marketing copy) — excluded from the imported list
+ * so the same product doesn't appear twice under two different names.
+ */
+const CURATED_OVERRIDE_CODES = new Set([
+  "4175", "4179", "4135", "4107", "4127", "4095", "0212", "5280", "4173", "2300",
+]);
 
 /**
  * Starter catalog derived from the brand's social references.
@@ -36,9 +46,15 @@ const curatedProducts: Product[] = [
       en: "Spray 20 cm from the face, as needed throughout the day.",
     },
     visual: { form: "spray", palette: "rose", label: "FACE SPRAY" },
-    image: "/products/naturagen-lavender-face-spray.jpg",
+    image: "/products/shemo-4175-lavander-face-spray-100ml-original.png",
     featured: true,
     tags: ["hidratim", "freski", "lavande"],
+    productCode: "4175",
+    sku: "4175",
+    packageSize: "100ml",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "repair-bubble-serum",
@@ -69,9 +85,15 @@ const curatedProducts: Product[] = [
       en: "Apply to clean skin morning and evening before moisturizer.",
     },
     visual: { form: "dropper", palette: "rose", label: "BUBBLE SERUM" },
-    image: "/products/naturagen-repair-bubble-serum.jpg",
+    image: "/products/shemo-4179-repair-bubble-serum-100ml-original.png",
     featured: true,
     tags: ["serum", "ceramide", "shkëlqim"],
+    productCode: "4179",
+    sku: "4179",
+    packageSize: "100ml",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "rosemary-shampoo",
@@ -102,9 +124,15 @@ const curatedProducts: Product[] = [
       en: "Massage into wet hair, leave for 1–2 minutes and rinse.",
     },
     visual: { form: "bottle", palette: "green", label: "ROSEMARY" },
-    image: "/products/naturagen-rosemary-shampoo.jpg",
+    image: "/products/shemo-4135-rosemary-shampoo-400ml-original.png",
     featured: true,
     tags: ["rozmarinë", "skalp", "flokë"],
+    productCode: "4135",
+    sku: "4135",
+    packageSize: "400ml",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "rosemary-conditioner",
@@ -135,8 +163,15 @@ const curatedProducts: Product[] = [
       en: "Apply after shampoo along the lengths, leave 2–3 minutes and rinse.",
     },
     visual: { form: "tube", palette: "green", label: "CONDITIONER" },
-    featured: false,
+    image: "/products/shemo-4107-reapir-rosemary-hair-conditioner-200ml-original.png",
+    featured: true,
     tags: ["rozmarinë", "butësi", "flokë"],
+    productCode: "4107",
+    sku: "4107",
+    packageSize: "200ml",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "collagen-peptides-powder",
@@ -167,9 +202,15 @@ const curatedProducts: Product[] = [
       en: "Add one scoop to water or juice once a day.",
     },
     visual: { form: "jar", palette: "violet", label: "COLLAGEN" },
-    image: "/products/collagen-peptides-powder.jpg",
+    image: "/products/shemo-4127-collagen-peptides-powder-green-apple-300g-original.png",
     featured: true,
     tags: ["kolagjen", "bukuri", "peptide"],
+    productCode: "4127",
+    sku: "4127",
+    packageSize: "300g",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "beauty-assist-sachets",
@@ -200,40 +241,15 @@ const curatedProducts: Product[] = [
       en: "Dissolve one sachet in water once a day, ideally in the morning.",
     },
     visual: { form: "sachet", palette: "rose", label: "BEAUTY ASSIST" },
-    featured: false,
-    tags: ["kolagjen", "sachet", "rutinë"],
-  },
-  {
-    id: "swiss-energy-kids",
-    slug: "swiss-energy-kids-gummies",
-    name: "Swiss Energy Kids Gummies",
-    brand: "Swiss Energy",
-    category: "mother-baby",
-    categoryLabel: { al: "Nënë & bebe", en: "Mother & Baby" },
-    badge: { al: "Për familje", en: "Family" },
-    shortDescription: {
-      al: "Mbështetje e lehtë për rutinën e fëmijëve.",
-      en: "Easy support for children's routines.",
-    },
-    benefits: {
-      al: [
-        "Multivitamina në formë argëtuese për fëmijë (3+)",
-        "Pa gluten, pa laktozë, pa konservues artificialë",
-        "Shije e shijshme frutash",
-      ],
-      en: [
-        "Multivitamin gummies for kids (3+)",
-        "Gluten-free, lactose-free, no artificial preservatives",
-        "Tasty fruit flavor",
-      ],
-    },
-    usage: {
-      al: "Sipas udhëzimeve në paketim ose këshillës së farmacistit.",
-      en: "As directed on the pack or per pharmacist advice.",
-    },
-    visual: { form: "gummies", palette: "amber", label: "SWISS ENERGY" },
+    image: "/products/shemo-4095-collagen-peptides-beauty-assist-8-00mg-30-sachets-original.png",
     featured: true,
-    tags: ["fëmijë", "vitamina", "gummies"],
+    tags: ["kolagjen", "sachet", "rutinë"],
+    productCode: "4095",
+    sku: "4095",
+    packageSize: "30 sachets",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "nucal-z",
@@ -264,46 +280,21 @@ const curatedProducts: Product[] = [
       en: "Take per the recommended dose on the pack, with food.",
     },
     visual: { form: "bottle", palette: "teal", label: "NUCAL-Z" },
-    featured: false,
+    image: "/products/shemo-0212-nucal-z-shurup-calcium-zinc-magnesium-d3-120ml-original.png",
+    featured: true,
     tags: ["minerale", "kocka", "imunitet"],
-  },
-  {
-    id: "magnesium-supplement",
-    slug: "magnesium-supplement",
-    name: "Magnesium Supplement",
-    brand: "Dr. Frei",
-    category: "health-care",
-    categoryLabel: { al: "Kujdes shëndetësor", en: "Health Care" },
-    badge: { al: "Energji", en: "Energy" },
-    shortDescription: {
-      al: "Mbështet energjinë dhe funksionin e muskujve.",
-      en: "Supports energy and muscle function.",
-    },
-    benefits: {
-      al: [
-        "Mbështetje e përditshme për energji dhe nerva",
-        "Ndihmon funksionin normal të muskujve",
-        "Format praktik për çdo ditë",
-      ],
-      en: [
-        "Daily support for energy and nerves",
-        "Helps normal muscle function",
-        "Practical format for every day",
-      ],
-    },
-    usage: {
-      al: "Një dozë në ditë, mundësisht në mbrëmje.",
-      en: "One dose a day, preferably in the evening.",
-    },
-    visual: { form: "box", palette: "amber", label: "MAGNESIUM" },
-    featured: false,
-    tags: ["magnez", "energji", "muskuj"],
+    productCode: "0212",
+    sku: "0212",
+    packageSize: "120ml",
+    sourceCategory: "Nutrifactor",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "foot-guard-spray",
     slug: "foot-guard-spray",
     name: "Foot Guard Spray",
-    brand: "Naturagen",
+    brand: "Kokona Cosmetics",
     category: "foot-care",
     categoryLabel: { al: "Kujdes për këmbët", en: "Foot Care" },
     badge: { al: "Freski", en: "Fresh" },
@@ -328,9 +319,15 @@ const curatedProducts: Product[] = [
       en: "Spray on clean, dry feet as needed.",
     },
     visual: { form: "spray", palette: "orange", label: "FOOT GUARD" },
-    image: "/products/foot-guard-spray.jpg",
+    image: "/products/shemo-2300-sprej-per-kembe-foot-guard-180ml-original.png",
     featured: true,
     tags: ["këmbë", "freski", "spray"],
+    productCode: "2300",
+    sku: "2300",
+    packageSize: "180ml",
+    sourceCategory: "Krauterhof",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "collagatin-sachets",
@@ -361,8 +358,15 @@ const curatedProducts: Product[] = [
       en: "Dissolve one sachet in water once a day.",
     },
     visual: { form: "box", palette: "rose", label: "COLLAGATIN" },
-    featured: false,
+    image: "/products/shemo-5280-collagatin-powder-6000mg-30sachets-original.png",
+    featured: true,
     tags: ["kolagjen", "sachet", "bukuri"],
+    productCode: "5280",
+    sku: "5280",
+    packageSize: "30 sachets",
+    sourceCategory: "Nutrifactor",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
   {
     id: "face-cream",
@@ -373,19 +377,19 @@ const curatedProducts: Product[] = [
     categoryLabel: { al: "Kujdes për lëkurën", en: "Skincare" },
     badge: { al: "Kujdes ditor", en: "Daily care" },
     shortDescription: {
-      al: "Hidratim dhe rehati për përdorim të përditshëm.",
-      en: "Hydration and comfort for everyday use.",
+      al: "Formulë restauruese kundër aknesh, për lëkurë të kombinuar dhe të yndyrshme.",
+      en: "Restorative anti-acne formula for combination and oily skin.",
     },
     benefits: {
       al: [
-        "Hidratim i thellë dhe i qëndrueshëm",
-        "Teksturë e lehtë, thith shpejt",
-        "Për të gjitha llojet e lëkurës",
+        "Me acid salicilik, alfa arbutin dhe niacinamide",
+        "Ndihmon kundër aknes dhe rregullon yndyrën e lëkurës",
+        "Për lëkurë të kombinuar dhe të yndyrshme",
       ],
       en: [
-        "Deep, long-lasting hydration",
-        "Light texture, absorbs quickly",
-        "For all skin types",
+        "With salicylic acid, alpha arbutin and niacinamide",
+        "Helps with acne and balances oily skin",
+        "For combination and oily skin",
       ],
     },
     usage: {
@@ -393,15 +397,30 @@ const curatedProducts: Product[] = [
       en: "Apply to clean face morning and evening.",
     },
     visual: { form: "jar", palette: "cream", label: "FACE CREAM" },
-    image: "/products/naturagen-face-cream.jpg",
+    image: "/products/shemo-4173-restorative-acne-face-cream-30ml-original.png",
     featured: true,
-    tags: ["hidratim", "krem", "ditor"],
+    tags: ["hidratim", "krem", "ditor", "akne"],
+    productCode: "4173",
+    sku: "4173",
+    packageSize: "30ml",
+    sourceCategory: "Aqua dhe Dermosept",
+    sourceUrl: "https://shemo-katalog.com/",
+    importSource: "shemo-katalog.com",
   },
 ];
 
 /**
  * Full catalog = hand-authored curated products first, then catalog-imported
- * products (e.g. the SHEMO test import, generated by `scripts/import-shemo.mjs`).
- * Curated entries are never modified by the importer.
+ * products (e.g. the SHEMO import, generated by `scripts/import-shemo.mjs`).
+ * Curated entries are never modified by the importer. Imported products that
+ * duplicate a curated entry's real photo are excluded; a small override list
+ * promotes a couple of imported products to `featured` for the homepage.
  */
-export const products: Product[] = [...curatedProducts, ...importedProducts];
+export const products: Product[] = [
+  ...curatedProducts,
+  ...importedProducts
+    .filter((p) => !CURATED_OVERRIDE_CODES.has(p.productCode ?? ""))
+    .map((p) =>
+      featuredOverrideCodes.has(p.productCode ?? "") ? { ...p, featured: true } : p,
+    ),
+];
