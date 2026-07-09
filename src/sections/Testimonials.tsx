@@ -11,7 +11,8 @@ export function Testimonials() {
   const { c, tr } = useI18n();
 
   return (
-    <section className="section bg-white" aria-labelledby="testimonials-heading">
+    // surface-soft keeps the section rhythm alternating now that Services is gone
+    <section className="section bg-surface-soft" aria-labelledby="testimonials-heading">
       <Container>
         <SectionHeading
           eyebrow={<span className="inline-flex items-center gap-1"><Star className="h-3.5 w-3.5 fill-lime text-lime" /> 5.0</span>}

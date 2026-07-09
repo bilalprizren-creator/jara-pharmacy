@@ -119,12 +119,6 @@ const al = {
   about_value_care: "Kujdes",
   about_value_pro: "Profesionalizëm",
 
-  // Services
-  section_services: "Shërbimet tona",
-  services_title: "Si mund t'ju ndihmojmë",
-  services_subtitle:
-    "Nga këshillimi te produktet e specializuara — gjithçka për rutinën tuaj të përditshme.",
-
   // Testimonials
   section_testimonials: "Çfarë thonë klientët",
   testimonials_subtitle: "Përvoja reale nga njerëz që na besojnë çdo ditë.",
@@ -291,11 +285,6 @@ const en: CopyShape = {
   about_value_trust: "Trust",
   about_value_care: "Care",
   about_value_pro: "Professionalism",
-
-  section_services: "Our services",
-  services_title: "How we can help",
-  services_subtitle:
-    "From guidance to specialized products — everything for your daily routine.",
 
   section_testimonials: "What customers say",
   testimonials_subtitle: "Real experiences from people who trust us every day.",
