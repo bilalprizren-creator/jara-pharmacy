@@ -98,6 +98,8 @@ export interface Product {
 
 export interface Location {
   id: string;
+  /** Official branch number (JARA PHARMACY <n>), shown as a badge. */
+  branch?: number;
   name: string;
   city: string;
   address: string;

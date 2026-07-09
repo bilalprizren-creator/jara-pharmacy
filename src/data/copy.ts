@@ -41,7 +41,7 @@ const al = {
     "Produkte të zgjedhura për lëkurë, flokë, vitamina, suplemente dhe kujdes të përditshëm.",
   trust_original: "Produkte origjinale",
   trust_advice: "Këshillim profesional",
-  trust_locations: "7+ lokacione",
+  trust_locations: "10 lokacione",
   trust_family: "Kujdes për familjen",
 
   // Trust section
@@ -56,7 +56,7 @@ const al = {
   trust_advice_t: "Këshillim profesional",
   trust_advice_d: "Staf i gatshëm t'ju udhëzojë me përgjegjësi.",
   trust_near_t: "Gjithmonë pranë jush",
-  trust_near_d: "7+ lokacione në Prizren, kudo ku ju nevojitet.",
+  trust_near_d: "10 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
   trust_care_t: "Kujdes për shëndetin dhe bukurinë",
   trust_care_d: "Një vend për mirëqenien e përditshme të familjes.",
 
@@ -101,7 +101,7 @@ const al = {
   locations_eyebrow: "Lokacionet",
   locations_title: "Na gjeni kudo në Prizren",
   locations_subtitle:
-    "Shtatë e më shumë pika shërbimi, të gjitha me të njëjtin standard kujdesi.",
+    "Dhjetë pika shërbimi në Prizren e Rahovec, të gjitha me të njëjtin standard kujdesi.",
   location_featured: "Lokacioni kryesor",
   maps_open: "Hap në Google Maps",
   location_directions: "Udhëzime",
@@ -216,7 +216,7 @@ const en: CopyShape = {
     "Carefully selected products for skin, hair, vitamins, supplements and daily care.",
   trust_original: "Original products",
   trust_advice: "Professional guidance",
-  trust_locations: "7+ locations",
+  trust_locations: "10 locations",
   trust_family: "Family care",
 
   trust_eyebrow: "Why Jara Pharmacy",
@@ -230,7 +230,7 @@ const en: CopyShape = {
   trust_advice_t: "Professional guidance",
   trust_advice_d: "Staff ready to guide you responsibly.",
   trust_near_t: "Always near you",
-  trust_near_d: "7+ locations across Prizren, wherever you need us.",
+  trust_near_d: "10 locations across Prizren and Rahovec, wherever you need us.",
   trust_care_t: "Care for health and beauty",
   trust_care_d: "One place for your family's everyday wellbeing.",
 
@@ -270,7 +270,7 @@ const en: CopyShape = {
   locations_eyebrow: "Locations",
   locations_title: "Find us across Prizren",
   locations_subtitle:
-    "Seven and more service points, all held to the same standard of care.",
+    "Ten service points across Prizren and Rahovec, all held to the same standard of care.",
   location_featured: "Main location",
   maps_open: "Open in Google Maps",
   location_directions: "Directions",
