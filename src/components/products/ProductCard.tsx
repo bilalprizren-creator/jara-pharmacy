@@ -83,15 +83,15 @@ export const ProductCard = forwardRef<HTMLElement, { product: Product }>(functio
           <button
             type="button"
             onClick={() => selectForInquiry(product)}
-            className="inline-flex h-10 items-center justify-center gap-2 rounded-full bg-forest px-4 text-sm font-semibold text-white transition-all duration-300 hover:bg-forest-600 active:scale-[0.98]"
+            className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-forest px-3 py-2 text-center text-xs font-semibold leading-tight text-white transition-all duration-300 hover:bg-forest-600 active:scale-[0.98] sm:gap-2 sm:px-4 sm:text-sm"
           >
-            <MessageCircle className="h-4 w-4" aria-hidden="true" />
+            <MessageCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
             {c.product_ask}
           </button>
           <button
             type="button"
             onClick={() => openModal(product)}
-            className="inline-flex h-10 items-center justify-center rounded-full border border-line px-4 text-sm font-semibold text-forest transition-colors duration-300 hover:border-forest/40 hover:bg-surface-soft"
+            className="inline-flex min-h-10 items-center justify-center rounded-full border border-line px-3 py-2 text-center text-xs font-semibold leading-tight text-forest transition-colors duration-300 hover:border-forest/40 hover:bg-surface-soft sm:px-4 sm:text-sm"
           >
             {c.product_view}
           </button>

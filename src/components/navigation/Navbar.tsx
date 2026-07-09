@@ -33,7 +33,10 @@ export function Navbar() {
 
   const handleNav = (href: string) => {
     setMenuOpen(false);
-    scrollToId(href.replace("#", ""));
+    const id = href.replace("#", "");
+    // Defer past the render that releases useLockBodyScroll's body{overflow:hidden};
+    // scrolling while the body is still locked (mobile menu) is otherwise a no-op.
+    requestAnimationFrame(() => requestAnimationFrame(() => scrollToId(id)));
   };
 
   return (
