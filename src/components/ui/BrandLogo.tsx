@@ -102,8 +102,8 @@ export function BrandLogo({
   // inline on light surfaces it uses forest + lime.
   const onDark = disc || variant === "footer";
   const colors: MarkColors = onDark
-    ? { vertical: "#FFFFFF", horizontal: "#B7E532" }
-    : { vertical: "#0A5C44", horizontal: "#B7E532" };
+    ? { vertical: "#B7E532", horizontal: "#FFFFFF" }
+    : { vertical: "#B7E532", horizontal: "#0A5C44" };
 
   const mark = disc ? (
     <span

@@ -87,7 +87,7 @@ const al = {
   modal_benefits: "Përfitimet",
   modal_usage: "Sugjerim përdorimi",
   modal_disclaimer: "Për më shumë informacione, na kontaktoni.",
-  modal_ask_whatsapp: "Pyet në WhatsApp",
+  modal_ask_whatsapp: "Porosit tani",
   modal_call: "Telefono",
   modal_inquiry: "Dërgo kërkesë",
 
@@ -260,7 +260,7 @@ const en: CopyShape = {
   modal_benefits: "Benefits",
   modal_usage: "How to use",
   modal_disclaimer: "For more information, contact us.",
-  modal_ask_whatsapp: "Ask on WhatsApp",
+  modal_ask_whatsapp: "Order now",
   modal_call: "Call",
   modal_inquiry: "Send inquiry",
 
