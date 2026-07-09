@@ -59,7 +59,8 @@ export type CategorySlug =
   | "oral-care"
   | "health-care"
   | "foot-care"
-  | "collagen";
+  | "collagen"
+  | "insect-care";
 
 export type CategoryAccent = "green" | "rose" | "lime" | "cream" | "teal";
 
@@ -79,8 +80,13 @@ export interface Product {
   category: CategorySlug;
   categoryLabel: Bilingual;
   badge?: Bilingual;
-  shortDescription: Bilingual;
-  benefits: BilingualList;
+  /**
+   * Optional: curated products always provide it; imported catalog products
+   * (e.g. SHEMO) may not, in which case the UI simply omits the line.
+   */
+  shortDescription?: Bilingual;
+  /** Optional benefit bullets; hidden entirely when absent/empty. */
+  benefits?: BilingualList;
   usage?: Bilingual;
   visual: ProductVisual;
   /**
@@ -94,6 +100,38 @@ export interface Product {
   tags: string[];
   /** Optional pre-composed inquiry message; falls back to a generated one. */
   contactMessage?: Bilingual;
+
+  /* ---------------------------------------------------------------- */
+  /*  Import metadata — populated for catalog-imported products only.  */
+  /*  All optional so hand-authored products remain valid unchanged.   */
+  /* ---------------------------------------------------------------- */
+  /** Stock-keeping unit (SHEMO reuses the product code here). */
+  sku?: string;
+  /** Original catalog product code (SHEMO `nrserik`, e.g. "5112"). */
+  productCode?: string;
+  barcode?: string;
+  /** Pack size parsed from the source name, e.g. "100ml". */
+  packageSize?: string;
+  manufacturer?: string;
+  countryOfOrigin?: string;
+  ingredients?: Bilingual;
+  warnings?: Bilingual;
+  /** Extra product photos, served from `public` like `image`. */
+  additionalImages?: string[];
+  /** Original category/section label from the source catalog (e.g. "Autan"). */
+  sourceCategory?: string;
+  /** Public source the record was imported from. */
+  sourceUrl?: string;
+  /** Origin site identifier, e.g. "shemo-katalog.com". */
+  importSource?: string;
+  /** ISO timestamp when this record was first imported (stable across re-runs). */
+  importedAt?: string;
+  /** ISO timestamp of the first import (alias of importedAt for record-keeping). */
+  createdAt?: string;
+  /** ISO timestamp of the last import run that changed this record's content. */
+  updatedAt?: string;
+  /** Whether the product is shown; defaults to true when omitted. */
+  isActive?: boolean;
 }
 
 export interface Location {

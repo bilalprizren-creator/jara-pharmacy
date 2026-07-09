@@ -9,6 +9,7 @@ import {
   HeartPulse,
   Footprints,
   GlassWater,
+  Bug,
 } from "lucide-react";
 import type { Category } from "@/types";
 
@@ -111,6 +112,16 @@ export const categories: Category[] = [
     description: {
       al: "Suplemente bukurie që mbështesin lëkurën, flokët dhe thonjtë.",
       en: "Beauty supplements that support skin, hair and nails.",
+    },
+  },
+  {
+    slug: "insect-care",
+    icon: Bug,
+    accent: "green",
+    title: { al: "Kundër insekteve", en: "Insect Protection" },
+    description: {
+      al: "Mbrojtje dhe qetësim nga pickimet e mushkonjave dhe insekteve.",
+      en: "Protection and relief from mosquito and insect bites.",
     },
   },
 ];

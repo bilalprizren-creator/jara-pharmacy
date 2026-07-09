@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useMemo, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { PackageSearch } from "lucide-react";
 import type { CategorySlug } from "@/types";
@@ -12,7 +12,6 @@ import { ProductCard } from "@/components/products/ProductCard";
 import { FilterBar, type CategoryOption } from "@/components/products/FilterBar";
 import { staggerContainer } from "@/lib/motion";
 import { scrollToId } from "@/lib/dom";
-import { PRODUCT_FILTER_EVENT } from "@/lib/productFilter";
 
 // Featured items first for the default view; order is otherwise stable.
 const orderedProducts = [...products].sort(
@@ -23,16 +22,6 @@ export function Products() {
   const { c, tr, fmt } = useI18n();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<CategorySlug | "all">("all");
-
-  // Let article CTAs (and anywhere else) preselect a category, then scroll here.
-  useEffect(() => {
-    const onFilter = (e: Event) => {
-      setQuery("");
-      setCategory((e as CustomEvent<CategorySlug>).detail);
-    };
-    window.addEventListener(PRODUCT_FILTER_EVENT, onFilter);
-    return () => window.removeEventListener(PRODUCT_FILTER_EVENT, onFilter);
-  }, []);
 
   const options: CategoryOption[] = useMemo(() => {
     const present = new Set(products.map((p) => p.category));
@@ -53,8 +42,10 @@ export function Products() {
       const haystack = [
         p.name,
         p.brand ?? "",
+        p.productCode ?? "",
+        p.sku ?? "",
         tr(p.categoryLabel),
-        tr(p.shortDescription),
+        p.shortDescription ? tr(p.shortDescription) : "",
         ...p.tags,
       ]
         .join(" ")

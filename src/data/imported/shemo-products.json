@@ -1,0 +1,384 @@
+[
+  {
+    "id": "shemo-5112",
+    "slug": "shemo-5112-losion-kunder-mushkonjave-family-care-100ml",
+    "name": "Losion kunder mushkonjave family care 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "bottle",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-5112-losion-kunder-mushkonjave-family-care-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "5112",
+      "autan",
+      "losion",
+      "kunder",
+      "mushkonjave",
+      "family",
+      "care",
+      "100ml"
+    ],
+    "sku": "5112",
+    "productCode": "5112",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-5087",
+    "slug": "shemo-5087-losion-kunder-mushkonjave-multinsetto-100ml",
+    "name": "Losion kunder mushkonjave multinsetto 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "bottle",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-5087-losion-kunder-mushkonjave-multinsetto-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "5087",
+      "autan",
+      "losion",
+      "kunder",
+      "mushkonjave",
+      "multinsetto",
+      "100ml"
+    ],
+    "sku": "5087",
+    "productCode": "5087",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-5119",
+    "slug": "shemo-5119-gel-kunder-mushkonjave-junior-100ml",
+    "name": "Gel kunder mushkonjave junior 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "tube",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-5119-gel-kunder-mushkonjave-junior-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "5119",
+      "autan",
+      "gel",
+      "kunder",
+      "mushkonjave",
+      "junior",
+      "100ml"
+    ],
+    "sku": "5119",
+    "productCode": "5119",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-5089",
+    "slug": "shemo-5089-sprej-kunder-mushkonjave-tropical-100ml",
+    "name": "Sprej kunder mushkonjave tropical 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "spray",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-5089-sprej-kunder-mushkonjave-tropical-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "5089",
+      "autan",
+      "sprej",
+      "kunder",
+      "mushkonjave",
+      "tropical",
+      "100ml"
+    ],
+    "sku": "5089",
+    "productCode": "5089",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-5088",
+    "slug": "shemo-5088-sprej-kunder-mushkonjave-100ml",
+    "name": "Sprej kunder mushkonjave 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "spray",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-5088-sprej-kunder-mushkonjave-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "5088",
+      "autan",
+      "sprej",
+      "kunder",
+      "mushkonjave",
+      "100ml"
+    ],
+    "sku": "5088",
+    "productCode": "5088",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-9226",
+    "slug": "shemo-9226-sprey-kunder-mushkonjave-multi-insect-100ml",
+    "name": "Sprey kunder mushkonjave multi insect 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "spray",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-9226-sprey-kunder-mushkonjave-multi-insect-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "9226",
+      "autan",
+      "sprey",
+      "kunder",
+      "mushkonjave",
+      "multi",
+      "insect",
+      "100ml"
+    ],
+    "sku": "9226",
+    "productCode": "9226",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-2312",
+    "slug": "shemo-2312-sprej-kunder-mushkonjave-per-te-rritur-100ml",
+    "name": "Sprej kunder mushkonjave per te rritur 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "spray",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-2312-sprej-kunder-mushkonjave-per-te-rritur-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "2312",
+      "autan",
+      "sprej",
+      "kunder",
+      "mushkonjave",
+      "per",
+      "rritur",
+      "100ml"
+    ],
+    "sku": "2312",
+    "productCode": "2312",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-2313",
+    "slug": "shemo-2313-losion-kunder-mushkonjave-per-te-rritur-100ml",
+    "name": "Losion kunder mushkonjave per te rritur 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "bottle",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-2313-losion-kunder-mushkonjave-per-te-rritur-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "2313",
+      "autan",
+      "losion",
+      "kunder",
+      "mushkonjave",
+      "per",
+      "rritur",
+      "100ml"
+    ],
+    "sku": "2313",
+    "productCode": "2313",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-2314",
+    "slug": "shemo-2314-deo-sprej-mbas-pickimit-100ml",
+    "name": "Deo sprej mbas pickimit 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "spray",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-2314-deo-sprej-mbas-pickimit-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "2314",
+      "autan",
+      "deo",
+      "sprej",
+      "mbas",
+      "pickimit",
+      "100ml"
+    ],
+    "sku": "2314",
+    "productCode": "2314",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  },
+  {
+    "id": "shemo-2315",
+    "slug": "shemo-2315-losion-mbas-pickimit-100ml",
+    "name": "Losion mbas pickimit 100ml",
+    "brand": "Autan",
+    "category": "insect-care",
+    "categoryLabel": {
+      "al": "Kundër insekteve",
+      "en": "Insect Protection"
+    },
+    "visual": {
+      "form": "bottle",
+      "palette": "green",
+      "label": "AUTAN"
+    },
+    "image": "/products/shemo-2315-losion-mbas-pickimit-100ml-original.png",
+    "featured": false,
+    "tags": [
+      "2315",
+      "autan",
+      "losion",
+      "mbas",
+      "pickimit",
+      "100ml"
+    ],
+    "sku": "2315",
+    "productCode": "2315",
+    "packageSize": "100ml",
+    "sourceCategory": "Autan",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "importSource": "shemo-katalog.com",
+    "isActive": true,
+    "additionalImages": [],
+    "importedAt": "2026-07-09T16:35:33.395Z",
+    "createdAt": "2026-07-09T16:35:33.395Z",
+    "updatedAt": "2026-07-09T16:35:33.395Z"
+  }
+]

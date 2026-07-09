@@ -47,23 +47,55 @@ export function ProductModal() {
             <h2 id={titleId} className="mt-1 text-xl font-extrabold text-ink-strong sm:text-2xl">
               {product.name}
             </h2>
-            <p className="mt-2 text-sm leading-relaxed text-ink-muted">
-              {tr(product.shortDescription)}
-            </p>
+            {product.shortDescription && (
+              <p className="mt-2 text-sm leading-relaxed text-ink-muted">
+                {tr(product.shortDescription)}
+              </p>
+            )}
 
-            <h3 className="mt-5 text-sm font-bold text-ink-strong">{c.modal_benefits}</h3>
-            {/* Lime callout chips — the signature benefit style of the brand's posts. */}
-            <ul className="mt-2.5 flex flex-wrap gap-2">
-              {product.benefits[locale].map((benefit) => (
-                <li
-                  key={benefit}
-                  className="inline-flex items-center gap-1.5 rounded-full bg-lime px-3.5 py-1.5 text-[13px] font-semibold leading-snug text-deep"
-                >
-                  <Check className="h-3.5 w-3.5 shrink-0" strokeWidth={2.5} aria-hidden="true" />
-                  {benefit}
-                </li>
-              ))}
-            </ul>
+            {/* Specs — only rendered for fields that actually exist (imported products). */}
+            {(product.productCode || product.packageSize) && (
+              <dl className="mt-4 grid grid-cols-2 gap-x-4 gap-y-3">
+                {product.productCode && (
+                  <div>
+                    <dt className="text-[0.7rem] font-semibold uppercase tracking-wide text-ink-muted">
+                      {tr({ al: "Kodi i produktit", en: "Product code" })}
+                    </dt>
+                    <dd className="mt-0.5 text-sm font-semibold text-ink-strong">
+                      {product.productCode}
+                    </dd>
+                  </div>
+                )}
+                {product.packageSize && (
+                  <div>
+                    <dt className="text-[0.7rem] font-semibold uppercase tracking-wide text-ink-muted">
+                      {tr({ al: "Madhësia e paketimit", en: "Package size" })}
+                    </dt>
+                    <dd className="mt-0.5 text-sm font-semibold text-ink-strong">
+                      {product.packageSize}
+                    </dd>
+                  </div>
+                )}
+              </dl>
+            )}
+
+            {product.benefits && product.benefits[locale].length > 0 && (
+              <>
+                <h3 className="mt-5 text-sm font-bold text-ink-strong">{c.modal_benefits}</h3>
+                {/* Lime callout chips — the signature benefit style of the brand's posts. */}
+                <ul className="mt-2.5 flex flex-wrap gap-2">
+                  {product.benefits[locale].map((benefit) => (
+                    <li
+                      key={benefit}
+                      className="inline-flex items-center gap-1.5 rounded-full bg-lime px-3.5 py-1.5 text-[13px] font-semibold leading-snug text-deep"
+                    >
+                      <Check className="h-3.5 w-3.5 shrink-0" strokeWidth={2.5} aria-hidden="true" />
+                      {benefit}
+                    </li>
+                  ))}
+                </ul>
+              </>
+            )}
 
             {product.usage && (
               <div className="mt-5 rounded-xl bg-surface-soft p-4">
