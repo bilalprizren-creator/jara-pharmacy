@@ -136,7 +136,16 @@ const al = {
   // Blog
   section_blog: "Këshilla për shëndet dhe bukuri",
   blog_subtitle:
-    "Udhëzime të shkurtra dhe të besueshme për lëkurën, flokët dhe mirëqenien.",
+    "Informacione të shkurtra dhe praktike për kujdesin ndaj lëkurës, flokëve dhe mirëqenies suaj.",
+  blog_prev: "Shfaq artikujt e mëparshëm",
+  blog_next: "Shfaq artikujt e ardhshëm",
+  min_read: "min lexim",
+  article_back: "Kthehu te këshillat",
+  article_related: "Produkte të përshtatshme",
+  article_more: "Artikuj të ngjashëm",
+  article_disclaimer_title: "Informacion",
+  article_disclaimer:
+    "Përmbajtja ka karakter informues dhe nuk zëvendëson këshillën, diagnozën ose trajtimin nga mjeku apo farmacisti.",
 
   // Contact
   section_contact: "Na kontaktoni",
@@ -294,9 +303,18 @@ const en: CopyShape = {
   stats_title: "Jara Pharmacy in numbers",
   stats_subtitle: "Steady growth and trust that speaks for itself.",
 
-  section_blog: "Health and beauty advice",
+  section_blog: "Health and Beauty Tips",
   blog_subtitle:
-    "Short, trustworthy guidance for your skin, hair and wellbeing.",
+    "Short and practical guidance for skin care, hair care and everyday well-being.",
+  blog_prev: "Show previous articles",
+  blog_next: "Show next articles",
+  min_read: "min read",
+  article_back: "Back to tips",
+  article_related: "Related products",
+  article_more: "Related articles",
+  article_disclaimer_title: "Information",
+  article_disclaimer:
+    "This content is provided for informational purposes and does not replace advice, diagnosis or treatment from a doctor or pharmacist.",
 
   section_contact: "Get in touch",
   contact_title: "Let's talk about your care",

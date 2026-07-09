@@ -119,6 +119,7 @@ export interface Testimonial {
 
 export interface BlogArticle {
   id: string;
+  /** URL-safe slug used for hash deep-linking (#keshilla/<slug> · #tips/<slug>). */
   slug: string;
   icon: LucideIcon;
   category: Bilingual;
@@ -126,6 +127,15 @@ export interface BlogArticle {
   excerpt: Bilingual;
   readMinutes: number;
   accent: CategoryAccent;
+  /** Full article body, one string per paragraph, per language. */
+  paragraphs: BilingualList;
+  /** Existing product category this article's CTA filters to (never a fake URL). */
+  relatedCategory: CategorySlug;
+  /** Localized label for the related-product CTA button. */
+  relatedProductLabel: Bilingual;
+  /** Localized document title + meta description for the detail view. */
+  seoTitle: Bilingual;
+  seoDescription: Bilingual;
 }
 
 export interface SocialPost {

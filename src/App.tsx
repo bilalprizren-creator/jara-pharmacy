@@ -1,9 +1,11 @@
 import { I18nProvider } from "@/context/I18nContext";
 import { InquiryProvider } from "@/context/InquiryContext";
+import { ArticleProvider } from "@/context/ArticleContext";
 import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { ProductModal } from "@/components/products/ProductModal";
+import { ArticleModal } from "@/components/blog/ArticleModal";
 import { Hero } from "@/sections/Hero";
 import { Trust } from "@/sections/Trust";
 import { Categories } from "@/sections/Categories";
@@ -22,9 +24,10 @@ export default function App() {
   return (
     <I18nProvider>
       <InquiryProvider>
-        <SkipLink />
-        <Navbar />
-        <main id="main">
+        <ArticleProvider>
+          <SkipLink />
+          <Navbar />
+          <main id="main">
           <Hero />
           <Trust />
           <Categories />
@@ -37,11 +40,13 @@ export default function App() {
           <Stats />
           <Blog />
           <Contact />
-        </main>
-        <Footer />
-        <FloatingWhatsApp />
-        {/* Global, accessible product detail dialog driven by InquiryContext */}
-        <ProductModal />
+          </main>
+          <Footer />
+          <FloatingWhatsApp />
+          {/* Global, accessible detail dialogs driven by their contexts. */}
+          <ProductModal />
+          <ArticleModal />
+        </ArticleProvider>
       </InquiryProvider>
     </I18nProvider>
   );
