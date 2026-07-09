@@ -33,6 +33,13 @@
     scroll-padding-top: calc(var(--header-h) + 1rem);
   }
 
+  /* Guard: decorative blurred/absolute accents must never create a
+     right-side horizontal scroll on mobile (Samsung Internet et al.). */
+  html,
+  body {
+    overflow-x: hidden;
+  }
+
   body {
     @apply bg-surface-soft text-ink-strong font-sans antialiased;
     text-rendering: optimizeLegibility;

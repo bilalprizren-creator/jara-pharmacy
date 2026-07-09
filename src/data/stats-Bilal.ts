@@ -8,8 +8,7 @@ export const stats: Stat[] = [
   {
     id: "locations",
     icon: MapPin,
-    value: 7,
-    suffix: "+",
+    value: 10,
     label: { al: "Lokacione", en: "Locations" },
   },
   {
