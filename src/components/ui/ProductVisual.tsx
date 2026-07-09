@@ -18,6 +18,14 @@ interface PaletteTokens {
   cap: string;
 }
 
+/**
+ * One calm, light "studio" backdrop shared by every product visual (photos and
+ * generated scenes) so the whole grid reads as a single premium system. The
+ * category color survives only as a whisper via the palette `glow`. Also
+ * consumed by ProductMedia so both stay in sync.
+ */
+export const studioBg = { from: "#FFFFFF", to: "#F4F7F5" } as const;
+
 /** Shared palette tokens — also consumed by ProductMedia for photo backdrops. */
 export const palettes: Record<VisualPalette, PaletteTokens> = {
   rose: { bgFrom: "#FCEAF2", bgTo: "#F6D3E3", glow: "#F7B7D3", body: "#E975A8", bodyDark: "#C64B85", cap: "#8E2C5B" },
@@ -148,8 +156,8 @@ export function ProductVisual({
     >
       <defs>
         <linearGradient id={`bg-${uid}`} x1="0" y1="0" x2="0.4" y2="1">
-          <stop offset="0%" stopColor={p.bgFrom} />
-          <stop offset="100%" stopColor={p.bgTo} />
+          <stop offset="0%" stopColor={studioBg.from} />
+          <stop offset="100%" stopColor={studioBg.to} />
         </linearGradient>
         <radialGradient id={`sheen-${uid}`} cx="0.3" cy="0.2" r="0.9">
           <stop offset="0%" stopColor="#FFFFFF" stopOpacity="0.9" />
