@@ -10,6 +10,9 @@ import {
   Footprints,
   GlassWater,
   Bug,
+  Stethoscope,
+  Flower2,
+  Package,
 } from "lucide-react";
 import type { Category } from "@/types";
 
@@ -122,6 +125,36 @@ export const categories: Category[] = [
     description: {
       al: "Mbrojtje dhe qetësim nga pickimet e mushkonjave dhe insekteve.",
       en: "Protection and relief from mosquito and insect bites.",
+    },
+  },
+  {
+    slug: "medical-devices",
+    icon: Stethoscope,
+    accent: "teal",
+    title: { al: "Pajisje mjekësore", en: "Medical Devices" },
+    description: {
+      al: "Aparatura dhe ndihmesa mjekësore për kujdes në shtëpi.",
+      en: "Medical equipment and aids for care at home.",
+    },
+  },
+  {
+    slug: "feminine-care",
+    icon: Flower2,
+    accent: "rose",
+    title: { al: "Higjiena femërore", en: "Feminine Care" },
+    description: {
+      al: "Produkte higjiene të përditshme për gruan.",
+      en: "Everyday hygiene products for women.",
+    },
+  },
+  {
+    slug: "other",
+    icon: Package,
+    accent: "cream",
+    title: { al: "Të tjera", en: "Other" },
+    description: {
+      al: "Produkte të tjera nga katalogu, jashtë kategorive kryesore.",
+      en: "Other catalog products outside the main categories.",
     },
   },
 ];

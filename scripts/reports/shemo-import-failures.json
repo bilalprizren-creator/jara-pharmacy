@@ -1,0 +1,82 @@
+[
+  {
+    "order": 316,
+    "code": "7643",
+    "name": "Wundumed flaster per femije A10",
+    "sourceCategory": "Figo",
+    "category": "health-care",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 570,
+    "code": "7182",
+    "name": "Calcium 400mg CA+100mg Vitamin C 20eff",
+    "sourceCategory": "Eferveta me brende te ndryshme",
+    "category": "vitamins",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 962,
+    "code": "5210",
+    "name": "Fast Slimming Tea 80GR",
+    "sourceCategory": "ATC",
+    "category": "natural",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 963,
+    "code": "5209",
+    "name": "Slim Detox Tea 80gr",
+    "sourceCategory": "ATC",
+    "category": "natural",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 1115,
+    "code": "7665",
+    "name": "Rexona Maximum Cream Confidence",
+    "sourceCategory": "Kozmetika te ndryshme",
+    "category": "skincare",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 1374,
+    "code": "8832",
+    "name": "Ngritese plastike per WC",
+    "sourceCategory": "Ortopedike",
+    "category": "medical-devices",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 1486,
+    "code": "8710",
+    "name": "Mbrojtese Silikoni per Gisht te Madh te Kembes A2",
+    "sourceCategory": "Ortopedike",
+    "category": "medical-devices",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  },
+  {
+    "order": 1531,
+    "code": "NT-044",
+    "name": "Lekure 36-40",
+    "sourceCategory": "Tio",
+    "category": "medical-devices",
+    "sourceUrl": "https://shemo-katalog.com/",
+    "imageStatus": "FAILED",
+    "error": "not a valid PNG (bad signature/IHDR)"
+  }
+]

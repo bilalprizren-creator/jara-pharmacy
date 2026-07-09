@@ -60,7 +60,10 @@ export type CategorySlug =
   | "health-care"
   | "foot-care"
   | "collagen"
-  | "insect-care";
+  | "insect-care"
+  | "medical-devices"
+  | "feminine-care"
+  | "other";
 
 export type CategoryAccent = "green" | "rose" | "lime" | "cream" | "teal";
 
