@@ -29,10 +29,15 @@ pnpm-debug.log*
 *.sw?
 Thumbs.db
 
-# internal source docs (not part of the app)
+# internal source docs / dropped screenshots (not part of the app).
+# Root-level only, so public/ and Produkt Pics/ product images are unaffected.
 *.xlsx
 *.xls
 *.csv
+/*.jpeg
+/*.jpg
+/*.png
+/WhatsApp Image*
 
 # env
 .env
