@@ -1,12 +1,6 @@
 import { Droplets, GlassWater, Pill, Scissors, Sparkles, Zap } from "lucide-react";
 import type { BlogArticle } from "@/types";
 
-/**
- * Single source of truth for the "Health & Beauty Tips" articles. Cards and the
- * article detail view are both generated from this data — content is never
- * duplicated across components. Each `relatedCategory` maps to a real product
- * category slug (see @/data/categories), so CTAs never point to a fake URL.
- */
 export const blogArticles: BlogArticle[] = [
   {
     id: "b1",
@@ -14,14 +8,14 @@ export const blogArticles: BlogArticle[] = [
     icon: Droplets,
     accent: "rose",
     readMinutes: 4,
-    category: { al: "Lëkurë", en: "Skin care" },
+    category: { al: "Lëkurë", en: "Skincare" },
     title: {
       al: "Si të kujdeseni për lëkurën gjatë verës",
       en: "How to care for your skin during summer",
     },
     excerpt: {
-      al: "Hidratim, mbrojtje dhe freski — hapa të thjeshtë për një lëkurë të shëndetshme gjatë ditëve të nxehta.",
-      en: "Hydration, protection and freshness — simple steps for healthy-looking skin during hot summer days.",
+      al: "Hidratim, mbrojtje dhe freski — hapat e thjeshtë për një lëkurë të shëndetshme në ditët e nxehta.",
+      en: "Hydration, protection and freshness — simple steps for healthy skin on hot days.",
     },
     paragraphs: {
       al: [
@@ -63,8 +57,8 @@ export const blogArticles: BlogArticle[] = [
       en: "When should you use collagen?",
     },
     excerpt: {
-      al: "Çfarë është kolagjeni, kur përdoret më shpesh dhe si mund ta përfshini në rutinën tuaj të përditshme.",
-      en: "What collagen is, when it is commonly used and how it may fit into your daily routine.",
+      al: "Çfarë është kolagjeni, kur ndihmon më shumë dhe si ta shtoni në rutinën tuaj të përditshme.",
+      en: "What collagen is, when it helps most and how to add it to your daily routine.",
     },
     paragraphs: {
       al: [
@@ -102,12 +96,12 @@ export const blogArticles: BlogArticle[] = [
     readMinutes: 6,
     category: { al: "Shëndet", en: "Health" },
     title: {
-      al: "Vitaminat më të rëndësishme për imunitetin",
-      en: "Important vitamins for normal immune function",
+      al: "Vitaminat më të rëndësishme për imunitet",
+      en: "The most important vitamins for immunity",
     },
     excerpt: {
-      al: "Nga vitamina C te zinku — mbështetje e thjeshtë për funksionimin normal të sistemit imunitar.",
-      en: "From vitamin C to zinc — nutrients that support the normal function of the immune system.",
+      al: "Nga Vitamina C te Zinku — mbështetje e thjeshtë për sistemin tuaj imunitar përgjatë vitit.",
+      en: "From Vitamin C to Zinc — simple support for your immune system all year round.",
     },
     paragraphs: {
       al: [
@@ -129,8 +123,8 @@ export const blogArticles: BlogArticle[] = [
       en: "View vitamins and minerals",
     },
     seoTitle: {
-      al: "Vitaminat më të rëndësishme për imunitetin",
-      en: "Important vitamins for normal immune function",
+      al: "Vitaminat më të rëndësishme për imunitet",
+      en: "The most important vitamins for immunity",
     },
     seoDescription: {
       al: "Vitamina C, vitamina D dhe zinku — si mbështesin funksionimin normal të imunitetit si pjesë e një jetese të balancuar.",
@@ -143,14 +137,14 @@ export const blogArticles: BlogArticle[] = [
     icon: Scissors,
     accent: "green",
     readMinutes: 4,
-    category: { al: "Flokë", en: "Hair care" },
+    category: { al: "Flokë", en: "Hair" },
     title: {
       al: "Kujdesi për flokë të fortë dhe të shëndetshëm",
-      en: "Caring for strong and healthy-looking hair",
+      en: "Care for strong and healthy hair",
     },
     excerpt: {
-      al: "Një rutinë e butë, ushqimi i balancuar dhe kujdesi i vazhdueshëm për flokët dhe skalpin.",
-      en: "A gentle routine, balanced nutrition and consistent care for your hair and scalp.",
+      al: "Rutina me rozmarinë dhe kolagjen që ndihmon rrënjët, gjatësinë dhe shkëlqimin natyral.",
+      en: "A rosemary and collagen routine that supports roots, lengths and natural shine.",
     },
     paragraphs: {
       al: [
@@ -173,7 +167,7 @@ export const blogArticles: BlogArticle[] = [
     },
     seoTitle: {
       al: "Kujdesi për flokë të fortë dhe të shëndetshëm",
-      en: "Caring for strong and healthy-looking hair",
+      en: "Care for strong and healthy hair",
     },
     seoDescription: {
       al: "Një rutinë e butë, mbrojtje nga nxehtësia dhe ushqim i balancuar për të ruajtur gjendjen normale të flokëve.",
@@ -186,14 +180,14 @@ export const blogArticles: BlogArticle[] = [
     icon: Sparkles,
     accent: "teal",
     readMinutes: 5,
-    category: { al: "Lëkurë", en: "Skin care" },
+    category: { al: "Lëkurë", en: "Skincare" },
     title: {
       al: "Si të zgjidhni produktin e duhur për fytyrën?",
-      en: "How to choose the right product for your face",
+      en: "How to choose the right face product?",
     },
     excerpt: {
-      al: "Njihni tipin e lëkurës dhe zgjidhni serum, krem ose produkt tjetër sipas nevojave reale.",
-      en: "Understand your skin type and choose a serum, cream or treatment according to its actual needs.",
+      al: "Njihni tipin e lëkurës suaj dhe përzgjidhni serum, krem apo spray sipas nevojës reale.",
+      en: "Know your skin type and pick a serum, cream or spray based on your real needs.",
     },
     paragraphs: {
       al: [
@@ -216,7 +210,7 @@ export const blogArticles: BlogArticle[] = [
     },
     seoTitle: {
       al: "Si të zgjidhni produktin e duhur për fytyrën?",
-      en: "How to choose the right product for your face",
+      en: "How to choose the right face product?",
     },
     seoDescription: {
       al: "Njihni tipin e lëkurës dhe ndërtoni një rutinë bazë të thjeshtë me pastrues, hidratues dhe mbrojtje nga dielli.",
@@ -232,11 +226,11 @@ export const blogArticles: BlogArticle[] = [
     category: { al: "Shëndet", en: "Health" },
     title: {
       al: "Magnezi dhe roli i tij për energjinë",
-      en: "Magnesium and its role in energy metabolism",
+      en: "Magnesium and its role in energy",
     },
     excerpt: {
-      al: "Pse magnezi është i rëndësishëm për energjinë, muskujt dhe sistemin nervor.",
-      en: "Why magnesium is important for energy metabolism, muscles and the nervous system.",
+      al: "Pse magnezi është i rëndësishëm për energjinë, nervat dhe muskujt — dhe si ta merrni saktë.",
+      en: "Why magnesium matters for energy, nerves and muscles — and how to take it right.",
     },
     paragraphs: {
       al: [
@@ -259,7 +253,7 @@ export const blogArticles: BlogArticle[] = [
     },
     seoTitle: {
       al: "Magnezi dhe roli i tij për energjinë",
-      en: "Magnesium and its role in energy metabolism",
+      en: "Magnesium and its role in energy",
     },
     seoDescription: {
       al: "Si kontribuon magnezi në funksionimin normal të muskujve, nervave dhe metabolizmit të energjisë — dhe si të përdoret me kujdes.",
