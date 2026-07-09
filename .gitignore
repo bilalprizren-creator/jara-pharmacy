@@ -29,6 +29,11 @@ pnpm-debug.log*
 *.sw?
 Thumbs.db
 
+# internal source docs (not part of the app)
+*.xlsx
+*.xls
+*.csv
+
 # env
 .env
 .env.*
