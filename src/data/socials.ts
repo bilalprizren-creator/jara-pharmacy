@@ -34,13 +34,13 @@ export const socialPosts: SocialPost[] = [
     id: "s3",
     handle: brand.instagramHandle,
     likes: 143,
-    category: { al: "Bukuri", en: "Beauty" },
+    category: { al: "Lëkurë", en: "Skin" },
     caption: {
-      al: "Kur ta marrësh kolagjenin? Çdo ditë, pa përjashtim. ✨",
-      en: "When to take your collagen? Every day, no exceptions. ✨",
+      al: "Freski natyrale për lëkurën tënde — hidraton, qetëson dhe rifreskon. 💧",
+      en: "Natural freshness for your skin — hydrates, soothes and refreshes. 💧",
     },
-    visual: { form: "jar", palette: "violet", label: "COLLAGEN" },
-    image: "/social/s-collagen.jpg",
+    visual: { form: "spray", palette: "rose", label: "FACE SPRAY" },
+    image: "/social/s-lavender.png",
   },
   {
     id: "s4",
