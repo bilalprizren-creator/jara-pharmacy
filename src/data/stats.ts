@@ -14,7 +14,7 @@ export const stats: Stat[] = [
   {
     id: "products",
     icon: Package,
-    value: 1000,
+    value: 1500,
     suffix: "+",
     label: { al: "Produkte", en: "Products" },
   },
