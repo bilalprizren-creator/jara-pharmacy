@@ -52,7 +52,7 @@ export const socialPosts: SocialPost[] = [
       en: "Fruity taste + daily support for healthy growth. 🧸",
     },
     visual: { form: "gummies", palette: "amber", label: "KIDS" },
-    image: "/social/s-kids.jpg",
+    image: "/social/s-kids.webp",
   },
   {
     id: "s5",
@@ -76,6 +76,6 @@ export const socialPosts: SocialPost[] = [
       en: "Beauty that starts from within — IvyBears Women's Hair. 💗",
     },
     visual: { form: "gummies", palette: "rose", label: "WOMEN'S HAIR" },
-    image: "/social/s-womens-hair.jpg",
+    image: "/social/s-womens-hair.webp",
   },
 ];
