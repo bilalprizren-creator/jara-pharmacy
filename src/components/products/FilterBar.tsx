@@ -2,6 +2,7 @@ import { Search, SlidersHorizontal, X } from "lucide-react";
 import type { CategorySlug } from "@/types";
 import { useI18n } from "@/context/I18nContext";
 import { Chip } from "@/components/ui/Chip";
+import { CardSlider } from "@/components/ui/CardSlider";
 
 export interface CategoryOption {
   value: CategorySlug | "all";
@@ -74,7 +75,13 @@ export function FilterBar({
 
       {/* Category chips */}
       {showChips && (
-        <div className="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1">
+        <CardSlider
+          className="mt-4"
+          itemClassName="w-auto"
+          ariaLabel={c.products_filter_aria}
+          prevLabel={c.products_filter_prev}
+          nextLabel={c.products_filter_next}
+        >
           {options.map((opt) => (
             <Chip
               key={opt.value}
@@ -84,7 +91,7 @@ export function FilterBar({
               {opt.label}
             </Chip>
           ))}
-        </div>
+        </CardSlider>
       )}
     </div>
   );

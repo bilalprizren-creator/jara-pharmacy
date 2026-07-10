@@ -87,6 +87,9 @@ const al = {
   products_prev: "Produktet e mëparshme",
   products_next: "Produktet e tjera",
   products_all_label: "Të gjitha produktet",
+  products_filter_aria: "Filtro sipas kategorisë",
+  products_filter_prev: "Kategoritë e mëparshme",
+  products_filter_next: "Kategoritë e radhës",
 
   // Homepage curated product rows
   home_offers: "Oferta",
@@ -282,6 +285,9 @@ const en: CopyShape = {
   products_prev: "Previous products",
   products_next: "Next products",
   products_all_label: "All products",
+  products_filter_aria: "Filter by category",
+  products_filter_prev: "Previous categories",
+  products_filter_next: "Next categories",
 
   // Homepage curated product rows
   home_offers: "Offers",
