@@ -82,6 +82,10 @@ const al = {
   products_clear: "Pastro filtrat",
   products_empty_title: "Asnjë produkt",
   products_empty: "Nuk u gjet asnjë produkt me këto filtra.",
+  products_view_all: "Shiko të gjitha",
+  products_show_more: "Shiko më shumë",
+  products_prev: "Produktet e mëparshme",
+  products_next: "Produktet e tjera",
 
   // Product modal
   modal_benefits: "Përfitimet",
@@ -256,6 +260,10 @@ const en: CopyShape = {
   products_clear: "Clear filters",
   products_empty_title: "No products",
   products_empty: "No products matched these filters.",
+  products_view_all: "View all",
+  products_show_more: "Show more",
+  products_prev: "Previous products",
+  products_next: "Next products",
 
   modal_benefits: "Benefits",
   modal_usage: "How to use",

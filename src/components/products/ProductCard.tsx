@@ -23,7 +23,6 @@ export const ProductCard = forwardRef<HTMLElement, { product: Product }>(functio
     <motion.article
       ref={ref}
       variants={fadeUp}
-      layout
       className="group flex h-full flex-col overflow-hidden rounded-xl border border-line bg-white shadow-soft transition-shadow duration-300 hover:shadow-card"
     >
       <div className="relative">

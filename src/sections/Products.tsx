@@ -1,5 +1,5 @@
 import { useEffect, useMemo, useState } from "react";
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import { PackageSearch } from "lucide-react";
 import type { CategorySlug } from "@/types";
 import { products } from "@/data/products";
@@ -9,6 +9,7 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { ProductCard } from "@/components/products/ProductCard";
+import { CategoryRow } from "@/components/products/CategoryRow";
 import { FilterBar, type CategoryOption } from "@/components/products/FilterBar";
 import { staggerContainer } from "@/lib/motion";
 import { scrollToId } from "@/lib/dom";
@@ -19,10 +20,16 @@ const orderedProducts = [...products].sort(
   (a, b) => Number(b.featured) - Number(a.featured),
 );
 
+// How many cards each browse-view category row mounts, and how many the
+// paginated single-category / search grid shows before "show more".
+const PER_ROW = 12;
+const PAGE_SIZE = 24;
+
 export function Products() {
   const { c, tr, fmt } = useI18n();
   const [query, setQuery] = useState("");
   const [category, setCategory] = useState<CategorySlug | "all">("all");
+  const [visible, setVisible] = useState(PAGE_SIZE);
 
   // Let article CTAs (and anywhere else) preselect a category, then scroll here.
   useEffect(() => {
@@ -33,6 +40,18 @@ export function Products() {
     window.addEventListener(PRODUCT_FILTER_EVENT, onFilter);
     return () => window.removeEventListener(PRODUCT_FILTER_EVENT, onFilter);
   }, []);
+
+  // Reset pagination whenever the filter changes.
+  useEffect(() => setVisible(PAGE_SIZE), [category, query]);
+
+  // Browse view: products grouped by category (category order, non-empty only).
+  const grouped = useMemo(
+    () =>
+      categories
+        .map((cat) => ({ cat, items: orderedProducts.filter((p) => p.category === cat.slug) }))
+        .filter((g) => g.items.length > 0),
+    [],
+  );
 
   const options: CategoryOption[] = useMemo(() => {
     const present = new Set(products.map((p) => p.category));
@@ -66,6 +85,7 @@ export function Products() {
   }, [query, category, tr]);
 
   const hasFilters = query.trim() !== "" || category !== "all";
+  const isBrowse = !hasFilters;
   const count = filtered.length;
   const resultLabel = fmt(count === 1 ? "products_results_one" : "products_results_many", { count });
 
@@ -94,20 +114,40 @@ export function Products() {
           showClear={hasFilters}
         />
 
-        {count > 0 ? (
-          <motion.div
-            key={`${category}-${query}`}
-            variants={staggerContainer}
-            initial="hidden"
-            animate="show"
-            className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4"
-          >
-            <AnimatePresence mode="popLayout">
-              {filtered.map((product) => (
+        {isBrowse ? (
+          <div className="mt-8 flex flex-col gap-12">
+            {grouped.map(({ cat, items }) => (
+              <CategoryRow
+                key={cat.slug}
+                category={cat}
+                items={items.slice(0, PER_ROW)}
+                total={items.length}
+                onViewAll={() => setCategory(cat.slug)}
+              />
+            ))}
+          </div>
+        ) : count > 0 ? (
+          <>
+            <motion.div
+              key={`${category}-${query}`}
+              variants={staggerContainer}
+              initial="hidden"
+              animate="show"
+              className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4"
+            >
+              {filtered.slice(0, visible).map((product) => (
                 <ProductCard key={product.id} product={product} />
               ))}
-            </AnimatePresence>
-          </motion.div>
+            </motion.div>
+
+            {visible < count && (
+              <div className="mt-10 flex justify-center">
+                <Button variant="outline" onClick={() => setVisible((v) => v + PAGE_SIZE)}>
+                  {c.products_show_more}
+                </Button>
+              </div>
+            )}
+          </>
         ) : (
           <div className="mt-10 flex flex-col items-center gap-4 rounded-2xl border border-dashed border-line bg-white py-16 text-center">
             <span className="inline-flex h-14 w-14 items-center justify-center rounded-full bg-surface-soft text-ink-muted">
