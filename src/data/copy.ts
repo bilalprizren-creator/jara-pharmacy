@@ -111,7 +111,7 @@ const al = {
   modal_benefits: "Përfitimet",
   modal_usage: "Sugjerim përdorimi",
   modal_disclaimer: "Për më shumë informacione, na kontaktoni.",
-  modal_ask_whatsapp: "Porosit tani",
+  modal_ask_whatsapp: "Porosit Tani",
   modal_call: "Telefono",
   modal_inquiry: "Dërgo kërkesë",
 
