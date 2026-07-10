@@ -1,6 +1,14 @@
 <!doctype html>
 <html lang="sq">
   <head>
+    <script>
+      // Always land on top ("Ballina") on a fresh load/refresh, instead of the
+      // browser restoring whatever scroll position was there before reloading.
+      if ("scrollRestoration" in history) {
+        history.scrollRestoration = "manual";
+      }
+      window.scrollTo(0, 0);
+    </script>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
     <meta name="theme-color" content="#0A5C44" />
