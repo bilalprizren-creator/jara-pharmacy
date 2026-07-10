@@ -6,13 +6,15 @@ import { brand } from "@/data/brand";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
+import { CardSlider } from "@/components/ui/CardSlider";
 import { mapsHref, telHref } from "@/lib/links";
-import { staggerContainer, fadeUp, viewportOnce } from "@/lib/motion";
+import { fadeUp, viewportOnce } from "@/lib/motion";
 
 export function Locations() {
   const { c, tr } = useI18n();
   const featured = locations.find((l) => l.featured) ?? locations[0];
   const rest = locations.filter((l) => l.id !== featured.id);
+  const cities = [...new Set(locations.map((l) => l.city.split(",")[0].trim()))];
 
   return (
     <section id="locations" className="section bg-surface-soft" aria-labelledby="locations-heading">
@@ -23,24 +25,27 @@ export function Locations() {
           subtitle={c.locations_subtitle}
         />
 
-        <div className="mt-12 grid gap-5 lg:grid-cols-[1.1fr,1fr]">
-          {/* Featured location */}
-          <motion.div
-            variants={fadeUp}
-            initial="hidden"
-            whileInView="show"
-            viewport={viewportOnce}
-            className="relative flex flex-col justify-between overflow-hidden rounded-2xl bg-brand-panel p-7 text-white shadow-card sm:p-9"
-          >
-            <div className="pointer-events-none absolute -right-16 -top-16 h-56 w-56 rounded-full bg-lime/15 blur-2xl" aria-hidden="true" />
-            <div className="relative">
+        {/* Featured branch — full-width brand hero with a live count panel. */}
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+          className="relative mt-12 overflow-hidden rounded-3xl bg-brand-panel p-7 text-white shadow-card sm:p-9"
+        >
+          <div className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-lime/15 blur-3xl" aria-hidden="true" />
+          <div className="pointer-events-none absolute -bottom-24 -left-10 h-56 w-56 rounded-full bg-emerald2-400/25 blur-3xl" aria-hidden="true" />
+
+          <div className="relative grid gap-8 lg:grid-cols-[1.4fr,1fr] lg:items-center">
+            <div>
               <span className="inline-flex items-center gap-1.5 rounded-full bg-white/10 px-3 py-1 text-xs font-semibold text-lime-soft ring-1 ring-white/15">
-                <MapPin className="h-3.5 w-3.5" aria-hidden="true" /> {c.location_featured}
+                <MapPin className="h-3.5 w-3.5" aria-hidden="true" />
+                {featured.note ? tr(featured.note) : c.location_featured}
               </span>
               <h3 className="mt-4 text-2xl font-extrabold sm:text-3xl">{featured.name}</h3>
-              <p className="mt-2 max-w-sm text-white/75">{featured.address}</p>
+              <p className="mt-2 max-w-md text-white/75">{featured.address}</p>
 
-              <dl className="mt-6 space-y-3 text-sm">
+              <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-lime" aria-hidden="true" />
                   <a href={telHref(brand.phonePrimary.e164)} className="hover:text-lime">
@@ -52,71 +57,78 @@ export function Locations() {
                   <span className="text-white/80">{c.contact_hours_value}</span>
                 </div>
               </dl>
-            </div>
 
-            <div className="relative mt-8 flex flex-wrap gap-3">
-              <Button
-                href={mapsHref(featured.mapsQuery)}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="lime"
-                leftIcon={<Navigation className="h-4 w-4" aria-hidden="true" />}
-              >
-                {c.maps_open}
-              </Button>
-              <Button
-                href={brand.allLocationsMapUrl}
-                target="_blank"
-                rel="noopener noreferrer"
-                variant="glass"
-                rightIcon={<ArrowRight className="h-4 w-4" aria-hidden="true" />}
-              >
-                {c.all_locations}
-              </Button>
-            </div>
-          </motion.div>
-
-          {/* Other locations */}
-          <motion.ul
-            variants={staggerContainer}
-            initial="hidden"
-            whileInView="show"
-            viewport={viewportOnce}
-            className="grid gap-3 sm:grid-cols-2"
-          >
-            {rest.map((location, i) => (
-              <motion.li
-                key={location.id}
-                variants={fadeUp}
-                className="card-surface flex flex-col justify-between gap-4 p-5"
-              >
-                <div>
-                  <div className="flex items-center justify-between">
-                    <span className="inline-flex h-9 w-9 items-center justify-center rounded-lg bg-forest/5 text-forest">
-                      <MapPin className="h-4.5 w-4.5" aria-hidden="true" />
-                    </span>
-                    <span className="text-xs font-semibold text-ink-muted">
-                      {String(i + 2).padStart(2, "0")}
-                    </span>
-                  </div>
-                  <h4 className="mt-3 text-base font-bold text-ink-strong">{location.name}</h4>
-                  <p className="mt-0.5 text-sm text-ink-muted">
-                    {location.note ? tr(location.note) : location.city}
-                  </p>
-                </div>
-                <a
-                  href={mapsHref(location.mapsQuery)}
+              <div className="mt-8 flex flex-wrap gap-3">
+                <Button
+                  href={mapsHref(featured.mapsQuery)}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center gap-1.5 text-sm font-semibold text-forest hover:text-forest-600"
+                  variant="lime"
+                  leftIcon={<Navigation className="h-4 w-4" aria-hidden="true" />}
                 >
-                  <Navigation className="h-4 w-4" aria-hidden="true" />
-                  {c.location_directions}
-                </a>
-              </motion.li>
-            ))}
-          </motion.ul>
-        </div>
+                  {c.maps_open}
+                </Button>
+                <Button
+                  href={brand.allLocationsMapUrl}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  variant="glass"
+                  rightIcon={<ArrowRight className="h-4 w-4" aria-hidden="true" />}
+                >
+                  {c.all_locations}
+                </Button>
+              </div>
+            </div>
+
+            {/* Count panel */}
+            <div className="rounded-2xl bg-white/[0.07] p-6 ring-1 ring-white/15 backdrop-blur-sm">
+              <p className="text-5xl font-extrabold leading-none text-lime">{locations.length}</p>
+              <p className="mt-1 text-sm font-semibold uppercase tracking-wide text-white/80">
+                {c.locations_eyebrow}
+              </p>
+              <p className="mt-3 text-sm text-white/70">{cities.join(" · ")}</p>
+            </div>
+          </div>
+        </motion.div>
+
+        {/* All other branches — single-row horizontal slider (compact). */}
+        <CardSlider
+          className="mt-5"
+          ariaLabel={c.locations_title}
+          prevLabel={c.locations_prev}
+          nextLabel={c.locations_next}
+          itemClassName="w-[82%] sm:w-[46%] md:w-[300px] xl:w-[320px]"
+        >
+          {rest.map((location) => (
+            <div
+              key={location.id}
+              className="group flex h-full w-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+            >
+              <div className="flex items-center justify-between">
+                <span className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-forest/5 px-2 text-sm font-bold text-forest ring-1 ring-forest/10 transition-colors duration-300 group-hover:bg-forest group-hover:text-white">
+                  {location.branch != null ? String(location.branch).padStart(2, "0") : ""}
+                </span>
+                <MapPin
+                  className="h-5 w-5 text-ink-muted transition-colors duration-300 group-hover:text-forest"
+                  aria-hidden="true"
+                />
+              </div>
+
+              <h4 className="mt-3 text-base font-bold leading-snug text-ink-strong">{location.name}</h4>
+              <p className="mt-1 flex-1 text-sm leading-relaxed text-ink-muted">{location.address}</p>
+
+              <a
+                href={mapsHref(location.mapsQuery)}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mt-4 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-forest transition-colors hover:text-forest-600"
+              >
+                <Navigation className="h-4 w-4" aria-hidden="true" />
+                {c.location_directions}
+              </a>
+            </div>
+          ))}
+        </CardSlider>
       </Container>
     </section>
   );
