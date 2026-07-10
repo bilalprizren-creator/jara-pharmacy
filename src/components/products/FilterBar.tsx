@@ -17,15 +17,19 @@ export function FilterBar({
   resultLabel,
   onClear,
   showClear,
+  showChips = true,
 }: {
   query: string;
   onQueryChange: (value: string) => void;
   options: CategoryOption[];
-  activeCategory: CategorySlug | "all";
+  /** Highlighted chip; `null` when a non-category filter (offers/featured/group) is active. */
+  activeCategory: CategorySlug | "all" | null;
   onCategoryChange: (value: CategorySlug | "all") => void;
   resultLabel: string;
   onClear: () => void;
   showClear: boolean;
+  /** When false (curated homepage), render only the search field. */
+  showChips?: boolean;
 }) {
   const { c } = useI18n();
 
@@ -48,36 +52,40 @@ export function FilterBar({
           />
         </div>
 
-        <div className="flex items-center justify-between gap-3 lg:justify-end">
-          <span className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-muted">
-            <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
-            {resultLabel}
-          </span>
-          {showClear && (
-            <button
-              type="button"
-              onClick={onClear}
-              className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium text-forest transition hover:bg-forest/5"
-            >
-              <X className="h-3.5 w-3.5" aria-hidden="true" />
-              {c.products_clear}
-            </button>
-          )}
-        </div>
+        {showChips && (
+          <div className="flex items-center justify-between gap-3 lg:justify-end">
+            <span className="inline-flex items-center gap-1.5 text-sm font-medium text-ink-muted">
+              <SlidersHorizontal className="h-4 w-4" aria-hidden="true" />
+              {resultLabel}
+            </span>
+            {showClear && (
+              <button
+                type="button"
+                onClick={onClear}
+                className="inline-flex items-center gap-1 rounded-full px-3 py-1.5 text-sm font-medium text-forest transition hover:bg-forest/5"
+              >
+                <X className="h-3.5 w-3.5" aria-hidden="true" />
+                {c.products_clear}
+              </button>
+            )}
+          </div>
+        )}
       </div>
 
       {/* Category chips */}
-      <div className="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1">
-        {options.map((opt) => (
-          <Chip
-            key={opt.value}
-            active={activeCategory === opt.value}
-            onClick={() => onCategoryChange(opt.value)}
-          >
-            {opt.label}
-          </Chip>
-        ))}
-      </div>
+      {showChips && (
+        <div className="no-scrollbar mt-4 flex gap-2 overflow-x-auto pb-1">
+          {options.map((opt) => (
+            <Chip
+              key={opt.value}
+              active={activeCategory === opt.value}
+              onClick={() => onCategoryChange(opt.value)}
+            >
+              {opt.label}
+            </Chip>
+          ))}
+        </div>
+      )}
     </div>
   );
 }

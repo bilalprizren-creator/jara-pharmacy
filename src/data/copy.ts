@@ -86,6 +86,23 @@ const al = {
   products_show_more: "Shiko më shumë",
   products_prev: "Produktet e mëparshme",
   products_next: "Produktet e tjera",
+  products_all_label: "Të gjitha produktet",
+
+  // Homepage curated product rows
+  home_offers: "Oferta",
+  home_offers_sub: "Produkte të përzgjedhura dhe të promovuara.",
+  home_popular: "Produktet më të kërkuara",
+  home_popular_sub: "Më të njohurat dhe të rekomanduara nga ne.",
+  home_skin_hair: "Kujdes për lëkurën dhe flokët",
+  home_skin_hair_sub: "Kujdes ditor për lëkurë dhe flokë të shëndetshëm.",
+  home_vitamins_health: "Vitamina dhe shëndet",
+  home_vitamins_health_sub: "Suplemente, produkte natyrale dhe kujdes shëndetësor.",
+  home_mother_baby: "Nënë dhe bebe",
+  home_mother_baby_sub: "Kujdes i butë për nënat dhe të vegjlit.",
+
+  // Category overview
+  cat_all: "Të gjitha kategoritë",
+  cat_all_sub: "Shfleto të gjithë katalogun e produkteve.",
 
   // Product modal
   modal_benefits: "Përfitimet",
@@ -264,6 +281,23 @@ const en: CopyShape = {
   products_show_more: "Show more",
   products_prev: "Previous products",
   products_next: "Next products",
+  products_all_label: "All products",
+
+  // Homepage curated product rows
+  home_offers: "Offers",
+  home_offers_sub: "Selected and promoted products.",
+  home_popular: "Most Popular Products",
+  home_popular_sub: "Our most requested and recommended picks.",
+  home_skin_hair: "Skin & Hair Care",
+  home_skin_hair_sub: "Everyday care for healthy skin and hair.",
+  home_vitamins_health: "Vitamins & Health",
+  home_vitamins_health_sub: "Supplements, natural products and health care.",
+  home_mother_baby: "Mother & Baby",
+  home_mother_baby_sub: "Gentle care for mothers and little ones.",
+
+  // Category overview
+  cat_all: "All Categories",
+  cat_all_sub: "Browse the complete product catalog.",
 
   modal_benefits: "Benefits",
   modal_usage: "How to use",

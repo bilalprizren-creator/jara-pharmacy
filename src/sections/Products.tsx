@@ -1,57 +1,48 @@
 import { useEffect, useMemo, useState } from "react";
 import { motion } from "framer-motion";
 import { PackageSearch } from "lucide-react";
-import type { CategorySlug } from "@/types";
+import type { CategorySlug, ProductFilter } from "@/types";
 import { products } from "@/data/products";
 import { categories } from "@/data/categories";
+import { resolveHomeSections } from "@/data/homepage";
 import { useI18n } from "@/context/I18nContext";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { ProductCard } from "@/components/products/ProductCard";
-import { CategoryRow } from "@/components/products/CategoryRow";
+import { ProductRow } from "@/components/products/ProductRow";
 import { FilterBar, type CategoryOption } from "@/components/products/FilterBar";
 import { staggerContainer } from "@/lib/motion";
 import { scrollToId } from "@/lib/dom";
-import { PRODUCT_FILTER_EVENT } from "@/lib/productFilter";
+import { PRODUCT_FILTER_EVENT, matchesFilter, filterKey } from "@/lib/productFilter";
 
-// Featured items first for the default view; order is otherwise stable.
-const orderedProducts = [...products].sort(
-  (a, b) => Number(b.featured) - Number(a.featured),
-);
+// Featured items first for the full-catalog grid; order is otherwise stable.
+const orderedProducts = [...products].sort((a, b) => Number(b.featured) - Number(a.featured));
 
-// How many cards each browse-view category row mounts, and how many the
-// paginated single-category / search grid shows before "show more".
-const PER_ROW = 12;
+// Paginated grid: how many cards the full-catalog / search view shows per page.
 const PAGE_SIZE = 24;
 
 export function Products() {
   const { c, tr, fmt } = useI18n();
   const [query, setQuery] = useState("");
-  const [category, setCategory] = useState<CategorySlug | "all">("all");
+  const [filter, setFilter] = useState<ProductFilter>({ kind: "home" });
   const [visible, setVisible] = useState(PAGE_SIZE);
 
-  // Let article CTAs (and anywhere else) preselect a category, then scroll here.
+  // Homepage rows, resolved once from the shared catalog (deduped in order).
+  const homeRows = useMemo(() => resolveHomeSections(), []);
+
+  // Let the category overview / article CTAs preselect a filter, then scroll here.
   useEffect(() => {
     const onFilter = (e: Event) => {
       setQuery("");
-      setCategory((e as CustomEvent<CategorySlug>).detail);
+      setFilter((e as CustomEvent<ProductFilter>).detail);
     };
     window.addEventListener(PRODUCT_FILTER_EVENT, onFilter);
     return () => window.removeEventListener(PRODUCT_FILTER_EVENT, onFilter);
   }, []);
 
-  // Reset pagination whenever the filter changes.
-  useEffect(() => setVisible(PAGE_SIZE), [category, query]);
-
-  // Browse view: products grouped by category (category order, non-empty only).
-  const grouped = useMemo(
-    () =>
-      categories
-        .map((cat) => ({ cat, items: orderedProducts.filter((p) => p.category === cat.slug) }))
-        .filter((g) => g.items.length > 0),
-    [],
-  );
+  // Reset pagination whenever the filter or query changes.
+  useEffect(() => setVisible(PAGE_SIZE), [filter, query]);
 
   const options: CategoryOption[] = useMemo(() => {
     const present = new Set(products.map((p) => p.category));
@@ -66,8 +57,7 @@ export function Products() {
   const filtered = useMemo(() => {
     const q = query.trim().toLowerCase();
     return orderedProducts.filter((p) => {
-      const matchesCategory = category === "all" || p.category === category;
-      if (!matchesCategory) return false;
+      if (!matchesFilter(p, filter)) return false;
       if (!q) return true;
       const haystack = [
         p.name,
@@ -82,16 +72,44 @@ export function Products() {
         .toLowerCase();
       return haystack.includes(q);
     });
-  }, [query, category, tr]);
+  }, [query, filter, tr]);
 
-  const hasFilters = query.trim() !== "" || category !== "all";
-  const isBrowse = !hasFilters;
+  const isBrowse = filter.kind === "home" && query.trim() === "";
+  const hasFilters = filter.kind !== "home" || query.trim() !== "";
   const count = filtered.length;
   const resultLabel = fmt(count === 1 ? "products_results_one" : "products_results_many", { count });
 
+  // Highlighted chip: none when a non-category filter (offers/featured/group) is active.
+  const activeCategory: CategorySlug | "all" | null =
+    filter.kind === "category"
+      ? filter.slug
+      : filter.kind === "all" || filter.kind === "home"
+        ? "all"
+        : null;
+
+  const listTitle = (): string => {
+    switch (filter.kind) {
+      case "featured":
+        return c.home_popular;
+      case "offers":
+        return c.home_offers;
+      case "group":
+        return filter.id === "skin-hair" ? c.home_skin_hair : c.home_vitamins_health;
+      case "category": {
+        const cat = categories.find((x) => x.slug === filter.slug);
+        return cat ? tr(cat.title) : c.products_all_label;
+      }
+      default:
+        return c.products_all_label;
+    }
+  };
+
+  const onCategoryChange = (value: CategorySlug | "all") =>
+    setFilter(value === "all" ? { kind: "all" } : { kind: "category", slug: value });
+
   const clear = () => {
     setQuery("");
-    setCategory("all");
+    setFilter({ kind: "home" });
   };
 
   return (
@@ -107,33 +125,35 @@ export function Products() {
           query={query}
           onQueryChange={setQuery}
           options={options}
-          activeCategory={category}
-          onCategoryChange={setCategory}
+          activeCategory={activeCategory}
+          onCategoryChange={onCategoryChange}
           resultLabel={resultLabel}
           onClear={clear}
           showClear={hasFilters}
+          showChips={!isBrowse}
         />
 
         {isBrowse ? (
           <div className="mt-8 flex flex-col gap-12">
-            {grouped.map(({ cat, items }) => (
-              <CategoryRow
-                key={cat.slug}
-                category={cat}
-                items={items.slice(0, PER_ROW)}
-                total={items.length}
-                onViewAll={() => setCategory(cat.slug)}
+            {homeRows.map(({ section, items }) => (
+              <ProductRow
+                key={section.id}
+                title={c[section.titleKey]}
+                subtitle={c[section.subtitleKey]}
+                items={items}
+                onViewAll={() => setFilter(section.filter)}
               />
             ))}
           </div>
         ) : count > 0 ? (
           <>
+            <h3 className="mt-8 text-lg font-bold text-ink-strong">{listTitle()}</h3>
             <motion.div
-              key={`${category}-${query}`}
+              key={`${filterKey(filter)}-${query}`}
               variants={staggerContainer}
               initial="hidden"
               animate="show"
-              className="mt-8 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4"
+              className="mt-4 grid grid-cols-2 gap-3 sm:gap-5 lg:grid-cols-3 xl:grid-cols-4"
             >
               {filtered.slice(0, visible).map((product) => (
                 <ProductCard key={product.id} product={product} />

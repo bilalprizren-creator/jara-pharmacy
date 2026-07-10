@@ -75,6 +75,19 @@ export interface Category {
   accent: CategoryAccent;
 }
 
+/**
+ * What the Products section is currently showing. Drives both the in-page
+ * "view all" bridges (homepage rows, category overview, article CTAs) and the
+ * FilterBar. `home` = the curated homepage rows; `all` = the full catalog grid.
+ */
+export type ProductFilter =
+  | { kind: "home" }
+  | { kind: "all" }
+  | { kind: "category"; slug: CategorySlug }
+  | { kind: "group"; id: string; slugs: CategorySlug[] }
+  | { kind: "featured" }
+  | { kind: "offers" };
+
 export interface Product {
   id: string;
   slug: string;
