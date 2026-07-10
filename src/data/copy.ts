@@ -145,6 +145,15 @@ const al = {
   about_value_care: "Kujdes",
   about_value_pro: "Profesionalizëm",
 
+  // Our Pharmacy
+  pharmacy_title: "Farmacia jonë",
+  pharmacy_subtitle:
+    "Një ambient modern, i organizuar dhe i krijuar për kujdesin dhe mirëqenien tuaj.",
+  pharmacy_visit_cta: "Na vizitoni",
+  pharmacy_exterior_alt: "Hyrja e JARA Pharmacy",
+  pharmacy_interior_alt_1: "Ambient i brendshëm i JARA Pharmacy",
+  pharmacy_interior_alt_2: "Sporteli dhe produktet në JARA Pharmacy",
+
   // Testimonials
   section_testimonials: "Çfarë thonë klientët",
   testimonials_subtitle: "Përvoja reale nga njerëz që na besojnë çdo ditë.",
@@ -337,6 +346,14 @@ const en: CopyShape = {
   about_value_trust: "Trust",
   about_value_care: "Care",
   about_value_pro: "Professionalism",
+
+  pharmacy_title: "Our Pharmacy",
+  pharmacy_subtitle:
+    "A modern and carefully organized environment created for your health, care, and well-being.",
+  pharmacy_visit_cta: "Visit us",
+  pharmacy_exterior_alt: "JARA Pharmacy storefront",
+  pharmacy_interior_alt_1: "JARA Pharmacy interior",
+  pharmacy_interior_alt_2: "JARA Pharmacy counter and product shelves",
 
   section_testimonials: "What customers say",
   testimonials_subtitle: "Real experiences from people who trust us every day.",

@@ -13,6 +13,7 @@ import { Products } from "@/sections/Products";
 import { Social } from "@/sections/Social";
 import { Locations } from "@/sections/Locations";
 import { About } from "@/sections/About";
+import { OurPharmacy } from "@/sections/OurPharmacy";
 import { Testimonials } from "@/sections/Testimonials";
 import { Stats } from "@/sections/Stats";
 import { Blog } from "@/sections/Blog";
@@ -34,6 +35,7 @@ export default function App() {
           <Social />
           <Locations />
           <About />
+          <OurPharmacy />
           <Testimonials />
           <Stats />
           <Blog />

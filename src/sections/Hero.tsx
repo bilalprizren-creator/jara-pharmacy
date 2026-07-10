@@ -2,28 +2,15 @@ import { motion } from "framer-motion";
 import { ShieldCheck, Stethoscope, MapPin, HeartHandshake, ArrowRight, Sparkles } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
 import { brand } from "@/data/brand";
-import { products } from "@/data/products";
 import { Container } from "@/components/ui/Container";
 import { Button } from "@/components/ui/Button";
-import { ProductMedia } from "@/components/ui/ProductMedia";
 import { scrollToId } from "@/lib/dom";
 import { EASE } from "@/lib/motion";
-import { cn } from "@/lib/cn";
 
 const badgeIcons = [ShieldCheck, Stethoscope, MapPin, HeartHandshake];
 
-function useHeroProducts() {
-  const byId = (id: string) => products.find((p) => p.id === id)!;
-  return {
-    main: byId("rosemary-shampoo"),
-    front: byId("repair-bubble-serum"),
-    accent: byId("collagen-peptides-powder"),
-  };
-}
-
 export function Hero() {
   const { c, tr } = useI18n();
-  const hero = useHeroProducts();
 
   const badges = [c.trust_original, c.trust_advice, c.trust_locations, c.trust_family];
 
@@ -106,38 +93,27 @@ export function Hero() {
             </motion.ul>
           </div>
 
-          {/* Visual column — floating product cards */}
-          <div className="relative mx-auto hidden h-[440px] w-full max-w-md lg:block" aria-hidden="true">
-            <FloatingCard
-              className="absolute left-2 top-4 w-52 rotate-[-4deg] animate-float-slow"
-              product={hero.main}
-              caption={tr(hero.main.categoryLabel)}
-              title={hero.main.name}
-            />
-            <FloatingCard
-              className="absolute right-0 top-24 w-56 rotate-[3deg] animate-float [animation-delay:0.8s]"
-              product={hero.front}
-              caption={tr(hero.front.categoryLabel)}
-              title={hero.front.name}
-            />
-            <FloatingCard
-              className="absolute bottom-0 left-10 w-48 rotate-[-2deg] animate-float-slow [animation-delay:1.4s]"
-              product={hero.accent}
-              caption={tr(hero.accent.categoryLabel)}
-              title={hero.accent.name}
-            />
+          {/* Visual column — real storefront photo */}
+          <div className="relative w-full">
+            <div className="h-[220px] w-full overflow-hidden rounded-3xl shadow-card sm:h-[280px] lg:h-[440px]">
+              {/* Only above-the-fold, LCP-relevant image on the site — deliberately not lazy. */}
+              <img
+                src="/pharmacy/jara-pharmacy-exterior.webp"
+                alt={c.pharmacy_exterior_alt}
+                loading="eager"
+                className="h-full w-full object-cover object-top"
+              />
+            </div>
 
             {/* slogan chip — lime neon ring echoing the glowing storefront sign */}
-            <div className="absolute -bottom-4 right-4 rounded-2xl bg-deep/80 px-4 py-3 shadow-glow ring-1 ring-lime/40 backdrop-blur">
+            <div
+              aria-hidden="true"
+              className="absolute -bottom-4 right-4 rounded-2xl bg-deep/80 px-4 py-3 shadow-glow ring-1 ring-lime/40 backdrop-blur"
+            >
               <p className="text-[0.65rem] font-bold uppercase tracking-[0.2em] text-lime">
                 {tr(brand.slogan)}
               </p>
             </div>
-          </div>
-
-          {/* Mobile visual — single card */}
-          <div className="relative mx-auto w-full max-w-xs lg:hidden" aria-hidden="true">
-            <FloatingCard product={hero.main} caption={tr(hero.main.categoryLabel)} title={hero.main.name} />
           </div>
         </div>
       </Container>
@@ -145,39 +121,5 @@ export function Hero() {
       {/* soft transition into the light page */}
       <div className="h-10 bg-gradient-to-b from-transparent to-surface-soft/0" />
     </section>
-  );
-}
-
-function FloatingCard({
-  product,
-  caption,
-  title,
-  className,
-}: {
-  product: (typeof products)[number];
-  caption: string;
-  title: string;
-  className?: string;
-}) {
-  return (
-    <div
-      className={cn(
-        "overflow-hidden rounded-2xl bg-white p-2.5 shadow-lift ring-1 ring-black/5",
-        className,
-      )}
-    >
-      <div className="aspect-[4/5] overflow-hidden rounded-xl">
-        <ProductMedia
-          visual={product.visual}
-          image={product.image}
-          alt={product.name}
-          rounded="rounded-xl"
-        />
-      </div>
-      <div className="px-1.5 pb-1 pt-2.5">
-        <p className="text-[0.6rem] font-semibold uppercase tracking-wide text-emerald2">{caption}</p>
-        <p className="truncate text-sm font-semibold text-ink-strong">{title}</p>
-      </div>
-    </div>
   );
 }
