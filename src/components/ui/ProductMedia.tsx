@@ -1,13 +1,14 @@
 import { cn } from "@/lib/cn";
 import type { ProductVisual as Visual } from "@/types";
-import { ProductVisual, palettes } from "@/components/ui/ProductVisual";
+import { ProductVisual, palettes, studioBg } from "@/components/ui/ProductVisual";
 
 /**
  * Product artwork with real-photo support. When `image` is set, the photo is
- * centered (object-contain) on the product's brand palette gradient so mixed
- * photo qualities still read as one consistent, premium system — echoing the
- * reference posts. Without an `image` it falls back to the generated
- * ProductVisual scene, so photos can be added product by product.
+ * centered (object-contain, never cropped or distorted) on a calm, light
+ * "studio" backdrop — the same one the generated ProductVisual uses — with only
+ * a whisper of the category color as a soft glow, so every card reads as one
+ * consistent, premium system regardless of the photo's own colors. Without an
+ * `image` it falls back to the generated ProductVisual scene.
  */
 export function ProductMedia({
   visual,
@@ -31,14 +32,14 @@ export function ProductMedia({
   return (
     <div
       className={cn("relative h-full w-full overflow-hidden", rounded, className)}
-      style={{ background: `linear-gradient(160deg, ${p.bgFrom} 0%, ${p.bgTo} 100%)` }}
+      style={{ background: `linear-gradient(180deg, ${studioBg.from} 0%, ${studioBg.to} 100%)` }}
     >
-      {/* soft radial glow, mirroring the generated scenes */}
+      {/* very soft category-tinted glow — a whisper of color, not a colored field */}
       <div
         aria-hidden="true"
         className="pointer-events-none absolute inset-0"
         style={{
-          background: `radial-gradient(60% 55% at 50% 42%, ${p.glow}55 0%, transparent 100%)`,
+          background: `radial-gradient(58% 52% at 50% 44%, ${p.glow}24 0%, transparent 100%)`,
         }}
       />
       <img
@@ -46,7 +47,7 @@ export function ProductMedia({
         alt={alt}
         loading="lazy"
         decoding="async"
-        className="relative h-full w-full object-contain p-[9%] drop-shadow-[0_10px_18px_rgba(7,59,45,0.18)]"
+        className="relative h-full w-full object-contain object-center p-[9%] drop-shadow-[0_8px_20px_rgba(7,59,45,0.10)]"
       />
     </div>
   );
