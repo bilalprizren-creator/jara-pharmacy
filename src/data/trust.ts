@@ -35,8 +35,8 @@ export const trustFeatures: IconFeature[] = [
     icon: MapPin,
     title: { al: "Gjithmonë pranë jush", en: "Always near you" },
     text: {
-      al: "10 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
-      en: "10 locations across Prizren and Rahovec, wherever you need us.",
+      al: "12 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
+      en: "12 locations across Prizren and Rahovec, wherever you need us.",
     },
   },
   {

@@ -1,5 +1,6 @@
+import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
-import { MapPin, Navigation, Phone, Clock, ArrowRight } from "lucide-react";
+import { MapPin, Navigation, Phone, Clock, ArrowRight, Warehouse } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
 import { locations } from "@/data/locations";
 import { brand } from "@/data/brand";
@@ -7,8 +8,13 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CardSlider } from "@/components/ui/CardSlider";
+import { LocationsMapSkeleton } from "@/components/locations/LocationsMapSkeleton";
 import { mapsHref, telHref } from "@/lib/links";
 import { fadeUp, viewportOnce } from "@/lib/motion";
+
+const LocationsMap = lazy(() =>
+  import("@/components/locations/LocationsMap").then((mod) => ({ default: mod.LocationsMap })),
+);
 
 export function Locations() {
   const { c, tr } = useI18n();
@@ -91,6 +97,18 @@ export function Locations() {
           </div>
         </motion.div>
 
+        <motion.div
+          variants={fadeUp}
+          initial="hidden"
+          whileInView="show"
+          viewport={viewportOnce}
+          className="mt-6"
+        >
+          <Suspense fallback={<LocationsMapSkeleton label={c.locations_map_loading} />}>
+            <LocationsMap />
+          </Suspense>
+        </motion.div>
+
         {/* All other branches — single-row horizontal slider (compact). */}
         <CardSlider
           className="mt-5"
@@ -106,7 +124,11 @@ export function Locations() {
             >
               <div className="flex items-center justify-between">
                 <span className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-forest/5 px-2 text-sm font-bold text-forest ring-1 ring-forest/10 transition-colors duration-300 group-hover:bg-forest group-hover:text-white">
-                  {location.branch != null ? String(location.branch).padStart(2, "0") : ""}
+                  {location.branch != null ? (
+                    String(location.branch).padStart(2, "0")
+                  ) : (
+                    <Warehouse className="h-4 w-4" aria-hidden="true" />
+                  )}
                 </span>
                 <MapPin
                   className="h-5 w-5 text-ink-muted transition-colors duration-300 group-hover:text-forest"

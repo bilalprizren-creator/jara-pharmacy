@@ -41,7 +41,7 @@ const al = {
     "Produkte të zgjedhura për lëkurë, flokë, vitamina, suplemente dhe kujdes të përditshëm.",
   trust_original: "Produkte origjinale",
   trust_advice: "Këshillim profesional",
-  trust_locations: "10 lokacione",
+  trust_locations: "12 lokacione",
   trust_family: "Kujdes për familjen",
 
   // Trust section
@@ -56,7 +56,7 @@ const al = {
   trust_advice_t: "Këshillim profesional",
   trust_advice_d: "Staf i gatshëm t'ju udhëzojë me përgjegjësi.",
   trust_near_t: "Gjithmonë pranë jush",
-  trust_near_d: "10 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
+  trust_near_d: "12 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
   trust_care_t: "Kujdes për shëndetin dhe bukurinë",
   trust_care_d: "Një vend për mirëqenien e përditshme të familjes.",
 
@@ -96,8 +96,6 @@ const al = {
   home_offers_sub: "Produkte të përzgjedhura dhe të promovuara.",
   home_popular: "Produktet më të kërkuara",
   home_popular_sub: "Më të njohurat dhe të rekomanduara nga ne.",
-  home_skin_hair: "Kujdes për lëkurën dhe flokët",
-  home_skin_hair_sub: "Kujdes ditor për lëkurë dhe flokë të shëndetshëm.",
   home_vitamins_health: "Vitamina dhe shëndet",
   home_vitamins_health_sub: "Suplemente, produkte natyrale dhe kujdes shëndetësor.",
   home_mother_baby: "Nënë dhe bebe",
@@ -125,13 +123,17 @@ const al = {
   locations_eyebrow: "Lokacionet",
   locations_title: "Na gjeni kudo në Prizren",
   locations_subtitle:
-    "Dhjetë pika shërbimi në Prizren e Rahovec, të gjitha me të njëjtin standard kujdesi.",
+    "Dymbëdhjetë pika shërbimi në Prizren e Rahovec, të gjitha me të njëjtin standard kujdesi.",
   location_featured: "Lokacioni kryesor",
   maps_open: "Hap në Google Maps",
   location_directions: "Udhëzime",
   all_locations: "Shiko të gjitha lokacionet",
   locations_prev: "Shfaq lokacionet e mëparshme",
   locations_next: "Shfaq lokacionet e ardhshme",
+  locations_map_aria: "Harta interaktive e të gjitha degëve Jara Pharmacy",
+  locations_map_loading: "Duke ngarkuar hartën…",
+  locations_map_legend_pharmacy: "Farmaci",
+  locations_map_legend_depo: "Depo (jo për klientë)",
 
   // About
   about_eyebrow: "Rreth nesh",
@@ -251,7 +253,7 @@ const en: CopyShape = {
     "Carefully selected products for skin, hair, vitamins, supplements and daily care.",
   trust_original: "Original products",
   trust_advice: "Professional guidance",
-  trust_locations: "10 locations",
+  trust_locations: "12 locations",
   trust_family: "Family care",
 
   trust_eyebrow: "Why Jara Pharmacy",
@@ -265,7 +267,7 @@ const en: CopyShape = {
   trust_advice_t: "Professional guidance",
   trust_advice_d: "Staff ready to guide you responsibly.",
   trust_near_t: "Always near you",
-  trust_near_d: "10 locations across Prizren and Rahovec, wherever you need us.",
+  trust_near_d: "12 locations across Prizren and Rahovec, wherever you need us.",
   trust_care_t: "Care for health and beauty",
   trust_care_d: "One place for your family's everyday wellbeing.",
 
@@ -303,8 +305,6 @@ const en: CopyShape = {
   home_offers_sub: "Selected and promoted products.",
   home_popular: "Most Popular Products",
   home_popular_sub: "Our most requested and recommended picks.",
-  home_skin_hair: "Skin & Hair Care",
-  home_skin_hair_sub: "Everyday care for healthy skin and hair.",
   home_vitamins_health: "Vitamins & Health",
   home_vitamins_health_sub: "Supplements, natural products and health care.",
   home_mother_baby: "Mother & Baby",
@@ -329,13 +329,17 @@ const en: CopyShape = {
   locations_eyebrow: "Locations",
   locations_title: "Find us across Prizren",
   locations_subtitle:
-    "Ten service points across Prizren and Rahovec, all held to the same standard of care.",
+    "Twelve service points across Prizren and Rahovec, all held to the same standard of care.",
   location_featured: "Main location",
   maps_open: "Open in Google Maps",
   location_directions: "Directions",
   all_locations: "View all locations",
   locations_prev: "Show previous locations",
   locations_next: "Show next locations",
+  locations_map_aria: "Interactive map of all Jara Pharmacy branches",
+  locations_map_loading: "Loading map…",
+  locations_map_legend_pharmacy: "Pharmacy branch",
+  locations_map_legend_depo: "Depot (not customer-facing)",
 
   about_eyebrow: "About us",
   about_title: "A modern pharmacy, built on trust",

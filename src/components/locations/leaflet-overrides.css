@@ -1,0 +1,42 @@
+/* Reskin Leaflet's default chrome to match the site's brand instead of its stock look. */
+
+.leaflet-container {
+  font-family: inherit;
+  background: theme("colors.surface.soft");
+}
+
+.leaflet-popup-content-wrapper {
+  @apply rounded-2xl shadow-card;
+}
+
+.leaflet-popup-content {
+  margin: 0.75rem 0.9rem;
+}
+
+.leaflet-popup-tip {
+  @apply shadow-card;
+}
+
+.leaflet-popup-close-button {
+  @apply text-ink-muted;
+}
+
+.leaflet-control-zoom {
+  @apply overflow-hidden rounded-full border border-line shadow-soft;
+}
+
+.leaflet-control-zoom a {
+  @apply text-forest;
+}
+
+.leaflet-control-zoom a:hover {
+  @apply bg-surface-soft;
+}
+
+.leaflet-control-attribution {
+  @apply rounded-md bg-white/80 px-1.5 py-0.5 text-[10px] text-ink-muted backdrop-blur-sm;
+}
+
+.leaflet-control-attribution a {
+  @apply text-ink-muted underline;
+}

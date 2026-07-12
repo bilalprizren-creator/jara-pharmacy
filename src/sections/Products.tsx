@@ -94,7 +94,7 @@ export function Products() {
       case "offers":
         return c.home_offers;
       case "group":
-        return filter.id === "skin-hair" ? c.home_skin_hair : c.home_vitamins_health;
+        return c.home_vitamins_health;
       case "category": {
         const cat = categories.find((x) => x.slug === filter.slug);
         return cat ? tr(cat.title) : c.products_all_label;

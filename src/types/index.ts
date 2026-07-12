@@ -63,6 +63,7 @@ export type CategorySlug =
   | "insect-care"
   | "medical-devices"
   | "feminine-care"
+  | "intimate-care"
   | "other";
 
 export type CategoryAccent = "green" | "rose" | "lime" | "cream" | "teal";
@@ -160,6 +161,8 @@ export interface Location {
   /** Alternative spelling / historical name (e.g. William Walker). */
   alias?: string;
   mapsQuery: string;
+  /** Precise coordinates for the interactive branch map (Leaflet). */
+  coords?: { lat: number; lng: number };
   phone?: string;
   featured?: boolean;
   note?: Bilingual;

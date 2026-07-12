@@ -12,6 +12,7 @@ import {
   Bug,
   Stethoscope,
   Flower2,
+  Heart,
   Package,
 } from "lucide-react";
 import type { Category } from "@/types";
@@ -145,6 +146,16 @@ export const categories: Category[] = [
     description: {
       al: "Produkte higjiene të përditshme për gruan.",
       en: "Everyday hygiene products for women.",
+    },
+  },
+  {
+    slug: "intimate-care",
+    icon: Heart,
+    accent: "rose",
+    title: { al: "Kujdes intim", en: "Intimate Care" },
+    description: {
+      al: "Mbrojtje dhe kujdes intim me diskrecion dhe cilësi.",
+      en: "Intimate protection and care, with discretion and quality.",
     },
   },
   {

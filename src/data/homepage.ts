@@ -70,14 +70,6 @@ export const homeSections: HomeSection[] = [
     limit: 10,
   },
   {
-    id: "skin-hair",
-    titleKey: "home_skin_hair",
-    subtitleKey: "home_skin_hair_sub",
-    select: { by: "categories", slugs: ["skincare", "haircare"] },
-    filter: { kind: "group", id: "skin-hair", slugs: ["skincare", "haircare"] },
-    limit: 10,
-  },
-  {
     id: "vitamins-health",
     titleKey: "home_vitamins_health",
     subtitleKey: "home_vitamins_health_sub",

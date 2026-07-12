@@ -5556,10 +5556,10 @@
     "slug": "shemo-7287-tampon-shpuze-per-veshe-a4",
     "name": "Tampon shpuze per veshe A4",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5585,17 +5585,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-2065",
     "slug": "shemo-2065-tampon-per-vesh-me-shpuze-a10",
     "name": "Tampon per vesh me shpuze A10",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5622,17 +5622,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-6001",
     "slug": "shemo-6001-tampon-silikoni-per-veshe-a4",
     "name": "Tampon silikoni per veshe A4",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5658,17 +5658,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-6006",
     "slug": "shemo-6006-tampon-shpuze-me-lidhese-per-veshe-a2",
     "name": "Tampon shpuze me lidhese per veshe A2",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5695,17 +5695,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-6002",
     "slug": "shemo-6002-tampon-gome-me-lidhese-per-veshe-a2",
     "name": "Tampon gome me lidhese per veshe A2",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5732,17 +5732,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-6041",
     "slug": "shemo-6041-shkopinje-per-veshe-a200",
     "name": "Shkopinje per veshe A200",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5768,17 +5768,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-6040",
     "slug": "shemo-6040-shkopinje-per-vesh-a100",
     "name": "Shkopinje per vesh A100",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5804,17 +5804,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7679",
     "slug": "shemo-7679-cien-shkopinje-per-vesh-a300",
     "name": "Cien Shkopinje per Vesh A300",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5841,17 +5841,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1489",
     "slug": "shemo-1489-shkopinj-per-vesh-a300-elina",
     "name": "Shkopinj Per Vesh A300 ( ELINA )",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5878,17 +5878,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8620",
     "slug": "shemo-8620-qarshaf-rezistent-ndaj-lageshtise-160x200cm-a2",
     "name": "Qarshaf rezistent ndaj lageshtise 160X200cm A2",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5915,17 +5915,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8610",
     "slug": "shemo-8610-qarshaf-rezistent-ndaj-lageshtise-90x190cm-a1",
     "name": "Qarshaf rezistent ndaj lageshtise 90X190cm A1",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5952,17 +5952,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4960 4979 4534",
     "slug": "shemo-4960 4979 4534-kapela-mbrojtese-e-bardhe-e-gjelbert-e-kaltert-a10",
     "name": "Kapela mbrojtese e bardhe, e gjelbert, e kaltert (A100)",
     "brand": "Pajisje per vesh",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -5990,7 +5990,7 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-9484",
@@ -11107,10 +11107,10 @@
     "slug": "shemo-7468-pflaster-strips-4-forma-waserbweisend-a100-figo",
     "name": "Pflaster-Strips 4 Forma Waserbweisend A100 ( FIGO )",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11137,17 +11137,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1469",
     "slug": "shemo-1469-pflaster-strips-4-forma-a20",
     "name": "Pflaster strips 4 forma A20",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11173,17 +11173,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7426",
     "slug": "shemo-7426-pflaster-strips-transparent-4-forma-a20",
     "name": "Pflaster strips transparent 4 Forma A20",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11210,17 +11210,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7424",
     "slug": "shemo-7424-flaster-per-femije-a10",
     "name": "Flaster per femije A10",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11246,17 +11246,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7425",
     "slug": "shemo-7425-flaster-sensitiv-a20",
     "name": "Flaster sensitiv A20",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11281,17 +11281,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7423",
     "slug": "shemo-7423-flaster-silber-a10",
     "name": "Flaster silber A10",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11316,17 +11316,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4126",
     "slug": "shemo-4126-pflaster-strips-transparent-2-forma-a10",
     "name": "Pflaster-strips transparent 2 forma A10",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11353,17 +11353,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-7269",
     "slug": "shemo-7269-fllaster-per-kallo-a5",
     "name": "Fllaster per kallo A5",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11388,17 +11388,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4319",
     "slug": "shemo-4319-silikon-per-mbrojtjen-e-thembres-1-pale",
     "name": "Silikon per mbrojtjen e thembres (1 pale)",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11425,17 +11425,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4320",
     "slug": "shemo-4320-silikon-per-kepuce-1-pale",
     "name": "Silikon per kepuce (1 pale)",
     "brand": "Figo",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11461,17 +11461,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1161",
     "slug": "shemo-1161-flaster-syri-per-femije-5-7x7-3-cm-a25",
     "name": "Flaster syri per femije 5.7x7.3 cm A25",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11499,17 +11499,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1162",
     "slug": "shemo-1162-flaster-syri-per-te-rritur-5-8x8-3cm-a25",
     "name": "Flaster syri per te rritur 5.8x8.3cm A25",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11538,17 +11538,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1162A",
     "slug": "shemo-1162A-flaster-syri-per-te-rritur-6-5x9-5cm-a50",
     "name": "Flaster syri per te rritur 6.5x9.5cm A50",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11577,17 +11577,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1192",
     "slug": "shemo-1192-flaster-syri-me-dizajne-per-femije-5-7x7-3cm-a50",
     "name": "Flaster syri me dizajne per femije 5.7x7.3cm A50",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11617,17 +11617,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1150",
     "slug": "shemo-1150-flaster-antireumatik",
     "name": "Flaster antireumatik",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11651,17 +11651,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0450",
     "slug": "shemo-0450-flaster-transparent-per-fluska-te-kembes-a5",
     "name": "Flaster transparent per fluska te kembes A5",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11688,17 +11688,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1552",
     "slug": "shemo-1552-stand-me-3-lloje-te-flasterave-a72",
     "name": "Stand me 3 lloje te flasterave A72",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11724,17 +11724,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1116",
     "slug": "shemo-1116-flaster-cansin-plast-klasik-a30x10",
     "name": "Flaster cansin plast klasik A30x10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11760,17 +11760,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1115",
     "slug": "shemo-1115-flaster-cansin-band-plus-a30x10",
     "name": "Flaster cansin band plus A30x10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11796,17 +11796,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1140",
     "slug": "shemo-1140-flaster-a30x10",
     "name": "Flaster A30x10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11830,17 +11830,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1160",
     "slug": "shemo-1160-flaster-me-dizajne-per-femije-a30",
     "name": "Flaster me dizajne per femije A30",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11867,17 +11867,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1055",
     "slug": "shemo-1055-flaster-rezitues-ndaj-ujit-a10",
     "name": "Flaster rezitues ndaj ujit A10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11904,17 +11904,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1137",
     "slug": "shemo-1137-flaster-nje-formesh-a20",
     "name": "Flaster nje formesh A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11940,17 +11940,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1132",
     "slug": "shemo-1132-flaster-kater-formesh-a20",
     "name": "Flaster kater formesh A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -11976,17 +11976,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1134",
     "slug": "shemo-1134-flaster-per-ndaljen-e-gjakut-a10",
     "name": "Flaster per ndaljen e gjakut A10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12013,17 +12013,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1182",
     "slug": "shemo-1182-flaster-me-dizajne-a20",
     "name": "Flaster me dizajne A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12048,17 +12048,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1131",
     "slug": "shemo-1131-flaster-me-aloe-vera-a20",
     "name": "Flaster me aloe vera A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12084,17 +12084,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1130",
     "slug": "shemo-1130-flaster-me-efekt-inhalues-a3",
     "name": "Flaster me efekt inhalues A3",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12119,17 +12119,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1163",
     "slug": "shemo-1163-flaster-kunder-mushkonjave-a18",
     "name": "Flaster kunder mushkonjave A18",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12155,17 +12155,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1187",
     "slug": "shemo-1187-flaster-transparent-a20",
     "name": "Flaster transparent A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12190,17 +12190,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1188",
     "slug": "shemo-1188-fllaster-transparent-rrethor-a20",
     "name": "Fllaster transparent rrethor A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12226,17 +12226,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1193",
     "slug": "shemo-1193-flaster-per-ethe-a10",
     "name": "Flaster per ethe A10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12262,17 +12262,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1550",
     "slug": "shemo-1550-fllaster-per-akne-a20",
     "name": "Fllaster per akne A20",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12298,17 +12298,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1139",
     "slug": "shemo-1139-flaster-suture-strip-a8",
     "name": "Flaster suture strip A8",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12333,17 +12333,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1400",
     "slug": "shemo-1400-flaster-per-lehtesimin-e-frymarrjes-a10",
     "name": "Flaster per lehtesimin e frymarrjes A10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12370,17 +12370,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1135",
     "slug": "shemo-1135-flaster-ekonomik-per-prerje-a2",
     "name": "Flaster ekonomik (per prerje) A2",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12406,17 +12406,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1117",
     "slug": "shemo-1117-fllaster-per-kanille-6x8cm-a50",
     "name": "Fllaster per kanille 6x8cm A50",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12443,17 +12443,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1136",
     "slug": "shemo-1136-flaster-per-lythi-a6",
     "name": "Flaster per lythi A6",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12478,17 +12478,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1133",
     "slug": "shemo-1133-flaster-rrethor-a100",
     "name": "Flaster rrethor A100",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12513,17 +12513,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1168",
     "slug": "shemo-1168-kinesiology-sports-5cmx5m",
     "name": "Kinesiology sports 5cmx5m",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12548,17 +12548,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1167",
     "slug": "shemo-1167-leukoplast-sport-a1-10mx3-8cm-a-b-c-d-e",
     "name": "Leukoplast sport A1 10mx3.8cm A, B, C, D, E",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12584,17 +12584,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1107",
     "slug": "shemo-1107-nose-support-tape-3-5-a8-cansin",
     "name": "Nose Support Tape 3+5 A8 (Cansin)",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12619,17 +12619,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-9462 A,B,C,D,E,F,G",
     "slug": "shemo-9462 A,B,C,D,E,F,G-duratape-kinesiyolog-tape-5cmx5m",
     "name": "Duratape kinesiyolog tape 5cmx5m",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12655,17 +12655,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1100",
     "slug": "shemo-1100-leukoplast-me-vrima-5mx5cm",
     "name": "Leukoplast me vrima 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12690,17 +12690,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1101",
     "slug": "shemo-1101-leukoplast-mendafshi-5mx5cm",
     "name": "Leukoplast mendafshi 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12725,17 +12725,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1102",
     "slug": "shemo-1102-leukoplast-mendafshi-5mx2-5cm",
     "name": "Leukoplast mendafshi 5mx2.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12761,17 +12761,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1103",
     "slug": "shemo-1103-leukoplast-pambuku-5mx5cm",
     "name": "Leukoplast pambuku 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12796,17 +12796,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1104",
     "slug": "shemo-1104-leukoplast-pambuku-5mx2-5cm",
     "name": "Leukoplast pambuku 5mx2.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12832,17 +12832,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1105",
     "slug": "shemo-1105-leukoplast-letre-5mx5cm",
     "name": "Leukoplast letre 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12867,17 +12867,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1106",
     "slug": "shemo-1106-leukoplast-letre-5mx2-5cm",
     "name": "Leukoplast letre 5mx2.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12903,17 +12903,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1108",
     "slug": "shemo-1108-leukoplast-transparent-5mx5cm",
     "name": "Leukoplast transparent 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12938,17 +12938,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1109",
     "slug": "shemo-1109-leukoplast-transparent-5mx2-5cm",
     "name": "Leukoplast transparent 5mx2.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -12974,17 +12974,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1121",
     "slug": "shemo-1121-pelhure-vetengjitese-fix-5mx5cm",
     "name": "Pelhure vetengjitese fix 5mx5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13010,17 +13010,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1120",
     "slug": "shemo-1120-pelhure-vetengjitese-fix-5mx10cm",
     "name": "Pelhure vetengjitese fix 5mx10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13046,17 +13046,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1122",
     "slug": "shemo-1122-pelhure-vetengjites-fix-10mx10cm",
     "name": "Pelhure vetengjites fix 10mx10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13082,17 +13082,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1191",
     "slug": "shemo-1191-gaz-komprese-sterile-10x10-8plies-a2",
     "name": "Gaz komprese sterile 10X10 / 8plies A2",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13119,17 +13119,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8319",
     "slug": "shemo-8319-gaza-sterile-a25-9x30",
     "name": "Gaza sterile A25 9x30",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13155,17 +13155,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8318",
     "slug": "shemo-8318-gaza-sterile-a25-9x25cm",
     "name": "Gaza sterile A25 9x25cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13191,17 +13191,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8324",
     "slug": "shemo-8324-gaza-sterile-a25-9x35cm",
     "name": "Gaza sterile A25 9x35cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13227,17 +13227,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8305",
     "slug": "shemo-8305-gaza-sterile-a25-9cmx15cm",
     "name": "Gaza sterile A25 9cmx15cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13263,17 +13263,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8308",
     "slug": "shemo-8308-gaza-sterile-a25-9x20cm",
     "name": "Gaza sterile A25 9x20cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13299,17 +13299,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1170",
     "slug": "shemo-1170-gaza-sterile-a5-9x10cm",
     "name": "Gaza sterile A5 9x10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13334,17 +13334,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1171",
     "slug": "shemo-1171-gaza-sterile-a10-5x7-5cm",
     "name": "Gaza sterile A10 5x7.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13371,17 +13371,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1173",
     "slug": "shemo-1173-gaza-sterile-a25-9x10cm",
     "name": "Gaza sterile A25 9x10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13407,17 +13407,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1169",
     "slug": "shemo-1169-gaza-sterile-a50-9x5cm",
     "name": "Gaza sterile A50 9x5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13443,17 +13443,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1180",
     "slug": "shemo-1180-fasho-kirurgjikale-a25-9x15cm",
     "name": "Fasho kirurgjikale A25 9x15cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13479,17 +13479,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1174",
     "slug": "shemo-1174-fasho-kirurgjikale-a10-9x5cm",
     "name": "Fasho kirurgjikale A10 9x5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13515,17 +13515,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1181",
     "slug": "shemo-1181-fasho-kirurgjikale-a25-9x10cm",
     "name": "Fasho kirurgjikale A25 9x10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13551,17 +13551,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1178",
     "slug": "shemo-1178-fasho-kirurgjikale-a5-9x35cm",
     "name": "Fasho kirurgjikale A5 9x35cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13586,17 +13586,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1177",
     "slug": "shemo-1177-fasho-kirurgjikale-a5-9x30cm",
     "name": "Fasho kirurgjikale A5 9x30cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13621,17 +13621,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1176",
     "slug": "shemo-1176-fasho-kirurgjikale-a5-9x25cm",
     "name": "Fasho kirurgjikale A5 9x25cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13656,17 +13656,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1184",
     "slug": "shemo-1184-fasho-kirurgjikale-a25-9x30cm",
     "name": "Fasho kirurgjikale A25 9x30cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13692,17 +13692,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1183",
     "slug": "shemo-1183-fasho-kirurgjikale-a25-9x25cm",
     "name": "Fasho kirurgjikale A25 9x25cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13728,17 +13728,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1179",
     "slug": "shemo-1179-fasho-kirurgjikale-a25-9x35cm",
     "name": "Fasho kirurgjikale A25 9x35cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13764,17 +13764,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1185",
     "slug": "shemo-1185-fasho-kirurgjikale-a50-5x7-5cm",
     "name": "Fasho kirurgjikale A50 5x7.5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13801,17 +13801,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1175",
     "slug": "shemo-1175-fasho-kirurgjikale-a5-9x10cm",
     "name": "Fasho kirurgjikale A5 9x10cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13836,17 +13836,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1172",
     "slug": "shemo-1172-fasho-kirurgjikale-5x7-5cm-a10",
     "name": "Fasho kirurgjikale 5x7.5cm A10",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13873,17 +13873,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1186",
     "slug": "shemo-1186-fasho-kirurgjikale-a50-9x5cm",
     "name": "Fasho kirurgjikale A50 9x5cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13909,17 +13909,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1146",
     "slug": "shemo-1146-fashe-e-thjeshte-10cmx4m-no-624",
     "name": "Fashe e thjeshte 10cmX4m / NO:624",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13945,17 +13945,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1151",
     "slug": "shemo-1151-fashe-e-thjeshte-5cmx4m-no-620",
     "name": "Fashe e thjeshte  5cmX4m / NO:620",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -13981,17 +13981,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1145",
     "slug": "shemo-1145-fashe-e-thjeshte-15cmx4m-no-626",
     "name": "Fashe e thjeshte 15cmX4m / NO:626",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14017,17 +14017,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1147",
     "slug": "shemo-1147-fashe-e-thjeshte-15cmx2m-no-641",
     "name": "Fashe e thjeshte 15cmX2m / NO:641",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14053,17 +14053,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1148",
     "slug": "shemo-1148-fashe-e-thjeshte-10cmx1-5m-no-636",
     "name": "Fashe e thjeshte 10cmX1.5m / NO:636",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14089,17 +14089,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1141",
     "slug": "shemo-1141-fashe-gjysem-elastike-ideale-5cmx4-5m-no-610",
     "name": "Fashe gjysem elastike ideale 5cmX4.5m / NO:610",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14127,17 +14127,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1142",
     "slug": "shemo-1142-fashe-gjysem-elastike-ideale-8cmx4-5m-no-611",
     "name": "Fashe gjysem  elastike ideale 8cmX4.5m / NO:611",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14165,17 +14165,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1143",
     "slug": "shemo-1143-fashe-gjysem-elastike-ideale-10cmx4-5m-no-612",
     "name": "Fashe gjysem elastike ideale 10cmX4.5m / NO:612",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14203,17 +14203,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1144",
     "slug": "shemo-1144-fashe-gjysem-elastike-ideale-12cmx4-5m-no-613",
     "name": "Fashe gjysem elastike ideale 12cmX4.5m / NO:613",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14241,17 +14241,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1149",
     "slug": "shemo-1149-fashe-gjysem-elastike-ideale-15cmx4-5m-no-614",
     "name": "Fashe gjysem elastike ideale 15cmX4.5m / NO:614",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14279,17 +14279,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1154",
     "slug": "shemo-1154-fashe-gjysem-elastike-ideale-20cmx4-5m-no-615",
     "name": "Fashe gjysem elastike ideale 20cmX4.5m / NO:615",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14317,17 +14317,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1203",
     "slug": "shemo-1203-fashe-elastike-8cmx150cm-no-601",
     "name": "Fashe elastike 8cmX150cm / NO:601",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14353,17 +14353,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1202",
     "slug": "shemo-1202-fashe-elastike-10cmx150cm",
     "name": "Fashe elastike 10cmx150cm",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14388,17 +14388,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1201",
     "slug": "shemo-1201-fashe-elastike-15cmx150cm-no-604",
     "name": "Fashe  elastike 15cmX150cm / NO:604",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14424,17 +14424,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8233",
     "slug": "shemo-8233-fashe-vetengjitese-2-5cmx4-5mm-no-660",
     "name": "Fashe vetengjitese 2.5cmX4.5Mm/ NO:660",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14461,17 +14461,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8240",
     "slug": "shemo-8240-fashe-vetengjitese-5cmx4-5m-no-661",
     "name": "Fashe vetengjitese 5cmX4.5m/ NO:661",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14497,17 +14497,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8241",
     "slug": "shemo-8241-fashe-vetengjitese-7-5cmx4-5m-no-662",
     "name": "Fashe vetengjitese 7.5cmX4.5m / NO:662",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14533,17 +14533,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-8304",
     "slug": "shemo-8304-fashe-vetengjitese-10cmx4-5m-no-663",
     "name": "Fashe vetengjitese 10cmX4.5m / NO:663",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14569,17 +14569,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1560",
     "slug": "shemo-1560-cante-e-ndihmes-se-pare",
     "name": "Cante e ndihmes se pare",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14604,17 +14604,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1189",
     "slug": "shemo-1189-kuti-e-vogel-per-ndihme-te-pare",
     "name": "Kuti e vogel per ndihme te pare",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "tube",
@@ -14641,17 +14641,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-1720",
     "slug": "shemo-1720-silar-patches-3-patch",
     "name": "Silar patches 3 patch",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14676,17 +14676,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-2136",
     "slug": "shemo-2136-fasho-ngrohese-per-dhimbje-menstruale",
     "name": "Fasho ngrohese per dhimbje menstruale",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14713,17 +14713,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-2137",
     "slug": "shemo-2137-stand-me-6-lloje-te-fllasterave-ref-112-117-a120",
     "name": "Stand me 6 lloje te fllasterave Ref 112-117 (A120)",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "box",
@@ -14752,17 +14752,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-2138",
     "slug": "shemo-2138-balsam-ngrohes-0-35ml-no203-h",
     "name": "Balsam ngrohes 0.35ml (NO203-H)",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "bottle",
@@ -14789,17 +14789,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-2139",
     "slug": "shemo-2139-balsam-ftohes-0-35ml-no-c",
     "name": "Balsam ftohes 0.35ml (NO-C)",
     "brand": "Cansin",
-    "category": "health-care",
+    "category": "medical-devices",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Pajisje mjekësore",
+      "en": "Medical Devices"
     },
     "visual": {
       "form": "bottle",
@@ -14825,7 +14825,7 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4400",
@@ -15268,10 +15268,10 @@
     "slug": "shemo-4001-love-classic-a24",
     "name": "Love+Classic A24",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15296,17 +15296,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4002",
     "slug": "shemo-4002-love-sensation-a24",
     "name": "Love+Sensation A24",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15331,17 +15331,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4003",
     "slug": "shemo-4003-love-orange-a24",
     "name": "Love+Orange A24",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15366,17 +15366,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0480",
     "slug": "shemo-0480-dolphi-3in1",
     "name": "Dolphi 3in1",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15400,17 +15400,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0481",
     "slug": "shemo-0481-dolphi-anatomic-ultra-thin",
     "name": "Dolphi Anatomic Ultra Thin",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15436,17 +15436,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0482",
     "slug": "shemo-0482-dolphi-classic",
     "name": "Dolphi Classic",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15470,17 +15470,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0483",
     "slug": "shemo-0483-dolphi-ribbed",
     "name": "Dolphi Ribbed",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15504,17 +15504,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-0484",
     "slug": "shemo-0484-dolphi-ultra-thin",
     "name": "Dolphi Ultra Thin",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15539,17 +15539,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4063",
     "slug": "shemo-4063-lubricant-gel-strawberry-125ml",
     "name": "Lubricant gel strawberry 125ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15576,17 +15576,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4076",
     "slug": "shemo-4076-lubricant-gel-chocolate-125ml",
     "name": "Lubricant gel chocolate 125ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15613,17 +15613,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4075",
     "slug": "shemo-4075-vaj-masazhi-intim-250ml",
     "name": "Vaj masazhi intim 250ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15650,17 +15650,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4039",
     "slug": "shemo-4039-lubricant-gel-chocolate-100ml",
     "name": "Lubricant gel chocolate 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15687,17 +15687,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4070",
     "slug": "shemo-4070-lubricant-gel-strawberry-100ml",
     "name": "Lubricant gel strawberry 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15724,17 +15724,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4043",
     "slug": "shemo-4043-lubricant-gel-delay-50ml",
     "name": "Lubricant gel delay 50ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15761,17 +15761,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4048",
     "slug": "shemo-4048-lubricant-gel-erection-50ml",
     "name": "Lubricant gel erection 50ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15798,17 +15798,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4042",
     "slug": "shemo-4042-lubricant-gel-warming-50ml",
     "name": "Lubricant gel warming 50ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15835,17 +15835,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4037",
     "slug": "shemo-4037-dolphi-lubricant-ultra-comfort-100ml",
     "name": "Dolphi lubricant ultra comfort 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15873,17 +15873,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4035",
     "slug": "shemo-4035-dolphi-lubricant-light-mint-100ml",
     "name": "Dolphi lubricant light mint 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15911,17 +15911,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4034",
     "slug": "shemo-4034-dolphi-lubricant-sweet-pleasure-100ml",
     "name": "Dolphi lubricant sweet pleasure 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -15949,17 +15949,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-4168",
     "slug": "shemo-4168-lubricant-gel-sensual-touch-100ml",
     "name": "Lubricant gel Sensual Touch 100ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -15987,17 +15987,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-5111",
     "slug": "shemo-5111-orgasm-gel-wipes-12x5ml",
     "name": "Orgasm gel-wipes  12X5ml",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "tube",
@@ -16024,17 +16024,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-5223",
     "slug": "shemo-5223-ginseng-chocolate-36hours-gold-ladies-24gr",
     "name": "Ginseng chocolate 36hours gold-ladies 24gr",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -16062,17 +16062,17 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-5222",
     "slug": "shemo-5222-ginseng-chocolate-36hours-gold-man-24gr",
     "name": "Ginseng chocolate 36hours gold-man 24gr",
     "brand": "Love,Hitman,Dolphi",
-    "category": "health-care",
+    "category": "intimate-care",
     "categoryLabel": {
-      "al": "Kujdes shëndetësor",
-      "en": "Health Care"
+      "al": "Kujdes intim",
+      "en": "Intimate Care"
     },
     "visual": {
       "form": "box",
@@ -16100,7 +16100,7 @@
     "additionalImages": [],
     "importedAt": "2026-07-09T19:31:05.551Z",
     "createdAt": "2026-07-09T19:31:05.551Z",
-    "updatedAt": "2026-07-09T19:31:05.551Z"
+    "updatedAt": "2026-07-12T21:53:34.368Z"
   },
   {
     "id": "shemo-5135",

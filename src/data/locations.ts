@@ -2,10 +2,11 @@ import type { Location } from "@/types";
 
 /**
  * Real Jara Pharmacy branches, taken from the official branch list
- * ("addres Jara.xlsx", ALBTRIX export). Ten customer-facing pharmacies — nine
- * in the Prizren area and one in Xërxë (Rahovec). The internal DEPO (warehouse)
- * is intentionally not listed. `mapsQuery` drives a resilient Google Maps
- * search; new branches can be appended without any refactor.
+ * (jara_pharmacy_locations_prizren.xlsx). Twelve locations in total: eleven
+ * customer-facing pharmacies (Nr. 0–10) — mostly in the Prizren area, one in
+ * Xërxë (Rahovec) — plus the JARA Pharmacy DEPO (warehouse). Addresses and map
+ * queries are taken verbatim from that export. `mapsQuery` drives a resilient
+ * Google Maps search; new branches can be appended without any refactor.
  */
 export const locations: Location[] = [
   {
@@ -13,20 +14,32 @@ export const locations: Location[] = [
     branch: 3,
     name: "Rr. William Walker",
     city: "Prizren",
-    address: "Rr. William Walker Nr. 8, Prizren",
+    address: "Rr. William Walker H1/L1, Nr. 8, Prizren",
     alias: "Rr. William Vokeri",
-    mapsQuery: "Jara Pharmacy 3, Rr. William Walker, Prizren, Kosovo",
+    mapsQuery: "Jara Pharmacy 3, Rr. William Walker H1/L1, Prizren, Kosovo",
+    coords: { lat: 42.21069, lng: 20.7316 },
     phone: "+383 49 500 763",
     featured: true,
     note: { al: "Lokacioni kryesor", en: "Main location" },
+  },
+  {
+    id: "rr-jonit",
+    branch: 0,
+    name: "Rr. Jonit",
+    city: "Prizren",
+    address: "JONI PN, Rr. Jonit, Prizren",
+    mapsQuery: "Jara Pharmacy 0, JONI PN, Rr. Jonit, Prizren, Kosovo",
+    coords: { lat: 42.2142, lng: 20.7308 },
+    note: { al: "Lokacioni primar", en: "Primary location" },
   },
   {
     id: "galeria",
     branch: 1,
     name: "Galeria Shopping Mall",
     city: "Prizren",
-    address: "Galeria Shopping Mall, Prizren",
-    mapsQuery: "Jara Pharmacy 1, Galeria Shopping Mall, Prizren, Kosovo",
+    address: "Galeria Shopping Mall, Rruga Tirana, Prizren",
+    mapsQuery: "Jara Pharmacy 1, Galeria Shopping Mall, Rruga Tirana, Prizren, Kosovo",
+    coords: { lat: 42.21518, lng: 20.72505 },
     note: { al: "Brenda qendrës tregtare", en: "Inside the shopping mall" },
   },
   {
@@ -34,8 +47,9 @@ export const locations: Location[] = [
     branch: 2,
     name: "Bazhdarhane",
     city: "Prizren",
-    address: "Lagjja Bazhdarhane, Prizren",
-    mapsQuery: "Jara Pharmacy 2, Bazhdarhane, Prizren, Kosovo",
+    address: "Rr. Ahmet Prishtina Nr. 5, Bazhdarhane, Prizren",
+    mapsQuery: "Jara Pharmacy 2, Rr. Ahmet Prishtina 5, Bazhdarhane, Prizren, Kosovo",
+    coords: { lat: 42.2173, lng: 20.7428 },
     note: { al: "Lagjja Bazhdarhane", en: "Bazhdarhane neighborhood" },
   },
   {
@@ -43,8 +57,9 @@ export const locations: Location[] = [
     branch: 4,
     name: "Xërxë — QTX",
     city: "Xërxë, Rahovec",
-    address: "QTX, Xërxë, Rahovec",
-    mapsQuery: "Jara Pharmacy 4, QTX, Xërxë, Rahovec, Kosovo",
+    address: "QTX, Rr. Egzodi 99, Xërxë, Rahovec",
+    mapsQuery: "Jara Pharmacy 4, QTX, Rr. Egzodi 99, Xërxë, Rahovec, Kosovo",
+    coords: { lat: 42.35024, lng: 20.56768 },
     note: { al: "Qendra tregtare QTX", en: "QTX shopping center" },
   },
   {
@@ -52,8 +67,9 @@ export const locations: Location[] = [
     branch: 5,
     name: "Transiti — Landovicë",
     city: "Prizren",
-    address: "Transiti PN, Landovicë, Prizren",
-    mapsQuery: "Jara Pharmacy 5, Landovicë, Prizren, Kosovo",
+    address: "Transiti PN, Rruga Afrim Gashi, Landovicë, Prizren",
+    mapsQuery: "Jara Pharmacy 5, Transiti, Rruga Afrim Gashi, Landovicë, Prizren, Kosovo",
+    coords: { lat: 42.2053, lng: 20.6679 },
     note: { al: "Rruga e transitit", en: "On the transit road" },
   },
   {
@@ -61,8 +77,9 @@ export const locations: Location[] = [
     branch: 6,
     name: "Rr. Ukë Bytyqi",
     city: "Prizren",
-    address: "Rr. Ukë Bytyqi, Prizren",
+    address: "Rr. Ukë Bytyqi PN, Prizren",
     mapsQuery: "Jara Pharmacy 6, Rr. Ukë Bytyqi, Prizren, Kosovo",
+    coords: { lat: 42.2213, lng: 20.7439 },
   },
   {
     id: "qazim-berisha",
@@ -70,15 +87,17 @@ export const locations: Location[] = [
     name: "Rr. Qazim Berisha 41",
     city: "Prizren",
     address: "Rr. Qazim Berisha Nr. 41, Prizren",
-    mapsQuery: "Jara Pharmacy 7, Rr. Qazim Berisha, Prizren, Kosovo",
+    mapsQuery: "Jara Pharmacy 7, Rr. Qazim Berisha 41, Prizren, Kosovo",
+    coords: { lat: 42.21792, lng: 20.74636 },
   },
   {
     id: "kadri-zeka",
     branch: 8,
     name: "Rr. Kadri Zeka",
     city: "Prizren",
-    address: "Rr. Kadri Zeka pn, Prizren",
+    address: "Rr. Kadri Zeka PN, Prizren",
     mapsQuery: "Jara Pharmacy 8, Rr. Kadri Zeka, Prizren, Kosovo",
+    coords: { lat: 42.2198, lng: 20.7486 },
   },
   {
     id: "reshat-kajragliu",
@@ -86,7 +105,8 @@ export const locations: Location[] = [
     name: "Rr. Reshat Kajragliu 7",
     city: "Prizren",
     address: "Rr. Reshat Kajragliu Nr. 7, Prizren",
-    mapsQuery: "Jara Pharmacy 9, Rr. Reshat Kajragliu, Prizren, Kosovo",
+    mapsQuery: "Jara Pharmacy 9, Rr. Reshat Kajragliu 7, Prizren, Kosovo",
+    coords: { lat: 42.2139, lng: 20.7411 },
   },
   {
     id: "shuaip-spahiu",
@@ -94,6 +114,16 @@ export const locations: Location[] = [
     name: "Rr. Shuaip Spahiu 22",
     city: "Prizren",
     address: "Rr. Shuaip Spahiu Nr. 22, Prizren",
-    mapsQuery: "Jara Pharmacy 10, Rr. Shuaip Spahiu, Prizren, Kosovo",
+    mapsQuery: "Jara Pharmacy 10, Rr. Shuaip Spahiu 22, Prizren, Kosovo",
+    coords: { lat: 42.2089, lng: 20.7392 },
+  },
+  {
+    id: "depo",
+    name: "JARA Pharmacy Depo",
+    city: "Prizren",
+    address: "Rr. Kadri Zeka PN, Prizren",
+    mapsQuery: "Jara Pharmacy Depo, Rr. Kadri Zeka, Prizren, Kosovo",
+    coords: { lat: 42.2198, lng: 20.7486 },
+    note: { al: "Depo (magazina)", en: "Warehouse / depot" },
   },
 ];
