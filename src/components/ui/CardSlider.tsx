@@ -1,4 +1,4 @@
-import { Children, useCallback, useEffect, useRef, useState, type ReactNode } from "react";
+import { Children, useCallback, useEffect, useRef, useState, type CSSProperties, type ReactNode } from "react";
 import { motion } from "framer-motion";
 import { ChevronLeft, ChevronRight } from "lucide-react";
 import { cn } from "@/lib/cn";
@@ -31,6 +31,21 @@ interface CardSliderProps {
 
 /** ~1 card + peek on mobile, ~2 on small, fixed premium widths on md+. */
 const DEFAULT_ITEM_WIDTH = "w-[85%] sm:w-[46%] md:w-[300px] xl:w-[320px]";
+
+/**
+ * Soft edge fade for the scroll track. Opaque through the middle, fading to
+ * transparent at each edge so cards trail off gently instead of hitting a hard
+ * line. Each side is toggled via `--edge-l` / `--edge-r` (1 = fade, 0 = crisp):
+ * `calc(len * 0)` collapses that side, so an edge only fades when there is more
+ * content behind it. `--edge-fade` (set responsively in the class list) controls
+ * the fade width.
+ */
+const EDGE_MASK =
+  "linear-gradient(to right," +
+  " transparent 0," +
+  " #000 calc(var(--edge-fade) * var(--edge-l))," +
+  " #000 calc(100% - var(--edge-fade) * var(--edge-r))," +
+  " transparent 100%)";
 
 export function CardSlider({
   children,
@@ -99,8 +114,14 @@ export function CardSlider({
         initial="hidden"
         whileInView="show"
         viewport={viewportOnce}
-        style={{ WebkitOverflowScrolling: "touch" }}
-        className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth py-4 md:scroll-px-12 md:px-12"
+        style={{
+          WebkitOverflowScrolling: "touch",
+          ["--edge-l"]: atStart ? 0 : 1,
+          ["--edge-r"]: !scrollable || atEnd ? 0 : 1,
+          WebkitMaskImage: EDGE_MASK,
+          maskImage: EDGE_MASK,
+        } as CSSProperties}
+        className="no-scrollbar flex snap-x snap-mandatory gap-4 overflow-x-auto overscroll-x-contain scroll-smooth py-4 [--edge-fade:2rem] md:scroll-px-12 md:px-12 md:[--edge-fade:3rem]"
       >
         {Children.toArray(children).map((child, i) => (
           <li key={i} className={cn("flex snap-start shrink-0", itemClassName ?? DEFAULT_ITEM_WIDTH)}>
