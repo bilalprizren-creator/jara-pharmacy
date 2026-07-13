@@ -93,7 +93,9 @@ const CATEGORY_MAP = {
   Cansin: "medical-devices",
   "Elina Med": "health-care",
   "Love,Hitman,Dolphi": "intimate-care",
-  Qokollada: "vitamins",
+  // Despite the name, SHEMO's "Qokollada" section is potency chocolates/honeys
+  // and delay wipes — intimate care, not vitamins.
+  Qokollada: "intimate-care",
   Corega: "oral-care",
   NT41: "health-care",
   "Ivy Bear": "vitamins",

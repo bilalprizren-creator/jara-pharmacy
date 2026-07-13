@@ -97,7 +97,7 @@ const al = {
   home_popular: "Produktet më të kërkuara",
   home_popular_sub: "Më të njohurat dhe të rekomanduara nga ne.",
   home_vitamins_health: "Vitamina dhe shëndet",
-  home_vitamins_health_sub: "Suplemente, produkte natyrale dhe kujdes shëndetësor.",
+  home_vitamins_health_sub: "Vitamina, suplemente dhe produkte natyrale.",
   home_mother_baby: "Nënë dhe bebe",
   home_mother_baby_sub: "Kujdes i butë për nënat dhe të vegjlit.",
 
@@ -306,7 +306,7 @@ const en: CopyShape = {
   home_popular: "Most Popular Products",
   home_popular_sub: "Our most requested and recommended picks.",
   home_vitamins_health: "Vitamins & Health",
-  home_vitamins_health_sub: "Supplements, natural products and health care.",
+  home_vitamins_health_sub: "Vitamins, supplements and natural products.",
   home_mother_baby: "Mother & Baby",
   home_mother_baby_sub: "Gentle care for mothers and little ones.",
 

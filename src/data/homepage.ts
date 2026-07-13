@@ -73,11 +73,13 @@ export const homeSections: HomeSection[] = [
     id: "vitamins-health",
     titleKey: "home_vitamins_health",
     subtitleKey: "home_vitamins_health_sub",
-    select: { by: "categories", slugs: ["vitamins", "natural", "health-care"] },
+    // Deliberately excludes "health-care": its catalog order starts with lens
+    // cleaners / eye & ear drops, which crowded every slot of this row.
+    select: { by: "categories", slugs: ["vitamins", "natural"] },
     filter: {
       kind: "group",
       id: "vitamins-health",
-      slugs: ["vitamins", "natural", "health-care"],
+      slugs: ["vitamins", "natural"],
     },
     limit: 10,
   },
@@ -110,8 +112,12 @@ export function resolveHomeSections(
     } else if (section.select.by === "featured") {
       pool = all.filter((p) => p.featured);
     } else {
+      // Slug order doubles as display priority: earlier slugs fill the row's
+      // limited slots first (stable sort keeps catalog order within a slug).
       const slugs = section.select.slugs;
-      pool = all.filter((p) => slugs.includes(p.category));
+      pool = all
+        .filter((p) => slugs.includes(p.category))
+        .sort((a, b) => slugs.indexOf(a.category) - slugs.indexOf(b.category));
     }
 
     const items: Product[] = [];
