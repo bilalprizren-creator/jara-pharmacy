@@ -1,4 +1,10 @@
 User-agent: *
 Allow: /
 
+# Keep the Instagram-post crops out of Google's image pool so they aren't picked
+# as the search-result thumbnail. They still render on the site for visitors;
+# this only stops search engines from using them, so Google falls back to the
+# real pharmacy photos (hero / "Our pharmacy" section).
+Disallow: /social/
+
 Sitemap: https://jara-pharmacy.com/sitemap.xml
