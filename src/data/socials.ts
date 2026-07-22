@@ -2,80 +2,81 @@ import type { SocialPost } from "@/types";
 import { brand } from "./brand";
 
 /**
- * Real Instagram posts from the brand's feed (cropped from the actual posts).
- * Each keeps a generated `visual` as a fallback, but renders `image` when set.
+ * Real Instagram posts from the brand's feed (cropped square from the actual
+ * posts). Each keeps a generated `visual` as a fallback, but renders `image`
+ * when set. Captions/categories are hand-authored bilingual `{ al, en }`.
  */
 export const socialPosts: SocialPost[] = [
   {
-    id: "swiss-kids",
+    id: "beauty-gummy",
     handle: brand.instagramHandle,
-    likes: 134,
-    category: { al: "Fëmijë", en: "Kids" },
+    likes: 142,
+    category: { al: "Bukuri", en: "Beauty" },
     caption: {
-      al: "Shëndeti i fëmijëve fillon me kujdesin e duhur çdo ditë! 🌱💚",
-      en: "Children's health starts with the right daily care! 🌱💚",
+      al: "Bukuri që fillon nga brenda — kolagjen dhe biotinë për lëkurë, flokë e thonj. 💚",
+      en: "Beauty that starts from within — collagen and biotin for skin, hair and nails. 💚",
     },
-    visual: { form: "bottle", palette: "green", label: "SWISS ENERGY" },
-    image: "/social/s-swiss-kids.jpg",
+    visual: { form: "gummies", palette: "rose", label: "BEAUTY GUMMY" },
+    image: "/social/s-beauty-gummy.jpg",
   },
   {
-    id: "swiss-bones",
+    id: "liquid-collagen",
     handle: brand.instagramHandle,
-    likes: 121,
-    category: { al: "Fëmijë", en: "Kids" },
+    likes: 118,
+    category: { al: "Kolagjen", en: "Collagen" },
     caption: {
-      al: "Kocka të forta sot, një e ardhme më e shëndetshme nesër! 🦴✨",
-      en: "Strong bones today, a healthier tomorrow! 🦴✨",
+      al: "Kolagjen i lëngshëm 2500 mg me shije ananasi — bukuri dhe shëndet në çdo gotë. ✨",
+      en: "Liquid collagen 2500 mg with pineapple flavor — beauty and health in every shot. ✨",
     },
-    visual: { form: "bottle", palette: "green", label: "BONES & TEETH" },
-    image: "/social/s-swiss-bones.jpg",
+    visual: { form: "bottle", palette: "teal", label: "LIQUID COLLAGEN" },
+    image: "/social/s-liquid-collagen.jpg",
   },
   {
-    id: "alpenlor-lollipops",
+    id: "ivybears-mens-hair",
     handle: brand.instagramHandle,
-    likes: 88,
-    category: { al: "Fëmijë", en: "Kids" },
-    caption: {
-      al: "Shije natyrale, buzëqeshje të sinqerta dhe kujdes për çdo ditë! 🌿🍭💜",
-      en: "Natural taste, genuine smiles and everyday care! 🌿🍭💜",
-    },
-    visual: { form: "box", palette: "violet", label: "LOLLIPOPS" },
-    image: "/social/s-alpenlor-lollipops.jpg",
-  },
-  {
-    id: "alpenlor-lozenges",
-    handle: brand.instagramHandle,
-    likes: 97,
-    category: { al: "Shëndet", en: "Health" },
-    caption: {
-      al: "Lehtësim natyral për fytin tuaj — me 10 bimë dhe vitaminë C. 🌿💚",
-      en: "Natural relief for your throat — with 10 herbs and vitamin C. 🌿💚",
-    },
-    visual: { form: "box", palette: "green", label: "LOZENGES" },
-    image: "/social/s-alpenlor-lozenges.jpg",
-  },
-  {
-    id: "s1",
-    handle: brand.instagramHandle,
-    likes: 128,
+    likes: 156,
     category: { al: "Flokë", en: "Hair" },
     caption: {
-      al: "Flokët janë kurora e çdo mashkulli — kujdesu për ta çdo ditë. 💚",
-      en: "Hair is every man's crown — care for it every day. 💚",
+      al: "Flokë të shëndetshëm për meshkuj — forcë, vitalitet dhe rritje me IvyBears Men's Hair. 💪",
+      en: "Healthy hair for men — strength, vitality and growth with IvyBears Men's Hair. 💪",
     },
     visual: { form: "gummies", palette: "green", label: "MEN'S HAIR" },
-    image: "/social/s-mens-hair.jpg",
+    image: "/social/s-ivybears-mens-hair.jpg",
   },
   {
-    id: "s2",
+    id: "ivybears-womens-hair",
     handle: brand.instagramHandle,
-    likes: 95,
+    likes: 149,
     category: { al: "Flokë", en: "Hair" },
     caption: {
-      al: "Fuqia e rozmarinës për flokë të fortë, të dendur dhe plot jetë. 🌿",
-      en: "The power of rosemary for strong, full and vibrant hair. 🌿",
+      al: "Formula e avancuar për flokë të fortë dhe me shkëlqim — IvyBears Women's Hair. 💖",
+      en: "Advanced formula for strong, shiny hair — IvyBears Women's Hair. 💖",
     },
-    visual: { form: "bottle", palette: "green", label: "ROSEMARY" },
-    image: "/social/s-rosemary.jpg",
+    visual: { form: "gummies", palette: "rose", label: "WOMEN'S HAIR" },
+    image: "/social/s-ivybears-womens-hair.jpg",
+  },
+  {
+    id: "senti2-seawater",
+    handle: brand.instagramHandle,
+    likes: 103,
+    category: { al: "Shëndet", en: "Health" },
+    caption: {
+      al: "Pastron dhe hidraton hundën në mënyrë natyrale — ujë deti izotonik Senti2. 🌊",
+      en: "Naturally cleanses and hydrates the nose — Senti2 isotonic sea water. 🌊",
+    },
+    visual: { form: "spray", palette: "teal", label: "SEA WATER" },
+    image: "/social/s-senti2-seawater.jpg",
+  },
+  {
+    id: "senti2-lens",
+    handle: brand.instagramHandle,
+    likes: 96,
+    category: { al: "Shëndet", en: "Health" },
+    caption: {
+      al: "Pastrim i thellë për lentet tuaja — kujdes i përditshëm, i butë dhe i sigurt. 👁️",
+      en: "Deep cleaning for your lenses — gentle, safe everyday care. 👁️",
+    },
+    visual: { form: "bottle", palette: "teal", label: "LENS SOLUTION" },
+    image: "/social/s-senti2-lens.jpg",
   },
 ];
