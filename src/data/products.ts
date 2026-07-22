@@ -1,6 +1,11 @@
-import type { Product } from "@/types";
+import type { Bilingual, CategorySlug, Product } from "@/types";
 import { importedProducts } from "@/data/imported";
-import { featuredOverrideCodes } from "@/data/curationOverrides";
+import { categories } from "@/data/categories";
+import {
+  featuredOverrideCodes,
+  categorySectionRemap,
+  categoryCodeOverrides,
+} from "@/data/curationOverrides";
 
 /**
  * Real SHEMO products already represented above via a curated entry with the
@@ -416,11 +421,38 @@ const curatedProducts: Product[] = [
  * duplicate a curated entry's real photo are excluded; a small override list
  * promotes a couple of imported products to `featured` for the homepage.
  */
+/**
+ * Bilingual card-eyebrow label per category slug. Mirrors the category titles,
+ * except a few categories use a shorter label on product cards than their full
+ * overview title (keeps cards consistent with the curated products' labels).
+ */
+const CARD_LABELS: Partial<Record<CategorySlug, Bilingual>> = {
+  collagen: { al: "Kolagjen & bukuri", en: "Collagen & Beauty" },
+};
+const labelBySlug = Object.fromEntries(
+  categories.map((c) => [c.slug, CARD_LABELS[c.slug] ?? c.title]),
+) as Record<CategorySlug, Bilingual>;
+
+/**
+ * Re-home imported products the section-level import mis-categorized: a
+ * per-product override wins, otherwise a whole-section remap, otherwise the
+ * importer's original category. Also refreshes `categoryLabel` to match.
+ */
+function withCategoryFix(p: Product): Product {
+  const code = p.productCode ?? "";
+  const target =
+    categoryCodeOverrides[code] ??
+    (p.sourceCategory ? categorySectionRemap[p.sourceCategory] : undefined);
+  if (!target || target === p.category) return p;
+  return { ...p, category: target, categoryLabel: labelBySlug[target] };
+}
+
 export const products: Product[] = [
   ...curatedProducts,
   ...importedProducts
     .filter((p) => !CURATED_OVERRIDE_CODES.has(p.productCode ?? ""))
     .map((p) =>
       featuredOverrideCodes.has(p.productCode ?? "") ? { ...p, featured: true } : p,
-    ),
+    )
+    .map(withCategoryFix),
 ];

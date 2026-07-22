@@ -138,7 +138,9 @@ export function resolveHomeSections(
 export const overviewCategories: CategorySlug[] = [
   "skincare",
   "haircare",
+  "beauty",
   "vitamins",
+  "collagen",
   "mother-baby",
   "oral-care",
   "natural",

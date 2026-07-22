@@ -101,7 +101,9 @@ const CATEGORY_MAP = {
   "Ivy Bear": "vitamins",
   "Eferveta me brende te ndryshme": "vitamins",
   Haribo: "other",
-  "Multiplus suplement": "vitamins",
+  // Mixed grab-bag (baking soda, nasal sprays, oils, rubs); per-product
+  // exceptions are corrected at load time via src/data/curationOverrides.ts.
+  "Multiplus suplement": "health-care",
   Dermosept: "health-care",
   "Aqua dhe Dermosept": "health-care",
   Nutrifactor: "vitamins",
@@ -112,7 +114,9 @@ const CATEGORY_MAP = {
   Shurup: "vitamins",
   ATC: "natural",
   Orbita: "other",
-  Froika: "mother-baby",
+  // Froika is a dermocosmetics brand (skin/hair/oral); per-product exceptions
+  // are corrected at load time via src/data/curationOverrides.ts.
+  Froika: "skincare",
   "Bioblas dhe restorex": "haircare",
   "Kozmetika te ndryshme": "skincare",
   "Kozmetike becutan": "mother-baby",
