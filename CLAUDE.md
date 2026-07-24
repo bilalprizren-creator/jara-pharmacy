@@ -29,10 +29,15 @@ There are **no unit tests**. Verification = `npm run lint` (types) + `npm run bu
 
 ## Deploy
 
-- Hosted on **Vercel**. Live site: **https://jara-pharmacy.vercel.app** — this is
-  the real, canonical URL. Push to `main` → Vercel auto-deploys.
-- ⚠️ **Domain gotcha:** `jarapharmacy.com` currently redirects to the **wrong**
-  site (`shemofarm.com`). Do not treat `jarapharmacy.com` as the live app.
+- Hosted on **Vercel**. Live site: **https://jara-pharmacy.com** — use this URL.
+  Push to `main` → Vercel auto-deploys.
+- `jara-pharmacy.vercel.app` and `jara-pharmacy-biar1.vercel.app` are aliases of
+  the *same* production deployment, not separate sites — they serve byte-identical
+  files. Prefer the real domain everywhere (user's standing preference).
+- ⚠️ **Mind the hyphen:** `jarapharmacy.com` (without it) is a different domain
+  that redirects to the **wrong** site (`shemofarm.com`). Never use that spelling.
+- Branch/PR deployments get their own random preview URL and are *not* reachable
+  under `jara-pharmacy.com`. Only `main` reaches the live domain.
 - A broken TypeScript build breaks the Vercel deploy. A **pre-commit hook**
   (`.claude/settings.json`) runs `tsc --noEmit` and blocks the commit if it fails,
   so keep the build green.

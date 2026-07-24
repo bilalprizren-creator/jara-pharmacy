@@ -70,10 +70,11 @@ wurden):
   nur ob irgendeine Seite lädt. Falls die Vercel-MCP in dieser Session nicht
   verbunden ist, überspringe diesen Teilschritt einfach (kein Fehler, keine
   Rückfrage) und verlass dich auf den WebFetch-Check darunter.
-- Bestätige in jedem Fall zusätzlich per Aufruf von **`https://jara-pharmacy.vercel.app`**
-  (die einzige korrekte Live-URL), dass die Seite tatsächlich lädt.
-  **Verwende niemals `jarapharmacy.com`** — diese Domain zeigt fälschlich auf
-  `shemofarm.com` und sagt nichts über den echten Deploy-Status aus.
+- Bestätige in jedem Fall zusätzlich per Aufruf von **`https://jara-pharmacy.com`**
+  (der Live-Domain), dass die Seite tatsächlich lädt. Die `*.vercel.app`-Adressen
+  sind nur Aliase desselben Deployments — nimm die echte Domain.
+  **Achte auf den Bindestrich:** `jarapharmacy.com` ohne ihn ist eine andere
+  Domain, die fälschlich auf `shemofarm.com` zeigt.
 - Falls das Deployment fehlschlägt oder die Seite nicht erreichbar ist: das
   klar auf Deutsch melden, mit den wichtigsten Fehlerdetails.
 
@@ -81,4 +82,4 @@ wurden):
 
 Fasse am Ende in 2-4 kurzen Sätzen auf Deutsch zusammen: was gepusht wurde
 (oder dass nichts zu pushen war), ob der Build sauber war, ob die Live-Seite
-jetzt läuft, und der Link `https://jara-pharmacy.vercel.app`.
+jetzt läuft, und der Link `https://jara-pharmacy.com`.

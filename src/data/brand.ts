@@ -11,8 +11,10 @@ export const brand = {
   country: "Kosovo",
   slogan: { al: "Cilësi. Besim. Kujdes.", en: "Quality. Trust. Care." } satisfies Bilingual,
 
-  website: "jarapharmacy.com",
-  websiteUrl: "https://jarapharmacy.com",
+  // Mind the hyphen — jarapharmacy.com without it is a different domain that
+  // redirects to shemofarm.com. The live site is jara-pharmacy.com.
+  website: "jara-pharmacy.com",
+  websiteUrl: "https://jara-pharmacy.com",
   email: "jarapharm@gmail.com",
 
   instagramHandle: "jarapharmacy",
