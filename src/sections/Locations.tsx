@@ -10,6 +10,7 @@ import { Button } from "@/components/ui/Button";
 import { CardSlider } from "@/components/ui/CardSlider";
 import { LocationsMapSkeleton } from "@/components/locations/LocationsMapSkeleton";
 import { mapsHref, telHref } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
 const LocationsMap = lazy(() =>
@@ -54,7 +55,11 @@ export function Locations() {
               <dl className="mt-6 flex flex-wrap gap-x-8 gap-y-3 text-sm">
                 <div className="flex items-center gap-3">
                   <Phone className="h-4 w-4 text-lime" aria-hidden="true" />
-                  <a href={telHref(brand.phonePrimary.e164)} className="hover:text-lime">
+                  <a
+                    href={telHref(brand.phonePrimary.e164)}
+                    onClick={() => trackInquiry("call", "locations")}
+                    className="hover:text-lime"
+                  >
                     {brand.phonePrimary.label}
                   </a>
                 </div>

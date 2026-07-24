@@ -9,6 +9,7 @@ import { Button } from "@/components/ui/Button";
 import { ProductMedia } from "@/components/ui/ProductMedia";
 import { brand } from "@/data/brand";
 import { telHref, whatsappHref, productInquiryMessage } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 
 export function ProductModal() {
   const { locale, c, tr } = useI18n();
@@ -114,6 +115,7 @@ export function ProductModal() {
                 href={whatsappHref(productInquiryMessage(locale, product.name))}
                 target="_blank"
                 rel="noopener noreferrer"
+                onClick={() => trackInquiry("whatsapp", "product_modal", product)}
                 variant="whatsapp"
                 leftIcon={<MessageCircle className="h-4 w-4" aria-hidden="true" />}
               >
@@ -128,6 +130,7 @@ export function ProductModal() {
               </Button>
               <Button
                 href={telHref(brand.phonePrimary.e164)}
+                onClick={() => trackInquiry("call", "product_modal", product)}
                 variant="outline"
                 leftIcon={<Phone className="h-4 w-4" aria-hidden="true" />}
                 className="sm:col-span-2"

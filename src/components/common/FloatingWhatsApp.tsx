@@ -3,6 +3,7 @@ import { MessageCircle } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
 import { useInquiry } from "@/context/InquiryContext";
 import { whatsappHref, generalInquiryMessage, productInquiryMessage } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 import { useReducedMotion } from "@/hooks/useReducedMotion";
 
 /**
@@ -23,6 +24,7 @@ export function FloatingWhatsApp() {
       href={whatsappHref(message)}
       target="_blank"
       rel="noopener noreferrer"
+      onClick={() => trackInquiry("whatsapp", "floating_fab", inquiryProduct)}
       aria-label={c.fab_whatsapp}
       initial={{ opacity: 0, scale: 0.6 }}
       animate={{ opacity: 1, scale: 1 }}

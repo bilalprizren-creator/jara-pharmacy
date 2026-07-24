@@ -27,6 +27,7 @@ import {
   whatsappHref,
   contactInquiryMessage,
 } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
 const schema = z.object({
@@ -70,13 +71,17 @@ export function Contact() {
     clearInquiry();
   };
 
+  // `onClick` is set only on the phone rows — tapping a number here is a real
+  // inquiry, and nothing about it is observable once the dialer takes over.
+  const trackCall = () => trackInquiry("call", "contact");
+
   const contactItems = [
-    { icon: Phone, label: c.contact_phone, value: brand.phonePrimary.label, href: telHref(brand.phonePrimary.e164) },
-    { icon: Phone, label: c.contact_phone, value: brand.phoneSecondary.label, href: telHref(brand.phoneSecondary.e164) },
-    { icon: Mail, label: c.contact_email, value: brand.email, href: mailtoHref() },
-    { icon: Instagram, label: "Instagram", value: `@${brand.instagramHandle}`, href: instagramHref() },
-    { icon: MapPin, label: c.contact_address, value: brand.address.full, href: undefined },
-    { icon: Clock, label: c.contact_hours, value: c.contact_hours_value, href: undefined },
+    { icon: Phone, label: c.contact_phone, value: brand.phonePrimary.label, href: telHref(brand.phonePrimary.e164), onClick: trackCall },
+    { icon: Phone, label: c.contact_phone, value: brand.phoneSecondary.label, href: telHref(brand.phoneSecondary.e164), onClick: trackCall },
+    { icon: Mail, label: c.contact_email, value: brand.email, href: mailtoHref(), onClick: undefined },
+    { icon: Instagram, label: "Instagram", value: `@${brand.instagramHandle}`, href: instagramHref(), onClick: undefined },
+    { icon: MapPin, label: c.contact_address, value: brand.address.full, href: undefined, onClick: undefined },
+    { icon: Clock, label: c.contact_hours, value: c.contact_hours_value, href: undefined, onClick: undefined },
   ];
 
   return (
@@ -119,6 +124,7 @@ export function Contact() {
                   {item.href ? (
                     <a
                       href={item.href}
+                      onClick={item.onClick}
                       target={item.href.startsWith("http") ? "_blank" : undefined}
                       rel={item.href.startsWith("http") ? "noopener noreferrer" : undefined}
                       className="flex h-full items-center gap-3 rounded-xl border border-line bg-white p-4 shadow-soft transition hover:border-forest/30 hover:shadow-card"

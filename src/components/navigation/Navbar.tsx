@@ -10,6 +10,7 @@ import { useActiveSection } from "@/hooks/useActiveSection";
 import { useLockBodyScroll } from "@/hooks/useLockBodyScroll";
 import { scrollToId } from "@/lib/dom";
 import { telHref } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 import { cn } from "@/lib/cn";
 import { Container } from "@/components/ui/Container";
 import { BrandLogo } from "@/components/ui/BrandLogo";
@@ -113,6 +114,7 @@ export function Navbar() {
             <LanguageToggle tone={solid ? "light" : "onDark"} className="hidden sm:inline-flex" />
             <Button
               href={telHref(brand.phonePrimary.e164)}
+              onClick={() => trackInquiry("call", "navbar")}
               size="sm"
               variant={solid ? "primary" : "lime"}
               leftIcon={<Phone className="h-4 w-4" aria-hidden="true" />}
@@ -184,6 +186,7 @@ export function Navbar() {
                 <LanguageToggle />
                 <Button
                   href={telHref(brand.phonePrimary.e164)}
+                  onClick={() => trackInquiry("call", "navbar")}
                   size="sm"
                   leftIcon={<Phone className="h-4 w-4" aria-hidden="true" />}
                 >

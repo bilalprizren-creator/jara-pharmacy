@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { telHref, mailtoHref, instagramHref } from "@/lib/links";
+import { trackInquiry } from "@/lib/track";
 import { scrollToId } from "@/lib/dom";
 
 export function Footer() {
@@ -93,13 +94,21 @@ export function Footer() {
                 {brand.address.full}
               </li>
               <li>
-                <a href={telHref(brand.phonePrimary.e164)} className="flex items-center gap-2.5 hover:text-lime">
+                <a
+                  href={telHref(brand.phonePrimary.e164)}
+                  onClick={() => trackInquiry("call", "footer")}
+                  className="flex items-center gap-2.5 hover:text-lime"
+                >
                   <Phone className="h-4 w-4 shrink-0 text-lime" aria-hidden="true" />
                   {brand.phonePrimary.label}
                 </a>
               </li>
               <li>
-                <a href={telHref(brand.phoneSecondary.e164)} className="flex items-center gap-2.5 hover:text-lime">
+                <a
+                  href={telHref(brand.phoneSecondary.e164)}
+                  onClick={() => trackInquiry("call", "footer")}
+                  className="flex items-center gap-2.5 hover:text-lime"
+                >
                   <Phone className="h-4 w-4 shrink-0 text-lime" aria-hidden="true" />
                   {brand.phoneSecondary.label}
                 </a>
