@@ -24,6 +24,15 @@
     "tailwind-merge": "^2.5.5",
     "zod": "^3.23.8"
   },
+  "_browserslistComment": "Drives autoprefixer. Without an explicit list it defaults to roughly the two newest Safari releases, which strips -webkit-backdrop-filter — Safari only understands backdrop-filter unprefixed from 18 on, so the frosted header silently lost its blur on iOS 15-17. Safari/iOS 15 is the real floor anyway (aspect-ratio).",
+  "browserslist": [
+    "> 0.5%",
+    "last 2 versions",
+    "Firefox ESR",
+    "not dead",
+    "Safari >= 15",
+    "iOS >= 15"
+  ],
   "devDependencies": {
     "@types/leaflet": "^1.9.21",
     "@types/node": "^22.10.1",
