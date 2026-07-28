@@ -55,8 +55,10 @@ const SOURCE_URL = "https://shemo-katalog.com/";
 const REQUEST_TIMEOUT_MS = 30_000;
 const MAX_RETRIES = 3;
 const POLITE_DELAY_MS = 400; // between image downloads that hit the network
+// Identify ourselves by the domain we actually run: jara-pharmacy.com. The
+// hyphen-less jarapharmacy.com belongs to someone else entirely.
 const USER_AGENT =
-  "JaraPharmacyImporter/1.0 (+authorized catalog import for jarapharmacy.com)";
+  "JaraPharmacyImporter/1.0 (+authorized catalog import for jara-pharmacy.com)";
 
 // Defensive ceiling only — the known catalog is ~1,833 products. Prevents a
 // markup change (e.g. an accidental infinite match) from running away.

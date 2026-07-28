@@ -73,8 +73,8 @@ wurden):
 - Bestätige in jedem Fall zusätzlich per Aufruf von **`https://jara-pharmacy.com`**
   (der Live-Domain), dass die Seite tatsächlich lädt. Die `*.vercel.app`-Adressen
   sind nur Aliase desselben Deployments — nimm die echte Domain.
-  **Achte auf den Bindestrich:** `jarapharmacy.com` ohne ihn ist eine andere
-  Domain, die fälschlich auf `shemofarm.com` zeigt.
+  **Achte auf den Bindestrich:** `jarapharmacy.com` ohne ihn gehört **nicht
+  uns** — die Domain ist fremd und leitet auf `shemofarm.com` weiter.
 - Falls das Deployment fehlschlägt oder die Seite nicht erreichbar ist: das
   klar auf Deutsch melden, mit den wichtigsten Fehlerdetails.
 

@@ -34,8 +34,10 @@ There are **no unit tests**. Verification = `npm run lint` (types) + `npm run bu
 - `jara-pharmacy.vercel.app` and `jara-pharmacy-biar1.vercel.app` are aliases of
   the *same* production deployment, not separate sites — they serve byte-identical
   files. Prefer the real domain everywhere (user's standing preference).
-- ⚠️ **Mind the hyphen:** `jarapharmacy.com` (without it) is a different domain
-  that redirects to the **wrong** site (`shemofarm.com`). Never use that spelling.
+- ⚠️ **Mind the hyphen.** `jarapharmacy.com` (without it) is **not ours** — it
+  belongs to a third party and forwards to `shemofarm.com`. Never use that
+  spelling anywhere: not in links, not in copy, not in crawler user-agents. Our
+  domain is `jara-pharmacy.com`, with the hyphen.
 - Branch/PR deployments get their own random preview URL and are *not* reachable
   under `jara-pharmacy.com`. Only `main` reaches the live domain.
 - A broken TypeScript build breaks the Vercel deploy. A **pre-commit hook**
