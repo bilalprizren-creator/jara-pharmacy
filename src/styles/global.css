@@ -11,6 +11,10 @@
 /*  Google's own css2 output, so the browser still downloads latin-ext */
 /*  only when a page actually needs it. Albanian ë/ç live in `latin`   */
 /*  (U+0000-00FF) — that file is the one that must never be dropped.   */
+/*                                                                     */
+/*  These filenames are cached for a year (immutable) via vercel.json, */
+/*  since public/ files are not content-hashed the way /assets are.    */
+/*  So: replacing a font means renaming the file, not overwriting it.  */
 /* ------------------------------------------------------------------ */
 @font-face {
   font-family: "Inter";

@@ -2,7 +2,6 @@
   "$schema": "https://openapi.vercel.sh/vercel.json",
   "headers": [
     {
-      "//": "Vite hashes everything under /assets, so Vercel already serves those immutable. The self-hosted fonts live in public/ under stable names and therefore fall back to Vercel's cautious default (max-age=0, must-revalidate) — a conditional request on every single page load, for a file on the critical path that never changes. Cache them hard; if the font is ever replaced, change the filename.",
       "source": "/fonts/(.*)",
       "headers": [
         {
