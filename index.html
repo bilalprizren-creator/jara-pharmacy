@@ -60,12 +60,18 @@
     <meta name="twitter:image" content="https://jara-pharmacy.com/jara-pharmacy-social-preview.png" />
     <meta name="twitter:image:alt" content="Jara Pharmacy logo — Farmaci moderne në Prizren" />
 
-    <!-- Fonts: Inter (single primary UI font) with system fallback -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <!--
+      Fonts: Inter (single primary UI font) with system fallback, self-hosted
+      from /fonts. @font-face lives in src/styles/global.css. Preloading the
+      latin file starts it before the CSS is parsed — it is on the critical
+      path for every visitor, and it carries the Albanian ë/ç.
+    -->
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-      rel="stylesheet"
+      rel="preload"
+      href="/fonts/inter-latin.woff2"
+      as="font"
+      type="font/woff2"
+      crossorigin
     />
 
     <!-- Structured data: local pharmacy business -->
