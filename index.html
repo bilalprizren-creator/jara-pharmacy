@@ -22,6 +22,22 @@
       Lifted by src/components/common/SplashHandoff.tsx.
     ------------------------------------------------------------------- -->
     <style>
+      /* ----------------------------------------------------------------
+        Only `opacity` and `transform` are ever animated here. This runs
+        while the browser is parsing ~1.6 MB of JavaScript, so the main
+        thread is blocked; those two properties are handled by the
+        compositor and stay smooth through it. Anything else (stroke
+        dashes, clip-path, animated filters) would stutter on exactly the
+        mid-range phones the splash exists for.
+
+        Three layers, one job each, because a running animation outranks a
+        transition on the same property — entrance and exit cannot share an
+        element:
+          #jara-splash        backdrop + cross-fade
+          #jara-splash-stage  entrance and exit
+          #jara-splash-glow   the lime bloom
+          #jara-splash-mark   the slow idle breath
+      ---------------------------------------------------------------- */
       #jara-splash {
         position: fixed;
         inset: 0;
@@ -35,7 +51,7 @@
         background: #0a5c44;
         background: radial-gradient(120% 120% at 15% 10%, #0f7a57 0%, #0a5c44 42%, #073b2d 100%);
         opacity: 1;
-        transition: opacity 350ms ease;
+        transition: opacity 650ms cubic-bezier(0.4, 0, 0.2, 1);
         /* Escape hatch: if the bundle never runs (404, offline, parse error),
            uncover the page after 10s rather than blocking it forever. Timed
            with animation-DELAY on purpose — the global reduced-motion rule in
@@ -55,37 +71,94 @@
           pointer-events: none;
         }
       }
-      #jara-splash-mark {
-        width: clamp(76px, 20vw, 104px);
-        height: clamp(76px, 20vw, 104px);
-        filter: drop-shadow(0 0 26px rgba(183, 229, 50, 0.18));
-        animation:
-          jara-splash-in 520ms cubic-bezier(0.22, 1, 0.36, 1) both,
-          jara-splash-breathe 2400ms ease-in-out 620ms infinite;
+
+      /* Every rule below states the RESTING look in the rule itself and puts
+         the start of the motion in a `from` keyframe. The reduced-motion block
+         at the bottom switches animations off, which falls back to these base
+         values — not to the animation's last frame. Put `opacity: 0` in a base
+         rule and the splash would render empty for those visitors. */
+      #jara-splash-stage {
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        opacity: 1;
+        animation: jara-splash-rise 900ms cubic-bezier(0.16, 1, 0.3, 1) 120ms both;
       }
-      @keyframes jara-splash-in {
+      /* The exit is an animation replacing an animation. A transition here
+         would lose: jara-splash-rise still holds its final frame, and
+         animations outrank transitions in the cascade. */
+      #jara-splash[data-hiding] #jara-splash-stage {
+        animation: jara-splash-out 650ms cubic-bezier(0.4, 0, 0.2, 1) both;
+      }
+      @keyframes jara-splash-rise {
         from {
           opacity: 0;
-          transform: scale(0.84);
+          transform: translateY(6px) scale(0.92);
         }
         to {
           opacity: 1;
           transform: none;
         }
       }
+      /* Lifts away rather than cutting out, overlapping the Hero's entrance. */
+      @keyframes jara-splash-out {
+        from {
+          transform: none;
+        }
+        to {
+          transform: translateY(-8px) scale(1.06);
+        }
+      }
+
+      /* Soft lime bloom behind the mark. `inset` centres it at 2.6x the mark
+         without a centring translate, which would otherwise have to be
+         repeated in every keyframe of the scale below. */
+      #jara-splash-glow {
+        position: absolute;
+        inset: -80%;
+        border-radius: 50%;
+        pointer-events: none;
+        background: radial-gradient(circle, rgba(183, 229, 50, 0.28) 0%, rgba(183, 229, 50, 0) 70%);
+        opacity: 0.55;
+        animation: jara-splash-glow-in 1200ms cubic-bezier(0.16, 1, 0.3, 1) 60ms both;
+      }
+      @keyframes jara-splash-glow-in {
+        from {
+          opacity: 0;
+          transform: scale(0.7);
+        }
+        to {
+          opacity: 0.55;
+          transform: none;
+        }
+      }
+
+      #jara-splash-mark {
+        position: relative; /* paints above the glow */
+        width: clamp(76px, 20vw, 104px);
+        height: clamp(76px, 20vw, 104px);
+        filter: drop-shadow(0 0 22px rgba(183, 229, 50, 0.16));
+        animation: jara-splash-breathe 5200ms ease-in-out 1200ms infinite;
+      }
+      /* 1.8% of scale, no opacity: alive without the blink that reads as
+         "still loading". */
       @keyframes jara-splash-breathe {
         0%,
         100% {
-          opacity: 1;
+          transform: none;
         }
         50% {
-          opacity: 0.78;
+          transform: scale(1.018);
         }
       }
+
       /* Duplicated here because global.css arrives too late to cover the
          splash. Only the decoration stops — deliberately NOT
          `#jara-splash { animation: none }`, which would kill the bail-out. */
       @media (prefers-reduced-motion: reduce) {
+        #jara-splash-stage,
+        #jara-splash-glow,
         #jara-splash-mark {
           animation: none;
         }
@@ -209,46 +282,52 @@
       colour pair, copied as raw SVG because BrandLogo derives its mask id from
       React useId() and so cannot be rendered here. No wordmark: Inter is
       font-display:swap, so any text would paint in a fallback and then jump.
+
+      The empty glow div is decorative and comes first on purpose: both it and
+      the mark are positioned, so document order alone puts the mark on top.
     -->
     <div id="jara-splash" aria-hidden="true">
-      <svg
-        id="jara-splash-mark"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 120 120"
-        width="120"
-        height="120"
-        fill="none"
-      >
-        <defs>
-          <mask id="jara-splash-weave">
-            <rect width="120" height="120" fill="#fff" />
-            <circle cx="42" cy="42" r="12" fill="#000" />
-            <circle cx="78" cy="78" r="12" fill="#000" />
-          </mask>
-        </defs>
-        <rect
-          x="42"
-          y="18"
-          width="36"
-          height="84"
-          rx="18"
-          stroke="#B7E532"
-          stroke-width="13"
-          stroke-linejoin="round"
-        />
-        <g mask="url(#jara-splash-weave)">
+      <div id="jara-splash-stage">
+        <div id="jara-splash-glow"></div>
+        <svg
+          id="jara-splash-mark"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 120 120"
+          width="120"
+          height="120"
+          fill="none"
+        >
+          <defs>
+            <mask id="jara-splash-weave">
+              <rect width="120" height="120" fill="#fff" />
+              <circle cx="42" cy="42" r="12" fill="#000" />
+              <circle cx="78" cy="78" r="12" fill="#000" />
+            </mask>
+          </defs>
           <rect
-            x="18"
-            y="42"
-            width="84"
-            height="36"
+            x="42"
+            y="18"
+            width="36"
+            height="84"
             rx="18"
-            stroke="#FFFFFF"
+            stroke="#B7E532"
             stroke-width="13"
             stroke-linejoin="round"
           />
-        </g>
-      </svg>
+          <g mask="url(#jara-splash-weave)">
+            <rect
+              x="18"
+              y="42"
+              width="84"
+              height="36"
+              rx="18"
+              stroke="#FFFFFF"
+              stroke-width="13"
+              stroke-linejoin="round"
+            />
+          </g>
+        </svg>
+      </div>
     </div>
 
     <div id="root"></div>

@@ -17,11 +17,19 @@ import { prefersReducedMotion } from "@/lib/dom";
  * splash that comes and goes within ~150ms on a warm cache reads as a glitch —
  * worse than showing none. This only ever bites on fast desktop loads; on a
  * phone the bundle takes longer than this anyway.
+ *
+ * Sized to let the entrance in index.html finish and then rest for a beat:
+ * the mark's rise ends at 120 + 900 = 1020ms, the glow settles at 1260ms.
+ * Cutting away mid-animation is what made the old 700ms feel abrupt.
  */
-const MIN_VISIBLE_MS = 700;
+const MIN_VISIBLE_MS = 1600;
 
-/** Must stay >= the opacity transition on #jara-splash in index.html. */
-const FADE_OUT_MS = 400;
+/**
+ * Must stay >= the opacity transition on #jara-splash (650ms) and the
+ * jara-splash-out animation on the stage (650ms), or the element is removed
+ * while it is still visibly on screen.
+ */
+const FADE_OUT_MS = 700;
 
 /** StrictMode double-invokes effects in dev, so the teardown must be once-only. */
 let handedOff = false;
