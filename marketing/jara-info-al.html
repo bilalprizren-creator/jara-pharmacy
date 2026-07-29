@@ -1,0 +1,345 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jara Pharmacy — Farmacia juaj moderne në Prizren</title>
+<style>
+  :root{
+    --forest:#0A5C44; --deep:#073B2D; --emerald:#0F7A57;
+    --lime:#B7E532; --lime-soft:#DDF38A;
+    --rose:#E975A8; --soft:#F7FAF8; --cream:#F4F0E8;
+    --ink:#0F172A; --muted:#64748B; --line:#DCE7E1;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  html,body{margin:0; padding:0; background:#E8EDEA;
+    font-family:Inter,"Plus Jakarta Sans",Manrope,system-ui,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);}
+
+  .page{
+    position:relative; width:210mm; height:297mm; margin:0 auto; background:#fff;
+    display:flex; flex-direction:column; overflow:hidden;
+  }
+  @media screen{ .page{margin:24px auto; box-shadow:0 24px 60px rgba(7,59,45,.18);} }
+  @page{ size:A4; margin:0; }
+  @media print{ html,body{background:#fff;} .page{margin:0; box-shadow:none;} .hint{display:none;} }
+
+  .hint{max-width:210mm; margin:18px auto -6px; font-size:13px; color:#3f5b50;
+    background:#fff; border:1px solid var(--line); border-radius:14px; padding:10px 14px;}
+  .hint b{color:var(--forest);}
+
+  /* ---------- header band ---------- */
+  .band{
+    flex:none;
+    background:linear-gradient(135deg,#0A5C44 0%,#0C6349 55%,#073B2D 100%);
+    color:#fff; padding:5mm 12mm; display:flex; align-items:center;
+    justify-content:space-between; gap:8mm; position:relative; overflow:hidden;
+  }
+  .band::after{
+    content:""; position:absolute; right:-16mm; top:-26mm; width:70mm; height:70mm;
+    border-radius:50%; background:radial-gradient(circle,rgba(183,229,50,.22),transparent 65%);
+  }
+  .logo{display:flex; align-items:center; gap:4mm;}
+  .logo svg{width:12mm; height:12mm; flex:none;}
+  .wordmark span{display:block; font-size:23px; font-weight:800; letter-spacing:.06em; line-height:1;}
+  .wordmark small{display:block; font-size:11px; font-weight:700; letter-spacing:.42em;
+    color:var(--lime); margin-top:3px;}
+  .band-right{text-align:right; position:relative; z-index:1;}
+  .band-right .slogan{font-size:15px; font-weight:700; color:var(--lime-soft); letter-spacing:.01em;}
+  .band-right .site{font-size:12px; color:rgba(255,255,255,.82); margin-top:3px;}
+
+  /* ---------- body ---------- */
+  main{flex:1; min-height:0; padding:5mm 12mm 0; display:flex; flex-direction:column;
+    gap:4mm; justify-content:space-between;}
+
+  .eyebrow{margin:0 0 1.5mm; font-size:10px; font-weight:700; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--emerald);}
+  h1{margin:0; font-size:28px; line-height:1.12; letter-spacing:-.02em; font-weight:800;}
+  h1 em{font-style:normal; color:var(--emerald);}
+  .lead{margin:2.5mm 0 0; font-size:12px; line-height:1.5; color:#3f5b50; max-width:168mm;}
+
+  /* ---------- reach panel ---------- */
+  .reach{
+    position:relative; overflow:hidden; border-radius:26px; color:#fff; padding:4.5mm 6mm;
+    background:radial-gradient(120% 130% at 12% 8%,#0F7A57 0%,#0A5C44 45%,#073B2D 100%);
+    box-shadow:0 8px 18px rgba(7,59,45,.10),0 24px 60px rgba(7,59,45,.14);
+  }
+  .reach::after{
+    content:""; position:absolute; right:-20mm; bottom:-30mm; width:80mm; height:80mm;
+    border-radius:50%; background:radial-gradient(circle,rgba(183,229,50,.18),transparent 62%);
+  }
+  .reach-top{display:flex; align-items:center; justify-content:space-between; gap:6mm;
+    position:relative; z-index:1;}
+  .tag{display:inline-flex; align-items:center; gap:5px; padding:4px 11px; border-radius:999px;
+    background:rgba(183,229,50,.16); border:1px solid rgba(183,229,50,.45);
+    color:var(--lime); font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;}
+  .tag svg{width:12px; height:12px;}
+  .reach h2{margin:2.5mm 0 0; font-size:22px; font-weight:800; letter-spacing:-.01em;}
+  .reach h2 span{color:var(--lime);}
+  .numbers{display:flex; gap:4mm; margin:3mm 0 0; position:relative; z-index:1;}
+  .num{flex:1; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16);
+    border-radius:18px; padding:3mm 3.5mm;}
+  .num b{display:block; font-size:36px; line-height:1; font-weight:800; letter-spacing:-.03em;}
+  .num.hi b{color:var(--lime);}
+  .num span{display:block; margin-top:1.5mm; font-size:10.5px; color:rgba(255,255,255,.78);
+    letter-spacing:.02em;}
+  .flags{display:flex; flex-wrap:wrap; gap:1.6mm; margin:3mm 0 0; position:relative; z-index:1;}
+  .flag{font-size:10.5px; padding:3px 9px; border-radius:999px; background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.92); white-space:nowrap;}
+  .flag b{color:var(--lime); font-weight:700; margin-left:3px;}
+  .source{margin:2.5mm 0 0; font-size:9px; color:rgba(255,255,255,.62); position:relative; z-index:1;}
+
+  /* ---------- stat cards ---------- */
+  .stats{display:flex; gap:4mm;}
+  .stat{flex:1; background:var(--soft); border:1px solid var(--line); border-radius:20px;
+    padding:2.8mm 3.5mm; display:flex; align-items:center; gap:3mm;}
+  .stat .ic{width:9mm; height:9mm; flex:none; border-radius:12px; display:flex;
+    align-items:center; justify-content:center; background:#fff; border:1px solid var(--line);
+    color:var(--forest);}
+  .stat .ic svg{width:5mm; height:5mm;}
+  .stat b{display:block; font-size:19px; font-weight:800; line-height:1.1; letter-spacing:-.02em;}
+  .stat span{display:block; font-size:10.5px; color:var(--muted); margin-top:1px;}
+
+  /* ---------- why ---------- */
+  .why{display:flex; gap:4mm;}
+  .why-item{flex:1;}
+  .why-item .ic{width:9mm; height:9mm; border-radius:999px; display:flex; align-items:center;
+    justify-content:center; background:#EAF4EF; color:var(--forest); margin-bottom:2mm;}
+  .why-item .ic svg{width:5mm; height:5mm;}
+  .why-item h3{margin:0 0 1mm; font-size:12px; font-weight:700; line-height:1.2;}
+  .why-item p{margin:0; font-size:10px; line-height:1.4; color:var(--muted);}
+
+  /* ---------- categories ---------- */
+  .cats{border-top:1px solid var(--line); padding-top:3mm;}
+  .cats-h{display:flex; align-items:baseline; gap:3mm; margin-bottom:2.5mm;}
+  .cats-h h3{margin:0; font-size:14px; font-weight:800;}
+  .cats-h p{margin:0; font-size:10.5px; color:var(--muted);}
+  .chips{display:flex; flex-wrap:wrap; gap:1.6mm;}
+  .chip{display:inline-flex; align-items:center; gap:5px; padding:3px 9px; border-radius:999px;
+    background:#fff; border:1px solid var(--line); font-size:10.5px; font-weight:600;
+    color:#294a3d; box-shadow:0 1px 2px rgba(7,59,45,.04);}
+  .chip svg{width:12px; height:12px; color:var(--emerald);}
+  .chip.rose{border-color:#F7D8E5; background:#FEF6FA;}
+  .chip.rose svg{color:var(--rose);}
+
+  /* ---------- steps ---------- */
+  .steps{display:flex; gap:4mm; align-items:stretch;}
+  .step{flex:1; background:#fff; border:1px dashed #BBD6C8; border-radius:18px;
+    padding:2.4mm 3.5mm; display:flex; gap:3mm; align-items:center;}
+  .step i{flex:none; width:7mm; height:7mm; border-radius:999px; background:var(--lime);
+    color:var(--deep); font-style:normal; font-weight:800; font-size:12px;
+    display:flex; align-items:center; justify-content:center;}
+  .step b{display:block; font-size:11.5px; font-weight:700;}
+  .step span{display:block; font-size:9.5px; color:var(--muted); margin-top:1px;}
+
+  /* ---------- footer ---------- */
+  .cta{
+    flex:none; margin-top:4mm;
+    background:linear-gradient(135deg,#0A5C44 0%,#0C6349 55%,#073B2D 100%);
+    color:#fff; padding:4.5mm 12mm; display:flex; align-items:center; gap:6mm;
+    position:relative; overflow:hidden;
+  }
+  .cta::before{
+    content:""; position:absolute; left:-14mm; top:-24mm; width:60mm; height:60mm; border-radius:50%;
+    background:radial-gradient(circle,rgba(183,229,50,.16),transparent 65%);
+  }
+  .qr{flex:none; background:#fff; border-radius:14px; padding:2mm; width:27mm; height:27mm;
+    box-shadow:0 10px 30px rgba(7,59,45,.28); position:relative; z-index:1;}
+  .qr svg{width:100%; height:100%; display:block;}
+  .cta-main{flex:1; position:relative; z-index:1;}
+  .cta-main .k{font-size:9.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--lime); margin:0 0 1mm;}
+  .cta-main h2{margin:0; font-size:18px; font-weight:800; line-height:1.15;}
+  .cta-main p{margin:1.5mm 0 0; font-size:10px; color:rgba(255,255,255,.80); line-height:1.4;}
+  .cta-main p b{color:#fff; font-weight:700; letter-spacing:.01em;}
+  .contacts{flex:none; display:flex; flex-direction:column; gap:1.6mm; position:relative; z-index:1;}
+  .c-row{display:flex; align-items:center; gap:3mm;}
+  .c-row .ic{width:8mm; height:8mm; flex:none; border-radius:999px; display:flex;
+    align-items:center; justify-content:center; background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18); color:var(--lime);}
+  .c-row .ic svg{width:4.2mm; height:4.2mm;}
+  .c-row b{display:block; font-size:13px; font-weight:700; line-height:1.2;}
+  .c-row span{display:block; font-size:9.5px; color:rgba(255,255,255,.68);}
+</style>
+</head>
+<body>
+
+<p class="hint">
+  <b>So wird ein PDF daraus:</b> Diese Datei im Browser öffnen → <b>Strg + P</b> →
+  Ziel „Als PDF speichern“ → Ränder „Keine“ → Haken bei „Hintergrundgrafiken“. Ergibt genau
+  eine A4-Seite. Dieser graue Hinweis wird nicht mitgedruckt.
+</p>
+
+<div class="page">
+
+  <header class="band">
+    <div class="logo">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <mask id="weave">
+            <rect width="120" height="120" fill="white"/>
+            <circle cx="42" cy="42" r="12" fill="black"/>
+            <circle cx="78" cy="78" r="12" fill="black"/>
+          </mask>
+        </defs>
+        <rect x="42" y="18" width="36" height="84" rx="18" fill="none" stroke="#B7E532" stroke-width="13" stroke-linejoin="round"/>
+        <g mask="url(#weave)">
+          <rect x="18" y="42" width="84" height="36" rx="18" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <div class="wordmark"><span>JARA</span><small>PHARMACY</small></div>
+    </div>
+    <div class="band-right">
+      <div class="slogan">Cilësi. Besim. Kujdes.</div>
+      <div class="site">jara-pharmacy.com · Prizren, Kosovë</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="eyebrow">Farmaci · Bukuri · Mirëqenie</p>
+      <h1>Farmacia juaj moderne në Prizren — <em>tani edhe online.</em></h1>
+      <p class="lead">
+        Mbi 1.500 produkte për lëkurë, flokë, vitamina dhe kujdes të përditshëm — të gjitha në një
+        vend. Shikoni katalogun në telefon dhe pyesni për çdo produkt me një mesazh të vetëm.
+      </p>
+    </section>
+
+    <section class="reach">
+      <div class="reach-top">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> 15–24 korrik 2026</span>
+        <span class="tag">Vercel Analytics</span>
+      </div>
+      <h2>Në vetëm 10 ditë, faqja jonë u vizitua nga <span>16 shtete</span>.</h2>
+      <div class="numbers">
+        <div class="num hi"><b>207</b><span>vizitorë unikë</span></div>
+        <div class="num hi"><b>16</b><span>shtete, 3 kontinente</span></div>
+        <div class="num"><b>297</b><span>shikime të faqes</span></div>
+      </div>
+      <div class="flags">
+        <span class="flag">Kosovë<b>90</b></span>
+        <span class="flag">SHBA<b>30</b></span>
+        <span class="flag">Austri<b>29</b></span>
+        <span class="flag">Shqipëri<b>28</b></span>
+        <span class="flag">Kanada<b>5</b></span>
+        <span class="flag">Qipro<b>5</b></span>
+        <span class="flag">Francë<b>4</b></span>
+        <span class="flag">Itali<b>4</b></span>
+        <span class="flag">Zvicër<b>3</b></span>
+        <span class="flag">Kinë<b>2</b></span>
+        <span class="flag">Poloni<b>2</b></span>
+        <span class="flag">Britani e Madhe<b>1</b></span>
+        <span class="flag">Indi<b>1</b></span>
+        <span class="flag">Maqedoni e Veriut<b>1</b></span>
+        <span class="flag">Holandë<b>1</b></span>
+        <span class="flag">Turqi<b>1</b></span>
+      </div>
+      <p class="source">Të dhëna zyrtare nga Vercel Analytics · 15–24 korrik 2026 · numërim i vizitorëve unikë.</p>
+    </section>
+
+    <section class="stats">
+      <div class="stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <span><b>12</b><span>lokacione</span></span>
+      </div>
+      <div class="stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg></span>
+        <span><b>1.500+</b><span>produkte</span></span>
+      </div>
+      <div class="stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg></span>
+        <span><b>15</b><span>kategori</span></span>
+      </div>
+      <div class="stat">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+        <span><b>24/7</b><span>pyetje në WhatsApp</span></span>
+      </div>
+    </section>
+
+    <section class="why">
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 13c0 5-3.5 7.5-7.66 8.95a1 1 0 0 1-.67-.01C7.5 20.5 4 18 4 13V6a1 1 0 0 1 1-1c2 0 4.5-1.2 6.24-2.72a1.17 1.17 0 0 1 1.52 0C14.51 3.81 17 5 19 5a1 1 0 0 1 1 1z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Cilësi e garantuar</h3>
+        <p>Vetëm produkte origjinale nga marka të besueshme.</p>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <h3>Produkte të zgjedhura</h3>
+        <p>Përzgjedhje e kujdesshme për lëkurë, flokë dhe shëndet.</p>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg></span>
+        <h3>Këshillim profesional</h3>
+        <p>Staf i gatshëm t’ju udhëzojë me përgjegjësi.</p>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <h3>Gjithmonë pranë jush</h3>
+        <p>12 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.</p>
+      </div>
+      <div class="why-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg></span>
+        <h3>Kujdes për familjen</h3>
+        <p>Një vend për mirëqenien e përditshme të familjes.</p>
+      </div>
+    </section>
+
+    <section class="cats">
+      <div class="cats-h">
+        <h3>Zbulo çfarë të nevojitet</h3>
+        <p>15 kategori — nga kujdesi për lëkurën te suplementet.</p>
+      </div>
+      <div class="chips">
+        <span class="chip rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7 16.3c2.2 0 4-1.83 4-4.05 0-1.16-.57-2.26-1.71-3.19S7.29 6.75 7 5.3c-.29 1.45-1.14 2.84-2.29 3.76S3 11.1 3 12.25c0 2.22 1.8 4.05 4 4.05z"/><path d="M12.56 6.6A10.97 10.97 0 0 0 14 3.02c.5 2.5 2 4.9 4 6.5s3 3.5 3 5.5a6.98 6.98 0 0 1-11.91 4.97"/></svg> Kujdes për lëkurën</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="6" cy="6" r="3"/><path d="M8.12 8.12 12 12"/><path d="M20 4 8.12 15.88"/><circle cx="6" cy="18" r="3"/><path d="M14.8 14.8 20 20"/></svg> Kujdes për flokë</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m10.5 20.5 10-10a4.95 4.95 0 1 0-7-7l-10 10a4.95 4.95 0 1 0 7 7Z"/><path d="m8.5 8.5 7 7"/></svg> Vitamina &amp; suplemente</span>
+        <span class="chip rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9.937 15.5A2 2 0 0 0 8.5 14.063l-6.135-1.582a.5.5 0 0 1 0-.962L8.5 9.936A2 2 0 0 0 9.937 8.5l1.582-6.135a.5.5 0 0 1 .963 0L14.063 8.5A2 2 0 0 0 15.5 9.937l6.135 1.581a.5.5 0 0 1 0 .964L15.5 14.063a2 2 0 0 0-1.437 1.437l-1.582 6.135a.5.5 0 0 1-.963 0z"/><path d="M20 3v4"/><path d="M22 5h-4"/><path d="M4 17v2"/><path d="M5 18H3"/></svg> Bukuri &amp; kozmetikë</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 12h.01"/><path d="M15 12h.01"/><path d="M10 16c.5.3 1.2.5 2 .5s1.5-.2 2-.5"/><path d="M19 6.3a9 9 0 0 1 1.8 3.9 2 2 0 0 1 0 3.6 9 9 0 0 1-17.6 0 2 2 0 0 1 0-3.6A9 9 0 0 1 12 3c2 0 3.5 1.1 3.5 2.5s-.9 2.5-2 2.5c-.8 0-1.5-.4-1.5-1"/></svg> Nënë &amp; bebe</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 20A7 7 0 0 1 9.8 6.1C15.5 5 17 4.48 19 2c1 2 2 4.18 2 8 0 5.5-4.78 10-10 10Z"/><path d="M2 21c0-3 1.85-5.36 5.08-6C9.5 14.52 12 13 13 12"/></svg> Produkte natyrale</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" x2="9.01" y1="9" y2="9"/><line x1="15" x2="15.01" y1="9" y2="9"/></svg> Kujdes oral</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"/><path d="M3.22 12H9.5l.5-1 2 4.5 2-7 1.5 3.5h5.27"/></svg> Kujdes shëndetësor</span>
+        <span class="chip rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5.116 4.104A1 1 0 0 1 6.11 3h11.78a1 1 0 0 1 .994 1.105L17.19 20.21A2 2 0 0 1 15.2 22H8.8a2 2 0 0 1-2-1.79z"/><path d="M6 12a5 5 0 0 1 6 0 5 5 0 0 0 6 0"/></svg> Kolagjen</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 2v2"/><path d="M5 2v2"/><path d="M5 3H4a2 2 0 0 0-2 2v4a6 6 0 0 0 12 0V5a2 2 0 0 0-2-2h-1"/><path d="M8 15a6 6 0 0 0 12 0v-3"/><circle cx="20" cy="10" r="2"/></svg> Pajisje mjekësore</span>
+        <span class="chip rose"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 5a3 3 0 1 1 3 3m-3-3a3 3 0 1 0-3 3m3-3v1M9 8a3 3 0 1 0 3 3M9 8h1m5 0a3 3 0 1 1-3 3m3-3h-1m-2 3v-1"/><circle cx="12" cy="8" r="2"/><path d="M12 10v12"/><path d="M12 22c4.2 0 7-1.667 7-5-4.2 0-7 1.667-7 5Z"/><path d="M12 22c-4.2 0-7-1.667-7-5 4.2 0 7 1.667 7 5Z"/></svg> Higjiena femërore</span>
+        <span class="chip"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 2 1.88 1.88"/><path d="M14.12 3.88 16 2"/><path d="M9 7.13v-1a3.003 3.003 0 1 1 6 0v1"/><path d="M12 20c-3.3 0-6-2.7-6-6v-3a4 4 0 0 1 4-4h4a4 4 0 0 1 4 4v3c0 3.3-2.7 6-6 6"/><path d="M12 20v-9"/><path d="M6.53 9C4.6 8.8 3 7.1 3 5"/><path d="M6 13H2"/><path d="M3 21c0-2.1 1.7-3.9 3.8-4"/><path d="M20.97 5c0 2.1-1.6 3.8-3.5 4"/><path d="M22 13h-4"/><path d="M17.2 17c2.1.1 3.8 1.9 3.8 4"/></svg> Kundër insekteve</span>
+      </div>
+    </section>
+
+    <section class="steps">
+      <div class="step"><i>1</i><span><b>Skano kodin QR</b><span>Hapet katalogu në telefonin tuaj.</span></span></div>
+      <div class="step"><i>2</i><span><b>Zgjidh produktin</b><span>Kërko sipas kategorisë ose emrit.</span></span></div>
+      <div class="step"><i>3</i><span><b>Shkruaj në WhatsApp</b><span>Merr përgjigje dhe çmimin menjëherë.</span></span></div>
+    </section>
+
+  </main>
+
+  <footer class="cta">
+    <div class="qr"><svg viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR: https://jara-pharmacy.com"><rect width="31" height="31" fill="#fff"/><path d="M3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM14 3h1v1h-1zM16 3h1v1h-1zM19 3h1v1h-1zM21 3h1v1h-1zM22 3h1v1h-1zM23 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM27 3h1v1h-1zM3 4h1v1h-1zM9 4h1v1h-1zM12 4h1v1h-1zM13 4h1v1h-1zM15 4h1v1h-1zM17 4h1v1h-1zM18 4h1v1h-1zM21 4h1v1h-1zM27 4h1v1h-1zM3 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM9 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM21 5h1v1h-1zM23 5h1v1h-1zM24 5h1v1h-1zM25 5h1v1h-1zM27 5h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h1v1h-1zM12 6h1v1h-1zM16 6h1v1h-1zM17 6h1v1h-1zM18 6h1v1h-1zM19 6h1v1h-1zM21 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM27 6h1v1h-1zM3 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM9 7h1v1h-1zM11 7h1v1h-1zM14 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM24 7h1v1h-1zM25 7h1v1h-1zM27 7h1v1h-1zM3 8h1v1h-1zM9 8h1v1h-1zM11 8h1v1h-1zM18 8h1v1h-1zM19 8h1v1h-1zM21 8h1v1h-1zM27 8h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM5 9h1v1h-1zM6 9h1v1h-1zM7 9h1v1h-1zM8 9h1v1h-1zM9 9h1v1h-1zM11 9h1v1h-1zM13 9h1v1h-1zM15 9h1v1h-1zM17 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM25 9h1v1h-1zM26 9h1v1h-1zM27 9h1v1h-1zM11 10h1v1h-1zM13 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM6 11h1v1h-1zM7 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM12 11h1v1h-1zM13 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM17 11h1v1h-1zM18 11h1v1h-1zM21 11h1v1h-1zM22 11h1v1h-1zM23 11h1v1h-1zM24 11h1v1h-1zM25 11h1v1h-1zM3 12h1v1h-1zM5 12h1v1h-1zM10 12h1v1h-1zM11 12h1v1h-1zM13 12h1v1h-1zM19 12h1v1h-1zM22 12h1v1h-1zM26 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM10 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM14 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM18 13h1v1h-1zM21 13h1v1h-1zM23 13h1v1h-1zM24 13h1v1h-1zM26 13h1v1h-1zM27 13h1v1h-1zM5 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM11 14h1v1h-1zM14 14h1v1h-1zM15 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM21 14h1v1h-1zM23 14h1v1h-1zM27 14h1v1h-1zM4 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM8 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM15 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM20 15h1v1h-1zM21 15h1v1h-1zM23 15h1v1h-1zM25 15h1v1h-1zM26 15h1v1h-1zM27 15h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM7 16h1v1h-1zM10 16h1v1h-1zM11 16h1v1h-1zM16 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM20 16h1v1h-1zM22 16h1v1h-1zM24 16h1v1h-1zM26 16h1v1h-1zM3 17h1v1h-1zM6 17h1v1h-1zM9 17h1v1h-1zM12 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM18 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM3 18h1v1h-1zM6 18h1v1h-1zM8 18h1v1h-1zM14 18h1v1h-1zM17 18h1v1h-1zM18 18h1v1h-1zM22 18h1v1h-1zM23 18h1v1h-1zM27 18h1v1h-1zM3 19h1v1h-1zM7 19h1v1h-1zM9 19h1v1h-1zM10 19h1v1h-1zM12 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM16 19h1v1h-1zM18 19h1v1h-1zM19 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM23 19h1v1h-1zM25 19h1v1h-1zM11 20h1v1h-1zM15 20h1v1h-1zM16 20h1v1h-1zM19 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM3 21h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM6 21h1v1h-1zM7 21h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM12 21h1v1h-1zM16 21h1v1h-1zM17 21h1v1h-1zM19 21h1v1h-1zM21 21h1v1h-1zM23 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM3 22h1v1h-1zM9 22h1v1h-1zM11 22h1v1h-1zM12 22h1v1h-1zM19 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM26 22h1v1h-1zM27 22h1v1h-1zM3 23h1v1h-1zM5 23h1v1h-1zM6 23h1v1h-1zM7 23h1v1h-1zM9 23h1v1h-1zM11 23h1v1h-1zM13 23h1v1h-1zM14 23h1v1h-1zM15 23h1v1h-1zM16 23h1v1h-1zM17 23h1v1h-1zM18 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM21 23h1v1h-1zM22 23h1v1h-1zM23 23h1v1h-1zM25 23h1v1h-1zM3 24h1v1h-1zM5 24h1v1h-1zM6 24h1v1h-1zM7 24h1v1h-1zM9 24h1v1h-1zM11 24h1v1h-1zM14 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM3 25h1v1h-1zM5 25h1v1h-1zM6 25h1v1h-1zM7 25h1v1h-1zM9 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM16 25h1v1h-1zM19 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM27 25h1v1h-1zM3 26h1v1h-1zM9 26h1v1h-1zM13 26h1v1h-1zM14 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM21 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM27 26h1v1h-1zM3 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM7 27h1v1h-1zM8 27h1v1h-1zM9 27h1v1h-1zM11 27h1v1h-1zM14 27h1v1h-1zM15 27h1v1h-1zM16 27h1v1h-1zM17 27h1v1h-1zM18 27h1v1h-1zM20 27h1v1h-1zM21 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM24 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM27 27h1v1h-1z" fill="#073B2D"/></svg></div>
+    <div class="cta-main">
+      <p class="k">Porosit tani</p>
+      <h2>Skano dhe shiko katalogun e plotë</h2>
+      <p>
+        <b>jara-pharmacy.com</b> — shqip dhe anglisht, i shpejtë në telefon.
+        Pyetjeve tuaja u përgjigjemi drejtpërdrejt në WhatsApp.
+      </p>
+    </div>
+    <div class="contacts">
+      <div class="c-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+        <span><b>+383 49 500 763</b><span>WhatsApp &amp; telefon</span></span>
+      </div>
+      <div class="c-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg></span>
+        <span><b>+383 48 550 002</b><span>Numri i dytë</span></span>
+      </div>
+      <div class="c-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg></span>
+        <span><b>@jarapharmacy</b><span>Rr. William Vokeri, Prizren</span></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>

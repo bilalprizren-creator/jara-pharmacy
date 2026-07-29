@@ -1,0 +1,331 @@
+<!doctype html>
+<html lang="sq">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Jara Pharmacy — Raport i faqes online, 15–24 korrik 2026</title>
+<style>
+  :root{
+    --forest:#0A5C44; --deep:#073B2D; --emerald:#0F7A57;
+    --lime:#B7E532; --lime-soft:#DDF38A;
+    --soft:#F7FAF8; --cream:#F4F0E8;
+    --ink:#0F172A; --muted:#64748B; --line:#DCE7E1;
+  }
+  *{box-sizing:border-box; -webkit-print-color-adjust:exact; print-color-adjust:exact;}
+  html,body{margin:0; padding:0; background:#E8EDEA;
+    font-family:Inter,"Plus Jakarta Sans",Manrope,system-ui,"Segoe UI",Roboto,sans-serif;
+    color:var(--ink);}
+
+  .page{position:relative; width:210mm; height:297mm; margin:0 auto; background:#fff;
+    display:flex; flex-direction:column; overflow:hidden;}
+  @media screen{ .page{margin:24px auto; box-shadow:0 24px 60px rgba(7,59,45,.18);} }
+  @page{ size:A4; margin:0; }
+  @media print{ html,body{background:#fff;} .page{margin:0; box-shadow:none;} .hint{display:none;} }
+
+  .hint{max-width:210mm; margin:18px auto -6px; font-size:13px; color:#3f5b50;
+    background:#fff; border:1px solid var(--line); border-radius:14px; padding:10px 14px;}
+  .hint b{color:var(--forest);}
+
+  /* ---------- header band ---------- */
+  .band{flex:none;
+    background:linear-gradient(135deg,#0A5C44 0%,#0C6349 55%,#073B2D 100%);
+    color:#fff; padding:5mm 12mm; display:flex; align-items:center;
+    justify-content:space-between; gap:8mm; position:relative; overflow:hidden;}
+  .band::after{content:""; position:absolute; right:-16mm; top:-26mm; width:70mm; height:70mm;
+    border-radius:50%; background:radial-gradient(circle,rgba(183,229,50,.22),transparent 65%);}
+  .logo{display:flex; align-items:center; gap:4mm;}
+  .logo svg{width:12mm; height:12mm; flex:none;}
+  .wordmark span{display:block; font-size:23px; font-weight:800; letter-spacing:.06em; line-height:1;}
+  .wordmark small{display:block; font-size:11px; font-weight:700; letter-spacing:.42em;
+    color:var(--lime); margin-top:3px;}
+  .band-right{text-align:right; position:relative; z-index:1;}
+  .band-right .slogan{font-size:15px; font-weight:700; color:var(--lime-soft);}
+  .band-right .site{font-size:12px; color:rgba(255,255,255,.82); margin-top:3px;}
+
+  /* ---------- body ---------- */
+  main{flex:1; min-height:0; padding:5mm 12mm 0; display:flex; flex-direction:column;
+    gap:4mm; justify-content:space-between;}
+  /* never let a section be squeezed — clipped content would go unnoticed in print */
+  main > *{flex:none;}
+
+  .eyebrow{margin:0 0 1.5mm; font-size:10px; font-weight:700; letter-spacing:.16em;
+    text-transform:uppercase; color:var(--emerald);}
+  h1{margin:0; font-size:27px; line-height:1.12; letter-spacing:-.02em; font-weight:800;}
+  h1 em{font-style:normal; color:var(--emerald);}
+  .lead{margin:3mm 0 0; font-size:12.5px; line-height:1.5; color:#3f5b50; max-width:168mm;}
+
+  /* ---------- reach panel ---------- */
+  .reach{position:relative; overflow:hidden; border-radius:26px; color:#fff; padding:5.5mm 7mm;
+    background:radial-gradient(120% 130% at 12% 8%,#0F7A57 0%,#0A5C44 45%,#073B2D 100%);
+    box-shadow:0 8px 18px rgba(7,59,45,.10),0 24px 60px rgba(7,59,45,.14);}
+  .reach::after{content:""; position:absolute; right:-20mm; bottom:-30mm; width:80mm; height:80mm;
+    border-radius:50%; background:radial-gradient(circle,rgba(183,229,50,.18),transparent 62%);}
+  .reach-top{display:flex; align-items:center; justify-content:space-between; gap:6mm;
+    position:relative; z-index:1;}
+  .tag{display:inline-flex; align-items:center; gap:5px; padding:4px 11px; border-radius:999px;
+    background:rgba(183,229,50,.16); border:1px solid rgba(183,229,50,.45);
+    color:var(--lime); font-size:10px; font-weight:700; letter-spacing:.12em; text-transform:uppercase;}
+  .tag svg{width:12px; height:12px;}
+  .reach h2{margin:3mm 0 0; font-size:24px; font-weight:800; letter-spacing:-.01em;}
+  .reach h2 span{color:var(--lime);}
+  .numbers{display:flex; gap:4.5mm; margin:4mm 0 0; position:relative; z-index:1;}
+  .num{flex:1; background:rgba(255,255,255,.09); border:1px solid rgba(255,255,255,.16);
+    border-radius:20px; padding:3.4mm 4.5mm;}
+  .num b{display:block; font-size:39px; line-height:1; font-weight:800; letter-spacing:-.03em;}
+  .num.hi b{color:var(--lime);}
+  .num span{display:block; margin-top:2mm; font-size:11px; color:rgba(255,255,255,.78);}
+  .flags{display:flex; flex-wrap:wrap; gap:2mm; margin:4mm 0 0; position:relative; z-index:1;}
+  .flag{font-size:10.5px; padding:3px 9px; border-radius:999px; background:rgba(255,255,255,.10);
+    border:1px solid rgba(255,255,255,.14); color:rgba(255,255,255,.92); white-space:nowrap;}
+  .flag b{color:var(--lime); font-weight:700; margin-left:3px;}
+  .source{margin:2.5mm 0 0; font-size:9px; color:rgba(255,255,255,.62); position:relative; z-index:1;}
+
+  /* ---------- referrer bars ---------- */
+  .sources{display:flex; gap:7mm; align-items:flex-start;
+    background:var(--soft); border:1px solid var(--line); border-radius:22px; padding:4.4mm 6mm;}
+  .sources-h{flex:none; width:54mm;}
+  .sources-h h3{margin:0 0 2mm; font-size:15px; font-weight:800;}
+  .sources-h p{margin:0; font-size:10.5px; line-height:1.45; color:var(--muted);}
+  .sources-h .rest-note{margin:2mm 0 0; font-size:9px; line-height:1.4; color:#8aa79a;}
+  .bars{flex:1; display:flex; flex-direction:column; gap:2.6mm; padding-top:1mm;}
+  .bar-row{display:flex; align-items:center; gap:3mm;}
+  .bar-name{flex:none; width:23mm; display:flex; align-items:center; gap:5px;
+    font-size:11px; font-weight:600; color:#294a3d;}
+  .bar-name svg{width:13px; height:13px; color:var(--emerald); flex:none;}
+  .bar-track{flex:1;}
+  .bar-fill{display:block; height:4.2mm; background:var(--emerald); border-radius:0 4px 4px 0;}
+  .bar-fill.rest{background:#9FCFB9;}
+  .bar-val{flex:none; width:12mm; text-align:right; font-size:14px; font-weight:800;
+    color:var(--ink); letter-spacing:-.01em;}
+  .bar-unit{font-size:9.5px; color:var(--muted); font-weight:600; margin-left:2px;}
+
+  /* ---------- what the site does ---------- */
+  .does{display:flex; gap:4mm;}
+  .does-item{flex:1;}
+  .does-item .ic{width:9.5mm; height:9.5mm; border-radius:999px; display:flex; align-items:center;
+    justify-content:center; background:#EAF4EF; color:var(--forest); margin-bottom:2.5mm;}
+  .does-item .ic svg{width:5.2mm; height:5.2mm;}
+  .does-item h3{margin:0 0 1.5mm; font-size:12.5px; font-weight:700; line-height:1.2;}
+  .does-item p{margin:0; font-size:10.5px; line-height:1.45; color:var(--muted);}
+  .does-item .note{color:var(--emerald); font-weight:600;}
+
+  /* ---------- steps ---------- */
+  .steps-h{display:flex; align-items:baseline; gap:3mm; margin-bottom:2mm;
+    border-top:1px solid var(--line); padding-top:2.5mm;}
+  .steps-h h3{margin:0; font-size:14px; font-weight:800;}
+  .steps-h p{margin:0; font-size:10.5px; color:var(--muted);}
+  .steps{display:flex; gap:4mm;}
+  .step{flex:1; background:#fff; border:1px dashed #BBD6C8; border-radius:18px;
+    padding:2.6mm 4mm; display:flex; gap:3mm; align-items:center;}
+  .step i{flex:none; width:8mm; height:8mm; border-radius:999px; background:var(--lime);
+    color:var(--deep); font-style:normal; font-weight:800; font-size:13px;
+    display:flex; align-items:center; justify-content:center;}
+  .step b{display:block; font-size:12px; font-weight:700;}
+  .step span{display:block; font-size:10px; color:var(--muted); margin-top:1.5px;}
+
+  /* ---------- footer ---------- */
+  .cta{flex:none; margin-top:4mm;
+    background:linear-gradient(135deg,#0A5C44 0%,#0C6349 55%,#073B2D 100%);
+    color:#fff; padding:4.5mm 12mm; display:flex; align-items:center; gap:6mm;
+    position:relative; overflow:hidden;}
+  .cta::before{content:""; position:absolute; left:-14mm; top:-24mm; width:60mm; height:60mm;
+    border-radius:50%; background:radial-gradient(circle,rgba(183,229,50,.16),transparent 65%);}
+  .qr{flex:none; background:#fff; border-radius:14px; padding:2mm; width:27mm; height:27mm;
+    box-shadow:0 10px 30px rgba(7,59,45,.28); position:relative; z-index:1;}
+  .qr svg{width:100%; height:100%; display:block;}
+  .cta-main{flex:1; position:relative; z-index:1;}
+  .cta-main .k{font-size:9.5px; font-weight:700; letter-spacing:.14em; text-transform:uppercase;
+    color:var(--lime); margin:0 0 1mm;}
+  .cta-main h2{margin:0; font-size:18px; font-weight:800; line-height:1.15;}
+  .cta-main p{margin:1.5mm 0 0; font-size:10px; color:rgba(255,255,255,.80); line-height:1.4;}
+  .cta-main p b{color:#fff; font-weight:700;}
+  .meta{flex:none; display:flex; flex-direction:column; gap:1.6mm; position:relative; z-index:1;}
+  .m-row{display:flex; align-items:center; gap:3mm;}
+  .m-row .ic{width:8mm; height:8mm; flex:none; border-radius:999px; display:flex;
+    align-items:center; justify-content:center; background:rgba(255,255,255,.12);
+    border:1px solid rgba(255,255,255,.18); color:var(--lime);}
+  .m-row .ic svg{width:4.2mm; height:4.2mm;}
+  .m-row b{display:block; font-size:12px; font-weight:700; line-height:1.2;}
+  .m-row span{display:block; font-size:9.5px; color:rgba(255,255,255,.68);}
+</style>
+</head>
+<body>
+
+<p class="hint">
+  <b>So wird ein PDF daraus:</b> Diese Datei im Browser öffnen → <b>Strg + P</b> →
+  Ziel „Als PDF speichern“ → Ränder „Keine“ → Haken bei „Hintergrundgrafiken“. Ergibt genau
+  eine A4-Seite. Dieser graue Hinweis wird nicht mitgedruckt.
+</p>
+
+<div class="page">
+
+  <header class="band">
+    <div class="logo">
+      <svg viewBox="0 0 120 120" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <defs>
+          <mask id="weave">
+            <rect width="120" height="120" fill="white"/>
+            <circle cx="42" cy="42" r="12" fill="black"/>
+            <circle cx="78" cy="78" r="12" fill="black"/>
+          </mask>
+        </defs>
+        <rect x="42" y="18" width="36" height="84" rx="18" fill="none" stroke="#B7E532" stroke-width="13" stroke-linejoin="round"/>
+        <g mask="url(#weave)">
+          <rect x="18" y="42" width="84" height="36" rx="18" fill="none" stroke="#FFFFFF" stroke-width="13" stroke-linejoin="round"/>
+        </g>
+      </svg>
+      <div class="wordmark"><span>JARA</span><small>PHARMACY</small></div>
+    </div>
+    <div class="band-right">
+      <div class="slogan">Raport i faqes online</div>
+      <div class="site">15–24 korrik 2026 · jara-pharmacy.com</div>
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero">
+      <p class="eyebrow">Raport për Jara Pharmacy</p>
+      <h1>10 ditët e para të faqes suaj — <em>dhe kush e gjeti atë.</em></h1>
+      <p class="lead">
+        Sa njerëz e vizituan faqen tuaj, nga cilat shtete erdhën dhe përmes cilave rrjete ju gjetën.
+        Të gjitha shifrat janë matje automatike të sistemit, jo vlerësime.
+      </p>
+    </section>
+
+    <section class="reach">
+      <div class="reach-top">
+        <span class="tag"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> 15–24 korrik 2026</span>
+        <span class="tag">Vercel Analytics</span>
+      </div>
+      <h2>Në vetëm 10 ditë, faqja juaj u vizitua nga <span>16 shtete</span>.</h2>
+      <div class="numbers">
+        <div class="num hi"><b>207</b><span>vizitorë unikë</span></div>
+        <div class="num hi"><b>16</b><span>shtete, 3 kontinente</span></div>
+        <div class="num"><b>297</b><span>shikime të faqes</span></div>
+      </div>
+      <div class="flags">
+        <span class="flag">Kosovë<b>90</b></span>
+        <span class="flag">SHBA<b>30</b></span>
+        <span class="flag">Austri<b>29</b></span>
+        <span class="flag">Shqipëri<b>28</b></span>
+        <span class="flag">Kanada<b>5</b></span>
+        <span class="flag">Qipro<b>5</b></span>
+        <span class="flag">Francë<b>4</b></span>
+        <span class="flag">Itali<b>4</b></span>
+        <span class="flag">Zvicër<b>3</b></span>
+        <span class="flag">Kinë<b>2</b></span>
+        <span class="flag">Poloni<b>2</b></span>
+        <span class="flag">Britani e Madhe<b>1</b></span>
+        <span class="flag">Indi<b>1</b></span>
+        <span class="flag">Maqedoni e Veriut<b>1</b></span>
+        <span class="flag">Holandë<b>1</b></span>
+        <span class="flag">Turqi<b>1</b></span>
+      </div>
+      <p class="source">Të dhëna zyrtare nga Vercel Analytics · 15–24 korrik 2026 · numërim i vizitorëve unikë.</p>
+    </section>
+
+    <section class="sources">
+      <div class="sources-h">
+        <h3>Si ju gjejnë klientët</h3>
+        <p>Të gjithë <b>207</b> vizitorët, sipas burimit. Instagrami është rrjeti që ju sjell
+           më së shumti klientë.</p>
+        <p class="rest-note">Drejtpërdrejt = kod QR, adresë e shkruar në shfletues ose lidhje
+           që nuk e ruajnë burimin.</p>
+      </div>
+      <div class="bars">
+        <div class="bar-row">
+          <span class="bar-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" x2="17.51" y1="6.5" y2="6.5"/></svg> Instagram</span>
+          <span class="bar-track"><span class="bar-fill" style="width:77.2%"></span></span>
+          <span class="bar-val">78</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg> Google</span>
+          <span class="bar-track"><span class="bar-fill" style="width:21.8%"></span></span>
+          <span class="bar-val">22</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg> Facebook</span>
+          <span class="bar-track"><span class="bar-fill" style="width:5.9%"></span></span>
+          <span class="bar-val">6</span>
+        </div>
+        <div class="bar-row">
+          <span class="bar-name"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect width="14" height="20" x="5" y="2" rx="2" ry="2"/><path d="M12 18h.01"/></svg> Drejtpërdrejt</span>
+          <span class="bar-track"><span class="bar-fill rest" style="width:100%"></span></span>
+          <span class="bar-val">101</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="does">
+      <div class="does-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M11 21.73a2 2 0 0 0 2 0l7-4A2 2 0 0 0 21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73z"/><path d="M12 22V12"/><path d="m3.3 7 7.703 4.734a2 2 0 0 0 1.994 0L20.7 7"/><path d="m7.5 4.27 9 5.15"/></svg></span>
+        <h3>Katalog i plotë</h3>
+        <p>Mbi 1.500 produkte në 15 kategori, me kërkim.
+           <span class="note">(Do të shtohen edhe produktet nga katalogu kryesor.)</span></p>
+      </div>
+      <div class="does-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><path d="M12 2a14.5 14.5 0 0 0 0 20 14.5 14.5 0 0 0 0-20"/><path d="M2 12h20"/></svg></span>
+        <h3>Shqip dhe anglisht</h3>
+        <p>Për klientët këtu dhe për diasporën.</p>
+      </div>
+      <div class="does-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M7.9 20A9 9 0 1 0 4 16.1L2 22Z"/></svg></span>
+        <h3>Porosia në WhatsApp</h3>
+        <p>Çdo produkt me një prekje — pa karrocë, pa pagesa online.</p>
+      </div>
+      <div class="does-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 4.993-5.539 10.193-7.399 11.799a1 1 0 0 1-1.202 0C9.539 20.193 4 14.993 4 10a8 8 0 0 1 16 0"/><circle cx="12" cy="10" r="3"/></svg></span>
+        <h3>12 lokacionet në hartë</h3>
+        <p>Me drejtime deri te dera e çdo barnatoreje.</p>
+      </div>
+      <div class="does-item">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <h3>E shpejtë në telefon</h3>
+        <p>Hapet menjëherë, pa aplikacion dhe pa regjistrim.</p>
+      </div>
+    </section>
+
+    <section>
+      <div class="steps-h">
+        <h3>Si vjen pyetja te ju</h3>
+        <p>Rruga e klientit, nga rrjeti social deri te telefoni juaj.</p>
+      </div>
+      <div class="steps">
+        <div class="step"><i>1</i><span><b>Klienti hap faqen</b><span>Nga Instagrami, Google ose kodi QR.</span></span></div>
+        <div class="step"><i>2</i><span><b>Zgjedh produktin</b><span>Kërkon sipas kategorisë ose emrit.</span></span></div>
+        <div class="step"><i>3</i><span><b>Ju shkruan në WhatsApp</b><span>Pyetja vjen direkt në telefonin tuaj.</span></span></div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="cta">
+    <div class="qr"><svg viewBox="0 0 31 31" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges" role="img" aria-label="QR: https://jara-pharmacy.com"><rect width="31" height="31" fill="#fff"/><path d="M3 3h1v1h-1zM4 3h1v1h-1zM5 3h1v1h-1zM6 3h1v1h-1zM7 3h1v1h-1zM8 3h1v1h-1zM9 3h1v1h-1zM12 3h1v1h-1zM13 3h1v1h-1zM14 3h1v1h-1zM16 3h1v1h-1zM19 3h1v1h-1zM21 3h1v1h-1zM22 3h1v1h-1zM23 3h1v1h-1zM24 3h1v1h-1zM25 3h1v1h-1zM26 3h1v1h-1zM27 3h1v1h-1zM3 4h1v1h-1zM9 4h1v1h-1zM12 4h1v1h-1zM13 4h1v1h-1zM15 4h1v1h-1zM17 4h1v1h-1zM18 4h1v1h-1zM21 4h1v1h-1zM27 4h1v1h-1zM3 5h1v1h-1zM5 5h1v1h-1zM6 5h1v1h-1zM7 5h1v1h-1zM9 5h1v1h-1zM11 5h1v1h-1zM12 5h1v1h-1zM15 5h1v1h-1zM17 5h1v1h-1zM21 5h1v1h-1zM23 5h1v1h-1zM24 5h1v1h-1zM25 5h1v1h-1zM27 5h1v1h-1zM3 6h1v1h-1zM5 6h1v1h-1zM6 6h1v1h-1zM7 6h1v1h-1zM9 6h1v1h-1zM11 6h1v1h-1zM12 6h1v1h-1zM16 6h1v1h-1zM17 6h1v1h-1zM18 6h1v1h-1zM19 6h1v1h-1zM21 6h1v1h-1zM23 6h1v1h-1zM24 6h1v1h-1zM25 6h1v1h-1zM27 6h1v1h-1zM3 7h1v1h-1zM5 7h1v1h-1zM6 7h1v1h-1zM7 7h1v1h-1zM9 7h1v1h-1zM11 7h1v1h-1zM14 7h1v1h-1zM19 7h1v1h-1zM21 7h1v1h-1zM23 7h1v1h-1zM24 7h1v1h-1zM25 7h1v1h-1zM27 7h1v1h-1zM3 8h1v1h-1zM9 8h1v1h-1zM11 8h1v1h-1zM18 8h1v1h-1zM19 8h1v1h-1zM21 8h1v1h-1zM27 8h1v1h-1zM3 9h1v1h-1zM4 9h1v1h-1zM5 9h1v1h-1zM6 9h1v1h-1zM7 9h1v1h-1zM8 9h1v1h-1zM9 9h1v1h-1zM11 9h1v1h-1zM13 9h1v1h-1zM15 9h1v1h-1zM17 9h1v1h-1zM19 9h1v1h-1zM21 9h1v1h-1zM22 9h1v1h-1zM23 9h1v1h-1zM24 9h1v1h-1zM25 9h1v1h-1zM26 9h1v1h-1zM27 9h1v1h-1zM11 10h1v1h-1zM13 10h1v1h-1zM17 10h1v1h-1zM18 10h1v1h-1zM3 11h1v1h-1zM5 11h1v1h-1zM6 11h1v1h-1zM7 11h1v1h-1zM8 11h1v1h-1zM9 11h1v1h-1zM12 11h1v1h-1zM13 11h1v1h-1zM14 11h1v1h-1zM16 11h1v1h-1zM17 11h1v1h-1zM18 11h1v1h-1zM21 11h1v1h-1zM22 11h1v1h-1zM23 11h1v1h-1zM24 11h1v1h-1zM25 11h1v1h-1zM3 12h1v1h-1zM5 12h1v1h-1zM10 12h1v1h-1zM11 12h1v1h-1zM13 12h1v1h-1zM19 12h1v1h-1zM22 12h1v1h-1zM26 12h1v1h-1zM3 13h1v1h-1zM4 13h1v1h-1zM5 13h1v1h-1zM7 13h1v1h-1zM8 13h1v1h-1zM9 13h1v1h-1zM10 13h1v1h-1zM11 13h1v1h-1zM12 13h1v1h-1zM14 13h1v1h-1zM15 13h1v1h-1zM16 13h1v1h-1zM18 13h1v1h-1zM21 13h1v1h-1zM23 13h1v1h-1zM24 13h1v1h-1zM26 13h1v1h-1zM27 13h1v1h-1zM5 14h1v1h-1zM7 14h1v1h-1zM8 14h1v1h-1zM11 14h1v1h-1zM14 14h1v1h-1zM15 14h1v1h-1zM17 14h1v1h-1zM18 14h1v1h-1zM20 14h1v1h-1zM21 14h1v1h-1zM23 14h1v1h-1zM27 14h1v1h-1zM4 15h1v1h-1zM5 15h1v1h-1zM7 15h1v1h-1zM8 15h1v1h-1zM9 15h1v1h-1zM11 15h1v1h-1zM13 15h1v1h-1zM14 15h1v1h-1zM15 15h1v1h-1zM16 15h1v1h-1zM17 15h1v1h-1zM20 15h1v1h-1zM21 15h1v1h-1zM23 15h1v1h-1zM25 15h1v1h-1zM26 15h1v1h-1zM27 15h1v1h-1zM3 16h1v1h-1zM4 16h1v1h-1zM6 16h1v1h-1zM7 16h1v1h-1zM10 16h1v1h-1zM11 16h1v1h-1zM16 16h1v1h-1zM17 16h1v1h-1zM19 16h1v1h-1zM20 16h1v1h-1zM22 16h1v1h-1zM24 16h1v1h-1zM26 16h1v1h-1zM3 17h1v1h-1zM6 17h1v1h-1zM9 17h1v1h-1zM12 17h1v1h-1zM13 17h1v1h-1zM14 17h1v1h-1zM15 17h1v1h-1zM18 17h1v1h-1zM21 17h1v1h-1zM22 17h1v1h-1zM23 17h1v1h-1zM24 17h1v1h-1zM26 17h1v1h-1zM27 17h1v1h-1zM3 18h1v1h-1zM6 18h1v1h-1zM8 18h1v1h-1zM14 18h1v1h-1zM17 18h1v1h-1zM18 18h1v1h-1zM22 18h1v1h-1zM23 18h1v1h-1zM27 18h1v1h-1zM3 19h1v1h-1zM7 19h1v1h-1zM9 19h1v1h-1zM10 19h1v1h-1zM12 19h1v1h-1zM14 19h1v1h-1zM15 19h1v1h-1zM16 19h1v1h-1zM18 19h1v1h-1zM19 19h1v1h-1zM20 19h1v1h-1zM21 19h1v1h-1zM22 19h1v1h-1zM23 19h1v1h-1zM25 19h1v1h-1zM11 20h1v1h-1zM15 20h1v1h-1zM16 20h1v1h-1zM19 20h1v1h-1zM23 20h1v1h-1zM24 20h1v1h-1zM3 21h1v1h-1zM4 21h1v1h-1zM5 21h1v1h-1zM6 21h1v1h-1zM7 21h1v1h-1zM8 21h1v1h-1zM9 21h1v1h-1zM12 21h1v1h-1zM16 21h1v1h-1zM17 21h1v1h-1zM19 21h1v1h-1zM21 21h1v1h-1zM23 21h1v1h-1zM25 21h1v1h-1zM26 21h1v1h-1zM27 21h1v1h-1zM3 22h1v1h-1zM9 22h1v1h-1zM11 22h1v1h-1zM12 22h1v1h-1zM19 22h1v1h-1zM23 22h1v1h-1zM24 22h1v1h-1zM26 22h1v1h-1zM27 22h1v1h-1zM3 23h1v1h-1zM5 23h1v1h-1zM6 23h1v1h-1zM7 23h1v1h-1zM9 23h1v1h-1zM11 23h1v1h-1zM13 23h1v1h-1zM14 23h1v1h-1zM15 23h1v1h-1zM16 23h1v1h-1zM17 23h1v1h-1zM18 23h1v1h-1zM19 23h1v1h-1zM20 23h1v1h-1zM21 23h1v1h-1zM22 23h1v1h-1zM23 23h1v1h-1zM25 23h1v1h-1zM3 24h1v1h-1zM5 24h1v1h-1zM6 24h1v1h-1zM7 24h1v1h-1zM9 24h1v1h-1zM11 24h1v1h-1zM14 24h1v1h-1zM20 24h1v1h-1zM21 24h1v1h-1zM23 24h1v1h-1zM24 24h1v1h-1zM25 24h1v1h-1zM26 24h1v1h-1zM27 24h1v1h-1zM3 25h1v1h-1zM5 25h1v1h-1zM6 25h1v1h-1zM7 25h1v1h-1zM9 25h1v1h-1zM11 25h1v1h-1zM12 25h1v1h-1zM16 25h1v1h-1zM19 25h1v1h-1zM24 25h1v1h-1zM25 25h1v1h-1zM27 25h1v1h-1zM3 26h1v1h-1zM9 26h1v1h-1zM13 26h1v1h-1zM14 26h1v1h-1zM17 26h1v1h-1zM18 26h1v1h-1zM19 26h1v1h-1zM21 26h1v1h-1zM22 26h1v1h-1zM23 26h1v1h-1zM24 26h1v1h-1zM27 26h1v1h-1zM3 27h1v1h-1zM4 27h1v1h-1zM5 27h1v1h-1zM6 27h1v1h-1zM7 27h1v1h-1zM8 27h1v1h-1zM9 27h1v1h-1zM11 27h1v1h-1zM14 27h1v1h-1zM15 27h1v1h-1zM16 27h1v1h-1zM17 27h1v1h-1zM18 27h1v1h-1zM20 27h1v1h-1zM21 27h1v1h-1zM22 27h1v1h-1zM23 27h1v1h-1zM24 27h1v1h-1zM25 27h1v1h-1zM26 27h1v1h-1zM27 27h1v1h-1z" fill="#073B2D"/></svg></div>
+    <div class="cta-main">
+      <p class="k">Faqja juaj</p>
+      <h2>Skanojeni dhe shikojeni vetë</h2>
+      <p>
+        <b>jara-pharmacy.com</b> — i njëjti katalog që panë vizitorët nga 16 shtete.
+        Numrat më lart përditësohen vetvetiu me çdo vizitor të ri.
+      </p>
+    </div>
+    <div class="meta">
+      <div class="m-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg></span>
+        <span><b>15–24 korrik 2026</b><span>Periudha e matur (10 ditë)</span></span>
+      </div>
+      <div class="m-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg></span>
+        <span><b>207 vizitorë unikë</b><span>Njerëz, jo klikime</span></span>
+      </div>
+      <div class="m-row">
+        <span class="ic"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M3.85 8.62a4 4 0 0 1 4.78-4.77 4 4 0 0 1 6.74 0 4 4 0 0 1 4.78 4.78 4 4 0 0 1 0 6.74 4 4 0 0 1-4.77 4.78 4 4 0 0 1-6.75 0 4 4 0 0 1-4.78-4.77 4 4 0 0 1 0-6.76Z"/><path d="m9 12 2 2 4-4"/></svg></span>
+        <span><b>Vercel Analytics</b><span>Matje automatike, e pavarur</span></span>
+      </div>
+    </div>
+  </footer>
+
+</div>
+</body>
+</html>
