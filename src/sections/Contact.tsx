@@ -100,7 +100,7 @@ export function Contact() {
             initial="hidden"
             whileInView="show"
             viewport={viewportOnce}
-            className="grid gap-3 sm:grid-cols-2"
+            className="grid min-w-0 gap-3 sm:grid-cols-2"
           >
             {contactItems.map((item, i) => {
               const Icon = item.icon;
@@ -147,7 +147,7 @@ export function Contact() {
             initial="hidden"
             whileInView="show"
             viewport={viewportOnce}
-            className="rounded-2xl border border-line bg-surface-soft p-6 shadow-soft sm:p-8"
+            className="min-w-0 rounded-2xl border border-line bg-surface-soft p-6 shadow-soft sm:p-8"
           >
             <AnimatePresence mode="wait">
               {submitted ? (
@@ -177,7 +177,11 @@ export function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     variant="whatsapp"
-                    leftIcon={<MessageCircle className="h-4 w-4" aria-hidden="true" />}
+                    leftIcon={<MessageCircle className="h-4 w-4 shrink-0" aria-hidden="true" />}
+                    fullWidth
+                    // This label is long enough to outgrow a phone-width card, so it
+                    // has to wrap — which means the fixed button height has to go too.
+                    className="!h-auto min-h-11 whitespace-normal py-3 text-center"
                   >
                     {c.form_send_whatsapp}
                   </Button>
@@ -200,10 +204,16 @@ export function Contact() {
                   className="flex flex-col gap-4"
                 >
                   {inquiryProduct && (
-                    <div className="flex items-center justify-between gap-2 rounded-xl bg-lime-soft/60 px-4 py-2.5 text-sm">
-                      <span className="min-w-0 truncate text-emerald2">
-                        <span className="font-semibold">{c.form_selected_product}:</span>{" "}
-                        {inquiryProduct.name}
+                    <div className="flex items-start justify-between gap-2 rounded-xl bg-lime-soft/60 px-4 py-2.5 text-sm">
+                      {/* Label above the name: on a phone a long product name has no
+                          room next to the label, and truncating hides what was picked. */}
+                      <span className="min-w-0 text-emerald2">
+                        <span className="block text-xs font-semibold uppercase tracking-wide">
+                          {c.form_selected_product}
+                        </span>
+                        <span className="block break-words font-semibold">
+                          {inquiryProduct.name}
+                        </span>
                       </span>
                       <button
                         type="button"
