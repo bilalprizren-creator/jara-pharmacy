@@ -9,6 +9,7 @@ import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CardSlider } from "@/components/ui/CardSlider";
 import { LocationsMapSkeleton } from "@/components/locations/LocationsMapSkeleton";
+import { branchElementId } from "@/lib/dom";
 import { formatHours } from "@/lib/hours";
 import { mapsHref, telHref } from "@/lib/links";
 import { branchPath } from "@/lib/routes";
@@ -42,7 +43,8 @@ export function Locations() {
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
-          className="relative mt-12 overflow-hidden rounded-3xl bg-brand-panel p-7 text-white shadow-card sm:p-9"
+          id={branchElementId(featured.id)}
+          className="relative mt-12 overflow-hidden rounded-3xl bg-brand-panel p-7 text-white shadow-card ring-lime transition-shadow duration-500 data-[highlight]:shadow-glow data-[highlight]:ring-2 sm:p-9"
         >
           <div className="pointer-events-none absolute -right-16 -top-20 h-64 w-64 rounded-full bg-lime/15 blur-3xl" aria-hidden="true" />
           <div className="pointer-events-none absolute -bottom-24 -left-10 h-56 w-56 rounded-full bg-emerald2-400/25 blur-3xl" aria-hidden="true" />
@@ -133,7 +135,8 @@ export function Locations() {
             return (
             <div
               key={location.id}
-              className="group flex h-full w-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
+              id={branchElementId(location.id)}
+              className="group flex h-full w-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft ring-lime transition-all duration-300 hover:-translate-y-1 hover:shadow-card data-[highlight]:shadow-glow data-[highlight]:ring-2"
             >
               <div className="flex items-center justify-between">
                 <span className="inline-flex h-9 min-w-9 items-center justify-center rounded-lg bg-forest/5 px-2 text-sm font-bold text-forest ring-1 ring-forest/10 transition-colors duration-300 group-hover:bg-forest group-hover:text-white">
