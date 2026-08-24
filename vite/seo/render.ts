@@ -163,20 +163,28 @@ function contentFor(route: SeoRoute): PageContent {
  * Readable defaults for the static copy. Deliberately plain: the app replaces
  * this markup the moment it mounts, so this only ever has to serve a crawler
  * or a visitor whose JavaScript did not run.
+ *
+ * Every selector is anchored on `#root>article` — the static copy's own
+ * wrapper — and never on `#root` alone. React mounts *into* `#root`, and an id
+ * selector outranks any Tailwind class, so a bare `#root a{color:…}` kept
+ * repainting every link in the running app: on each generated page the footer
+ * links turned forest-on-deep-green and unreadable, list spacing tripled, and
+ * every `<nav>` picked up a stray margin. Anchoring on the wrapper makes the
+ * rules stop matching the instant `createRoot` clears the container.
  */
 const STATIC_STYLE = `<style>
       #root>article{max-width:44rem;margin:0 auto;padding:6rem 1.25rem 4rem;
         font:16px/1.65 Inter,system-ui,sans-serif;color:#14342a}
-      #root h1{font-size:1.9rem;line-height:1.25;margin:.25rem 0 1rem;color:#0A5C44}
-      #root h2{font-size:1.15rem;margin:0 0 .35rem}
-      #root .seo-eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;
+      #root>article h1{font-size:1.9rem;line-height:1.25;margin:.25rem 0 1rem;color:#0A5C44}
+      #root>article h2{font-size:1.15rem;margin:0 0 .35rem}
+      #root>article .seo-eyebrow{text-transform:uppercase;letter-spacing:.08em;font-size:.75rem;
         font-weight:600;color:#0A5C44;margin:0}
-      #root li{margin:0 0 1.75rem}
-      #root ul{list-style:none;padding:0}
-      #root dt{font-weight:600;margin-top:.75rem}
-      #root dd{margin:0}
-      #root a{color:#0A5C44}
-      #root nav{margin-top:2.5rem;font-size:.9rem}
+      #root>article li{margin:0 0 1.75rem}
+      #root>article ul{list-style:none;padding:0}
+      #root>article dt{font-weight:600;margin-top:.75rem}
+      #root>article dd{margin:0}
+      #root>article a{color:#0A5C44}
+      #root>article nav{margin-top:2.5rem;font-size:.9rem}
     </style>
     <noscript><style>#jara-splash{display:none!important}</style></noscript>`;
 
