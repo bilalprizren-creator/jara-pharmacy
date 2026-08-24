@@ -7,6 +7,7 @@ import { Container } from "@/components/ui/Container";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
 import { telHref, mailtoHref, instagramHref } from "@/lib/links";
+import { BRANCHES_HUB_PATH } from "@/lib/routes";
 import { trackInquiry } from "@/lib/track";
 import { scrollToId } from "@/lib/dom";
 
@@ -57,6 +58,19 @@ export function Footer() {
                   </a>
                 </li>
               ))}
+              {/*
+                A real link, not an in-page scroll: this is the site-wide route
+                into the branch hub, which is what leads a crawler on to all
+                eleven location pages.
+              */}
+              <li>
+                <a
+                  href={BRANCHES_HUB_PATH}
+                  className="text-sm text-white/60 transition-colors hover:text-lime"
+                >
+                  {c.footer_all_branches}
+                </a>
+              </li>
             </ul>
           </nav>
 

@@ -1,4 +1,7 @@
-import { brand } from "@/data/brand";
+// Relative, not "@/": the build imports mapsHref to put branch map links into
+// the generated pages' structured data, and vite.config.ts is bundled before
+// Vite's `resolve.alias` exists. See the same note in @/lib/routes.
+import { brand } from "../data/brand";
 import type { Locale } from "@/types";
 
 /**

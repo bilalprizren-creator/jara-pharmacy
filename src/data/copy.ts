@@ -35,8 +35,8 @@ const al = {
 
   // Hero
   brand_tagline: "Kujdes, besim dhe cilësi për shëndetin tuaj",
-  hero_eyebrow: "Farmaci · Bukuri · Mirëqenie",
-  hero_title: "Farmaci moderne në Prizren për shëndet, bukuri dhe mirëqenie",
+  hero_eyebrow: "Barnatore · Bukuri · Mirëqenie",
+  hero_title: "Barnatore moderne në Prizren për shëndet, bukuri dhe mirëqenie",
   hero_subtitle:
     "Produkte të zgjedhura për lëkurë, flokë, vitamina, suplemente dhe kujdes të përditshëm.",
   trust_original: "Produkte origjinale",
@@ -56,7 +56,8 @@ const al = {
   trust_advice_t: "Këshillim profesional",
   trust_advice_d: "Staf i gatshëm t'ju udhëzojë me përgjegjësi.",
   trust_near_t: "Gjithmonë pranë jush",
-  trust_near_d: "12 lokacione në Prizren e Rahovec, kudo ku ju nevojitet.",
+  trust_near_d:
+    "Rrjeti ynë i barnatoreve në Prizren e Rahovec — 12 lokacione, kudo ku ju nevojitet.",
   trust_care_t: "Kujdes për shëndetin dhe bukurinë",
   trust_care_d: "Një vend për mirëqenien e përditshme të familjes.",
 
@@ -121,9 +122,9 @@ const al = {
 
   // Locations
   locations_eyebrow: "Lokacionet",
-  locations_title: "Na gjeni kudo në Prizren",
+  locations_title: "Barnatore në Prizren — na gjeni kudo",
   locations_subtitle:
-    "Dymbëdhjetë pika shërbimi në Prizren e Rahovec, të gjitha me të njëjtin standard kujdesi.",
+    "Barnatoret tona në Prizren e Rahovec — dymbëdhjetë pika shërbimi, të gjitha me të njëjtin standard kujdesi.",
   location_featured: "Lokacioni kryesor",
   maps_open: "Hap në Google Maps",
   location_directions: "Udhëzime",
@@ -137,9 +138,9 @@ const al = {
 
   // About
   about_eyebrow: "Rreth nesh",
-  about_title: "Një farmaci moderne, e ndërtuar mbi besim",
+  about_title: "Një barnatore moderne në Prizren, e ndërtuar mbi besim",
   about_body:
-    "Jara Pharmacy është një farmaci moderne në Prizren, e ndërtuar mbi besim, cilësi dhe kujdes profesional. Synimi ynë është t'u ofrojmë klientëve produkte të sigurta, këshillim të saktë dhe një eksperiencë të lehtë, të bukur dhe të shpejtë.",
+    "Jara Pharmacy është barnatore moderne në Prizren, e ndërtuar mbi besim, cilësi dhe kujdes profesional. Synimi ynë është t'u ofrojmë klientëve produkte të sigurta, këshillim të saktë dhe një eksperiencë të lehtë, të bukur dhe të shpejtë në secilën nga farmacitë tona.",
   // Authentic tagline from the brand's social posts.
   about_quote: "Cilësi që ndjehet, kujdes që bën ndryshim.",
   about_value_quality: "Cilësi",
@@ -188,6 +189,15 @@ const al = {
   contact_address: "Adresa",
   contact_hours: "Orari",
   contact_hours_value: "Hën–Sht: 08:00–22:00 · Diel: 09:00–20:00",
+  // Short weekday labels — @/lib/hours builds each branch's opening-hours line
+  // from these, so the visible text matches the structured data Google reads.
+  day_monday: "Hën",
+  day_tuesday: "Mar",
+  day_wednesday: "Mër",
+  day_thursday: "Enj",
+  day_friday: "Pre",
+  day_saturday: "Sht",
+  day_sunday: "Die",
   contact_reassurance: "Ne do t'ju kontaktojmë sa më shpejt.",
   form_name: "Emri",
   form_phone: "Numri i telefonit",
@@ -211,6 +221,7 @@ const al = {
   footer_description:
     "Farmaci moderne në Prizren për shëndet, bukuri dhe mirëqenie. Produkte origjinale dhe këshillim profesional.",
   footer_quicklinks: "Lidhje të shpejta",
+  footer_all_branches: "Barnatore në Prizren",
   footer_categories: "Kategoritë",
   footer_contact: "Kontakti",
   footer_rights: "Të gjitha të drejtat e rezervuara.",
@@ -342,7 +353,7 @@ const en: CopyShape = {
   locations_map_legend_depo: "Depot (not customer-facing)",
 
   about_eyebrow: "About us",
-  about_title: "A modern pharmacy, built on trust",
+  about_title: "A modern pharmacy in Prizren, built on trust",
   about_body:
     "Jara Pharmacy is a modern pharmacy in Prizren, built on trust, quality and professional care. Our goal is to offer safe products, accurate guidance and a fast, elegant and easy customer experience.",
   about_quote: "Quality you can feel, care that makes a difference.",
@@ -387,6 +398,13 @@ const en: CopyShape = {
   contact_address: "Address",
   contact_hours: "Hours",
   contact_hours_value: "Mon–Sat: 08:00–22:00 · Sun: 09:00–20:00",
+  day_monday: "Mon",
+  day_tuesday: "Tue",
+  day_wednesday: "Wed",
+  day_thursday: "Thu",
+  day_friday: "Fri",
+  day_saturday: "Sat",
+  day_sunday: "Sun",
   contact_reassurance: "We will contact you as soon as possible.",
   form_name: "Name",
   form_phone: "Phone number",
@@ -409,6 +427,7 @@ const en: CopyShape = {
   footer_description:
     "A modern pharmacy in Prizren for health, beauty and wellbeing. Original products and professional guidance.",
   footer_quicklinks: "Quick links",
+  footer_all_branches: "Pharmacies in Prizren",
   footer_categories: "Categories",
   footer_contact: "Contact",
   footer_rights: "All rights reserved.",

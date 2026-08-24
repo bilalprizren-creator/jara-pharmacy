@@ -75,6 +75,32 @@ components. Key files:
 The `neon` MCP server is configured in `.mcp.json` but content is currently
 **static TS files**, not a database. Don't assume a live backend.
 
+## Crawlable URLs (generated at build)
+
+The app is still one scrolling page, but it is no longer one *address*. The
+site had exactly one indexable URL with an empty `#root`, so the six finished
+articles and twelve branches were invisible to search engines.
+
+- **`src/lib/routes.ts`** is the single source of truth for every address
+  (`/`, `/barnatore-ne-prizren`, `/lokacionet/<id>`, `/keshilla/<slug>` — 19 in
+  total). App, sitemap and page generator all read it, so they can't drift.
+- **`vite/seo/`** is a Vite plugin that, at build time, fills the JSON-LD
+  placeholder in `index.html` and writes one static HTML file per route into
+  `dist/`, plus `sitemap.xml`. Each page ships its real text inside `#root`;
+  `createRoot` clears it on mount, so visitors still get the normal app.
+  There is **no sitemap in `public/`** any more — it is generated.
+- ⚠️ **`src/lib/routes.ts` and `src/lib/links.ts` import their runtime
+  dependencies relatively (`../data/...`), not via `@/`.** `vite.config.ts`
+  imports them, and esbuild bundles the config before Vite's `resolve.alias`
+  exists — switching them back to `@/` breaks the build. Type-only imports are
+  erased and can stay aliased.
+- Search-facing copy uses **"barnatore"** alongside "farmaci". It is the
+  everyday Kosovar word and the one people search for; the site previously used
+  only "farmaci", which is why Facebook outranked us for "jara barnatore".
+- Opening hours live in `src/data/locations.ts` as data (`hours`), rendered via
+  `@/lib/hours` and emitted as `openingHoursSpecification` — visible text and
+  structured data come from the same place on purpose.
+
 ## Design language the maintainer likes
 
 Reuse these; they are the established look and have been praised explicitly:

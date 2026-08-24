@@ -1,3 +1,4 @@
+import { useEffect } from "react";
 import { I18nProvider } from "@/context/I18nContext";
 import { InquiryProvider } from "@/context/InquiryContext";
 import { ArticleProvider } from "@/context/ArticleContext";
@@ -19,8 +20,24 @@ import { Stats } from "@/sections/Stats";
 import { Blog } from "@/sections/Blog";
 import { Contact } from "@/sections/Contact";
 import { SkipLink } from "@/components/common/SkipLink";
+import { scrollToId } from "@/lib/dom";
+import { BRANCHES_HUB_PATH, branchIdFrom } from "@/lib/routes";
 
 export default function App() {
+  /**
+   * A visitor arriving from a branch or hub result was served a page about a
+   * specific pharmacy; React then replaces that markup with the homepage. Take
+   * them to the branch list so the app opens on what they actually asked for
+   * rather than silently at the top. Articles need no equivalent — those open
+   * their own dialog from ArticleProvider.
+   */
+  useEffect(() => {
+    const { pathname } = window.location;
+    if (branchIdFrom(pathname) || pathname === BRANCHES_HUB_PATH) {
+      scrollToId("locations", true);
+    }
+  }, []);
+
   return (
     <I18nProvider>
       <InquiryProvider>

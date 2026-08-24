@@ -9,22 +9,24 @@ import {
 } from "react";
 import { blogArticles } from "@/data/blog";
 import { useI18n } from "@/context/I18nContext";
-import type { BlogArticle, Locale } from "@/types";
+import { articlePath, articleSlugFrom } from "@/lib/routes";
+import type { BlogArticle } from "@/types";
 
 /**
  * Drives the article detail view (an accessible modal — this SPA has no router)
- * and keeps a shareable, deep-linkable URL hash in sync:
- *   Albanian  →  #keshilla/<slug>
- *   English   →  #tips/<slug>
+ * and keeps a shareable, deep-linkable URL in sync:
+ *   Albanian  →  /keshilla/<slug>
+ *   English   →  /tips/<slug>
  *
- * The hash is the source of truth for *external* navigation (deep links, manual
- * edits, in-page nav anchors), while open/close update it via replaceState so
- * we never spam the history stack. Document title + meta description are updated
- * while an article is open (best-effort SEO for a client-rendered app).
+ * These used to be `#fragments`, which a browser never sends to a server: six
+ * finished bilingual articles were invisible to every search engine. They are
+ * real paths now, and the build writes a static HTML file for each one, so the
+ * text is in the response before any JavaScript runs. Already-shared hash links
+ * still resolve — see `articleSlugFrom`.
+ *
+ * Open/close use pushState so the back button walks in and out of an article.
  */
 
-const HASH_PREFIX: Record<Locale, string> = { al: "keshilla", en: "tips" };
-const KNOWN_PREFIXES = Object.values(HASH_PREFIX);
 const BRAND = "Jara Pharmacy";
 
 interface ArticleValue {
@@ -35,13 +37,10 @@ interface ArticleValue {
 
 const ArticleContext = createContext<ArticleValue | null>(null);
 
-/** Read a `#keshilla/<slug>` / `#tips/<slug>` fragment into a known article slug. */
-function slugFromHash(): string | null {
+/** Current article slug from the path, falling back to the legacy hash. */
+function slugFromUrl(): string | null {
   if (typeof window === "undefined") return null;
-  const raw = window.location.hash.replace(/^#/, "");
-  const [prefix, slug] = raw.split("/");
-  if (!slug || !KNOWN_PREFIXES.includes(prefix)) return null;
-  return blogArticles.some((a) => a.slug === slug) ? slug : null;
+  return articleSlugFrom(window.location.pathname, window.location.hash);
 }
 
 function setMeta(selector: string, attr: "name" | "property", key: string, content: string) {
@@ -56,50 +55,77 @@ function setMeta(selector: string, attr: "name" | "property", key: string, conte
 
 export function ArticleProvider({ children }: { children: ReactNode }) {
   const { locale, tr } = useI18n();
-  const [slug, setSlug] = useState<string | null>(() => slugFromHash());
+  const [slug, setSlug] = useState<string | null>(() => slugFromUrl());
 
   const article = useMemo(() => blogArticles.find((a) => a.slug === slug) ?? null, [slug]);
 
-  // External navigation (deep link, manual URL edit, clicking a nav anchor).
+  // External navigation: deep link, manual URL edit, and — now that open/close
+  // push real entries — the browser's own back and forward buttons.
   useEffect(() => {
-    const sync = () => setSlug(slugFromHash());
+    const sync = () => setSlug(slugFromUrl());
+    window.addEventListener("popstate", sync);
     window.addEventListener("hashchange", sync);
-    return () => window.removeEventListener("hashchange", sync);
+    return () => {
+      window.removeEventListener("popstate", sync);
+      window.removeEventListener("hashchange", sync);
+    };
   }, []);
 
   const openArticle = useCallback(
     (next: string) => {
       setSlug(next);
-      window.history.replaceState(null, "", `#${HASH_PREFIX[locale]}/${next}`);
+      window.history.pushState(null, "", articlePath(next, locale));
     },
     [locale],
   );
 
   const closeArticle = useCallback(() => {
     setSlug(null);
-    window.history.replaceState(null, "", window.location.pathname + window.location.search);
+    window.history.pushState(null, "", "/");
   }, []);
 
-  // Best-effort SEO: reflect the open article in the document head; restore on close.
+  // Reflect the open article in the document head, and put every value back on
+  // close. The og:* pair used to be set but never restored, so once an article
+  // had been opened the share preview stayed stuck on it for the rest of the
+  // visit — including back on the homepage.
   useEffect(() => {
     if (!article) return;
-    const prevTitle = document.title;
-    const prevDesc =
-      document.head.querySelector<HTMLMetaElement>('meta[name="description"]')?.content ?? "";
 
+    const head = document.head;
+    const readMeta = (selector: string) =>
+      head.querySelector<HTMLMetaElement>(selector)?.content ?? "";
+    const canonical = head.querySelector<HTMLLinkElement>('link[rel="canonical"]');
+
+    const previous = {
+      title: document.title,
+      desc: readMeta('meta[name="description"]'),
+      ogTitle: readMeta('meta[property="og:title"]'),
+      ogDesc: readMeta('meta[property="og:description"]'),
+      canonical: canonical?.href ?? "",
+    };
+
+    const path = articlePath(article.slug, locale);
     const title = `${tr(article.seoTitle)} · ${BRAND}`;
     const desc = tr(article.seoDescription);
+
     document.title = title;
     setMeta('meta[name="description"]', "name", "description", desc);
     setMeta('meta[property="og:title"]', "property", "og:title", title);
     setMeta('meta[property="og:description"]', "property", "og:description", desc);
+    if (canonical) canonical.href = new URL(path, window.location.origin).href;
 
-    // Keep the hash prefix aligned with the active language while open.
-    window.history.replaceState(null, "", `#${HASH_PREFIX[locale]}/${article.slug}`);
+    // Keep the path's language segment aligned while open — a correction of the
+    // current entry, not a navigation, so replaceState rather than pushState.
+    if (window.location.pathname !== path) {
+      window.history.replaceState(null, "", path);
+    }
 
     return () => {
-      document.title = prevTitle;
-      setMeta('meta[name="description"]', "name", "description", prevDesc);
+      document.title = previous.title;
+      setMeta('meta[name="description"]', "name", "description", previous.desc);
+      setMeta('meta[property="og:title"]', "property", "og:title", previous.ogTitle);
+      setMeta('meta[property="og:description"]', "property", "og:description", previous.ogDesc);
+      if (canonical) canonical.href = previous.canonical;
     };
   }, [article, locale, tr]);
 

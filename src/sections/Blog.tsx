@@ -1,3 +1,4 @@
+import type { MouseEvent } from "react";
 import { ArrowRight, Clock } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
 import { useArticle } from "@/context/ArticleContext";
@@ -6,10 +7,23 @@ import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { CardSlider } from "@/components/ui/CardSlider";
 import { accentChip } from "@/lib/accents";
+import { articlePath } from "@/lib/routes";
 
 export function Blog() {
-  const { c, tr } = useI18n();
+  const { c, locale, tr } = useI18n();
   const { openArticle } = useArticle();
+
+  /**
+   * Real links, opened in place. These were buttons, which meant six finished
+   * articles had no href for a crawler to follow. The href is the article's own
+   * address now; a plain click still opens the modal instead of reloading, and
+   * ctrl/cmd-click keeps working like any other link.
+   */
+  const openInPlace = (event: MouseEvent<HTMLAnchorElement>, slug: string) => {
+    if (event.metaKey || event.ctrlKey || event.shiftKey || event.button !== 0) return;
+    event.preventDefault();
+    openArticle(slug);
+  };
 
   return (
     <section id="blog" className="section bg-surface-soft" aria-labelledby="blog-heading">
@@ -47,19 +61,19 @@ export function Blog() {
                 {tr(category)}
               </p>
               <h3 className="mt-1 text-lg font-bold leading-snug text-ink-strong">
-                <button
-                  type="button"
-                  onClick={() => openArticle(slug)}
+                <a
+                  href={articlePath(slug, locale)}
+                  onClick={(event) => openInPlace(event, slug)}
                   className="text-left transition-colors hover:text-forest"
                 >
                   {tr(title)}
-                </button>
+                </a>
               </h3>
               <p className="mt-2 flex-1 text-sm leading-relaxed text-ink-muted">{tr(excerpt)}</p>
 
-              <button
-                type="button"
-                onClick={() => openArticle(slug)}
+              <a
+                href={articlePath(slug, locale)}
+                onClick={(event) => openInPlace(event, slug)}
                 className="mt-4 inline-flex items-center gap-1.5 self-start text-sm font-semibold text-forest transition-colors hover:text-forest-600"
               >
                 {c.read_more}
@@ -67,7 +81,7 @@ export function Blog() {
                   className="h-4 w-4 transition-transform duration-300 group-hover:translate-x-1"
                   aria-hidden="true"
                 />
-              </button>
+              </a>
             </article>
           ))}
         </CardSlider>

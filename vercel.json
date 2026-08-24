@@ -1,5 +1,7 @@
 {
   "$schema": "https://openapi.vercel.sh/vercel.json",
+  "cleanUrls": true,
+  "trailingSlash": false,
   "headers": [
     {
       "source": "/fonts/(.*)",
@@ -10,5 +12,11 @@
         }
       ]
     }
+  ],
+  "rewrites": [
+    { "source": "/barnatore-ne-prizren", "destination": "/barnatore-ne-prizren/index.html" },
+    { "source": "/keshilla/:slug", "destination": "/keshilla/:slug/index.html" },
+    { "source": "/lokacionet/:id", "destination": "/lokacionet/:id/index.html" },
+    { "source": "/(.*)", "destination": "/index.html" }
   ]
 }

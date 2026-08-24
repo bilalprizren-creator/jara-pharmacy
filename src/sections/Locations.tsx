@@ -2,14 +2,16 @@ import { lazy, Suspense } from "react";
 import { motion } from "framer-motion";
 import { MapPin, Navigation, Phone, Clock, ArrowRight, Warehouse } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
-import { locations } from "@/data/locations";
+import { locations, publicBranches } from "@/data/locations";
 import { brand } from "@/data/brand";
 import { Container } from "@/components/ui/Container";
 import { SectionHeading } from "@/components/ui/SectionHeading";
 import { Button } from "@/components/ui/Button";
 import { CardSlider } from "@/components/ui/CardSlider";
 import { LocationsMapSkeleton } from "@/components/locations/LocationsMapSkeleton";
+import { formatHours } from "@/lib/hours";
 import { mapsHref, telHref } from "@/lib/links";
+import { branchPath } from "@/lib/routes";
 import { trackInquiry } from "@/lib/track";
 import { fadeUp, viewportOnce } from "@/lib/motion";
 
@@ -22,6 +24,8 @@ export function Locations() {
   const featured = locations.find((l) => l.featured) ?? locations[0];
   const rest = locations.filter((l) => l.id !== featured.id);
   const cities = [...new Set(locations.map((l) => l.city.split(",")[0].trim()))];
+  // The depot has no page of its own — it is not somewhere customers go.
+  const hasOwnPage = new Set(publicBranches.map((l) => l.id));
 
   return (
     <section id="locations" className="section bg-surface-soft" aria-labelledby="locations-heading">
@@ -65,7 +69,9 @@ export function Locations() {
                 </div>
                 <div className="flex items-center gap-3">
                   <Clock className="h-4 w-4 text-lime" aria-hidden="true" />
-                  <span className="text-white/80">{c.contact_hours_value}</span>
+                  <span className="text-white/80">
+                    {formatHours(featured.hours, c) || c.contact_hours_value}
+                  </span>
                 </div>
               </dl>
 
@@ -122,7 +128,9 @@ export function Locations() {
           nextLabel={c.locations_next}
           itemClassName="w-[82%] sm:w-[46%] md:w-[300px] xl:w-[320px]"
         >
-          {rest.map((location) => (
+          {rest.map((location) => {
+            const hours = formatHours(location.hours, c);
+            return (
             <div
               key={location.id}
               className="group flex h-full w-full flex-col rounded-2xl border border-line bg-white p-5 shadow-soft transition-all duration-300 hover:-translate-y-1 hover:shadow-card"
@@ -141,8 +149,24 @@ export function Locations() {
                 />
               </div>
 
-              <h4 className="mt-3 text-base font-bold leading-snug text-ink-strong">{location.name}</h4>
-              <p className="mt-1 flex-1 text-sm leading-relaxed text-ink-muted">{location.address}</p>
+              <h4 className="mt-3 text-base font-bold leading-snug text-ink-strong">
+                {hasOwnPage.has(location.id) ? (
+                  <a href={branchPath(location.id)} className="transition-colors hover:text-forest">
+                    {location.name}
+                  </a>
+                ) : (
+                  location.name
+                )}
+              </h4>
+              <p className="mt-1 text-sm leading-relaxed text-ink-muted">{location.address}</p>
+              {hours && (
+                <p className="mt-1.5 flex items-start gap-1.5 text-xs leading-relaxed text-ink-muted">
+                  <Clock className="mt-0.5 h-3.5 w-3.5 shrink-0 text-forest/70" aria-hidden="true" />
+                  {hours}
+                </p>
+              )}
+
+              <div className="flex-1" />
 
               <a
                 href={mapsHref(location.mapsQuery)}
@@ -154,7 +178,8 @@ export function Locations() {
                 {c.location_directions}
               </a>
             </div>
-          ))}
+            );
+          })}
         </CardSlider>
       </Container>
     </section>

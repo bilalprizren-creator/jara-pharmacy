@@ -4,12 +4,17 @@ export function prefersReducedMotion(): boolean {
   return window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 }
 
-/** Smoothly scroll to an in-page anchor, honoring reduced motion. */
-export function scrollToId(id: string): void {
+/**
+ * Scroll to an in-page anchor, honoring reduced motion.
+ *
+ * `instant` is for arriving from outside — a deep link into a branch, say —
+ * where gliding through the whole page would be noise rather than orientation.
+ */
+export function scrollToId(id: string, instant = false): void {
   const el = document.getElementById(id);
   if (!el) return;
   el.scrollIntoView({
-    behavior: prefersReducedMotion() ? "auto" : "smooth",
+    behavior: instant || prefersReducedMotion() ? "auto" : "smooth",
     block: "start",
   });
 }

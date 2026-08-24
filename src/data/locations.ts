@@ -1,4 +1,19 @@
-import type { Location } from "@/types";
+import type { Location, OpeningHours } from "@/types";
+
+/**
+ * Chain-wide opening hours, the same times the contact section has always
+ * shown (Hën–Sht 08:00–22:00 · Diel 09:00–20:00), now as data so the branch
+ * cards and the generated JSON-LD read from one source. A branch that keeps
+ * different times just declares its own `hours` and wins over this default.
+ */
+const standardHours: OpeningHours[] = [
+  {
+    days: ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"],
+    opens: "08:00",
+    closes: "22:00",
+  },
+  { days: ["Sunday"], opens: "09:00", closes: "20:00" },
+];
 
 /**
  * Real Jara Pharmacy branches, taken from the official branch list
@@ -8,7 +23,7 @@ import type { Location } from "@/types";
  * queries are taken verbatim from that export. `mapsQuery` drives a resilient
  * Google Maps search; new branches can be appended without any refactor.
  */
-export const locations: Location[] = [
+const branches: Location[] = [
   {
     id: "william-walker",
     branch: 3,
@@ -127,3 +142,18 @@ export const locations: Location[] = [
     note: { al: "Depo (magazina)", en: "Warehouse / depot" },
   },
 ];
+
+/**
+ * Every customer-facing branch carries the standard hours unless it declares
+ * its own. The depot is deliberately left without hours: it is not a place
+ * customers visit, which is also what keeps it out of the search-engine
+ * structured data and out of the generated branch pages.
+ */
+export const locations: Location[] = branches.map((branch) =>
+  branch.id === "depo" ? branch : { hours: standardHours, ...branch },
+);
+
+/** The eleven branches customers can actually walk into. */
+export const publicBranches: Location[] = locations.filter(
+  (branch) => branch.id !== "depo",
+);

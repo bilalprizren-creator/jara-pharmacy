@@ -166,6 +166,27 @@ export interface Location {
   phone?: string;
   featured?: boolean;
   note?: Bilingual;
+  /**
+   * Opening hours as data, not display text. Drives both the visible branch
+   * card and the `openingHoursSpecification` in the generated JSON-LD, so the
+   * two can never disagree. `days` uses schema.org day names.
+   */
+  hours?: OpeningHours[];
+}
+
+export interface OpeningHours {
+  days: (
+    | "Monday"
+    | "Tuesday"
+    | "Wednesday"
+    | "Thursday"
+    | "Friday"
+    | "Saturday"
+    | "Sunday"
+  )[];
+  /** 24h "HH:MM". */
+  opens: string;
+  closes: string;
 }
 
 export interface Testimonial {

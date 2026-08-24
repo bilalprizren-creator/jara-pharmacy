@@ -186,20 +186,33 @@
     <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
     <link rel="manifest" href="/site.webmanifest" />
 
-    <!-- Primary SEO (Albanian-first, location-aware) -->
-    <title>Jara Pharmacy | Farmaci moderne në Prizren</title>
+    <!--
+      Primary SEO (Albanian-first, location-aware). "Barnatore" leads on
+      purpose: it is the everyday Kosovar word for a pharmacy and the one people
+      actually search for, while the site's own copy had only ever used
+      "farmaci". Both words now appear, here and in the visible copy.
+    -->
+    <title>Barnatore në Prizren — Jara Pharmacy | 12 lokacione</title>
     <meta
       name="description"
-      content="Jara Pharmacy në Prizren ofron produkte farmaceutike, kozmetikë, suplemente, kujdes për lëkurë, flokë dhe mirëqenie. Modern pharmacy in Prizren for health, beauty and wellbeing."
+      content="Jara Pharmacy — barnatore moderne në Prizren me 12 lokacione. Produkte farmaceutike, kozmetikë, suplemente dhe kujdes për lëkurë e flokë."
     />
-    <meta name="keywords" content="Jara Pharmacy, farmaci Prizren, pharmacy Kosovo, kozmetikë, suplemente, skincare, haircare, vitamina, kolagjen" />
+    <meta name="keywords" content="barnatore Prizren, farmaci Prizren, Jara Pharmacy, barnatore afër meje, pharmacy Kosovo, kozmetikë, suplemente, skincare, haircare, vitamina, kolagjen" />
     <meta name="author" content="Jara Pharmacy" />
     <link rel="canonical" href="https://jara-pharmacy.com/" />
+
+    <!--
+      Albanian is the only addressable locale: the language toggle lives in
+      localStorage, not in the URL, so there is no separate English address to
+      point at yet. Self-reference + x-default is the honest set here.
+    -->
+    <link rel="alternate" hreflang="sq" href="https://jara-pharmacy.com/" />
+    <link rel="alternate" hreflang="x-default" href="https://jara-pharmacy.com/" />
 
     <!-- Open Graph -->
     <meta property="og:type" content="business.business" />
     <meta property="og:site_name" content="Jara Pharmacy" />
-    <meta property="og:title" content="Jara Pharmacy | Farmaci moderne në Prizren" />
+    <meta property="og:title" content="Barnatore në Prizren — Jara Pharmacy | 12 lokacione" />
     <meta
       property="og:description"
       content="Produkte të zgjedhura për lëkurë, flokë, vitamina, suplemente dhe kujdes të përditshëm. 12 lokacione në Prizren e Rahovec."
@@ -215,10 +228,10 @@
 
     <!-- Twitter -->
     <meta name="twitter:card" content="summary_large_image" />
-    <meta name="twitter:title" content="Jara Pharmacy | Modern pharmacy in Prizren" />
+    <meta name="twitter:title" content="Barnatore në Prizren — Jara Pharmacy | 12 lokacione" />
     <meta
       name="twitter:description"
-      content="Carefully selected products for skin, hair, vitamins, supplements and daily care."
+      content="Produkte të zgjedhura për lëkurë, flokë, vitamina, suplemente dhe kujdes të përditshëm. 12 lokacione në Prizren e Rahovec."
     />
     <meta name="twitter:image" content="https://jara-pharmacy.com/jara-pharmacy-social-preview.png" />
     <meta name="twitter:image:alt" content="Jara Pharmacy logo — Farmaci moderne në Prizren" />
@@ -253,28 +266,14 @@
       fetchpriority="high"
     />
 
-    <!-- Structured data: local pharmacy business -->
-    <script type="application/ld+json">
-      {
-        "@context": "https://schema.org",
-        "@type": "Pharmacy",
-        "name": "Jara Pharmacy",
-        "description": "Modern pharmacy, health and beauty brand in Prizren, Kosovo.",
-        "url": "https://jara-pharmacy.com/",
-        "logo": "https://jara-pharmacy.com/favicon-512.png",
-        "email": "jarapharm@gmail.com",
-        "telephone": ["+38349500763", "+38348550002"],
-        "image": "https://jara-pharmacy.com/jara-pharmacy-social-preview.png",
-        "address": {
-          "@type": "PostalAddress",
-          "streetAddress": "Rr. William Vokeri",
-          "addressLocality": "Prizren",
-          "postalCode": "20000",
-          "addressCountry": "XK"
-        },
-        "sameAs": ["https://www.instagram.com/jarapharmacy", "https://www.facebook.com/jarapharm"]
-      }
-    </script>
+    <!--
+      Structured data. Built from src/data by vite/seo/schema.ts, not written by
+      hand: this used to be a single Pharmacy node with one address, no
+      coordinates and no opening hours, describing a twelve-branch business. The
+      generated graph carries the organisation, the site and every branch with
+      its own geo and hours, and cannot drift from what the page shows.
+    -->
+    <!--jara:json-ld-->
   </head>
   <body>
     <!--
