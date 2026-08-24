@@ -43,6 +43,18 @@ function slugFromUrl(): string | null {
   return articleSlugFrom(window.location.pathname, window.location.hash);
 }
 
+/**
+ * A path with the current query string kept.
+ *
+ * Rewriting the address on open and close used to drop `window.location.search`:
+ * someone arriving on `?utm_source=instagram`, opening a tip and closing it
+ * again lost the campaign it came from for the rest of the visit. The canonical
+ * link below deliberately does *not* get this — that one has to stay clean.
+ */
+function withQuery(path: string): string {
+  return `${path}${window.location.search}`;
+}
+
 function setMeta(selector: string, attr: "name" | "property", key: string, content: string) {
   let el = document.head.querySelector<HTMLMetaElement>(selector);
   if (!el) {
@@ -74,14 +86,14 @@ export function ArticleProvider({ children }: { children: ReactNode }) {
   const openArticle = useCallback(
     (next: string) => {
       setSlug(next);
-      window.history.pushState(null, "", articlePath(next, locale));
+      window.history.pushState(null, "", withQuery(articlePath(next, locale)));
     },
     [locale],
   );
 
   const closeArticle = useCallback(() => {
     setSlug(null);
-    window.history.pushState(null, "", "/");
+    window.history.pushState(null, "", withQuery("/"));
   }, []);
 
   // Reflect the open article in the document head, and put every value back on
@@ -117,7 +129,7 @@ export function ArticleProvider({ children }: { children: ReactNode }) {
     // Keep the path's language segment aligned while open — a correction of the
     // current entry, not a navigation, so replaceState rather than pushState.
     if (window.location.pathname !== path) {
-      window.history.replaceState(null, "", path);
+      window.history.replaceState(null, "", withQuery(path));
     }
 
     return () => {
