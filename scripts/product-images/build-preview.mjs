@@ -82,7 +82,7 @@ function card(product, index) {
 
   const media = found
     ? `<img class="shot" src="${src}" alt="${escapeHtml(product.name)}" loading="lazy" decoding="async">`
-    : `<div class="shot-missing"><span>kein Bild gefunden</span></div>`;
+    : `<div class="shot-missing"><span>nuk u gjet foto</span></div>`;
 
   const source = product.sourceUrl
     ? `<a class="source" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.source)} · ${escapeHtml(product.licence ?? "")}</a>`
@@ -95,31 +95,31 @@ function card(product, index) {
         <div class="panel">${media}</div>
         <div class="meta">
           <p class="name">${escapeHtml(product.name)}</p>
-          <p class="brand">${escapeHtml(product.brand || "ohne Marke")}</p>
+          <p class="brand">${escapeHtml(product.brand || "pa markë")}</p>
           <dl class="facts">
-            <div><dt>Barcode</dt><dd class="mono">${formatBarcode(product.barcode)}</dd></div>
-            <div><dt>Artikel</dt><dd class="mono">${escapeHtml(product.code)}</dd></div>
-            <div><dt>Preis</dt><dd class="mono">${formatPrice(product.price)}</dd></div>
+            <div><dt>Barkodi</dt><dd class="mono">${formatBarcode(product.barcode)}</dd></div>
+            <div><dt>Kodi</dt><dd class="mono">${escapeHtml(product.code)}</dd></div>
+            <div><dt>Çmimi</dt><dd class="mono">${formatPrice(product.price)}</dd></div>
           </dl>
           ${source}
         </div>
-        <div class="verdict" role="group" aria-label="Bewertung für ${escapeHtml(product.name)}">
-          <button type="button" data-mark="ok" aria-pressed="false">Passt</button>
-          <button type="button" data-mark="unsure" aria-pressed="false">Unsicher</button>
-          <button type="button" data-mark="wrong" aria-pressed="false">Falsch</button>
+        <div class="verdict" role="group" aria-label="Vlerësimi për ${escapeHtml(product.name)}">
+          <button type="button" data-mark="ok" aria-pressed="false">Mirë</button>
+          <button type="button" data-mark="unsure" aria-pressed="false">Dyshim</button>
+          <button type="button" data-mark="wrong" aria-pressed="false">Gabim</button>
         </div>
       </article>`;
 }
 
 function page(report, cards, brands) {
   const { totals, label } = report;
-  const generated = new Date(report.generatedAt).toLocaleDateString("de-DE", {
+  const generated = new Date(report.generatedAt).toLocaleDateString("sq-AL", {
     day: "2-digit",
     month: "long",
     year: "numeric",
   });
 
-  return `<title>Jara Produktbild-Vorschau</title>
+  return `<title>Fotot e Produkteve Jara</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
@@ -262,9 +262,12 @@ function page(report, cards, brands) {
     flex: none; /* equal-height cards must not stretch the photo panel */
     aspect-ratio: 4 / 5;
     background: linear-gradient(180deg, #FFFFFF 0%, #F4F7F5 100%);
-    display: grid; place-items: center; border-bottom: 1px solid var(--line);
+    display: grid; place-items: center; overflow: hidden;
+    border-bottom: 1px solid var(--line);
   }
-  .shot { width: 100%; height: 100%; object-fit: contain; padding: 9%; }
+  /* min-height:0 keeps a tall packshot from stretching the panel past its
+     aspect ratio, which would break the row alignment. */
+  .shot { width: 100%; height: 100%; min-width: 0; min-height: 0; object-fit: contain; padding: 9%; }
   .shot-missing {
     width: 100%; height: 100%; display: grid; place-items: center;
     color: #94A3B8; font-size: 13px;
@@ -323,28 +326,28 @@ function page(report, cards, brands) {
   @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 </style>
 
-<div class="wrap">
+<div class="wrap" lang="sq">
   <header class="masthead">
-    <p class="eyebrow">Vorschau · ${escapeHtml(label)} · ${generated}</p>
-    <h1>Produktbilder zur Freigabe</h1>
-    <p class="lede">Die leichtesten Produkte zuerst: bekannte Marke, geprüfter Barcode.
-      Jedes Bild ist so dargestellt, wie es auf der Website erscheinen würde. Bitte
-      durchsehen und markieren — die Auswahl bleibt in diesem Browser gespeichert.</p>
+    <p class="eyebrow">Parapamje · ${escapeHtml(label)} · ${generated}</p>
+    <h1>Fotot e produkteve për aprovim</h1>
+    <p class="lede">Së pari produktet më të lehta: markë e njohur, barkod i verifikuar.
+      Çdo foto shfaqet ashtu siç do të dukej në faqe. Shikoji një nga një dhe shëno
+      vlerësimin — zgjedhjet ruhen në këtë shfletues.</p>
     <div class="tally">
       <span>Produkte <b>${totals.selected}</b></span>
-      <span>mit Bild <b>${totals.found}</b></span>
-      <span>ohne Treffer <b>${totals.missing}</b></span>
-      <span>Marken <b>${brands.length}</b></span>
+      <span>me foto <b>${totals.found}</b></span>
+      <span>pa rezultat <b>${totals.missing}</b></span>
+      <span>Marka <b>${brands.length}</b></span>
     </div>
   </header>
 
   <div class="toolbar">
-    <input class="search" type="search" id="q" placeholder="Suchen: Name, Marke, Barcode…" aria-label="Produkte durchsuchen">
+    <input class="search" type="search" id="q" placeholder="Kërko: emri, marka, barkodi…" aria-label="Kërko produkte">
     <div class="chips" id="statusChips">
-      <button class="chip" type="button" data-status="all" aria-pressed="true">Alle</button>
-      <button class="chip" type="button" data-status="found" aria-pressed="false">Mit Bild</button>
-      <button class="chip" type="button" data-status="missing" aria-pressed="false">Ohne Bild</button>
-      <button class="chip" type="button" data-status="open" aria-pressed="false">Offen</button>
+      <button class="chip" type="button" data-status="all" aria-pressed="true">Të gjitha</button>
+      <button class="chip" type="button" data-status="found" aria-pressed="false">Me foto</button>
+      <button class="chip" type="button" data-status="missing" aria-pressed="false">Pa foto</button>
+      <button class="chip" type="button" data-status="open" aria-pressed="false">Pa vlerësim</button>
     </div>
     <div class="chips" id="brandChips">
       ${brands.map((b) => `<button class="chip" type="button" data-brand="${escapeHtml(b)}" aria-pressed="false">${escapeHtml(b)}</button>`).join("\n      ")}
@@ -353,12 +356,12 @@ function page(report, cards, brands) {
 
   <div class="grid" id="grid">${cards}
   </div>
-  <p class="empty" id="empty" hidden>Keine Produkte für diese Auswahl.</p>
+  <p class="empty" id="empty" hidden>Asnjë produkt për këtë zgjedhje.</p>
 </div>
 
 <div class="footbar">
-  <p><b id="doneCount">0</b> von <b>${totals.selected}</b> bewertet · <b id="okCount">0</b> passt · <b id="wrongCount">0</b> falsch</p>
-  <button class="copy" type="button" id="copyBtn">Bewertungen kopieren</button>
+  <p><b id="doneCount">0</b> nga <b>${totals.selected}</b> të vlerësuara · <b id="okCount">0</b> mirë · <b id="wrongCount">0</b> gabim</p>
+  <button class="copy" type="button" id="copyBtn">Kopjo vlerësimet</button>
 </div>
 
 <script>
@@ -447,7 +450,7 @@ function page(report, cards, brands) {
     });
 
     document.getElementById("copyBtn").addEventListener("click", function () {
-      var label = { ok: "passt", unsure: "unsicher", wrong: "falsch" };
+      var label = { ok: "mirë", unsure: "dyshim", wrong: "gabim" };
       var lines = cards
         .filter(function (card) { return marks[card.dataset.code]; })
         .map(function (card) {
@@ -458,15 +461,15 @@ function page(report, cards, brands) {
           ].join("\\t");
         });
       var text = lines.length
-        ? "Artikel\\tBewertung\\tProdukt\\n" + lines.join("\\n")
-        : "Noch nichts bewertet.";
+        ? "Kodi\\tVlerësimi\\tProdukti\\n" + lines.join("\\n")
+        : "Ende asgjë e vlerësuar.";
       var button = document.getElementById("copyBtn");
       navigator.clipboard.writeText(text).then(function () {
-        button.textContent = "Kopiert ✓";
-        setTimeout(function () { button.textContent = "Bewertungen kopieren"; }, 1800);
+        button.textContent = "U kopjua ✓";
+        setTimeout(function () { button.textContent = "Kopjo vlerësimet"; }, 1800);
       }, function () {
-        button.textContent = "Kopieren nicht erlaubt";
-        setTimeout(function () { button.textContent = "Bewertungen kopieren"; }, 1800);
+        button.textContent = "Kopjimi nuk lejohet";
+        setTimeout(function () { button.textContent = "Kopjo vlerësimet"; }, 1800);
       });
     });
 
