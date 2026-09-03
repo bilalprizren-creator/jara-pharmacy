@@ -40,6 +40,9 @@ Thumbs.db
 /*.webp
 /WhatsApp Image*
 
+# fetched product images awaiting review (see scripts/product-images/)
+.image-cache
+
 # env
 .env
 .env.*
