@@ -50,7 +50,10 @@ def main():
         if not source:
             continue
         source_path = os.path.join(ROOT, source)
-        target = os.path.join(args.out, f"{product['code']}.jpg")
+        # Named after the original file, not the article code: codes may carry
+        # characters a file name cannot.
+        stem = os.path.splitext(os.path.basename(source))[0]
+        target = os.path.join(args.out, f"{stem}.jpg")
         if not os.path.exists(source_path):
             failed += 1
             continue

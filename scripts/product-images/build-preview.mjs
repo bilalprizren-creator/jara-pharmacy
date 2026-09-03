@@ -64,25 +64,50 @@ function formatBarcode(code) {
   return code || "—";
 }
 
+const thumbsBuilt = () => fs.existsSync(THUMB_DIR) && fs.readdirSync(THUMB_DIR).length > 0;
+
+/**
+ * Returns the image as a data URI, or `{ damaged: true }` when the file is
+ * there but unreadable — a truncated download that would otherwise render as a
+ * broken image and be mistaken for a missing photo.
+ */
 function embedImage(product) {
-  const thumb = path.join(THUMB_DIR, `${product.code}.jpg`);
-  const file = fs.existsSync(thumb) ? thumb : product.file ? path.join(ROOT, product.file) : null;
-  if (!file || !fs.existsSync(file)) return null;
-  const mime = MIME[path.extname(file).toLowerCase()];
+  if (!product.file) return null;
+  const original = path.join(ROOT, product.file);
+  const thumb = path.join(THUMB_DIR, `${path.basename(product.file, path.extname(product.file))}.jpg`);
+  if (fs.existsSync(thumb)) {
+    return `data:image/jpeg;base64,${fs.readFileSync(thumb).toString("base64")}`;
+  }
+  // No thumbnail although thumbnails were built means Pillow rejected the file.
+  if (thumbsBuilt()) return { damaged: true };
+  if (!fs.existsSync(original)) return null;
+  const mime = MIME[path.extname(original).toLowerCase()];
   if (!mime) return null;
-  return `data:${mime};base64,${fs.readFileSync(file).toString("base64")}`;
+  return `data:${mime};base64,${fs.readFileSync(original).toString("base64")}`;
 }
 
 function card(product, index) {
-  const src = embedImage(product);
+  const embedded = embedImage(product);
+  const damaged = Boolean(embedded && embedded.damaged);
+  const src = damaged ? null : embedded;
   const found = Boolean(src);
-  const search = [product.name, product.brand, product.barcode, product.code]
+  const search = [product.name, product.brand, product.barcode, product.code, product.confidence]
     .join(" ")
     .toLowerCase();
 
   const media = found
     ? `<img class="shot" src="${src}" alt="${escapeHtml(product.name)}" loading="lazy" decoding="async">`
-    : `<div class="shot-missing"><span>nuk u gjet foto</span></div>`;
+    : `<div class="shot-missing"><span>${damaged ? "fotografia e dëmtuar" : "nuk u gjet foto"}</span></div>`;
+
+  // Only the uncertain ones get a badge. Flagging all fifty as "high" would
+  // decorate the grid without telling the reviewer where to look.
+  const flag =
+    product.confidence && product.confidence !== "E lartë"
+      ? `<p class="flag">Besueshmëria: ${escapeHtml(product.confidence)}</p>`
+      : "";
+  const warnings = (product.warnings ?? []).length
+    ? `<p class="flag warn">${product.warnings.map(escapeHtml).join(" · ")}</p>`
+    : "";
 
   const source = product.sourceUrl
     ? `<a class="source" href="${escapeHtml(product.sourceUrl)}" target="_blank" rel="noopener noreferrer">${escapeHtml(product.source)} · ${escapeHtml(product.licence ?? "")}</a>`
@@ -96,6 +121,7 @@ function card(product, index) {
         <div class="meta">
           <p class="name">${escapeHtml(product.name)}</p>
           <p class="brand">${escapeHtml(product.brand || "pa markë")}</p>
+          ${flag}${warnings}
           <dl class="facts">
             <div><dt>Barkodi</dt><dd class="mono">${formatBarcode(product.barcode)}</dd></div>
             <div><dt>Kodi</dt><dd class="mono">${escapeHtml(product.code)}</dd></div>
@@ -277,6 +303,13 @@ function page(report, cards, brands) {
   .meta { display: flex; flex-direction: column; gap: 6px; padding: 12px 14px 4px; }
   .name { margin: 0; font-size: 13.5px; font-weight: 600; line-height: 1.35; }
   .brand { margin: 0; font-size: 12px; color: var(--emerald); font-weight: 600; letter-spacing: .02em; }
+  .flag {
+    margin: 0; align-self: flex-start;
+    padding: 3px 9px; border-radius: 999px;
+    background: var(--unsure-soft); color: var(--unsure);
+    font-size: 11px; font-weight: 600;
+  }
+  .flag.warn { background: var(--wrong-soft); color: var(--wrong); font-weight: 500; }
   .facts { margin: 4px 0 0; display: grid; gap: 2px; font-size: 12px; }
   .facts div { display: flex; justify-content: space-between; gap: 10px; }
   .facts dt { color: var(--ink-muted); }
