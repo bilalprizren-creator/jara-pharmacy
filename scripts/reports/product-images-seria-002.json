@@ -1,0 +1,1710 @@
+{
+  "generatedAt": "2026-09-04T11:24:53.771Z",
+  "label": "seria-002",
+  "dataset": "scripts/product-images/albtrix-products.json",
+  "selection": {
+    "kind": "retail",
+    "limit": 100,
+    "perBrand": 8,
+    "brand": null
+  },
+  "totals": {
+    "selected": 100,
+    "found": 23,
+    "missing": 77,
+    "durationMs": 308658
+  },
+  "products": [
+    {
+      "code": "17032038",
+      "name": "VICHY AMINEXIL HAIR RENEWING SERUM 1.5% 90ML V.2080",
+      "brand": "VICHY",
+      "barcode": "3337875932080",
+      "price": 67.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "71161",
+      "name": "ALKALOID CAJ BRUSNICE DUPLEKS 40GR",
+      "brand": "ALKALOID",
+      "barcode": "5310001215248",
+      "price": 2.5,
+      "supplier": "DAUTI KOMERC SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/5310001215248",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/531/000/121/5248/front_fr.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Fruit tea",
+      "file": ".image-cache/originals/71161.jpg",
+      "bytes": 15683,
+      "width": 323,
+      "height": 400
+    },
+    {
+      "code": "225498",
+      "name": "LA ROCHE ANTHELIOS AGE CORRECT COLOR SPF50 50ML L.4353",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875764353",
+      "price": 36.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "SCY900/02",
+      "name": "AVENT SET SHISHE PLASTIKE 125ML",
+      "brand": "AVENT",
+      "barcode": "8710103990451",
+      "price": 23.5,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "30856",
+      "name": "CHICCO BAGNO SHAMPOO 750ML",
+      "brand": "CHICCO",
+      "barcode": "8058664138432",
+      "price": 12.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "69787",
+      "name": "EUCERIN _69787_AQUAPHOR 220ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800221422",
+      "price": 20.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "15342",
+      "name": "L-CITRULLINE MALATE SWANSON 750MG A60",
+      "brand": "SWANSON",
+      "barcode": "087614115917",
+      "price": 11.9,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "4783",
+      "name": "HIPP BABY KEKS-KEKS I PARE PER FOSHNJA 180G",
+      "brand": "HIPP",
+      "barcode": "9062300137276",
+      "price": 3.3,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/9062300137276",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/906/230/013/7276/front_sl.22.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "hipp Baby’s biscuit",
+      "file": ".image-cache/originals/4783.jpg",
+      "bytes": 16846,
+      "width": 400,
+      "height": 236
+    },
+    {
+      "code": "9118",
+      "name": "W.136 BIBERON/SHISHE CLASIK 250ML",
+      "brand": "WEE BABY",
+      "barcode": "8690797101367",
+      "price": 5.5,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "5167",
+      "name": "DEO SPREJ BLACK & WHITE INVISIBLE 48H 150ML (NIVEA MEN )",
+      "brand": "NIVEA",
+      "barcode": "4005808729951",
+      "price": 3.9,
+      "supplier": "INTER BUN SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4005808729951",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/400/580/872/9951/front_bg.5.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "g",
+      "file": ".image-cache/originals/5167.jpg",
+      "bytes": 19233,
+      "width": 123,
+      "height": 400
+    },
+    {
+      "code": "403567",
+      "name": "RILASTIL 100 ULTRA PROTECTOR FLUID 50ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510242831",
+      "price": 19.8,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "803025",
+      "name": "FIORI DI ZENZERO EAU DE TOILETTE 10ML",
+      "brand": "NATURES",
+      "barcode": "8030243015358",
+      "price": 3.5,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "44131",
+      "name": "BIBS BABY GLASS BOTTLE 225ML",
+      "brand": "BIBS",
+      "barcode": "5713795220922",
+      "price": 21.8,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "853049",
+      "name": "VICHY AMINEXIL MEN 36ML",
+      "brand": "VICHY",
+      "barcode": "3337875660266",
+      "price": 25.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "495333",
+      "name": "ALKAVIT FOLIC ACID TAB 0.4MG",
+      "brand": "ALKALOID",
+      "barcode": "5310001224004",
+      "price": 3,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "20777",
+      "name": "LA ROCHE ANTHELIOS AGE CORRECT SPF50 CREAM 50ML L.1031",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875761031",
+      "price": 37.8,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3337875761031",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/333/787/576/1031/front_en.8.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "La Roche Anthelios Age Correct",
+      "file": ".image-cache/originals/20777.jpg",
+      "bytes": 16503,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "SCY903/67",
+      "name": "AVENT SHISHE 260ML KOALA",
+      "brand": "AVENT",
+      "barcode": "8710103989714",
+      "price": 13.9,
+      "supplier": "ALFAVIT SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "154891",
+      "name": "CHICCO DETERGJENT PER RROBA NEW 1.5L",
+      "brand": "CHICCO",
+      "barcode": "8058664122325",
+      "price": 12.5,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openproductsfacts",
+      "sourceUrl": "https://world.openproductsfacts.org/product/8058664122325",
+      "imageUrl": "https://images.openproductsfacts.org/images/products/805/866/412/2325/front_en.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "",
+      "file": ".image-cache/originals/154891.jpg",
+      "bytes": 19232,
+      "width": 215,
+      "height": 400
+    },
+    {
+      "code": "93389-00350",
+      "name": "EUCERIN 93389-00350 E BOX DERMOPURE CLINICAL GEL 2X400ML",
+      "brand": "EUCERIN",
+      "barcode": "9005800414829",
+      "price": 31.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "99450",
+      "name": "L-TRYPTOPHAN 500MG 60CPS (SWANSON)",
+      "brand": "SWANSON",
+      "barcode": "087614115023",
+      "price": 13.5,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "225790",
+      "name": "HIPP KARROTE ME MISER DHE MISH VICI ORGANIK 190G",
+      "brand": "HIPP",
+      "barcode": "4062300260795",
+      "price": 2.3,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4062300260795",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/230/026/0795/front_de.10.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Hipp Karotten mit Mais und Bio-Kalb",
+      "file": ".image-cache/originals/225790.jpg",
+      "bytes": 23756,
+      "width": 303,
+      "height": 400
+    },
+    {
+      "code": "9122",
+      "name": "W.139 WEE BABY HEAT RESISTANT PATTERBED CLASSICAL 120ML NO: 1 12X6",
+      "brand": "WEE BABY",
+      "barcode": "8690797101398",
+      "price": 10.9,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "2110",
+      "name": "HAND AND NAIL CREM BEESWAX-HONEY 75ML (NIVEA)",
+      "brand": "NIVEA",
+      "barcode": "9005800291888",
+      "price": 3.5,
+      "supplier": "INTER BUN SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/9005800291888",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/900/580/029/1888/front_ro.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "",
+      "file": ".image-cache/originals/2110.jpg",
+      "bytes": 7754,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "91163",
+      "name": "RILASTIL ACNE PURIF ANTI-BLEM BODY SPRAY 150ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510243227",
+      "price": 15.9,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "8030O",
+      "name": "HEMATITE SHAVING CREAM 200ML",
+      "brand": "NATURES",
+      "barcode": "8030243004338",
+      "price": 4.9,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "22564",
+      "name": "BIBS GLASS BOTTLE 120ML",
+      "brand": "BIBS",
+      "barcode": "5713795265589",
+      "price": 19.5,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "853050",
+      "name": "VICHY AMINEXIL MEN FOAM 150ML",
+      "brand": "VICHY",
+      "barcode": "3337875660242",
+      "price": 35,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "15041",
+      "name": "BRONLES SIR PER FEMIJE 125MG/5ML",
+      "brand": "ALKALOID",
+      "barcode": "5310001222185",
+      "price": 2.85,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "65575",
+      "name": "LA ROCHE ANTHELIOS ANTISHINE SPF50 SPRAY 75 ML L.9530",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875549530",
+      "price": 23.8,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875549530",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/554/9530/front_fr.4.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "La Roche-Posay Anthelios",
+      "file": ".image-cache/originals/65575.jpg",
+      "bytes": 7278,
+      "width": 102,
+      "height": 400
+    },
+    {
+      "code": "SCY100/02",
+      "name": "AVENT SHISHE ANTI COLIC 125ML 2x",
+      "brand": "AVENT",
+      "barcode": "8710103997115",
+      "price": 14.3,
+      "supplier": "ALFAVIT SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "76826",
+      "name": "CHICCO KANGUR EASY FIT 0-9KG",
+      "brand": "CHICCO",
+      "barcode": "8058664075072",
+      "price": 74.5,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "93389-00352-00",
+      "name": "EUCERIN 93389-00352-00 BOX PH5 GEL+VAJ PER DUSH 2X400ML",
+      "brand": "EUCERIN",
+      "barcode": "9005800415772",
+      "price": 21.9,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "12341",
+      "name": "SWANSON 5-HTP 60X50MG",
+      "brand": "SWANSON",
+      "barcode": "087614112367",
+      "price": 8.9,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "14780",
+      "name": "HIPP KREM KUNDER TE SKUQURIT 75ML",
+      "brand": "HIPP",
+      "barcode": "4062300419452",
+      "price": 3.5,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "9123",
+      "name": "W.140 WEE BABY HEAT RESISTANT PATTERNED CLASSICAL 180ML NO:1 12X6",
+      "brand": "WEE BABY",
+      "barcode": "8690797101404",
+      "price": 11.5,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "381564",
+      "name": "NIVEA 2in1 SHOWER SHAMPO FOR KIDS-PURPLE 250ML",
+      "brand": "NIVEA",
+      "barcode": "9005800321967",
+      "price": 4.3,
+      "supplier": "PERFECT BLUE L.L.C",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "11101",
+      "name": "RILASTIL ACNESTIL ATTIVA + ANTI BLEMISH AND ANTI-MARKS 40 ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510242305",
+      "price": 16.5,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "8030S",
+      "name": "NATURES ACQUE OIL GEL MASK 50ML",
+      "brand": "NATURES",
+      "barcode": "8030243010193",
+      "price": 6.9,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "21565",
+      "name": "BIBS GLASS BOTTLE LATEX 120ML IVORY",
+      "brand": "BIBS",
+      "barcode": "5713795265596",
+      "price": 19.5,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "853051",
+      "name": "VICHY ANTI - TRACES AEROSOL 125ML",
+      "brand": "VICHY",
+      "barcode": "3337871324582",
+      "price": 13.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337871324582",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/132/4582/front_en.16.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Vichy Deodoranr",
+      "file": ".image-cache/originals/853051.jpg",
+      "bytes": 18042,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "785609",
+      "name": "PEDACET SHAMPON 60ML",
+      "brand": "ALKALOID",
+      "barcode": "5310001131579",
+      "price": 3.5,
+      "supplier": "DAUTI KOMERC SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "318",
+      "name": "LA ROCHE ANTHELIOS BABY SPF50 LOTION 50ML L.9904",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337872419904",
+      "price": 20.8,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "SCF810/14",
+      "name": "AVENT SHISHE ANTI-COLIK 120ML",
+      "brand": "AVENT",
+      "barcode": "8710103852643",
+      "price": 8.9,
+      "supplier": "ALFAVIT SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "72747",
+      "name": "CHICCO PARFUM PER FEMIJE 100ML SPREJ",
+      "brand": "CHICCO",
+      "barcode": "8058664129423",
+      "price": 8.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "99690",
+      "name": "EUCERIN DERMOPURE CLINICAL GEL 200ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800382147",
+      "price": 17.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "17623",
+      "name": "SWANSON ALBION MAGNESIUM GLYCINATE 133MG 90CAPS",
+      "brand": "SWANSON",
+      "barcode": "087614020730",
+      "price": 13.5,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/087614020730",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/008/761/402/0730/front_en.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Swanson Magnesium glycinate",
+      "file": ".image-cache/originals/17623.jpg",
+      "bytes": 25479,
+      "width": 265,
+      "height": 400
+    },
+    {
+      "code": "23670",
+      "name": "HIPP KREME KUNDER TE SKUQURIT 100ML",
+      "brand": "HIPP",
+      "barcode": "4062300374287",
+      "price": 2.9,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "9124",
+      "name": "W.141 WEE BABY HEAT RESSISTANT PATTERNED CLASSICAL 280ML NO:1 12X6",
+      "brand": "WEE BABY",
+      "barcode": "8690797101411",
+      "price": 11.8,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "51723.",
+      "name": "NIVEA AFTER SUN SENSITIVE CREM GEL 175ML",
+      "brand": "NIVEA",
+      "barcode": "4005900702630",
+      "price": 12.9,
+      "supplier": "PERFECT BLUE L.L.C",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/4005900702630",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/400/590/070/2630/front_de.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Nivea Nivea Sun after sun sensitive",
+      "file": ".image-cache/originals/51723..jpg",
+      "bytes": 22035,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "48985",
+      "name": "RILASTIL ACNESTIL ATTIVA +SPF30 ANTI BLEMISH CREAM 40ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510245146",
+      "price": 18.5,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "803024",
+      "name": "NATURES AGRUMI 10ML",
+      "brand": "NATURES",
+      "barcode": "8030243015365",
+      "price": 4.5,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "60581",
+      "name": "BIBS GLASS BOTTLE SET 225ML (SAGE)",
+      "brand": "BIBS",
+      "barcode": "5713795220939",
+      "price": 21.9,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "123212",
+      "name": "VICHY ANTI DANDRUFF DS SHAMP 200ML",
+      "brand": "VICHY",
+      "barcode": "5902503353742",
+      "price": 15.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "17510",
+      "name": "PROCULIN SOFT LENS 100ML",
+      "brand": "ALKALOID",
+      "barcode": "5310001258252",
+      "price": 4.2,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "319",
+      "name": "LA ROCHE ANTHELIOS CHILDERN SPF50 GEL-LOTION 250ML L.6706",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875546706",
+      "price": 31.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875546706",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/554/6706/front_fr.6.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "La Roche-Posay Anthelios Dermo-Pediatrics Gel Peau Mouillée",
+      "file": ".image-cache/originals/319.jpg",
+      "bytes": 18051,
+      "width": 156,
+      "height": 400
+    },
+    {
+      "code": "SCY100/01",
+      "name": "AVENT SHISHE ANTICOLIC 125ML",
+      "brand": "AVENT",
+      "barcode": "8710103996729",
+      "price": 9.2,
+      "supplier": "ALFAVIT SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "72743",
+      "name": "CHICCO SHAMPO 0M 500ML SENZA LACRIME",
+      "brand": "CHICCO",
+      "barcode": "8058664138388",
+      "price": 8.5,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/8058664138388",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/805/866/413/8388/front_en.5.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Chicco Baby Moments  shampoo",
+      "file": ".image-cache/originals/72743.jpg",
+      "bytes": 19377,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "99558",
+      "name": "EUCERIN HYALURON FILLER ULTRA LIGHT KREM DITES SPF50 50ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800377402",
+      "price": 51.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "62377",
+      "name": "SWANSON ALBION MAGNESIUM GLYCINATE 200MG 60 VEGAN TAB",
+      "brand": "SWANSON",
+      "barcode": "087614027180",
+      "price": 14.5,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "225789",
+      "name": "HIPP KUNGULL ME PATATE DHE MISH VICI ORGANIK 190G",
+      "brand": "HIPP",
+      "barcode": "4062300261532",
+      "price": 2.3,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4062300261532",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/230/026/1532/front_de.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Hipp Kürbis mit Kartoffeln und Bio-Rind",
+      "file": ".image-cache/originals/225789.jpg",
+      "bytes": 23297,
+      "width": 242,
+      "height": 400
+    },
+    {
+      "code": "9127",
+      "name": "W.144 WEE BABY HEAT RESISTANT ATURAL FEELING WIDE 125 ML",
+      "brand": "WEE BABY",
+      "barcode": "8690797101442",
+      "price": 6.5,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "19386",
+      "name": "NIVEA ANTIWRINKLE+FIRMING DAY CARE CREME 45+50ML",
+      "brand": "NIVEA",
+      "barcode": "9005800290812",
+      "price": 6.9,
+      "supplier": "PERFECT BLUE L.L.C",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "9655....",
+      "name": "RILASTIL ACNESTIL ATTIVA CREAM 40ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510240189",
+      "price": 15.5,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "803037",
+      "name": "NATURES AGRUMI BODY LOTION 150ML",
+      "brand": "NATURES",
+      "barcode": "8030243011404",
+      "price": 5.9,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "27752",
+      "name": "BIBS GROW AND FLOW BABY BOTTLE LATEX SET 150ML/270ML",
+      "brand": "BIBS",
+      "barcode": "5713795265138",
+      "price": 25.9,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "20089",
+      "name": "VICHY AQUA THERMALE WATER 150ML V.8612",
+      "brand": "VICHY",
+      "barcode": "3337871308612",
+      "price": 12.9,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3337871308612",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/333/787/130/8612/front_fr.4.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "",
+      "file": ".image-cache/originals/20089.jpg",
+      "bytes": 12759,
+      "width": 400,
+      "height": 300
+    },
+    {
+      "code": "2262258",
+      "name": "PROCULIN SOFT LENS 360ML",
+      "brand": "ALKALOID",
+      "barcode": "5310001258238",
+      "price": 8.9,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "320",
+      "name": "LA ROCHE ANTHELIOS CHILDREN SPF50 LOTION 250ML L.0628",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875550628",
+      "price": 27.5,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875550628",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/555/0628/front_en.5.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "",
+      "file": ".image-cache/originals/320.jpg",
+      "bytes": 13275,
+      "width": 180,
+      "height": 400
+    },
+    {
+      "code": "SCY103/01",
+      "name": "AVENT SHISHE ANTICOLIC 260ML",
+      "brand": "AVENT",
+      "barcode": "8710103996736",
+      "price": 10.5,
+      "supplier": "ALFAVIT SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "95268",
+      "name": "CHICCO SHAMPO 500ML NATURAL SENSITIV",
+      "brand": "CHICCO",
+      "barcode": "8058664164011",
+      "price": 13.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "63001",
+      "name": "EUCERIN_63001_ pH5 LOSION PER TRUP 200ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800196423",
+      "price": 9,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "57057",
+      "name": "SWANSON ALOE VERA GELL 1L",
+      "brand": "SWANSON",
+      "barcode": "087614012612",
+      "price": 18.9,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "22577",
+      "name": "HIPP KUSKUS ME PERIME 190G",
+      "brand": "HIPP",
+      "barcode": "4062300427372",
+      "price": 2.2,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4062300427372",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/230/042/7372/front_de.4.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Hipp Vegetarisches Menü Couscous-Gemüse-Pfanne",
+      "file": ".image-cache/originals/22577.jpg",
+      "bytes": 22642,
+      "width": 256,
+      "height": 400
+    },
+    {
+      "code": "9128",
+      "name": "W.145 WEE BABY HEAT RESISTANT NATURAL FEELING WIDE 250 ML",
+      "brand": "WEE BABY",
+      "barcode": "8690797101459",
+      "price": 6.8,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "80523",
+      "name": "NIVEA BABY INTENSIVE CREAM 150 ML",
+      "brand": "NIVEA",
+      "barcode": "4005808400348",
+      "price": 6.9,
+      "supplier": "PERFECT BLUE L.L.C",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "4033",
+      "name": "RILASTIL ACNESTIL ATTIVA CREAM+ACN.MICR.PIL 30ML",
+      "brand": "RILASTIL",
+      "barcode": "8055510241926",
+      "price": 16.5,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "8030F",
+      "name": "NATURES ANTI AGING CREAM EYE AND LIP AREA 15ML",
+      "brand": "NATURES",
+      "barcode": "8030243007520",
+      "price": 6.9,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "1011171",
+      "name": "BIBS PLASTIC BOTTLE 270ML",
+      "brand": "BIBS",
+      "barcode": "5713795265381",
+      "price": 13.9,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "809731",
+      "name": "VICHY AQUALIA THERMAL GEL 50ML",
+      "brand": "VICHY",
+      "barcode": "3337875588775",
+      "price": 21.9,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875588775",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/558/8775/front_en.3.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Aqualia Thermal Crema rehidranate-GEL",
+      "file": ".image-cache/originals/809731.jpg",
+      "bytes": 27509,
+      "width": 400,
+      "height": 319
+    },
+    {
+      "code": "15112",
+      "name": "PROCULIN TEARS ADVANCE SOL 10ML",
+      "brand": "ALKALOID",
+      "barcode": "5310001278182",
+      "price": 5.9,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "L.0153",
+      "name": "LA ROCHE ANTHELIOS INVISIBLE SPRAY SPF 50 200ML L.0153",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337872420153",
+      "price": 32.8,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/3337872420153",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/333/787/242/0153/front_en.8.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "La Roche Anthelios Bruma Corpotal",
+      "file": ".image-cache/originals/L.0153.jpg",
+      "bytes": 19161,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "SCY106/01",
+      "name": "AVENT SHISHE CLASSIC 330ML 3M+",
+      "brand": "AVENT",
+      "barcode": "8710103996750",
+      "price": 15.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "111553",
+      "name": "CHICCO SHAMPON 200ML ME ALOEVERA DHE KAMOMIL",
+      "brand": "CHICCO",
+      "barcode": "8058664164004",
+      "price": 8.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "63003",
+      "name": "EUCERIN_63003_PH5 LOSION PER TRUP 400ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800196454",
+      "price": 20.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "13355",
+      "name": "SWANSON ALPHA LIPOIC ACID CAPS 60X300MG",
+      "brand": "SWANSON",
+      "barcode": "087614021362",
+      "price": 18.9,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "225791",
+      "name": "HIPP LAZAGNA ME PERIME 220G",
+      "brand": "HIPP",
+      "barcode": "4062300265967",
+      "price": 2.2,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4062300265967",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/230/026/5967/front_de.25.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Hipp Gemüse Lasagne",
+      "file": ".image-cache/originals/225791.jpg",
+      "bytes": 22148,
+      "width": 400,
+      "height": 140
+    },
+    {
+      "code": "9129",
+      "name": "W.147 WEE BABY HEAT RESISTAND NATURAL CURVED GLASS 260 ML",
+      "brand": "WEE BABY",
+      "barcode": "8690797101473",
+      "price": 10.9,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "21401",
+      "name": "NIVEA BABY MILD SHAMPOO 500ML",
+      "brand": "NIVEA",
+      "barcode": "9005800263823",
+      "price": 4.9,
+      "supplier": "PERFECT BLUE L.L.C",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "852318",
+      "name": "RILASTIL ACNESTIL CLEANSING GEL 200ML",
+      "brand": "RILASTIL",
+      "barcode": "8050444858592",
+      "price": 9.8,
+      "supplier": "Ekrem Shema B.I. ( N.T.Sh. Italmed )",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "99 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "503J",
+      "name": "NATURES ARGA 50ML+LIPSTICK",
+      "brand": "NATURES",
+      "barcode": "8030243010841",
+      "price": 6.5,
+      "supplier": "A LIFE BN L.L.C.",
+      "reasons": [
+        "Marke bekannt",
+        "91 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "101172",
+      "name": "BIBS PLASTIC BOTTLE 270ML",
+      "brand": "BIBS",
+      "barcode": "5713795265367",
+      "price": 13.5,
+      "supplier": "GO-Up SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "85 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "49999",
+      "name": "VICHY AQUALIA THERMAL LIGHT 50ML V.8829",
+      "brand": "VICHY",
+      "barcode": "3337875588829",
+      "price": 33.9,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "185 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875588829",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/558/8829/front_fr.4.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Vichy Vichy aquatique thermal",
+      "file": ".image-cache/originals/49999.jpg",
+      "bytes": 17988,
+      "width": 300,
+      "height": 400
+    },
+    {
+      "code": "41333",
+      "name": "FEROZOMAL QESE A 30",
+      "brand": "ALKALOID",
+      "barcode": "5310001272852",
+      "price": 9.5,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "152 Produkte derselben Marke"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "74086",
+      "name": "LA ROCHE ANTHELIOS INVISIBLE SPRAY SPF 50 200ML L.6838",
+      "brand": "LA ROCHE-POSAY",
+      "barcode": "3337875696838",
+      "price": 31.8,
+      "supplier": "SANTEFARM",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "151 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openbeautyfacts",
+      "sourceUrl": "https://world.openbeautyfacts.org/product/3337875696838",
+      "imageUrl": "https://images.openbeautyfacts.org/images/products/333/787/569/6838/front_fr.5.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "La Roche-Posay La Roche-Posay - Anthelios protection 50",
+      "file": ".image-cache/originals/74086.jpg",
+      "bytes": 15597,
+      "width": 225,
+      "height": 400
+    },
+    {
+      "code": "SCF821/15",
+      "name": "AVENT SHISHE CLASSIC BLU 260 ML",
+      "brand": "AVENT",
+      "barcode": "8710103880714",
+      "price": 11.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "147 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "473964",
+      "name": "CHICCO SHAMPON 500ML PROTECTION",
+      "brand": "CHICCO",
+      "barcode": "8058664138333",
+      "price": 9.9,
+      "supplier": "ADL SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "145 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "63022",
+      "name": "EUCERIN_63022_ pH5 KREM PER FYTYRE 75 ML",
+      "brand": "EUCERIN",
+      "barcode": "4005800196508",
+      "price": 17.9,
+      "supplier": "ASGETO SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "144 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "135",
+      "name": "SWANSON ALPHA LIPOIC ACID CAPS 60X600MG",
+      "brand": "SWANSON",
+      "barcode": "087614021676",
+      "price": 27.5,
+      "supplier": "VITAMER SH.P.K.",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "126 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    },
+    {
+      "code": "225792",
+      "name": "HIPP MENY ME PERIME 190G",
+      "brand": "HIPP",
+      "barcode": "4062300259638",
+      "price": 2.2,
+      "supplier": "BABY WORLD SHPK",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "125 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "gefunden",
+      "source": "openfoodfacts",
+      "sourceUrl": "https://world.openfoodfacts.org/product/4062300259638",
+      "imageUrl": "https://images.openfoodfacts.org/images/products/406/230/025/9638/front_de.10.400.jpg",
+      "licence": "CC-BY-SA 3.0",
+      "sourceTitle": "Hipp Bunter Kartoffel Auflauf (ab 8. Monat)",
+      "file": ".image-cache/originals/225792.jpg",
+      "bytes": 26832,
+      "width": 236,
+      "height": 400
+    },
+    {
+      "code": "9138",
+      "name": "W.171 WEE BABY STRAW CUP 380ML",
+      "brand": "WEE BABY",
+      "barcode": "8690797101718",
+      "price": 8.9,
+      "supplier": "PHARMATREE DISTRIBUTION SH.P.K",
+      "reasons": [
+        "Marke bekannt",
+        "Marke mit Online-Katalog",
+        "107 Produkte derselben Marke",
+        "Packungsgröße im Namen"
+      ],
+      "status": "kein Treffer"
+    }
+  ]
+}
