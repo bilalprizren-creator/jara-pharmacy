@@ -145,7 +145,14 @@ function page(report, cards, brands) {
     year: "numeric",
   });
 
-  return `<title>Fotot e Produkteve Jara</title>
+  // The label is what separates one review batch from the next, so it belongs
+  // in the title too: published side by side, two batches otherwise show up
+  // under one indistinguishable name.
+  const prettyLabel = label
+    .replace(/[-_]+/g, " ")
+    .replace(/\b\w/g, (c) => c.toUpperCase());
+
+  return `<title>Fotot e Produkteve — ${escapeHtml(prettyLabel)}</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap">
