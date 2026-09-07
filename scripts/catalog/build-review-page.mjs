@@ -82,6 +82,10 @@ async function main() {
       statusi: entry.status || "",
       shenimi: entry.note || "",
       burimi: entry.sourcePage || "",
+      // Present only on the merged report: how much the picture looks like a
+      // packshot. It is a hint for the reviewer, never a filter on our side.
+      cilesia: typeof entry.quality === "number" ? entry.quality : null,
+      vleresimi: entry.verdict || "",
       foto: `data:image/webp;base64,${thumb.toString("base64")}`,
     });
     if ((index + 1) % 25 === 0) process.stdout.write(`     ${index + 1} Bilder aufbereitet\r`);
@@ -196,6 +200,7 @@ ${styles()}
         <button class="chip chip-yes" data-filter="pranuar" role="tab" aria-selected="false">Përshtaten <span data-count="pranuar">0</span></button>
         <button class="chip chip-maybe" data-filter="pasiguri" role="tab" aria-selected="false">Të pasigurta <span data-count="pasiguri">0</span></button>
         <button class="chip chip-no" data-filter="refuzuar" role="tab" aria-selected="false">Nuk përshtaten <span data-count="refuzuar">0</span></button>
+        <button class="chip chip-weak" data-filter="dobet" role="tab" aria-selected="false">Foto e dobët <span data-count="dobet">0</span></button>
       </div>
     </div>
   </div>
@@ -362,6 +367,11 @@ h1 {
   background: var(--maybe-soft); color: var(--maybe); border: 1px solid color-mix(in srgb, var(--maybe) 35%, transparent);
 }
 .flag.hard { background: var(--no-soft); color: var(--no); border-color: color-mix(in srgb, var(--no) 35%, transparent); }
+.flag.weak {
+  inset-inline-start: auto; inset-inline-end: 9px;
+  background: var(--card); color: var(--ink-soft); border-color: var(--line);
+}
+.chip-weak.is-on { background: var(--maybe); border-color: var(--maybe); }
 
 .body { padding: 12px 13px 13px; display: flex; flex-direction: column; gap: 7px; flex: 1; }
 .name { margin: 0; font-size: 14px; font-weight: 600; line-height: 1.32; text-wrap: balance; }
@@ -557,12 +567,16 @@ function karta(p) {
   const el = document.createElement("article");
   el.className = "card" + (vendimi ? " done-" + vendimi : "");
 
+  const foto_dobet = p.vleresimi === "Jo fotografi produkti";
   const flamur = dyshim
     ? '<span class="flag hard">Mospërputhje</span>'
     : (ipasigurt ? '<span class="flag">' + esc(p.besueshmeria) + '</span>' : "");
+  // A weak picture is a different problem from a wrong product, so it gets its
+  // own mark on the other corner instead of competing for the same badge.
+  const shenjaCilesise = foto_dobet ? '<span class="flag weak">Foto e dobët</span>' : "";
 
   el.innerHTML =
-    '<div class="shot">' + flamur +
+    '<div class="shot">' + flamur + shenjaCilesise +
       '<img src="' + p.foto + '" alt="Fotografia e produktit ' + esc(p.emri) + '" loading="lazy" decoding="async">' +
     '</div>' +
     '<div class="body">' +
@@ -592,8 +606,12 @@ function vizato() {
   const listi = PRODUKTET.filter((p) => {
     const v = vendimet[p.kodi];
     const vendimi = v ? v.vendimi : "";
-    if (filtri === "pa" && vendimi) return false;
-    if (filtri !== "pa" && filtri !== "te-gjitha" && vendimi !== filtri) return false;
+    if (filtri === "dobet") {
+      if (p.vleresimi !== "Jo fotografi produkti") return false;
+    } else {
+      if (filtri === "pa" && vendimi) return false;
+      if (filtri !== "pa" && filtri !== "te-gjitha" && vendimi !== filtri) return false;
+    }
     if (!q) return true;
     return (p.emri + " " + p.brendi + " " + p.barkodi + " " + p.kodi).toLowerCase().includes(q);
   });
@@ -601,10 +619,11 @@ function vizato() {
   grid.replaceChildren(...listi.map(karta));
   empty.hidden = listi.length > 0;
 
-  const numra = { pa: 0, "te-gjitha": PRODUKTET.length, pranuar: 0, pasiguri: 0, refuzuar: 0 };
+  const numra = { pa: 0, "te-gjitha": PRODUKTET.length, pranuar: 0, pasiguri: 0, refuzuar: 0, dobet: 0 };
   for (const p of PRODUKTET) {
     const v = vendimet[p.kodi];
     if (!v) numra.pa += 1; else numra[v.vendimi] = (numra[v.vendimi] || 0) + 1;
+    if (p.vleresimi === "Jo fotografi produkti") numra.dobet += 1;
   }
   for (const [key, count] of Object.entries(numra)) {
     const slot = document.querySelector('[data-count="' + key + '"]');

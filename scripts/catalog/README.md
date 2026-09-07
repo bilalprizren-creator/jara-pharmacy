@@ -93,7 +93,22 @@ asnjë fotografi nga ky burim nuk merr kurrë besueshmëri "E lartë".
 Markat janë në [`brands.json`](brands.json). Të matura te BIBS: 81 % e produkteve
 gjejnë një përputhje të besueshme, me ngjyrat që përkojnë saktë.
 
-## 4. Faqja e kontrollit
+## 4. Bashkimi — një fotografi për produkt
+
+```bash
+node scripts/catalog/merge-photos.mjs
+```
+
+I bashkon të gjitha raportet në një listë të vetme: një hyrje për produkt, me
+fotografinë më të mirë. Zgjedhja bëhet sipas pamjes (`lib/packshot.mjs`), dhe
+kur dy foto janë afër njëra-tjetrës, fiton burimi më i besueshëm — katalogu i
+prodhuesit para kërkimit të bërë një nga një, e ai para ngarkimit të një
+përdoruesi te baza me barkod.
+
+Fotot që humbin nuk fshihen: raporti i mban si alternativa, që të ketë ku të
+kthehet kontrolluesi nëse e refuzon të parën.
+
+## 5. Faqja e kontrollit
 
 ```bash
 node scripts/catalog/build-review-page.mjs
@@ -114,6 +129,13 @@ Për ta parë faqen para se ta marrë ekipi:
 ```bash
 node scripts/catalog/preview-server.mjs     # http://localhost:5400
 ```
+
+Faqja shënon me "Foto e dobët" çdo fotografi që nuk duket si foto produkti, dhe
+një filtër i veçantë i mbledh të gjitha bashkë — kështu ekipi i gjen menjëherë
+ato që duhen zëvendësuar.
+
+Krahas faqes për publikim shkruhet edhe një kopje e pavarur
+(`*-vetestrukturuar.html`), që hapet me dopio-klik pa asnjë llogari.
 
 **Kufijtë:** faqja nuk guxon të kalojë 16 MB dhe fotografitë duhet të jenë brenda
 saj (shfaqja bllokon burimet e jashtme). Me fotografi ~300 px kjo do të thotë
