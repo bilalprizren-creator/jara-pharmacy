@@ -14,6 +14,13 @@
       "runtimeArgs": ["run", "preview", "--", "--port", "5300", "--strictPort"],
       "port": 5300,
       "autoPort": false
+    },
+    {
+      "name": "jara-kontroll",
+      "runtimeExecutable": "node",
+      "runtimeArgs": ["scripts/catalog/preview-server.mjs"],
+      "port": 5400,
+      "autoPort": false
     }
   ]
 }

@@ -47,3 +47,14 @@ Thumbs.db
 
 .vercel
 .env*
+
+# Materiali i punes per katalogun: fotografite e shkarkuara qe nuk jane
+# kontrolluar ende nga ekipi (shih scripts/catalog/)
+.image-cache
+
+# Faqet e kontrollit te ndertuara (publikohen si Artifact, jo permes git-it)
+.catalog-cache
+
+# Eksportet e paperpunuara te ERP-se (cmime, furnitore). Gjendja e perpunuar
+# ruhet si scripts/catalog/data/albtrix-products.json
+/9460 Produkte/
