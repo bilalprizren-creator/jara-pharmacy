@@ -24,6 +24,7 @@
  *   node scripts/catalog/find-brand-images.mjs --dry-run
  *   node scripts/catalog/find-brand-images.mjs --brand BIBS
  *   node scripts/catalog/find-brand-images.mjs --label markat-01
+ *   node scripts/catalog/find-brand-images.mjs --replace   # better photo for ones we have
  */
 import fs from "node:fs";
 import path from "node:path";
@@ -70,7 +71,11 @@ async function main() {
       (product) =>
         product.forWebsite &&
         product.brand.toUpperCase() === source.brand.toUpperCase() &&
-        !already.has(product.code),
+        // --replace looks for a better picture of a product that already has
+        // one. The barcode pass identifies products exactly but the photo
+        // attached to a barcode is usually a contributor's snapshot, so for
+        // those the manufacturer's packshot is a straight upgrade.
+        (args.replace || !already.has(product.code)),
     );
     if (!ours.length) {
       console.log(`  ${source.brand.padEnd(16)} — të gjitha kanë tashmë fotografi`);
@@ -316,6 +321,7 @@ function readArgs(argv) {
   };
   return {
     dryRun: argv.includes("--dry-run"),
+    replace: argv.includes("--replace"),
     brand: flag("brand", ""),
     label: flag("label", `markat-${new Date().toISOString().slice(0, 10)}`),
   };

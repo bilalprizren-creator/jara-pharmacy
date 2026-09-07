@@ -4,13 +4,64 @@
     "Fotografia vjen nga vetë prodhuesi, prandaj është burimi më i pastër që mund të përdorim pa kërkuar leje.",
     "Përputhja bëhet me emër, jo me barkod — prandaj asnjë fotografi nga këtu nuk merr besueshmëri 'E lartë';",
     "vendimin e fundit e jep gjithmonë njeriu në faqen e kontrollit.",
-    "Platforma 'shopify' do të thotë se dyqani ka ndërfaqen publike /products.json."
+    "Platforma 'shopify' do të thotë se dyqani ka ndërfaqen publike /products.json.",
+    "Markat qe bllokojne qasjen automatike (La Roche-Posay, Vichy kthejne 403) nuk perfshihen — ajo ndalese respektohet."
   ],
   "burimet": [
-    { "brand": "BIBS", "store": "bibsworld.com", "platform": "shopify" },
-    { "brand": "SWANSON", "store": "www.swansonvitamins.com", "platform": "shopify" },
-    { "brand": "TOMMEE TIPPEE", "store": "www.tommeetippee.com", "platform": "shopify" },
-    { "brand": "NATURES TRUTH", "store": "naturestruth.com", "platform": "shopify" },
-    { "brand": "ERIC FAVRE", "store": "www.ericfavre.com", "platform": "shopify" }
+    {
+      "brand": "BIBS",
+      "store": "bibsworld.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "SWANSON",
+      "store": "www.swansonvitamins.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "TOMMEE TIPPEE",
+      "store": "www.tommeetippee.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "NATURES TRUTH",
+      "store": "naturestruth.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "ERIC FAVRE",
+      "store": "ericfavre.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "MUSTELA",
+      "store": "www.mustela.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "COSRX",
+      "store": "www.cosrx.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "VITABIOTICS",
+      "store": "www.vitabiotics.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "BUBCHEN",
+      "store": "www.buebchen.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "HIMALAYA",
+      "store": "himalayawellness.in",
+      "platform": "shopify"
+    },
+    {
+      "brand": "NUXE",
+      "store": "us.nuxe.com",
+      "platform": "shopify"
+    }
   ]
 }

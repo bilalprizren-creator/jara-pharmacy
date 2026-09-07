@@ -1,0 +1,387 @@
+{
+  "generatedAt": "2026-09-07T21:51:18.776Z",
+  "basedOn": "openfacts-01",
+  "checked": 60,
+  "improved": [
+    {
+      "code": "7531",
+      "name": "HYDRO BOOST WATER GEL 50ML(NEUTROGENA)",
+      "was": 0.19,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/357/466/130/9736/1.400.jpg",
+      "file": ".image-cache/better/7531_3574661309736.jpg"
+    },
+    {
+      "code": "7707",
+      "name": "NEUTROGENA HYDRO BOOST WATER GEL CLEANSER 200ML",
+      "was": 0.38,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/357/466/128/8345/1.400.jpg",
+      "file": ".image-cache/better/7707_3574661288345.jpg"
+    },
+    {
+      "code": "140011",
+      "name": "OGX ARGAN OIL HAIR MASK 300ML",
+      "was": 0.3,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/357/466/168/5144/2.400.jpg",
+      "file": ".image-cache/better/140011_3574661685144.jpg"
+    },
+    {
+      "code": "77852",
+      "name": "OKEEFFES WORKING HANDS TUBETE 80ML",
+      "was": 0.38,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/570/494/700/5665/3.400.jpg",
+      "file": ".image-cache/better/77852_5704947005665.jpg"
+    },
+    {
+      "code": "52016",
+      "name": "MARVIS JASMINE MINT 85ML",
+      "was": 0,
+      "now": 0.46,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/800/439/511/1756/3.400.jpg",
+      "file": ".image-cache/better/52016_8004395111756.jpg"
+    },
+    {
+      "code": "69657",
+      "name": "EUCERIN_69657_ SHAMPON PER LEKUR TE THATE TE KOKES DHE LEKURE TE THATE",
+      "was": 0,
+      "now": 0.72,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/400/580/003/7535/2.400.jpg",
+      "file": ".image-cache/better/69657_4005800037535.jpg"
+    }
+  ],
+  "stillWeak": [
+    {
+      "code": "71034",
+      "name": "BIOKAP NUTRICOLOR 8.0",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "1446",
+      "name": "BIOKAP NUTRICOLOR DELICATO RAPID 4.05",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "16558",
+      "name": "BIOKAP REPAIRING OIL 125ML",
+      "score": 0.07,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "16567",
+      "name": "TEA TREE POMATA EUDERMICA BIO 50ML",
+      "score": 0.07,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "8031C",
+      "name": "SPIRULINA BIO 500MG X 150 COMPRESSE ( PRINCIPIUM )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "582",
+      "name": "CHICCO ZBUTES FAMILY PACK 1.5L",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "72743",
+      "name": "CHICCO SHAMPO 0M 500ML SENZA LACRIME",
+      "score": 0,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "7529",
+      "name": "SKIN DETOX EXFOLIANT PURIFIANT 150ML (NEUTROGENA)",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "4329",
+      "name": "NEUTROGENA MIST TONER 125ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "332",
+      "name": "NEUTROGENA HYDROBOST EXPRESS HYDRATING BODY 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7705",
+      "name": "REFRESHINGLY CLEAR FACIAL WASH 200ML (NEUTROGENA)",
+      "score": 0.02,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "7534",
+      "name": "SKIN DETOX EAU MICELLAIRE 400ML (NEUTROGENA)",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "331",
+      "name": "NEUTROGENA HYDROBOST EYE-AWAKENING 15ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "329",
+      "name": "NEUTROGENA HYDROBOOST HAND CREAM 75ML",
+      "score": 0.03,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "15472",
+      "name": "NEUTROGENA CLEAR&DEFEND WASH-MASK",
+      "score": 0.26,
+      "bestAlternative": 0.42
+    },
+    {
+      "code": "15470",
+      "name": "NEUTROGENA SMOOTHING SCRUB 150ML",
+      "score": 0.31,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "809212",
+      "name": "Neutrogena Maska",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7530",
+      "name": "SKIN DETOX MASUQE ARGILE PURIFIANT 2EN1 150ML (NEUTROGENA)",
+      "score": 0,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "7540",
+      "name": "GEL MOISTURISER 4% NIACINAMIDE+PANTHENOL 50ML (NEUTROGENA)",
+      "score": 0.13,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "256969",
+      "name": "PIZ BUIN ALLERGY SUN SENSITIVE SKIN LOTION SPF50+ 200ML",
+      "score": 0.38,
+      "bestAlternative": 0.38
+    },
+    {
+      "code": "6459",
+      "name": "NEUTROGENA N/F NOURISHING FOOT DRY 100ML",
+      "score": 0,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "7528",
+      "name": "BABY SHAMPOO CHAMOMILE 750ML (JOHNSONS)",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "7706",
+      "name": "HYDRO BOOST FLUIDE HYDRANT 50 SPF 50ML ( NEUTROGENA )",
+      "score": 0.12,
+      "bestAlternative": 0.12
+    },
+    {
+      "code": "140010",
+      "name": "OGX COCO XS OIL HAIR MASK 300ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "14458",
+      "name": "JOHNSONS BABY COTTON TOUCH BATH&SHAMPON 500ML",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "59155",
+      "name": "JOHNSONS BABY SHAMPON FOR SENSIVITE SKIN 750ML",
+      "score": 0.16,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "256967",
+      "name": "PIZ BUIN MOUNTAIN LIPSTICK SPF30 4.9G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "256965",
+      "name": "PIZ BUIN TAN&PROTECT SPF15 SUN OIL SPRAY 150ML",
+      "score": 0,
+      "bestAlternative": 0.14
+    },
+    {
+      "code": "11108",
+      "name": "SENSODYNE TOOTHBRUSH SENSITIVE SOFT",
+      "score": 0,
+      "bestAlternative": 0.11
+    },
+    {
+      "code": "275328",
+      "name": "PALLOMA SOFT SENSITIVE",
+      "score": 0,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "2765..",
+      "name": "WORKING HANDS 96G OKEEFFES",
+      "score": 0.02,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "51707",
+      "name": "SENSODYNE NATURAL WHITE, PAST E ZEZ 75ML",
+      "score": 0.05,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "76871",
+      "name": "OKEEFFES WORKING HANDS TUBETE INTENSIVE CARE 80ML",
+      "score": 0.04,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "05065",
+      "name": "BIODERMA CICABIO CREAM+ 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9929336",
+      "name": "BIODERMA PIGMENTBIO FOAMING CREAM 200ML",
+      "score": 0.09,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "25548",
+      "name": "BIODERMA SEBIUM HYDRA",
+      "score": 0,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "75152",
+      "name": "BIODERMA SEBIUM XHEL PER LARJE PER LEKURE TE KOMBINUAR 200ML",
+      "score": 0.02,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "22331",
+      "name": "BIODERMA SENSIBIO GEL MOUSSANT 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60322",
+      "name": "BIODERMA PHOTODERM SPOT -AGE SPF50+ SKIN AGING DARK SPOTS 40ML",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "8052235",
+      "name": "BIODERMA ATODERM INTENSIVE SHOWER OIL 100ML",
+      "score": 0,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "11301",
+      "name": "BIODERMA PHOTODERM AQUA FLUID SPF50+ 40ML",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "226370",
+      "name": "BIODERMA ATODERM INTENSIVE BAUME-VERY DRY, IRRITATED TO ATOPIC SENSITIVE SKIN-200 ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "96298",
+      "name": "BIODERMA ABC DERM GEL MOUSSANT 200ML",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "115590",
+      "name": "BIODERMA ATODERM HUILE DE DOUCHE 1000ML",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "51800",
+      "name": "BIODERMA SENSIBIO AR 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "14450",
+      "name": "CARROTEN GOLD SHIMMER GEL 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "52015",
+      "name": "MARVIS WHITENING MINT 85ML",
+      "score": 0.21,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "25481",
+      "name": "MARVIS CLASSIC STRONG MINT 25ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "75157",
+      "name": "OSTROVIT GLUCOSAMINE+MSM+CHONDROITIN 90TAB",
+      "score": 0.17,
+      "bestAlternative": 0.41
+    },
+    {
+      "code": "71134",
+      "name": "EVELINE KREM FYTYRES SPF50 50ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "71135.",
+      "name": "EVELINE KREM PER FYTYRE SPF 50 HA,VITAMINS A,E,F",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "63641",
+      "name": "EUCERIN_63641_BALSAM PER BUZE SHUME TE THATA 10ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "15496",
+      "name": "LACALUT FLORA PASTE DHEMBESH 75ML",
+      "score": 0.07,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "63170",
+      "name": "EUCERIN_63170_pH5 STIK PER KUJDES DHE USHQIM TE BUZEVE 4.8G",
+      "score": 0,
+      "bestAlternative": 0.28
+    }
+  ]
+}
