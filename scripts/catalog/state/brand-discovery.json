@@ -95,6 +95,78 @@
       "products": 48,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "GARNIER": {
+      "checkedAt": "2026-09-07T22:46:46.190Z",
+      "products": 43,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "CURAPROX": {
+      "checkedAt": "2026-09-07T22:46:50.770Z",
+      "products": 43,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ORZAX": {
+      "checkedAt": "2026-09-07T22:46:51.028Z",
+      "products": 41,
+      "store": "www.orzax.com",
+      "note": "dyqan i hapur"
+    },
+    "FACE FACTS": {
+      "checkedAt": "2026-09-07T22:47:01.009Z",
+      "products": 40,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SEBAMED": {
+      "checkedAt": "2026-09-07T22:47:05.801Z",
+      "products": 40,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BABY NOVA": {
+      "checkedAt": "2026-09-07T22:47:11.468Z",
+      "products": 39,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "LANSINOH": {
+      "checkedAt": "2026-09-07T22:47:11.733Z",
+      "products": 38,
+      "store": "www.lansinoh.com",
+      "note": "dyqan i hapur"
+    },
+    "CANPOL": {
+      "checkedAt": "2026-09-07T22:47:32.999Z",
+      "products": 38,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PHARMASEPT": {
+      "checkedAt": "2026-09-07T22:47:40.250Z",
+      "products": 32,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SOLGAR": {
+      "checkedAt": "2026-09-07T22:47:42.308Z",
+      "products": 31,
+      "store": "solgar.de",
+      "note": "dyqan i hapur"
+    },
+    "BIOBALANCE": {
+      "checkedAt": "2026-09-07T22:47:46.944Z",
+      "products": 30,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ORAL-B": {
+      "checkedAt": "2026-09-07T22:47:59.803Z",
+      "products": 29,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }

@@ -72,6 +72,21 @@
       "brand": "NALLAN",
       "store": "www.nallan.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "ORZAX",
+      "store": "www.orzax.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "LANSINOH",
+      "store": "www.lansinoh.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "SOLGAR",
+      "store": "solgar.de",
+      "platform": "shopify"
     }
   ]
 }

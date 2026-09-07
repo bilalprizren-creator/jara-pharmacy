@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-09-07T22:48:10.536Z",
+  "label": "markat-solgar",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 3,
+    "downloaded": 3,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 3
+    },
+    "byBrand": {
+      "SOLGAR": 3
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "9903",
+      "name": "ESTER-C PLUS 500MG VITAMIN C 50 CAPSULES (SOLGAR)",
+      "barcode": "033984010383",
+      "brand": "SOLGAR",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Ester-C Plus 500 mg\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "500MG",
+      "packSizeFound": "500MG",
+      "sourcePage": "https://solgar.de/products/ester-c-kapseln",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-EP55-12602731-Ester_C_Plus_500_1.png?v=1748763452",
+      "licence": "Katalogu zyrtar i SOLGAR",
+      "matchScore": 0.4,
+      "file": ".image-cache/brands/0001_9903.png",
+      "bytes": 323950
+    },
+    {
+      "number": 2,
+      "code": "52745",
+      "name": "SOLGAR VITAMIN D3 CAPS A100",
+      "barcode": "033984033207",
+      "brand": "SOLGAR",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Vitamin B12\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 3CAPS — kontrollo që të përputhet.",
+      "packSizeOurs": "3CAPS",
+      "packSizeFound": null,
+      "sourcePage": "https://solgar.de/products/vitamin-b12",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Vitamin-B12_12603166_1.png?v=1748933528",
+      "licence": "Katalogu zyrtar i SOLGAR",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0002_52745.png",
+      "bytes": 254060
+    },
+    {
+      "number": 3,
+      "code": "9916",
+      "name": "SOLGAR BIOTIN TAB A100",
+      "barcode": "033984002807",
+      "brand": "SOLGAR",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Biotin 1000 µg\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://solgar.de/products/biotin",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-BT15-12603593-Biotin_1.png?v=1748763083",
+      "licence": "Katalogu zyrtar i SOLGAR",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0003_9916.png",
+      "bytes": 288725
+    }
+  ]
+}

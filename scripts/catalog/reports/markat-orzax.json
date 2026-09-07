@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-09-07T22:48:02.015Z",
+  "label": "markat-orzax",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 1,
+    "downloaded": 1,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 1
+    },
+    "byBrand": {
+      "ORZAX": 1
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "11322",
+      "name": "OCEAN D3K2 DROPS 20ML",
+      "barcode": "8697595871621",
+      "brand": "ORZAX",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Vitamin D3K2 Drops\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 20ML — kontrollo që të përputhet.",
+      "packSizeOurs": "20ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.orzax.com/products/vitamin-d3k2-drops",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0981/2108/9307/files/vitamind3k2d3k2-20ml-drop_900x_ea6e2192-20da-4054-9bc8-eabbd8ef98a4.jpg?v=1763551827",
+      "licence": "Katalogu zyrtar i ORZAX",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_11322.jpg",
+      "bytes": 57849
+    }
+  ]
+}
