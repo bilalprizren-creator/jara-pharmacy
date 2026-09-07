@@ -560,7 +560,10 @@ function karta(p) {
         '<span class="code">' + esc(p.barkodi || "pa barkod") + '</span>' +
         '<span class="code">#' + esc(p.kodi) + '</span>' +
       '</p>' +
-      (dyshim && p.shenimi ? '<p class="note">' + esc(p.shenimi) + '</p>' : '') +
+      // The note explains why this photo is uncertain, so it belongs on every
+      // card that is not a clean barcode match - not only on the outright
+      // mismatches.
+      ((dyshim || ipasigurt) && p.shenimi ? '<p class="note">' + esc(p.shenimi) + '</p>' : '') +
       (p.burimi ? '<a class="src" href="' + esc(p.burimi) + '" target="_blank" rel="noopener noreferrer">Shiko burimin</a>' : '') +
       '<div class="actions">' +
         '<button class="act act-yes' + (vendimi === "pranuar" ? " is-on" : "") + '" data-kodi="' + esc(p.kodi) + '" data-vendim="pranuar">' + ikona.po + ' Përshtatet</button>' +

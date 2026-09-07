@@ -1,0 +1,16 @@
+{
+  "_koment": [
+    "Katalogët e vetë markave, si burim i dytë fotografish për produktet që nuk gjenden me barkod.",
+    "Fotografia vjen nga vetë prodhuesi, prandaj është burimi më i pastër që mund të përdorim pa kërkuar leje.",
+    "Përputhja bëhet me emër, jo me barkod — prandaj asnjë fotografi nga këtu nuk merr besueshmëri 'E lartë';",
+    "vendimin e fundit e jep gjithmonë njeriu në faqen e kontrollit.",
+    "Platforma 'shopify' do të thotë se dyqani ka ndërfaqen publike /products.json."
+  ],
+  "burimet": [
+    { "brand": "BIBS", "store": "bibsworld.com", "platform": "shopify" },
+    { "brand": "SWANSON", "store": "www.swansonvitamins.com", "platform": "shopify" },
+    { "brand": "TOMMEE TIPPEE", "store": "www.tommeetippee.com", "platform": "shopify" },
+    { "brand": "NATURES TRUTH", "store": "naturestruth.com", "platform": "shopify" },
+    { "brand": "ERIC FAVRE", "store": "www.ericfavre.com", "platform": "shopify" }
+  ]
+}

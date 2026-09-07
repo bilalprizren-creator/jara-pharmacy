@@ -45,7 +45,42 @@ Secila kontrollohet edhe kundrejt listës ALBTRIX: a ekziston vërtet artikulli,
 është mall tregtar, a përputhet barkodi. Të 150-ta kaluan; njëra fotografi
 (`222HM`) është e cunguar dhe duhet marrë sërish.
 
-## 3. Faqja e kontrollit
+## 3. Kërkimi i fotografive
+
+Dy burime, të ndara qëllimisht sepse kanë siguri të ndryshme.
+
+### a) Sipas barkodit — i saktë
+
+```bash
+node scripts/catalog/find-images.mjs --dry-run          # vetem sa gjenden
+node scripts/catalog/find-images.mjs --label openfacts-01
+```
+
+Pyet Open Beauty / Food / Products Facts sipas GTIN-it. Barkodi është
+identifikues i saktë, prandaj këto fotografi marrin besueshmëri **E lartë** kur
+edhe emri përputhet. Fotografitë janë të licencuara lirshëm (CC-BY-SA) dhe
+burimi ruhet me secilën.
+
+Barkodet dërgohen në grupe nga 50 me një kërkesë të vetme — 6.285 artikuj
+kushtojnë disa qindra kërkesa, jo dhjetëra mijëra. Serveri i kozmetikës pyetet i
+pari, sepse ky asortiment është kryesisht kozmetikë.
+
+### b) Nga katalogët e markave — përafërt
+
+```bash
+node scripts/catalog/find-brand-images.mjs --dry-run
+node scripts/catalog/find-brand-images.mjs --brand BIBS --label markat-01
+```
+
+Për markat që bazat me barkod nuk i njohin fare (Chicco, Avent, Swanson, Wee
+Baby dalin me 0 %), merret fotografia nga dyqani i vetë prodhuesit. Dyqanet nuk
+publikojnë barkode, ndaj përputhja bëhet **me emër** — dhe pikërisht prandaj
+asnjë fotografi nga ky burim nuk merr kurrë besueshmëri "E lartë".
+
+Markat janë në [`brands.json`](brands.json). Të matura te BIBS: 81 % e produkteve
+gjejnë një përputhje të besueshme, me ngjyrat që përkojnë saktë.
+
+## 4. Faqja e kontrollit
 
 ```bash
 node scripts/catalog/build-review-page.mjs
@@ -73,5 +108,5 @@ rreth 1.000 produkte për faqe; ndaji seritë me `--limit`.
 
 ## Çka nuk është ndërtuar ende
 
-- kërkimi automatik i fotografive për 7.176 produktet (faza tjetër),
-- ndërtimi i katalogut për faqen nga vendimet e ekipit.
+- ndërtimi i katalogut për faqen nga vendimet e ekipit,
+- burime shtesë për markat që nuk kanë dyqan me katalog të hapur.
