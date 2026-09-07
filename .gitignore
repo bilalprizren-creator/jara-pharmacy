@@ -47,3 +47,6 @@ Thumbs.db
 
 .vercel
 .env*
+
+# Arbeitsmaterial des Katalog-Generators (Bilder, HTML, PDF)
+.catalog-cache
