@@ -92,6 +92,18 @@ async function main() {
   const outFile = path.join(OUT_DIR, `${slug(args.title)}.html`);
   fs.writeFileSync(outFile, html, "utf8");
 
+  // A second, standalone copy: the fragment above is what the Artifact host
+  // wraps and publishes, but a plain .html file that opens on double-click is
+  // the fallback when publishing is unavailable — and it can simply be sent to
+  // whoever needs to review, no account required. Decisions are per-device
+  // there, which the page states itself.
+  const standalone =
+    '<!doctype html><html lang="sq"><head><meta charset="utf-8">' +
+    '<meta name="viewport" content="width=device-width, initial-scale=1">' +
+    `</head><body>${html}</body></html>`;
+  const standaloneFile = path.join(OUT_DIR, `${slug(args.title)}-vetestrukturuar.html`);
+  fs.writeFileSync(standaloneFile, standalone, "utf8");
+
   const megabytes = Buffer.byteLength(html, "utf8") / 1024 / 1024;
   console.log(`     ${items.length} Bilder eingebettet`);
   if (missing.length) console.log(`     ${missing.length} ohne Bilddatei: ${missing.slice(0, 5).join(", ")}`);

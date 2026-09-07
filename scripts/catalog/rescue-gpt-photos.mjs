@@ -1,29 +1,32 @@
 #!/usr/bin/env node
 /**
- * Rescues the 150 product photos that are trapped inside a workbook.
- * ------------------------------------------------------------------
- * "JARA_Produkte_mit_gefundenen_Fotos_150-1.xlsx" holds real work: 150 product
- * photos found one by one, each with its source page, a confidence rating and a
- * reviewer note. As long as they live inside a 12 MB spreadsheet they cannot be
- * reviewed on a phone, cannot be resized, and cannot reach the website. This
- * script lifts them out into ordinary image files plus one report.
+ * Rescues product photos that are trapped inside review workbooks.
+ * -----------------------------------------------------------------
+ * The photo research done in ChatGPT arrives as .xlsx files with the pictures
+ * embedded: one row per product, the photo anchored in column B, and the source
+ * page and a confidence rating alongside. As long as they live inside a 6-12 MB
+ * spreadsheet they cannot be reviewed on a phone, cannot be resized, and cannot
+ * reach the website. This lifts them out into ordinary image files plus one
+ * report per batch.
  *
- * Two things about that workbook made a naive reader fail (both handled in
- * `lib/xlsx.mjs`): the article codes of rows 51-150 are formulas without cached
- * values, and the pictures are anchored through the drawing part rather than
- * stored in cells. Picture N belongs to row N+4 — the anchor is what is trusted
- * here, not that arithmetic.
+ * The workbooks are not all shaped the same, so nothing about the layout is
+ * assumed: the sheet is the one carrying a "Shifra" header, the header row is
+ * found by looking for it, and columns are mapped by their heading rather than
+ * by letter. Two further traps are handled in `lib/xlsx.mjs` — article codes
+ * stored as formulas without cached values, and element names that may or may
+ * not carry a namespace prefix depending on which tool wrote the file.
  *
  * Every rescued photo is checked back against the ALBTRIX data set, because a
- * photo is only useful if the article actually exists in the assortment and is
- * destined for the website (retail, not medicine).
+ * photo is only useful if the article exists in the assortment and is destined
+ * for the website (retail, not medicine).
  *
  * Safety: images are written into `.image-cache/` (kept out of git), never into
  * `public/`. Nothing reaches the website from here — that is the job of the
  * review page and the catalog build that follow.
  *
  * Usage:
- *   node scripts/catalog/rescue-gpt-photos.mjs
+ *   node scripts/catalog/rescue-gpt-photos.mjs --source "9460 Produkte/X.xlsx"
+ *   node scripts/catalog/rescue-gpt-photos.mjs --match Seria_00 --label gpt-004-006
  *   node scripts/catalog/rescue-gpt-photos.mjs --dry-run
  */
 import fs from "node:fs";
@@ -34,106 +37,120 @@ import { readWorkbook } from "./lib/xlsx.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
-const SOURCE = path.join(ROOT, "9460 Produkte", "JARA_Produkte_mit_gefundenen_Fotos_150-1.xlsx");
+const SOURCE_DIR = path.join(ROOT, "9460 Produkte");
 const ALBTRIX = path.join(HERE, "data", "albtrix-products.json");
-const IMAGE_DIR = path.join(ROOT, ".image-cache", "gpt-150");
-const REPORT = path.join(HERE, "reports", "gpt-150.json");
 
-const HEADER_ROW = 4;
-const COLUMNS = {
-  number: "A",
-  code: "C",
-  name: "D",
-  barcode: "E",
-  brand: "F",
-  confidence: "G",
-  status: "H",
-  decision: "I",
-  sourcePage: "J",
-  imageUrl: "K",
-  note: "L",
-  file: "M",
+/** Column headings as they appear in the workbooks, mapped to our field names. */
+const HEADINGS = {
+  "nr.": "number",
+  shifra: "code",
+  emërtimi: "name",
+  barkodi: "barcode",
+  brendi: "brand",
+  besueshmëria: "confidence",
+  statusi: "status",
+  vendimi: "decision",
+  "faqja burimore": "sourcePage",
+  "url e fotografisë": "imageUrl",
+  shënim: "note",
+  "skedari i fotografisë": "fileName",
 };
 
 function main() {
-  const dryRun = process.argv.includes("--dry-run");
-  if (!fs.existsSync(SOURCE)) {
-    console.error(`\n  Quelldatei nicht gefunden:\n  ${SOURCE}\n`);
+  const args = readArgs(process.argv.slice(2));
+  const sources = resolveSources(args);
+  if (!sources.length) {
+    console.error("\n  Asnjë skedar burimor nuk u gjet.\n");
     process.exit(1);
   }
 
-  const workbook = readWorkbook(fs.readFileSync(SOURCE));
-  const rows = workbook.rows(0);
-  const anchors = new Map(workbook.imageAnchors(0).map((a) => [a.row, a.part]));
   const assortment = loadAssortment();
-
+  const imageDir = path.join(ROOT, ".image-cache", args.label);
   const photos = [];
   const problems = [];
 
-  for (const [rowNumber, cells] of [...rows.entries()].sort((a, b) => a[0] - b[0])) {
-    if (rowNumber <= HEADER_ROW) continue;
-    const code = value(cells, "code");
-    if (!code) continue;
+  console.log(`\n  Fotografitë nga ${sources.length} skedarë`);
+  console.log(`  ${"-".repeat(62)}`);
 
-    const part = anchors.get(rowNumber);
-    if (!part) {
-      problems.push({ row: rowNumber, code, problem: "Nuk ka fotografi në këtë rresht" });
+  for (const source of sources) {
+    const workbook = readWorkbook(fs.readFileSync(source));
+    const sheet = findDataSheet(workbook);
+    if (sheet === null) {
+      problems.push({ code: null, problem: `${path.basename(source)}: nuk u gjet fleta me të dhëna` });
       continue;
     }
 
-    const bytes = workbook.part(part);
-    const image = probePng(bytes);
-    const article = assortment.get(code);
-    const fileName = value(cells, "file") || `${String(photos.length + 1).padStart(3, "0")}_${code}.png`;
+    const rows = workbook.rows(sheet);
+    const anchors = new Map(workbook.imageAnchors(sheet).map((anchor) => [anchor.row, anchor.part]));
+    const layout = findHeader(rows);
+    if (!layout) {
+      problems.push({ code: null, problem: `${path.basename(source)}: nuk u gjet rreshti i kolonave` });
+      continue;
+    }
 
-    photos.push({
-      number: Number(value(cells, "number")) || photos.length + 1,
-      code,
-      name: value(cells, "name"),
-      barcode: value(cells, "barcode"),
-      brand: value(cells, "brand"),
-      confidence: value(cells, "confidence"),
-      status: value(cells, "status"),
-      decision: value(cells, "decision") || "Pa kontrolluar",
-      sourcePage: value(cells, "sourcePage"),
-      imageUrl: value(cells, "imageUrl"),
-      note: value(cells, "note"),
-      file: path.posix.join(".image-cache/gpt-150", fileName),
-      bytes: bytes.length,
-      width: image?.width ?? null,
-      height: image?.height ?? null,
-      sha256: crypto.createHash("sha256").update(bytes).digest("hex"),
-      // Cross-check against the real assortment — a photo for an article that
-      // is not in stock (or is a medicine) must not silently reach the catalog.
-      inAssortment: Boolean(article),
-      forWebsite: article?.forWebsite ?? false,
-      assortmentName: article?.name ?? null,
-      barcodeMatches: article ? article.barcode === value(cells, "barcode") : null,
-    });
+    let taken = 0;
+    for (const [rowNumber, cells] of [...rows.entries()].sort((a, b) => a[0] - b[0])) {
+      if (rowNumber <= layout.row) continue;
+      const record = mapRow(cells, layout.columns);
+      if (!record.code) continue;
 
-    if (!dryRun) writeImage(path.join(IMAGE_DIR, fileName), bytes);
+      const part = anchors.get(rowNumber);
+      if (!part) {
+        problems.push({ code: record.code, problem: "Nuk ka fotografi në këtë rresht" });
+        continue;
+      }
+
+      const bytes = workbook.part(part);
+      const article = assortment.get(record.code);
+      const fileName = safe(record.fileName || `${record.number || taken + 1}_${record.code}.png`);
+
+      photos.push({
+        number: photos.length + 1,
+        code: record.code,
+        name: record.name,
+        barcode: record.barcode,
+        brand: record.brand,
+        confidence: record.confidence,
+        status: record.status,
+        decision: record.decision || "Pa kontrolluar",
+        sourcePage: record.sourcePage,
+        note: record.note,
+        batch: path.basename(source),
+        file: path.posix.join(".image-cache", args.label, fileName),
+        bytes: bytes.length,
+        ...probePng(bytes),
+        sha256: crypto.createHash("sha256").update(bytes).digest("hex"),
+        inAssortment: Boolean(article),
+        forWebsite: article?.forWebsite ?? false,
+        barcodeMatches: article ? article.barcode === record.barcode : null,
+      });
+
+      if (!args.dryRun) writeImage(path.join(imageDir, fileName), bytes);
+      taken += 1;
+    }
+    console.log(`  ${path.basename(source).slice(0, 46).padEnd(48)} ${String(taken).padStart(4)} fotografi`);
   }
 
   for (const photo of photos) {
     if (!photo.inAssortment) {
-      problems.push({ row: null, code: photo.code, problem: "Artikulli nuk gjendet në listën ALBTRIX" });
+      problems.push({ code: photo.code, problem: "Artikulli nuk gjendet në listën ALBTRIX" });
     } else if (!photo.forWebsite) {
-      problems.push({ row: null, code: photo.code, problem: "Artikulli nuk është mall tregtar — nuk shkon në faqe" });
+      problems.push({ code: photo.code, problem: "Nuk është mall tregtar — nuk shkon në faqe" });
     } else if (photo.barcodeMatches === false) {
-      problems.push({ row: null, code: photo.code, problem: "Barkodi ndryshon nga ai i listës ALBTRIX" });
+      problems.push({ code: photo.code, problem: "Barkodi ndryshon nga ai i listës ALBTRIX" });
     }
   }
 
   const report = {
     generatedAt: new Date().toISOString(),
-    source: path.basename(SOURCE),
-    label: "gpt-150",
+    label: args.label,
+    sources: sources.map((source) => path.basename(source)),
     totals: {
       photos: photos.length,
-      inAssortment: photos.filter((p) => p.inAssortment).length,
-      forWebsite: photos.filter((p) => p.forWebsite).length,
-      byConfidence: countBy(photos, (p) => p.confidence || "—"),
-      byStatus: countBy(photos, (p) => p.status || "—"),
+      inAssortment: photos.filter((photo) => photo.inAssortment).length,
+      forWebsite: photos.filter((photo) => photo.forWebsite).length,
+      byConfidence: countBy(photos, (photo) => photo.confidence || "—"),
+      byStatus: countBy(photos, (photo) => photo.status || "—"),
       problems: problems.length,
     },
     problems,
@@ -141,36 +158,81 @@ function main() {
   };
 
   printSummary(report);
-  if (dryRun) {
-    console.log("  --dry-run: es wurden keine Dateien geschrieben.\n");
+  if (args.dryRun) {
+    console.log("  --dry-run: asgjë nuk u shkrua.\n");
     return;
   }
 
-  fs.mkdirSync(path.dirname(REPORT), { recursive: true });
-  fs.writeFileSync(REPORT, `${JSON.stringify(report, null, 2)}\n`, "utf8");
-  console.log(`  Bilder:  ${path.relative(ROOT, IMAGE_DIR)}`);
-  console.log(`  Bericht: ${path.relative(ROOT, REPORT)}\n`);
+  const reportPath = path.join(HERE, "reports", `${args.label}.json`);
+  fs.mkdirSync(path.dirname(reportPath), { recursive: true });
+  fs.writeFileSync(reportPath, `${JSON.stringify(report, null, 2)}\n`, "utf8");
+  console.log(`  Fotografitë: ${path.relative(ROOT, imageDir)}`);
+  console.log(`  Raporti:     ${path.relative(ROOT, reportPath)}\n`);
 }
+
+/* ------------------------------------------------------------------ */
+/*  Finding the data inside a workbook                                 */
+/* ------------------------------------------------------------------ */
+
+/** The data sheet is the one with a "Shifra" heading; layouts differ per file. */
+function findDataSheet(workbook) {
+  for (let index = 0; index < workbook.sheets.length; index += 1) {
+    const rows = workbook.rows(index);
+    if (findHeader(rows)) return index;
+  }
+  return null;
+}
+
+/** Locates the header row and maps column letters onto our field names. */
+function findHeader(rows) {
+  for (const [rowNumber, cells] of [...rows.entries()].sort((a, b) => a[0] - b[0])) {
+    const columns = {};
+    let hits = 0;
+    for (const [letter, value] of Object.entries(cells)) {
+      const field = HEADINGS[String(value).trim().toLowerCase()];
+      if (field) {
+        columns[field] = letter;
+        hits += 1;
+      }
+    }
+    // "Shifra" alone could be a stray label; three known headings is a table.
+    if (columns.code && hits >= 3) return { row: rowNumber, columns };
+  }
+  return null;
+}
+
+const mapRow = (cells, columns) =>
+  Object.fromEntries(
+    Object.entries(columns).map(([field, letter]) => [field, (cells[letter] ?? "").toString().trim()]),
+  );
 
 /* ------------------------------------------------------------------ */
 /*  Helpers                                                            */
 /* ------------------------------------------------------------------ */
 
+function resolveSources(args) {
+  if (args.source) return [path.resolve(ROOT, args.source)].filter((file) => fs.existsSync(file));
+  if (!fs.existsSync(SOURCE_DIR)) return [];
+  return fs
+    .readdirSync(SOURCE_DIR)
+    .filter((file) => file.endsWith(".xlsx") && file.includes(args.match))
+    .sort()
+    .map((file) => path.join(SOURCE_DIR, file));
+}
+
 function loadAssortment() {
   if (!fs.existsSync(ALBTRIX)) {
-    console.error("\n  Bitte zuerst `node scripts/catalog/import-albtrix.mjs` ausführen.\n");
+    console.error("\n  Ekzekuto së pari: node scripts/catalog/import-albtrix.mjs\n");
     process.exit(1);
   }
   const data = JSON.parse(fs.readFileSync(ALBTRIX, "utf8"));
   return new Map(data.products.map((product) => [product.code, product]));
 }
 
-const value = (cells, key) => (cells[COLUMNS[key]] ?? "").toString().trim();
-
 /** Reads width/height straight from the PNG header — no image library needed. */
 function probePng(buffer) {
   const isPng = buffer.length > 24 && buffer.readUInt32BE(0) === 0x89504e47;
-  if (!isPng) return null;
+  if (!isPng) return { width: null, height: null };
   return { width: buffer.readUInt32BE(16), height: buffer.readUInt32BE(20) };
 }
 
@@ -179,6 +241,19 @@ function writeImage(target, bytes) {
   fs.mkdirSync(path.dirname(target), { recursive: true });
   if (fs.existsSync(target) && fs.readFileSync(target).equals(bytes)) return;
   fs.writeFileSync(target, bytes);
+}
+
+function readArgs(argv) {
+  const flag = (name, fallback) => {
+    const index = argv.indexOf(`--${name}`);
+    return index >= 0 && argv[index + 1] ? argv[index + 1] : fallback;
+  };
+  return {
+    dryRun: argv.includes("--dry-run"),
+    source: flag("source", ""),
+    match: flag("match", "Fotografite_e_Produkteve_Seria"),
+    label: flag("label", "gpt-seria"),
+  };
 }
 
 function countBy(items, pick) {
@@ -191,28 +266,29 @@ function countBy(items, pick) {
 }
 
 function printSummary(report) {
-  const t = report.totals;
-  console.log(`\n  Fotos aus ${report.source}`);
-  console.log(`  ${"-".repeat(60)}`);
-  console.log(`  Gerettete Fotos        ${t.photos}`);
-  console.log(`  im Warenbestand        ${t.inAssortment}`);
-  console.log(`  davon für die Website  ${t.forWebsite}`);
-  console.log(`\n  Sicherheit laut Vorarbeit:`);
-  for (const [label, count] of Object.entries(t.byConfidence)) {
+  const totals = report.totals;
+  console.log(`  ${"-".repeat(62)}`);
+  console.log(`  Gjithsej fotografi     ${totals.photos}`);
+  console.log(`  Në listën e produkteve ${totals.inAssortment}`);
+  console.log(`  Për faqen              ${totals.forWebsite}`);
+  console.log(`  Besueshmëria:`);
+  for (const [label, count] of Object.entries(totals.byConfidence)) {
     console.log(`     ${label.padEnd(22)} ${String(count).padStart(4)}`);
   }
-  console.log(`  Status:`);
-  for (const [label, count] of Object.entries(t.byStatus)) {
+  console.log(`  Statusi:`);
+  for (const [label, count] of Object.entries(totals.byStatus)) {
     console.log(`     ${label.padEnd(22)} ${String(count).padStart(4)}`);
   }
   if (report.problems.length) {
-    console.log(`\n  Zu klären (${report.problems.length}):`);
+    console.log(`\n  Për t'u sqaruar (${report.problems.length}):`);
     for (const problem of report.problems.slice(0, 8)) {
-      console.log(`     ${String(problem.code).padEnd(10)} ${problem.problem}`);
+      console.log(`     ${String(problem.code ?? "—").padEnd(10)} ${problem.problem}`);
     }
-    if (report.problems.length > 8) console.log(`     … und ${report.problems.length - 8} weitere`);
+    if (report.problems.length > 8) console.log(`     … edhe ${report.problems.length - 8} të tjera`);
   }
   console.log("");
 }
+
+const safe = (value) => String(value ?? "").replace(/[^A-Za-z0-9._-]+/g, "-");
 
 main();

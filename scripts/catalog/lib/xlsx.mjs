@@ -15,7 +15,10 @@
  *
  * XML is scanned with regular expressions rather than a real parser. That is
  * safe here because the input is machine-written spreadsheet XML with a fixed
- * shape — not arbitrary documents.
+ * shape — not arbitrary documents. Every element pattern tolerates an optional
+ * namespace prefix, because the two generators that produced these files
+ * disagree about it: Excel writes `<row>`, the library behind the newer series
+ * writes `<x:row>`, and a reader that assumes either one sees an empty file.
  */
 import { openZip } from "./zip.mjs";
 
@@ -43,7 +46,7 @@ export function readWorkbook(buffer) {
 function readSheetIndex(zip) {
   const rels = readRelationships(zip, "xl/_rels/workbook.xml.rels");
   const sheets = [];
-  for (const tag of zip.readText("xl/workbook.xml").match(/<sheet\b[^>]*\/?>/g) ?? []) {
+  for (const tag of zip.readText("xl/workbook.xml").match(/<(?:\w+:)?sheet\b[^>]*\/?>/g) ?? []) {
     const name = decodeEntities(attribute(tag, "name") ?? "");
     const target = rels.get(attribute(tag, "r:id") ?? "");
     if (target) sheets.push({ name, path: normalizePart(target, "xl") });
@@ -68,7 +71,7 @@ function resolveSheetPath(sheets, sheet) {
 function readSharedStrings(zip) {
   if (!zip.has("xl/sharedStrings.xml")) return [];
   const xml = zip.readText("xl/sharedStrings.xml");
-  return (xml.match(/<si\b[^>]*?(?:\/>|>[\s\S]*?<\/si>)/g) ?? []).map(collectText);
+  return (xml.match(/<(?:\w+:)?si\b[^>]*?(?:\/>|>[\s\S]*?<\/(?:\w+:)?si>)/g) ?? []).map(collectText);
 }
 
 /**
@@ -80,11 +83,11 @@ function readSharedStrings(zip) {
 function readRows(zip, path, strings) {
   const xml = zip.readText(path);
   const rows = new Map();
-  for (const rowXml of xml.match(/<row\b[^>]*?(?:\/>|>[\s\S]*?<\/row>)/g) ?? []) {
+  for (const rowXml of xml.match(/<(?:\w+:)?row\b[^>]*?(?:\/>|>[\s\S]*?<\/(?:\w+:)?row>)/g) ?? []) {
     const number = Number(attribute(rowXml, "r"));
     if (!number) continue;
     const cells = {};
-    for (const cellXml of rowXml.match(/<c\b[^>]*?(?:\/>|>[\s\S]*?<\/c>)/g) ?? []) {
+    for (const cellXml of rowXml.match(/<(?:\w+:)?c\b[^>]*?(?:\/>|>[\s\S]*?<\/(?:\w+:)?c>)/g) ?? []) {
       const reference = attribute(cellXml, "r") ?? "";
       const column = reference.replace(/\d+$/, "");
       const value = cellValue(cellXml, strings);
@@ -97,16 +100,16 @@ function readRows(zip, path, strings) {
 
 function cellValue(cellXml, strings) {
   const type = attribute(cellXml, "t");
-  const inline = cellXml.match(/<is\b[^>]*>[\s\S]*?<\/is>/)?.[0];
+  const inline = cellXml.match(/<(?:\w+:)?is\b[^>]*>[\s\S]*?<\/(?:\w+:)?is>/)?.[0];
   if (type === "inlineStr" && inline) return collectText(inline);
 
-  const raw = cellXml.match(/<v\b[^>]*>([\s\S]*?)<\/v>/)?.[1];
+  const raw = cellXml.match(/<(?:\w+:)?v\b[^>]*>([\s\S]*?)<\/(?:\w+:)?v>/)?.[1];
   if (raw !== undefined && raw !== "") {
     return type === "s" ? strings[Number(raw)] ?? "" : decodeEntities(raw);
   }
 
   // No cached value: fall back to the formula itself (see the header note).
-  const formula = cellXml.match(/<f\b[^>]*>([\s\S]*?)<\/f>/)?.[1];
+  const formula = cellXml.match(/<(?:\w+:)?f\b[^>]*>([\s\S]*?)<\/(?:\w+:)?f>/)?.[1];
   return formula ? evaluateFormula(decodeEntities(formula)) : "";
 }
 
@@ -169,7 +172,7 @@ function readImageAnchors(zip, sheetPath) {
 function readRelationships(zip, path) {
   const map = new Map();
   if (!zip.has(path)) return map;
-  for (const tag of zip.readText(path).match(/<Relationship\b[^>]*\/?>/g) ?? []) {
+  for (const tag of zip.readText(path).match(/<(?:\w+:)?Relationship\b[^>]*\/?>/g) ?? []) {
     const id = attribute(tag, "Id");
     const target = attribute(tag, "Target");
     if (id && target) map.set(id, decodeEntities(target));
@@ -204,8 +207,8 @@ const attribute = (tag, name) =>
   tag.match(new RegExp(`\\b${name.replace(":", "\\:")}="([^"]*)"`))?.[1];
 
 const collectText = (xml) =>
-  (xml.match(/<t\b[^>]*>([\s\S]*?)<\/t>/g) ?? [])
-    .map((part) => decodeEntities(part.replace(/^<t\b[^>]*>/, "").replace(/<\/t>$/, "")))
+  (xml.match(/<(?:\w+:)?t\b[^>]*>([\s\S]*?)<\/(?:\w+:)?t>/g) ?? [])
+    .map((part) => decodeEntities(part.replace(/^<(?:\w+:)?t\b[^>]*>/, "").replace(/<\/(?:\w+:)?t>$/, "")))
     .join("");
 
 function decodeEntities(text) {
