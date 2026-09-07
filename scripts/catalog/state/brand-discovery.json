@@ -239,6 +239,78 @@
       "products": 23,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ORDINARY": {
+      "checkedAt": "2026-09-07T23:17:20.466Z",
+      "products": 21,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DOPPEL HERZ": {
+      "checkedAt": "2026-09-07T23:17:23.573Z",
+      "products": 20,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VITRON": {
+      "checkedAt": "2026-09-07T23:17:29.084Z",
+      "products": 18,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OSTROVIT": {
+      "checkedAt": "2026-09-07T23:17:32.814Z",
+      "products": 18,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FITO FARM": {
+      "checkedAt": "2026-09-07T23:17:36.850Z",
+      "products": 18,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DR.CLINIC": {
+      "checkedAt": "2026-09-07T23:17:46.242Z",
+      "products": 17,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PRO VEN": {
+      "checkedAt": "2026-09-07T23:17:51.958Z",
+      "products": 16,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NOW": {
+      "checkedAt": "2026-09-07T23:17:58.118Z",
+      "products": 16,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "CATALYSIS": {
+      "checkedAt": "2026-09-07T23:18:05.656Z",
+      "products": 16,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SOLANTE": {
+      "checkedAt": "2026-09-07T23:18:11.284Z",
+      "products": 15,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "HELVETIA APOTHEKA": {
+      "checkedAt": "2026-09-07T23:18:13.998Z",
+      "products": 14,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OLIMP LABS": {
+      "checkedAt": "2026-09-07T23:18:19.565Z",
+      "products": 14,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
