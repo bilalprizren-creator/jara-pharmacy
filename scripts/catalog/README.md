@@ -63,7 +63,20 @@ burimi ruhet me secilën.
 
 Barkodet dërgohen në grupe nga 50 me një kërkesë të vetme — 6.285 artikuj
 kushtojnë disa qindra kërkesa, jo dhjetëra mijëra. Serveri i kozmetikës pyetet i
-pari, sepse ky asortiment është kryesisht kozmetikë.
+pari, sepse ky asortiment është kryesisht kozmetikë. Rezultatet e kërkimit ruhen
+në `state/` sapo gjenden, që një ndërprerje gjatë shkarkimit të mos e humbasë
+punën; `--refresh` e detyron kërkimin nga e para.
+
+**Rezolucioni:** shkarkohet miniatura 400 px, e cila mjafton plotësisht për
+kontroll në telefon. Origjinali ekziston te i njëjti burim duke zëvendësuar
+`.400.jpg` me `.full.jpg` (p.sh. 3072×4080) — por ai merret **vetëm për
+fotografitë që ekipi i pranon**, jo për të gjitha. Ndryshe do të shkarkonim rreth
+1 GB nga një shërbim falas për fotografi që në fund nuk i përdorim.
+
+**Cilësia:** këto janë fotografi të kontribuuara nga përdoruesit, jo foto
+zyrtare studio. Disa janë të shkëlqyera, disa janë të bëra me telefon mbi tavolinë.
+Prandaj pyetja në faqen e kontrollit nuk është vetëm "a është produkti i saktë",
+por "a shkon kjo fotografi në faqen tonë".
 
 ### b) Nga katalogët e markave — përafërt
 

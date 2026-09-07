@@ -67,10 +67,19 @@ async function main() {
   console.log(`  ${"-".repeat(62)}`);
 
   /** code → candidate */
-  const hits = new Map();
+  let hits = new Map();
   let requests = 0;
 
-  for (const server of SERVERS) {
+  // The search is the slow half (twenty minutes of polite requests) and the
+  // downloads are the fragile one. Caching the search result means a failure
+  // while downloading costs a retry, not the whole run again.
+  const cached = args.refresh ? null : readHits(args.label);
+  if (cached) {
+    hits = cached;
+    console.log(`     Rezultatet e ruajtura: ${hits.size} të gjetura (--refresh për të kërkuar sërish)`);
+  }
+
+  for (const server of cached ? [] : SERVERS) {
     const open = pool.filter((product) => !hits.has(product.code));
     if (!open.length) break;
 
@@ -105,6 +114,7 @@ async function main() {
 
   const rate = pool.length ? ((hits.size / pool.length) * 100).toFixed(1) : "0";
   console.log(`\n  Gjithsej: ${hits.size} fotografi për ${pool.length} produkte (${rate} %) me ${requests} kërkesa`);
+  if (!cached) writeHits(args.label, hits);
 
   if (args.dryRun) {
     console.log("\n  --dry-run: asgjë nuk u shkarkua.\n");
@@ -121,7 +131,9 @@ async function main() {
   for (const hit of hits.values()) {
     index += 1;
     const extension = path.extname(new URL(hit.imageUrl).pathname).toLowerCase() || ".jpg";
-    const fileName = `${String(index).padStart(4, "0")}_${hit.product.code}_${hit.product.barcode}${extension}`;
+    // Article codes are not safe file names: real ones contain slashes
+    // (e.g. "SCF145/06"), which silently turn into directories and abort the run.
+    const fileName = `${String(index).padStart(4, "0")}_${safe(hit.product.code)}_${safe(hit.product.barcode)}${extension}`;
     const target = path.join(IMAGE_DIR, fileName);
 
     let bytes = null;
@@ -133,7 +145,12 @@ async function main() {
         failed.push({ code: hit.product.code, url: hit.imageUrl });
         continue;
       }
-      fs.writeFileSync(target, buffer);
+      try {
+        fs.writeFileSync(target, buffer);
+      } catch (error) {
+        failed.push({ code: hit.product.code, url: hit.imageUrl, error: String(error.message) });
+        continue;
+      }
       bytes = buffer.length;
       await sleep(IMAGE_PAUSE_MS);
     }
@@ -305,6 +322,26 @@ function knownCodes() {
   return codes;
 }
 
+/* ---- the search cache ---- */
+
+const hitsPath = (label) => path.join(HERE, "state", `${label}-hits.json`);
+
+function writeHits(label, hits) {
+  fs.mkdirSync(path.join(HERE, "state"), { recursive: true });
+  fs.writeFileSync(hitsPath(label), `${JSON.stringify([...hits.values()], null, 2)}\n`, "utf8");
+}
+
+function readHits(label) {
+  const file = hitsPath(label);
+  if (!fs.existsSync(file)) return null;
+  try {
+    const entries = JSON.parse(fs.readFileSync(file, "utf8"));
+    return new Map(entries.map((entry) => [entry.product.code, entry]));
+  } catch {
+    return null;
+  }
+}
+
 function readArgs(argv) {
   const flag = (name, fallback) => {
     const index = argv.indexOf(`--${name}`);
@@ -312,6 +349,7 @@ function readArgs(argv) {
   };
   return {
     dryRun: argv.includes("--dry-run"),
+    refresh: argv.includes("--refresh"),
     limit: Number(flag("limit", 0)) || 0,
     brand: flag("brand", ""),
     label: flag("label", `openfacts-${new Date().toISOString().slice(0, 10)}`),
@@ -342,6 +380,8 @@ function printBrandBreakdown(hits) {
   for (const [brand, count] of top) console.log(`     ${brand.slice(0, 30).padEnd(32)} ${String(count).padStart(4)}`);
   console.log("");
 }
+
+const safe = (value) => String(value ?? "").replace(/[^A-Za-z0-9._-]+/g, "-");
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
