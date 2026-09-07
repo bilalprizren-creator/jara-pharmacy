@@ -1,7 +1,7 @@
 {
-  "generatedAt": "2026-09-07T21:51:18.776Z",
+  "generatedAt": "2026-09-07T22:26:54.038Z",
   "basedOn": "openfacts-01",
-  "checked": 60,
+  "checked": 680,
   "improved": [
     {
       "code": "7531",
@@ -56,6 +56,429 @@
       "verdict": "E pranueshme",
       "url": "https://images.openbeautyfacts.org/images/products/400/580/003/7535/2.400.jpg",
       "file": ".image-cache/better/69657_4005800037535.jpg"
+    },
+    {
+      "code": "63141",
+      "name": "EUCERIN_63141_pH5 SAPUN JOALKALIN 100G",
+      "was": 0.34,
+      "now": 0.56,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/400/580/020/2711/2.400.jpg",
+      "file": ".image-cache/better/63141_4005800202711.jpg"
+    },
+    {
+      "code": "30925",
+      "name": "HUMBLE BRUSH ADULT BLACK SOFT",
+      "was": 0.25,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/735/007/569/0051/1.400.jpg",
+      "file": ".image-cache/better/30925_7350075690051.jpg"
+    },
+    {
+      "code": "480911",
+      "name": "NIVEA SUN SONNENMILCH SPF30 250ML",
+      "was": 0.29,
+      "now": 0.68,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/400/590/024/9401/1.400.jpg",
+      "file": ".image-cache/better/480911_4005900249401.jpg"
+    },
+    {
+      "code": "91055",
+      "name": "DUREX LUBRIFIANT NATURAL H2O 100ML",
+      "was": 0,
+      "now": 0.49,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/599/732/177/1656/1.400.jpg",
+      "file": ".image-cache/better/91055_5997321771656.jpg"
+    },
+    {
+      "code": "99452",
+      "name": "AVENE SPRAY SPF 50+ 200ML",
+      "was": 0.24,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/328/277/010/0617/2.400.jpg",
+      "file": ".image-cache/better/99452_3282770100617.jpg"
+    },
+    {
+      "code": "17893",
+      "name": "113 MUSTELA HYDRA BEBE BODY LOTION 500ML",
+      "was": 0,
+      "now": 0.88,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/350/410/503/5501/1.400.jpg",
+      "file": ".image-cache/better/17893_3504105035501.jpg"
+    },
+    {
+      "code": "5357",
+      "name": "NIVEA MEN SHOWER SPORT 250ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/400/580/813/0610/1.400.jpg",
+      "file": ".image-cache/better/5357_4005808130610.jpg"
+    },
+    {
+      "code": "5346",
+      "name": "BATISTE DRY SHAMPON CHERRY 200ML",
+      "was": 0.21,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/501/072/452/6798/3.400.jpg",
+      "file": ".image-cache/better/5346_5010724526798.jpg"
+    },
+    {
+      "code": "5342",
+      "name": "AXE MEN DEO COLLISION 150ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/871/044/748/4326/1.400.jpg",
+      "file": ".image-cache/better/5342_8710447484326.jpg"
+    },
+    {
+      "code": "5183",
+      "name": "NIVEA MEN SHOWER GEL ENERGY 250ML",
+      "was": 0.03,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/400/580/813/0115/3.400.jpg",
+      "file": ".image-cache/better/5183_4005808130115.jpg"
+    },
+    {
+      "code": "5180",
+      "name": "FA ROLL-ON PINK PASSION 50ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/541/009/172/8618/2.400.jpg",
+      "file": ".image-cache/better/5180_5410091728618.jpg"
+    },
+    {
+      "code": "5360",
+      "name": "AXE SHOWER GEL BILLIONAIRE 250ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/872/018/120/8096/3.400.jpg",
+      "file": ".image-cache/better/5360_8720181208096.jpg"
+    },
+    {
+      "code": "145512",
+      "name": "BATISTE DRY SHAMPON ORIGINAL 200ML",
+      "was": 0.21,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/501/072/452/7481/4.400.jpg",
+      "file": ".image-cache/better/145512_5010724527481.jpg"
+    },
+    {
+      "code": "4123",
+      "name": "ESSENCE LIPGLOSS EXTREME SHINE (NR.01) 5ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/405/972/930/2809/4.400.jpg",
+      "file": ".image-cache/better/4123_4059729302809.jpg"
+    },
+    {
+      "code": "4119",
+      "name": "ESSENCE MASCARA CRAZY VOLUME 12ML",
+      "was": 0.18,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/425/058/773/9084/2.400.jpg",
+      "file": ".image-cache/better/4119_4250587739084.jpg"
+    },
+    {
+      "code": "2323",
+      "name": "BEAUTY OF JOSEON GLOW DEEP SERUM RICE+ALPHA ARBUTIN 30ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/880/973/831/2728/2.400.jpg",
+      "file": ".image-cache/better/2323_8809738312728.jpg"
+    },
+    {
+      "code": "222258",
+      "name": "BEAUTY OF JOSEON GLOW SERUM PROPOLIS+NIACINAMIDE 30ML",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/880/965/711/4960/3.400.jpg",
+      "file": ".image-cache/better/222258_8809657114960.jpg"
+    },
+    {
+      "code": "60180",
+      "name": "TOCOBO COTTON SOFT SUN STICK SPF50+ 19G",
+      "was": 0.33,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/880/983/506/0041/2.400.jpg",
+      "file": ".image-cache/better/60180_8809835060041.jpg"
+    },
+    {
+      "code": "90606",
+      "name": "ODABAN SPRAY",
+      "was": 0.24,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/502/538/100/0031/2.400.jpg",
+      "file": ".image-cache/better/90606_5025381000031.jpg"
+    },
+    {
+      "code": "21916",
+      "name": "Nivea visage 3in1",
+      "was": 0.28,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/900/580/029/9907/1.400.jpg",
+      "file": ".image-cache/better/21916_9005800299907.jpg"
+    },
+    {
+      "code": "51123",
+      "name": "LA ROCHE EFFECLAR DUO + SERUM CREAM 30ML L.2827",
+      "was": 0.05,
+      "now": 0.5,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/572/2827/5.400.jpg",
+      "file": ".image-cache/better/51123_3337875722827.jpg"
+    },
+    {
+      "code": "8265",
+      "name": "LA ROCHE EFFACLAR MICRO-PEELING GEL 200ML L.8265",
+      "was": 0.18,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/570/8265/1.400.jpg",
+      "file": ".image-cache/better/8265_3337875708265.jpg"
+    },
+    {
+      "code": "78660",
+      "name": "LA ROCHE POSAY DERMALLERGO CREAM 40ML L.7614",
+      "was": 0.31,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/575/7614/2.400.jpg",
+      "file": ".image-cache/better/78660_3337875757614.jpg"
+    },
+    {
+      "code": "78662",
+      "name": "LA ROCHE POSAY TOLERIANE DERMALLERGO FLUID 40ML 7669",
+      "was": 0.3,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/575/7669/1.400.jpg",
+      "file": ".image-cache/better/78662_3337875757669.jpg"
+    },
+    {
+      "code": "20508",
+      "name": "CERAVE AM FACIAL MOISTURISING LOTION SPF30 52ML C.0620",
+      "was": 0.34,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/584/0620/2.400.jpg",
+      "file": ".image-cache/better/20508_3337875840620.jpg"
+    },
+    {
+      "code": "8412ME",
+      "name": "CERAVE FACIAL MOISTURIZING LOTION PM 52ML C.7449",
+      "was": 0.28,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/559/7449/2.400.jpg",
+      "file": ".image-cache/better/8412ME_3337875597449.jpg"
+    },
+    {
+      "code": "L.6307",
+      "name": "LA ROCHE ANTHELIOS UVMUNE 400 PEDIATRIC FLUID SPF 50 50ML L.6307",
+      "was": 0,
+      "now": 0.48,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/588/6307/2.400.jpg",
+      "file": ".image-cache/better/L.6307_3337875886307.jpg"
+    },
+    {
+      "code": "17032017",
+      "name": "CERAVE RENEVING SKIN EYE CREM 15ML C.9838",
+      "was": 0.32,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/360/600/061/9838/1.400.jpg",
+      "file": ".image-cache/better/17032017_3606000619838.jpg"
+    },
+    {
+      "code": "38197",
+      "name": "CERAVE BLEMISH PATCHES C.7871",
+      "was": 0.42,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/592/7871/3.400.jpg",
+      "file": ".image-cache/better/38197_3337875927871.jpg"
+    },
+    {
+      "code": "17032005",
+      "name": "CERAVE MOISTURIZING LOTION REFILL 473ML C.5633",
+      "was": 0.21,
+      "now": 0.6,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/590/5633/2.400.jpg",
+      "file": ".image-cache/better/17032005_3337875905633.jpg"
+    },
+    {
+      "code": "52800",
+      "name": "LA ROCHE ANTHELIOS UVAIR SPF50+ SERUM SUNSREEN 50ML L.2349",
+      "was": 0.06,
+      "now": 0.5,
+      "verdict": "E pranueshme",
+      "url": "https://images.openbeautyfacts.org/images/products/333/787/593/2349/3.400.jpg",
+      "file": ".image-cache/better/52800_3337875932349.jpg"
+    },
+    {
+      "code": "91344",
+      "name": "HIMALAYA CYSTONE 100 TAB",
+      "was": 0.3,
+      "now": 0.88,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/890/113/803/0711/1.400.jpg",
+      "file": ".image-cache/better/91344_8901138030711.jpg"
+    },
+    {
+      "code": "225795",
+      "name": "HIPP SPHAGETTI BOLOGNEZE 250G",
+      "was": 0.04,
+      "now": 0.49,
+      "verdict": "E pranueshme",
+      "url": "https://images.openfoodfacts.org/images/products/406/230/026/2515/1.400.jpg",
+      "file": ".image-cache/better/225795_4062300262515.jpg"
+    },
+    {
+      "code": "77518",
+      "name": "BETAIMUNE CAPS A30",
+      "was": 0.07,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/501/978/101/0912/2.400.jpg",
+      "file": ".image-cache/better/77518_5019781010912.jpg"
+    },
+    {
+      "code": "9001359",
+      "name": "INWIGER BIO 200ML",
+      "was": 0.36,
+      "now": 0.61,
+      "verdict": "E pranueshme",
+      "url": "https://images.openfoodfacts.org/images/products/400/630/902/4606/2.400.jpg",
+      "file": ".image-cache/better/9001359_4006309024606.jpg"
+    },
+    {
+      "code": "85333",
+      "name": "PROSTAAT-POTENTIE & URINEWEGEN CAPS A30",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/371/302/2529/1.400.jpg",
+      "file": ".image-cache/better/85333_8713713022529.jpg"
+    },
+    {
+      "code": "72495",
+      "name": "LUCOVITAL VITAMINE D3 70X75MCG",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/371/303/9961/1.400.jpg",
+      "file": ".image-cache/better/72495_8713713039961.jpg"
+    },
+    {
+      "code": "14804",
+      "name": "LUCOVITAAL CALCIUM+D3",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/371/308/4596/5.400.jpg",
+      "file": ".image-cache/better/14804_8713713084596.jpg"
+    },
+    {
+      "code": "77422",
+      "name": "LUCOVITAAL COLLAGEN 2000MG",
+      "was": 0,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/371/302/3502/1.400.jpg",
+      "file": ".image-cache/better/77422_8713713023502.jpg"
+    },
+    {
+      "code": "123.",
+      "name": "COSRX ADVANCED SNAIL 92 ALL IN ONE CREAM",
+      "was": 0,
+      "now": 0.99,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/880/941/647/0016/2.400.jpg",
+      "file": ".image-cache/better/123._8809416470016.jpg"
+    },
+    {
+      "code": "2423",
+      "name": "VITAMIN CANDY MANGO A12 ( JAKE )",
+      "was": 0,
+      "now": 0.53,
+      "verdict": "E pranueshme",
+      "url": "https://images.openfoodfacts.org/images/products/860/610/566/2093/1.400.jpg",
+      "file": ".image-cache/better/2423_8606105662093.jpg"
+    },
+    {
+      "code": "27573",
+      "name": "SEBAMED EXTREME DRY SKIN SHMAPOO 200ML",
+      "was": 0.42,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/410/304/092/0010/1.400.jpg",
+      "file": ".image-cache/better/27573_4103040920010.jpg"
+    },
+    {
+      "code": "366",
+      "name": "JORDAN STEP BY STEP 6-9(BRUSHE PER DHEMBE)",
+      "was": 0.15,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/703/851/622/0301/3.400.jpg",
+      "file": ".image-cache/better/366_7038516220301.jpg"
+    },
+    {
+      "code": "22215",
+      "name": "ALTRUIST FACE FLUID SPF50-50ML",
+      "was": 0.11,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/932/702/3839/1.400.jpg",
+      "file": ".image-cache/better/22215_8719327023839.jpg"
+    },
+    {
+      "code": "22216",
+      "name": "ALTRUIST FACE FLUID SPF30-50ML",
+      "was": 0.29,
+      "now": 1,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/871/932/759/7835/1.400.jpg",
+      "file": ".image-cache/better/22216_8719327597835.jpg"
+    },
+    {
+      "code": "11105",
+      "name": "APTAMIL 2 PRONUTRA 1.2KG",
+      "was": 0.24,
+      "now": 0.92,
+      "verdict": "Fotografi studioje",
+      "url": "https://images.openfoodfacts.org/images/products/405/663/100/3725/1.400.jpg",
+      "file": ".image-cache/better/11105_4056631003725.jpg"
+    },
+    {
+      "code": "5024",
+      "name": "AIRWAVES MENTHOL&EUCALYPTUS A1",
+      "was": 0,
+      "now": 0.54,
+      "verdict": "E pranueshme",
+      "url": "https://images.openfoodfacts.org/images/products/000/005/017/3167/2.400.jpg",
+      "file": ".image-cache/better/5024_50173167.jpg"
     }
   ],
   "stillWeak": [
@@ -279,7 +702,7 @@
       "code": "75152",
       "name": "BIODERMA SEBIUM XHEL PER LARJE PER LEKURE TE KOMBINUAR 200ML",
       "score": 0.02,
-      "bestAlternative": 0.18
+      "bestAlternative": null
     },
     {
       "code": "22331",
@@ -345,7 +768,7 @@
       "code": "25481",
       "name": "MARVIS CLASSIC STRONG MINT 25ML",
       "score": 0,
-      "bestAlternative": null
+      "bestAlternative": 0
     },
     {
       "code": "75157",
@@ -382,6 +805,3444 @@
       "name": "EUCERIN_63170_pH5 STIK PER KUJDES DHE USHQIM TE BUZEVE 4.8G",
       "score": 0,
       "bestAlternative": 0.28
+    },
+    {
+      "code": "63382",
+      "name": "EUCERIN_63382_KREM PER DUAR ME 5% URE 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "63976",
+      "name": "EUCERIN_63976_AQUAPHOR YNDYRE RIGJENERUESE",
+      "score": 0.33,
+      "bestAlternative": 0.33
+    },
+    {
+      "code": "69613",
+      "name": "EUCERIN_69613_ANTIPERSPIRANT STRONG ROLL - ON 50ML",
+      "score": 0.32,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "63071",
+      "name": "EUCERIN_63071_pH5 LOSION PER LARJE 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "69617",
+      "name": "EUCERIN_69617_LOSION PER LEKURE TE THATE 250ML",
+      "score": 0.27,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "63536",
+      "name": "EUCERIN_63536_ HYALURON - FILLER KREM PER ZONEN RRETH SYVE 15ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "63154",
+      "name": "EUCERIN_63154_pH5 KREM PER DUAR 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "69655",
+      "name": "EUCERIN_69655_ SHAMPON KUNDER ZBOKTHIT TE THAT 250 ML",
+      "score": 0.39,
+      "bestAlternative": 0.39
+    },
+    {
+      "code": "83506",
+      "name": "EUCERIN_83506_ ANTI - PIGMENT KREM PER NATE",
+      "score": 0.29,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "87934",
+      "name": "EUCERIN_87934_SUN ANTI-AGE KREM PER MBROJTJE TE FYTYRES SPF 50+ 50ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "63944",
+      "name": "EUCERIN_63944_SUN KREM-GEL PER MBROJTJE NGA ALERGJITE SPF 50 150ML",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "63907",
+      "name": "EUCERIN_63907_SUN SPRAY SPF 50 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "66862",
+      "name": "EUCERIN_66862_DERMOPURE TRIPLE EFFECT SERUM 40 ML",
+      "score": 0.43,
+      "bestAlternative": 0.43
+    },
+    {
+      "code": "63853",
+      "name": "EUCERIN_63853_SUN SPRAY PER FEMIJE SPF 50+ 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "83583",
+      "name": "EUCERIN_83583_SUN ALLERGY PROTECTION AFTER SUN KREM-GEL",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "83566",
+      "name": "EUCERIN_83566_ HYALURON - FILLER+ELASTICITY 3D SERUM",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "63852",
+      "name": "EUCERIN_63852_SUN LOSION PER FEMIJE SPF 50+ 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "87937",
+      "name": "EUCERIN_87937_SUN OIL CONTROL GEL KREM SPF 50 50 ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "66961",
+      "name": "EUCERIN_66961_SUN HYDRO-PROTECT ULTRA LIGHT FLUID SPF50+",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "83516",
+      "name": "EUCERIN_83516_AQUAPHOR SPREJ 250ML",
+      "score": 0,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "89769",
+      "name": "EUCERIN_89769_ HYALURON FILLER KREM I DITES SPF 30 50ML",
+      "score": 0.12,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "63122",
+      "name": "EUCERIN_63122_PH5 VAJ PER DUSH 400ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "9945",
+      "name": "PANTENOL 5% BODY LOTION 250ML ( GALENIKA )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50005",
+      "name": "ICE POWER COLD SPRAY 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "480917",
+      "name": "NIVEA SUN 50+ 5IN1 KIDS ROLL ON 50ML",
+      "score": 0.32,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "95069",
+      "name": "GARNIER MASK HYALURONIC ALOE",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "480915",
+      "name": "NIVEA SUN SPF 50+ ANTI AGE Q10 50ML",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "85705",
+      "name": "NIVEA SUN SENSITIVE CHILDREN SPRAY SPF 50+",
+      "score": 0.32,
+      "bestAlternative": 0.38
+    },
+    {
+      "code": "480914",
+      "name": "NIVEA SUN SPF30 50ML",
+      "score": 0.25,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "95068",
+      "name": "GARNIER MASK VITAMIN C",
+      "score": 0.11,
+      "bestAlternative": 0.11
+    },
+    {
+      "code": "480920",
+      "name": "NIVEA SUN SCHUTZ PLEDGE SPS30 200ML",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "480924",
+      "name": "NIVEA SUN CREAM SPF50+ 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "480912",
+      "name": "NIVEA SUN 50+SPRAY SENSITIVE 200ML",
+      "score": 0.23,
+      "bestAlternative": 0.23
+    },
+    {
+      "code": "480913",
+      "name": "NIVEA SUN AFTER SUN SENSITIVE SOS 175ML",
+      "score": 0.32,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "480925",
+      "name": "NIVEA SUN SPRAY PROTECTION TAN LSF 30 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "80140",
+      "name": "DUREX LUBRIFIKANT PLAY FEEL 50ML",
+      "score": 0.37,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "F722",
+      "name": "AVENE SPRAY ENFANT CHILDREN SPF 50+ 200ML",
+      "score": 0,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "L2301",
+      "name": "AVENE EAU THERMALE SPRAY 50ML",
+      "score": 0.13,
+      "bestAlternative": 0.39
+    },
+    {
+      "code": "L23012",
+      "name": "AVENE EAU THERMALE AVENE SPRAY 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "V623",
+      "name": "AVENE CREME TEINTE SPF 50+ 50ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "F378",
+      "name": "AVENE MOUSSE NETTOYANTE 150ML",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "F6338",
+      "name": "AVENE CLEANANCE GEL NETTOYANTE 200ML",
+      "score": 0,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "524699",
+      "name": "AVENE EAU THERMALE SPRAY 300ML",
+      "score": 0.17,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "F109",
+      "name": "AVENE CLEANANCE COMEDOMED CONCENTRE 30ML",
+      "score": 0,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "A4318",
+      "name": "AVENE CLEANANCE SOLAIRE TEINTE SPF50 50ML",
+      "score": 0.14,
+      "bestAlternative": 0.14
+    },
+    {
+      "code": "50875",
+      "name": "KLORANE SHAMPOOING QUININE BIO 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "524388",
+      "name": "AVENE CLEANANCE GEL NETTOYANT 400ML",
+      "score": 0.28,
+      "bestAlternative": 0.28
+    },
+    {
+      "code": "151304",
+      "name": "AVENE CLEANANCE SPF 50+ 50ML",
+      "score": 0,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "151133",
+      "name": "AVENE CICALFATE +CREME 100ML",
+      "score": 0,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "161226",
+      "name": "AVENE STICK ZONES SENSIBLES SPF 50+ 8GR",
+      "score": 0.23,
+      "bestAlternative": 0.23
+    },
+    {
+      "code": "524390",
+      "name": "A-DERMA EXOMEGA CONTROL CREME 200ML",
+      "score": 0.16,
+      "bestAlternative": 0.28
+    },
+    {
+      "code": "6024",
+      "name": "AVENE B-PROTECT SPF50+ 30ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "90641",
+      "name": "A-DERMA EXOMEGA CONTROL BAUME EMOLIENT 200ML",
+      "score": 0.42,
+      "bestAlternative": 0.42
+    },
+    {
+      "code": "524389",
+      "name": "AVENE CICALFATE + CREME REPARATRICE PROTECTRICE 40ML",
+      "score": 0.14,
+      "bestAlternative": 0.14
+    },
+    {
+      "code": "145674",
+      "name": "AVENE XERACALM HUILE LAVANTE CLEANSING OIL 400ML",
+      "score": 0.2,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "15111",
+      "name": "AVENE CREME MINERAL SPF50+ 50ML",
+      "score": 0.4,
+      "bestAlternative": null
+    },
+    {
+      "code": "74911",
+      "name": "AVENE CICALFATE +GEL NETTOYANT 200ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "407373",
+      "name": "DU KELUAL DS SHAMPOOING TRAITANT 100ML",
+      "score": 0,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "1788",
+      "name": "DUCRAY SQUANORM SECHES 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2963",
+      "name": "KLORANE SHAMPOOING DATTIER DU DESERT 200ML",
+      "score": 0.14,
+      "bestAlternative": 0.14
+    },
+    {
+      "code": "AV999",
+      "name": "AVENE CLEANANCE HYDRA CREME 40ML",
+      "score": 0,
+      "bestAlternative": 0.36
+    },
+    {
+      "code": "V203.",
+      "name": "AVENE ANTIROUGEURS CONCENTRE 30ML",
+      "score": 0.29,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "1768.",
+      "name": "DUCRAY SQAUNORM GRASSES 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "F184",
+      "name": "AVENE TRIACNEAL EMULSION 30ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "84611",
+      "name": "DUCRAY SHAMPOOING ANAPHASE + 400ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "6036",
+      "name": "EMBRYOLISSE LAIT-CREME CONCENTRE MULTI-FUNCTIONS 75ML",
+      "score": 0.09,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "84612",
+      "name": "DUCRAY MELASCREEN FLUIDE ANTITACHES SPF50+ 50ML",
+      "score": 0.21,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "914222",
+      "name": "EMBRYOLISSE LAIT-CREME FLUIDE + MULTI-FUNCTIONS 400ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "898764",
+      "name": "KLORANE SHAMPON PIVOINE 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "841088",
+      "name": "AVENE XERACALM A.D BAUME REPILIDANTE BAUME 200ML",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "277711",
+      "name": "137 MUSTELA HAIR STYLER&SKIN REFRESHENER 200ML",
+      "score": 0.18,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "17895",
+      "name": "110 MUSTELA SHAMPOOING DOUX 500ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "40656",
+      "name": "MUSTELA CICASTELA CREME REPARATRICE 40 ML",
+      "score": 0,
+      "bestAlternative": 0.4
+    },
+    {
+      "code": "401843",
+      "name": "122 MUSTELA GEL LAVANT DOUX BIO 200ML",
+      "score": 0.31,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "K148",
+      "name": "MUSTELA SOIN CROUTES DE LAIT 40ML",
+      "score": 0,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "L543",
+      "name": "111 MUSTELA GEL LAVANT DOUX 500ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "56491",
+      "name": "129 MUSTELA HYDRA BEBE CREME VISAGE 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60200",
+      "name": "MUSTELA BIO ORGANIC CREME CHANGE DIAPER 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "27781",
+      "name": "MUSTELA LINIMENT DIAPER CHANGE CLEANSER 400ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "602310",
+      "name": "MUSTELA SPRAY SOLAIRE SPF50+ 200ML",
+      "score": 0.4,
+      "bestAlternative": 0.43
+    },
+    {
+      "code": "56490",
+      "name": "138 MUSTELA HUILE DE MASSAGE 100ML",
+      "score": 0.08,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "151134",
+      "name": "MUSTELA SOLAIRE SPF50+ 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7958",
+      "name": "BIOCOLLAGENIX DRINKS 10FL X 30ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "401646",
+      "name": "HUGGIES LS (5-6) 12-18KG A-11",
+      "score": 0,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "401648",
+      "name": "HUGGIES LS (2-3) 3-8KG A-12",
+      "score": 0.17,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "970",
+      "name": "BUBCHEN KREM PER PERKUJDESJE 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "473972",
+      "name": "BUBCHEN SHAMPON&DUSH SENSITIV 230ML",
+      "score": 0,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "959",
+      "name": "BUBCHEN SHAMPON & DUSH TIFOZ",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "788463",
+      "name": "BUBCHEN SHAMPON PER FEMIJE 400ML",
+      "score": 0.21,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "51716",
+      "name": "HUGGIES PECETA TE LAGTA NATURAL CARE 56CP",
+      "score": 0,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "51715",
+      "name": "HUGGIES PECETA TE LAGTA PURE 56CP",
+      "score": 0.15,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "400439",
+      "name": "HUGGIES PECETA TE LAGTA ALL OVER CLEAN 56CP",
+      "score": 0,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "90006",
+      "name": "BUBCHEN BABY KREM PER CDO KOHE 75ML",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "45",
+      "name": "BUBCHEN LOSION PER RREZITJE SPF50+ 100ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5558",
+      "name": "CYSTIPHANE HAIR LOSS SHAMPO 200 ML",
+      "score": 0,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "15765",
+      "name": "BIOLANE MOISTURIZING ATOPY CREME 250ML",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "114786",
+      "name": "VAJ ROSMARINI HEMANI 30ml",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "44557",
+      "name": "SERUM PER FTYRE RETINOL 30ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "102310",
+      "name": "PHYTOAPAISANT SHAMPO 250ML",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "53399",
+      "name": "SYOSS SHAMPON SALONPLEX 440ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "46872",
+      "name": "NIVEA CREME 50ML",
+      "score": 0,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "5344",
+      "name": "AXE MEN DEO DARKTEMPATATION 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5188",
+      "name": "SYOSS SHAMPON KERATIN 440ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5178",
+      "name": "AXE SHOWER GEL EXCITE 250ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "5353",
+      "name": "NIVEA SHOWER CARE CREAM 250ML",
+      "score": 0.24,
+      "bestAlternative": null
+    },
+    {
+      "code": "5361",
+      "name": "DOVE BODY LOTION ESSENTIAL CARE 250ML",
+      "score": 0.3,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "7660",
+      "name": "BRUSH BAMBOO CARBONE ( ORAL-B )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5182",
+      "name": "FA DEO RROLL SPORT 50ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "145510",
+      "name": "TAFT HAIR POWER GEL 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5349",
+      "name": "DOVE MEN ULTRA HYDRA CREAM 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "145511",
+      "name": "NIVEA CREME 30ML",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "124195",
+      "name": "NIVEA SHAMPON HAARMILCH NATURAL GLANZ SERUM 250ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5251",
+      "name": "PASTE DHEMBESH ODOL-MED3 POWER 75ML",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "05235",
+      "name": "ANUA HEARTLEAF PORE CONTROL CLEANSING OIL 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "05233",
+      "name": "ISNTREE HYALURONIC ACID AQUA GEL CREM 100ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "96553",
+      "name": "RESTOREX KERATIN ARGAN MASK 300ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "005234",
+      "name": "COSRX LOW PH GOOD MORNING GEL CLEANSER 150ML",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "222260",
+      "name": "COSRX BHA BLACKHEAD POWER LIQUID 100ML",
+      "score": 0.26,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "992724",
+      "name": "345 RELIEF CREAM 50ML",
+      "score": 0.05,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "25579",
+      "name": "COSRX THE NIACINAMIDE 15 SERUM 20ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2322",
+      "name": "COSRX SALICYLIC ACID GENLTE CLEANSER 150ML",
+      "score": 0.01,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "277781",
+      "name": "PAMPERS WIPES SINGLE HARMONIE COCO 14A",
+      "score": 0,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "754623",
+      "name": "DALIN BABY SHAMPON 200ML",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "75477",
+      "name": "DALIN BABY SHAMPON 500ML",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "09740",
+      "name": "DOVE BODY LOTION 400ML REGENERATING RITUALS COCONUT ALMOND",
+      "score": 0.22,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "25811",
+      "name": "CANDIFREE DM GEL",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "88335",
+      "name": "SEBAMED EVERYDAY SHAMPOO NORMAL DRY 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "455545",
+      "name": "SEBAMED SUN BABY SPRAY SPF50 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "451079",
+      "name": "CURAPROX ENZYCAL ZERO PASTE PER DHEMBE",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "71486",
+      "name": "BIOBALANCE CITRUS SHAMPON 330ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "15481",
+      "name": "CIEN ANTI AGE SPF 30 FACE 75ML",
+      "score": 0,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "17932",
+      "name": "Nivea micellar water sensitive",
+      "score": 0,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "86934",
+      "name": "NIVEA MEN STYLING CREAM",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "8028",
+      "name": "NIVEA Erfrischendes Gesichts-",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "82237",
+      "name": "NIVEA DEO INVISIBLE BLACK&WHITE CLEAR SPRAY",
+      "score": 0.01,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "17595",
+      "name": "Nivea Men Active Age",
+      "score": 0.16,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "82245",
+      "name": "NIVEA DEO INVISIBLE POWER ROLL-ON",
+      "score": 0.01,
+      "bestAlternative": null
+    },
+    {
+      "code": "19901",
+      "name": "Nivea body cuc.match",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "93401",
+      "name": "NIVEA SUN LOTION SPF 30 200ML",
+      "score": 0,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "114989",
+      "name": "ATRIX INTENSIVE PROTECTION CREAM 150 ML",
+      "score": 0.17,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "63859",
+      "name": "NIVEA SUN LOTION SPF50+",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "602336",
+      "name": "NIVEA SUN PROTECT &BRONZE SPRAY SPF30 200ML",
+      "score": 0.34,
+      "bestAlternative": 0.34
+    },
+    {
+      "code": "602338",
+      "name": "NIVEA SUN CAROTENE LOTION SPF6 200ML",
+      "score": 0,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "7026",
+      "name": "NIVEA SUN CHILDREN LOTION SPF50+ 200ML",
+      "score": 0.07,
+      "bestAlternative": 0.23
+    },
+    {
+      "code": "51723.",
+      "name": "NIVEA AFTER SUN SENSITIVE CREM GEL 175ML",
+      "score": 0,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "46945",
+      "name": "NIVEA CREME 250 ML",
+      "score": 0.02,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "85706",
+      "name": "NIEVA SUN PROTECT&BRONZE SPRAY OIL SPF 20",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "6387625",
+      "name": "NIVEA ANTI WRINKLE+FIRMING DAY CARE CREME 45+",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5776",
+      "name": "DERMEDIC HYDRAIN CLEANSING GEL 200ML",
+      "score": 0,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "52797",
+      "name": "DERMEDIC BABY BUTTER",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "578123",
+      "name": "DERMEDIC SUNBRELLA DRY/NORMAL SKIN FLUID SPF50+",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "578128",
+      "name": "DERMEDIC CICATOPY HAND CREAM 75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "4318F",
+      "name": "BIODERMA ATODERM INTENSIVE BAUME BALM 45ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "803308",
+      "name": "URIAGE EAU TERM WATER SPRAY 150ML",
+      "score": 0.04,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "800905",
+      "name": "URIAGE T. MICE WATER - MOISTU 250ML",
+      "score": 0,
+      "bestAlternative": 0.03
+    },
+    {
+      "code": "99573",
+      "name": "PHARMASEPT BABY CARE MILD BATH 1LT",
+      "score": 0.26,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "99577",
+      "name": "PHARMASEPT BABY CARE MILD LAUNDRY 1LTX30LARJE",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "99575",
+      "name": "PHARMASEPT BABY CARE SOOTHING CREAM 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "407365",
+      "name": "THE PUREST SOLUTIONS 10%ASCORBIC ACID&0.5%FERULIC ACID SERUM",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "809731",
+      "name": "VICHY AQUALIA THERMAL GEL 50ML",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "870553",
+      "name": "VICHY NORMADERM GEL 400ML V.3083",
+      "score": 0.11,
+      "bestAlternative": 0.11
+    },
+    {
+      "code": "250304",
+      "name": "VICHY SHAMPON ENERGISANT 200ML V.1292",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "853052",
+      "name": "VICHY DEO L. E NDJESHME PAS DEPILIMIT 50ML V.0324",
+      "score": 0.05,
+      "bestAlternative": null
+    },
+    {
+      "code": "870554",
+      "name": "VICHY NORMADERM PHYTOSOLUTION 50ML",
+      "score": 0.2,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "853067",
+      "name": "VICHY IDEAL SOLEIL LEKURE E NDJESHME SPF 50 CREAM V4445",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "853070",
+      "name": "VICHY CAPITAL SOLEIL ANTI AGE SPF 50 V.2298",
+      "score": 0,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "853055",
+      "name": "VICHY DEO RROLL ON 50ML V.0300",
+      "score": 0,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "434",
+      "name": "VICHY DERMABLEND 35 SAND",
+      "score": 0.22,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "870546",
+      "name": "VICHY MINERAL 89 EYES FORTIFIER 15ML",
+      "score": 0.15,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "853060",
+      "name": "VICHY DERMABLEND PUDER E LENGET 15 OPAL V.6594",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "870548",
+      "name": "VICHY MINERAL BLEND GYPSUM 03",
+      "score": 0.06,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "77351",
+      "name": "VICHY LIFTACTIV FLEXITEINT 25 V.1567",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "853053",
+      "name": "VICHY DEO LE E NDJESHME PROMO 1+1 50ML V.4728",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "V.7254",
+      "name": "VICHY LIFTACTIV COLLAGEN SPECIALIST 50ML V.7254",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "853076",
+      "name": "VICHY MINERAL 89 50ML V.3248",
+      "score": 0.06,
+      "bestAlternative": 0.41
+    },
+    {
+      "code": "853085",
+      "name": "VICHY P.TH SHKUM PER PASTRIM",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "853078",
+      "name": "VICHY ND GEL TRIACTIV 3 IN 1 125ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "523674",
+      "name": "VICHY NORMADERM PHYTOSOLUTION CLEANSING CREAM 125ML",
+      "score": 0.23,
+      "bestAlternative": 0.23
+    },
+    {
+      "code": "853090",
+      "name": "VICHY SHAMPO PER FLOKE TE YNDYRSHME",
+      "score": 0.17,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "50381",
+      "name": "LA ROCHE EFFACLAR PURIFYING FOAMING GEL 200ML L.1083",
+      "score": 0,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "50380",
+      "name": "LA ROCHE EFFACLAR PURIFYING FOAMING GEL 400ML L.1991",
+      "score": 0.38,
+      "bestAlternative": null
+    },
+    {
+      "code": "50373",
+      "name": "LA ROCHE EFFACLAR DUO+ CREAM 40ML L8071",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "50374",
+      "name": "LA ROCHE EFFACLAR DUO+ SPF 30 CREAM L9493",
+      "score": 0.08,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "50372",
+      "name": "LA ROCHE CICAPLAST MAINS HAND REPAIRING CREAM 50ML L4145",
+      "score": 0,
+      "bestAlternative": 0.4
+    },
+    {
+      "code": "50388",
+      "name": "LA ROCHE LIPIKAR SYNDET AP+ 200ML L7308",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50386",
+      "name": "LA ROCHE LIPIKAR CLEANSING OIL AP+ 400ML L6764",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50389",
+      "name": "LA ROCHE LIPIKAR SYNDET AP+ 400ML L7315",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50397",
+      "name": "LA ROCHE TOLERIANE SENSITIVE RICHE 40ML L8348",
+      "score": 0,
+      "bestAlternative": 0.28
+    },
+    {
+      "code": "50395",
+      "name": "LA ROCHE TOLERIANE SENSITIVE CREAM 40ML L8486",
+      "score": 0.06,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "50384",
+      "name": "LA ROCHE LIPIKAR BAUME AP+M TRIPLE ACTION BALM 400ML L.0239",
+      "score": 0.11,
+      "bestAlternative": null
+    },
+    {
+      "code": "50375",
+      "name": "LA ROCHE EFFACLAR DUO+ UNIFIANT LIGHT 40ML L8451",
+      "score": 0.3,
+      "bestAlternative": null
+    },
+    {
+      "code": "50394",
+      "name": "LA ROCHE TOLERIANE CARING WASH LOSION 400ML L.5778",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50401253",
+      "name": "LA ROCHE VITAMIN C10 SERUM 30ML L0570",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "50379",
+      "name": "LA ROCHE EFFACLAR MICRO-PEELING PURIFYNG GEL 400ML L.8289",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "6025",
+      "name": "LA ROCHE CICAPLAST BAUME B5 CREAM 40ML L.6809",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "49999",
+      "name": "VICHY AQUALIA THERMAL LIGHT 50ML V.8829",
+      "score": 0.24,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "50400",
+      "name": "LA ROCHE TOLERIANE ULTRA CREAM 40ML L2486",
+      "score": 0.36,
+      "bestAlternative": 0.36
+    },
+    {
+      "code": "50391",
+      "name": "LA ROCHE MICELLAR WATER ULTRA 400ML L1595",
+      "score": 0.3,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "50390",
+      "name": "LA ROCHE MICELLAR WATER ULTRA 200ML L0338",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "29080",
+      "name": "VICHY MINERAL 89 PROBIOTIC FRACTIONS",
+      "score": 0,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "8526",
+      "name": "VICHY CAPITAL SOLEIL ANTI-ACNE SPF 50+ V.5176",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "655674",
+      "name": "VICHY LIFTACTIV SUPREME 1.5% AC. VICHY V.9209",
+      "score": 0.07,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "2156",
+      "name": "VICHY NEOVADIOL LIFTING DAY CREAM DRY SKIN 50 ML V.4161",
+      "score": 0.26,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "45330",
+      "name": "LA ROCHE LIPIKAR SAPUN 150G L.4533",
+      "score": 0.11,
+      "bestAlternative": 0.11
+    },
+    {
+      "code": "473974",
+      "name": "LA ROCHE EFFACLAR MICELLAR WATER 400ML L.2516",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "3668",
+      "name": "LA ROCHE HYALU B5 EYES 15ML L.3668",
+      "score": 0.26,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "473973",
+      "name": "LA ROCHE EFFACLAR LOTION 200ML L.8159",
+      "score": 0.11,
+      "bestAlternative": 0.28
+    },
+    {
+      "code": "V.2520",
+      "name": "VICHY LIFTACTIV COLLAGEN SPECIALIST NIGHT 50 ML V.2520",
+      "score": 0.24,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "73432",
+      "name": "LA ROCHE-POSAY KERIUM DS CREAM 40ML",
+      "score": 0.03,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "226368",
+      "name": "CERAVE MOISTURISING LOTION FOR DRY SKIN 236ML C.7210",
+      "score": 0.19,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "78657",
+      "name": "LA ROCHE POSAY LIPIKAR LAIT/LOTION 200ML",
+      "score": 0.06,
+      "bestAlternative": null
+    },
+    {
+      "code": "226365",
+      "name": "CERAVE HYDRATING CLEANSER 236ML C.7180",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "55552",
+      "name": "CERAVE MOISTURISING CREAM 340GR C.7227",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "6035",
+      "name": "CERAVE FOAMING CLEANSER 473ML C.7357",
+      "score": 0.23,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "898966",
+      "name": "VICHY LIFTACTIV SPECIALIST B3 SERUM V.4905",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "226366",
+      "name": "CERAVE MOISTURISING CREAM 177ML C.8996",
+      "score": 0.26,
+      "bestAlternative": 0.43
+    },
+    {
+      "code": "78658",
+      "name": "LA ROCHE POSAY LIPIKAR LAIT/LOTION 400 ML 9615",
+      "score": 0.07,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "226363",
+      "name": "CERAVE FOAMING CLEANSER 236ML C.7197",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "78652",
+      "name": "LA ROCHE CICAPLAST LEVRES BALM 7.5 ML L.6659",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "55231",
+      "name": "VICHY ANTI AGE SPF50 V.5231",
+      "score": 0.08,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "20734",
+      "name": "LA ROCHE ANTHELIOS UVIMUNE 400 SPF50 CREAM 50ML L.7719",
+      "score": 0.15,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "32111",
+      "name": "LA ROCHE ANTHELIOS SPF50 LOTION 250ML L.1123",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "78656",
+      "name": "LA ROCHE POSAY LIPIKAR GEL LAVANT 400ML L.8785",
+      "score": 0.06,
+      "bestAlternative": null
+    },
+    {
+      "code": "78649",
+      "name": "VICHY SHAMPO KUNDER ZBOKTHIT SENSITIVE SCALP 200ML V.3394",
+      "score": 0,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "78653",
+      "name": "LA ROCHE CICAPLAST SPRAY B5 100ML L.5742",
+      "score": 0,
+      "bestAlternative": 0.36
+    },
+    {
+      "code": "207153",
+      "name": "LA ROCHE ANTHELIOS PIGMENT-CORRECT SPF50 MEDIUM 50ML L7399",
+      "score": 0.03,
+      "bestAlternative": 0.03
+    },
+    {
+      "code": "898965",
+      "name": "LA ROCHE RETINOL B3 SERUM L.4469",
+      "score": 0.09,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "78646",
+      "name": "VICHY CAPITAL SOLEIL MILK FACE&BODY SPF50 200ML V.2250",
+      "score": 0.24,
+      "bestAlternative": null
+    },
+    {
+      "code": "320",
+      "name": "LA ROCHE ANTHELIOS CHILDREN SPF50 LOTION 250ML L.0628",
+      "score": 0.12,
+      "bestAlternative": null
+    },
+    {
+      "code": "78650",
+      "name": "VICHY SHAMPOO PSOLUTION 200ML V.7222",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "319",
+      "name": "LA ROCHE ANTHELIOS CHILDERN SPF50 GEL-LOTION 250ML L.6706",
+      "score": 0.05,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "29115",
+      "name": "CERAVE MOISTURISING LOTION FOR DRY SKIN 473ML C.7395",
+      "score": 0,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "120267",
+      "name": "LA ROCHE LIPIKAR XERAND KREM PER DUAR 50ML L.2684",
+      "score": 0,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "V.0262",
+      "name": "VICHY SHAMPON KUNDER ZBOKTHIT D.H V.0262",
+      "score": 0,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "6847",
+      "name": "LA ROCHE CICAPLAST BAUME B5+BALM 100ML L.6847",
+      "score": 0,
+      "bestAlternative": 0.33
+    },
+    {
+      "code": "78671",
+      "name": "VICHY PURETE THERMAL MICELAR SENSITIVE SKIN 400ML",
+      "score": 0.22,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "65575",
+      "name": "LA ROCHE ANTHELIOS ANTISHINE SPF50 SPRAY 75 ML L.9530",
+      "score": 0.15,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "P232",
+      "name": "CERAVE RENEWING SA CLEANSER GEL 236ML C.4118",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "120265",
+      "name": "LA ROCHE EFFACLAR H ISO-BIOME CREAM 40ML L.7797",
+      "score": 0.34,
+      "bestAlternative": 0.34
+    },
+    {
+      "code": "U231",
+      "name": "CERAVE SA SMOOTHING CREAM 340G C.4101",
+      "score": 0.21,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "U967",
+      "name": "LA ROCHE TOLERIANE LIGHT BEIGE NO.11 PUDER LENGET 30ML L.2301",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "0714",
+      "name": "VICHY I.S SELF TANNING MILK V.0714",
+      "score": 0.36,
+      "bestAlternative": 0.36
+    },
+    {
+      "code": "308345",
+      "name": "VICHY NEOVADIOL PERI-MENOPAUSE DAY CREAM V.4123",
+      "score": 0.41,
+      "bestAlternative": 0.41
+    },
+    {
+      "code": "120266",
+      "name": "LA ROCHE EFFACLAR H ISO-BIOME CREAM LAVANTE 200ML L.7759",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "72960",
+      "name": "CERAVE SA RENEWING FOOT CREAM 88ML C.7296",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9501",
+      "name": "VICHY MINERAL 89 RICH CREM 50ML V.9501",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "71282",
+      "name": "CERAVE BLEMISH CONTROL GEL WITH AHA&BHA 40ML C.2357",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "8416SS",
+      "name": "CERAVE HYDRATING FOAMING OIL CLEANSER 236ML C.3430",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "20507",
+      "name": "CERAVE AM FACIAL MOISTURIZING CREAM SPF50 52ML C.4652",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "7409.",
+      "name": "VICHY DEODORANT CLINICAL CONTROL 96H WOMEN 50ML",
+      "score": 0.11,
+      "bestAlternative": null
+    },
+    {
+      "code": "0890",
+      "name": "VICHY CAPITAL SOLEIL SPF30 SPRAY 200 ML V.0890",
+      "score": 0.17,
+      "bestAlternative": null
+    },
+    {
+      "code": "74086",
+      "name": "LA ROCHE ANTHELIOS INVISIBLE SPRAY SPF 50 200ML L.6838",
+      "score": 0.33,
+      "bestAlternative": null
+    },
+    {
+      "code": "10710",
+      "name": "LA ROCHE LIPIKAR AP+M TRIPLE ACTION BALM ECO 200ML L.0048",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "71284",
+      "name": "CERAVE HYDRATING CREAM TO FOAM CLEANSER 236ML C.3563",
+      "score": 0,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "891811",
+      "name": "CERAVE RESURFACING RETINOL SERUM 30ML C.9007",
+      "score": 0.21,
+      "bestAlternative": null
+    },
+    {
+      "code": "740720",
+      "name": "VICHY MINERAL 89 CREM ALL SKIN TYPES 50ML V.1888",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "L7641",
+      "name": "LA ROCHE ANTHELIOS UVMUNE 400 SPF 50 TINTED 50 ML L.7641",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "411991",
+      "name": "LA ROCHE LIPIKAR LAIT UREA 10% 400ML L2302",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "50881",
+      "name": "LA ROCHE TOLERIANE ROSALIAC AR SPF30 50ML L.6961",
+      "score": 0.17,
+      "bestAlternative": null
+    },
+    {
+      "code": "0838",
+      "name": "VICHY CAPITAL SOLEIL SPF50 SPRAY KIDS 200ML V.0838",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "44136",
+      "name": "CERAVE REPARTIVE HAND CREAM C.7319",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "6026",
+      "name": "LA ROCHE POSAY ANTI-SHINE GEL-CREAM 50ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "11313",
+      "name": "LA ROCHE MELA B3 ANTI-DARK SPOTS SERUM L.0021",
+      "score": 0.11,
+      "bestAlternative": null
+    },
+    {
+      "code": "151138",
+      "name": "CERAVE HYDRATING CLEANSING NORMAL TO DRY 473ML C.7333",
+      "score": 0.1,
+      "bestAlternative": null
+    },
+    {
+      "code": "276025",
+      "name": "LA ROCHE EFFACLAR DUO-M KREM 40ML L.3377",
+      "score": 0.05,
+      "bestAlternative": null
+    },
+    {
+      "code": "101014",
+      "name": "LA ROCHE ANTHELIOS OIL CORRECT SPF 50+ L.7467",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "711507",
+      "name": "VICHY DEO TRAITEMENT ANTI-TRANSPIRANT 50ML V.4599",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "101015",
+      "name": "LA ROCHE ANTHELIOS SPRAY FAMILJAR SPF 50 300 ML L.9348",
+      "score": 0.03,
+      "bestAlternative": null
+    },
+    {
+      "code": "407357",
+      "name": "CERAVE DEEP PORE CLEANSING GEL 236ML C.4054",
+      "score": 0.01,
+      "bestAlternative": null
+    },
+    {
+      "code": "407356",
+      "name": "CERAVE HYDRATIN CLEANSER FOR NORMAL TO DRY SKIN 1L C.8767",
+      "score": 0.43,
+      "bestAlternative": null
+    },
+    {
+      "code": "69632",
+      "name": "LA ROCHE EFFACLAR GEL PURIFYING REFILL 400ML L.6407",
+      "score": 0.09,
+      "bestAlternative": null
+    },
+    {
+      "code": "61103",
+      "name": "LA ROCHE LIPIKAR BAUME LIGHT 400ML L.3786",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "27789",
+      "name": "CERAVE INTENSIVE MOISTURIZING LOTION 236ML C.4285",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "L.8851",
+      "name": "LA ROCHE ANTHELIOS UVMUNE 400 PEDIATRIC LOTION 250ML L.8851",
+      "score": 0.09,
+      "bestAlternative": null
+    },
+    {
+      "code": "27787",
+      "name": "CERAVE ADVANCED REPAIR OINTMENT 88ML C.8459",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "L.7407",
+      "name": "LA ROCHE ANTHELIOS UVM 400 ANTIDARK SPOTS FLUID SPF50 L.7407",
+      "score": 0.13,
+      "bestAlternative": null
+    },
+    {
+      "code": "11497",
+      "name": "LA ROCHE TOLERIANE DERMO-CLEANSER 200ML L.6599",
+      "score": 0.21,
+      "bestAlternative": null
+    },
+    {
+      "code": "L.5489",
+      "name": "LA ROCHE ANTHELIOS PEDIATRIC LOTION WET SKIN SPF50 200ML L.5489",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "25567",
+      "name": "VICHY SHAMPO KUNDER ZBOKTHIT TE THATE PROMO 390ML V.2799",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "L.6055",
+      "name": "LA ROCHE ANTHELIOS UVMUNE 400 PEDIATRIC SPRAY 200ML L.6055",
+      "score": 0,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "123457",
+      "name": "LA ROCHE TOLERIANE FLUID CORRECTOR SPF25 L.3926",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "67900",
+      "name": "VICHY MINERAL 89 DAILY FLUID SPF50 50ML V.5781",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "27791",
+      "name": "CERAVE FOAMING CLEANSER 1L C.8774",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "L.7292",
+      "name": "LA ROCHE ANTHELIOS OIL CONTROL 50ML SPF50 L.7292",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "25569",
+      "name": "VICHY CAPITAL SOLEIL CELL PROTECT OIL 200ML V.2308",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "25566.",
+      "name": "VICHY SHAMPO KUNDER ZBOKTHIT NORMAL PROMO 390ML V.1290",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "L.5434",
+      "name": "LA ROCHE ANTHELIOS WET SKIN LOTION SPF 50 200ML L.5434",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "25572",
+      "name": "VICHY SHAMPO KUNDER ZBOKTHIT DRY HAIR REFILL 500ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5201889",
+      "name": "LA ROCHE POSAY ANTHELIOS FACE&BODY HYDRATING MILK SPF50 150ML L.7872",
+      "score": 0,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "17032004",
+      "name": "CERAVE HYDRATING CLEANSING REFILL 473ML C.5602",
+      "score": 0.23,
+      "bestAlternative": null
+    },
+    {
+      "code": "17032008",
+      "name": "CERAVE BLEMISH CONTROL CLEANSER GEL 473ML C.3859",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "0698",
+      "name": "LA ROCHE HYLAU B5 SURACTIVATED CREAM 50ML L.0698",
+      "score": 0.28,
+      "bestAlternative": null
+    },
+    {
+      "code": "V.6998",
+      "name": "VICHY MINERAL 89 NIGHT PURE MELATONIN CREAM 50ML V.6998",
+      "score": 0.01,
+      "bestAlternative": null
+    },
+    {
+      "code": "17032031",
+      "name": "VICHY SHAMPO KUNDER ZBOKTHIT 2IN1 200ML V.2380",
+      "score": 0.03,
+      "bestAlternative": null
+    },
+    {
+      "code": "153434",
+      "name": "LIPIKAR BAUME LIGHT AP+M BALM 400ML L.0338",
+      "score": 0.12,
+      "bestAlternative": 0.12
+    },
+    {
+      "code": "52805",
+      "name": "VICHY CAPITAL SOLEIL HYDRATING MILK SPF50 150ML V.5861",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "30126",
+      "name": "LA ROCHE CICAPLAST GEL LAVANT B5+ 200ML L.8519",
+      "score": 0.34,
+      "bestAlternative": null
+    },
+    {
+      "code": "54671",
+      "name": "LA ROCHE POSAY LIPIKAR AP+MAX TRIPLE ACTION BALM 400ML L.0239",
+      "score": 0.2,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "30119",
+      "name": "VICHY DERCOS DENSI SOLUTIONS V.4372",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5042..",
+      "name": "GARNIER MICELLAR CLEANSING WATER 400ML",
+      "score": 0,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "6360",
+      "name": "GARNIER MICELLAR ROSE WATER 400ML",
+      "score": 0.31,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "4788",
+      "name": "GARNIER PURE ACTIVE MICELLAR WATER 400ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "539",
+      "name": "GARNIER AMBRE SOLAIRE OIL SELF TANNING 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "30070",
+      "name": "LOREAL SKIN REVITALIFT CLINICAL 12%VITAMIN C FACE",
+      "score": 0.12,
+      "bestAlternative": 0.12
+    },
+    {
+      "code": "12410",
+      "name": "GARNIER AMBER SOLAIRE SUPER UV VITAMIN C FACE FLUID SPF50 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "12404",
+      "name": "GARNIER AMBER SOLAIRE OIL IDEAL BRONZE SPF30 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "30071",
+      "name": "LOREAL SKIN REVITALIFT FILLER HYALURONIC ACID 30ML",
+      "score": 0.35,
+      "bestAlternative": 0.39
+    },
+    {
+      "code": "5429",
+      "name": "GARNIER AMBRE SOLAIRE MILK SPF 30 200ML",
+      "score": 0,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "860874",
+      "name": "GARNIER SKIN VITAMIN C 2IN 1BRIGHTENING SERUM CREAM 25 SPF",
+      "score": 0.43,
+      "bestAlternative": null
+    },
+    {
+      "code": "56565666",
+      "name": "LOREAL ELSEVE COLOR VIVE SHAMPON 200ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "56565669",
+      "name": "LOREAL ELSEVE COLORVIVE SHAMPON 250ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "72583",
+      "name": "GARNIER BIO THERAPY RICIN OIL&ALMOND HAIR MASK 340ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "22222",
+      "name": "A-GAME 10 101 SERUM",
+      "score": 0.31,
+      "bestAlternative": null
+    },
+    {
+      "code": "22219",
+      "name": "C-GLOW 101 SERUM",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "22218",
+      "name": "ALTRUIST MOISTURIZING FLUID 50ML",
+      "score": 0.32,
+      "bestAlternative": null
+    },
+    {
+      "code": "78564",
+      "name": "OTOSAN CONE PER PASTRIM TE VESHIT A2",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "375",
+      "name": "OTOSAN PIKA PER VESH",
+      "score": 0.43,
+      "bestAlternative": 0.43
+    },
+    {
+      "code": "825185",
+      "name": "KREM PER FYTYRE VITAMIN C 50ML DISAAR",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "6569",
+      "name": "VITAMIN C SERUM ROUSHUN",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5123",
+      "name": "VITAMIN C FACE CREAM DR.RASHEL 50GR",
+      "score": 0.11,
+      "bestAlternative": null
+    },
+    {
+      "code": "33134",
+      "name": "SERUM VITAMIN E 30ML-DR.RASHEL",
+      "score": 0.02,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "80302",
+      "name": "ALOE VERA PURA GEL 1000ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7706A",
+      "name": "CYSTOFIT FORTE TAB A30 FITOFARM",
+      "score": 0.01,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "7448",
+      "name": "BUONERBE REGOLA TISANA FORTE A20",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "221132",
+      "name": "UJE NATYRAL DEA 0.5L",
+      "score": 0,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "60685",
+      "name": "ERIC FAVRE CREATINE POWDER 300G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "153432",
+      "name": "PRINCIPIUM MAGNESIO COMPLETO 200G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60689",
+      "name": "ERIC FAVRE ISO ZERO 100% CHOCOTELLA 1.5KG",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60695",
+      "name": "ERIC FAVRE MASS GAINER CHOCOLAT -3KG",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60682",
+      "name": "ERIC FAVRE BCAA ZERO CITRON 500G",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "60701",
+      "name": "ERIC FAVRE WHEY OPTIMAX VANILLE 1.5KG",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60698",
+      "name": "ERIC FAVRE PROTEIN VEGAN VANILLE 2KG",
+      "score": 0,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "60697",
+      "name": "ERIC FAVRE PROTEIN VANILLE 30G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60690",
+      "name": "ERIC FAVRE ISO ZERO 100% VANILLE 1.5KG",
+      "score": 0,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "7500",
+      "name": "LARIMUCIL BAMBINI 1+ 175ML ( BIOSLINE )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60684",
+      "name": "ERIC FAVRE CASEIN CHOCOLAT 2KG",
+      "score": 0.12,
+      "bestAlternative": 0.12
+    },
+    {
+      "code": "60700",
+      "name": "ERIC FAVRE WHEY OPTIMAX CHOCOLAT 1.5KG",
+      "score": 0.08,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "60699",
+      "name": "ERIC FAVRE WHEY OPTIMAX 1.5KG BISCUIT",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60694",
+      "name": "ERIC FAVRE L-CARNITINE TROPICAL 500ML",
+      "score": 0.09,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "41399",
+      "name": "LYSI COD LIVER OIL LEMON&MINT SIR 240ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "20800",
+      "name": "MOLLERS COD LIVER OIL TUTTI FRUTTI 250ML SIR",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "20801",
+      "name": "MOLLERS COD LIVER OIL LEMON 250ML SIR",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "11487",
+      "name": "DARBO MJALTE PYJEVE (FOREST HONEY) 500 g",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "536793",
+      "name": "PALLOMA SOFTIS NEUTRAL A10",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "11485",
+      "name": "DARBO MJALTE LULESH (FLOWER HONEY) 500 g",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "210900",
+      "name": "ZEWA MOIST SENSITIVE 42PCS LETER PER WC E LENGET",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "743933",
+      "name": "PALLOMA DELUXE ME DIZAJNE",
+      "score": 0.01,
+      "bestAlternative": 0.12
+    },
+    {
+      "code": "2608",
+      "name": "BUCO VITAE 15ML",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "45162",
+      "name": "MEDEX SYRUP PINE 150ML ( SIRUP PISHE )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "11484",
+      "name": "DARBO MJALTE BAGREMI (ACACIA HONEY) 500 g",
+      "score": 0.11,
+      "bestAlternative": null
+    },
+    {
+      "code": "75841",
+      "name": "MEDEX GELEE ROYALE JUNIOR PHIALS 10X9ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2765.",
+      "name": "HEALTHY FEET POMADE 91G OKEEFFES",
+      "score": 0.39,
+      "bestAlternative": 0.39
+    },
+    {
+      "code": "45914",
+      "name": "ORBIT WHITE SPEARMINT A1",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "45913",
+      "name": "ORBIT WHITE FRESHMINT A1",
+      "score": 0,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "76875",
+      "name": "BIODERMA PHOTODERM AKN MAT SPF 30+",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "600745",
+      "name": "ORBIT WHITE RASPBERRY & POMEGRANATE A1",
+      "score": 0.01,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "9929335",
+      "name": "BIODERMA PIGMENTBIO DAILY CREM SPF50+ 40ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "10719",
+      "name": "FIVE SPEARMINT A7",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "30960",
+      "name": "BIODERMA SENSIBIO H2O UJE MICELAR PER LEKURE TE NDJESHME 500ML",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "11112",
+      "name": "ORBIT WHITE SPEARMINT A14",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "5097763",
+      "name": "ORBIT PROFESSIONAL",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "1011165",
+      "name": "VITAMIN C 1000+ZINK DEREKT STICKS 20 SUNLIFE",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "478817",
+      "name": "BIODERMA ATODERM INTENSIVE BAUME-VERY DRY, IRRITATED TO ATOPIC SENSITIVE SKIN -75ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "77847",
+      "name": "VITAMIN C+ZINK PREMIUM 17 EFF(SUNLIFE)",
+      "score": 0.27,
+      "bestAlternative": null
+    },
+    {
+      "code": "112239",
+      "name": "MENTAT SYRUP 100ML (HIMALAYA)",
+      "score": 0.06,
+      "bestAlternative": null
+    },
+    {
+      "code": "77792",
+      "name": "OSTROVIT ASHWAGANDHA VEGE 60CAPS",
+      "score": 0.17,
+      "bestAlternative": 0.42
+    },
+    {
+      "code": "K75",
+      "name": "HIMALAYA MENTAT A50TAB",
+      "score": 0,
+      "bestAlternative": 0.43
+    },
+    {
+      "code": "63121",
+      "name": "EUCERIN_63121_pH5 VAJ PER DUSH (LARJE) 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2645",
+      "name": "HEPAFAR FORTE CAPS A30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "43104",
+      "name": "OCEAN METHYL B12 SPREY 10 ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "66883",
+      "name": "EUCERIN_66883_ ANTI - PIGMENT MONO CHAMBER SERUM 30ml",
+      "score": 0.41,
+      "bestAlternative": 0.44
+    },
+    {
+      "code": "6614",
+      "name": "NATURES AID MINI DROPS IMMUNE PLUS 50ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "18006",
+      "name": "TAXOFIT ZINK + HISTIDIN TAB 40",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "256958",
+      "name": "TAXOFIT MAGNESIUM 400 DIR-GRA QESE A20",
+      "score": 0.28,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "256959",
+      "name": "TAXOFIT B-KOMPLEX TAB 40",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2766555",
+      "name": "TAXOFIT VITAMIN D3 2500 I.E 50 TBL",
+      "score": 0,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "76253",
+      "name": "TAXOFIT MAGNESIUM 600 TAB 30",
+      "score": 0,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "11278",
+      "name": "TAXOFIT IMMUN+ENERGIE 7 FLAKONA",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "33143",
+      "name": "MJALTE 450GR E LULEVE (HONEY POLYFLORA)",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "60626",
+      "name": "MEDEX APISIRUP 140ML MEDNI SIRUP 140ML",
+      "score": 0.01,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "111236",
+      "name": "DIGEST LOMBRIFIN SIR 250ML",
+      "score": 0,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "139903",
+      "name": "HOLLE LITTLE FARM BISCUITS SPELT",
+      "score": 0,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "4783",
+      "name": "HIPP BABY KEKS-KEKS I PARE PER FOSHNJA 180G",
+      "score": 0.19,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "81532",
+      "name": "HIPP MOLLE, BANANE, MJEDERA ME DRITHERA 100G",
+      "score": 0.04,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "225796",
+      "name": "HIPP SPAGHETTI ME FILETO TE ALASKES NE SALCE KREMOZE PERIMESH 250G",
+      "score": 0.41,
+      "bestAlternative": 0.41
+    },
+    {
+      "code": "22576",
+      "name": "HIPP PURE ME SEMOLINA 190G",
+      "score": 0.03,
+      "bestAlternative": 0.33
+    },
+    {
+      "code": "21330",
+      "name": "PERIME ME KUSKUS MESDHETAR 190G (BEBIVITA)",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "225793",
+      "name": "HIPP ORIZ ME KARROTE DHE SALMON 220G",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "109301",
+      "name": "HOLLE ORGANIC SPELT PORRIDGE",
+      "score": 0,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "108701",
+      "name": "HOLLE ORGANIC WHOLEGRAIN CEREAL 3GRAIN",
+      "score": 0.1,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "225792",
+      "name": "HIPP MENY ME PERIME 190G",
+      "score": 0,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "225791",
+      "name": "HIPP LAZAGNA ME PERIME 220G",
+      "score": 0.13,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "153442",
+      "name": "HIPP PERIME TE NJOMA ME MISH VIQI BIO 250G",
+      "score": 0,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "139901",
+      "name": "HOLLE OGRANIC JUNIOR MUESLI MULTIGRAIN WITH FRUITS",
+      "score": 0,
+      "bestAlternative": 0.42
+    },
+    {
+      "code": "225789",
+      "name": "HIPP KUNGULL ME PATATE DHE MISH VICI ORGANIK 190G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "225790",
+      "name": "HIPP KARROTE ME MISER DHE MISH VICI ORGANIK 190G",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "22575",
+      "name": "HIPP PURE E PASTER 190G",
+      "score": 0,
+      "bestAlternative": 0.29
+    },
+    {
+      "code": "6255",
+      "name": "HOLLE OGRANIC JUNIOR MUESLI MULTIGRAIN WITH CORNFLAKES",
+      "score": 0,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "225797",
+      "name": "HIPP PURE ME TRE LLOJE TE DRITHERAVE",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "22577",
+      "name": "HIPP KUSKUS ME PERIME 190G",
+      "score": 0.02,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "139902",
+      "name": "HOLLE ORGANIC WHOLEGRAIN BIRCHERMUESLI",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "23454",
+      "name": "SERRAPEPTASE CAPS 30X60.000IU",
+      "score": 0.16,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "30011",
+      "name": "ATROTONE TAB 60",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "08080",
+      "name": "PREGNAZON COMPLETE CAPS A60",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "13821",
+      "name": "FLORADIX FE SIR 250ML",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "7259.",
+      "name": "ALPECIN COFFEIN LIQUID 200ML",
+      "score": 0.14,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "412111",
+      "name": "ALPECIN HYBRID CAFFEINE SHAMPO 250ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9001358",
+      "name": "ALPENKRAFT CANDY",
+      "score": 0.2,
+      "bestAlternative": null
+    },
+    {
+      "code": "13819",
+      "name": "FLORADIX GALLEXIER 250ML",
+      "score": 0,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "45929",
+      "name": "FLORADIX MAGNESIUM 250ML",
+      "score": 0,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "412001",
+      "name": "ALPECIN DOUBLE EFFECT 200ML",
+      "score": 0.02,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "45930",
+      "name": "ARTICOKA SIR",
+      "score": 0.17,
+      "bestAlternative": 0.37
+    },
+    {
+      "code": "255463",
+      "name": "HAIR-VIT HEALTH AID 30 CAPS",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "10039",
+      "name": "ACEROLA SIR 200ML",
+      "score": 0.25,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "13818",
+      "name": "FLORADIX SALUDYNAM SIR 250ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "45928",
+      "name": "FLORADIX SALUFRANGOL 250ML",
+      "score": 0,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "52130",
+      "name": "OPTIBAC One Week Flat ( 7 sachets )",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "255452",
+      "name": "DERMA-LIFE 30 TAB",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "281012",
+      "name": "TOTUM 30TBL (13VITAMINA +9 MINERALE)",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "125442",
+      "name": "VITABIOTICS VITAMIN D TAB 96X1000 IU",
+      "score": 0,
+      "bestAlternative": 0.14
+    },
+    {
+      "code": "1001",
+      "name": "VITABIOTICS FEROGLOBIN CAPS A30",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "10100",
+      "name": "VITABIOTICS PERFECTIL TAB A30",
+      "score": 0.2,
+      "bestAlternative": 0.3
+    },
+    {
+      "code": "100500",
+      "name": "VITABIOTICS WELLBABY MULTI-VITAMIN SIR 150ML",
+      "score": 0.08,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "0999",
+      "name": "VITABIOTICS JOINTACE COLLAGEN TAB A30",
+      "score": 0.08,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "10030",
+      "name": "VITABIOTICS MENOPACE ORIGINAL TAB A30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "452393",
+      "name": "WELLMAN ORGINAL TAB",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "523481",
+      "name": "VITABIOTICS VITAMIN D ULTRA 2000IU 96TAB",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "452374",
+      "name": "VITABIOTICS PREGNACARE BREAST-FEEDING 56TAB /28 CPS",
+      "score": 0.13,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "10090",
+      "name": "VITABIOTICS PREGNACARE ORIGINAL CAPS A30",
+      "score": 0,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "807989",
+      "name": "VITABIOTICS PREGNACARE PLUS OMEGA A56",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "73554",
+      "name": "VITABIOTICS ULTRA B COMPLEX TAB A60",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "60912",
+      "name": "VITABIOTICS OSTEOCARE ORIGINAL 90TAB",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2954",
+      "name": "VITABIOTICS WELLKID SOFT JELLY PASTILES DREDHEZ",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "2955",
+      "name": "VITABIOTICS WELLKID SOFT JELLY PASTILES PORTOKALL",
+      "score": 0.05,
+      "bestAlternative": null
+    },
+    {
+      "code": "15418",
+      "name": "VITABIOTICS IMMUNACE TAB A30",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "0998",
+      "name": "VITABIOTICS WELLKID MULTI-VITAMIN LIQUID 150ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "71269",
+      "name": "VITABIOTICS WELLTEEN HIM PLUS(PER MOSHAT 13-19)",
+      "score": 0,
+      "bestAlternative": 0.16
+    },
+    {
+      "code": "10726",
+      "name": "WELLBABY MULTI-VITAMIN DROPS 30ML",
+      "score": 0,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "10060",
+      "name": "VITABIOTICS NEUROZAN ORIGINAL TAB A30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "10070",
+      "name": "VITABIOTICS FEROGLOBIN SIR 200ML",
+      "score": 0,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "10020",
+      "name": "VITABIOTICS JOINTACE OMEGA 3 CAPS A30",
+      "score": 0.13,
+      "bestAlternative": null
+    },
+    {
+      "code": "50731",
+      "name": "VITABIOTICS ULTRA VITAMIN C 500 MG 60 TAB",
+      "score": 0,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "840512",
+      "name": "WELLBABY DROPS VITAMIN D3",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "20233",
+      "name": "VITABIOTICS VISIONACE 30TAB",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "83533",
+      "name": "VITABIOTICS PREGNACARE NEW MUM 56 TAB",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "231",
+      "name": "VITABIOTICS PERFECTIL MAX 84 TAB/CAPS",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "F501",
+      "name": "AVENE HYDRANCE UV LEGERE SPF 30EMULSION HYDRANTE 40ML",
+      "score": 0.35,
+      "bestAlternative": null
+    },
+    {
+      "code": "95000",
+      "name": "GO NUTRI BAR ME DRITHERA,BANANE-COKOLLATE 25G",
+      "score": 0,
+      "bestAlternative": 0.08
+    },
+    {
+      "code": "94999.",
+      "name": "CHEWITS COLA 30G",
+      "score": 0,
+      "bestAlternative": 0.07
+    },
+    {
+      "code": "94966",
+      "name": "CHEWITS BLUE RASPBERRY 30G",
+      "score": 0,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "25122",
+      "name": "DUCRAY DIASEPTYL SPRAY 125 ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9501..",
+      "name": "GO NUTRI BAR ME DRITHERA,RRUSH TE THATE-KAKAO 25G",
+      "score": 0.07,
+      "bestAlternative": null
+    },
+    {
+      "code": "9501.",
+      "name": "GO NUTRI BAR ME DRITHERA,DREDHEZA-KREM 25G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9502",
+      "name": "GO NUTRI BAR ME DRITHERA,BRUSNICE-KREM 25G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9503.",
+      "name": "GO NUTRI BAR ME DRITHERA,MANAFERRE-KREM 25G",
+      "score": 0.14,
+      "bestAlternative": null
+    },
+    {
+      "code": "04104",
+      "name": "KOVITAL SYNERGY 60TBL",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "71161",
+      "name": "ALKALOID CAJ BRUSNICE DUPLEKS 40GR",
+      "score": 0.17,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "60220",
+      "name": "MUSTELA LAIT SOLAIRE SPF50+ 100ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "7964",
+      "name": "NODOL CAPS A60",
+      "score": 0.2,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "87000",
+      "name": "ALOE VERA ESI+NONI 1L",
+      "score": 0.25,
+      "bestAlternative": 0.25
+    },
+    {
+      "code": "7956",
+      "name": "ALOE VERA LENG 500ML (FORCE MAKSIMALE)",
+      "score": 0.35,
+      "bestAlternative": null
+    },
+    {
+      "code": "7963",
+      "name": "MELATONIN PURA 1 MG GOCCE 50 ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7957",
+      "name": "DRIMO QAJ REFUZ BEKUNIS 100GR (ESI)",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "1697",
+      "name": "POLICOL ONE 30 CAPS (PALMECA)",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "1607",
+      "name": "GINGER,TURMERIC&BROMELAIN 60TAB (NATURES AID)",
+      "score": 0.06,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "1561",
+      "name": "COD LIVER OIL LIQUID 500ML (NATURES AID)",
+      "score": 0.1,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "1756",
+      "name": "VITAMIN D3 1000IU TAB 90 (NATURES AID )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "961",
+      "name": "BUBCHEN KREM SPECIAL PER MBROJTJE TE LEKURES 75ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "788461",
+      "name": "BUBCHEN KREM CALENDULA PER FYTYRE 75ML",
+      "score": 0.06,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "1758778",
+      "name": "BUBCHEN SHAMPO&DUSH MANAFERRE 230 ML",
+      "score": 0,
+      "bestAlternative": 0.4
+    },
+    {
+      "code": "898739",
+      "name": "SUN SCREEN COLOR SPF50+50ML VELVET FACE CREAM FREZYDERM",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "898736",
+      "name": "FLEXANEX PULVIS A30",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "09762",
+      "name": "TOTALMIXVIT ADVANCE 30 TAB",
+      "score": 0.09,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "41205",
+      "name": "CYSTIPHANE TABLETS 120",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "76888",
+      "name": "SAMBUCOL VIT C IMMUNO SUPPORT KIDS 120ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "94933",
+      "name": "SAMBUCOL IMMUNO FORTE 120ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "26260",
+      "name": "CRONERVIS 30 COMPRESSE",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "94944",
+      "name": "SAMBUCOL UK-IF CAPSULES 30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "898760",
+      "name": "SHILAJIT 50GR HEMANI",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "9001364",
+      "name": "PHYTOCYANE SHAMPO NEW",
+      "score": 0.23,
+      "bestAlternative": null
+    },
+    {
+      "code": "3531",
+      "name": "JOJOBA OIL 30ML HEMANI",
+      "score": 0.03,
+      "bestAlternative": 0.03
+    },
+    {
+      "code": "898951",
+      "name": "LUCOVITAL MAGNESIUM GRANULAT 20S",
+      "score": 0,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "5167",
+      "name": "DEO SPREJ BLACK & WHITE INVISIBLE 48H 150ML (NIVEA MEN )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "56988",
+      "name": "LUCOVITAAL MAGNESIUM COMPLEET TAB A30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7678",
+      "name": "BATERI AAA-LR03/MN2400 8CP ( DURACELL )",
+      "score": 0.12,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "74355",
+      "name": "COLLAGEN DELUXE- 500ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "529999",
+      "name": "LUCOVITAAL MAGNESIUM CITRAAT 400MG 30TAB",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "2512A",
+      "name": "LUCOVITAAL PRE&PROBIOTICA 30CAPS",
+      "score": 0.02,
+      "bestAlternative": null
+    },
+    {
+      "code": "4125",
+      "name": "ESSENCE LIPGLOSS EXTREME SHINE (NR.10) 5ML",
+      "score": 0.35,
+      "bestAlternative": null
+    },
+    {
+      "code": "43225",
+      "name": "BIOXSINE SHAMPON FORTE 300ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "2420",
+      "name": "VITAMIN CANDY COCONUT BLACK CURRANT A12 ( JAKE )",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "2422",
+      "name": "VITAMIN CANDY GREEN TEA & LIME A12 ( JAKE )",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "11928",
+      "name": "HARIBO HAPPY COLA HALAL",
+      "score": 0,
+      "bestAlternative": 0.38
+    },
+    {
+      "code": "001444",
+      "name": "AFTORAL SPREJ PER GOJE",
+      "score": 0.06,
+      "bestAlternative": 0.06
+    },
+    {
+      "code": "75488",
+      "name": "DALIN SPRAY -ZBUTES &SHKELQYES PER FLOK 200ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "07783",
+      "name": "JELLY KIDS PREVENT 250ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7878",
+      "name": "JELLY KIDS APETIT 250ML",
+      "score": 0.34,
+      "bestAlternative": 0.34
+    },
+    {
+      "code": "17712",
+      "name": "HOLLE ORGANIC SPELT PORRIDGE",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "817170",
+      "name": "HOLLE RICE PORRIDGE",
+      "score": 0.17,
+      "bestAlternative": null
+    },
+    {
+      "code": "40456",
+      "name": "SEBAMED SENSITIVE SKIN LIP DEFENSE",
+      "score": 0.44,
+      "bestAlternative": 0.44
+    },
+    {
+      "code": "10259",
+      "name": "NUTRIGEN OMEGA SIR 200ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "401943",
+      "name": "NUTRIGEN BONIDENTI SOL 25ML",
+      "score": 0.01,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "4785",
+      "name": "DR. WOLZ KINDERIMMUN PULV 65 G",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "602345",
+      "name": "H&B PURE COD LIVER OIL 1000MG 60CAPS",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "147002",
+      "name": "BIO BALANCE SUN PROTECTION FACIAL CREAM SPF 50+ 75ML",
+      "score": 0.27,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "56487",
+      "name": "NUTRIBEN 2 HIDROLIZADA 400GR",
+      "score": 0.25,
+      "bestAlternative": null
+    },
+    {
+      "code": "Q227",
+      "name": "NUTRIBEN SOJA 400G (0+)",
+      "score": 0.12,
+      "bestAlternative": 0.17
+    },
+    {
+      "code": "2959",
+      "name": "TRANSITA FORTE TAB A30",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "232",
+      "name": "NUTRIBEN CAJ CONFORT 150G 0+",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "89751",
+      "name": "NUTRIBEN PRO 3 800GR",
+      "score": 0.01,
+      "bestAlternative": 0.01
+    },
+    {
+      "code": "11476.",
+      "name": "NUTRIBEN SIN LACTOSA 1 400G",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "14795",
+      "name": "DR.SANTE KERATIN HAIR SPRAY 150ML",
+      "score": 0.22,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "226373",
+      "name": "BIODERMA PHOTODERM MAX CREAM SPF 50+40ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "5774",
+      "name": "SEIDIBION CAPS A30",
+      "score": 0,
+      "bestAlternative": 0.13
+    },
+    {
+      "code": "1476",
+      "name": "APTAMIL PRONUTRA PRE 800G",
+      "score": 0,
+      "bestAlternative": 0.26
+    },
+    {
+      "code": "805919",
+      "name": "VICHY NEOVADIOL CREAM 50ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "15582",
+      "name": "CANTALIN MICRO TAB A64",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "V.3622",
+      "name": "VICHY IDEAL SOLEIL SENSITIVA FACE SPF 50 V.3622",
+      "score": 0.15,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "853068",
+      "name": "VICHY IDEAL SOLEIL KREM PUDER SPF50 V.5787",
+      "score": 0.25,
+      "bestAlternative": null
+    },
+    {
+      "code": "V.3639",
+      "name": "VICHY BABY MILK SPF50 300ML V.3639",
+      "score": 0.18,
+      "bestAlternative": 0.18
+    },
+    {
+      "code": "20089",
+      "name": "VICHY AQUA THERMALE WATER 150ML V.8612",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "702",
+      "name": "OCUHYL C (PA KONZERVUES) SOL 10ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "20777",
+      "name": "LA ROCHE ANTHELIOS AGE CORRECT SPF50 CREAM 50ML L.1031",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "V.0286",
+      "name": "VICHY SHAMPON KUNDER ZBOKTHIT DS V.0286",
+      "score": 0.31,
+      "bestAlternative": null
+    },
+    {
+      "code": "77846",
+      "name": "VICHY LIFTACTIV B3+RETINOL ANTI-DARK SPOTS NIGHT V.3086",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "111232",
+      "name": "LA ROCHE MELA B3 MICRO-PEELING GEL 200 ML L.0069",
+      "score": 0.17,
+      "bestAlternative": null
+    },
+    {
+      "code": "77426",
+      "name": "D3 FIX SOL 30ML",
+      "score": 0.35,
+      "bestAlternative": 0.35
+    },
+    {
+      "code": "86006",
+      "name": "LACTO LEVURE CAPS A10",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "41112",
+      "name": "GARNIER SKIN SERUM VITAMIN C 30 ML",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "222261",
+      "name": "GARNIER SKIN SERUM HYALURONIC ALOE REPLUMP 30ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "50874",
+      "name": "IMMUNO DIFESAL QESE A15",
+      "score": 0,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "22212",
+      "name": "ALTRUIST-SPF-200ML-TUBE",
+      "score": 0.38,
+      "bestAlternative": null
+    },
+    {
+      "code": "76275",
+      "name": "EVERGREEN SLIM PER DOBESIM",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "808677",
+      "name": "PEDIAKID GOMMES MULTIVITAMIN A60",
+      "score": 0,
+      "bestAlternative": 0.2
+    },
+    {
+      "code": "810891",
+      "name": "PEDIAKID GOMMES IMMUNITE A60",
+      "score": 0,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "19478",
+      "name": "PEDIAKID 22 VITAMINS & OLIGOELEMENTS 125ML",
+      "score": 0.31,
+      "bestAlternative": 0.31
+    },
+    {
+      "code": "101054",
+      "name": "PEDIAKID SOMMEIL SIR 125ML",
+      "score": 0.21,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "5237024",
+      "name": "PEDIAKID SIROP TOUX SECHE ET GRASSE 125ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5237025",
+      "name": "PEDIAKID APPETIT TONUS SIR 125ML",
+      "score": 0,
+      "bestAlternative": 0.38
+    },
+    {
+      "code": "808876",
+      "name": "PEDIAKID GOMMES OMEGA 3 A60",
+      "score": 0.1,
+      "bestAlternative": 0.1
+    },
+    {
+      "code": "808633",
+      "name": "PEDIAKID GOMMES VITAMINE C A60",
+      "score": 0,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "810726",
+      "name": "PEDIAKID GOMMES VITAMINE D3 A60",
+      "score": 0,
+      "bestAlternative": 0.03
+    },
+    {
+      "code": "101063",
+      "name": "PEDIAKID IMMUNO-FORT SIR 125ML",
+      "score": 0.12,
+      "bestAlternative": 0.21
+    },
+    {
+      "code": "101059",
+      "name": "PEDIAKID NERVOSITE SIR 125ML",
+      "score": 0.19,
+      "bestAlternative": 0.33
+    },
+    {
+      "code": "101062",
+      "name": "PEDIAKID OMEGA 3 SIR 125ML",
+      "score": 0.24,
+      "bestAlternative": 0.24
+    },
+    {
+      "code": "76355",
+      "name": "PEDIAKID PROBIOTIQUES PULV A10",
+      "score": 0.03,
+      "bestAlternative": null
+    },
+    {
+      "code": "15005",
+      "name": "PEDIAKID MAL DES TRANSPORTS",
+      "score": 0.22,
+      "bestAlternative": 0.22
+    },
+    {
+      "code": "5237053",
+      "name": "JUTAVIT OMEGA3 +VIT E 1200MG 100KAPSULA",
+      "score": 0.42,
+      "bestAlternative": 0.42
+    },
+    {
+      "code": "N22",
+      "name": "PEDIAKID GOMMES P`TIT BIOTIC 60 OURSONS",
+      "score": 0,
+      "bestAlternative": null
+    },
+    {
+      "code": "5237048",
+      "name": "JUTAVIT VALERIANA HARMONY 45 KAPSULA",
+      "score": 0.06,
+      "bestAlternative": 0.15
+    },
+    {
+      "code": "5023",
+      "name": "AIRWAWES COOL CASSIS A30",
+      "score": 0,
+      "bestAlternative": 0.33
+    },
+    {
+      "code": "71123",
+      "name": "VAJ PER MJEKER 30ML ( AICHUN BEAUTY )",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5144",
+      "name": "MJALTE PER POTENC 43G",
+      "score": 0.05,
+      "bestAlternative": null
+    },
+    {
+      "code": "9941A",
+      "name": "VAJ OREGANO 30ML - HEMANI",
+      "score": 0.05,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "7230..",
+      "name": "ACTIFIZZ ORANGE EFF A20",
+      "score": 0.3,
+      "bestAlternative": 0.32
+    },
+    {
+      "code": "154891",
+      "name": "CHICCO DETERGJENT PER RROBA NEW 1.5L",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "316",
+      "name": "OCEAN EXTRAMAG TAB A30",
+      "score": 0.23,
+      "bestAlternative": 0.27
+    },
+    {
+      "code": "20054",
+      "name": "LANSINOH TAMPONA PER GJINJ 24 COPA",
+      "score": 0.03,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "805514",
+      "name": "DOPPEL HERZ COENZYM Q10+B-VITAMINE CAPS A30",
+      "score": 0,
+      "bestAlternative": 0.05
+    },
+    {
+      "code": "4316",
+      "name": "WELLMAN CONCEPTION TAB",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "4609",
+      "name": "VITABIOTICS ULTRA MAGNESIUM TAB 60X375MG",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5187",
+      "name": "REXONA MEN DEO INVISIBLE CLOTHES 150ML",
+      "score": 0.03,
+      "bestAlternative": 0.09
+    },
+    {
+      "code": "277777",
+      "name": "ALWAYS LINERS LONG PLUS 22",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "277776",
+      "name": "ALWAYS LINERS NORMAL DEO",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "5775",
+      "name": "DERMEDIC HYDRAIN MICELLAR WATER 200ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "99574",
+      "name": "PHARMASEPT BABY CARE HYDRATING MILK 250ML",
+      "score": 0.19,
+      "bestAlternative": 0.19
+    },
+    {
+      "code": "407370",
+      "name": "THE PUREST SOLUTIONS SPF50+DRY TOUCH PROTECTION CREM 50ML",
+      "score": 0.01,
+      "bestAlternative": 0.02
+    },
+    {
+      "code": "80N",
+      "name": "APIPRODENT SPRAY 20ML",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "7410.",
+      "name": "VICHY DEODORANT CLINICAL CONTROL 96H MEN 50ML V.5025",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "1261",
+      "name": "OCEAN GUMMIES MULTIVITAMIN KIDS A60",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "52791",
+      "name": "TONOTIL PLUS SOL ORAL 15X10ML (VIANEX S.A.)",
+      "score": 0,
+      "bestAlternative": 0
+    },
+    {
+      "code": "255462",
+      "name": "PEDIAKID GOMMES SOMMEIL 60 OURSONS",
+      "score": 0.04,
+      "bestAlternative": 0.04
+    },
+    {
+      "code": "5136",
+      "name": "VITAMIN C FACE SERUM 50 ML (DR.RASHEL)",
+      "score": 0,
+      "bestAlternative": 0
     }
   ]
 }

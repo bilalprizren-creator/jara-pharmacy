@@ -135,6 +135,9 @@ async function main() {
     }
 
     const strong = item.match.score >= GOOD_SCORE;
+    const oursSize = packSize(item.product.name);
+    const theirsSize = packSize(item.match.title);
+    const sizeClash = oursSize && theirsSize && oursSize !== theirsSize;
     photos.push({
       number: photos.length + 1,
       code: item.product.code,
@@ -142,11 +145,18 @@ async function main() {
       barcode: item.product.barcode,
       brand: item.product.brand,
       // Never "E lartë": this is a name match, not a barcode match.
-      confidence: strong ? "E mesme" : "E ulët",
-      status: strong ? "Për verifikim" : "Mospërputhje",
+      confidence: sizeClash ? "E ulët" : strong ? "E mesme" : "E ulët",
+      status: sizeClash || !strong ? "Mospërputhje" : "Për verifikim",
       note:
         `Gjetur te katalogu i markës si "${item.match.title}". Përputhja është sipas emrit, ` +
-        `jo barkodit — krahasoje me paketimin para se ta pranosh.`,
+        `jo barkodit — krahasoje me paketimin para se ta pranosh.` +
+        (sizeClash
+          ? ` KUJDES: ne kemi ${oursSize}, fotografia është e ${theirsSize} — i njëjti produkt, paketim tjetër.`
+          : oursSize && !theirsSize
+            ? ` Katalogu nuk e shënon madhësinë; jona është ${oursSize} — kontrollo që të përputhet.`
+            : ""),
+      packSizeOurs: oursSize,
+      packSizeFound: theirsSize,
       sourcePage: item.match.page,
       imageUrl: item.match.image,
       licence: `Katalogu zyrtar i ${item.source.brand}`,
@@ -224,7 +234,14 @@ function bestMatch(product, catalogue, brand) {
   for (const entry of catalogue) {
     const theirs = tokens(entry.title, brand);
     let shared = 0;
-    for (const token of ours) if (theirs.has(token)) shared += 1;
+    for (const token of ours) {
+      for (const other of theirs) {
+        if (sameWord(token, other)) {
+          shared += 1;
+          break;
+        }
+      }
+    }
     const score = shared / ours.size;
     if (score > bestScore) {
       bestScore = score;
@@ -236,8 +253,41 @@ function bestMatch(product, catalogue, brand) {
 
 const STOPWORDS = new Set([
   "ML", "MG", "TAB", "TABS", "CAPS", "CAP", "GR", "KOM", "SIR", "PACK", "SET",
-  "DHE", "ME", "PER", "THE", "AND", "FOR", "WITH", "NEW",
+  "DHE", "ME", "PER", "THE", "AND", "FOR", "WITH", "NEW", "DE", "DI", "DU",
 ]);
+
+/**
+ * The article names in the ERP export are whatever the supplier printed on the
+ * invoice, so one assortment mixes French, Italian, Albanian and English —
+ * while a brand's own shop is usually English only. "MUSTELA SHAMPOOING DOUX
+ * 500ML" and Mustela's own "Gentle Shampoo" are the same bottle and share not
+ * one word, so a photo that was sitting right there went unfound.
+ *
+ * These are the words that actually recur in this catalogue, mapped to the
+ * English form the shops use. It is deliberately small: guessing translations
+ * wholesale would invent matches, and every match still has to convince a
+ * reviewer.
+ */
+const SYNONYMS = new Map(Object.entries({
+  SHAMPOOING: "SHAMPOO", SHAMPON: "SHAMPOO", SHAMPO: "SHAMPOO", SHAMPOING: "SHAMPOO",
+  DOUX: "GENTLE", DOLCE: "GENTLE", SUAVE: "GENTLE", BUTE: "GENTLE", MITE: "GENTLE",
+  LAVANT: "WASH", LAVANTE: "WASH", LAVANDO: "WASH", NETTOYANT: "CLEANSER",
+  CREME: "CREAM", CREMA: "CREAM", KREM: "CREAM", KREME: "CREAM",
+  HUILE: "OIL", OLIO: "OIL", VAJ: "OIL",
+  LAIT: "MILK", LATTE: "MILK", QUMESHT: "MILK",
+  BAIN: "BATH", BAGNO: "BATH", BANJO: "BATH",
+  EAU: "WATER", ACQUA: "WATER", UJE: "WATER", UJI: "WATER",
+  BEBE: "BABY", BEBI: "BABY", ENFANT: "KIDS", BAMBINO: "KIDS", FEMIJE: "KIDS",
+  CORPS: "BODY", CORPO: "BODY", TRUPI: "BODY", TRUP: "BODY",
+  VISAGE: "FACE", VISO: "FACE", FYTYRE: "FACE", FYTYRA: "FACE",
+  CHEVEUX: "HAIR", CAPELLI: "HAIR", FLOKE: "HAIR", FLOK: "HAIR",
+  MAINS: "HAND", MANI: "HAND", DUAR: "HAND",
+  DENTIFRICE: "TOOTHPASTE", DENTI: "TEETH", DHEMBE: "TEETH",
+  SOLAIRE: "SUN", SOLARE: "SUN", DIELL: "SUN",
+  HYDRATANT: "MOISTURIZING", IDRATANTE: "MOISTURIZING",
+  MOUSSE: "FOAM", SCHIUMA: "FOAM", SHKUME: "FOAM",
+  SPRAJ: "SPRAY", POMATA: "OINTMENT", POMADE: "OINTMENT",
+}));
 
 function tokens(value, brand) {
   const brandWords = new Set(
@@ -252,8 +302,39 @@ function tokens(value, brand) {
       .toUpperCase()
       .replace(/[^A-Z0-9]+/g, " ")
       .split(" ")
-      .filter((token) => token.length > 2 && !STOPWORDS.has(token) && !brandWords.has(token)),
+      .filter((token) => token.length > 2 && !STOPWORDS.has(token) && !brandWords.has(token))
+      .map((token) => SYNONYMS.get(token) ?? token),
   );
+}
+
+/**
+ * Pack size as printed in the name: "500ML", "40 G", "A60".
+ * A shop lists one product page per formula and often names no size at all, so
+ * the absence of a size means nothing — but when both sides state one and they
+ * disagree, the reviewer is looking at the right product in the wrong bottle,
+ * which is worth saying out loud rather than hiding behind a score.
+ */
+function packSize(value) {
+  const match = String(value ?? "")
+    .toUpperCase()
+    .match(/(\d+(?:[.,]\d+)?)\s*(ML|CL|L|MG|G|GR|KG|CAPS|CAP|TAB|TABS|PCS)\b/);
+  if (!match) return null;
+  const amount = Number(match[1].replace(",", "."));
+  const unit = { GR: "G", CAP: "CAPS", TAB: "TABS", CL: "ML" }[match[2]] ?? match[2];
+  return `${unit === "ML" && match[2] === "CL" ? amount * 10 : amount}${unit}`;
+}
+
+/**
+ * Two words count as the same when one is a prefix of the other from five
+ * characters on. That is what connects "MOISTURIZING" to "MOISTURIZER" and
+ * "NOURISHING" to "NOURISH" without a stemmer, and five is long enough that
+ * unrelated words do not start colliding.
+ */
+function sameWord(a, b) {
+  if (a === b) return true;
+  const shorter = a.length <= b.length ? a : b;
+  const longer = shorter === a ? b : a;
+  return shorter.length >= 5 && longer.startsWith(shorter);
 }
 
 /* ------------------------------------------------------------------ */
