@@ -62,6 +62,16 @@
       "brand": "NUXE",
       "store": "us.nuxe.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "RILASTIL",
+      "store": "rilastil.it",
+      "platform": "shopify"
+    },
+    {
+      "brand": "NALLAN",
+      "store": "www.nallan.com",
+      "platform": "shopify"
     }
   ]
 }

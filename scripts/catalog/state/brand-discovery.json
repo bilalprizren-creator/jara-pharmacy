@@ -1,0 +1,100 @@
+{
+  "tried": {
+    "DR.LUIGI": {
+      "checkedAt": "2026-09-07T22:41:26.227Z",
+      "products": 203,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "AVENT": {
+      "checkedAt": "2026-09-07T22:41:38.080Z",
+      "products": 142,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "CHICCO": {
+      "checkedAt": "2026-09-07T22:41:42.523Z",
+      "products": 142,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VICHY": {
+      "checkedAt": "2026-09-07T22:41:48.096Z",
+      "products": 123,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "EUCERIN": {
+      "checkedAt": "2026-09-07T22:42:04.096Z",
+      "products": 115,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "WEE BABY": {
+      "checkedAt": "2026-09-07T22:42:07.286Z",
+      "products": 107,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "RILASTIL": {
+      "checkedAt": "2026-09-07T22:42:11.965Z",
+      "products": 98,
+      "store": "rilastil.it",
+      "note": "dyqan i hapur"
+    },
+    "NUK": {
+      "checkedAt": "2026-09-07T22:42:16.495Z",
+      "products": 78,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MAM": {
+      "checkedAt": "2026-09-07T22:42:19.324Z",
+      "products": 70,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SUAVINEX": {
+      "checkedAt": "2026-09-07T22:42:23.671Z",
+      "products": 70,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "LA ROCHE-POSAY": {
+      "checkedAt": "2026-09-07T22:42:27.805Z",
+      "products": 70,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NIVEA": {
+      "checkedAt": "2026-09-07T22:42:40.649Z",
+      "products": 63,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NALLAN": {
+      "checkedAt": "2026-09-07T22:42:40.926Z",
+      "products": 59,
+      "store": "www.nallan.com",
+      "note": "dyqan i hapur"
+    },
+    "MYCEY": {
+      "checkedAt": "2026-09-07T22:42:43.444Z",
+      "products": 52,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DERMEDIC": {
+      "checkedAt": "2026-09-07T22:42:46.403Z",
+      "products": 50,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BEBEDOR": {
+      "checkedAt": "2026-09-07T22:42:50.532Z",
+      "products": 48,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    }
+  }
+}
