@@ -87,6 +87,16 @@
       "brand": "SOLGAR",
       "store": "solgar.de",
       "platform": "shopify"
+    },
+    {
+      "brand": "DR BROWNS",
+      "store": "www.drbrowns.com",
+      "platform": "shopify"
+    },
+    {
+      "brand": "DIETPHARM",
+      "store": "www.dietpharm.com",
+      "platform": "shopify"
     }
   ]
 }

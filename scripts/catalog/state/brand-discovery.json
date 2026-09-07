@@ -167,6 +167,78 @@
       "products": 29,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DR BROWNS": {
+      "checkedAt": "2026-09-07T23:02:22.341Z",
+      "products": 29,
+      "store": "www.drbrowns.com",
+      "note": "dyqan i hapur"
+    },
+    "EVERGREEN": {
+      "checkedAt": "2026-09-07T23:02:25.860Z",
+      "products": 29,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BECUTAN": {
+      "checkedAt": "2026-09-07T23:02:31.860Z",
+      "products": 28,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "AVENE": {
+      "checkedAt": "2026-09-07T23:02:45.580Z",
+      "products": 28,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OFI SPA ITALY": {
+      "checkedAt": "2026-09-07T23:02:48.289Z",
+      "products": 27,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MR. WHITE": {
+      "checkedAt": "2026-09-07T23:02:52.021Z",
+      "products": 26,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NEUTROGENA": {
+      "checkedAt": "2026-09-07T23:02:55.247Z",
+      "products": 25,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "GALENIKA": {
+      "checkedAt": "2026-09-07T23:02:59.770Z",
+      "products": 25,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DIETPHARM": {
+      "checkedAt": "2026-09-07T23:03:00.346Z",
+      "products": 25,
+      "store": "www.dietpharm.com",
+      "note": "dyqan i hapur"
+    },
+    "LACALUT": {
+      "checkedAt": "2026-09-07T23:03:04.229Z",
+      "products": 24,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BEBEDREAM": {
+      "checkedAt": "2026-09-07T23:03:13.285Z",
+      "products": 24,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "TWISTSHAKE": {
+      "checkedAt": "2026-09-07T23:03:17.061Z",
+      "products": 23,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
