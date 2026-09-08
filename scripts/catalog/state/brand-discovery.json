@@ -671,6 +671,78 @@
       "products": 5,
       "store": "www.carroten.com",
       "note": "dyqan i hapur"
+    },
+    "ABELAPHARM": {
+      "checkedAt": "2026-09-08T00:47:19.155Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SENSILAB": {
+      "checkedAt": "2026-09-08T00:47:24.891Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ABDIIBRAHIM": {
+      "checkedAt": "2026-09-08T00:47:28.326Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BIO NACH": {
+      "checkedAt": "2026-09-08T00:47:30.953Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "AMSAL": {
+      "checkedAt": "2026-09-08T00:47:44.139Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SETABLU": {
+      "checkedAt": "2026-09-08T00:47:49.744Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "KLORANE": {
+      "checkedAt": "2026-09-08T00:48:10.295Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "CETAPHIL": {
+      "checkedAt": "2026-09-08T00:48:16.938Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VALUE MED": {
+      "checkedAt": "2026-09-08T00:48:21.954Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "STADA": {
+      "checkedAt": "2026-09-08T00:48:25.000Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VOONKA": {
+      "checkedAt": "2026-09-08T00:48:27.627Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PHARMAS": {
+      "checkedAt": "2026-09-08T00:48:30.764Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
