@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-09-08T00:03:45.027Z",
+  "label": "markat-bioscalin",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 1,
+    "downloaded": 1,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 1
+    },
+    "byBrand": {
+      "BIOSCALIN": 1
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "852312",
+      "name": "BIOSCALIN OIL SHAMPO O ANTIFORFORA 200ML",
+      "barcode": "VSJ09Y",
+      "brand": "BIOSCALIN",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Shampoo lenitivo AntiForfora per capelli secchi\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 200ML — kontrollo që të përputhet.",
+      "packSizeOurs": "200ML",
+      "packSizeFound": null,
+      "sourcePage": "https://bioscalin.it/products/shampoo-lenitivo-per-capelli-secchi-antiforfora",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-antiforfora-shampoo-secchi-200ml.png?v=1769088422",
+      "licence": "Katalogu zyrtar i BIOSCALIN",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_852312.png",
+      "bytes": 300523
+    }
+  ]
+}

@@ -97,6 +97,21 @@
       "brand": "DIETPHARM",
       "store": "www.dietpharm.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "SOLIME",
+      "store": "solime.it",
+      "platform": "shopify"
+    },
+    {
+      "brand": "BIOSCALIN",
+      "store": "bioscalin.it",
+      "platform": "shopify"
+    },
+    {
+      "brand": "BYE BYE BLEMISH",
+      "store": "www.byebyeblemish.com",
+      "platform": "shopify"
     }
   ]
 }

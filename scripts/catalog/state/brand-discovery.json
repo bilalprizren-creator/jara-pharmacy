@@ -455,6 +455,78 @@
       "products": 9,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ALKALOID": {
+      "checkedAt": "2026-09-08T00:02:38.340Z",
+      "products": 9,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MARUDERM": {
+      "checkedAt": "2026-09-08T00:02:41.042Z",
+      "products": 9,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "JAKE": {
+      "checkedAt": "2026-09-08T00:02:44.714Z",
+      "products": 9,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PARADONTAX": {
+      "checkedAt": "2026-09-08T00:02:47.724Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ALLIANCE": {
+      "checkedAt": "2026-09-08T00:02:51.782Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SOLIME": {
+      "checkedAt": "2026-09-08T00:02:54.390Z",
+      "products": 8,
+      "store": "solime.it",
+      "note": "dyqan i hapur"
+    },
+    "PHARMALIFE": {
+      "checkedAt": "2026-09-08T00:02:57.681Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MEDIS": {
+      "checkedAt": "2026-09-08T00:03:09.298Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MASTER OF PHARMACY": {
+      "checkedAt": "2026-09-08T00:03:14.059Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BELUPO": {
+      "checkedAt": "2026-09-08T00:03:17.046Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BIOSCALIN": {
+      "checkedAt": "2026-09-08T00:03:36.880Z",
+      "products": 8,
+      "store": "bioscalin.it",
+      "note": "dyqan i hapur"
+    },
+    "BYE BYE BLEMISH": {
+      "checkedAt": "2026-09-08T00:03:37.102Z",
+      "products": 8,
+      "store": "www.byebyeblemish.com",
+      "note": "dyqan i hapur"
     }
   }
 }

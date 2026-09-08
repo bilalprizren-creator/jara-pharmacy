@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-09-08T00:03:42.388Z",
+  "label": "markat-solime",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 3,
+    "downloaded": 3,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 3
+    },
+    "byBrand": {
+      "SOLIME": 3
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "5069093",
+      "name": "REMARGIN COLOSTRUM CREAM 30ML",
+      "barcode": "8001774138489",
+      "brand": "SOLIME",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Remargin® Colostrum Crema - Dermolenitiva ad azione intensiva\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30ML — kontrollo që të përputhet.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": null,
+      "sourcePage": "https://solime.it/products/remargin-colostrum-crema",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0619/6523/8436/files/remargin_colostrum_crema.webp?v=1729157272",
+      "licence": "Katalogu zyrtar i SOLIME",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0001_5069093.webp",
+      "bytes": 162575
+    },
+    {
+      "number": 2,
+      "code": "10620",
+      "name": "AGLIO COMPLEX 60 CPS",
+      "barcode": "8001774136614",
+      "brand": "SOLIME",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Aglio Complex - Integratore a base naturale\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://solime.it/products/integratore-naturale-aglio-complex",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0619/6523/8436/files/integratore_naturale_aglio_complex.webp?v=1726219325",
+      "licence": "Katalogu zyrtar i SOLIME",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_10620.webp",
+      "bytes": 243525
+    },
+    {
+      "number": 3,
+      "code": "1062016",
+      "name": "HDL PLUS 30 CAPS / 810 MG",
+      "barcode": "8001774138441",
+      "brand": "SOLIME",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"HDL Plus - Integratore a base naturale\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30CAPS — kontrollo që të përputhet.",
+      "packSizeOurs": "30CAPS",
+      "packSizeFound": null,
+      "sourcePage": "https://solime.it/products/integratore-naturale-hdl-plus",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0619/6523/8436/files/integratore_naturale_hdl_plus.webp?v=1728977695",
+      "licence": "Katalogu zyrtar i SOLIME",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0003_1062016.webp",
+      "bytes": 166514
+    }
+  ]
+}
