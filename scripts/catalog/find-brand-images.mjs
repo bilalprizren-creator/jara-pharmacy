@@ -194,6 +194,7 @@ async function main() {
 /* ------------------------------------------------------------------ */
 
 async function loadStore(source) {
+  if (source.platform === "sitemap") return loadFromSitemap(source);
   if (source.platform !== "shopify") return [];
   const items = [];
   for (let page = 1; page <= MAX_PAGES; page += 1) {
@@ -213,6 +214,115 @@ async function loadStore(source) {
     await sleep(PAGE_PAUSE_MS);
   }
   return items;
+}
+
+/**
+ * The big brands do not run Shopify — Eucerin, Nivea, Dermedic and Wee Baby
+ * answer 404 to `/products.json`, which is why the first sweep found nothing
+ * for them and 335 of their products stayed without a picture. They do publish
+ * a sitemap, and their product pages carry a proper packshot in `og:image`:
+ * Eucerin's came back 1200x1200 and scored a clean 1,00.
+ *
+ * So the catalogue is read the slow way here — one request per product page —
+ * which is why the sitemap is filtered down to product URLs first and the pages
+ * are fetched with a pause between them. It costs a few dozen requests per
+ * brand, not thousands.
+ */
+async function loadFromSitemap(source) {
+  const roots = await sitemapUrls(`https://${source.store}/sitemap.xml`);
+  const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun)\//i;
+  // A product page sits deeper than a section landing page, so require both the
+  // path hint and a segment below it — otherwise every category page is fetched.
+  const candidates = [...new Set(roots.filter((url) => hint.test(url) && url.split("/").length > 5))].slice(
+    0,
+    source.maxPages ?? 150,
+  );
+
+  const items = [];
+  for (const url of candidates) {
+    const html = await fetchText(url);
+    if (!html) continue;
+    // These pages carry several JSON-LD blocks and the first "name" in the file
+    // usually belongs to the FAQ schema, not the product — reading it naively
+    // turned every Eucerin title into a support question. So the Product block
+    // is looked up properly, with the social tags as the fallback.
+    const product = productSchema(html);
+    const image =
+      product?.image ??
+      html.match(/property="og:image"[^>]*content="([^"]+)"/)?.[1] ??
+      html.match(/content="([^"]+)"[^>]*property="og:image"/)?.[1];
+    const title =
+      product?.name ??
+      html.match(/property="og:title"[^>]*content="([^"]+)"/)?.[1] ??
+      html.match(/<title[^>]*>([^<]+)/)?.[1];
+    if (!image || !title) continue;
+    items.push({ title: decodeHtml(title.trim()), image, page: url });
+    await sleep(PAGE_PAUSE_MS);
+  }
+  return items;
+}
+
+/** The `Product` entry among a page's JSON-LD blocks, if it has one. */
+function productSchema(html) {
+  const blocks = html.match(/<script[^>]*application\/ld\+json[^>]*>([\s\S]*?)<\/script>/gi) ?? [];
+  for (const block of blocks) {
+    const json = block.replace(/^[\s\S]*?>/, "").replace(/<\/script>$/i, "");
+    let parsed;
+    try {
+      parsed = JSON.parse(json);
+    } catch {
+      continue;
+    }
+    // A block may be a single object, an array, or a @graph wrapper.
+    const nodes = [parsed, ...(Array.isArray(parsed) ? parsed : []), ...(parsed["@graph"] ?? [])];
+    for (const node of nodes) {
+      if (!node || typeof node !== "object") continue;
+      const types = [node["@type"]].flat();
+      if (!types.includes("Product")) continue;
+      const image = [node.image].flat().find((value) => typeof value === "string") ?? node.image?.url;
+      if (typeof node.name === "string" && image) return { name: node.name, image };
+    }
+  }
+  return null;
+}
+
+/** Reads a sitemap, following one level of sitemap-index nesting. */
+async function sitemapUrls(url, depth = 0) {
+  const xml = await fetchText(url);
+  if (!xml) return [];
+  const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].trim());
+  if (depth === 0 && /<sitemapindex/i.test(xml)) {
+    const nested = [];
+    for (const child of locs.slice(0, 8)) {
+      nested.push(...(await sitemapUrls(child, 1)));
+      await sleep(PAGE_PAUSE_MS);
+    }
+    return nested;
+  }
+  return locs;
+}
+
+const decodeHtml = (value) =>
+  value
+    .replace(/&amp;/g, "&")
+    .replace(/&lt;/g, "<")
+    .replace(/&gt;/g, ">")
+    .replace(/&quot;/g, '"')
+    .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/\s*\|.*$/, ""); // page titles trail the brand after a pipe
+
+async function fetchText(url) {
+  try {
+    const response = await fetch(url, {
+      headers: { "user-agent": USER_AGENT, accept: "text/html,application/xml" },
+      redirect: "follow",
+      signal: AbortSignal.timeout(20000),
+    });
+    if (!response.ok) return null;
+    return await response.text();
+  } catch {
+    return null;
+  }
 }
 
 /* ------------------------------------------------------------------ */
@@ -286,6 +396,14 @@ const SYNONYMS = new Map(Object.entries({
   SOLAIRE: "SUN", SOLARE: "SUN", DIELL: "SUN",
   HYDRATANT: "MOISTURIZING", IDRATANTE: "MOISTURIZING",
   MOUSSE: "FOAM", SCHIUMA: "FOAM", SHKUME: "FOAM",
+  // Day and night creams are different products in the same line, so these
+  // matter more than most: without them a night cream can win the day cream's
+  // photo purely on the pack size matching.
+  DITES: "DAY", DITE: "DAY", GIORNO: "DAY", JOUR: "DAY",
+  NATES: "NIGHT", NATE: "NIGHT", NOTTE: "NIGHT", NUIT: "NIGHT",
+  SYVE: "EYE", BUZE: "LIP", DIELLIT: "SUN", DIELLI: "SUN",
+  LARES: "WASH", PASTRUES: "CLEANSER", LAGESHTUES: "MOISTURIZING",
+  MBROJTES: "PROTECTION", NDJESHME: "SENSITIVE", THATE: "DRY",
   SPRAJ: "SPRAY", POMATA: "OINTMENT", POMADE: "OINTMENT",
 }));
 

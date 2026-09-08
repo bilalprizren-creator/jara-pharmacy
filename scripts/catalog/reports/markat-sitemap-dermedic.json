@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-08T07:01:56.210Z",
+  "label": "markat-sitemap-dermedic",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 2
+    },
+    "byBrand": {
+      "DERMEDIC": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "52797",
+      "name": "DERMEDIC BABY BUTTER",
+      "barcode": "5901643174033",
+      "brand": "DERMEDIC",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Baby\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://dermedic.com/cs/produkty/baby",
+      "imageUrl": "https://dermedic.com/hubfs/Baby-Jul-24-2025-10-10-56-8784-AM.png",
+      "licence": "Katalogu zyrtar i DERMEDIC",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_52797.png",
+      "bytes": 365748
+    },
+    {
+      "number": 2,
+      "code": "578101",
+      "name": "DERMEDIC REDNESS CALM SERUM 30ML",
+      "barcode": "5901643178178",
+      "brand": "DERMEDIC",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Redness Calm\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30ML — kontrollo që të përputhet.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": null,
+      "sourcePage": "https://dermedic.com/cs/produkty/redness-calm",
+      "imageUrl": "https://dermedic.com/hubfs/Redness-Jul-24-2025-10-11-17-7637-AM.png",
+      "licence": "Katalogu zyrtar i DERMEDIC",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0002_578101.png",
+      "bytes": 261169
+    }
+  ]
+}
