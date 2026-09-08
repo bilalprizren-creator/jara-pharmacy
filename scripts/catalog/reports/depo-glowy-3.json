@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-08T17:10:05.717Z",
+  "label": "depo-glowy-3",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 3,
+    "downloaded": 1,
+    "failed": 2,
+    "byConfidence": {
+      "E mesme": 1
+    },
+    "byBrand": {
+      "DR.CLINIC": 1
+    }
+  },
+  "failed": [
+    {
+      "code": "9949",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-05-06T194240.400.svg?v=1683394975"
+    },
+    {
+      "code": "5205",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign_svg_f9f355a9-31fc-438c-9ccc-f0b84fc48a42.svg?v=1745676060"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "199.",
+      "name": "DR.CLINIC TEA TREE FACE WASH",
+      "barcode": "8680923345864",
+      "brand": "DR.CLINIC",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos glowyskinshop.com si \"LADOR TEA TREE SCALP CLINIC HAIR PACK 200ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": "200ML",
+      "sourcePage": "https://glowyskinshop.com/products/lador-tea-tree-scalp-clinic-hair-pack-200ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0573/5566/5575/products/8809500810681_0-700x700.jpg?v=1628956115",
+      "licence": "Katalogu i glowyskinshop.com",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0002_199..jpg",
+      "bytes": 23644
+    }
+  ]
+}

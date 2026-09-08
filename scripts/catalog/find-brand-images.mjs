@@ -57,12 +57,13 @@ const MIN_SCORE = 0.4;
 /** At or above this the wording lines up well enough to lead the batch. */
 const GOOD_SCORE = 0.6;
 /**
- * A general shop sells every brand, so its titles agree with ours by accident
- * more often than a single brand's catalogue does. Everything it offers below
- * this is left alone; between here and GOOD_SCORE the pairing still reaches the
- * reviewer, but marked as a mismatch rather than as a find.
+ * A general shop sells every brand, so its wording agrees with ours by accident
+ * far more often than a single brand's catalogue does — hence a higher bar than
+ * MIN_SCORE. Tried at 0.5 and the extra matches were almost all wrong ("SILICA
+ * PLUS 60" → "Biotin Shampoo w/Silica", "FERROVIT 20 CPS" → "Ferro 3 Forte
+ * sol"), so this stays where it is.
  */
-const GENERAL_FLOOR = Number(process.env.JARA_GENERAL_FLOOR ?? 0.5);
+const GENERAL_FLOOR = 0.6;
 
 async function main() {
   const args = readArgs(process.argv.slice(2));

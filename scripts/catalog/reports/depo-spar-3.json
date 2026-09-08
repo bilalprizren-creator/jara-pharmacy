@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-08T17:05:52.618Z",
+  "label": "depo-spar-3",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 2
+    },
+    "byBrand": {
+      "TOMMEE TIPPEE": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "44502",
+      "name": "TT GOME DHEMBESH A 2 ( 3M+ )",
+      "barcode": "5010415364500",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos shop.spar.al si \"PASTRUES DHEMBESH XME GOME 1.3MM 5 PCS\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": "5PCS",
+      "sourcePage": "https://shop.spar.al/product/pastrues-dhembesh-xme-gome-1-3mm-5-pcs/",
+      "imageUrl": "https://shop.spar.al/wp-content/uploads/2022/05/252074.jpg",
+      "licence": "Katalogu i shop.spar.al",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0001_44502.jpg",
+      "bytes": 30921
+    },
+    {
+      "number": 2,
+      "code": "43645",
+      "name": "TT GOME DHEMBESH A 1 ( 4M+ )",
+      "barcode": "5010415364524",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos shop.spar.al si \"PASTRUES DHEMBESH XME GOME 1.3MM 5 PCS\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": "5PCS",
+      "sourcePage": "https://shop.spar.al/product/pastrues-dhembesh-xme-gome-1-3mm-5-pcs/",
+      "imageUrl": "https://shop.spar.al/wp-content/uploads/2022/05/252074.jpg",
+      "licence": "Katalogu i shop.spar.al",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0002_43645.jpg",
+      "bytes": 30921
+    }
+  ]
+}

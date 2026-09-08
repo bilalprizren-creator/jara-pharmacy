@@ -181,10 +181,37 @@ Krahas faqes për publikim shkruhet edhe një kopje e pavarur
 (`*-vetestrukturuar.html`), që hapet me dopio-klik pa asnjë llogari.
 
 **Kufijtë:** faqja nuk guxon të kalojë 16 MB dhe fotografitë duhet të jenë brenda
-saj (shfaqja bllokon burimet e jashtme). Me fotografi ~300 px kjo do të thotë
-rreth 1.000 produkte për faqe; ndaji seritë me `--limit`.
+saj (shfaqja bllokon burimet e jashtme). Miniaturat zvogëlohen vetë sa rritet
+grupi — 300 px deri në 1.500 produkte, 150 px mbi 4.800 — kështu që një faqe e
+vetme mban gjithë katalogun; ndaji seritë me `--limit` vetëm nëse duhet.
+
+## Ku është kufiri i kërkimit automatik
+
+Më 8 shtator 2026, pas një sweep-i të plotë: **3.918 nga 7.176 artikuj tregtarë
+kanë një fotografi (55 %)**, tre të katërtat e tyre foto studioje.
+
+Çka jep dhe çka nuk jep rezultat, e matur:
+
+| Burimi | Rendimenti |
+|---|---|
+| Dyqan vendor që e shkruan barkodin te SKU (farma-city, mybaby) | shumë i lartë — 380 përputhje të sakta me një kërkesë API |
+| Dyqan vendor me emra shqip (plutoni 609, ditenate 169) | 14 % e faqeve të lexuara japin fotografi |
+| Katalogët e vetë markave | i shterur — kalimi i dytë mbi 32 marka dha 5 fotografi |
+| Dyqan i huaj me barkod te të dhënat (bebetei.ro) | 0,5 % — barkodet e tyre janë variante të tjera nga tonat |
+| Ulja e pragut të përputhjes në 0,5 | s'vlen — shumica e përputhjeve dolën të gabuara |
+
+Prandaj 3.258 artikujt që mbeten nuk gjenden duke shtuar edhe një dyqan: 1.637
+prej tyre janë pa markë fare, të shpërndarë në 1.192 emra prodhuesish të vegjël —
+mesatarisht 1,4 produkte për prodhues.
+
+Dy rrugë mbeten, të dyja jashtë skripteve:
+
+- **Kërko katalogun te furnitorët.** Santefarm (343 artikuj pa foto), Asgeto
+  (290), ADL (200), Pharmatree (149) i kanë fotografitë e veta; është një email
+  për secilin, jo një crawler.
+- **Fotografo në raft.** Pjesa që mbetet gjendet fizikisht në barnatoret e
+  Prizrenit.
 
 ## Çka nuk është ndërtuar ende
 
-- ndërtimi i katalogut për faqen nga vendimet e ekipit,
-- burime shtesë për markat që nuk kanë dyqan me katalog të hapur.
+- ndërtimi i katalogut për faqen nga vendimet e ekipit.

@@ -1,0 +1,121 @@
+{
+  "generatedAt": "2026-09-08T17:02:17.945Z",
+  "label": "depo-arditfarma-3",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 7,
+    "downloaded": 5,
+    "failed": 2,
+    "byConfidence": {
+      "E mesme": 5
+    },
+    "byBrand": {
+      "CHICCO": 2,
+      "RILASTIL": 1,
+      "": 1,
+      "PHARMASEPT": 1
+    }
+  },
+  "failed": [
+    {
+      "code": "72570",
+      "url": "https://arditfarma.al/wp-content/uploads/2026/05/7000010605.avif"
+    },
+    {
+      "code": "72571",
+      "url": "https://arditfarma.al/wp-content/uploads/2026/05/7000010605.avif"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "16660",
+      "name": "CHICCO SHISHE XHAMIT 240ML WELL BEING",
+      "barcode": "8058664129959",
+      "brand": "CHICCO",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos arditfarma.al si \"Chicco – Well Being Biberon Qelqi 240ml 0m+\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "240ML",
+      "packSizeFound": "240ML",
+      "sourcePage": "https://arditfarma.al/produkt/chicco-biberon-qelqi-240ml-rrjedhje-e-ngadalte-0m/",
+      "imageUrl": "https://arditfarma.al/wp-content/uploads/2026/04/CH28721-21-Chicco-Well-Being-Glass-Feeding-Bottle-240ml-Slow-Flow-0m-Silicone-Blue-02-2.jpg",
+      "licence": "Katalogu i arditfarma.al",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0001_16660.jpg",
+      "bytes": 18631
+    },
+    {
+      "number": 2,
+      "code": "906912",
+      "name": "CHICCO SHISHE WELL BEING QELQI PORTOKALL",
+      "barcode": "8058664166299",
+      "brand": "CHICCO",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos arditfarma.al si \"Chicco – Well Being Biberon Qelqi 240ml 0m+\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": "240ML",
+      "sourcePage": "https://arditfarma.al/produkt/chicco-biberon-qelqi-240ml-rrjedhje-e-ngadalte-0m/",
+      "imageUrl": "https://arditfarma.al/wp-content/uploads/2026/04/CH28721-21-Chicco-Well-Being-Glass-Feeding-Bottle-240ml-Slow-Flow-0m-Silicone-Blue-02-2.jpg",
+      "licence": "Katalogu i arditfarma.al",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_906912.jpg",
+      "bytes": 18631
+    },
+    {
+      "number": 3,
+      "code": "74621",
+      "name": "RILASTIL SUN SYSTEM UNIFORMING COMPACT CREM PUDER 01 BEIGE",
+      "barcode": "8050444859353",
+      "brand": "RILASTIL",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos arditfarma.al si \"Rilastil – Sun System Compact Uniforming Cream (SPF 50+)\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://arditfarma.al/produkt/rilastil-sun-system-compact-uniforming-cream-spf-50/",
+      "imageUrl": "https://arditfarma.al/wp-content/uploads/2026/05/rilastil-sun-system-crema-compacta.jpg",
+      "licence": "Katalogu i arditfarma.al",
+      "matchScore": 0.63,
+      "file": ".image-cache/brands/0003_74621.jpg",
+      "bytes": 90189
+    },
+    {
+      "number": 4,
+      "code": "1455.",
+      "name": "CLEANIC REFRESHING WET WIPES JUNIOR 15PCS",
+      "barcode": "5900095018872",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos arditfarma.al si \"Harper Hygienics Cleanic Junior Refreshing Wet Wipes 15 Pcs\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "15PCS",
+      "packSizeFound": "15PCS",
+      "sourcePage": "https://arditfarma.al/produkt/harper-hygienics-cleanic-junior-refreshing-wet-wipes-15-pcs/",
+      "imageUrl": "https://arditfarma.al/wp-content/uploads/2026/05/zKLA1TOlXbFdmF-2.jpg",
+      "licence": "Katalogu i arditfarma.al",
+      "matchScore": 0.83,
+      "file": ".image-cache/brands/0004_1455..jpg",
+      "bytes": 25737
+    },
+    {
+      "number": 5,
+      "code": "99590",
+      "name": "PHARMASEPT HOT POWER GEL 100ML THERMORELIEF",
+      "barcode": "5205122001408",
+      "brand": "PHARMASEPT",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos arditfarma.al si \"Pharmasept – Hot Power Gel\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 100ML — kontrollo që të përputhet.",
+      "packSizeOurs": "100ML",
+      "packSizeFound": null,
+      "sourcePage": "https://arditfarma.al/produkt/pharmasept-hot-power-gel/",
+      "imageUrl": "https://arditfarma.al/wp-content/uploads/2026/04/pharmasept-hot-power-gel-farmacity-500x500-1.jpg",
+      "licence": "Katalogu i arditfarma.al",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0007_99590.jpg",
+      "bytes": 10478
+    }
+  ]
+}
