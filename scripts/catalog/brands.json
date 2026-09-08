@@ -217,6 +217,42 @@
       "pathHint": "/proizvod/",
       "sitemap": "/sitemaps/products_1.xml",
       "maxPages": 900
+    },
+    {
+      "supplier": "VITAMER",
+      "store": "vitamer-ks.com",
+      "platform": "woocommerce",
+      "maxPages": 20
+    },
+    {
+      "store": "beautene.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 30
+    },
+    {
+      "store": "crispcosmetic.com",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 20
+    },
+    {
+      "store": "kfarma.al",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 20
+    },
+    {
+      "store": "glowyskinshop.com",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 20
+    },
+    {
+      "store": "ibuy.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
     }
   ]
 }

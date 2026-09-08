@@ -1,0 +1,111 @@
+{
+  "generatedAt": "2026-09-08T08:57:39.384Z",
+  "label": "depo-kfarma",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 5,
+    "downloaded": 5,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 5
+    },
+    "byBrand": {
+      "": 2,
+      "WEE BABY": 2,
+      "CERA VE": 1
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "602351",
+      "name": "BLACK UP SUNTAN OIL SPF50 150ML",
+      "barcode": "5310001252410",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarma.al si \"Haruharu Wonder Black Rice Moisture Deep Cleansing Oil 150ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "150ML",
+      "packSizeFound": "150ML",
+      "sourcePage": "https://kfarma.al/products/haruharu-wonder-black-rice-moisture-deep-cleansing-oil-150ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0751/0140/5425/files/webiri-2026-06-17T174749.717.jpg?v=1781711222",
+      "licence": "Katalogu i kfarma.al",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0001_602351.jpg",
+      "bytes": 28302
+    },
+    {
+      "number": 2,
+      "code": "9130",
+      "name": "W.152 WEE BABY DOUBLE DAY&NIGHT SOOTHER NR.1",
+      "barcode": "8690797101527",
+      "brand": "WEE BABY",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarma.al si \"La Roche Posay Mela B3 Double Dose Day & Night Emulsion\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://kfarma.al/products/la-roche-posay-mela-b3-double-dose-day-night-emulsion",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0751/0140/5425/files/webiri-2026-07-17T171450.165.jpg?v=1784301242",
+      "licence": "Katalogu i kfarma.al",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0002_9130.jpg",
+      "bytes": 42052
+    },
+    {
+      "number": 3,
+      "code": "9131",
+      "name": "W.153 WEE BABY DOUBLE DAY&NIGHT SOOTHER NR. 2",
+      "barcode": "8690797101534",
+      "brand": "WEE BABY",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarma.al si \"La Roche Posay Mela B3 Double Dose Day & Night Emulsion\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://kfarma.al/products/la-roche-posay-mela-b3-double-dose-day-night-emulsion",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0751/0140/5425/files/webiri-2026-07-17T171450.165.jpg?v=1784301242",
+      "licence": "Katalogu i kfarma.al",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0003_9131.jpg",
+      "bytes": 42052
+    },
+    {
+      "number": 4,
+      "code": "2222556",
+      "name": "BIODER INTIMATE WASHING GEL 200ML",
+      "barcode": "8680512630005",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarma.al si \"Bioderma Photoderm After Sun Gel-Cream 200ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "200ML",
+      "packSizeFound": "200ML",
+      "sourcePage": "https://kfarma.al/products/bioderma-photoderm-after-sun-gel-cream",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0751/0140/5425/files/webiri-2026-05-18T180114.811.jpg?v=1779120024",
+      "licence": "Katalogu i kfarma.al",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0004_2222556.jpg",
+      "bytes": 47017
+    },
+    {
+      "number": 5,
+      "code": "1114",
+      "name": "CERAVE MOISTURISING LOTION+HYDRATING CLEANS. 236ML C.9027",
+      "barcode": "5902503599027",
+      "brand": "CERA VE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarma.al si \"CeraVe Moisturizing Lotion 236ml & CeraVe Hydrating Cleanser 20ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "236ML",
+      "packSizeFound": "236ML",
+      "sourcePage": "https://kfarma.al/products/cerave-moisturizing-lotion-236ml-cerave-hydrating-cleanser-20ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0751/0140/5425/files/Untitled-design-11_d9b218b7-8da6-4fed-b10f-035747c8f437.png?v=1778527809",
+      "licence": "Katalogu i kfarma.al",
+      "matchScore": 0.71,
+      "file": ".image-cache/brands/0005_1114.png",
+      "bytes": 484682
+    }
+  ]
+}

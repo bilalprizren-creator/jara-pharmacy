@@ -1,0 +1,93 @@
+{
+  "generatedAt": "2026-09-08T08:58:52.153Z",
+  "label": "depo-glowy",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 11,
+    "downloaded": 2,
+    "failed": 9,
+    "byConfidence": {
+      "E ulët": 1,
+      "E mesme": 1
+    },
+    "byBrand": {
+      "": 2
+    }
+  },
+  "failed": [
+    {
+      "code": "95075",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95076",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95077",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95078",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95079",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95080",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95081",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "95082",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign-2023-10-28T234014.793.svg?v=1698529283"
+    },
+    {
+      "code": "5205",
+      "url": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Untitleddesign_svg_f9f355a9-31fc-438c-9ccc-f0b84fc48a42.svg?v=1745676060"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "14808",
+      "name": "REGENDOL CREMA 60ML",
+      "barcode": "8420101216728",
+      "brand": "",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i depos glowyskinshop.com si \"Dr. Ceuracle Cica Regen 70 Cream – 50ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. KUJDES: ne kemi 60ML, fotografia është e 50ML — i njëjti produkt, paketim tjetër.",
+      "packSizeOurs": "60ML",
+      "packSizeFound": "50ML",
+      "sourcePage": "https://glowyskinshop.com/products/dr-ceuracle-cica-regen-70-cream-50ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/Women_sdsy_65ec8e25-ffc3-4206-b62b-fcf484eae3e1.png?v=1783253852",
+      "licence": "Katalogu i glowyskinshop.com",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0009_14808.png",
+      "bytes": 85033
+    },
+    {
+      "number": 2,
+      "code": "34G",
+      "name": "B-GOOD-HEAT PATCH A2",
+      "barcode": "8681285105219",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos glowyskinshop.com si \"Mizon Good Bye Blemish Nose Patch\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://glowyskinshop.com/products/mizon-good-bye-blemish-nose-patch",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0573/5566/5575/files/51Jqh30y7PL.jpg?v=1710164836",
+      "licence": "Katalogu i glowyskinshop.com",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0010_34G.jpg",
+      "bytes": 55071
+    }
+  ]
+}
