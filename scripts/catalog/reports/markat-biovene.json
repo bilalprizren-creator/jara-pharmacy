@@ -1,0 +1,92 @@
+{
+  "generatedAt": "2026-09-08T01:03:54.716Z",
+  "label": "markat-biovene",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 4,
+    "downloaded": 4,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 3,
+      "E ulët": 1
+    },
+    "byBrand": {
+      "BIOVENE": 4
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "30073",
+      "name": "BIOVENE BODY GLOW SCRUB STRAWBERRY 200ML",
+      "barcode": "8436575094557",
+      "brand": "BIOVENE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"STRAWBERRY GLOW SCRUB Revitalizing Body Polish\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 200ML — kontrollo që të përputhet.",
+      "packSizeOurs": "200ML",
+      "packSizeFound": null,
+      "sourcePage": "https://biovene.de/products/strawberry-glow-scrub-revitalizing-body-polish",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2986/9566/products/MAIN_jar_scrub_GLOWSCRUB_STRAWBERRY_2021_3D.jpg?v=1632150011",
+      "licence": "Katalogu zyrtar i BIOVENE",
+      "matchScore": 0.8,
+      "file": ".image-cache/brands/0001_30073.jpg",
+      "bytes": 104823
+    },
+    {
+      "number": 2,
+      "code": "30082",
+      "name": "BIOVENE VITAMIN C SERUM 10% 30ML",
+      "barcode": "8436575094052",
+      "brand": "BIOVENE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"PAPAYA + VITAMIN C DEWY-BRIGHT! Smoothie Serum Sheet Mask with brightening Vitamin C, Papaya and Calendula\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30ML — kontrollo që të përputhet.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": null,
+      "sourcePage": "https://biovene.de/products/papaya-vitamin-c-dewy-bright-smoothie-serum-sheet-mask-with-brightening-vitamin-c-papaya-and-calendula",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2986/9566/files/06_PAPAYACALENDULAVITAMINC.jpg?v=1762966113",
+      "licence": "Katalogu zyrtar i BIOVENE",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_30082.jpg",
+      "bytes": 824118
+    },
+    {
+      "number": 3,
+      "code": "30083",
+      "name": "BIOVENE VITAMIN C SERUM 20 % 30ML",
+      "barcode": "8436575090085",
+      "brand": "BIOVENE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"PAPAYA + VITAMIN C DEWY-BRIGHT! Smoothie Serum Sheet Mask with brightening Vitamin C, Papaya and Calendula\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30ML — kontrollo që të përputhet.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": null,
+      "sourcePage": "https://biovene.de/products/papaya-vitamin-c-dewy-bright-smoothie-serum-sheet-mask-with-brightening-vitamin-c-papaya-and-calendula",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2986/9566/files/06_PAPAYACALENDULAVITAMINC.jpg?v=1762966113",
+      "licence": "Katalogu zyrtar i BIOVENE",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0003_30083.jpg",
+      "bytes": 824118
+    },
+    {
+      "number": 4,
+      "code": "140007",
+      "name": "BIOVENE LIP NPLUMPER CHERRY 8ML",
+      "barcode": "8436575094991",
+      "brand": "BIOVENE",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"0.5% RETINOL LIP MASK Cherry Anti-Aging Lip Treatment\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 8ML — kontrollo që të përputhet.",
+      "packSizeOurs": "8ML",
+      "packSizeFound": null,
+      "sourcePage": "https://biovene.de/products/0-5-retinol-lip-mask-cherry-anti-aging-lip-treatment",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2986/9566/files/EAN8436575095653RETINOLLIPMASK-BV-LIPTR03_1.jpg?v=1700760831",
+      "licence": "Katalogu zyrtar i BIOVENE",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0004_140007.jpg",
+      "bytes": 51745
+    }
+  ]
+}

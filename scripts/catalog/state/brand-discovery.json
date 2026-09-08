@@ -743,6 +743,78 @@
       "products": 5,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PAMPERS": {
+      "checkedAt": "2026-09-08T01:02:23.670Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ARAMA": {
+      "checkedAt": "2026-09-08T01:02:26.471Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "JAMEISON": {
+      "checkedAt": "2026-09-08T01:02:29.525Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PROMO PHARMA": {
+      "checkedAt": "2026-09-08T01:02:36.823Z",
+      "products": 4,
+      "store": "promopharma.it",
+      "note": "dyqan i hapur"
+    },
+    "NATURES": {
+      "checkedAt": "2026-09-08T01:02:41.088Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BIOVENE": {
+      "checkedAt": "2026-09-08T01:02:42.623Z",
+      "products": 4,
+      "store": "biovene.de",
+      "note": "dyqan i hapur"
+    },
+    "WHOLE SPECTRUM": {
+      "checkedAt": "2026-09-08T01:02:46.098Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OGX": {
+      "checkedAt": "2026-09-08T01:03:15.299Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ZEWA": {
+      "checkedAt": "2026-09-08T01:03:19.079Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OKEEFFES": {
+      "checkedAt": "2026-09-08T01:03:23.898Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "WIKEN FARMA": {
+      "checkedAt": "2026-09-08T01:03:40.757Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "REPLEK": {
+      "checkedAt": "2026-09-08T01:03:44.330Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }

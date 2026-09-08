@@ -117,6 +117,16 @@
       "brand": "CARROTEN",
       "store": "www.carroten.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "PROMO PHARMA",
+      "store": "promopharma.it",
+      "platform": "shopify"
+    },
+    {
+      "brand": "BIOVENE",
+      "store": "biovene.de",
+      "platform": "shopify"
     }
   ]
 }

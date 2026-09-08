@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-09-08T01:03:49.756Z",
+  "label": "markat-promo-pharma",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 5,
+    "downloaded": 5,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 2,
+      "E ulët": 3
+    },
+    "byBrand": {
+      "PROMO PHARMA": 5
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "14924",
+      "name": "VADO 30 STICKS",
+      "barcode": "xb0uz8",
+      "brand": "PROMO PHARMA",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Vado Sciroppo Dispositivo Medico - Stick\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://promopharma.it/products/vado-sciroppo-30-stick-lassativo-naturale",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/3739/6617/files/Vado-stick-DM.jpg?v=1740406900",
+      "licence": "Katalogu zyrtar i PROMO PHARMA",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0001_14924.jpg",
+      "bytes": 94181
+    },
+    {
+      "number": 2,
+      "code": "94996",
+      "name": "VADO STICK A10",
+      "barcode": "8057977341898",
+      "brand": "PROMO PHARMA",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Vado Sciroppo Dispositivo Medico - Stick\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://promopharma.it/products/vado-sciroppo-30-stick-lassativo-naturale",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/3739/6617/files/Vado-stick-DM.jpg?v=1740406900",
+      "licence": "Katalogu zyrtar i PROMO PHARMA",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_94996.jpg",
+      "bytes": 94181
+    },
+    {
+      "number": 3,
+      "code": "28181",
+      "name": "FERROPOCKET LIPOSOMAL",
+      "barcode": "8057977340334",
+      "brand": "PROMO PHARMA",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Ferro Pocket Liposomiale\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://promopharma.it/products/ferro-pocket-liposomiale",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/3739/6617/files/Liposomiali-Ferro-pocket---3D-new-2025-copia.png?v=1756486674",
+      "licence": "Katalogu zyrtar i PROMO PHARMA",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0003_28181.png",
+      "bytes": 964937
+    },
+    {
+      "number": 4,
+      "code": "222268",
+      "name": "KALCIO POCKET LIPOSOMAL A30 10ml",
+      "barcode": "8057977345261",
+      "brand": "PROMO PHARMA",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Kalcio Pocket Liposomiale\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 10ML — kontrollo që të përputhet.",
+      "packSizeOurs": "10ML",
+      "packSizeFound": null,
+      "sourcePage": "https://promopharma.it/products/kalcio-pocket-liposomiale",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/3739/6617/files/Liposomiali-Kalcio-pocket---3D-new-2025-copia.png?v=1756487437",
+      "licence": "Katalogu zyrtar i PROMO PHARMA",
+      "matchScore": 0.4,
+      "file": ".image-cache/brands/0004_222268.png",
+      "bytes": 1054647
+    },
+    {
+      "number": 5,
+      "code": "625422",
+      "name": "PROMOLASE 1000 QESE A20",
+      "barcode": "8057977341973",
+      "brand": "PROMO PHARMA",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Promolase 1000® Plus Magnesio e Potassio Zero Zucchero - 24 Stick\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://promopharma.it/products/promolase-1000®-plus-magnesio-e-potassio-zero-zucchero-24-stick",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/3739/6617/files/Promolase-1000-plus-magnesio-e-potassio-senza-zucchero.jpg?v=1734704432",
+      "licence": "Katalogu zyrtar i PROMO PHARMA",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0005_625422.jpg",
+      "bytes": 129643
+    }
+  ]
+}
