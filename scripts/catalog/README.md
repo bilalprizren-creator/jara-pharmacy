@@ -135,6 +135,29 @@ përputhjes rillogaritet pa e prekur dyqanin. Ruhet edhe gjatë rrugës, çdo 10
 faqe, që një ndërprerje të mos e humbasë orën. `--refresh` shkon sërish te
 dyqani — vetëm ashtu zëvendësohet kujtesa.
 
+### e) Fotografitë që sjell dikush tjetër
+
+Dy dorëzime të jashtme hyjnë me skriptet e veta, dhe të dyja kalojnë nëpër të
+njëjtin kontroll: a ekziston shifra te lista jonë, a është mall tregtar, a
+përputhet barkodi — dhe merren **vetëm artikujt që s'kanë ende fotografi**, që të
+mos përsëritet puna e bërë.
+
+```bash
+node scripts/catalog/import-kimi.mjs --dry-run          # agjenti Kimi
+python scripts/catalog/rescue-pdf-photos.py "9460 Produkte/…_008.pdf" --label gpt-008
+```
+
+- **Agjenti Kimi** dorëzoi 2.137 rreshta me fotografi te
+  `9460 Produkte/Kimi_Agent_9460 Product Image Retrieval/`. Prej tyre 456 janë
+  barna dhe rreth 1.200 i kishim tashmë; mbetën 467 artikuj të rinj, 376 me
+  barkodin e konfirmuar.
+- **Seritë si PDF (008, 009).** Seritë e mëparshme erdhën si .xlsx dhe lexohen
+  nga `rescue-gpt-photos.mjs`; këto erdhën si PDF. Një PDF nuk lexohet me mjetet
+  e projektit, prandaj ky është i vetmi skript me Python këtu (`pip install
+  pymupdf`). Fotografia çiftëzohet me rreshtin **sipas vendit në faqe**, jo sipas
+  radhës: mjafton një fotografi e humbur që radha të rrëshqasë dhe secili produkt
+  të marrë fotografinë e fqinjit.
+
 ## 4. Bashkimi — një fotografi për produkt
 
 ```bash
@@ -187,8 +210,9 @@ vetme mban gjithë katalogun; ndaji seritë me `--limit` vetëm nëse duhet.
 
 ## Ku është kufiri i kërkimit automatik
 
-Më 8 shtator 2026, pas një sweep-i të plotë: **3.918 nga 7.176 artikuj tregtarë
-kanë një fotografi (55 %)**, tre të katërtat e tyre foto studioje.
+Më 8 shtator 2026, pas një sweep-i të plotë dhe pas dy dorëzimeve të jashtme:
+**4.389 nga 7.176 artikuj tregtarë kanë një fotografi (61 %)**, mbi tre të
+katërtat e tyre foto studioje.
 
 Çka jep dhe çka nuk jep rezultat, e matur:
 

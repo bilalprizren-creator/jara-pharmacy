@@ -1,0 +1,33 @@
+{
+  "generatedAt": "2026-09-08T22:47:42.999607+02:00",
+  "label": "gpt-009",
+  "source": "Seri e jashtme fotografish (JARA_Fotografite_e_Produkteve_Seria_009.pdf)",
+  "totals": {
+    "pairs": 50,
+    "taken": 1,
+    "skipped": {
+      "unknown": 0,
+      "medicine": 0,
+      "have": 49,
+      "barcodeClash": 0,
+      "tooSmall": 0
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "52471",
+      "name": "TOMMEE TIPPEE SHISHE BLU ME SISTEM KUNDER GAZRAVE",
+      "barcode": "5010415225740",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"TOMMEE TIPPEE SHISHE BLU ME SISTEM KUNDER GAZRAVE\". Barkodi 5010415225740 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_009.pdf",
+      "file": ".image-cache/gpt-009/0001_52471.jpeg",
+      "bytes": 7690
+    }
+  ]
+}

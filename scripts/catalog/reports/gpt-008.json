@@ -1,0 +1,117 @@
+{
+  "generatedAt": "2026-09-08T22:47:42.247913+02:00",
+  "label": "gpt-008",
+  "source": "Seri e jashtme fotografish (JARA_Fotografite_e_Produkteve_Seria_008.pdf)",
+  "totals": {
+    "pairs": 50,
+    "taken": 7,
+    "skipped": {
+      "unknown": 0,
+      "medicine": 0,
+      "have": 43,
+      "barcodeClash": 0,
+      "tooSmall": 0
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "411847",
+      "name": "NO SWEAT ANTIPERSPIRANT GEL 50ML",
+      "barcode": "8683851502255",
+      "brand": "NO SWEAT",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"NO SWEAT ANTIPERSPIRANT GEL 50ML\". Barkodi 8683851502255 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0001_411847.jpeg",
+      "bytes": 8312
+    },
+    {
+      "number": 2,
+      "code": "411848",
+      "name": "NO SWEAT ANTIPERSPIRANT SPRAY 50ML",
+      "barcode": "8683851502019",
+      "brand": "NO SWEAT",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"NO SWEAT ANTIPERSPIRANT SPRAY 50ML\". Barkodi 8683851502019 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0002_411848.jpeg",
+      "bytes": 6119
+    },
+    {
+      "number": 3,
+      "code": "411849",
+      "name": "NO SWEAT FOOT AND SHOE POWDER",
+      "barcode": "8683851502026",
+      "brand": "NO SWEAT",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"NO SWEAT FOOT AND SHOE POWDER\". Barkodi 8683851502026 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0003_411849.jpeg",
+      "bytes": 4305
+    },
+    {
+      "number": 4,
+      "code": "41396",
+      "name": "LYSI CHILDRENS COD LIVER OIL MANGO SIR 240ML",
+      "barcode": "5690548868696",
+      "brand": "LYSI",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"LYSI CHILDRENS COD LIVER OIL MANGO SIR 240ML\". Barkodi 5690548868696 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0004_41396.jpeg",
+      "bytes": 8181
+    },
+    {
+      "number": 5,
+      "code": "24244",
+      "name": "TT CUCELL BIB ME RRJEDHJE TE NGADALSHME 0m+",
+      "barcode": "5010415211200",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"TT CUCELL BIB ME RRJEDHJE TE NGADALSHME 0m+\". Barkodi 5010415211200 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0005_24244.jpeg",
+      "bytes": 6106
+    },
+    {
+      "number": 6,
+      "code": "24299",
+      "name": "TT GERSHERE 0m+",
+      "barcode": "5010415330444",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"TT GERSHERE 0m+\". Barkodi 5010415330444 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0006_24299.jpeg",
+      "bytes": 5462
+    },
+    {
+      "number": 7,
+      "code": "20330",
+      "name": "TT GOTE 260ML",
+      "barcode": "5010415471307",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"TT GOTE 260ML\". Barkodi 5010415471307 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_008.pdf",
+      "file": ".image-cache/gpt-008/0007_20330.jpeg",
+      "bytes": 4535
+    }
+  ]
+}

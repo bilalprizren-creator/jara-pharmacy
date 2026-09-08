@@ -99,7 +99,8 @@ function originOf(file) {
   // a different thing from a customer's snapshot uploaded to a barcode
   // database, and counting both as "bazë" let the snapshot win ties.
   if (file.startsWith("depo") || file.startsWith("furnitor")) return "dyqan";
-  if (file.startsWith("gpt")) return "kerkim";
+  // Kërkimi i bërë produkt-për-produkt, qoftë në ChatGPT apo nga agjenti Kimi.
+  if (file.startsWith("gpt") || file.startsWith("kimi")) return "kerkim";
   return "bazë";
 }
 
