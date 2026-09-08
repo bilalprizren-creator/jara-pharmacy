@@ -887,6 +887,78 @@
       "products": 4,
       "store": "www.stemskincare.com",
       "note": "dyqan i hapur"
+    },
+    "NO SWEAT": {
+      "checkedAt": "2026-09-08T01:32:19.201Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DIETMED": {
+      "checkedAt": "2026-09-08T01:32:23.055Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NIKSEN": {
+      "checkedAt": "2026-09-08T01:32:26.554Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ALFA VITAMINS": {
+      "checkedAt": "2026-09-08T01:32:26.763Z",
+      "products": 3,
+      "store": "www.alfavitamins.com",
+      "note": "dyqan i hapur"
+    },
+    "KURTSAN": {
+      "checkedAt": "2026-09-08T01:32:32.393Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SKIN ACADEMY": {
+      "checkedAt": "2026-09-08T01:32:46.132Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PRETTY SMOOTH": {
+      "checkedAt": "2026-09-08T01:33:04.945Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MARVIS": {
+      "checkedAt": "2026-09-08T01:33:10.483Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NATURES AID": {
+      "checkedAt": "2026-09-08T01:33:14.607Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SAGAS": {
+      "checkedAt": "2026-09-08T01:33:22.075Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ROSSMAX": {
+      "checkedAt": "2026-09-08T01:33:25.598Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SUN WAVE PHARMA": {
+      "checkedAt": "2026-09-08T01:33:29.138Z",
+      "products": 3,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }

@@ -1,0 +1,56 @@
+{
+  "generatedAt": "2026-09-08T01:33:32.630Z",
+  "label": "markat-alfa-vitamins",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 1,
+      "E mesme": 1
+    },
+    "byBrand": {
+      "ALFA VITAMINS": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "16732",
+      "name": "ALFA VITAMINS DHEA CAPS 30X25MG",
+      "barcode": "676194972692",
+      "brand": "ALFA VITAMINS",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Genesisvit® DHEA 25 mg Premium Line - 60 Capsules\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "25MG",
+      "packSizeFound": "25MG",
+      "sourcePage": "https://www.alfavitamins.com/products/genesisvit®-dhea-25mg-premium-line-60-capsules",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2959/0336/products/96464DHEA.png?v=1632240089",
+      "licence": "Katalogu zyrtar i ALFA VITAMINS",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_16732.png",
+      "bytes": 1701873
+    },
+    {
+      "number": 2,
+      "code": "16742",
+      "name": "ALFA VITAMINS VITAMIN B12 TAB 30X500MCG",
+      "barcode": "676194972654",
+      "brand": "ALFA VITAMINS",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Apple Cider Vinegar Gummies with Vitamin B12 - Adult - 60 Gummies\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 12TABS — kontrollo që të përputhet.",
+      "packSizeOurs": "12TABS",
+      "packSizeFound": null,
+      "sourcePage": "https://www.alfavitamins.com/products/avc-gummies-60",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/2959/0336/files/98452--NEW--APPLECIDERVINEGAR60GUMMIES250CC6.png?v=1745003715",
+      "licence": "Katalogu zyrtar i ALFA VITAMINS",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_16742.png",
+      "bytes": 2492041
+    }
+  ]
+}
