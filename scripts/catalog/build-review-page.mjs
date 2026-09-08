@@ -30,9 +30,19 @@ const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const OUT_DIR = path.join(ROOT, ".catalog-cache");
 
-const THUMB_SIZE = 300;
-const THUMB_QUALITY = 74;
 const PAGE_LIMIT_MB = 16;
+
+/**
+ * Thumbnails shrink as the batch grows, because the whole page has to stay
+ * under the 16 MB ceiling and a batch that overflows it cannot be published at
+ * all. 240 px is still comfortably bigger than the card renders on a phone, so
+ * nothing is lost where it matters — at the shelf.
+ */
+function thumbFor(count) {
+  if (count > 2600) return { size: 200, quality: 66 };
+  if (count > 1500) return { size: 240, quality: 70 };
+  return { size: 300, quality: 74 };
+}
 
 async function main() {
   const args = readArgs(process.argv.slice(2));
@@ -49,6 +59,7 @@ async function main() {
   console.log(`\n  Prüfseite "${args.title}" — ${selected.length} Produkte`);
   console.log(`  ${"-".repeat(60)}`);
 
+  const thumb = thumbFor(selected.length);
   const items = [];
   const missing = [];
   const damaged = [];
@@ -61,11 +72,11 @@ async function main() {
 
     // One truncated download must not cost the whole batch: a photo that will
     // not decode is left out and listed, so it can be fetched again later.
-    let thumb;
+    let picture;
     try {
-      thumb = await sharp(file)
-        .resize(THUMB_SIZE, THUMB_SIZE, { fit: "inside", withoutEnlargement: true })
-        .webp({ quality: THUMB_QUALITY })
+      picture = await sharp(file)
+        .resize(thumb.size, thumb.size, { fit: "inside", withoutEnlargement: true })
+        .webp({ quality: thumb.quality })
         .toBuffer();
     } catch {
       damaged.push({ code: entry.code, file: entry.file, bytes: fs.statSync(file).size });
@@ -86,7 +97,7 @@ async function main() {
       // packshot. It is a hint for the reviewer, never a filter on our side.
       cilesia: typeof entry.quality === "number" ? entry.quality : null,
       vleresimi: entry.verdict || "",
-      foto: `data:image/webp;base64,${thumb.toString("base64")}`,
+      foto: `data:image/webp;base64,${picture.toString("base64")}`,
     });
     if ((index + 1) % 25 === 0) process.stdout.write(`     ${index + 1} Bilder aufbereitet\r`);
   }

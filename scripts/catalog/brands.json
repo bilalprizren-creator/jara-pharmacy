@@ -185,6 +185,38 @@
       "store": "www.farmatech.al",
       "platform": "woocommerce",
       "scope": "all"
+    },
+    {
+      "store": "www.farma-city.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 60
+    },
+    {
+      "store": "expresspharma.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "www.ditenate.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 30
+    },
+    {
+      "store": "shopstop.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 30
+    },
+    {
+      "store": "www.eapoteka.rs",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "/proizvod/",
+      "sitemap": "/sitemaps/products_1.xml",
+      "maxPages": 900
     }
   ]
 }

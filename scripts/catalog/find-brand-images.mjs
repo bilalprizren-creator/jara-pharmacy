@@ -95,7 +95,7 @@ async function main() {
       continue;
     }
 
-    const theirs = await loadStore(source);
+    const theirs = await loadStore(source, ours);
     if (!theirs.length) {
       console.log(`  ${label(source).padEnd(16)} — katalogu nuk u lexua dot (${source.store})`);
       continue;
@@ -206,8 +206,8 @@ async function main() {
 /*  Stores                                                             */
 /* ------------------------------------------------------------------ */
 
-async function loadStore(source) {
-  if (source.platform === "sitemap") return loadFromSitemap(source);
+async function loadStore(source, ours) {
+  if (source.platform === "sitemap") return loadFromSitemap(source, ours);
   if (source.platform === "woocommerce") return loadFromWooCommerce(source);
   if (source.platform !== "shopify") return [];
   const items = [];
@@ -242,18 +242,32 @@ async function loadStore(source) {
  * are fetched with a pause between them. It costs a few dozen requests per
  * brand, not thousands.
  */
-async function loadFromSitemap(source) {
+async function loadFromSitemap(source, ours = []) {
   const roots = [];
   for (const entry of await sitemapEntries(source)) {
     roots.push(...(await sitemapUrls(entry)));
   }
-  const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun)\//i;
+  const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun|proizvod)\//i;
   // A product page sits deeper than a section landing page, so require both the
   // path hint and a segment below it — otherwise every category page is fetched.
-  const candidates = [...new Set(roots.filter((url) => hint.test(url) && url.split("/").length > 5))].slice(
-    0,
-    source.maxPages ?? 150,
-  );
+  let candidates = [...new Set(roots.filter((url) => hint.test(url) && url.split("/").length > 5))];
+
+  // A ten-thousand-page catalogue cannot be crawled politely, and does not need
+  // to be: these URLs carry the product name in the slug, so the shortlist is
+  // built by reading the addresses — free — and only the pages that could
+  // actually match are ever fetched.
+  if (candidates.length > (source.maxPages ?? 150) && ours.length) {
+    const wanted = new Set();
+    for (const product of ours) {
+      const lead = [...tokens(product.name, "")].find((t) => t.length >= 5 && !GENERIC.has(t) && !/^[0-9]/.test(t));
+      if (lead) wanted.add(lead.toLowerCase());
+    }
+    candidates = candidates.filter((url) => {
+      const slug = url.split("/").pop().replace(/[^a-z0-9]+/gi, " ").toLowerCase();
+      return [...wanted].some((word) => slug.includes(word));
+    });
+  }
+  candidates = candidates.slice(0, source.maxPages ?? 150);
 
   const items = [];
   for (const url of candidates) {
@@ -316,7 +330,8 @@ function productSchema(html) {
  */
 async function loadFromWooCommerce(source) {
   const items = [];
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
+  // A general wholesaler can hold thousands, so the ceiling is per source.
+  for (let page = 1; page <= (source.maxPages ?? MAX_PAGES); page += 1) {
     const url = `https://${source.store}/wp-json/wc/store/products?per_page=100&page=${page}`;
     const payload = await fetchJson(url);
     if (!Array.isArray(payload) || !payload.length) break;
