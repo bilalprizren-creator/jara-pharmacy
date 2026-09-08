@@ -152,6 +152,11 @@
       "brand": "APIPHARMA",
       "store": "www.apipharma.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "ESI",
+      "store": "esi.it",
+      "platform": "shopify"
     }
   ]
 }

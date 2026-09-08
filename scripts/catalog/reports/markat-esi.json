@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-09-08T03:49:36.535Z",
+  "label": "markat-esi",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 0,
+    "downloaded": 0,
+    "failed": 0,
+    "byConfidence": {},
+    "byBrand": {}
+  },
+  "failed": [],
+  "photos": []
+}

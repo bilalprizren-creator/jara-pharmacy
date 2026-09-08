@@ -1535,6 +1535,78 @@
       "products": 1,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "STREPSILS": {
+      "checkedAt": "2026-09-08T03:47:54.102Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NOVARTIS": {
+      "checkedAt": "2026-09-08T03:48:04.991Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SUPPORT LINE": {
+      "checkedAt": "2026-09-08T03:48:11.731Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SWISS PARENTERALS": {
+      "checkedAt": "2026-09-08T03:48:32.355Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DODIR ZDRAVLJA": {
+      "checkedAt": "2026-09-08T03:48:34.981Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PHARMADAY PHARMACEUTICAL": {
+      "checkedAt": "2026-09-08T03:48:46.627Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "COLIEF": {
+      "checkedAt": "2026-09-08T03:48:56.525Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "TROMMSDORFF": {
+      "checkedAt": "2026-09-08T03:49:03.733Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DONVAS": {
+      "checkedAt": "2026-09-08T03:49:06.605Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "ESI": {
+      "checkedAt": "2026-09-08T03:49:10.238Z",
+      "products": 1,
+      "store": "esi.it",
+      "note": "dyqan i hapur"
+    },
+    "GOOD WILL": {
+      "checkedAt": "2026-09-08T03:49:14.146Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SANOFI": {
+      "checkedAt": "2026-09-08T03:49:34.967Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
