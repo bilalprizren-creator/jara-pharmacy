@@ -54,7 +54,7 @@ async function main() {
   const registry = JSON.parse(fs.readFileSync(BRANDS, "utf8")).burimet;
   const already = knownCodes();
 
-  const label = (entry) => entry.brand ?? entry.supplier;
+  const label = (entry) => entry.brand ?? entry.supplier ?? entry.store;
   const sources = args.brand
     ? registry.filter((entry) => (label(entry) ?? "").toUpperCase().includes(args.brand.toUpperCase()))
     : registry;
@@ -74,9 +74,16 @@ async function main() {
         // A source is keyed either by brand or by supplier. Supplier sources
         // are the local distributors, whose shop names the products exactly as
         // the ERP export does.
-        (source.supplier
-          ? product.supplier.toUpperCase().includes(source.supplier.toUpperCase())
-          : product.brand.toUpperCase() === source.brand.toUpperCase()) &&
+        // Three kinds of source. A brand catalogue is matched against that
+        // brand's products; a supplier's shop against what it delivers; and a
+        // general pharmacy wholesaler against everything, because it stocks the
+        // same assortment under the same local names whether or not it happens
+        // to be one of our own suppliers.
+        (source.scope === "all"
+          ? true
+          : source.supplier
+            ? product.supplier.toUpperCase().includes(source.supplier.toUpperCase())
+            : product.brand.toUpperCase() === source.brand.toUpperCase()) &&
         // --replace looks for a better picture of a product that already has
         // one. The barcode pass identifies products exactly but the photo
         // attached to a barcode is usually a contributor's snapshot, so for
@@ -96,7 +103,7 @@ async function main() {
 
     let found = 0;
     for (const product of ours) {
-      const match = bestMatch(product, theirs, source.brand ?? product.brand);
+      const match = bestMatch(product, theirs, source.brand ?? product.brand, source.scope === "all");
       if (!match) continue;
       candidates.push({ product, match, source });
       found += 1;
@@ -154,7 +161,7 @@ async function main() {
       confidence: sizeClash ? "E ulët" : strong ? "E mesme" : "E ulët",
       status: sizeClash || !strong ? "Mospërputhje" : "Për verifikim",
       note:
-        `Gjetur te katalogu i ${item.source.supplier ? "furnitorit" : "markës"} si "${item.match.title}". Përputhja është sipas emrit, ` +
+        `Gjetur te ${item.source.brand ? "katalogu i markës" : "katalogu i depos " + item.source.store} si "${item.match.title}". Përputhja është sipas emrit, ` +
         `jo barkodit — krahasoje me paketimin para se ta pranosh.` +
         (sizeClash
           ? ` KUJDES: ne kemi ${oursSize}, fotografia është e ${theirsSize} — i njëjti produkt, paketim tjetër.`
@@ -165,7 +172,7 @@ async function main() {
       packSizeFound: theirsSize,
       sourcePage: item.match.page,
       imageUrl: item.match.image,
-      licence: `Katalogu i ${item.source.brand ?? item.source.supplier}`,
+      licence: `Katalogu i ${item.source.brand ?? item.source.supplier ?? item.source.store}`,
       matchScore: Number(item.match.score.toFixed(2)),
       file: path.posix.join(".image-cache/brands", fileName),
       bytes,
@@ -394,9 +401,26 @@ async function fetchText(url) {
  * brand's shop shares it, so it carries no information and would only inflate
  * every score equally.
  */
-function bestMatch(product, catalogue, brand) {
+/**
+ * Words that describe a form or a claim rather than a product. Two items can
+ * share every one of these and still be unrelated — "CALAMINE LOTION 100ML"
+ * paired with "BITE FREE INSECT LOTION 100ML" on nothing but LOTION and the
+ * size. A general wholesaler's catalogue covers the whole assortment, so
+ * without this guard it produces confident-looking nonsense.
+ */
+const GENERIC = new Set([
+  "CREAM", "LOTION", "SPRAY", "SYRUP", "GEL", "OIL", "MILK", "FOAM", "WASH",
+  "CLEANSER", "SERUM", "BALM", "POWDER", "DROPS", "BUSTINA", "COMPRESSE",
+  "BABY", "KIDS", "PLUS", "FORTE", "DIRECT", "ACTIVE", "NATURA", "NATURAL",
+  "COMPLEX", "EXTRA", "ULTRA", "SOFT", "CARE", "DAILY", "FREE", "PURE",
+]);
+
+function bestMatch(product, catalogue, brand, requireIdentity = false) {
   const ours = tokens(product.name, brand);
   if (ours.size < 2) return null;
+  const lead = [...tokens(product.name, "")].find(
+    (token) => token.length >= 4 && !GENERIC.has(token) && !/^[0-9]/.test(token),
+  );
 
   let best = null;
   let bestScore = 0;
@@ -412,12 +436,23 @@ function bestMatch(product, catalogue, brand) {
       }
     }
     const score = shared / ours.size;
+    // A general catalogue must agree on a word that actually names the product,
+    // not only on its form and size.
+    // These names lead with what the product IS — "FRESUBIN VANILLE 200ML",
+    // "ALGEM MANUKA SED JUNIOR". So the leading word has to appear on both
+    // sides. Accepting any shared word instead paired Fresubin with a shower
+    // gel because both said VANILLE.
+    if (requireIdentity) {
+      if (!lead) continue;
+      if (![...theirs].some((other) => sameWord(lead, other))) continue;
+    }
     if (score > bestScore) {
       bestScore = score;
       best = entry;
     }
   }
-  return bestScore >= MIN_SCORE ? { ...best, score: bestScore } : null;
+  const floor = requireIdentity ? 0.6 : MIN_SCORE;
+  return bestScore >= floor ? { ...best, score: bestScore } : null;
 }
 
 const STOPWORDS = new Set([

@@ -10,7 +10,8 @@
     "NIVEA u hoq: faqja e saj jep fotografi reklamash (krem mbi lekure), jo fotografi produkti — mesatarja e pamjes doli 0.09.",
     "Harta e faqes lexohet nga robots.txt, jo me hamendje — keto marka e mbajne ne adresa jo standarde.",
     "Chicco, Avent, NUK, MAM, Suavinex, Wee Baby u hoqen: katalogjet e tyre lexohen, por emrat tane jane pershkrime shqip ('SHISHE STEPUP 0M+ PER VAJZA'), jo emra produktesh — perputhja del e gabuar (biberon -> detergjent). Problemi eshte te emrat tane, jo te burimi.",
-    "Burimet me 'supplier' jane depot vendore: emrat e produkteve ne listen tone vijne nga faturat e tyre, prandaj perputhja eshte e sakte."
+    "Burimet me 'supplier' jane depot vendore: emrat e produkteve ne listen tone vijne nga faturat e tyre, prandaj perputhja eshte e sakte.",
+    "Burimet me scope 'all' jane depo te pergjithshme farmaceutike: nuk jane furnitoret tane, por shesin te njejtat produkte me te njejtat emra lokale."
   ],
   "burimet": [
     {
@@ -179,6 +180,11 @@
       "supplier": "ONE GROUP",
       "store": "onegroup-ks.com",
       "platform": "woocommerce"
+    },
+    {
+      "store": "www.farmatech.al",
+      "platform": "woocommerce",
+      "scope": "all"
     }
   ]
 }
