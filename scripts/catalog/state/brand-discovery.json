@@ -527,6 +527,78 @@
       "products": 8,
       "store": "www.byebyeblemish.com",
       "note": "dyqan i hapur"
+    },
+    "DOVE": {
+      "checkedAt": "2026-09-08T00:22:00.275Z",
+      "products": 8,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FAVEDA": {
+      "checkedAt": "2026-09-08T00:22:05.932Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MOLLERS": {
+      "checkedAt": "2026-09-08T00:22:11.705Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "UNIREX": {
+      "checkedAt": "2026-09-08T00:22:20.847Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DUCRAY": {
+      "checkedAt": "2026-09-08T00:22:41.305Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "HEMOFARM": {
+      "checkedAt": "2026-09-08T00:22:43.843Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "MAXILIV": {
+      "checkedAt": "2026-09-08T00:23:03.920Z",
+      "products": 7,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NATURE PRESCRIPTION": {
+      "checkedAt": "2026-09-08T00:23:08.424Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "APIKOS": {
+      "checkedAt": "2026-09-08T00:23:10.906Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BOSNALIJEK": {
+      "checkedAt": "2026-09-08T00:23:15.892Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SALVUS": {
+      "checkedAt": "2026-09-08T00:23:19.977Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "HIPP": {
+      "checkedAt": "2026-09-08T00:23:23.481Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
