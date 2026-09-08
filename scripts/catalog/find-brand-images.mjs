@@ -54,8 +54,9 @@ async function main() {
   const registry = JSON.parse(fs.readFileSync(BRANDS, "utf8")).burimet;
   const already = knownCodes();
 
+  const label = (entry) => entry.brand ?? entry.supplier;
   const sources = args.brand
-    ? registry.filter((entry) => entry.brand.toUpperCase() === args.brand.toUpperCase())
+    ? registry.filter((entry) => (label(entry) ?? "").toUpperCase().includes(args.brand.toUpperCase()))
     : registry;
   if (!sources.length) {
     console.error(`\n  Marka "${args.brand}" nuk është në brands.json\n`);
@@ -70,7 +71,12 @@ async function main() {
     const ours = catalog.products.filter(
       (product) =>
         product.forWebsite &&
-        product.brand.toUpperCase() === source.brand.toUpperCase() &&
+        // A source is keyed either by brand or by supplier. Supplier sources
+        // are the local distributors, whose shop names the products exactly as
+        // the ERP export does.
+        (source.supplier
+          ? product.supplier.toUpperCase().includes(source.supplier.toUpperCase())
+          : product.brand.toUpperCase() === source.brand.toUpperCase()) &&
         // --replace looks for a better picture of a product that already has
         // one. The barcode pass identifies products exactly but the photo
         // attached to a barcode is usually a contributor's snapshot, so for
@@ -78,25 +84,25 @@ async function main() {
         (args.replace || !already.has(product.code)),
     );
     if (!ours.length) {
-      console.log(`  ${source.brand.padEnd(16)} — të gjitha kanë tashmë fotografi`);
+      console.log(`  ${label(source).padEnd(16)} — të gjitha kanë tashmë fotografi`);
       continue;
     }
 
     const theirs = await loadStore(source);
     if (!theirs.length) {
-      console.log(`  ${source.brand.padEnd(16)} — katalogu nuk u lexua dot (${source.store})`);
+      console.log(`  ${label(source).padEnd(16)} — katalogu nuk u lexua dot (${source.store})`);
       continue;
     }
 
     let found = 0;
     for (const product of ours) {
-      const match = bestMatch(product, theirs, source.brand);
+      const match = bestMatch(product, theirs, source.brand ?? product.brand);
       if (!match) continue;
       candidates.push({ product, match, source });
       found += 1;
     }
     console.log(
-      `  ${source.brand.padEnd(16)} ${String(found).padStart(4)} nga ${String(ours.length).padEnd(4)} produkte ` +
+      `  ${label(source).padEnd(16)} ${String(found).padStart(4)} nga ${String(ours.length).padEnd(4)} produkte ` +
         `(katalogu: ${theirs.length} artikuj)`,
     );
   }
@@ -148,7 +154,7 @@ async function main() {
       confidence: sizeClash ? "E ulët" : strong ? "E mesme" : "E ulët",
       status: sizeClash || !strong ? "Mospërputhje" : "Për verifikim",
       note:
-        `Gjetur te katalogu i markës si "${item.match.title}". Përputhja është sipas emrit, ` +
+        `Gjetur te katalogu i ${item.source.supplier ? "furnitorit" : "markës"} si "${item.match.title}". Përputhja është sipas emrit, ` +
         `jo barkodit — krahasoje me paketimin para se ta pranosh.` +
         (sizeClash
           ? ` KUJDES: ne kemi ${oursSize}, fotografia është e ${theirsSize} — i njëjti produkt, paketim tjetër.`
@@ -159,7 +165,7 @@ async function main() {
       packSizeFound: theirsSize,
       sourcePage: item.match.page,
       imageUrl: item.match.image,
-      licence: `Katalogu zyrtar i ${item.source.brand}`,
+      licence: `Katalogu i ${item.source.brand ?? item.source.supplier}`,
       matchScore: Number(item.match.score.toFixed(2)),
       file: path.posix.join(".image-cache/brands", fileName),
       bytes,
@@ -195,6 +201,7 @@ async function main() {
 
 async function loadStore(source) {
   if (source.platform === "sitemap") return loadFromSitemap(source);
+  if (source.platform === "woocommerce") return loadFromWooCommerce(source);
   if (source.platform !== "shopify") return [];
   const items = [];
   for (let page = 1; page <= MAX_PAGES; page += 1) {
@@ -287,6 +294,33 @@ function productSchema(html) {
     }
   }
   return null;
+}
+
+/**
+ * WooCommerce shops expose their catalogue through the public Store API, the
+ * same way Shopify does — one request per hundred products, names and pictures
+ * included.
+ *
+ * This is how the local distributors are read, and they are worth reading for a
+ * reason the brand catalogues never had: the article names in the ERP export
+ * come off these companies' own invoices, so their shop lists the products
+ * under the very same names. The Albanian-versus-Italian gap that made Chicco
+ * unmatchable simply does not exist here.
+ */
+async function loadFromWooCommerce(source) {
+  const items = [];
+  for (let page = 1; page <= MAX_PAGES; page += 1) {
+    const url = `https://${source.store}/wp-json/wc/store/products?per_page=100&page=${page}`;
+    const payload = await fetchJson(url);
+    if (!Array.isArray(payload) || !payload.length) break;
+    for (const product of payload) {
+      const image = product.images?.[0]?.src;
+      if (!image || !product.name) continue;
+      items.push({ title: decodeHtml(product.name), image, page: product.permalink ?? `https://${source.store}` });
+    }
+    await sleep(PAGE_PAUSE_MS);
+  }
+  return items;
 }
 
 /**
