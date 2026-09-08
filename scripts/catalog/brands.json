@@ -7,7 +7,9 @@
     "Platforma 'shopify' do të thotë se dyqani ka ndërfaqen publike /products.json.",
     "Markat qe bllokojne qasjen automatike (La Roche-Posay, Vichy kthejne 403) nuk perfshihen — ajo ndalese respektohet.",
     "Platforma 'sitemap' eshte per markat qe nuk kane Shopify: lexohet harta e faqes dhe merret fotografia nga vete faqja e produktit.",
-    "NIVEA u hoq: faqja e saj jep fotografi reklamash (krem mbi lekure), jo fotografi produkti — mesatarja e pamjes doli 0.09."
+    "NIVEA u hoq: faqja e saj jep fotografi reklamash (krem mbi lekure), jo fotografi produkti — mesatarja e pamjes doli 0.09.",
+    "Harta e faqes lexohet nga robots.txt, jo me hamendje — keto marka e mbajne ne adresa jo standarde.",
+    "Chicco, Avent, NUK, MAM, Suavinex, Wee Baby u hoqen: katalogjet e tyre lexohen, por emrat tane jane pershkrime shqip ('SHISHE STEPUP 0M+ PER VAJZA'), jo emra produktesh — perputhja del e gabuar (biberon -> detergjent). Problemi eshte te emrat tane, jo te burimi."
   ],
   "burimet": [
     {
@@ -171,12 +173,6 @@
       "store": "dermedic.pl",
       "platform": "sitemap",
       "pathHint": "/produkt"
-    },
-    {
-      "brand": "WEE BABY",
-      "store": "www.weebaby.com.tr",
-      "platform": "sitemap",
-      "pathHint": "/urun"
     }
   ]
 }

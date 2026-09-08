@@ -229,7 +229,10 @@ async function loadStore(source) {
  * brand, not thousands.
  */
 async function loadFromSitemap(source) {
-  const roots = await sitemapUrls(`https://${source.store}/sitemap.xml`);
+  const roots = [];
+  for (const entry of await sitemapEntries(source)) {
+    roots.push(...(await sitemapUrls(entry)));
+  }
   const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun)\//i;
   // A product page sits deeper than a section landing page, so require both the
   // path hint and a segment below it — otherwise every category page is fetched.
@@ -284,6 +287,28 @@ function productSchema(html) {
     }
   }
   return null;
+}
+
+/**
+ * Where a site actually keeps its sitemap. Guessing `/sitemap.xml` wrote off
+ * Chicco, Avent, NUK, MAM and Suavinex — 502 products — because every one of
+ * them keeps it somewhere else (`/sitemap_index.xml`, `/media/sitemap_de.xml`,
+ * `/sitemap_all.xml`). robots.txt is where a site declares that, so it is asked
+ * rather than guessed.
+ */
+async function sitemapEntries(source) {
+  if (source.sitemap) return [new URL(source.sitemap, `https://${source.store}`).href];
+
+  const robots = await fetchText(`https://${source.store}/robots.txt`);
+  const declared = robots
+    ? [...robots.matchAll(/^\s*Sitemap:\s*(\S+)/gim)].map((match) => match[1].trim())
+    : [];
+  // Several locales often share one robots.txt; the hint keeps us on ours.
+  const wanted = source.sitemapHint
+    ? declared.filter((url) => url.includes(source.sitemapHint))
+    : declared;
+  const chosen = (wanted.length ? wanted : declared).slice(0, 4);
+  return chosen.length ? chosen : [`https://${source.store}/sitemap.xml`];
 }
 
 /** Reads a sitemap, following one level of sitemap-index nesting. */
