@@ -1,0 +1,45 @@
+{
+  "generatedAt": "2026-09-08T12:36:27.563Z",
+  "label": "kerkim-01",
+  "source": "Kërkim në internet sipas emrit të produktit",
+  "totals": {
+    "tried": 2,
+    "found": 2,
+    "empty": 0
+  },
+  "empty": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "802752",
+      "name": "BELLS CALAMINE LOTION B.P 100ML",
+      "barcode": "",
+      "brand": "BELLS",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur me kërkim sipas emrit te www.alsultanpharmacy.com. Kontrollo që madhësia dhe varianti të përputhen me paketimin.",
+      "sourcePage": "https://www.alsultanpharmacy.com/products/bells-childrens-calamine-lotion-bp-100-ml",
+      "imageUrl": "http://www.alsultanpharmacy.com/cdn/shop/files/65196a0c9c441613fc9b3825_bells-childrens-calamine-lotion-bp-100-ml.webp?v=1746979871",
+      "licence": "Faqe e jashtme — www.alsultanpharmacy.com",
+      "file": ".image-cache/kerkim/802752.webp",
+      "bytes": 41248,
+      "quality": 1
+    },
+    {
+      "number": 2,
+      "code": "5052524",
+      "name": "ALGEM LENIMAG CREAM 100ML",
+      "barcode": "WZZZ3Z",
+      "brand": "ALGEM",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur me kërkim sipas emrit te www.xfarma.it. Kontrollo që madhësia dhe varianti të përputhen me paketimin.",
+      "sourcePage": "https://www.xfarma.it/lenimag-crema-lenitiva-pelle-sensibile-100-ml.html",
+      "imageUrl": "https://static.xfarma.it/media/catalog/product/cache/dd0769c0085881e806fefc24b9f75514/9/7/973077631-algem-natura-lenimag-crema-integratore-naturale-100ml.jpg",
+      "licence": "Faqe e jashtme — www.xfarma.it",
+      "file": ".image-cache/kerkim/5052524.jpg",
+      "bytes": 7175,
+      "quality": 1
+    }
+  ]
+}

@@ -1,0 +1,51 @@
+{
+  "generatedAt": "2026-09-08T12:37:18.649Z",
+  "label": "kerkim-02",
+  "source": "Kërkim në internet sipas emrit të produktit",
+  "totals": {
+    "tried": 3,
+    "found": 2,
+    "empty": 1
+  },
+  "empty": [
+    {
+      "code": "85354",
+      "name": "BELLS GLYCERIN OF BORAX 28ML BELLS",
+      "reason": "asnjë fotografi"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "76404",
+      "name": "ALGEM MANUKA SED JUNIOR SIR 200ML",
+      "barcode": "A971242490",
+      "brand": "ALGEM",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur me kërkim sipas emrit te fotopharmacy.com. Kontrollo që madhësia dhe varianti të përputhen me paketimin.",
+      "sourcePage": "https://fotopharmacy.com/product/algem-natura-manuka-sed-cough-junior-syrup-red-fruits-taste-200ml/",
+      "imageUrl": "https://fotopharmacy.com/wp-content/uploads/2021/02/8059173850228.jpg",
+      "licence": "Faqe e jashtme — fotopharmacy.com",
+      "file": ".image-cache/kerkim/76404.jpg",
+      "bytes": 22458,
+      "quality": 1
+    },
+    {
+      "number": 2,
+      "code": "7514.",
+      "name": "ALGEM MANUKA SPRAY GOLA 30ML",
+      "barcode": "WY844U",
+      "brand": "ALGEM",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur me kërkim sipas emrit te www.algemnatura.com. Kontrollo që madhësia dhe varianti të përputhen me paketimin.",
+      "sourcePage": "https://www.algemnatura.com/prodotto/manuka-spray-gola/",
+      "imageUrl": "https://www.algemnatura.com/wp-content/uploads/2025/02/1000x1000-Manuka-spray-gola-adulti-dolori-irritazione-gola-integratore-algem-spray-02.jpg",
+      "licence": "Faqe e jashtme — www.algemnatura.com",
+      "file": ".image-cache/kerkim/7514..jpg",
+      "bytes": 57013,
+      "quality": 0.91
+    }
+  ]
+}
