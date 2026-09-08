@@ -1751,6 +1751,48 @@
       "products": 1,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "EGIS": {
+      "checkedAt": "2026-09-08T04:32:33.351Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BION": {
+      "checkedAt": "2026-09-08T04:32:38.135Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PUFFIX": {
+      "checkedAt": "2026-09-08T04:32:40.347Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VIP": {
+      "checkedAt": "2026-09-08T04:32:48.672Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VITABIOMIX": {
+      "checkedAt": "2026-09-08T04:32:51.736Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "HERBORON": {
+      "checkedAt": "2026-09-08T04:32:53.879Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PASSION": {
+      "checkedAt": "2026-09-08T04:33:01.976Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }
