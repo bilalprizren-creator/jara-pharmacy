@@ -815,6 +815,78 @@
       "products": 4,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "TREPHARM": {
+      "checkedAt": "2026-09-08T01:17:21.282Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OCEAN": {
+      "checkedAt": "2026-09-08T01:17:26.895Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "OPTIBAC": {
+      "checkedAt": "2026-09-08T01:17:34.134Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FYSIOLINE": {
+      "checkedAt": "2026-09-08T01:17:36.484Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BALEN": {
+      "checkedAt": "2026-09-08T01:17:49.483Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PLAMECA": {
+      "checkedAt": "2026-09-08T01:17:56.084Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BIOBLAS": {
+      "checkedAt": "2026-09-08T01:18:00.014Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NUTRICIA": {
+      "checkedAt": "2026-09-08T01:18:04.524Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DR.SANTE": {
+      "checkedAt": "2026-09-08T01:18:08.666Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "LEK": {
+      "checkedAt": "2026-09-08T01:18:13.160Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SMOOTH": {
+      "checkedAt": "2026-09-08T01:18:42.823Z",
+      "products": 4,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "STEM SKINCARE": {
+      "checkedAt": "2026-09-08T01:18:43.023Z",
+      "products": 4,
+      "store": "www.stemskincare.com",
+      "note": "dyqan i hapur"
     }
   }
 }

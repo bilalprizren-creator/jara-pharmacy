@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-09-08T01:18:49.267Z",
+  "label": "markat-stem-skincare",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 4,
+    "downloaded": 4,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 4
+    },
+    "byBrand": {
+      "STEM SKINCARE": 4
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "2799",
+      "name": "STEM SKINCARE BODY SLILICONE SCRUB",
+      "barcode": "",
+      "brand": "STEM SKINCARE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Scrub silikoni për trup (Body Silicone Scrub)\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://www.stemskincare.com/products/brushe-silikoni-per-trup-masazhues-trupi-eksfoliues-i-bute-body-silicone-scrub",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0590/7677/1913/files/IMG_9645.jpg?v=1757424847",
+      "licence": "Katalogu zyrtar i STEM SKINCARE",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0001_2799.jpg",
+      "bytes": 130040
+    },
+    {
+      "number": 2,
+      "code": "78327",
+      "name": "STEM SKIN CARE PURE COLLAGEN 150G",
+      "barcode": "3909948480066",
+      "brand": "STEM SKINCARE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Pure Collagen powder 150g\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "150G",
+      "packSizeFound": "150G",
+      "sourcePage": "https://www.stemskincare.com/products/pure-collagen-powder-150g",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0590/7677/1913/files/Pure_Collagen.png?v=1757424226",
+      "licence": "Katalogu zyrtar i STEM SKINCARE",
+      "matchScore": 0.6,
+      "file": ".image-cache/brands/0002_78327.png",
+      "bytes": 4251199
+    },
+    {
+      "number": 3,
+      "code": "27772",
+      "name": "STEM SKINCARE HYALURONIC ACID +B5 SERUM",
+      "barcode": "3909948480059",
+      "brand": "STEM SKINCARE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Hyaluronic Acid+B5 Serum 30ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": "30ML",
+      "sourcePage": "https://www.stemskincare.com/products/hyaluronic-acid-b5-serum-30ml",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0590/7677/1913/files/Hyalornic_acid.png?v=1757424195",
+      "licence": "Katalogu zyrtar i STEM SKINCARE",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0003_27772.png",
+      "bytes": 8987175
+    },
+    {
+      "number": 4,
+      "code": "151116",
+      "name": "STEM SKIN CARE SALICYLIC ACID 2% SERUM 30ML",
+      "barcode": "3909948480073",
+      "brand": "STEM SKINCARE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Salicylic Acid 2% Serum 30ml\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": "30ML",
+      "sourcePage": "https://www.stemskincare.com/products/salicylic-acid-serum",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0590/7677/1913/files/Salicylic_acid.png?v=1757424148",
+      "licence": "Katalogu zyrtar i STEM SKINCARE",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0004_151116.png",
+      "bytes": 7319367
+    }
+  ]
+}

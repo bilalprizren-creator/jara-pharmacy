@@ -127,6 +127,11 @@
       "brand": "BIOVENE",
       "store": "biovene.de",
       "platform": "shopify"
+    },
+    {
+      "brand": "STEM SKINCARE",
+      "store": "www.stemskincare.com",
+      "platform": "shopify"
     }
   ]
 }
