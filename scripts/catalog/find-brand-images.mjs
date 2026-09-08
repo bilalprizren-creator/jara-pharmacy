@@ -130,7 +130,10 @@ async function main() {
 
   for (const [index, item] of candidates.entries()) {
     const extension = path.extname(new URL(item.match.image).pathname).toLowerCase() || ".jpg";
-    const fileName = `${String(index + 1).padStart(4, "0")}_${item.product.code}${extension}`;
+    // Article codes are not safe file names: real ones contain slashes
+    // ("SCY960/03"), which silently become directories and abort the run. The
+    // same trap was fixed in find-images.mjs and belonged here from the start.
+    const fileName = `${String(index + 1).padStart(4, "0")}_${safeName(item.product.code)}${extension}`;
     const target = path.join(IMAGE_DIR, fileName);
 
     let bytes;
@@ -142,7 +145,12 @@ async function main() {
         failed.push({ code: item.product.code, url: item.match.image });
         continue;
       }
-      fs.writeFileSync(target, buffer);
+      try {
+        fs.writeFileSync(target, buffer);
+      } catch (error) {
+        failed.push({ code: item.product.code, url: item.match.image, error: String(error.message) });
+        continue;
+      }
       bytes = buffer.length;
       await sleep(IMAGE_PAUSE_MS);
     }
@@ -643,6 +651,8 @@ function countBy(items, pick) {
   }
   return counts;
 }
+
+const safeName = (value) => String(value ?? "").replace(/[^A-Za-z0-9._-]+/g, "-");
 
 const sleep = (ms) => new Promise((resolve) => setTimeout(resolve, ms));
 
