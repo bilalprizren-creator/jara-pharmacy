@@ -158,7 +158,10 @@ async function main() {
     const strong = item.match.score >= GOOD_SCORE;
     const oursSize = packSize(item.product.name);
     const theirsSize = packSize(item.match.title);
-    const sizeClash = oursSize && theirsSize && oursSize !== theirsSize;
+    const oursAge = ageRange(item.product.name);
+    const theirsAge = ageRange(item.match.title);
+    const ageClash = oursAge && theirsAge && oursAge !== theirsAge;
+    const sizeClash = (oursSize && theirsSize && oursSize !== theirsSize) || ageClash;
     photos.push({
       number: photos.length + 1,
       code: item.product.code,
@@ -171,7 +174,9 @@ async function main() {
       note:
         `Gjetur te ${item.source.brand ? "katalogu i markës" : "katalogu i depos " + item.source.store} si "${item.match.title}". Përputhja është sipas emrit, ` +
         `jo barkodit — krahasoje me paketimin para se ta pranosh.` +
-        (sizeClash
+        (ageClash
+          ? ` KUJDES: ne kemi ${oursAge}, fotografia është e ${theirsAge} — moshë tjetër, produkt tjetër.`
+          : sizeClash
           ? ` KUJDES: ne kemi ${oursSize}, fotografia është e ${theirsSize} — i njëjti produkt, paketim tjetër.`
           : oursSize && !theirsSize
             ? ` Katalogu nuk e shënon madhësinë; jona është ${oursSize} — kontrollo që të përputhet.`
@@ -256,9 +261,11 @@ async function loadFromSitemap(source, ours = []) {
     roots.push(...(await sitemapUrls(entry)));
   }
   const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun|proizvod)\//i;
-  // A product page sits deeper than a section landing page, so require both the
-  // path hint and a segment below it — otherwise every category page is fetched.
-  let candidates = [...new Set(roots.filter((url) => hint.test(url) && url.split("/").length > 5))];
+  // A product page needs a segment below the hint, or every category landing
+  // page gets fetched. Depth 5 is "https://host/products/name" — anything
+  // shallower is a section, and requiring more than that quietly excluded every
+  // shop that keeps products one level down.
+  let candidates = [...new Set(roots.filter((url) => hint.test(url) && url.split("/").length >= 5))];
 
   // A ten-thousand-page catalogue cannot be crawled politely, and does not need
   // to be: these URLs carry the product name in the slug, so the shortlist is
@@ -289,7 +296,10 @@ async function loadFromSitemap(source, ours = []) {
     const image =
       product?.image ??
       html.match(/property="og:image"[^>]*content="([^"]+)"/)?.[1] ??
-      html.match(/content="([^"]+)"[^>]*property="og:image"/)?.[1];
+      html.match(/content="([^"]+)"[^>]*property="og:image"/)?.[1] ??
+      // Headless Shopify storefronts declare no og:image, but the packshot is
+      // still in the markup on the shop's CDN under a /products/ path.
+      html.match(/https?:\/\/cdn\.shopify\.com\/s\/files\/[^"'\s\)]+\/products\/[^"'\s\)]+\.(?:jpg|jpeg|png|webp)/i)?.[0];
     const title =
       product?.name ??
       html.match(/property="og:title"[^>]*content="([^"]+)"/)?.[1] ??
@@ -549,6 +559,21 @@ function tokens(value, brand) {
  * disagree, the reviewer is looking at the right product in the wrong bottle,
  * which is worth saying out loud rather than hiding behind a score.
  */
+/**
+ * Age range as printed on baby products: "0m+", "6M+", "+12 Muajsh", "3-36M".
+ * Without it every Tommee Tippee 260 ml bottle looks alike — one run paired six
+ * different bottles, from newborn to twelve months and in singles, twos and
+ * threes, with the same photo.
+ */
+function ageRange(value) {
+  const text = String(value ?? "").toUpperCase();
+  const span = text.match(/(\d{1,2})\s*[-–]\s*(\d{1,2})\s*M/);
+  if (span) return `${span[1]}-${span[2]}M`;
+  const from = text.match(/(?:\+\s*)?(\d{1,2})\s*M(?:UAJSH)?\s*\+|\+\s*(\d{1,2})\s*MUAJSH/);
+  if (from) return `${from[1] ?? from[2]}M+`;
+  return null;
+}
+
 function packSize(value) {
   const match = String(value ?? "")
     .toUpperCase()

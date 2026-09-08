@@ -253,6 +253,25 @@
       "platform": "woocommerce",
       "scope": "all",
       "maxPages": 40
+    },
+    {
+      "store": "parafarmaci.al",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 25
+    },
+    {
+      "store": "goldfarmaci.com",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 25
+    },
+    {
+      "store": "pernenat.shop",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "/products/",
+      "maxPages": 460
     }
   ]
 }
