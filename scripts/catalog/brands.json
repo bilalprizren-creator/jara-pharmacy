@@ -272,6 +272,31 @@
       "scope": "all",
       "pathHint": "/products/",
       "maxPages": 460
+    },
+    {
+      "store": "novapharm.org",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "pharmawest.al",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 25
+    },
+    {
+      "store": "www.mybaby.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "plutoni.store",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "/products/",
+      "maxPages": 4400
     }
   ]
 }

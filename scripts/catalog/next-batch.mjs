@@ -50,7 +50,12 @@ async function main() {
     fs.existsSync(MERGED) ? JSON.parse(fs.readFileSync(MERGED, "utf8")).photos.map((p) => p.code) : [],
   );
 
-  const known = new Set(registry.burimet.map((entry) => entry.brand.toUpperCase()));
+  // The registry holds two kinds of source: brand catalogues, and the shops
+  // that carry every brand at once. Only the first kind takes a brand off this
+  // list — a general shop is not a brand, and has no name to compare.
+  const known = new Set(
+    registry.burimet.filter((entry) => entry.brand).map((entry) => entry.brand.toUpperCase()),
+  );
   const pending = rankBrands(catalog, photographed).filter(
     (entry) => !known.has(entry.brand) && !state.tried[entry.brand],
   );
