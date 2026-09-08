@@ -137,6 +137,11 @@
       "brand": "ALFA VITAMINS",
       "store": "www.alfavitamins.com",
       "platform": "shopify"
+    },
+    {
+      "brand": "ESSENCE",
+      "store": "essence.de",
+      "platform": "shopify"
     }
   ]
 }
