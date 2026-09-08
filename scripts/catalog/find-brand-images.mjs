@@ -8,13 +8,18 @@
  * catalogs on their own shops, which is also the cleanest imagery we can get
  * without asking anyone: the manufacturer's own pictures of its own products.
  *
- * Matching here is by NAME, not barcode, because shop catalogs do not publish
- * barcodes. That is a weaker claim, and the code says so out loud: a photo
- * found this way never gets "E lartë" confidence, no matter how good the score.
- * Measured on BIBS, 81 % of our articles find a plausible counterpart and the
- * colour/size wording lines up ("SIZE 2 6-18M BLACK/WHITE" → "Colour Pacifiers
- * 2 Pack - Black/White") — good enough to put in front of a reviewer, never
- * good enough to publish unseen.
+ * Matching here is by NAME, not barcode, because shop catalogs mostly do not
+ * publish barcodes. That is a weaker claim, and the code says so out loud: a
+ * photo found this way never gets "E lartë" confidence, no matter how good the
+ * score. Measured on BIBS, 81 % of our articles find a plausible counterpart and
+ * the colour/size wording lines up ("SIZE 2 6-18M BLACK/WHITE" → "Colour
+ * Pacifiers 2 Pack - Black/White") — good enough to put in front of a reviewer,
+ * never good enough to publish unseen.
+ *
+ * The exception is the shop that writes the barcode into its SKU field, or
+ * declares it in its structured data — farma-city.al, mybaby.al and
+ * bebetei.ro all do. There the pairing is exact, and it is graded like a
+ * barcode lookup, because that is what it is.
  *
  * Stores are listed in `brands.json`. "shopify" means the shop exposes the
  * public `/products.json` endpoint, which is one request per 250 products
@@ -25,16 +30,20 @@
  *   node scripts/catalog/find-brand-images.mjs --brand BIBS
  *   node scripts/catalog/find-brand-images.mjs --label markat-01
  *   node scripts/catalog/find-brand-images.mjs --replace   # better photo for ones we have
+ *   node scripts/catalog/find-brand-images.mjs --refresh   # read the shop again, not the cache
  */
 import fs from "node:fs";
 import path from "node:path";
+import zlib from "node:zlib";
 import { fileURLToPath } from "node:url";
+import { hasValidCheckDigit } from "./lib/gs1.mjs";
 
 const HERE = path.dirname(fileURLToPath(import.meta.url));
 const ROOT = path.resolve(HERE, "..", "..");
 const DATA = path.join(HERE, "data", "albtrix-products.json");
 const BRANDS = path.join(HERE, "brands.json");
 const REPORT_DIR = path.join(HERE, "reports");
+const STATE_DIR = path.join(HERE, "state");
 const IMAGE_DIR = path.join(ROOT, ".image-cache", "brands");
 
 const USER_AGENT = "JaraPharmacy-ImageBot/1.0 (+https://jara-pharmacy.com)";
@@ -47,6 +56,13 @@ const MAX_PAGES = 12; // 3.000 products per store is plenty
 const MIN_SCORE = 0.4;
 /** At or above this the wording lines up well enough to lead the batch. */
 const GOOD_SCORE = 0.6;
+/**
+ * A general shop sells every brand, so its titles agree with ours by accident
+ * more often than a single brand's catalogue does. Everything it offers below
+ * this is left alone; between here and GOOD_SCORE the pairing still reaches the
+ * reviewer, but marked as a mismatch rather than as a find.
+ */
+const GENERAL_FLOOR = Number(process.env.JARA_GENERAL_FLOOR ?? 0.5);
 
 async function main() {
   const args = readArgs(process.argv.slice(2));
@@ -95,22 +111,44 @@ async function main() {
       continue;
     }
 
-    const theirs = await loadStore(source, ours);
+    const theirs = await loadStore(source, ours, args.refresh);
     if (!theirs.length) {
       console.log(`  ${label(source).padEnd(16)} — katalogu nuk u lexua dot (${source.store})`);
       continue;
     }
 
+    // Some shops publish the article's barcode as its SKU. Where they do, the
+    // guessing stops: a GTIN names one product worldwide, so that pairing is as
+    // certain as the barcode databases and is treated as such.
+    const byBarcode = new Map();
+    for (const entry of theirs) {
+      if (entry.barcode && !byBarcode.has(entry.barcode)) byBarcode.set(entry.barcode, entry);
+    }
+
     let found = 0;
+    let viaBarcode = 0;
     for (const product of ours) {
-      const match = bestMatch(product, theirs, source.brand ?? product.brand, source.scope === "all");
+      const exact = product.barcodeUsable ? byBarcode.get(String(product.barcode).trim()) : null;
+      const match = exact
+        ? { ...exact, score: 1, viaBarcode: true }
+        : // A brand's own catalogue may leave its name off its products, so the
+          // brand is taken out of both sides before comparing. A general shop
+          // is the opposite case: it sells every brand and writes the name into
+          // every title, exactly as our own list does — and removing it there
+          // was quietly fatal. Our names lead with the brand ("CHICCO VAJ 200
+          // ML"), that leading word is the one a general shop must also carry,
+          // and it had just been deleted from the shop's side, so every such
+          // product was thrown away unmatched.
+          bestMatch(product, theirs, source.scope === "all" ? "" : (source.brand ?? product.brand), source.scope === "all");
       if (!match) continue;
       candidates.push({ product, match, source });
       found += 1;
+      if (exact) viaBarcode += 1;
     }
     console.log(
       `  ${label(source).padEnd(16)} ${String(found).padStart(4)} nga ${String(ours.length).padEnd(4)} produkte ` +
-        `(katalogu: ${theirs.length} artikuj)`,
+        `(katalogu: ${theirs.length} artikuj${byBarcode.size ? `, ${byBarcode.size} me barkod` : ""})` +
+        (viaBarcode ? ` — ${viaBarcode} me barkod` : ""),
     );
   }
 
@@ -129,7 +167,11 @@ async function main() {
   const failed = [];
 
   for (const [index, item] of candidates.entries()) {
-    const extension = path.extname(new URL(item.match.image).pathname).toLowerCase() || ".jpg";
+    // A local catalogue hands over a file path, not an address.
+    const local = !/^https?:/i.test(item.match.image);
+    const extension =
+      (local ? path.extname(item.match.image) : path.extname(new URL(item.match.image).pathname)).toLowerCase() ||
+      ".jpg";
     // Article codes are not safe file names: real ones contain slashes
     // ("SCY960/03"), which silently become directories and abort the run. The
     // same trap was fixed in find-images.mjs and belonged here from the start.
@@ -140,7 +182,7 @@ async function main() {
     if (fs.existsSync(target) && fs.statSync(target).size >= MIN_IMAGE_BYTES) {
       bytes = fs.statSync(target).size;
     } else {
-      const buffer = await fetchBuffer(item.match.image);
+      const buffer = local ? readImage(item.match.image) : await fetchBuffer(item.match.image);
       if (!buffer || buffer.length < MIN_IMAGE_BYTES || !looksLikeImage(buffer)) {
         failed.push({ code: item.product.code, url: item.match.image });
         continue;
@@ -152,9 +194,12 @@ async function main() {
         continue;
       }
       bytes = buffer.length;
-      await sleep(IMAGE_PAUSE_MS);
+      if (!local) await sleep(IMAGE_PAUSE_MS);
     }
 
+    // A barcode match needs none of the hedging below: the GTIN identifies the
+    // article, so pack size and age cannot disagree.
+    const byBarcode = Boolean(item.match.viaBarcode);
     const strong = item.match.score >= GOOD_SCORE;
     const oursSize = packSize(item.product.name);
     const theirsSize = packSize(item.match.title);
@@ -168,12 +213,16 @@ async function main() {
       name: item.product.name,
       barcode: item.product.barcode,
       brand: item.product.brand,
-      // Never "E lartë": this is a name match, not a barcode match.
-      confidence: sizeClash ? "E ulët" : strong ? "E mesme" : "E ulët",
-      status: sizeClash || !strong ? "Mospërputhje" : "Për verifikim",
-      note:
-        `Gjetur te ${item.source.brand ? "katalogu i markës" : "katalogu i depos " + item.source.store} si "${item.match.title}". Përputhja është sipas emrit, ` +
+      // "E lartë" only where the shop published the barcode; a name match never
+      // earns it, however well the words line up.
+      confidence: byBarcode ? "E lartë" : sizeClash ? "E ulët" : strong ? "E mesme" : "E ulët",
+      status: !byBarcode && (sizeClash || !strong) ? "Mospërputhje" : "Për verifikim",
+      note: byBarcode
+        ? `Gjetur te ${item.source.brand ? "katalogu i markës" : "katalogu i depos " + item.source.store} si "${item.match.title}". ` +
+          `Barkodi ${item.product.barcode} përputhet saktësisht — i njëjti artikull. Krahasoje me paketimin para publikimit.`
+        : `Gjetur te ${item.source.brand ? "katalogu i markës" : "katalogu i depos " + item.source.store} si "${item.match.title}". Përputhja është sipas emrit, ` +
         `jo barkodit — krahasoje me paketimin para se ta pranosh.` +
+
         (ageClash
           ? ` KUJDES: ne kemi ${oursAge}, fotografia është e ${theirsAge} — moshë tjetër, produkt tjetër.`
           : sizeClash
@@ -219,8 +268,60 @@ async function main() {
 /*  Stores                                                             */
 /* ------------------------------------------------------------------ */
 
-async function loadStore(source, ours) {
-  if (source.platform === "sitemap") return loadFromSitemap(source, ours);
+/**
+ * A shop's catalogue, kept on disk after the first read.
+ *
+ * Reading plutoni.store means fetching four thousand product pages one at a
+ * time — over an hour of someone else's bandwidth. Every later improvement to
+ * the matching would ask for that hour again, so what the crawl learns (name,
+ * picture, barcode) is written to `state/` and reused. `--refresh` goes back to
+ * the shop; that is the only way the cache is ever replaced.
+ */
+async function loadStore(source, ours, refresh = false) {
+  if (source.platform === "local") return loadFromLocalCatalogue(source);
+
+  const cacheFile = path.join(STATE_DIR, `katalog-${safeName(source.store)}.json`);
+  let partial = [];
+  if (!refresh && fs.existsSync(cacheFile)) {
+    try {
+      const cached = JSON.parse(fs.readFileSync(cacheFile, "utf8"));
+      if (cached.items?.length && cached.complete !== false) {
+        console.log(`  ${(source.brand ?? source.supplier ?? source.store).padEnd(16)} — katalogu nga kujtesa (${cached.items.length} artikuj, ${cached.fetchedAt?.slice(0, 10)})`);
+        return cached.items;
+      }
+      // A crawl that was cut short left behind what it had managed. That is not
+      // the catalogue and is never used as one — but it is exactly the part that
+      // does not need reading a second time.
+      if (cached.items?.length) {
+        partial = cached.items;
+        console.log(`  ${(source.brand ?? source.supplier ?? source.store).padEnd(16)} — vazhdon leximin e ndërprerë (${partial.length} artikuj tashmë)`);
+      }
+    } catch {
+      // an unreadable cache is simply re-fetched
+    }
+  }
+
+  const items = await readStore(source, ours, cacheFile, partial);
+  if (items.length) saveCatalogue(cacheFile, source, items, true);
+  return items;
+}
+
+/** Writes the catalogue as it stands; `complete` says whether the crawl finished. */
+function saveCatalogue(cacheFile, source, items, complete) {
+  fs.mkdirSync(STATE_DIR, { recursive: true });
+  const payload = {
+    store: source.store,
+    platform: source.platform,
+    fetchedAt: new Date().toISOString(),
+    complete,
+    items,
+  };
+  fs.writeFileSync(cacheFile, `${JSON.stringify(payload, null, 2)}
+`, "utf8");
+}
+
+async function readStore(source, ours, cacheFile, partial = []) {
+  if (source.platform === "sitemap") return loadFromSitemap(source, ours, cacheFile, partial);
   if (source.platform === "woocommerce") return loadFromWooCommerce(source);
   if (source.platform !== "shopify") return [];
   const items = [];
@@ -236,6 +337,7 @@ async function loadStore(source, ours) {
         title: product.title,
         image,
         page: `https://${source.store}/products/${product.handle}`,
+        barcode: eanIn(product.variants?.[0]?.sku),
       });
     }
     await sleep(PAGE_PAUSE_MS);
@@ -255,10 +357,13 @@ async function loadStore(source, ours) {
  * are fetched with a pause between them. It costs a few dozen requests per
  * brand, not thousands.
  */
-async function loadFromSitemap(source, ours = []) {
+async function loadFromSitemap(source, ours = [], cacheFile = null, partial = []) {
   const roots = [];
   for (const entry of await sitemapEntries(source)) {
-    roots.push(...(await sitemapUrls(entry)));
+    // Appended one by one on purpose: a spread passes every address as a
+    // separate argument, and foleja's sitemap holds a quarter of a million of
+    // them — enough to overflow the call stack before a single page is read.
+    for (const url of await sitemapUrls(entry)) roots.push(url);
   }
   const hint = source.pathHint ? new RegExp(source.pathHint, "i") : /\/(products?|produkt[ye]?|urun|proizvod)\//i;
   // A product page needs a segment below the hint, or every category landing
@@ -276,6 +381,12 @@ async function loadFromSitemap(source, ours = []) {
     for (const product of ours) {
       const lead = [...tokens(product.name, "")].find((t) => t.length >= 5 && !GENERIC.has(t) && !/^[0-9]/.test(t));
       if (lead) wanted.add(lead.toLowerCase());
+      // In a foreign shop the leading word never appears — our names are
+      // Albanian and theirs are not. The brand is the one word both sides
+      // write the same way, and these slugs end with it
+      // ("...-baby-nova-p382275"), so it is the way in.
+      const brand = (product.brand ?? "").toLowerCase().replace(/[^a-z0-9]+/g, " ").trim();
+      if (brand.length >= 5) wanted.add(brand);
     }
     candidates = candidates.filter((url) => {
       const slug = url.split("/").pop().replace(/[^a-z0-9]+/gi, " ").toLowerCase();
@@ -284,9 +395,20 @@ async function loadFromSitemap(source, ours = []) {
   }
   candidates = candidates.slice(0, source.maxPages ?? 150);
 
-  const items = [];
+  const items = [...partial];
+  const done = new Set(partial.map((item) => item.page));
+  let read = 0;
   for (const url of candidates) {
+    if (done.has(url)) continue;
     const html = await fetchText(url);
+    read += 1;
+    // An hour-long crawl that saves only at the end has an hour to lose. Every
+    // hundred pages the catalogue so far is written out, marked unfinished so
+    // that half a shop is never mistaken for the whole one.
+    if (cacheFile && read % 100 === 0) {
+      saveCatalogue(cacheFile, source, items, false);
+      process.stdout.write(`     ${read} faqe të lexuara nga ${candidates.length}\r`);
+    }
     if (!html) continue;
     // These pages carry several JSON-LD blocks and the first "name" in the file
     // usually belongs to the FAQ schema, not the product — reading it naively
@@ -305,7 +427,7 @@ async function loadFromSitemap(source, ours = []) {
       html.match(/property="og:title"[^>]*content="([^"]+)"/)?.[1] ??
       html.match(/<title[^>]*>([^<]+)/)?.[1];
     if (!image || !title) continue;
-    items.push({ title: decodeHtml(title.trim()), image, page: url });
+    items.push({ title: decodeHtml(title.trim()), image, page: url, barcode: product?.barcode ?? null });
     await sleep(PAGE_PAUSE_MS);
   }
   return items;
@@ -329,10 +451,50 @@ function productSchema(html) {
       const types = [node["@type"]].flat();
       if (!types.includes("Product")) continue;
       const image = [node.image].flat().find((value) => typeof value === "string") ?? node.image?.url;
-      if (typeof node.name === "string" && image) return { name: node.name, image };
+      if (typeof node.name === "string" && image) {
+        // Shops that fill in structured data properly also declare the article's
+        // barcode there. It is the one field that identifies the product beyond
+        // doubt, so it is carried along wherever a page offers it.
+        const gtin = [node.gtin13, node.gtin, node.gtin12, node.gtin14, node.gtin8]
+          .map((value) => String(value ?? "").trim())
+          .find((value) => hasValidCheckDigit(value));
+        return { name: node.name, image, barcode: gtin ?? null };
+      }
     }
   }
   return null;
+}
+
+/**
+ * A catalogue that is already in this repository.
+ *
+ * The website was built from SHEMO's own catalogue — 1.569 products whose
+ * photos sit in `public/products/` and have been on the live site for months.
+ * The article codes differ from the ERP's, so nothing lined them up
+ * automatically, but the names come from the same distributor as the names in
+ * the ERP export: this is the source that finally speaks Albanian about
+ * "MASHTRUESE" and "SHISHE", which is exactly where the foreign brand
+ * catalogues gave up.
+ *
+ * No network, no politeness pause, and the picture is a file rather than an
+ * address — everything downstream treats it the same way.
+ */
+function loadFromLocalCatalogue(source) {
+  const entries = JSON.parse(fs.readFileSync(path.resolve(ROOT, source.file), "utf8"));
+  const items = [];
+  for (const entry of entries) {
+    if (!entry.name || !entry.image) continue;
+    // The catalogue stores web paths ("/products/x.png"); on disk they live
+    // under public/.
+    const file = path.join(ROOT, "public", entry.image.replace(/^\//, ""));
+    if (!fs.existsSync(file)) continue;
+    // The slug goes into the address even though the catalogue is a file: it is
+    // what tells one entry from another, and the merge reads "same page" as
+    // "same photo for several articles".
+    const home = entry.sourceUrl ?? `https://${source.store}`;
+    items.push({ title: entry.name, image: file, page: `${home}#${entry.slug ?? entry.productCode ?? entry.id}` });
+  }
+  return items;
 }
 
 /**
@@ -356,7 +518,12 @@ async function loadFromWooCommerce(source) {
     for (const product of payload) {
       const image = product.images?.[0]?.src;
       if (!image || !product.name) continue;
-      items.push({ title: decodeHtml(product.name), image, page: product.permalink ?? `https://${source.store}` });
+      items.push({
+        title: decodeHtml(product.name),
+        image,
+        page: product.permalink ?? `https://${source.store}`,
+        barcode: eanIn(product.sku),
+      });
     }
     await sleep(PAGE_PAUSE_MS);
   }
@@ -387,13 +554,13 @@ async function sitemapEntries(source) {
 
 /** Reads a sitemap, following one level of sitemap-index nesting. */
 async function sitemapUrls(url, depth = 0) {
-  const xml = await fetchText(url);
+  const xml = /\.gz($|\?)/i.test(url) ? await fetchGzippedText(url) : await fetchText(url);
   if (!xml) return [];
   const locs = [...xml.matchAll(/<loc>([^<]+)<\/loc>/g)].map((match) => match[1].trim());
   if (depth === 0 && /<sitemapindex/i.test(xml)) {
     const nested = [];
     for (const child of locs.slice(0, 8)) {
-      nested.push(...(await sitemapUrls(child, 1)));
+      for (const url of await sitemapUrls(child, 1)) nested.push(url);
       await sleep(PAGE_PAUSE_MS);
     }
     return nested;
@@ -408,6 +575,10 @@ const decodeHtml = (value) =>
     .replace(/&gt;/g, ">")
     .replace(/&quot;/g, '"')
     .replace(/&#0?39;|&apos;/g, "'")
+    .replace(/&nbsp;/g, " ")
+    // WordPress shops write their dashes as numeric entities, and the reviewer
+    // should read "Chicco – Dezinfektues", not "Chicco &#8211; Dezinfektues".
+    .replace(/&#(\d{2,5});/g, (_, code) => String.fromCodePoint(Number(code)))
     .replace(/\s*\|.*$/, ""); // page titles trail the brand after a pipe
 
 async function fetchText(url) {
@@ -419,6 +590,29 @@ async function fetchText(url) {
     });
     if (!response.ok) return null;
     return await response.text();
+  } catch {
+    return null;
+  }
+}
+
+/**
+ * A big shop compresses its sitemaps — foleja.com serves six `.xml.gz` files of
+ * fifty thousand addresses each. The file is gzip *content*, not a gzip
+ * *transfer*, so nothing unpacks it on the way in and reading it as text yields
+ * binary noise.
+ */
+async function fetchGzippedText(url) {
+  try {
+    const response = await fetch(url, {
+      headers: { "user-agent": USER_AGENT },
+      redirect: "follow",
+      signal: AbortSignal.timeout(40000),
+    });
+    if (!response.ok) return null;
+    const buffer = Buffer.from(await response.arrayBuffer());
+    // Some servers unpack it for us; then it is already plain XML.
+    if (buffer[0] !== 0x1f || buffer[1] !== 0x8b) return buffer.toString("utf8");
+    return zlib.gunzipSync(buffer).toString("utf8");
   } catch {
     return null;
   }
@@ -484,7 +678,7 @@ function bestMatch(product, catalogue, brand, requireIdentity = false) {
       best = entry;
     }
   }
-  const floor = requireIdentity ? 0.6 : MIN_SCORE;
+  const floor = requireIdentity ? GENERAL_FLOOR : MIN_SCORE;
   return bestScore >= floor ? { ...best, score: bestScore } : null;
 }
 
@@ -594,7 +788,36 @@ function sameWord(a, b) {
   if (a === b) return true;
   const shorter = a.length <= b.length ? a : b;
   const longer = shorter === a ? b : a;
-  return shorter.length >= 5 && longer.startsWith(shorter);
+  if (shorter.length >= 5 && longer.startsWith(shorter)) return true;
+  // Albanian spelling wanders: the same dummy is "MASHTRUESE" on our shelf and
+  // "Mashtruse" in the shop, and that one letter cost a whole baby catalogue.
+  // Long all-letter words may differ by one edit; a word with a digit in it
+  // (200ML, 1000MG) must still match exactly, because there the digit carries
+  // the meaning.
+  if (shorter.length >= 6 && !/\d/.test(a) && !/\d/.test(b)) return withinOneEdit(shorter, longer);
+  return false;
+}
+
+/** True when one word becomes the other by adding, dropping or changing a single letter. */
+function withinOneEdit(shorter, longer) {
+  if (longer.length - shorter.length > 1) return false;
+  let i = 0;
+  let j = 0;
+  let edits = 0;
+  while (i < shorter.length && j < longer.length) {
+    if (shorter[i] === longer[j]) {
+      i += 1;
+      j += 1;
+      continue;
+    }
+    edits += 1;
+    if (edits > 1) return false;
+    // Same length means a swapped letter; different lengths mean the longer
+    // word has one letter extra at this point.
+    if (shorter.length === longer.length) i += 1;
+    j += 1;
+  }
+  return edits + (longer.length - j) + (shorter.length - i) <= 1;
 }
 
 /* ------------------------------------------------------------------ */
@@ -633,6 +856,28 @@ async function fetchBuffer(url, attempt = 1) {
   }
 }
 
+/**
+ * A shop's SKU is its own article number — except where the shop simply reuses
+ * the barcode (farma-city and mybaby.al both do, one of them writing two of
+ * them joined by a dash). Only a run of digits that passes the GS1 check digit
+ * is accepted, so an in-house number is never mistaken for a GTIN.
+ */
+function eanIn(sku) {
+  for (const run of String(sku ?? "").match(/\d{8,14}/g) ?? []) {
+    if (hasValidCheckDigit(run)) return run;
+  }
+  return null;
+}
+
+/** The local counterpart of fetchBuffer: a missing file is a miss, not a crash. */
+function readImage(file) {
+  try {
+    return fs.readFileSync(file);
+  } catch {
+    return null;
+  }
+}
+
 function looksLikeImage(buffer) {
   const png = buffer.readUInt32BE(0) === 0x89504e47;
   const jpeg = buffer[0] === 0xff && buffer[1] === 0xd8;
@@ -663,6 +908,7 @@ function readArgs(argv) {
   return {
     dryRun: argv.includes("--dry-run"),
     replace: argv.includes("--replace"),
+    refresh: argv.includes("--refresh"),
     brand: flag("brand", ""),
     label: flag("label", `markat-${new Date().toISOString().slice(0, 10)}`),
   };

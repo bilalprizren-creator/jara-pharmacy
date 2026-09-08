@@ -1,0 +1,42 @@
+{
+  "generatedAt": "2026-09-08T15:35:53.556Z",
+  "label": "depo-vitamer-2",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 1,
+    "failed": 1,
+    "byConfidence": {
+      "E ulët": 1
+    },
+    "byBrand": {
+      "JUTAVIT": 1
+    }
+  },
+  "failed": [
+    {
+      "code": "57060",
+      "url": "https://vitamer-ks.com/wp-content/uploads/2020/04/Herbal-Urinary.avif"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "5237038",
+      "name": "JUTAVIT BETA GLUKAN KOMPLEX 70 KAPSULA",
+      "barcode": "5999887073960",
+      "brand": "JUTAVIT",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i depos vitamer-ks.com si \"Horny Goat Weed Complex 60 Kapsula\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://vitamer-ks.com/product/horny-goat-weed-complex/",
+      "imageUrl": "https://vitamer-ks.com/wp-content/uploads/2026/03/Website_master_png-SWP028_sku.png",
+      "licence": "Katalogu i VITAMER",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_5237038.png",
+      "bytes": 276820
+    }
+  ]
+}

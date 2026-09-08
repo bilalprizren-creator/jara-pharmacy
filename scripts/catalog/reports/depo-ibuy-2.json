@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-08T15:38:45.713Z",
+  "label": "depo-ibuy-2",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 2
+    },
+    "byBrand": {
+      "": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "123333",
+      "name": "MJALTE SAHIMRDAN 43G",
+      "barcode": "8680018421039",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos ibuy.al si \"Mjalte per energji Sahimerdan\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 43G — kontrollo që të përputhet.",
+      "packSizeOurs": "43G",
+      "packSizeFound": null,
+      "sourcePage": "https://ibuy.al/product/mjalte-per-energji-sahimerdan-energic-honey-blerje-online/",
+      "imageUrl": "https://ibuy.al/wp-content/uploads/2020/02/mjalte-per-energji-sahimerdan.jpg",
+      "licence": "Katalogu i ibuy.al",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0001_123333.jpg",
+      "bytes": 162368
+    },
+    {
+      "number": 2,
+      "code": "2232..",
+      "name": "UP-TOOTH NXERRJA E DHEMBIT M",
+      "barcode": "3904900860016",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos ibuy.al si \"Furce elektrike per dhembet &#8211; Electric toothbrush Shuke\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://ibuy.al/product/furce-elektrike-per-dhembet-electric-toothbrush-shuke/",
+      "imageUrl": "https://ibuy.al/wp-content/uploads/2020/09/furce-dhembesh-elektrike-blerje-online-iBuy-al.jpg",
+      "licence": "Katalogu i ibuy.al",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_2232...jpg",
+      "bytes": 61899
+    }
+  ]
+}

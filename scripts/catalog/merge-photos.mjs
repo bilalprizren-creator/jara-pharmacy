@@ -36,7 +36,8 @@ const REPORT_DIR = path.join(HERE, "reports");
 
 /** Higher wins when two photos score within TIE of each other. */
 const ORIGIN_RANK = {
-  marka: 3, // the manufacturer's own catalogue
+  marka: 4, // the manufacturer's own catalogue
+  dyqan: 3, // a shop that sells it — the maker's packshot, passed on
   kerkim: 2, // researched product by product
   bazë: 1, // community upload against a barcode
 };
@@ -94,6 +95,10 @@ function photosFrom(report) {
 
 function originOf(file) {
   if (file.startsWith("markat")) return "marka";
+  // The shops and the local distributors show the maker's own packshot; that is
+  // a different thing from a customer's snapshot uploaded to a barcode
+  // database, and counting both as "bazë" let the snapshot win ties.
+  if (file.startsWith("depo") || file.startsWith("furnitor")) return "dyqan";
   if (file.startsWith("gpt")) return "kerkim";
   return "bazë";
 }
@@ -161,6 +166,43 @@ chosen.forEach((item, position) => {
 });
 
 const withAlternatives = chosen.filter((item) => item.alternatives.length).length;
+/**
+ * One shop page answering for five of our articles is not five finds; it is one
+ * photo and four guesses. The age check inside the search already catches the
+ * baby-bottle case, but the pattern is more general — a shop name that is too
+ * plain pulls in everything around it — and it is only visible here, where every
+ * report meets. A photo claimed by three or more articles is handed to the
+ * reviewer as a mismatch; one matched by barcode is left alone, because there
+ * the code did the pairing, not the wording.
+ */
+const claims = new Map();
+for (const item of chosen) {
+  if (!item.sourcePage || /Barkodi \d+ përputhet/.test(item.note ?? "")) continue;
+  if (!claims.has(item.sourcePage)) claims.set(item.sourcePage, []);
+  claims.get(item.sourcePage).push(item.name);
+}
+/**
+ * Sizes are the honest exception. "MBATHJE ORTOPEDIKE KUQE 37" and "… 38" are
+ * one shoe in seven sizes, and the shop lists it once — so one photo answering
+ * for all of them is right, not sloppy. Strip the digits: if what remains is
+ * the same product name, it is a size family and nothing is wrong.
+ */
+const bare = (name) => name.replace(/[0-9]+/g, "").replace(/\s+/g, " ").trim().toUpperCase();
+const suspect = new Set();
+for (const [page, names] of claims) {
+  if (names.length < 3) continue;
+  if (new Set(names.map(bare)).size > 1) suspect.add(page);
+}
+let shared = 0;
+for (const item of chosen) {
+  const count = claims.get(item.sourcePage)?.length ?? 0;
+  if (!suspect.has(item.sourcePage)) continue;
+  shared += 1;
+  item.confidence = "E ulët";
+  item.status = "Mospërputhje";
+  item.note = `${item.note} KUJDES: e njëjta fotografi u përputh me ${count} produkte tona — emri i saj është shumë i përgjithshëm.`;
+}
+
 const report = {
   generatedAt: new Date().toISOString(),
   label: args.label,
@@ -169,6 +211,7 @@ const report = {
     products: chosen.length,
     withAlternatives,
     withoutUsableFile: missing.length,
+    sharedPhotos: shared,
     byVerdict: countBy(chosen, (item) => item.verdict),
     byOrigin: countBy(chosen, (item) => item.origin),
   },
@@ -179,6 +222,7 @@ fs.writeFileSync(path.join(REPORT_DIR, `${args.label}.json`), `${JSON.stringify(
 
 console.log(`     ${chosen.length} produkte me fotografinë më të mirë                `);
 console.log(`     ${withAlternatives} kanë edhe një alternativë në rezervë`);
+if (shared) console.log(`     ${shared} u shënuan: një fotografi për disa produkte`);
 console.log("\n  Cilësia e pamjes:");
 for (const [verdict, count] of Object.entries(report.totals.byVerdict)) {
   console.log(`     ${String(count).padStart(4)}  ${verdict}  (${Math.round((count / chosen.length) * 100)} %)`);

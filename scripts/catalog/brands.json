@@ -292,6 +292,62 @@
       "maxPages": 40
     },
     {
+      "store": "arditfarma.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "shop.spar.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "www.targetgroup-ks.com",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "www.shtepiaebebes.net",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "farmaon.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "blejonline.net",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "shemo-katalog.com",
+      "platform": "local",
+      "file": "src/data/imported/shemo-products.json",
+      "scope": "all"
+    },
+    {
+      "store": "www.foleja.com",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "/PVP-",
+      "maxPages": 1200
+    },
+    {
+      "store": "comenzi.bebetei.ro",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "-p[0-9]+$",
+      "maxPages": 1500
+    },
+    {
       "store": "plutoni.store",
       "platform": "sitemap",
       "scope": "all",

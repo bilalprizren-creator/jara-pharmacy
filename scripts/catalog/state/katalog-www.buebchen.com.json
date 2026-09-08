@@ -1,0 +1,451 @@
+{
+  "store": "www.buebchen.com",
+  "platform": "shopify",
+  "fetchedAt": "2026-09-08T14:49:10.382Z",
+  "items": [
+    {
+      "title": "Spaghetti Ice Cream Monster",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91882_Buebchen_Evoli_230ml_1500181_046_3D-P0_OS.png?v=1786450948",
+      "page": "https://www.buebchen.com/products/evoli",
+      "barcode": null
+    },
+    {
+      "title": "Bubble bath Heia Bubu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91974_Buebchen_Pokemon_Sachet_Pokeball_Schaumbad_25ml_1500176_125_3D_VS_OS.png?v=1786451189",
+      "page": "https://www.buebchen.com/products/schaumbad-pokeball",
+      "barcode": null
+    },
+    {
+      "title": "Spaghetti Ice Cream Monster",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91826_Buebchen_Blubberbagger_230ml_1500182_046_3D_P0_OS.png?v=1786451284",
+      "page": "https://www.buebchen.com/products/blubberbagger",
+      "barcode": null
+    },
+    {
+      "title": "Spaghetti Ice Cream Monster",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Wolkenzauber_230ml_1500025_023_VS_3D_OS.png?v=1786632391",
+      "page": "https://www.buebchen.com/products/evoli-kopie",
+      "barcode": null
+    },
+    {
+      "title": "Wound protection cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_SpezialWundschutz_75ml_1800074_114_EN_3D_VS_OS.png?v=1752155283",
+      "page": "https://www.buebchen.com/products/spezial-wundschutz-creme-kopie",
+      "barcode": null
+    },
+    {
+      "title": "Washing gel",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_WaschGel_400ml_1800075_114_EN_3D_P0_OS.png?v=1752155245",
+      "page": "https://www.buebchen.com/products/washing-gel",
+      "barcode": null
+    },
+    {
+      "title": "Nourishing cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Pflege_Creme_75ml_1800077_114_EN_3D_P0_OS.png?v=1752155328",
+      "page": "https://www.buebchen.com/products/nourishing-cream",
+      "barcode": null
+    },
+    {
+      "title": "Milk",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Milk_200ml_1800076_114_EN_3D_P0_OS.png?v=1752156257",
+      "page": "https://www.buebchen.com/products/milk-1",
+      "barcode": null
+    },
+    {
+      "title": "Baby Shampoo",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91462_BabyShampoo_200ml_12471240_3D_P0_OS.png?v=1787048955",
+      "page": "https://www.buebchen.com/products/baby-shampoo-1",
+      "barcode": null
+    },
+    {
+      "title": "Baby Oil",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_BabyOel_200ml_1800073_114_EN_3D_P0_OS.png?v=1752155189",
+      "page": "https://www.buebchen.com/products/baby-oil",
+      "barcode": null
+    },
+    {
+      "title": "Baby Bath",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_BabyBad_400ml_1800072_114_EN_3D_P0_OS.png?v=1752155061",
+      "page": "https://www.buebchen.com/products/baby-bath",
+      "barcode": null
+    },
+    {
+      "title": "Pikachu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91882_Buebchen_Pikachu_230ml_1500082_046_3D-P0_OS.png?v=1787055948",
+      "page": "https://www.buebchen.com/products/pikachu-1",
+      "barcode": null
+    },
+    {
+      "title": "Squirtle",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_Schiggy_230ml_1800084_114_EN_3D_P0_OS.png?v=1752158343",
+      "page": "https://www.buebchen.com/products/schiggy-1",
+      "barcode": null
+    },
+    {
+      "title": "Sports fan",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_Sportsfreund_230ml_1800080_114_EN_3D_P0_OS.png?v=1752158317",
+      "page": "https://www.buebchen.com/products/sports-fan",
+      "barcode": null
+    },
+    {
+      "title": "Princess Rosalea",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_PrinzessinRosalea_230ml_1800081_114_EN_3D_P0_OS.png?v=1752158381",
+      "page": "https://www.buebchen.com/products/princess-rosalea",
+      "barcode": null
+    },
+    {
+      "title": "Cola monster",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_Cola_Monster_230ml_1800082_114_EN_3D_P0_OS.png?v=1752158489",
+      "page": "https://www.buebchen.com/products/cola-monster",
+      "barcode": null
+    },
+    {
+      "title": "Ocean breeze",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_Meereszauber_230ml_1800079_114_EN_3D_P0_OS.png?v=1752158455",
+      "page": "https://www.buebchen.com/products/ocean-breeze",
+      "barcode": null
+    },
+    {
+      "title": "Baby powder",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89730_Buebchen_Wunderpuder_80g_Etikett_1800078_114_EN_VS_3D_OS.png?v=1752158275",
+      "page": "https://www.buebchen.com/products/baby-powder",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen SOS Special Wound Protection Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91865_Buebchen_SOS_Zink-Salbe_50ml_1500154_065_P0_3D_OS.png?v=1778142627",
+      "page": "https://www.buebchen.com/products/bubchen-sos-zinksalbe-1",
+      "barcode": null
+    },
+    {
+      "title": "Bubble bath Heia Bubu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/1500165-085_Buebchen_Badeschaum_Drachenzauber_V1_89905_3D_P0_OS.png?v=1761809577",
+      "page": "https://www.buebchen.com/products/schaumbad-drachenzauber",
+      "barcode": null
+    },
+    {
+      "title": "Bubble bath Heia Bubu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89960_Buebchen_Bluey_250ml_1500159_085_3D_P1_OS.png?v=1761571489",
+      "page": "https://www.buebchen.com/products/creme-schaumbad-bluey",
+      "barcode": null
+    },
+    {
+      "title": "Sea magic ",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89957_Buebchen_Bluey_250ml_1500161_085_3D_P1_OS.png?v=1761570583",
+      "page": "https://www.buebchen.com/products/shampoo-duschgel-bluey",
+      "barcode": "15001610"
+    },
+    {
+      "title": "Bübchen SOS Cold Bath",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/86921_Buebchen_SOS_Erkaeltungszeitbad_150ml_1500122_044_3D_P0_OS.png?v=1774349145",
+      "page": "https://www.buebchen.com/products/bubchen-sos-erkaltungszeit-bad",
+      "barcode": null
+    },
+    {
+      "title": "Bathing Friends Children's Care Set",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89362_Buebchen_Abenteuer_Kinderpflege_Set_gratis_Tattoos.jpg?v=1748263577",
+      "page": "https://www.buebchen.com/products/badefreunde-kinderpflege-set",
+      "barcode": null
+    },
+    {
+      "title": "Easy combing care",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/88561_Buebchen_Meereszauber_Leichtkaemmpflege_250ml_1500144_015_3D_P1_OS.png?v=1744199637",
+      "page": "https://www.buebchen.com/products/leichtkammpflege",
+      "barcode": null
+    },
+    {
+      "title": "Pokémon Dragonite Care Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/87576_Buebchen_Pflege_Creme_Pokemon_Dragoran_75ml_1500142_084_3D_P0_OS.png?v=1739363572",
+      "page": "https://www.buebchen.com/products/pokemon-dragoran-pflegecreme",
+      "barcode": null
+    },
+    {
+      "title": "Pokémon Legends (1 of 4)",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/DesignohneTitel_24.png?v=1787815510",
+      "page": "https://www.buebchen.com/products/pokemon-legends",
+      "barcode": null
+    },
+    {
+      "title": "Charmander",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Pokemon_Glumanda_230ml_1500106_023_3D_P0_OS.png?v=1787055815",
+      "page": "https://www.buebchen.com/products/glumanda",
+      "barcode": null
+    },
+    {
+      "title": "Aqua Touch wet wipes",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/92839_Buebchen_Feuchtetuecher_3er_WaterWipes_3D_1.jpg?v=1788782147",
+      "page": "https://www.buebchen.com/products/aqua-touch-feuchttuecher",
+      "barcode": null
+    },
+    {
+      "title": "Bubble bath Heia Bubu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/150013_2.png?v=1713790673",
+      "page": "https://www.buebchen.com/products/schaumbad-heia-bubu",
+      "barcode": null
+    },
+    {
+      "title": "Spaghetti Ice Cream Monster",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/DesignohneTitel_48.png?v=1788357714",
+      "page": "https://www.buebchen.com/products/spaghetti-eis-monster",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen SOS Special Wound Protection Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85387_Buebchen_SOS_Wundschutzcreme_75ml_1500002_093_3D_OS_P0.png?v=1710772357",
+      "page": "https://www.buebchen.com/products/bubchen-sos-spezial-wundschutz-creme",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen SOS Tummy Massage Ointment",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/86906_Buebchen_SOS_Baeuchleinmassagesalbe_50ml_1500121_044_3D_P0_OS.png?v=1715760090",
+      "page": "https://www.buebchen.com/products/bubchen-sos-bauchlein-massage-salbe",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen SOS Balm",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85393_Buebchen_SOS_Wunderbalsam_Etikett_20ml_1500125_113_3D_OS_P0.png?v=1710771847",
+      "page": "https://www.buebchen.com/products/bubchen-sos-balsam",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen SOS Aloe Vera Gel",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85388_Buebchen_SOS_Aloe_Vera_Gel_75ml_1500123_093_3D_P0_OS.png?v=1747928067",
+      "page": "https://www.buebchen.com/products/bubchen-sos-aloe-vera-gel",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen crayons",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/IMG_5980_1x1_634403e4-0ac9-4236-9a11-6386d048a64e.png?v=1708950811",
+      "page": "https://www.buebchen.com/products/bubchen-malkreide",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen Konjac Sponge",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/IMG_8341_1x1_9786d081-9022-4340-b7e3-70107a995269.png?v=1708950974",
+      "page": "https://www.buebchen.com/products/bubchen-konjac-schwamm",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen bath towel",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/BUEB_HANDTUCH_1200px_9de5a5dd-8c8e-4179-a24f-6165e6f0513e.jpg?v=1710427709",
+      "page": "https://www.buebchen.com/products/kopie-von-bubchen-malkreide",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen cosmetic bag",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/IMG_8176_1x1_cc23e26a-529f-4540-b3fd-8a6f053d16a8.png?v=1708950491",
+      "page": "https://www.buebchen.com/products/bubchen-kosmetiktasche",
+      "barcode": null
+    },
+    {
+      "title": "\"Welcome Baby\" - large starter set",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91631__1.jpg?v=1778161242",
+      "page": "https://www.buebchen.com/products/willkommen-baby-grosses-starter-set",
+      "barcode": null
+    },
+    {
+      "title": "Pink bath slime",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/82471_1500088_092_Badeglibber_Pink_3D_VS_OS.png?v=1694506826",
+      "page": "https://www.buebchen.com/products/monsterglibber-pink",
+      "barcode": "15000880"
+    },
+    {
+      "title": "Pokémon Child Care Set",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85001__4.jpg?v=1756474638",
+      "page": "https://www.buebchen.com/products/pokemon-kinderpflege-set",
+      "barcode": null
+    },
+    {
+      "title": "Bubble Bath Lapras",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/V1_1500174-083_Buebchen_Badeschaum_Lapras_91461_P0_3D_OS.png?v=1787057874",
+      "page": "https://www.buebchen.com/products/schaumbad-lapras",
+      "barcode": "15001740"
+    },
+    {
+      "title": "Bulbasaur",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Bisasam_230ml_RU_1500107_023_3D_P0_OS.png?v=1787055715",
+      "page": "https://www.buebchen.com/products/bisasm",
+      "barcode": null
+    },
+    {
+      "title": "Squirtle",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Schiggy_230ml_RU_1500083_062_3D_P0_OS.png?v=1787055877",
+      "page": "https://www.buebchen.com/products/schiggy",
+      "barcode": null
+    },
+    {
+      "title": "Bubble Bath Charizard",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/1500084-062_Buebchen_Badeschaum_Glurak_91649_3D_P0_OS.png?v=1787057959",
+      "page": "https://www.buebchen.com/products/schaumbad-glurak",
+      "barcode": null
+    },
+    {
+      "title": "Pikachu",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/90305_Buebchen_Pikachu_230ml_1500082_095_Oeko-Test_3D-P0_OS.png?v=1773651694",
+      "page": "https://www.buebchen.com/products/pikachu",
+      "barcode": null
+    },
+    {
+      "title": "Bübchen bag",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/IMG_7980_1x1_f85ded80-2138-4aa1-8065-e0d06604ab9b.jpg?v=1710427758",
+      "page": "https://www.buebchen.com/products/bubchen-tasche",
+      "barcode": null
+    },
+    {
+      "title": "Dream bathroom &amp; shower",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_TraumBad_500ml_1500041_033_3D_P0_OS.png?v=1787043294",
+      "page": "https://www.buebchen.com/products/traum-bad",
+      "barcode": null
+    },
+    {
+      "title": "Wind &amp; Weather Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/88288_Wind_und_Wettercreme_75ml_1500003_114_3D_OS_VS.png?v=1771838020",
+      "page": "https://www.buebchen.com/products/wind-und-wetter-creme",
+      "barcode": null
+    },
+    {
+      "title": "Wash &amp; Shower Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Wasch_Duschcreme_230ml_1500004_042_3D_P0_OS.png?v=1787049212",
+      "page": "https://www.buebchen.com/products/wasch-and-duschcreme",
+      "barcode": "15000040"
+    },
+    {
+      "title": "Wash Gel",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91462_WaschGel_400ml_12471482_052_P0_3D_OS.png?v=1787048420",
+      "page": "https://www.buebchen.com/products/wasch-gel",
+      "barcode": null
+    },
+    {
+      "title": "Dream World Child Care Set",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85001_Buebchen_Traumwelt_Kinderpflege_Set_gratis_Tattoos.jpg?v=1693833260",
+      "page": "https://www.buebchen.com/products/traumwelt-kinderpflege-set",
+      "barcode": null
+    },
+    {
+      "title": "Sports fan",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91461_Buebchen_Sportsfreund_230ml_RU_1500024_023_P0_3D_OS.png?v=1787056267",
+      "page": "https://www.buebchen.com/products/sportsfreund",
+      "barcode": null
+    },
+    {
+      "title": "Sun lotion SPF 50+",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89649_Buebchen_Sonnenlotion_100ml_1500167_095_3D_VS_OS.png?v=1775640105",
+      "page": "https://www.buebchen.com/products/sonnenlotion-lsf-50",
+      "barcode": null
+    },
+    {
+      "title": "Gentle darlings",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Sanfte_Lieblinge_230ml_1500029_024_P0_OS.png?v=1787056058",
+      "page": "https://www.buebchen.com/products/sanfte-lieblinge",
+      "barcode": null
+    },
+    {
+      "title": "Princess Rosalea ",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/88550_Buebchen_PrinzessinRosalea_230ml_1500022_015_P0_3D_OS.png?v=1748261740",
+      "page": "https://www.buebchen.com/products/prinzessin-rosalea",
+      "barcode": null
+    },
+    {
+      "title": "Care Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/88676__4.png?v=1755001074",
+      "page": "https://www.buebchen.com/products/buebchen-pflege-creme",
+      "barcode": null
+    },
+    {
+      "title": "Care Lotion",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_PflegeLotion_400ml_12471242_042_3D_P0_OS.png?v=1787054331",
+      "page": "https://www.buebchen.com/products/pflege-lotion",
+      "barcode": null
+    },
+    {
+      "title": "Milk",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91462_Milk_400ml_12471241_042_P0_3D_OS.png?v=1787054025",
+      "page": "https://www.buebchen.com/products/milk",
+      "barcode": null
+    },
+    {
+      "title": "Cuddle bath",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/150003_2.png?v=1713883128",
+      "page": "https://www.buebchen.com/products/kuschel-bad",
+      "barcode": null
+    },
+    {
+      "title": "Sea magic ",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91461_Buebchen_Meereszauber_230ml_1500018_112_P0_3D_OS.png?v=1787056150",
+      "page": "https://www.buebchen.com/products/meereszauber",
+      "barcode": null
+    },
+    {
+      "title": "Raspberry fun",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/88935_Buebchen_Himbeerspass_230ml_1500020_035_P0_OS.png?v=1787056400",
+      "page": "https://www.buebchen.com/products/himbeerspass",
+      "barcode": "15000200"
+    },
+    {
+      "title": "Children's Shampoo",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Buebchen_Kindershampoo_400ml_12471235_042_3D_P0_OS.png?v=1787048700",
+      "page": "https://www.buebchen.com/products/kinder-shampoo",
+      "barcode": null
+    },
+    {
+      "title": "Face Cream SPF 50+",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89649_Buebchen_Gesichtscreme_50ml_1500166_095_3D_VS_OS.png?v=1775640382",
+      "page": "https://www.buebchen.com/products/gesichtscreme-lsf-50",
+      "barcode": null
+    },
+    {
+      "title": "Cream Bath",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/81358_CremePflegebad_400ml_12471243_042_3D_P0_OS.png?v=1693298936",
+      "page": "https://www.buebchen.com/products/creme-pflegebad",
+      "barcode": null
+    },
+    {
+      "title": "Calendula facial care",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Bueb_1500008_101_Calendula-Gesichstpflege_75ml_3D_VS_OS.png?v=1786975813",
+      "page": "https://www.buebchen.com/products/calendula-gesichtspflege",
+      "barcode": null
+    },
+    {
+      "title": "Bathing laboratory",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/89638_Buebchen_Badelabor_FS_1500040_065_P0_Schraeg.png?v=1765584499",
+      "page": "https://www.buebchen.com/products/bade-labor",
+      "barcode": null
+    },
+    {
+      "title": "Bath &amp; Shampoo",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_Bad_Shampoo_400ml_12471481_042_3D_P0_OS.png?v=1787049516",
+      "page": "https://www.buebchen.com/products/bad-und-shampoo",
+      "barcode": null
+    },
+    {
+      "title": "Aqua Touch wet wipes monthly box",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/85001_Buebchen_Aqua_Touch_Feuchttuecher_Set.jpg?v=1693298196",
+      "page": "https://www.buebchen.com/products/aqua-touch-feuchttucher-monatsbox",
+      "barcode": null
+    },
+    {
+      "title": "Baby Diaper Cream",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/92298_WundschutzCreme_150ml_1500000_023_3D_P1_Oeko_OS.png?v=1787054640",
+      "page": "https://www.buebchen.com/products/baby-wundschutzcreme",
+      "barcode": null
+    },
+    {
+      "title": "Baby oil",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91462_BabyOel_200ml_12471234_032_P0_3D_OS.png?v=1787054197",
+      "page": "https://www.buebchen.com/products/buebchen-baby-oel",
+      "barcode": null
+    },
+    {
+      "title": "Baby Bath",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91649_BabyBad_1000ml_1000053_042_O_eko_3D_P0_OS.png?v=1783683969",
+      "page": "https://www.buebchen.com/products/baby-bad",
+      "barcode": null
+    },
+    {
+      "title": "Baby Shampoo",
+      "image": "https://cdn.shopify.com/s/files/1/0573/8820/4186/files/91462_BabyShampoo_200ml_12471240_3D_P0_OS_1.png?v=1787056652",
+      "page": "https://www.buebchen.com/products/baby-shampoo",
+      "barcode": null
+    }
+  ]
+}

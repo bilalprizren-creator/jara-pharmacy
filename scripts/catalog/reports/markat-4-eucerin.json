@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-08T14:50:57.761Z",
+  "label": "markat-4-eucerin",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 2
+    },
+    "byBrand": {
+      "EUCERIN": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "63001",
+      "name": "EUCERIN_63001_ pH5 LOSION PER TRUP 200ML",
+      "barcode": "4005800196423",
+      "brand": "EUCERIN",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Eucerin 10% Urea Body Lotion\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 200ML — kontrollo që të përputhet.",
+      "packSizeOurs": "200ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.eucerin.co.uk/products/urea-repair/10-percent-urea-lotion",
+      "imageUrl": "https://images-1.eucerin.com/~/media/eucerin%20relaunch%20media/media-center-items/e/3/6/5461fe601c24474185d4aae2b79a4718-screen.jpg",
+      "licence": "Katalogu i EUCERIN",
+      "matchScore": 0.4,
+      "file": ".image-cache/brands/0001_63001.jpg",
+      "bytes": 14535
+    },
+    {
+      "number": 2,
+      "code": "63003",
+      "name": "EUCERIN_63003_PH5 LOSION PER TRUP 400ML",
+      "barcode": "4005800196454",
+      "brand": "EUCERIN",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Eucerin 10% Urea Body Lotion\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 400ML — kontrollo që të përputhet.",
+      "packSizeOurs": "400ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.eucerin.co.uk/products/urea-repair/10-percent-urea-lotion",
+      "imageUrl": "https://images-1.eucerin.com/~/media/eucerin%20relaunch%20media/media-center-items/e/3/6/5461fe601c24474185d4aae2b79a4718-screen.jpg",
+      "licence": "Katalogu i EUCERIN",
+      "matchScore": 0.4,
+      "file": ".image-cache/brands/0002_63003.jpg",
+      "bytes": 14535
+    }
+  ]
+}

@@ -1,0 +1,175 @@
+{
+  "store": "solgar.de",
+  "platform": "shopify",
+  "fetchedAt": "2026-09-08T14:49:19.245Z",
+  "items": [
+    {
+      "title": "Curcumin - Kurzes Mindesthaltbarkeitsdatum",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Curcumin-Monatspackung-OS12602989_1.png?v=1776178956",
+      "page": "https://solgar.de/products/curcumin-kurzes-mindesthaltbarkeitsdatum",
+      "barcode": null
+    },
+    {
+      "title": "Beauty Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_Beauty-Bundle_OSSOB-1-1.png?v=1750161106",
+      "page": "https://solgar.de/products/beauty-bundle",
+      "barcode": null
+    },
+    {
+      "title": "Nachtkerzenöl",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Nachtkerzenol-12603538_1.png?v=1748762882",
+      "page": "https://solgar.de/products/nachtkerzenoel",
+      "barcode": null
+    },
+    {
+      "title": "Flohsamenschalen",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-FLohsamenschalen-Ballaststoffquelle-12603592_1.png?v=1748763034",
+      "page": "https://solgar.de/products/flohsamenschalen-500mg",
+      "barcode": null
+    },
+    {
+      "title": "Multi-One",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Multi-one-Multivitamin-Komplex-12603169_1.png?v=1748762934",
+      "page": "https://solgar.de/products/multi-one-multivitamin-komplex",
+      "barcode": "12603169"
+    },
+    {
+      "title": "Cranberry Plus",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Cranberry-Plus-Ester-C-12603184-CBP6_1.png?v=1748762987",
+      "page": "https://solgar.de/products/cranberry-plus-mit-ester-c",
+      "barcode": null
+    },
+    {
+      "title": "Biotin 1000 µg",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-BT15-12603593-Biotin_1.png?v=1748763083",
+      "page": "https://solgar.de/products/biotin",
+      "barcode": null
+    },
+    {
+      "title": "Vitamin B12",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Vitamin-B12_12603166_1.png?v=1748933528",
+      "page": "https://solgar.de/products/vitamin-b12",
+      "barcode": null
+    },
+    {
+      "title": "Vitamin B-Komplex",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-Vitamin-B-Komplex-Cholin-Inositol-VBK5-12603298_1.png?v=1748763138",
+      "page": "https://solgar.de/products/vitamin-b-komplex",
+      "barcode": null
+    },
+    {
+      "title": "Daily Essentials x Ekat",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_Ekat_Bundle_OSSOEKAT1-1.png?v=1750161448",
+      "page": "https://solgar.de/products/daily-essentials-x-ekat",
+      "barcode": null
+    },
+    {
+      "title": "Feel GUT Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_OSSOV_Feel_GUT_Bundle_1-1.png?v=1750161841",
+      "page": "https://solgar.de/products/feel-gut-bundle",
+      "barcode": null
+    },
+    {
+      "title": "Enzym-Komplex",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_ENK9_OS12563378_Enzym_Komplex_1.png?v=1768294476",
+      "page": "https://solgar.de/products/enzym-komplex",
+      "barcode": null
+    },
+    {
+      "title": "Immun Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_Immun_Bundle_OSSOI-1-1.png?v=1750161600",
+      "page": "https://solgar.de/products/immun-bundle",
+      "barcode": null
+    },
+    {
+      "title": "Energy Bundle",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_Energy_Bundle_OSSOE-1-1.png?v=1750161278",
+      "page": "https://solgar.de/products/energy-bundle",
+      "barcode": null
+    },
+    {
+      "title": "Zinkpicolinat",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_ZP21_12559723_Zinkpicolinat_1.png?v=1707213665",
+      "page": "https://solgar.de/products/zink-tabletten",
+      "barcode": null
+    },
+    {
+      "title": "Coenzym Q10 Ubiquinol 100 mg",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_CU15_OS12557477_Coenzym_Q10_Ubiquinol_1.png?v=1771586038",
+      "page": "https://solgar.de/products/coenzym-q10-ubiquinol",
+      "barcode": null
+    },
+    {
+      "title": "Eisen (Eisenbisglycinat)",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_EEB9_12563401_Eisen_1.png?v=1707210424",
+      "page": "https://solgar.de/products/eisenbisglycinat",
+      "barcode": "12563401"
+    },
+    {
+      "title": "Omega 3-6-9",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_OLB6_12557473_Omega_3_6_9_1.png?v=1741947897",
+      "page": "https://solgar.de/products/omega-3-6-9-kapseln",
+      "barcode": null
+    },
+    {
+      "title": "Curcumin",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_VSC9_12557474_Vollspektrum_Curcumin_1.png?v=1746082213",
+      "page": "https://solgar.de/products/kurkuma-kapseln",
+      "barcode": null
+    },
+    {
+      "title": "Vitamin D3 Kapseln",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_VD61_12557475_Vitamin_D3_1.png?v=1707213600",
+      "page": "https://solgar.de/products/vitamin-d3-kapseln",
+      "barcode": null
+    },
+    {
+      "title": "Folsäure (Folat) Tabletten",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_FM41_12557476_Folat_Folssaeure_1.png?v=1707211778",
+      "page": "https://solgar.de/products/folsaure-tabletten",
+      "barcode": null
+    },
+    {
+      "title": "Mikrobiotischer Komplex",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_MBK6_12557478_Mikrobiotischer_Komplex_1.png?v=1707213502",
+      "page": "https://solgar.de/products/kulturen-komplex",
+      "barcode": null
+    },
+    {
+      "title": "Ester-C Plus 500 mg",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-EP55-12602731-Ester_C_Plus_500_1.png?v=1748763452",
+      "page": "https://solgar.de/products/ester-c-kapseln",
+      "barcode": null
+    },
+    {
+      "title": "Ester-C Plus 1000 mg",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar-EP13-12603594-Ester_C_Plus_1.png?v=1748763571",
+      "page": "https://solgar.de/products/ester-c",
+      "barcode": null
+    },
+    {
+      "title": "Omega-3 Fischöl - hochdosiert",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_OFH5_12557456_Omega_3_Fischoel_Hochdosiert_1.png?v=1741948156",
+      "page": "https://solgar.de/products/omega-3-fischoel",
+      "barcode": null
+    },
+    {
+      "title": "Haut-Haare-Nägel Komplex",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_HHN6_12559724_Haut_Haare_Naegel_Komplex_1.png?v=1741948176",
+      "page": "https://solgar.de/products/tabletten-haut-und-haare",
+      "barcode": null
+    },
+    {
+      "title": "Magnesiumcitrat",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_MC26_12559721_Magnesiumcitrat_1.png?v=1741948187",
+      "page": "https://solgar.de/products/magnesium-tabletten",
+      "barcode": null
+    },
+    {
+      "title": "Collagen-Hyaluronsäure-Complex",
+      "image": "https://cdn.shopify.com/s/files/1/0556/3328/1349/files/Solgar_CHK3_12559720_Collagen_Hyaluronsaeure_Komplex_1.png?v=1707210296",
+      "page": "https://solgar.de/products/collagen-komplex",
+      "barcode": null
+    }
+  ]
+}

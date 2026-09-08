@@ -1,0 +1,73 @@
+{
+  "generatedAt": "2026-09-08T14:48:31.665Z",
+  "label": "markat-4-bibs",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 3,
+    "downloaded": 3,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 3
+    },
+    "byBrand": {
+      "BIBS": 3
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "825189",
+      "name": "BIBS SIZE1 0-6M BLUSH/VANILA",
+      "barcode": "5713795020072",
+      "brand": "BIBS",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Supreme Pacifiers 4 Pack - Ivory/Vanilla/Blush/Woodchuck\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://bibsworld.com/products/supreme-4-pack-ivory-vanilla-blush-woodchuck",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0498/1184/9373/files/270435_1.png?v=1786612225",
+      "licence": "Katalogu i BIBS",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0001_825189.png",
+      "bytes": 453237
+    },
+    {
+      "number": 2,
+      "code": "78668",
+      "name": "BIBS SIZE1 0+M BLUE/BABY BLUE",
+      "barcode": "5713795110216",
+      "brand": "BIBS",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"STUDIO Pacifier Box Caterpillar Beetle Mix - Baby Blue\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://bibsworld.com/products/studio-pacifier-box-caterpillar-beetle-mix-baby-blue",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0498/1184/9373/files/420050231_5713795286768_BIBS_Studio_PacifierBox_1pack_OS_CaterpillarBeetleMix_BabyBlue_1.png?v=1787578026",
+      "licence": "Katalogu i BIBS",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_78668.png",
+      "bytes": 855073
+    },
+    {
+      "number": 3,
+      "code": "478819",
+      "name": "BIBS SIZE 2 HAZE/BLASSOM",
+      "barcode": "5713795214907",
+      "brand": "BIBS",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"De Lux Pacifiers 2 Pack - Haze/Blossom\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://bibsworld.com/products/bibs-de-lux-2-pack-haze-blossom",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0498/1184/9373/products/150229_5713795217243_BIBS_DE_LUX_PACK_Haze_Blossom_2_1000x1000_90db1ba9-2a3e-4027-9fa8-8d9e5b0d005b.png?v=1786609938",
+      "licence": "Katalogu i BIBS",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0003_478819.png",
+      "bytes": 264078
+    }
+  ]
+}

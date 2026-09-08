@@ -39,6 +39,12 @@ const PAGE_LIMIT_MB = 16;
  * nothing is lost where it matters — at the shelf.
  */
 function thumbFor(count) {
+  // Measured: a card costs roughly (size/40)² bytes in WebP, so the ceiling is
+  // reached around 2.700 products at 200 px. The catalogue passed that once the
+  // local shops came in, hence the two smaller steps — 170 px still fills the
+  // 158 px card a phone actually draws.
+  if (count > 4800) return { size: 150, quality: 58 };
+  if (count > 3400) return { size: 170, quality: 62 };
   if (count > 2600) return { size: 200, quality: 66 };
   if (count > 1500) return { size: 240, quality: 70 };
   return { size: 300, quality: 74 };

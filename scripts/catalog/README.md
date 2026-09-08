@@ -93,6 +93,48 @@ asnjë fotografi nga ky burim nuk merr kurrë besueshmëri "E lartë".
 Markat janë në [`brands.json`](brands.json). Të matura te BIBS: 81 % e produkteve
 gjejnë një përputhje të besueshme, me ngjyrat që përkojnë saktë.
 
+### c) Nga dyqanet vendore — gjuha jonë
+
+Markat e huaja i shkruajnë produktet në italisht ose anglisht; lista jonë i
+shkruan shqip ("SHISHE STEPUP 0M+ PER VAJZA"). Prandaj burimi që zgjidh
+grupin më të madh që mbeti — Chicco, Avent, NUK, MAM, Suavinex, Wee Baby — nuk
+është prodhuesi, por dyqani vendor: `farma-city.al`, `ditenate.al`,
+`targetgroup-ks.com`, `mybaby.al`, `plutoni.store`, `novapharm.org` e të tjerë
+shesin të njëjtat produkte me të njëjtat emra. Këto hyjnë në `brands.json` me
+`"scope": "all"`.
+
+Dy gjëra e bënë këtë burim të përdorshëm:
+
+- **Barkodi te SKU-ja.** `farma-city.al` dhe `mybaby.al` e shkruajnë barkodin
+  në fushën e artikullit. Aty nuk hamendësohet asgjë: GTIN-i e emërton
+  produktin në gjithë botën, prandaj këto fotografi marrin besueshmëri
+  **E lartë**, njësoj si nga bazat me barkod. Te farma-city 318 nga 322
+  fotografitë erdhën kështu.
+- **Një shkronjë ndryshim.** "MASHTRUESE" te ne, "Mashtruse" te dyqani —
+  fjalët e gjata me vetëm shkronja lejohen të ndryshojnë për një shkronjë.
+  Fjalët me shifra (200ML, 1000MG) duhet të përputhen saktësisht, sepse aty
+  shifra është kuptimi.
+
+### d) Katalogu ynë i vjetër (pa internet fare)
+
+```bash
+node scripts/catalog/find-brand-images.mjs --brand shemo-katalog --label depo-shemo
+```
+
+Faqja u ndërtua nga katalogu i SHEMO-s: 1.569 produkte, me fotografitë te
+`public/products/`. Kodet e artikujve nuk përputhen me ato të ERP-së, prandaj
+askush nuk i kishte lidhur — por emrat vijnë nga i njëjti distributor. Burimi me
+`"platform": "local"` lexon pikërisht atë skedar; s'ka rrjet, s'ka pritje.
+
+### Kujtesa e katalogëve
+
+Leximi i një dyqani me hartë faqeje do të thotë katër mijë faqe, një nga një —
+mbi një orë. Prandaj çka mëson leximi (emri, fotografia, barkodi) ruhet te
+`state/katalog-<dyqani>.json` dhe ripërdoret; çdo përmirësim i mëvonshëm i
+përputhjes rillogaritet pa e prekur dyqanin. Ruhet edhe gjatë rrugës, çdo 100
+faqe, që një ndërprerje të mos e humbasë orën. `--refresh` shkon sërish te
+dyqani — vetëm ashtu zëvendësohet kujtesa.
+
 ## 4. Bashkimi — një fotografi për produkt
 
 ```bash
@@ -102,8 +144,9 @@ node scripts/catalog/merge-photos.mjs
 I bashkon të gjitha raportet në një listë të vetme: një hyrje për produkt, me
 fotografinë më të mirë. Zgjedhja bëhet sipas pamjes (`lib/packshot.mjs`), dhe
 kur dy foto janë afër njëra-tjetrës, fiton burimi më i besueshëm — katalogu i
-prodhuesit para kërkimit të bërë një nga një, e ai para ngarkimit të një
-përdoruesi te baza me barkod.
+prodhuesit, pastaj dyqani që e shet (edhe ai e merr fotografinë nga prodhuesi),
+pastaj kërkimi i bërë një nga një, dhe në fund ngarkimi i një përdoruesi te baza
+me barkod.
 
 Fotot që humbin nuk fshihen: raporti i mban si alternativa, që të ketë ku të
 kthehet kontrolluesi nëse e refuzon të parën.

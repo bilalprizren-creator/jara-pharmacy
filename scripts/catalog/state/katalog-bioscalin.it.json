@@ -1,0 +1,163 @@
+{
+  "store": "bioscalin.it",
+  "platform": "shopify",
+  "fetchedAt": "2026-09-08T14:49:28.051Z",
+  "items": [
+    {
+      "title": "Spray protettivo capelli",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-benesseresole-spray.png?v=1769087897",
+      "page": "https://bioscalin.it/products/spray-protettivo-capelli-sole",
+      "barcode": null
+    },
+    {
+      "title": "Integratore Benessere Sole",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-benesseresole-capsule.png?v=1768986064",
+      "page": "https://bioscalin.it/products/integratore-benessere-sole",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo lenitivo AntiForfora per capelli secchi",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-antiforfora-shampoo-secchi-200ml.png?v=1769088422",
+      "page": "https://bioscalin.it/products/shampoo-lenitivo-per-capelli-secchi-antiforfora",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo AntiForfora capelli grassi o normali",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-antiforfora-shampoo-grassi-200ml.png?v=1769088076",
+      "page": "https://bioscalin.it/products/shampoo-antiforfora-per-capelli-grassi-normali-antiforfora",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo Protettivo Capelli Colorati",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-nutricolor-shampoo.png?v=1769088866",
+      "page": "https://bioscalin.it/products/shampoo-protettivo-capelli-colorati-nutricolor",
+      "barcode": null
+    },
+    {
+      "title": "Balsamo Protettivo Capelli Colorati",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-nutricolor-balsamo.png?v=1769089187",
+      "page": "https://bioscalin.it/products/balsamo-protettivo-capelli-colorati-nutricolor",
+      "barcode": null
+    },
+    {
+      "title": "Tinta Permanente",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-nutricolor-tinte-1-nero.png?v=1769100603",
+      "page": "https://bioscalin.it/products/tinta-permanente-nutricolor",
+      "barcode": null
+    },
+    {
+      "title": "Fiale anticaduta",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-stress-fiale.png?v=1769087565",
+      "page": "https://bioscalin.it/products/fiale-anticaduta-stress",
+      "barcode": null
+    },
+    {
+      "title": "Integratore capelli indeboliti da stress",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-stress-gummies.png?v=1768986037",
+      "page": "https://bioscalin.it/products/integratore-capelli-indeboliti-stress",
+      "barcode": null
+    },
+    {
+      "title": "Cera Modellante Rinforzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-prodensity-cera.png?v=1769087118",
+      "page": "https://bioscalin.it/products/cera-modellante-rinforzante",
+      "barcode": null
+    },
+    {
+      "title": "Styling gel Modellante Rinforzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-prodensity-gel.png?v=1769086804",
+      "page": "https://bioscalin.it/products/styling-gel-modellante-rinforzante-pro-density",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo rinforzante Pro•Density",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-prodensity-shampoo-200ml.png?v=1769086470",
+      "page": "https://bioscalin.it/products/shampoo-rinforzante-pro-density",
+      "barcode": null
+    },
+    {
+      "title": "Booster capillare anticaduta Pro•Density",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-prodensity-fiala.png?v=1769086355",
+      "page": "https://bioscalin.it/products/booster-capillare-anticaduta-pro-density",
+      "barcode": null
+    },
+    {
+      "title": "Integratore per capelli diradati",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-prodensity-capsule-30.png?v=1768985978",
+      "page": "https://bioscalin.it/products/integratore-capillare-diradati-pro-density",
+      "barcode": null
+    },
+    {
+      "title": "Maschera rinforzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-menopausa-maschera.png?v=1769082300",
+      "page": "https://bioscalin.it/products/maschera-rinforzante-menopausa",
+      "barcode": null
+    },
+    {
+      "title": "Balsamo rinforzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-menopausa-balsamo.png?v=1769082540",
+      "page": "https://bioscalin.it/products/balsamo-rinforzante-menopausa",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo rinforzante Menopausa",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-menopausa-shampoo-200ml.png?v=1769082811",
+      "page": "https://bioscalin.it/products/shampoo-rinforzante-menopausa",
+      "barcode": null
+    },
+    {
+      "title": "Booster capillare anticaduta Menopausa",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-menopausa-fiale.png?v=1769081841",
+      "page": "https://bioscalin.it/products/booster-capillare-anticaduta-menopausa",
+      "barcode": null
+    },
+    {
+      "title": "Integratori per capelli assottigliati",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-menopausa-capsule-30.png?v=1768947392",
+      "page": "https://bioscalin.it/products/integratore-capelli-assottigliati-menopausa",
+      "barcode": null
+    },
+    {
+      "title": "Maschera fortificante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-maschera.png?v=1769080395",
+      "page": "https://bioscalin.it/products/maschera-fortificante-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Balsamo fortificante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-balsamo.png?v=1769081124",
+      "page": "https://bioscalin.it/products/balsamo-fortificante-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo fortificante volumizzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-shampoo-volumizzante-200-ml.png?v=1768946223",
+      "page": "https://bioscalin.it/products/shampoo-fortificante-volumizzante-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo fortificante rivitalizzante",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-shampoo-rivitalizzante-200-ml.png?v=1768946787",
+      "page": "https://bioscalin.it/products/shampoo-fortificante-rivitalizzante-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Attivatore capillare anticaduta",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-attivatore.png?v=1768929071",
+      "page": "https://bioscalin.it/products/attivatore-capillare-anticaduta-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Integratore per capelli indeboliti in bustine",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-bustine.png?v=1768923524",
+      "page": "https://bioscalin.it/products/integratore-capelli-indeboliti-bustine-total-care",
+      "barcode": null
+    },
+    {
+      "title": "Integratore per capelli indeboliti in compresse",
+      "image": "https://cdn.shopify.com/s/files/1/0947/5663/5008/files/bioscalin-totalcare-capsule-30.png?v=1768915458",
+      "page": "https://bioscalin.it/products/integratore-capelli-indeboliti-compresse-total-care",
+      "barcode": null
+    }
+  ]
+}
