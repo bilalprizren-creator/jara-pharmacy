@@ -1,0 +1,91 @@
+{
+  "generatedAt": "2026-09-08T00:33:45.022Z",
+  "label": "markat-carroten",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 4,
+    "downloaded": 4,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 4
+    },
+    "byBrand": {
+      "CARROTEN": 4
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "123321",
+      "name": "CARROTEN INTENSIVE TANNING GEL 150ML",
+      "barcode": "5201314180333",
+      "brand": "CARROTEN",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Gold Shimmer Intensive Tanning Gel + Spatula\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 150ML — kontrollo që të përputhet.",
+      "packSizeOurs": "150ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.carroten.com/products/gold-shimmer-intensive-tanning-gel-spatula",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/0916/9068/files/gold-shimmer-intensive-tanning-gel-857498.jpg?v=1748909331",
+      "licence": "Katalogu zyrtar i CARROTEN",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0001_123321.jpg",
+      "bytes": 44054
+    },
+    {
+      "number": 2,
+      "code": "14450",
+      "name": "CARROTEN GOLD SHIMMER GEL 150ML",
+      "barcode": "5201314180340",
+      "brand": "CARROTEN",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Gold Shimmer Intensive Tanning Gel + Spatula\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 150ML — kontrollo që të përputhet.",
+      "packSizeOurs": "150ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.carroten.com/products/gold-shimmer-intensive-tanning-gel-spatula",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/0916/9068/files/gold-shimmer-intensive-tanning-gel-857498.jpg?v=1748909331",
+      "licence": "Katalogu zyrtar i CARROTEN",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0002_14450.jpg",
+      "bytes": 44054
+    },
+    {
+      "number": 3,
+      "code": "711622",
+      "name": "CARROTEN INTENSE TANNING OIL SPRAY 70ML",
+      "barcode": "5201314180241",
+      "brand": "CARROTEN",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Intense Tan Tanning Oil Spray\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 70ML — kontrollo që të përputhet.",
+      "packSizeOurs": "70ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.carroten.com/products/intense-tan-tanning-oil-spray-1",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/0916/9068/files/intense-tan-tanning-oil-spray-6328759.png?v=1773848407",
+      "licence": "Katalogu zyrtar i CARROTEN",
+      "matchScore": 0.8,
+      "file": ".image-cache/brands/0003_711622.png",
+      "bytes": 274795
+    },
+    {
+      "number": 4,
+      "code": "89883",
+      "name": "CARROTEN INTENSIVE TANNING OIL SPRAY 150ML",
+      "barcode": "5201314180258",
+      "brand": "CARROTEN",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Carroten Intense Tanning Oil Spray + Intensive Tanning Gel Bundle\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 150ML — kontrollo që të përputhet.",
+      "packSizeOurs": "150ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.carroten.com/products/carroten-intense-tan-tanning-oil-spray-6-7oz-intensive-tanning-gel-5-07-oz",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0664/0916/9068/files/carroten-intense-tanning-oil-spray-intensive-tanning-gel-bundle-1389457.png?v=1777577305",
+      "licence": "Katalogu zyrtar i CARROTEN",
+      "matchScore": 0.8,
+      "file": ".image-cache/brands/0004_89883.png",
+      "bytes": 211108
+    }
+  ]
+}

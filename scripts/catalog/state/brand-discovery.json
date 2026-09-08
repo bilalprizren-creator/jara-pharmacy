@@ -599,6 +599,78 @@
       "products": 6,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NUTRAVIT": {
+      "checkedAt": "2026-09-08T00:32:29.924Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "SALUS": {
+      "checkedAt": "2026-09-08T00:32:38.635Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PROZINC": {
+      "checkedAt": "2026-09-08T00:32:43.573Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DAVE PHARMA": {
+      "checkedAt": "2026-09-08T00:32:55.231Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "YANOLA": {
+      "checkedAt": "2026-09-08T00:32:58.788Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FARMA-DERMA": {
+      "checkedAt": "2026-09-08T00:33:01.935Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "STAR": {
+      "checkedAt": "2026-09-08T00:33:14.948Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VASU": {
+      "checkedAt": "2026-09-08T00:33:17.832Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PEDIAKID": {
+      "checkedAt": "2026-09-08T00:33:21.194Z",
+      "products": 6,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "PIZ BUIN": {
+      "checkedAt": "2026-09-08T00:33:33.378Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VITAE": {
+      "checkedAt": "2026-09-08T00:33:42.272Z",
+      "products": 5,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "CARROTEN": {
+      "checkedAt": "2026-09-08T00:33:42.499Z",
+      "products": 5,
+      "store": "www.carroten.com",
+      "note": "dyqan i hapur"
     }
   }
 }
