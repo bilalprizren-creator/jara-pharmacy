@@ -883,7 +883,10 @@ function looksLikeImage(buffer) {
   const png = buffer.readUInt32BE(0) === 0x89504e47;
   const jpeg = buffer[0] === 0xff && buffer[1] === 0xd8;
   const webp = buffer.subarray(0, 4).toString("ascii") === "RIFF";
-  return png || jpeg || webp;
+  // AVIF/HEIF: dyqanet e reja e shërbejnë kështu, dhe skedari nis me "ftyp".
+  // Pa këtë rresht ato fotografi hidheshin poshtë si "jo fotografi".
+  const isoMedia = buffer.subarray(4, 8).toString("ascii") === "ftyp";
+  return png || jpeg || webp || isoMedia;
 }
 
 function knownCodes() {

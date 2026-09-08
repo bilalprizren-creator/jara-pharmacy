@@ -1,0 +1,94 @@
+{
+  "generatedAt": "2026-09-08T21:04:56.842Z",
+  "label": "kimi-03",
+  "source": "Kërkimi i agjentit Kimi (JARA_Produktbilder_Masterliste.xlsx)",
+  "totals": {
+    "rows": 2137,
+    "taken": 4,
+    "skipped": {
+      "unknown": 0,
+      "medicine": 456,
+      "have": 1677,
+      "noFile": 0,
+      "tooSmall": 0
+    },
+    "byConfidence": {
+      "E mesme": 3,
+      "E lartë": 1
+    },
+    "byVerdict": {
+      "Fotografi studioje": 4
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "351",
+      "name": "GASTRO PROTEC LIQUID 250 ML",
+      "barcode": "",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur nga agjenti Kimi si \"BEBEDORE MEMA PER SHISHE TE NGUSHTE 0-3 MONTHS\". Barkodi nuk u krahasua dot. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "https://www.trendyol.com/bebedor/biberon-emzigi-damakli-yavas-akis-0-3-ay-kod-351-p-1801748",
+      "imageUrl": "https://kimi-web-img.kimi.ai/img/cdn.dsmcdn.com/cb070d1f61392e3e719ff44a54e1fcfa087601e6.jpg",
+      "licence": "Kërkim i agjentit Kimi",
+      "file": ".image-cache/kimi/0001_351.png",
+      "bytes": 3078,
+      "quality": 1,
+      "verdict": "Fotografi studioje"
+    },
+    {
+      "number": 2,
+      "code": "191",
+      "name": "BEBEDORE MEME MASHTRUESE 0-6M",
+      "barcode": "8690683001917",
+      "brand": "BEBEDOR",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur nga agjenti Kimi si \"BEBEDORE MEME MASHTRUESE 0-6M\". Barkodi 8690683001917 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "https://www.hepsiburada.com/bebedor-131-silikon-damakli-desenli-emzik-no-1-0-6-ay-kirmizi-pm-HB00000KYP9I",
+      "imageUrl": "https://kimi-web-img.kimi.ai/img/productimages.hepsiburada.net/f1b5a371ee9c7970fa3208ae93b7cedf8cccb055.jpg",
+      "licence": "Kërkim i agjentit Kimi",
+      "file": ".image-cache/kimi/0002_191.png",
+      "bytes": 24529,
+      "quality": 1,
+      "verdict": "Fotografi studioje"
+    },
+    {
+      "number": 3,
+      "code": "9066",
+      "name": "GLUCOSI INFUNDIBILE HF 5% 500ML A1 (HEMOFARM)",
+      "barcode": "8600097010641",
+      "brand": "HEMOFARM",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur nga agjenti Kimi si \"GLUCOSI INFUNDIBILE HF 5% 500ML A1 (HEMOFARM)\". Barkodi 8600097010641 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "https://shemopharm.com/product/glucosi-infundible-hf-5-500ml-a20-9066/",
+      "imageUrl": "https://kimi-web-img.kimi.ai/img/shemopharm.com/0d62adb574b1daedcb7a4eb9a0e9b3d5f361c394.png",
+      "licence": "Kërkim i agjentit Kimi",
+      "file": ".image-cache/kimi/0003_9066.png",
+      "bytes": 167587,
+      "quality": 1,
+      "verdict": "Fotografi studioje"
+    },
+    {
+      "number": 4,
+      "code": "11933",
+      "name": "DR.VITON VITAMIN C SERUM 30ML",
+      "barcode": "5319991795143",
+      "brand": "DR.VITON",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Gjetur nga agjenti Kimi si \"DR.VITON VITAMIN C SERUM 30ML\". Barkodi 5319991795143 përputhet me tonin. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "https://paket.mk/en/product/drviton-vitamin-c-serum-30ml",
+      "imageUrl": "https://kimi-web-img.kimi.ai/img/paket.mk/3a6c953f0df4f6357c4f68aba01229a514efb6bd.jpg",
+      "licence": "Kërkim i agjentit Kimi",
+      "file": ".image-cache/kimi/0004_11933.png",
+      "bytes": 41460,
+      "quality": 1,
+      "verdict": "Fotografi studioje"
+    }
+  ]
+}

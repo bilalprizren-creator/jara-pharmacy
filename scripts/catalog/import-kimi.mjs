@@ -100,7 +100,7 @@ async function main() {
   const failed = [];
 
   for (const [index, { product, row }] of wanted.entries()) {
-    const buffer = readPhoto(row, zips);
+    const buffer = readPhoto(row, zips) ?? (await fetchPhoto(row));
     if (!buffer || buffer.length < MIN_IMAGE_BYTES) {
       failed.push({ code: product.code, file: row.F, reason: buffer ? "shumë e vogël" : "skedari nuk u gjet" });
       skipped[buffer ? "tooSmall" : "noFile"] += 1;
@@ -204,6 +204,26 @@ function readPhoto(row, zips) {
     }
   }
   return null;
+}
+
+/**
+ * Tetë rreshta e kanë adresën e fotografisë por jo vetë skedarin: agjentit i ka
+ * dështuar shkarkimi në fund. Adresa mbetet e vlefshme, prandaj provohet një
+ * herë këtu — ajo është pikërisht pjesa që "shkoi keq" te dorëzimi i tyre.
+ */
+async function fetchPhoto(row) {
+  const url = String(row.H ?? "").trim();
+  if (!/^https?:/i.test(url)) return null;
+  try {
+    const response = await fetch(url, {
+      headers: { "user-agent": "JaraPharmacy-ImageBot/1.0 (+https://jara-pharmacy.com)" },
+      signal: AbortSignal.timeout(30000),
+    });
+    if (!response.ok) return null;
+    return Buffer.from(await response.arrayBuffer());
+  } catch {
+    return null;
+  }
 }
 
 function knownCodes() {

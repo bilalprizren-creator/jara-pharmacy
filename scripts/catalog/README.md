@@ -158,6 +158,23 @@ python scripts/catalog/rescue-pdf-photos.py "9460 Produkte/…_008.pdf" --label 
   radhës: mjafton një fotografi e humbur që radha të rrëshqasë dhe secili produkt
   të marrë fotografinë e fqinjit.
 
+### f) Kontrolli i vetë punës
+
+```bash
+node scripts/catalog/check-photos.mjs
+```
+
+Sa më shumë burime, aq më lehtë hyn një gabim i heshtur. Ky skript nuk ndryshon
+asgjë; vetëm pyet listën e bashkuar: a del secili produkt një herë të vetme, a
+ekziston çdo skedar dhe a është vërtet fotografi, a ekziston secila shifër te
+ALBTRIX, a ka hyrë ndonjë barnë, dhe — kur shënimi premton se barkodi përputhet
+— a përputhet vërtet.
+
+Ai e gjeti edhe një gabim që s'dukej: një fotografi e ardhur si AVIF me emrin
+`.png`. Kontrolli i llojit i njihte vetëm PNG, JPEG e WebP, prandaj çdo dyqan që
+shërben AVIF (dhe sot janë shumë) po hidhej poshtë si "jo fotografi". Tani lexohet
+edhe ai lloj.
+
 ## 4. Bashkimi — një fotografi për produkt
 
 ```bash
@@ -211,8 +228,20 @@ vetme mban gjithë katalogun; ndaji seritë me `--limit` vetëm nëse duhet.
 ## Ku është kufiri i kërkimit automatik
 
 Më 8 shtator 2026, pas një sweep-i të plotë dhe pas dy dorëzimeve të jashtme:
-**4.389 nga 7.176 artikuj tregtarë kanë një fotografi (61 %)**, mbi tre të
-katërtat e tyre foto studioje.
+**4.393 nga 7.176 artikuj tregtarë kanë një fotografi (61 %)**, 82 % e tyre foto
+studioje.
+
+Sa solli secili burim, dhe sa nga ato s'i kishte askush tjetër:
+
+| Burimi | Produkte | Vetëm ky burim |
+|---|---|---|
+| Dyqanet dhe markat (ky projekt) | 3.176 | 2.102 |
+| Agjenti Kimi | 1.680 | 467 |
+| Bazat me barkod | 739 | 327 |
+| Seritë e ChatGPT-së | 358 | 103 |
+
+Mbivendosja nuk humbet: kur dy burime kanë të njëjtin produkt, fiton fotografia
+me pamje më të mirë dhe tjetra mbetet si alternativë.
 
 Çka jep dhe çka nuk jep rezultat, e matur:
 
