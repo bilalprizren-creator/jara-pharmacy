@@ -1319,6 +1319,78 @@
       "products": 2,
       "store": null,
       "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BIONIKA": {
+      "checkedAt": "2026-09-08T03:02:18.834Z",
+      "products": 2,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "BAYER": {
+      "checkedAt": "2026-09-08T03:02:23.138Z",
+      "products": 2,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "LIP SMACKER": {
+      "checkedAt": "2026-09-08T03:02:23.490Z",
+      "products": 2,
+      "store": "www.lipsmacker.com",
+      "note": "dyqan i hapur"
+    },
+    "FODA LINE": {
+      "checkedAt": "2026-09-08T03:02:26.130Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "LYPRINOL": {
+      "checkedAt": "2026-09-08T03:02:51.691Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FRESUBIN": {
+      "checkedAt": "2026-09-08T03:02:55.504Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "VITAKING": {
+      "checkedAt": "2026-09-08T03:03:03.233Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "FORTEX": {
+      "checkedAt": "2026-09-08T03:03:07.053Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "AQUA": {
+      "checkedAt": "2026-09-08T03:03:10.426Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "DARBO": {
+      "checkedAt": "2026-09-08T03:03:16.807Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "TILMAN": {
+      "checkedAt": "2026-09-08T03:03:28.303Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
+    },
+    "NATYRE PRIME": {
+      "checkedAt": "2026-09-08T03:03:30.952Z",
+      "products": 1,
+      "store": null,
+      "note": "pa dyqan të hapur ose me qasje të bllokuar"
     }
   }
 }

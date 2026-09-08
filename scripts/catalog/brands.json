@@ -142,6 +142,11 @@
       "brand": "ESSENCE",
       "store": "essence.de",
       "platform": "shopify"
+    },
+    {
+      "brand": "LIP SMACKER",
+      "store": "www.lipsmacker.com",
+      "platform": "shopify"
     }
   ]
 }

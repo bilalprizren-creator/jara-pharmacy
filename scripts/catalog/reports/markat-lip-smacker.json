@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-09-08T03:03:32.606Z",
+  "label": "markat-lip-smacker",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 1,
+    "downloaded": 1,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 1
+    },
+    "byBrand": {
+      "LIP SMACKER": 1
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "11556",
+      "name": "LIP SMACKER MINNIE COTTON CANDY CRUSH",
+      "barcode": "050051888607",
+      "brand": "LIP SMACKER",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Cotton Candy\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://www.lipsmacker.com/products/cotton-candy-2",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0608/5931/8385/files/50303.png?v=1752621669",
+      "licence": "Katalogu zyrtar i LIP SMACKER",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_11556.png",
+      "bytes": 199291
+    }
+  ]
+}
