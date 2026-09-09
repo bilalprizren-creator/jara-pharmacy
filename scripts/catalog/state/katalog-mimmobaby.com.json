@@ -1,8 +1,8 @@
 {
   "store": "mimmobaby.com",
   "platform": "sitemap",
-  "fetchedAt": "2026-09-09T18:31:09.870Z",
-  "complete": false,
+  "fetchedAt": "2026-09-09T18:40:36.982Z",
+  "complete": true,
   "items": [
     {
       "title": "Babymatex Mbrojtëse higjienike bambu, ajrosëse dhe e papërshkueshme, 60 × 120 × 10 cm",
@@ -1796,6 +1796,1164 @@
       "title": "Insulatet Food Jar 350 ml fox",
       "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858542106_01.jpg?v=1774369097",
       "page": "https://mimmobaby.com/produktet/insulatet-food-jar-350-ml-fox-781",
+      "barcode": null
+    },
+    {
+      "title": "Hoded Peshqir 75x75cm dog",
+      "image": "https://mimmobaby.com/api/media/products/465ca51d-95b3-445e-89a5-e0531a39cf62.webp",
+      "page": "https://mimmobaby.com/produktet/hoded-towel-75x75cm-dog-749",
+      "barcode": null
+    },
+    {
+      "title": "Hoded Peshqir 70x130cm lion",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858118516_01.jpg?v=1776279269",
+      "page": "https://mimmobaby.com/produktet/hoded-towel-70x130cm-lion-748",
+      "barcode": null
+    },
+    {
+      "title": "Hoded Peshqir 70x130cm fox",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858118714_01.jpg?v=1776279053",
+      "page": "https://mimmobaby.com/produktet/hoded-towel-70x130cm-fox-747",
+      "barcode": null
+    },
+    {
+      "title": "Hoded Peshqir 70x130cm cat",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858116055_01.jpg?v=1776278021",
+      "page": "https://mimmobaby.com/produktet/hoded-towel-70x130cm-cat-744",
+      "barcode": null
+    },
+    {
+      "title": "Highchair Insert Cushion Miffy and Friends",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/561-531-68047_1_20250606T.jpg?v=1752140581",
+      "page": "https://mimmobaby.com/produktet/highchair-insert-cushion-miffy-and-friends-743",
+      "barcode": null
+    },
+    {
+      "title": "Highchair Insert Cushion Leafy Dreams",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/561-531-68105_1_20250611T.jpg?v=1752141141",
+      "page": "https://mimmobaby.com/produktet/highchair-insert-cushion-leafy-dreams-742",
+      "barcode": null
+    },
+    {
+      "title": "Highchair Insert Cushion Elephant Tales",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/561-531-68110_1_20250611T.jpg?v=1752140802",
+      "page": "https://mimmobaby.com/produktet/highchair-insert-cushion-elephant-tales-741",
+      "barcode": null
+    },
+    {
+      "title": "Highchair Cushion for Growth Chair Cloudy Rib Oatmeal",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/019-533-68119_1_20250606T.jpg?v=1752140481",
+      "page": "https://mimmobaby.com/produktet/highchair-cushion-for-growth-chair-cloudy-rib-oatmeal-738",
+      "barcode": null
+    },
+    {
+      "title": "Fishing game",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858368034_01.jpg?v=1776282432",
+      "page": "https://mimmobaby.com/produktet/fishing-game-683",
+      "barcode": null
+    },
+    {
+      "title": "Baby Who FIORE Shtrat 60x120cm",
+      "image": "https://mimmobaby.com/api/media/products/a8aeb6db-1019-41d5-ac55-0ec914ec23bd.webp",
+      "page": "https://mimmobaby.com/produktet/fiore-60-120-681",
+      "barcode": null
+    },
+    {
+      "title": "Jastek për gjidhenje CC4 e gjelbër",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_727_500_500/Poduszka-do-karmienia-zielona-Albero-mio-widok-pod-katem.webp",
+      "page": "https://mimmobaby.com/produktet/fidding-baby-pillow-cc4-green-680",
+      "barcode": null
+    },
+    {
+      "title": "Jastek për gjidhenje CC3 gri",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_721_500_500/Poduszka-do-karmienia-szara-Albero-mio-widok-pod-katem.webp",
+      "page": "https://mimmobaby.com/produktet/fidding-baby-pillow-cc3-grey-679",
+      "barcode": null
+    },
+    {
+      "title": "Jastek për gjidhenje CC2 bezhë",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_715_500_500/Poduszka-do-karmienia-bezowa-Albero-mio-widok-pod-katem.webp",
+      "page": "https://mimmobaby.com/produktet/fidding-baby-pillow-cc2-beige-678",
+      "barcode": null
+    },
+    {
+      "title": "Doctor set",
+      "image": "https://www.keyifbebesi.com.tr/image/cache/catalog/trixie/5400858364999-p_36_499_1-875x1000.jpg",
+      "page": "https://mimmobaby.com/produktet/doctor-set-642",
+      "barcode": null
+    },
+    {
+      "title": "Çantë për pelena Shopper 027-819-68051",
+      "image": "https://mimmobaby.com/api/media/products/21b2943a-6210-494e-956b-c2ed23f456ac.webp",
+      "page": "https://mimmobaby.com/produktet/diaper-bag-shopper-027-819-68051-634",
+      "barcode": null
+    },
+    {
+      "title": "Çantë për pelena Puffed Moos Olive e gjelbër",
+      "image": "https://mimmobaby.com/api/media/products/6f4e9ca9-437f-4d27-926b-143eb44473ed.webp",
+      "page": "https://mimmobaby.com/produktet/diaper-bag-puffed-moos-olive-green-632",
+      "barcode": null
+    },
+    {
+      "title": "Çantë për pelena Puffed Moos e zezë",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/027-818-68026_1_20240126T.jpg?v=1752136360",
+      "page": "https://mimmobaby.com/produktet/diaper-bag-puffed-moos-black-631",
+      "barcode": null
+    },
+    {
+      "title": "Çantë për pelena Puffed Moos Biscuit",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/027-818-68024_1_20240126T.jpg?v=1752136360",
+      "page": "https://mimmobaby.com/produktet/diaper-bag-puffed-moos-biscuit-630",
+      "barcode": null
+    },
+    {
+      "title": "Çantë për pelena Puffed bag Biscuit",
+      "image": "https://www.keekabuu.com/cdn/shop/files/jollein_tara_biscuit_puffed_luiertas_027-818-00103_5_1_1200x1200.jpg?v=1684088518",
+      "page": "https://mimmobaby.com/produktet/diaper-bag-puffed-bag-biscuit-628",
+      "barcode": null
+    },
+    {
+      "title": "Shtrat 120x60 PAULINE grafit-pine",
+      "image": "https://mimmobaby.com/api/media/products/b4672537-7847-4a81-8701-6f5182b41f00.webp",
+      "page": "https://mimmobaby.com/produktet/cot-120x60-with-safety-rail-pauline-graphite-pine-615",
+      "barcode": null
+    },
+    {
+      "title": "Shtrat 120x60 me Mbrojtëse anësore PAULINE grafit-oak",
+      "image": "https://mimmobaby.com/api/media/products/131beca0-a1a2-4a86-901b-e60dcaa8da35.webp",
+      "page": "https://mimmobaby.com/produktet/cot-120x60-with-safety-rail-pauline-graphite-oak-614",
+      "barcode": null
+    },
+    {
+      "title": "Shtrat 120x60 NEL gri-e bardhë",
+      "image": "https://mimmobaby.com/api/media/products/f5061196-904c-4f41-a0a2-03e3f7b43f6f.webp",
+      "page": "https://mimmobaby.com/produktet/cot-120x60-nel-serce-grey-white-613",
+      "barcode": null
+    },
+    {
+      "title": "Shtrat 120x60 NATI gri-e bardhë",
+      "image": "https://mimmobaby.com/api/media/products/e9008db8-83aa-4378-8fe0-67887c2beef3.webp",
+      "page": "https://mimmobaby.com/produktet/cot-120x60-nati-koniczynka-grey-white-611",
+      "barcode": null
+    },
+    {
+      "title": "Sirtar për shtrat 160x80 me funksion për fjetje e bardhë",
+      "image": "https://mimmobaby.com/api/media/products/6b4dff1e-bf01-4596-b013-16291b3239a8.webp",
+      "page": "https://mimmobaby.com/produktet/container-160x80-with-sleeping-function-white-609",
+      "barcode": null
+    },
+    {
+      "title": "Sirtar për shtrat 160x80 me funksion për fjetje",
+      "image": "https://mimmobaby.com/api/media/products/f16d3549-ce44-4537-b49a-22780855f6f0.webp",
+      "page": "https://mimmobaby.com/produktet/container-160x80-with-sleeping-function-oak-608",
+      "barcode": null
+    },
+    {
+      "title": "Neseser Cloudy Rib Milky Coffee",
+      "image": "https://jollein.fr/cdn/shop/files/053-577-68118_1_20250611T.jpg?v=1752140571",
+      "page": "https://mimmobaby.com/produktet/cloudy-rib-milky-coffee-596",
+      "barcode": null
+    },
+    {
+      "title": "Dyshek për ndërrimin e bebes Mbulesë CC3 gri",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_578_500_500/Pokrowiec-muslinowy-na-przewijak-szary-Albero-mio.webp",
+      "page": "https://mimmobaby.com/produktet/changing-mat-cover-cc3-grey-577",
+      "barcode": null
+    },
+    {
+      "title": "Dyshek për ndërrimin e bebes Mbulesë CC2 bezhë",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_574_500_500/Pokrowiec-na-przewijak-muslinowy-bezowy-albero-mio.webp",
+      "page": "https://mimmobaby.com/produktet/changing-mat-cover-cc2-beige-576",
+      "barcode": null
+    },
+    {
+      "title": "Dyshek për ndërrimin e bebes Mbulesë CC0 vanilla",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_485_500_500/Pokrowiec-na-przewijak-muslinowy-Albero-mio-waniliowy.webp",
+      "page": "https://mimmobaby.com/produktet/changing-mat-cover-cc0-vanilla-575",
+      "barcode": null
+    },
+    {
+      "title": "Maksikoze Carrello Vega CRL-14101 Absolute e zezë",
+      "image": "https://www.calineczka.pl/images/Wozki/Carrello-Vega-fotelik-samochodowy-1.jpg",
+      "page": "https://mimmobaby.com/produktet/carrello-vega-crl-14101-absolute-black-557",
+      "barcode": null
+    },
+    {
+      "title": "Cap 1-2 Lion",
+      "image": "https://images.platoyo.com/v7/_letzshop_production_img_/b68536a6d7a5ae96c57dc82f302fd443.jpeg?q=75&width=750&height=750&func=bound&org_if_sml=1&force_format=webp%2Cjpeg",
+      "page": "https://mimmobaby.com/produktet/cap-1-2-lion-545",
+      "barcode": null
+    },
+    {
+      "title": "Perde deCanopy 245cm Cosy Check Sand",
+      "image": "https://mimmobaby.com/api/media/products/aaace952-aa5f-45b0-80f0-b7afd92bed6b.webp",
+      "page": "https://mimmobaby.com/produktet/canopy-245cm-cosy-check-sand-540",
+      "barcode": null
+    },
+    {
+      "title": "Anësore bistek muslin 200cm",
+      "image": "https://macoco.pl/environment/cache/images/productGfx_79803_500_500/7ccac231326568973e7b35594c8bd37d.jpg",
+      "page": "https://mimmobaby.com/produktet/bumper-warkocz-muslin-200cm-530",
+      "barcode": null
+    },
+    {
+      "title": "Anësore bistek muslin 200cm",
+      "image": "https://s3.eu-central-1.amazonaws.com/babetkovo/product_images/babymatex/babymatex-chranic-do-postielky-muselin-pleteny-vrkoc-hnedy-200-cm/1.webp",
+      "page": "https://mimmobaby.com/produktet/bumper-warkocz-muslin-200cm-529",
+      "barcode": null
+    },
+    {
+      "title": "Anësore bistek muslin 200cm",
+      "image": "https://swiat-dziecka-24.pl/hpeciai/07fa9bebfeec22bd8e5cc1ce7f511ed2/pol_pl_Babymatex-Ochraniacz-do-lozeczka-Warkocz-Muslin-Bezowy-dl-200cm-6625_1.jpg",
+      "page": "https://mimmobaby.com/produktet/bumper-warkocz-muslin-200cm-528",
+      "barcode": null
+    },
+    {
+      "title": "Anësore bistek muslin 200cm",
+      "image": "https://cdn.myshoptet.com/usr/www.petitbebe.cz/user/shop/big/306248_tb0441-01.jpg?ff=1&x=1024&y=768&q=85&ts=68d473f7&sg=161563f2",
+      "page": "https://mimmobaby.com/produktet/bumper-warkocz-muslin-200cm-527",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mrs.Rabbit",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858412171_01.jpg?v=1776280497",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mrs-rabbit-515",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mr.Triceratops",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858412287_01.jpg?v=1776285449",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mr-triceratops-512",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mr.Shark",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858412256_01.jpg?v=1776280487",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mr-shark-511",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mr.Lion",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858412133_01.jpg?v=1776277965",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mr-lion-510",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mr.Dragon",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858411969_01.jpg?v=1776279483",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mr-dragon-509",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500ml - Mr.Bear",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858411976_01.jpg?v=1776278235",
+      "page": "https://mimmobaby.com/produktet/bottle-500ml-mr-bear-508",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 500 ml Tiger",
+      "image": "https://cdn.myshoptet.com/usr/www.malovanykaminek.cz/user/shop/big/7451_lahev-na-piti-trixie-mr--tiger-500ml.jpg?ff=1&x=1024&y=768&q=85&ts=66845d42&sg=161563f2",
+      "page": "https://mimmobaby.com/produktet/bottle-500-ml-tiger-506",
+      "barcode": null
+    },
+    {
+      "title": "Shishe Trixie 350ml - Mr.Shark",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858402257_01.jpg?v=1776280402",
+      "page": "https://mimmobaby.com/produktet/bottle-350ml-mr-shark-503",
+      "barcode": null
+    },
+    {
+      "title": "Batanije me lesh deleje 75x100 13 516-511-67081",
+      "image": "https://mimmobaby.com/api/media/products/524e5dfc-3236-4073-8f5e-d769a2aa8533.webp",
+      "page": "https://mimmobaby.com/produktet/blanket-qebe-75x100-13-516-511-67081-444",
+      "barcode": null
+    },
+    {
+      "title": "Batanije Jollein 120x120cm 521-557-68014",
+      "image": "https://mimmobaby.com/api/media/products/0beda482-8b0a-441a-a699-a2320f76def5.webp",
+      "page": "https://mimmobaby.com/produktet/blanket-qebe-120x120-521-557-68014-442",
+      "barcode": null
+    },
+    {
+      "title": "Set për shtrat (8 copë) - Safari - gri - 60/70 Cm",
+      "image": "https://mimmobaby.com/api/media/products/67b25498-a7d7-44bc-a8e8-8010e0c03205.webp",
+      "page": "https://mimmobaby.com/produktet/bedding-set-8-pcs-safari-grey-60-70-cm-408",
+      "barcode": null
+    },
+    {
+      "title": "Set për shtrat (8 copë) - Hummingbird - rozë - 60/70 Cm",
+      "image": "https://mimmobaby.com/api/media/products/7b501a32-844e-4bd4-9ed3-76dc06a1acb8.webp",
+      "page": "https://mimmobaby.com/produktet/bedding-set-8-pcs-hummingbird-pink-60-70-cm-406",
+      "barcode": null
+    },
+    {
+      "title": "Sirtar për shtrat 120x60 grafit",
+      "image": "https://mimmobaby.com/api/media/products/4e0a2928-de9c-42a3-8dc1-1af8c52c8e67.webp",
+      "page": "https://mimmobaby.com/produktet/bedding-container-120x60-graphite-404",
+      "barcode": null
+    },
+    {
+      "title": "Anesore Bed/boxbumper Sky (e ngrohtë Linen)",
+      "image": "https://images.babysonly.nl/media/e8/9b/d7/1735161749/-8720512365610-819bc3b372ef878d5f976be2e6301753.jpg",
+      "page": "https://mimmobaby.com/produktet/bed-boxbumper-sky-warm-linen-403",
+      "barcode": null
+    },
+    {
+      "title": "Bathrobe 3-4 vjet 060-809-67113",
+      "image": "https://mimmobaby.com/api/media/products/3b0748dc-15f8-4e37-b332-670019cb00af.webp",
+      "page": "https://mimmobaby.com/produktet/bathrobe-3-4-vjet-060-809-67113-311",
+      "barcode": null
+    },
+    {
+      "title": "Bathrobe 1-2 vjet 1 060-808-67001",
+      "image": "https://babaagynemubolt.hu/img/19903/060-808-67001/060-808-67001.jpg",
+      "page": "https://mimmobaby.com/produktet/bathrobe-1-2-vjet-1-060-808-67001-307",
+      "barcode": null
+    },
+    {
+      "title": "Peshqir për larje CC7 e kaltër 100x100cm",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_701_500_500/Niebieskie-okrycie-kapielowe-z-kapturkiem-Albero-mio-rozlozone-na-plasko.webp",
+      "page": "https://mimmobaby.com/produktet/bath-towel-cc7-blue-306",
+      "barcode": null
+    },
+    {
+      "title": "Peshqir për larje CC3 gri 100x100cm",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_699_500_500/Szare-okrycie-kapielowe-z-kapturkiem-Albero-mio-rozlozone-na-plasko.webp",
+      "page": "https://mimmobaby.com/produktet/bath-towel-cc3-grey-305",
+      "barcode": null
+    },
+    {
+      "title": "Peshqir për larje CC2 bezhë 100x100cm",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_698_500_500/Bezowe-okrycie-kapielowe-z-kapturkiem-Albero-mio-rozlozone-na-plasko.webp",
+      "page": "https://mimmobaby.com/produktet/bath-towel-cc2-beige-304",
+      "barcode": null
+    },
+    {
+      "title": "Peshqir për larje CC1 rozë 100x100cm",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_697_500_500/Rozowe-okrycie-kapielowe-z-kapturkiem-Albero-mio-rozlozone-na-plasko.webp",
+      "page": "https://mimmobaby.com/produktet/bath-towel-cc1-pink-303",
+      "barcode": null
+    },
+    {
+      "title": "Peshqir për larje CC0 vanilla 100x100cm",
+      "image": "https://sklep.alberomio.pl/environment/cache/images/productGfx_696_500_500/Okrycie-kapielowe-z-kapturkiem-Albero-mio-kolor-waniliowy-rozlozone-na-plasko.webp",
+      "page": "https://mimmobaby.com/produktet/bath-towel-cc0-vanilla-302",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine puffeed 057-591-67058",
+      "image": "https://www.babywinkel.nl/cdn/shop/files/jollein-rugzak-puffed-olive-green-761160.webp?crop=center&height=500&v=1740605611&width=600",
+      "page": "https://mimmobaby.com/produktet/backpack-puffeed-057-591-67058-272",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine e madhe - Mrs.Cat",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858942227_01.jpg?v=1776278985",
+      "page": "https://mimmobaby.com/produktet/backpack-large-mrs-cat-266",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine e madhe - Mr.Lion",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858942135_01.jpg?v=1776277024",
+      "page": "https://mimmobaby.com/produktet/backpack-large-mr-lion-265",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine për femije 057-591-66060",
+      "image": "https://mimmobaby.com/api/media/products/5922aaf7-fbdb-4b92-9cf9-566f3d6dfd1e.webp",
+      "page": "https://mimmobaby.com/produktet/backpack-canta-057-591-66060-253",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mrs.Unicorn",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5420047902245_01.jpg?v=1776279099",
+      "page": "https://mimmobaby.com/produktet/backpack-mrs-unicorn-251",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mrs.Bumblebee",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5420047902269_01.jpg?v=1779903675",
+      "page": "https://mimmobaby.com/produktet/backpack-mrs-bumblebee-247",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mr.Penguin",
+      "image": "https://images.thimbletoys.com/images/item/2610058a-trixie-rugzak-mr-penguin",
+      "page": "https://mimmobaby.com/produktet/backpack-mr-penguin-244",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mr.Parrot",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5420047902276_01.jpg?v=1779904568",
+      "page": "https://mimmobaby.com/produktet/backpack-mr-parrot-243",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mr.Lion",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5420047902139_01.jpg?v=1776281618",
+      "page": "https://mimmobaby.com/produktet/backpack-mr-lion-242",
+      "barcode": null
+    },
+    {
+      "title": "Çantë shpine - Mr.Fox",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5420047902108_01.jpg?v=1776280469",
+      "page": "https://mimmobaby.com/produktet/backpack-mr-fox-241",
+      "barcode": null
+    },
+    {
+      "title": "Babygym Toys Tiny Park",
+      "image": "https://jollein.com/cdn/shop/files/108-001-68102_1_20250611T.jpg?v=1752140694",
+      "page": "https://mimmobaby.com/produktet/babygym-toys-tiny-park-236",
+      "barcode": null
+    },
+    {
+      "title": "Babygym Toys Elephant Tales",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/108-001-68110_1_20250611T.jpg?v=1752140850",
+      "page": "https://mimmobaby.com/produktet/babygym-toys-elephant-tales-235",
+      "barcode": null
+    },
+    {
+      "title": "Albero CC4 Green – Batanije për bebe 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/44059598-c73d-451c-9657-de90ecdb3014.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-cc4-green-223",
+      "barcode": null
+    },
+    {
+      "title": "Albero CC3 Grey – Set për shtrat 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/557386e0-b0c1-4bbd-8567-da82604ffdc9.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-cc3-grey-222",
+      "barcode": null
+    },
+    {
+      "title": "Albero CC2 Beige – Set për shtrat 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/d4966b4a-b1a4-433a-a0d2-331396d32ec4.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-cc2-beige-221",
+      "barcode": null
+    },
+    {
+      "title": "Albero Mouse – Set për shtrat 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/951fa9a9-b078-4148-b2a6-9a63b21149f5.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-421-mouse-216",
+      "barcode": null
+    },
+    {
+      "title": "Albero Bunny – Set për shtrat 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/40688671-ebb1-4871-b7f6-e8acb5866883.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-420-bunny-215",
+      "barcode": null
+    },
+    {
+      "title": "Albero Cars – Set për shtrat 135 × 100 cm",
+      "image": "https://mimmobaby.com/api/media/products/95a22b4b-29dd-499f-96db-ed78899fc81d.webp",
+      "page": "https://mimmobaby.com/produktet/baby-bedding-135x100-416-cars-214",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa Basic – Set i gjelbër 2-pjesësh për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/5de1caec-8872-4dea-8593-b498ab2c441e.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-set-basic-ac25205-205",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa Chic Girl – Kominoshe e bardhë me kapelë për bebe",
+      "image": "https://mimmobaby.com/api/media/products/50affaa1-ffdc-403a-8ba3-3d2bd8f03fa3.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-romper-had-set-chic-girl-ac25823-201",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa Basic – Kominoshe e kaltër për bebe",
+      "image": "https://mimmobaby.com/api/media/products/b5833e8c-6cf9-4205-a4f9-8ab353e68d7b.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-romper-basic-ac25209-200",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Pizhame 2-pjesëshe me dinosaurus",
+      "image": "https://mimmobaby.com/api/media/products/ac090dea-80e1-41a7-a1f4-2c2544036d09.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-pijama-ac23405-198",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa Basic – Xhaketë e thurur rozë",
+      "image": "https://mimmobaby.com/api/media/products/ef82da9b-b2f3-45a3-ae70-2780b817d0b2.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-jacket-knitwear-basic-ac24333-196",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set me fustan, mbathje dhe shirit për vajza",
+      "image": "https://mimmobaby.com/api/media/products/4e52c880-082b-4df1-aa75-4aeeeba3c3b2.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-dress-underpant-ac22714-191",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa Little Star – Set 2-pjesësh për bebe",
+      "image": "https://mimmobaby.com/api/media/products/441e6c37-6ef3-4203-9d59-fdd8e566b035.webp",
+      "page": "https://mimmobaby.com/produktet/andy-wawa-set-2-pcs-mami-litlte-star-ac25704-187",
+      "barcode": null
+    },
+    {
+      "title": "Bebetto – Set adapterësh për karrocë",
+      "image": "https://mimmobaby.com/api/media/products/473b8e8e-5d78-4550-bcf5-582f6671c80d.webp",
+      "page": "https://mimmobaby.com/produktet/adaptera-bebetto-180",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Upline 2 dhe Claro – Adapter për ulëse veture",
+      "image": "https://loladiazbebes.com/62475-large_default/adaptadores-grupo-0-upline-2-venicci.jpg",
+      "page": "https://mimmobaby.com/produktet/adapter-upline-2-dhe-claro-car-seat-set-do-fotelika-kpl-178",
+      "barcode": null
+    },
+    {
+      "title": "Activity Triangle Tiny Park",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/068-001-68102_1_20250611T.jpg?v=1752140636",
+      "page": "https://mimmobaby.com/produktet/activity-triangle-tiny-park-166",
+      "barcode": null
+    },
+    {
+      "title": "Activity Triangle Flower Fairies",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/068-001-68104_1_20250611T.jpg?v=1752140826",
+      "page": "https://mimmobaby.com/produktet/activity-triangle-flower-fairies-165",
+      "barcode": null
+    },
+    {
+      "title": "Activity Spiral Elephant Tales",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/122-001-68110_1_20260710T.jpg?v=1783680355",
+      "page": "https://mimmobaby.com/produktet/activity-spiral-elephant-tales-164",
+      "barcode": null
+    },
+    {
+      "title": "Activity spiral - Mrs.Rabbit",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858248633_01.jpg?v=1776277171",
+      "page": "https://mimmobaby.com/produktet/activity-spiral-mrs-rabbit-163",
+      "barcode": null
+    },
+    {
+      "title": "Activity spiral - Mr.Lion",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858248657_01.jpg?v=1776277491",
+      "page": "https://mimmobaby.com/produktet/activity-spiral-mr-lion-162",
+      "barcode": null
+    },
+    {
+      "title": "Activity spiral - Mr.Dino",
+      "image": "https://cdn.shopify.com/s/files/1/0988/0256/5451/files/5400858248640_01.jpg?v=1776279658",
+      "page": "https://mimmobaby.com/produktet/activity-spiral-mr-dino-161",
+      "barcode": null
+    },
+    {
+      "title": "Wooden silione Activity ring mrs.cat",
+      "image": "https://mimmobaby.com/api/media/products/57ad0e01-b7c9-411c-ad80-759cb7567a5b.webp",
+      "page": "https://mimmobaby.com/produktet/wooden-silione-activity-ring-mrs-cat-160",
+      "barcode": null
+    },
+    {
+      "title": "Activity Cube Flower Fairies",
+      "image": "https://cdn.shopify.com/s/files/1/0674/1013/3190/files/119-001-68104_1_20250611T.jpg?v=1752141101",
+      "page": "https://mimmobaby.com/produktet/activity-cube-flower-fairies-158",
+      "barcode": null
+    },
+    {
+      "title": "Acma Fairy Pink Tail – Shtrat për fëmijë 180 × 80 cm",
+      "image": "https://mimmobaby.com/api/media/products/8ee96e60-0bfe-4551-a2dd-23ccbe3681fc.webp",
+      "page": "https://mimmobaby.com/produktet/acma-fairy-pink-tail-180-80-07-155",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Jelek gri me vija për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/84a21cb9-86b5-4aa4-ba6f-3f29a91602a6.webp",
+      "page": "https://mimmobaby.com/produktet/ac26214-vest-151",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 2-pjesësh rozë me flutur për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/f15a7b0b-631d-492f-87eb-eeabbd749cd5.webp",
+      "page": "https://mimmobaby.com/produktet/ac26200-2-pcs-set-150",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Thes gjumi për bebe",
+      "image": "https://mimmobaby.com/api/media/products/c645e0ba-4b8b-4869-ab7b-f87126fb2d13.webp",
+      "page": "https://mimmobaby.com/produktet/ac26193-sleeper-148",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Kombinezon i ngrohtë me kapuç për bebe",
+      "image": "https://mimmobaby.com/api/media/products/fe2e9d63-8dca-4710-8739-e71c16c3a3f5.webp",
+      "page": "https://mimmobaby.com/produktet/ac26189-pramsuit-145",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Kominoshe me vija për bebe",
+      "image": "https://mimmobaby.com/api/media/products/c5d56a63-6ddd-46c4-bacc-ef16fae8e6b6.webp",
+      "page": "https://mimmobaby.com/produktet/ac26169-romper-143",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 3-pjesësh me kapelë për bebe",
+      "image": "https://mimmobaby.com/api/media/products/c8ba054f-6f48-45cb-9716-67224835a4d7.webp",
+      "page": "https://mimmobaby.com/produktet/ac26158-3-pcs-side-snap-t-139",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Batanije për bebe",
+      "image": "https://mimmobaby.com/api/media/products/d6089598-a18c-44bf-9699-e8baf17bb700.webp",
+      "page": "https://mimmobaby.com/produktet/ac26033-blanket-135",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 2-pjesësh me panda për bebe",
+      "image": "https://mimmobaby.com/api/media/products/5c0dfcf8-51d2-4424-984d-bef4656e6b7a.webp",
+      "page": "https://mimmobaby.com/produktet/ac26024-2-pcs-side-snap-set-132",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Pantallona të kaltra për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/3238a8cc-a73c-42fc-ba8b-d79cae6bfa99.webp",
+      "page": "https://mimmobaby.com/produktet/ac25964-pant-130",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Xhaketë e kaltër me kapuç për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/81f72287-26a0-428e-b9a2-9931826736db.webp",
+      "page": "https://mimmobaby.com/produktet/ac25936-jacket-128",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Mbështjellëse për bebe",
+      "image": "https://mimmobaby.com/api/media/products/2bed2289-1f01-4584-b59d-62dec9c22317.webp",
+      "page": "https://mimmobaby.com/produktet/ac25885-swaddle-126",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set veror 2-pjesësh me luan për fëmijë",
+      "image": "https://mimmobaby.com/api/media/products/21988c64-a390-488c-a39c-b159060f4e25.webp",
+      "page": "https://mimmobaby.com/produktet/ac25814-2-pcs-set-119",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Shtrojë për ndërrimin e bebes",
+      "image": "https://mimmobaby.com/api/media/products/03fadb00-380a-4af2-b927-a6437f0dd879.webp",
+      "page": "https://mimmobaby.com/produktet/ac25583-changing-mat-111",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 3-pjesësh me fund për vajza",
+      "image": "https://mimmobaby.com/api/media/products/2b39531a-109d-4897-a892-6595ed296752.webp",
+      "page": "https://mimmobaby.com/produktet/ac25577-3-pcs-set-108",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Thes gjumi bezhë me yje për bebe",
+      "image": "https://mimmobaby.com/api/media/products/d42cfa51-19fe-40e5-aa65-e10ed504c180.webp",
+      "page": "https://mimmobaby.com/produktet/ac25070-sleeper-100",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 2-pjesësh për bebe",
+      "image": "https://mimmobaby.com/api/media/products/66363a58-0bbb-475e-9371-25787e586d2b.webp",
+      "page": "https://mimmobaby.com/produktet/ac24335-2-pcs-set-99",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Set 3-pjesësh për bebe",
+      "image": "https://mimmobaby.com/api/media/products/50ff0fc6-2ee8-4cc6-a513-b8d8d0cf9c60.webp",
+      "page": "https://mimmobaby.com/produktet/ac24200-3-pcs-set-98",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Fustan për vajza",
+      "image": "https://mimmobaby.com/api/media/products/f17ca99f-0f2d-4d01-b452-425a66e45f35.webp",
+      "page": "https://mimmobaby.com/produktet/ac22739-dress-96",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Coral 3 në 1 – Shtrat elektrik me peshore",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-coral-krevat-elektrik-3-ne-1-me-peshore-te-integruar/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-coral-krevat-elektrik-3-ne-1-me-peshore-te-integruar",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Olivia Beige Natural – Luhatëse elektrike për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-olivia-luhatese-elektrike-premium-per-foshnje/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-olivia-luhatese-elektrike-premium-per-foshnje",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Rio Beige Latte – Luhatëse elektrike për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-rio-luhatese-elektrike-per-foshnje/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-rio-luhatese-elektrike-per-foshnje",
+      "barcode": null
+    },
+    {
+      "title": "Karrigeja Lionelo Celia",
+      "image": "https://mimmobaby.com/api/media/products/56f79f9f-5b05-4521-9434-41d77160acc6.webp",
+      "page": "https://mimmobaby.com/produktet/karrigeja-lionelo-celia-2",
+      "barcode": null
+    },
+    {
+      "title": "Vilac – Arkë fiskale prej druri për fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/arke-fiskale-prej-druri-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/arke-fiskale-prej-druri-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Set Aksesorësh për Kujdes Personal prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/set-aksesoresh-per-kujdes-personal-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-aksesoresh-per-kujdes-personal-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Set Veterineri për Kafshë Shtëpiake prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/set-veterineri-per-kafshe-shtepiake-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-veterineri-per-kafshe-shtepiake-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Pistë edukative 2 në 1 me topa prej druri",
+      "image": "https://mimmobaby.com/products/catalog/piste-edukative-2-ne-1-me-topa-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/piste-edukative-2-ne-1-me-topa-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Set Ushqimesh për Prerje prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/set-ushqimesh-per-prerje-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-ushqimesh-per-prerje-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Abak Dyanshëm Edukativ prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/abak-dyanshem-edukativ-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/abak-dyanshem-edukativ-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Set Çaji prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/set-caji-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-caji-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Dyqan Ushqimor prej Druri për Fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/dyqan-ushqimor-prej-druri-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/dyqan-ushqimor-prej-druri-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lodër Natyrale për Daljen e Dhëmbëve në Formë Elefanti",
+      "image": "https://mimmobaby.com/products/catalog/loder-natyrale-per-daljen-e-dhembeve-ne-forme-elefanti/1.jpg",
+      "page": "https://mimmobaby.com/produktet/loder-natyrale-per-daljen-e-dhembeve-ne-forme-elefanti",
+      "barcode": null
+    },
+    {
+      "title": "Zebra tërheqëse prej Druri për Fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/zebra-terheqese-prej-druri-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/zebra-terheqese-prej-druri-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Luan tërheqës prej Druri për Fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/luan-terheqes-prej-druri-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/luan-terheqes-prej-druri-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Set Mëngjesi prej Druri për Fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/set-mengjesi-prej-druri-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-mengjesi-prej-druri-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Kullë Renditëse me Luan prej Druri",
+      "image": "https://mimmobaby.com/products/catalog/kulle-renditese-me-luan-prej-druri/1.jpg",
+      "page": "https://mimmobaby.com/produktet/kulle-renditese-me-luan-prej-druri",
+      "barcode": null
+    },
+    {
+      "title": "Tavolinë pune prej druri me vegla dhe aksesorë",
+      "image": "https://mimmobaby.com/products/catalog/work-bench-tavoline-pune-prej-druri-me-vegla-dhe-aksesore/1.jpg",
+      "page": "https://mimmobaby.com/produktet/work-bench-tavoline-pune-prej-druri-me-vegla-dhe-aksesore",
+      "barcode": null
+    },
+    {
+      "title": "Set Pikniku prej Druri me Aksesorë",
+      "image": "https://mimmobaby.com/products/catalog/set-pikniku-prej-druri-me-aksesore/1.jpg",
+      "page": "https://mimmobaby.com/produktet/set-pikniku-prej-druri-me-aksesore",
+      "barcode": null
+    },
+    {
+      "title": "Set Premium Shtrat Oval 2 në 1 për bebe me Dyshek, 123 cm, 93 cm, 86 cm",
+      "image": "https://mimmobaby.com/api/media/products/99bdbd50-1a3e-40d4-b969-4d5f880d3817.webp",
+      "page": "https://mimmobaby.com/produktet/%f0%9f%94%a5-coming-soon-set-premium-shtrat-oval-2-ne-1-per-foshnje-me-dyshek-mbrojtese-dhe-carcaf",
+      "barcode": null
+    },
+    {
+      "title": "Set Premium Shtrat Oval 2 në 1 për bebe me Dyshek, 123 cm, 93 cm, 86 cm",
+      "image": "https://mimmobaby.com/api/media/products/b5dd3f14-0ee4-4d89-9a6b-e9ae0da780fc.webp",
+      "page": "https://mimmobaby.com/produktet/krevat-2-ne-1-oval-per-foshnje-dyshek-mbrojtese-dhe-carcaf",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bart Tour Grey Stone – Biçikletë pa pedale për fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-bart-tour-biciklete-pa-pedale-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-bart-tour-biciklete-pa-pedale-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Alex Plus – Biçikletë pa pedale për fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-alex-plus-biciklete-pa-pedale-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-alex-plus-biciklete-pa-pedale-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Sammy – Motoçikletë shtytëse për fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-sammy-motociklete-shtytese-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-sammy-motociklete-shtytese-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Mey Beige Sand – Trotinet me drita LED për fëmijë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-mey-trotinet-per-femije-me-drita-led/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-mey-trotinet-per-femije-me-drita-led",
+      "barcode": null
+    },
+    {
+      "title": "BabyWho Prato Shtrat Natural Wood – Djep për Bebe 50×90 cm",
+      "image": "https://mimmobaby.com/api/media/products/50770518-0e07-469f-ac7f-18bd2a737b71.webp",
+      "page": "https://mimmobaby.com/produktet/babywho-prato-natural-wood-djep-per-bebe-50x90-cm",
+      "barcode": null
+    },
+    {
+      "title": "BabyWho Onda –Shtrat Oval për Bebe me Funksion Lëkundjeje 60×120 cm",
+      "image": "https://mimmobaby.com/api/media/products/cf8d2dad-c051-4f25-b0eb-5323b654a28e.webp",
+      "page": "https://mimmobaby.com/produktet/babywho-onda-shtrat-oval-per-bebe-me-funksion-lekundjeje-60x120-cm",
+      "barcode": null
+    },
+    {
+      "title": "Jollein Miffy and Friends – Thes gjumi 70 cm, 0.5 TOG",
+      "image": "https://mimmobaby.com/products/catalog/thes-gjumi-jollein-miffy-and-friends-70cm/1.jpg",
+      "page": "https://mimmobaby.com/produktet/thes-gjumi-jollein-miffy-and-friends-70cm",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Julie One – Karrocë e lehtë për udhëtime",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-julie-one-karroce-travel-e-lehte/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-julie-one-karroce-travel-e-lehte",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Leonie Plus – Shtrat anësor për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-leonie-plus/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-leonie-plus",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bastiaan RWF i-Size – Ulëse për veturë",
+      "image": "https://mimmobaby.com/products/catalog/bastiaan-rwf-i-size/1.jpg",
+      "page": "https://mimmobaby.com/produktet/bastiaan-rwf-i-size",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bastiaan One i-Size – Ulëse për veturë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-bastiaan-one-i-size/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-bastiaan-one-i-size",
+      "barcode": null
+    },
+    {
+      "title": "Karrigeja Lionelo Celia",
+      "image": "https://mimmobaby.com/api/media/products/cc63e9af-800d-4196-aeb5-cb21a5cefa3d.webp",
+      "page": "https://mimmobaby.com/produktet/karrigeja-lionelo-celia",
+      "barcode": null
+    },
+    {
+      "title": "Trixie Mrs. Unicorn – Shishe 500 ml",
+      "image": "https://mimmobaby.com/products/catalog/shishe-me-unicorn-500ml/1.jpg",
+      "page": "https://mimmobaby.com/produktet/shishe-me-unicorn-500ml",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Miush",
+      "image": "https://mimmobaby.com/api/media/products/dd500d2e-d1da-4ff3-a5b1-8ecb3fc93fbe.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-miush",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Tiger",
+      "image": "https://mimmobaby.com/api/media/products/f0ea81e6-ec18-4e45-9254-1176ea339321.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-dhelper",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Qenush",
+      "image": "https://mimmobaby.com/api/media/products/a6916822-8680-4d5c-9895-4092740163d1.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-qenush",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Lepur",
+      "image": "https://mimmobaby.com/api/media/products/69636d03-8422-4832-8e6f-de1e115a44aa.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-lepur",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Elefant",
+      "image": "https://mimmobaby.com/api/media/products/3da4a4d7-f1f7-466b-b1f6-9ccb2d72841d.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-elefant",
+      "barcode": null
+    },
+    {
+      "title": "Çantë e vogel Trixie me Peshkaqen",
+      "image": "https://mimmobaby.com/api/media/products/29d890b7-f5e6-44b9-92fb-cd66a56d6a16.webp",
+      "page": "https://mimmobaby.com/produktet/canta-e-vogel-trixie-me-peshkaqen",
+      "barcode": null
+    },
+    {
+      "title": "Espiro Only – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/espiro-only/1.jpg",
+      "page": "https://mimmobaby.com/produktet/espiro-only",
+      "barcode": null
+    },
+    {
+      "title": "Espiro Code – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/espiro-code/1.jpg",
+      "page": "https://mimmobaby.com/produktet/espiro-code",
+      "barcode": null
+    },
+    {
+      "title": "Espiro Yoga 111 – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/espiro-yoga-111/1.jpg",
+      "page": "https://mimmobaby.com/produktet/espiro-yoga-111",
+      "barcode": null
+    },
+    {
+      "title": "Andy Wawa – Kominoshe me mëngë të gjata për bebe",
+      "image": "https://mimmobaby.com/products/catalog/romper-me-menge-te-gjata/1.jpg",
+      "page": "https://mimmobaby.com/produktet/romper-me-menge-te-gjata",
+      "barcode": null
+    },
+    {
+      "title": "Vilac Old Sport – Makinë lodër prej druri",
+      "image": "https://mimmobaby.com/products/catalog/makine-druri-old-sport/1.jpg",
+      "page": "https://mimmobaby.com/produktet/makine-druri-old-sport",
+      "barcode": null
+    },
+    {
+      "title": "Vilac – Hidroavion lodër prej druri",
+      "image": "https://mimmobaby.com/products/catalog/hidroavion/1.jpg",
+      "page": "https://mimmobaby.com/produktet/hidroavion",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Harmony i-Size – Ulëse për veturë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-harmony-i-size-car-seat/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-harmony-i-size-car-seat",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Levi One i-Size – Ulëse për veturë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-levi-one-i-size-car-seat/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-levi-one-i-size-car-seat",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Luuk Fix i-Size – Ulëse për veturë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-luuk-fix-i-size/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-luuk-fix-i-size",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Annet Tour – Karrocë e lehtë për udhëtime",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-annet-tour-karroce-multifunksionale/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-annet-tour-karroce-multifunksionale",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Mika Plus Black Onyx 3 në 1 – Karrocë për bebe",
+      "image": "https://mimmobaby.com/products/verified-sep09/mika-black.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-mika-plus-3in1-black-onyx",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bamboo Set – Set me 3 pelena bambuje",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-bamboo-set-set-prej-3-pelenash-bambu/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-bamboo-set-set-prej-3-pelenash-bambu",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Claro Noir – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/venicci-claro-noir/1.jpg",
+      "page": "https://mimmobaby.com/produktet/venicci-claro-noir",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Claro Forest – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/venicci-claro-forest/1.jpg",
+      "page": "https://mimmobaby.com/produktet/venicci-claro-forest",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Claro Almond – Karrocë 2 në 1",
+      "image": "https://mimmobaby.com/products/catalog/venicci-claro-almond/1.jpg",
+      "page": "https://mimmobaby.com/produktet/venicci-claro-almond",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Upline 2 Taupe – Karrocë 3 në 1",
+      "image": "https://mimmobaby.com/products/catalog/venicci-upline-2-taupe/1.jpg",
+      "page": "https://mimmobaby.com/produktet/venicci-upline-2-taupe",
+      "barcode": null
+    },
+    {
+      "title": "Venicci Upline 2 All Black – Karrocë 3 në 1",
+      "image": "https://mimmobaby.com/products/catalog/venicci-upline-2-all-black-2/1.jpg",
+      "page": "https://mimmobaby.com/produktet/venicci-upline-2-all-black-2",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bamboo Swaddle – Mbështjellës bambuje për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-bamboo-swaddle/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-bamboo-swaddle",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Aurora 3 në 1 – Shtrat për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-aurora-3-in-1-cot-krevat-i-pavarur/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-aurora-3-in-1-cot-krevat-i-pavarur",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Luna 2 në 1 – Shtrat për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-luna-2-in-1-cot/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-luna-2-in-1-cot",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Linn Plus Grey – Karrige ushqimi",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-linn-plus-grey-karrige-ushqyerjeje-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-linn-plus-grey-karrige-ushqyerjeje-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Margareet Wave – Mbajtëse për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-margareet-wave-baby-carrier/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-margareet-wave-baby-carrier",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Floris White Natural – Karrige ushqimi",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-floris-white-natural-grey-stone/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-floris-white-natural-grey-stone",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Lilac Beige Sand – Luhatëse për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-lilac-beige-sand-rocker-recliner-per-femije/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-lilac-beige-sand-rocker-recliner-per-femije",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo June Air Grey Graphite – Luhatëse për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-june-air-grey-graphite/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-june-air-grey-graphite",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Bart Air Sporty Black – Biçikletë balancuese",
+      "image": "https://mimmobaby.com/products/catalog/lo-bart-air-sporty/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-bart-air-sporty",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Jessy Grey Brown – Trotinet me tri rrota",
+      "image": "https://mimmobaby.com/products/catalog/lo-jessy/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-jessy",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Helmet – Helmetë mbrojtëse për fëmijë",
+      "image": "https://mimmobaby.com/products/verified-sep09/helmet-blue.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-helmet",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Thermup Go Evo – Ngrohës portativ për biberon",
+      "image": "https://mimmobaby.com/products/catalog/loc-thermup-go-evo/1.jpg",
+      "page": "https://mimmobaby.com/produktet/loc-thermup-go-evo",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Thermup Go Plus – Ngrohës portativ për biberon",
+      "image": "https://mimmobaby.com/products/catalog/loc-thermup-go-plus/1.jpg",
+      "page": "https://mimmobaby.com/produktet/loc-thermup-go-plus",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo BabyLine 9.2 AI – Video-monitor për bebe",
+      "image": "https://mimmobaby.com/api/media/products/e9efc98f-a463-42c7-a646-96e1e86d10bd.webp",
+      "page": "https://mimmobaby.com/produktet/lionelo-babyline-9-2-ai",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Dalia Set Natural – Karrige ushqimi dhe luhatëse 4 në 1",
+      "image": "https://mimmobaby.com/products/catalog/lo-dalia-set-natural/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-dalia-set-natural",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Ralf – Luhatëse elektrike 2 në 1 për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-ralf/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-ralf",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Otto – Luhatëse elektrike për bebe",
+      "image": "https://mimmobaby.com/products/catalog/lo-otto/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-otto",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Toni Beige Sand – Biçikletë balancuese",
+      "image": "https://mimmobaby.com/products/catalog/lo-toni/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lo-toni",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo BabyNap – Kuti muzikore dhe dritë nate",
+      "image": "https://mimmobaby.com/products/catalog/loc-babynap/1.jpg",
+      "page": "https://mimmobaby.com/produktet/loc-babynap",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo BabyBliss – Ngrohës për peceta të lagura",
+      "image": "https://mimmobaby.com/products/catalog/loc-babybliss/1.jpg",
+      "page": "https://mimmobaby.com/produktet/loc-babybliss",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Sidepocket Large – Organizues i madh për shtrat",
+      "image": "https://mimmobaby.com/api/media/products/af6f6595-801f-4128-8ffa-8cb704405557.webp",
+      "page": "https://mimmobaby.com/produktet/lo-sidepocket-e-madhe",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Sidepocket Small – Organizues i vogël për shtrat",
+      "image": "https://mimmobaby.com/api/media/products/773e7359-be08-4d58-a286-0c50fbdfea9c.webp",
+      "page": "https://mimmobaby.com/produktet/lo-sidepocket-e-vogel",
+      "barcode": null
+    },
+    {
+      "title": "Lionelo Seat Organizer – Organizues për veturë",
+      "image": "https://mimmobaby.com/products/catalog/lionelo-seat-organizer/1.jpg",
+      "page": "https://mimmobaby.com/produktet/lionelo-seat-organizer",
+      "barcode": null
+    },
+    {
+      "title": "Karrocë 3ne1 CARRELLO Magia CRL-6555 Elm gri",
+      "image": "https://mimmobaby.com/api/media/products/0118b038-43dc-4dc8-8120-adbaec15a635.webp",
+      "page": "https://mimmobaby.com/produktet/magia",
+      "barcode": null
+    },
+    {
+      "title": "Bebetto 42 Pro – Karrocë për binjakë",
+      "image": "https://mimmobaby.com/products/catalog/bebetto-42-pro/1.jpg",
+      "page": "https://mimmobaby.com/produktet/bebetto-42-pro",
       "barcode": null
     }
   ]
