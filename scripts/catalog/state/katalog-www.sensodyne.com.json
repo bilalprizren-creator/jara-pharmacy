@@ -1,0 +1,344 @@
+{
+  "store": "www.sensodyne.com",
+  "platform": "sitemap",
+  "fetchedAt": "2026-09-09T17:51:33.566Z",
+  "complete": true,
+  "items": [
+    {
+      "title": "Sensodyne Rapid Relief Extra Fresh Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Rapid-Relief-extra-fresh.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-rapid-relief-extra-fresh-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Repair and Protect Whitening Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Repair-Protect-whitening.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-repair-protect-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Repair and Protect Extra Fresh Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Repair-Protect-extra-fresh.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-repair-protect-extra-fresh-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Repair and Protect Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Repair-Protect.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-repair-protect-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Complete Protection Extra Fresh Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Complete-Protection-extra-fresh.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-complete-protection-extra-fresh-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Complete Protection Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Complete-Protection.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-complete-protection-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Extra Whitening Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Essential-Care-extra-whitening.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-extra-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Fresh Mint Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Essential-Care-fresh-mint.png?auto=format",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-fresh-mint-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Sensitivity and Gum Mint Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/product-sensitivity-gum-mint.png",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-sensitivity-and-gum-mint-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Sensitivity and Gum Whitening Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/product-sensitivity-gum-whitening.png",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-sensitivity-and-gum-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Sensitivity and Gum Whitening Toothpaste",
+      "image": "https://i-cf5.gskstatic.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/product-sensitivity-gum-whitening.png",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-sensitivity-and-gum-fresh-clean-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Stain Protector Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/SP-Update-Carton-00310158358145-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-clinical-white-stain-protector-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Enamel Strengthening Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/ES-Update-Carton-00310158358114-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-clinical-white-enamel-strengthening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Intensive Clean Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/NEW-IC-Carton-00310158359586-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-clinical-white-intensive-clean-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Stain Protector Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/SP-Update-Carton-00310158358145-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-clinical-repair-whiten-and-shine-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Stain Protector Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/SP-Update-Carton-00310158358145-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-clinical-repair-fresh-clean-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Clinical White Stain Protector Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v2/en_US/Product-pages/products/desktop/january-25-update/SP-Update-Carton-00310158358145-C1C1-copy.jpg",
+      "page": "https://www.sensodyne.com/en-us/products/sensodyne-cavity-sensitivity/",
+      "barcode": null
+    },
+    {
+      "title": "Nourish Healthy White Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/nourish-healthy-white2.png",
+      "page": "https://www.sensodyne.com/en-gb/products/",
+      "barcode": null
+    },
+    {
+      "title": "Nourish Healthy White Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/nourish-healthy-white2.png",
+      "page": "https://www.sensodyne.com/en-gb/products/product-results/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensitivity-and-gum-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum whitening toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensitivity-and-gum-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Rapid Relief",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Rapid_Relief_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/rapid-relief-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Rapid Relief Whitening",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Rapid_Relief_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/rapid-relief-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Repair and Protect Whitening",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Repair_Protect_Whitening_PLP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/repair-and-protect-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Repair and Protect Extra Fresh",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Repair_Protect_Extra_Fresh_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/repair-and-protect-extra-fresh-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Repair and Protect",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Repair_Protect_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/repair-and-protect-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Repair Protect toothbrush",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/uk_local_assets/desktop/packshots/Sensodyne_TB-Range_R%26P_Soft_UK_129x440.png",
+      "page": "https://www.sensodyne.com/en-gb/products/repair-and-protect-toothbrush/",
+      "barcode": null
+    },
+    {
+      "title": "Complete Protection",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Complete_Protection_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/complete-protection-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Gentle Whitening",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Base_Gentle_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/daily-care-gentle-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Original Mint",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Base_Original_Mint_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-original-mint-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Extra Fresh",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Base_Extra_Fresh_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/daily-care-extra-fresh-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Deep Clean",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Base_Deep_Clean_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/deep-clean-gel-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Daily Care  toothbrush",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/uk_local_assets/desktop/packshots/Sensodyne_TB_range_Daily_Care_UK_117x400.png",
+      "page": "https://www.sensodyne.com/en-gb/products/daily-care-toothbrush/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Gentle Whitening",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel_Gentle_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-gentle-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Multi-Action",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel_Multi_Action_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-multi-action-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Extra Freshness",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel_Extra_Freshness_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-extra-freshness-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Daily Protection",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel_Daily_Protection_PDP_Color_Corrected.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-daily-protection-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Mouthwash",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel_Mouthwash_PDP.jpg",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-daily-mouthwash/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Intensive Enamel Repair Extra Fresh",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/uk_local_assets/desktop/packshots/1028x324/Sensodyne_Pronamel_Intensive_Fresh_UK_1.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-intensive-enamel-repair-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Intensive Enamel Repair Whitening",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/uk_local_assets/desktop/packshots/1028x324/Sensodyne_Pronamel_Intensive_Whitening_UK_1.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-intensive-enamel-repair/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Cool Mint Mouthwash",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/uk_local_assets/desktop/packshots/Sensodyne_Cool_Mint_Mouthwash_UK_142x367.png",
+      "page": "https://www.sensodyne.com/en-gb/products/cool-mint-mouthwash/",
+      "barcode": null
+    },
+    {
+      "title": "Pronamel Mineral Boost Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/Pronamel-Mineral-boost.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-mineral-boost-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "home",
+      "image": "https://i-cf5.gskstatic.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/Sensodyne-logo_200x200.jpg",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-strong-bright-enamel-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Complete Protection Extra Fresh",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Complete_Protection_Extra_Fresh_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/complete-protection-advanced-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensitivity-gum-enamel-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum whitening toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-clinical-white-stain-protector-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum whitening toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-clinical-white-enamel-strengthening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-active-enamel-shield-fresh-mint-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-active-enamel-shield-whitening-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-kids-strawberry-twist/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Original_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/pronamel-junior-bubble-mint/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum whitening toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-clinical-repair-active-white/",
+      "barcode": null
+    },
+    {
+      "title": "Sensitivity & Gum whitening toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-clinical-repair-deep-clean/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Cavity + Sensitivity toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-cavity-plus-sensitivity-toothpaste/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Advanced White Deep Clean Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-advanced-white-deep-clean/",
+      "barcode": null
+    },
+    {
+      "title": "Sensodyne Advanced White Enamel Defence Toothpaste",
+      "image": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/SSD_Sensitivity_Gum_Whitening_PDP.png",
+      "page": "https://www.sensodyne.com/en-gb/products/sensodyne-advanced-white-enamel-defence/",
+      "barcode": null
+    }
+  ]
+}

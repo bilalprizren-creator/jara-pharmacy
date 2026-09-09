@@ -171,6 +171,61 @@
       "pathHint": "/products/"
     },
     {
+      "brand": "DR.LUIGI",
+      "store": "www.drluigi.eu",
+      "platform": "shopify"
+    },
+    {
+      "brand": "SEBAMED",
+      "store": "www.sebamed.de",
+      "platform": "sitemap",
+      "pathHint": "/de/p/"
+    },
+    {
+      "brand": "MEDEX",
+      "store": "www.medex.eu",
+      "platform": "woocommerce"
+    },
+    {
+      "brand": "SOLANTE",
+      "store": "www.solante.com",
+      "platform": "woocommerce"
+    },
+    {
+      "brand": "BEBEDOR",
+      "store": "www.bebedor.com",
+      "platform": "sitemap",
+      "pathHint": "/product/"
+    },
+    {
+      "brand": "KLORANE",
+      "store": "www.klorane.com",
+      "platform": "sitemap",
+      "pathHint": "/p/"
+    },
+    {
+      "brand": "SENSODYNE",
+      "store": "www.sensodyne.com",
+      "platform": "sitemap",
+      "pathHint": "/products/"
+    },
+    {
+      "brand": "PHARMALIFE",
+      "store": "www.pharmalife.rs",
+      "platform": "sitemap",
+      "pathHint": "/proizvod/"
+    },
+    {
+      "brand": "VOONKA",
+      "store": "www.voonka.rs",
+      "platform": "woocommerce"
+    },
+    {
+      "brand": "MARUDERM",
+      "store": "www.maruderm.rs",
+      "platform": "shopify"
+    },
+    {
       "brand": "DERMEDIC",
       "store": "dermedic.pl",
       "platform": "sitemap",
@@ -353,6 +408,12 @@
       "scope": "all",
       "pathHint": "/products/",
       "maxPages": 4400
+    },
+    {
+      "store": "apoteka.hr",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 40
     }
   ]
 }

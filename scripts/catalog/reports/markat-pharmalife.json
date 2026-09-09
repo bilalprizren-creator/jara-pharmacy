@@ -1,0 +1,110 @@
+{
+  "generatedAt": "2026-09-09T17:49:41.401Z",
+  "label": "markat-pharmalife",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 5,
+    "downloaded": 5,
+    "failed": 0,
+    "byConfidence": {
+      "E ulët": 3,
+      "E mesme": 2
+    },
+    "byBrand": {
+      "PHARMALIFE": 5
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "9966",
+      "name": "FITOLAT 45 TABLETA ( PHARMALIFE )",
+      "barcode": "8032578470192",
+      "brand": "PHARMALIFE",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Fitolat - Podrška laktaciji i povećanju količine majčinog mleka - PharmaLife\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://pharmalife.rs/proizvod/fitolat-biljni-ekstrakti-za-laktaciju/",
+      "imageUrl": "https://pharmalife.rs/wp-content/uploads/2026/03/Fitolat-1024x755.jpg",
+      "licence": "Katalogu i PHARMALIFE",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0001_9966.jpg",
+      "bytes": 37348
+    },
+    {
+      "number": 2,
+      "code": "9971",
+      "name": "IMMUNO A24-30 TABLETA ( PHARMALIFE )",
+      "barcode": "8032578477283",
+      "brand": "PHARMALIFE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Immuno A24 - Podrška imunitetu - PharmaLife\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://pharmalife.rs/proizvod/immuno-a24-dodatak-ishani-za-jacanje-imunog-sistema/",
+      "imageUrl": "https://pharmalife.rs/wp-content/uploads/2026/03/Immuno-1024x755.jpg",
+      "licence": "Katalogu i PHARMALIFE",
+      "matchScore": 0.67,
+      "file": ".image-cache/brands/0002_9971.jpg",
+      "bytes": 38660
+    },
+    {
+      "number": 3,
+      "code": "9865",
+      "name": "BIOSTATINE FORTE 30 TAB",
+      "barcode": "8032578479652",
+      "brand": "PHARMALIFE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Biostatine Forte - Normalizuje nivo holesterola u krvi - PharmaLife\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30TABS — kontrollo që të përputhet.",
+      "packSizeOurs": "30TABS",
+      "packSizeFound": null,
+      "sourcePage": "https://pharmalife.rs/proizvod/biostatine-forte-dodatak-ishrani-za-normalan-nivo-holesterola-poboljsava-lipidni-status-i-podrzava-zdravlje-srca/",
+      "imageUrl": "https://pharmalife.rs/wp-content/uploads/2026/03/Biostatin-1024x755.jpg",
+      "licence": "Katalogu i PHARMALIFE",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0003_9865.jpg",
+      "bytes": 37423
+    },
+    {
+      "number": 4,
+      "code": "9871",
+      "name": "MAPEZ SPREJ (PICKIM INSEKTEVE )",
+      "barcode": "8032578473568",
+      "brand": "PHARMALIFE",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"Mapez sprej - Prirodna i sigurna zaštita dece protiv komarca - PharmaLife\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://pharmalife.rs/proizvod/mapez-sprej-repelent-odbijanje-komaraca/",
+      "imageUrl": "https://pharmalife.rs/wp-content/uploads/2025/05/Mapez-kutija-I-BOCICA-780x1024.jpg",
+      "licence": "Katalogu i PHARMALIFE",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0004_9871.jpg",
+      "bytes": 93941
+    },
+    {
+      "number": 5,
+      "code": "9954",
+      "name": "GAS BIMBI SOL 0+ 30ML ( PHARMALIFE )",
+      "barcode": "8608808194482",
+      "brand": "PHARMALIFE",
+      "confidence": "E ulët",
+      "status": "Mospërputhje",
+      "note": "Gjetur te katalogu i markës si \"GAS Bimbi kapi - Dodatak ishrani za probavu i gasove kod dece - PharmaLife\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 30ML — kontrollo që të përputhet.",
+      "packSizeOurs": "30ML",
+      "packSizeFound": null,
+      "sourcePage": "https://pharmalife.rs/proizvod/gas-bambi-eliminacija-gasova-varenja-kod-dece/",
+      "imageUrl": "https://pharmalife.rs/wp-content/uploads/2026/03/Gas-Bimbi-1024x768.jpg",
+      "licence": "Katalogu i PHARMALIFE",
+      "matchScore": 0.5,
+      "file": ".image-cache/brands/0005_9954.jpg",
+      "bytes": 54841
+    }
+  ]
+}

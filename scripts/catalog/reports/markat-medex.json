@@ -1,0 +1,14 @@
+{
+  "generatedAt": "2026-09-09T17:33:18.187Z",
+  "label": "markat-medex",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 0,
+    "downloaded": 0,
+    "failed": 0,
+    "byConfidence": {},
+    "byBrand": {}
+  },
+  "failed": [],
+  "photos": []
+}

@@ -1,0 +1,980 @@
+{
+  "store": "www.medex.eu",
+  "platform": "woocommerce",
+  "fetchedAt": "2026-09-09T17:33:18.148Z",
+  "complete": true,
+  "items": [
+    {
+      "title": "Xenymphus “Bath Oil + Bodymilk” Duo Geschenk",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/AK216-scaled.webp",
+      "page": "https://medex.eu/product/xenymphus-bath-oil-bodymilk-duo-geschenk/",
+      "barcode": null
+    },
+    {
+      "title": "Xenymphus “Shampoo + Douchecreme” Duo Gift",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/AK215-scaled.webp",
+      "page": "https://medex.eu/product/xenymphus-shampoo-douchecreme-duo-gift/",
+      "barcode": null
+    },
+    {
+      "title": "Xenymphus “Bodymilk + Douchecreme” Duo Geschenk",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/AK214-scaled.webp",
+      "page": "https://medex.eu/product/xenymphus-bodymilk-showercream-gift-set/",
+      "barcode": null
+    },
+    {
+      "title": "Sel Marin Exfoliant 1000 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1341-scaled.webp",
+      "page": "https://medex.eu/product/sel-marin-exfoliant-1000-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Magnesium Bath Salt 700 gram",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1344-scaled.webp",
+      "page": "https://medex.eu/product/magnesium-bath-salt-700-gram/",
+      "barcode": null
+    },
+    {
+      "title": "Firming Body Cream 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2125-scaled.webp",
+      "page": "https://medex.eu/product/firming-body-cream-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Extending Volume Cream 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2124-scaled.webp",
+      "page": "https://medex.eu/product/extending-volume-cream-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Ultrasonic Slimming Gel 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2123-scaled.webp",
+      "page": "https://medex.eu/product/ultrasonic-slimming-gel-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Panyco Lotion 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2114-1-scaled.webp",
+      "page": "https://medex.eu/product/panyco-lotion-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Body Peeling Strong 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1322-1-scaled.webp",
+      "page": "https://medex.eu/product/body-peeling-strong-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Body Peeling Strong 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2109-scaled.webp",
+      "page": "https://medex.eu/product/body-peeling-strong-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Ess. Regenerative Body Milk 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1302-scaled.webp",
+      "page": "https://medex.eu/product/ess-regenerative-body-milk-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Ess. Complex Body Milk 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1301-scaled.webp",
+      "page": "https://medex.eu/product/ess-complex-body-milk-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Summer Dew Body Milk 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2110-scaled.webp",
+      "page": "https://medex.eu/product/summer-dew-body-milk-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bath Crème de Beauté 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/C1307-scaled.webp",
+      "page": "https://medex.eu/product/bath-creme-de-beaute-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Wadden Silt Clay Scrub 500 gr.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2122-scaled.webp",
+      "page": "https://medex.eu/product/wadden-silt-clay-scrub-500-gr/",
+      "barcode": null
+    },
+    {
+      "title": "Cranberry Clay Scrub 500 gr.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2121-scaled.webp",
+      "page": "https://medex.eu/product/cranberry-clay-scrub-500-gr/",
+      "barcode": null
+    },
+    {
+      "title": "Coleseed Clay Scrub 500 gr.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2120-scaled.webp",
+      "page": "https://medex.eu/product/coleseed-clay-scrub-500-gr/",
+      "barcode": null
+    },
+    {
+      "title": "SwS Self Bronzing 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3055-scaled.webp",
+      "page": "https://medex.eu/product/sws-self-bronzing-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Softly Shampoo number 2",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3302-scaled.webp",
+      "page": "https://medex.eu/product/softly-shampoo-number-2/",
+      "barcode": null
+    },
+    {
+      "title": "Softly Shampoo Number 1",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3301-scaled.webp",
+      "page": "https://medex.eu/product/softly-shampoo-number-1/",
+      "barcode": null
+    },
+    {
+      "title": "Gent. Excl. Eau d.Toil 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V4003-scaled.webp",
+      "page": "https://medex.eu/product/gent-excl-eau-d-toil-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Eau Softly 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2605-scaled.webp",
+      "page": "https://medex.eu/product/eau-softly-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Masque Softly 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2602-scaled.webp",
+      "page": "https://medex.eu/product/masque-softly-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum Lumière 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2099-scaled.webp",
+      "page": "https://medex.eu/product/serum-lumiere-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Gerstiné White Virgin Eau de Parfum 70ml White",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3402-scaled.webp",
+      "page": "https://medex.eu/product/gerstine-white-virgin-eau-de-parfum-70ml-white/",
+      "barcode": null
+    },
+    {
+      "title": "Gerstiné Mélodie d’Amour Eau de Parfum 70ml Gold",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3401-scaled.webp",
+      "page": "https://medex.eu/product/gerstine-melodie-damour-eau-de-parfum-70ml-gold/",
+      "barcode": null
+    },
+    {
+      "title": "Vital Recover K 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2059-scaled.webp",
+      "page": "https://medex.eu/product/vital-recover-k-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Hyd. Eye & Neck Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2013-scaled.webp",
+      "page": "https://medex.eu/product/hyd-eye-neck-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Argireline 10 Eye Cream 30 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2215-scaled.webp",
+      "page": "https://medex.eu/product/argireline-10-eye-cream-30-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Ampoules Neuropeptide 5×5 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/VC2213-scaled.webp",
+      "page": "https://medex.eu/product/ampoules-neuropeptide-5x5-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Osmolair Day Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2212-scaled.webp",
+      "page": "https://medex.eu/product/osmolair-day-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Triticum Night Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2211-scaled.webp",
+      "page": "https://medex.eu/product/triticum-night-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bio Exqur Peeling 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2209-scaled.webp",
+      "page": "https://medex.eu/product/bio-exqur-peeling-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Masque Myrrha 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2206-scaled.webp",
+      "page": "https://medex.eu/product/masque-myrrha-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Avostem Eye Mask set",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2205-scaled.webp",
+      "page": "https://medex.eu/product/avostem-eye-mask-set/",
+      "barcode": null
+    },
+    {
+      "title": "Gel de Calendula 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V2204-scaled.webp",
+      "page": "https://medex.eu/product/gel-de-calendula-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "L’ange d’or de la Mer 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3736-scaled.webp",
+      "page": "https://medex.eu/product/lange-dor-de-la-mer-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Masque Fille Coquette 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3735-scaled.webp",
+      "page": "https://medex.eu/product/masque-fille-coquette-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Méthode de Nettoyage Sophie 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3734-scaled.webp",
+      "page": "https://medex.eu/product/methode-de-nettoyage-sophie-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "L’Acide en Argile de l’Océan 150 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3733-scaled.webp",
+      "page": "https://medex.eu/product/lacide-en-argile-de-locean-150-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Spécialité “Platine” Dorée 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3731-scaled.webp",
+      "page": "https://medex.eu/product/specialite-platine-doree-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Premium Crème de la Mer 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3730-scaled.webp",
+      "page": "https://medex.eu/product/premium-creme-de-la-mer-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "L’or noir de la Mer 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3712-scaled.webp",
+      "page": "https://medex.eu/product/lor-noir-de-la-mer-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Pelage de la Mer 150 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3711-scaled.webp",
+      "page": "https://medex.eu/product/pelage-de-la-mer-150-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lotion de la Mer Equilibrante 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3709-scaled.webp",
+      "page": "https://medex.eu/product/lotion-de-la-mer-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait de la Mer Emollient 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3708-scaled.webp",
+      "page": "https://medex.eu/product/lait-de-la-mer-emollient-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème Intense de la Mer 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3706-scaled.webp",
+      "page": "https://medex.eu/product/creme-intense-de-la-mer-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème élégance de la Mer 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3702-scaled.webp",
+      "page": "https://medex.eu/product/creme-elegance-de-la-mer-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Sophisticated Cream CRF 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2026/08/V3701-scaled.webp",
+      "page": "https://medex.eu/product/sophisticated-cream-crf-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait Hydermios & Crème Riche de l’Océan",
+      "image": "https://medex.eu/wp-content/uploads/2026/02/WB2026-scaled.webp",
+      "page": "https://medex.eu/product/lait-hydermios-creme-riche-de-locean/",
+      "barcode": null
+    },
+    {
+      "title": "Re-genesis Ampoules 6×5 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/VC2042-scaled.webp",
+      "page": "https://medex.eu/product/re-genesis-ampoules-6x5-ml/",
+      "barcode": null
+    },
+    {
+      "title": "a-Hycid Spezialpflege 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/V5072-scaled.webp",
+      "page": "https://medex.eu/product/a-hycid-spezialpflege-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème Softly Grasse 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/V2601-scaled.webp",
+      "page": "https://medex.eu/product/creme-softly-grasse-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème Softly Légère 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/V2600-scaled.webp",
+      "page": "https://medex.eu/product/creme-softly-legere-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Wedge-shaped Latex sponges (6 pc)",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1070-scaled.webp",
+      "page": "https://medex.eu/product/wedge-shaped-latex-sponges/",
+      "barcode": null
+    },
+    {
+      "title": "Sisal scrub sponge",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1094-scaled.webp",
+      "page": "https://medex.eu/product/sisal-scrub-sponge/",
+      "barcode": null
+    },
+    {
+      "title": "Hairfillet -MEDEX- white",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1047-scaled.webp",
+      "page": "https://medex.eu/product/hairfillet-medex-white/",
+      "barcode": null
+    },
+    {
+      "title": "Mask-/Wax brush (21 cm)",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1045-scaled.webp",
+      "page": "https://medex.eu/product/mask-wax-brush/",
+      "barcode": null
+    },
+    {
+      "title": "Powderbrush gold-coloured (retractable)",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1008-scaled.webp",
+      "page": "https://medex.eu/product/powderbrush-gold-coloured/",
+      "barcode": null
+    },
+    {
+      "title": "Cleansing sponges for face (2 pcs.)",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C1056-scaled.webp",
+      "page": "https://medex.eu/product/cleansing-sponges-for-face/",
+      "barcode": null
+    },
+    {
+      "title": "Face Massage Roller",
+      "image": "https://medex.eu/wp-content/uploads/2025/10/C988-scaled.webp",
+      "page": "https://medex.eu/product/face-massage-roller/",
+      "barcode": null
+    },
+    {
+      "title": "Essential Complex Crème de Douche 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2113-scaled.webp",
+      "page": "https://medex.eu/product/essential-complex-creme-de-douche-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Essential Complex Body Milk 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2107-scaled.webp",
+      "page": "https://medex.eu/product/essential-complex-body-milk-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cure Repair Serums Set 5 Sorten à 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2090-scaled.webp",
+      "page": "https://medex.eu/product/cure-repair-serums-set-5-sorten-a-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Re-indures ampullen 6×5 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2043-scaled.webp",
+      "page": "https://medex.eu/product/re-indures-ampullen-6x5-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Desensible ampullen 6×5 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2041-scaled.webp",
+      "page": "https://medex.eu/product/desensible-ampullen-6x5-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Hydrogen ampullen 6×5 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/VC2040-scaled.webp",
+      "page": "https://medex.eu/product/hydrogen-ampullen-6x5-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Vital Albapearl 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V5600-scaled.webp",
+      "page": "https://medex.eu/product/vital-albapearl-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Kerawash 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V5582-scaled.webp",
+      "page": "https://medex.eu/product/kerawash-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "a-Hycid Spezialpflege-A 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V5074-scaled.webp",
+      "page": "https://medex.eu/product/a-hycid-spezialpflege-a-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "a-Hycid Gel 10% pH3.8 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V5070-scaled.webp",
+      "page": "https://medex.eu/product/a-hycid-gel-10-ph3-8-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Gentleman’s Deodorant 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4014-scaled.webp",
+      "page": "https://medex.eu/product/gentlemans-deodorant-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "After Shave Balsam 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4005-scaled.webp",
+      "page": "https://medex.eu/product/after-shave-balsam-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cleansing Gel 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4004-scaled.webp",
+      "page": "https://medex.eu/product/cleansing-gel-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Nourepair Gel 100ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4002-scaled.webp",
+      "page": "https://medex.eu/product/nourepair-gel-100ml/",
+      "barcode": null
+    },
+    {
+      "title": "Active Nourishing Gel 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4001-scaled.webp",
+      "page": "https://medex.eu/product/active-nourishing-gel-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Protective Nourishing Gel 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V4000-scaled.webp",
+      "page": "https://medex.eu/product/protective-nourishing-gel-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Shampoo against Hair Loss",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3303-scaled.webp",
+      "page": "https://medex.eu/product/shampoo-against-hair-loss/",
+      "barcode": null
+    },
+    {
+      "title": "SwS “SPF 50” 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3059-scaled.webp",
+      "page": "https://medex.eu/product/sws-spf-50-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "SwS High Protection 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3058-scaled.webp",
+      "page": "https://medex.eu/product/sws-high-protection-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "SwS Sun Sensitive Skin 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3057-scaled.webp",
+      "page": "https://medex.eu/product/sws-sun-sensitive-skin-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "SwS After Sun 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3054-scaled.webp",
+      "page": "https://medex.eu/product/sws-after-sun-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "SwS “SPF 50” 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3053-scaled.webp",
+      "page": "https://medex.eu/product/sws-spf-50-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "SwS Normal Skin 250 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V3051-scaled.webp",
+      "page": "https://medex.eu/product/sws-normal-skin-250-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait Softly 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2604-scaled.webp",
+      "page": "https://medex.eu/product/lait-softly-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Gel Softly 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2603-scaled.webp",
+      "page": "https://medex.eu/product/gel-softly-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Ablutio Milk 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2411-scaled.webp",
+      "page": "https://medex.eu/product/ablutio-milk-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Purus Night Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2410-scaled.webp",
+      "page": "https://medex.eu/product/purus-night-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cream Humedios 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2409-scaled.webp",
+      "page": "https://medex.eu/product/cream-humedios-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Purus Mask 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2405-scaled.webp",
+      "page": "https://medex.eu/product/purus-mask-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Purus Lotion 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2404-scaled.webp",
+      "page": "https://medex.eu/product/purus-lotion-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Roxsalic Mask 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2403-scaled.webp",
+      "page": "https://medex.eu/product/roxsalic-mask-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Comedo Mutilat 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2402-scaled.webp",
+      "page": "https://medex.eu/product/comedo-mutilat-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Seratoxes Gel 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2401-scaled.webp",
+      "page": "https://medex.eu/product/seratoxes-gel-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait Elure 150 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2210-scaled.webp",
+      "page": "https://medex.eu/product/lait-elure-150-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lotion Fragilis 150 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2208-scaled.webp",
+      "page": "https://medex.eu/product/lotion-fragilis-150-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Aqua Rosa 150 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2207-scaled.webp",
+      "page": "https://medex.eu/product/aqua-rosa-150-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Exoliere Night Cream 50ml + Ampulle 10% Argireline Gift",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2203-scaled.webp",
+      "page": "https://medex.eu/product/exoliere-night-cream-50ml-ampulle-10-argireline-gift/",
+      "barcode": null
+    },
+    {
+      "title": "Lavendula Night Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2202-scaled.webp",
+      "page": "https://medex.eu/product/lavendula-night-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Equendio Day Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2201-scaled.webp",
+      "page": "https://medex.eu/product/equendio-day-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cypresse Day Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2200-scaled.webp",
+      "page": "https://medex.eu/product/cypresse-day-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Oil Suavis 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2117-scaled.webp",
+      "page": "https://medex.eu/product/oil-suavis-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Anti-Oxidant Prepare Foam 100 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2098-scaled.webp",
+      "page": "https://medex.eu/product/anti-oxidant-prepare-foam-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum 30% Vit. C (4x stab) 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2096-scaled.webp",
+      "page": "https://medex.eu/product/serum-30-vit-c-4x-stab-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Highly Concentrated B5 Vit. flacon 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2095-scaled.webp",
+      "page": "https://medex.eu/product/highly-concentrated-b5-vit-flacon-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum “Phyto Hormones” flacon 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2094-scaled.webp",
+      "page": "https://medex.eu/product/serum-phyto-hormones-flacon-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Concentrated Stam Cell Serum flacon 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2093-scaled.webp",
+      "page": "https://medex.eu/product/concentrated-stam-cell-serum-flacon-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "nano-emulsion – vit. C/E & Q10 flacon 20ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2092-scaled.webp",
+      "page": "https://medex.eu/product/nano-emulsion-vit-c-e-q10-flacon-20ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum 10.5 Arnyligine flacon 20 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2091-scaled.webp",
+      "page": "https://medex.eu/product/serum-10-5-arnyligine-flacon-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum Blue Protection Vit. P 20 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2088-scaled.webp",
+      "page": "https://medex.eu/product/serum-blue-protection-vit-p-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum Highly Conc. pro-Vit. A 20 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2086-scaled.webp",
+      "page": "https://medex.eu/product/serum-highly-conc-pro-vit-a-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Serum Highly Conc. Vit. E 20 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2083-scaled.webp",
+      "page": "https://medex.eu/product/serum-highly-conc-vit-e-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cellular Lifting EXTRA “Tinted” Fluid SPF 15 – 50 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2076-scaled.webp",
+      "page": "https://medex.eu/product/cellular-lifting-extra-tinted-fluid-spf-15-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cellular  “Meso” AntiAgeing Fluid SPF 25 – 50 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2075-scaled.webp",
+      "page": "https://medex.eu/product/cellular-meso-antiageing-fluid-spf-25-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cellular Lifting  “Night” Fluid – 30 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2074-scaled.webp",
+      "page": "https://medex.eu/product/cellular-lifting-night-fluid-30-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cellular lifting “tinted” fluid SPF 15 – 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2073-scaled.webp",
+      "page": "https://medex.eu/product/cellular-lifting-tinted-fluid-spf-15-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cellular “Sensible” Day Fluid SPF 15 – 50 ml",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2072-scaled.webp",
+      "page": "https://medex.eu/product/cellular-sensible-day-fluid-spf-15-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bindweefselcrème (Vital Renew) 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2058-scaled.webp",
+      "page": "https://medex.eu/product/bindweefselcreme-vital-renew-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait Exfoliant 150 ml. (in Tube)",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2057-scaled.webp",
+      "page": "https://medex.eu/product/lait-exfoliant-150-ml-in-tube/",
+      "barcode": null
+    },
+    {
+      "title": "Vital Recover K 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2055-scaled.webp",
+      "page": "https://medex.eu/product/vital-recover-k-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bindweefselcrème (Vital Renew) 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2053-scaled.webp",
+      "page": "https://medex.eu/product/bindweefselcreme-vital-renew-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "24 Hours Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2052-scaled.webp",
+      "page": "https://medex.eu/product/24-hours-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Essence de Beauté 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2051-scaled.webp",
+      "page": "https://medex.eu/product/essence-de-beaute-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Actiprotin 30 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2050-scaled.webp",
+      "page": "https://medex.eu/product/actiprotin-30-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Mask Desensible 50ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2045-scaled.webp",
+      "page": "https://medex.eu/product/mask-desensible-50ml/",
+      "barcode": null
+    },
+    {
+      "title": "Vitalis+ Mask 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2044-scaled.webp",
+      "page": "https://medex.eu/product/vitalis-mask-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Hydrophilic Oil 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2038-scaled.webp",
+      "page": "https://medex.eu/product/hydrophilic-oil-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Gel de Liposome 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2037-scaled.webp",
+      "page": "https://medex.eu/product/gel-de-liposome-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Soin de Jour SPF 15",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2036-scaled.webp",
+      "page": "https://medex.eu/product/soin-de-jour-spf-15/",
+      "barcode": null
+    },
+    {
+      "title": "Crème Riche de l’Océan 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2035-scaled.webp",
+      "page": "https://medex.eu/product/creme-riche-de-locean-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème pour les Yeux 20 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2034-scaled.webp",
+      "page": "https://medex.eu/product/creme-pour-les-yeux-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème de Réveil SPF15, 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2032-scaled.webp",
+      "page": "https://medex.eu/product/creme-de-reveil-spf15-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Crème de Réveil 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2031-scaled.webp",
+      "page": "https://medex.eu/product/creme-de-reveil-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lotion Humedios 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2027-scaled.webp",
+      "page": "https://medex.eu/product/lotion-humedios-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Transparent Collagen Mask 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2026-scaled.webp",
+      "page": "https://medex.eu/product/transparent-collagen-mask-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Re-genesis Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2025-scaled.webp",
+      "page": "https://medex.eu/product/re-genesis-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Cream Desensible 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2024-scaled.webp",
+      "page": "https://medex.eu/product/cream-desensible-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Eye Make-up Remover 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2023-scaled.webp",
+      "page": "https://medex.eu/product/eye-make-up-remover-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Deep Clean 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2021-scaled.webp",
+      "page": "https://medex.eu/product/deep-clean-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Iso Hydermios 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2020-scaled.webp",
+      "page": "https://medex.eu/product/iso-hydermios-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Protective Hydermios 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2019-scaled.webp",
+      "page": "https://medex.eu/product/protective-hydermios-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Gelée Royale Gel 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2018-scaled.webp",
+      "page": "https://medex.eu/product/gelee-royale-gel-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lotion Hydermios 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2017-scaled.webp",
+      "page": "https://medex.eu/product/lotion-hydermios-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Lait Hydermios 120 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2016-scaled.webp",
+      "page": "https://medex.eu/product/lait-hydermios-120-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Face Lift Mask 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2015-scaled.webp",
+      "page": "https://medex.eu/product/face-lift-mask-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bio Soft Peeling 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2014-scaled.webp",
+      "page": "https://medex.eu/product/bio-soft-peeling-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Eugentic Day Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V2011-scaled.webp",
+      "page": "https://medex.eu/product/eugentic-day-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Papaya Night Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V1010-scaled.webp",
+      "page": "https://medex.eu/product/papaya-night-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Papaya Day Cream 50 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V1009-scaled.webp",
+      "page": "https://medex.eu/product/papaya-day-cream-50-ml/",
+      "barcode": null
+    },
+    {
+      "title": "MEDEX Hand & Body Cream 100 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V1003-scaled.webp",
+      "page": "https://medex.eu/product/medex-hand-body-cream-100-ml/",
+      "barcode": null
+    },
+    {
+      "title": "MEDEX Causaal Deodorant 20 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/V1001-scaled.webp",
+      "page": "https://medex.eu/product/medex-causaal-deodorant-20-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Natural Bronzing Powder – Terra Exotic Nr.6",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/TC6-scaled.webp",
+      "page": "https://medex.eu/product/natural-bronzing-powder-terra-exotic-nr-6/",
+      "barcode": null
+    },
+    {
+      "title": "Natural Bronzing Powder – Terra Exotic Nr.4",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/TC4-scaled.webp",
+      "page": "https://medex.eu/product/natural-bronzing-powder-terra-exotic-nr-4/",
+      "barcode": null
+    },
+    {
+      "title": "Sun Tan Terra Exotic",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/TC2-scaled.webp",
+      "page": "https://medex.eu/product/sun-tan-terra-exotic/",
+      "barcode": null
+    },
+    {
+      "title": "Fluid Foundation LF39 – Light",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/LF39-scaled.webp",
+      "page": "https://medex.eu/product/fluid-foundation-lf39-light/",
+      "barcode": null
+    },
+    {
+      "title": "Fluid Foundation LF38 – Medium",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/LF38-scaled.webp",
+      "page": "https://medex.eu/product/fluid-foundation-lf38-medium/",
+      "barcode": null
+    },
+    {
+      "title": "Fluid Foundation LF37 – Dark",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/LF37-scaled.webp",
+      "page": "https://medex.eu/product/fluid-foundation-lf37-dark/",
+      "barcode": null
+    },
+    {
+      "title": "Essential Complex Cr. de Douche 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/C1321-scaled.webp",
+      "page": "https://medex.eu/product/essential-complex-cr-de-douche-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Bath Salis de Beauté 1000 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/C1313-scaled.webp",
+      "page": "https://medex.eu/product/bath-salis-de-beaute-1000-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Douche Scrub de Beauté 500 ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/C1306-scaled.webp",
+      "page": "https://medex.eu/product/douche-scrub-de-beaute-500-ml/",
+      "barcode": null
+    },
+    {
+      "title": "Essential Complex Bath Oil 500ml.",
+      "image": "https://medex.eu/wp-content/uploads/2025/09/C1300-scaled.webp",
+      "page": "https://medex.eu/product/essential-complex-bath-oil-500ml/",
+      "barcode": null
+    }
+  ]
+}

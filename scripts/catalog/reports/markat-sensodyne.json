@@ -1,0 +1,46 @@
+{
+  "generatedAt": "2026-09-09T17:51:41.864Z",
+  "label": "markat-sensodyne",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 3,
+    "downloaded": 1,
+    "failed": 2,
+    "byConfidence": {
+      "E mesme": 1
+    },
+    "byBrand": {
+      "SENSODYNE": 1
+    }
+  },
+  "failed": [
+    {
+      "code": "9628.",
+      "url": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Repair-Protect-whitening.png?auto=format"
+    },
+    {
+      "code": "30061",
+      "url": "https://i-cf5.gskstatic.com/content/cf-consumer-healthcare/oral-sensodyne-v2/en_US/content/blocks/Product-pages/products/desktop/Product-Complete-Protection-extra-fresh.png?auto=format"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "51708",
+      "name": "SENSODYNE NOURISH HEALTHY WHITE 75ML",
+      "barcode": "5054563120311",
+      "brand": "SENSODYNE",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i markës si \"Nourish Healthy White Toothpaste\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh. Katalogu nuk e shënon madhësinë; jona është 75ML — kontrollo që të përputhet.",
+      "packSizeOurs": "75ML",
+      "packSizeFound": null,
+      "sourcePage": "https://www.sensodyne.com/en-gb/products/",
+      "imageUrl": "https://i-cf65.ch-static.com/content/dam/cf-consumer-healthcare/sensodyne-v3/en_GB/products/nourish-healthy-white2.png",
+      "licence": "Katalogu i SENSODYNE",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0001_51708.png",
+      "bytes": 34182
+    }
+  ]
+}

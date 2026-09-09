@@ -50,7 +50,7 @@ const USER_AGENT = "JaraPharmacy-ImageBot/1.0 (+https://jara-pharmacy.com)";
 const PAGE_PAUSE_MS = 700;
 const IMAGE_PAUSE_MS = 250;
 const MIN_IMAGE_BYTES = 3000;
-const MAX_PAGES = 12; // 3.000 products per store is plenty
+const MAX_PAGES = 12; // a store says how deep to read; this is the default
 
 /** Below this the pairing is noise rather than a candidate. */
 const MIN_SCORE = 0.4;
@@ -326,7 +326,11 @@ async function readStore(source, ours, cacheFile, partial = []) {
   if (source.platform === "woocommerce") return loadFromWooCommerce(source);
   if (source.platform !== "shopify") return [];
   const items = [];
-  for (let page = 1; page <= MAX_PAGES; page += 1) {
+  // A shop's own `maxPages` was being ignored here, so every Shopify catalogue
+  // stopped at 3.000 articles however deep it really went — apoteka.hr holds
+  // more than twice that, and the half we never read is where the missing
+  // Vichy and La Roche-Posay lines live.
+  for (let page = 1; page <= (source.maxPages ?? MAX_PAGES); page += 1) {
     const url = `https://${source.store}/products.json?limit=250&page=${page}`;
     const payload = await fetchJson(url);
     const products = payload?.products ?? [];
@@ -727,6 +731,16 @@ const SYNONYMS = new Map(Object.entries({
   LARES: "WASH", PASTRUES: "CLEANSER", LAGESHTUES: "MOISTURIZING",
   MBROJTES: "PROTECTION", NDJESHME: "SENSITIVE", THATE: "DRY",
   SPRAJ: "SPRAY", POMATA: "OINTMENT", POMADE: "OINTMENT",
+  // Colours and footwear. Dr. Luigi's 129 articles are orthopaedic shoes
+  // described in Albanian ("MBATHJE ORTOPEDIKE ME VRIMA E GJELBERT 36"), while
+  // the maker's own shop writes English ("Orthopedic Clogs ... Green Leather").
+  // Without these the two never share a single word, so a complete photographed
+  // catalogue sat unreachable behind nothing but vocabulary.
+  ORTOPEDIKE: "ORTHOPEDIC", ORTOPEDIK: "ORTHOPEDIC", MESHKUJ: "MEN", FEMRA: "WOMEN",
+  VRIMA: "CLOGS", DIMERORE: "SLIPPERS", DIMEROR: "SLIPPERS", VERORE: "SANDALS",
+  GJELBERT: "GREEN", GJELBER: "GREEN", PEMBE: "PINK", BARDHE: "WHITE", KAFT: "BROWN",
+  KAFE: "BROWN", HIRI: "GRAY", GREY: "GRAY", ZEZE: "BLACK", KALTERT: "BLUE",
+  KALTER: "BLUE", KUQE: "RED", VJOLLCE: "VIOLET", ARTE: "GOLD", VERDHE: "YELLOW",
 }));
 
 function tokens(value, brand) {
