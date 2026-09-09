@@ -107,6 +107,15 @@ async function main() {
     photos,
   };
   const out = path.join(HERE, "reports", `${args.label}.json`);
+  // The label defaults to "kerkim-01", so a second run without --label used to
+  // overwrite the first run's report without a word. Reports are the only
+  // record of where a photo came from; losing one loses that provenance.
+  if (fs.existsSync(out) && !args.labelGiven) {
+    console.error(`
+  ${args.label}.json ekziston tashmë. Jep --label me një emër tjetër.
+`);
+    process.exit(1);
+  }
   fs.writeFileSync(out, `${JSON.stringify(report, null, 2)}\n`, "utf8");
 
   const rate = hits.length ? Math.round((photos.length / hits.length) * 100) : 0;
@@ -154,6 +163,7 @@ function readArgs(argv) {
   return {
     input: flag("input", "scripts/catalog/state/search-hits.json"),
     label: flag("label", "kerkim-01"),
+    labelGiven: argv.includes("--label"),
   };
 }
 

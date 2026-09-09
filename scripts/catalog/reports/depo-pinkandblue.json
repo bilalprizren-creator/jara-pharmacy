@@ -1,0 +1,37 @@
+{
+  "generatedAt": "2026-09-09T18:15:59.541Z",
+  "label": "depo-pinkandblue",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 1,
+    "downloaded": 1,
+    "failed": 0,
+    "byConfidence": {
+      "E lartë": 1
+    },
+    "byBrand": {
+      "MAM": 1
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "2060521",
+      "name": "MAM STERILIZER",
+      "barcode": "4042894570951",
+      "brand": "MAM",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos pinkandblue.al si \"Sterilizues Gri MAM BABY\". Barkodi 4042894570951 përputhet saktësisht — i njëjti artikull. Krahasoje me paketimin para publikimit.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://pinkandblue.al/product/sterilizues-gri-mam-baby/",
+      "imageUrl": "https://pinkandblue.al/wp-content/uploads/2026/03/IMG_0376.webp",
+      "licence": "Katalogu i pinkandblue.al",
+      "matchScore": 1,
+      "file": ".image-cache/brands/0001_2060521.webp",
+      "bytes": 5608
+    }
+  ]
+}

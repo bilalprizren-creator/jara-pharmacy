@@ -1,0 +1,19 @@
+{
+  "generatedAt": "2026-09-09T18:14:18.106Z",
+  "label": "depo-glowyskinkosova",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 1,
+    "downloaded": 0,
+    "failed": 1,
+    "byConfidence": {},
+    "byBrand": {}
+  },
+  "failed": [
+    {
+      "code": "5205",
+      "url": "https://cdn.shopify.com/s/files/1/0811/3664/8465/files/Untitleddesign_svg_900x_e9a72d29-1c12-4dd6-bd25-ba81a55953bc.svg?v=1765757298"
+    }
+  ],
+  "photos": []
+}

@@ -414,6 +414,43 @@
       "platform": "shopify",
       "scope": "all",
       "maxPages": 40
+    },
+    {
+      "store": "pinkpharm.al",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 30
+    },
+    {
+      "store": "kfarmacosmetics.al",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 30
+    },
+    {
+      "store": "glowyskinkosova.com",
+      "platform": "shopify",
+      "scope": "all",
+      "maxPages": 25
+    },
+    {
+      "store": "pinkandblue.al",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "blejmire.com",
+      "platform": "woocommerce",
+      "scope": "all",
+      "maxPages": 40
+    },
+    {
+      "store": "mimmobaby.com",
+      "platform": "sitemap",
+      "scope": "all",
+      "pathHint": "/produktet/",
+      "maxPages": 900
     }
   ]
 }

@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-09T18:13:55.061Z",
+  "label": "depo-kfarmacosmetics",
+  "source": "Katalogët zyrtarë të markave (përputhje sipas emrit)",
+  "totals": {
+    "candidates": 2,
+    "downloaded": 2,
+    "failed": 0,
+    "byConfidence": {
+      "E mesme": 2
+    },
+    "byBrand": {
+      "": 2
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "95090",
+      "name": "LIP OIL GLOSS VANILLA",
+      "barcode": "8683489704809",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarmacosmetics.al si \"Fenty Beauty Gloss Bomb Oil Luminizing Lip Oil 'N Gloss - Wine Stain (Pa Kuti)\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://kfarmacosmetics.al/products/fenty-beauty-gloss-bomb-oil-luminizing-lip-oil-n-gloss-wine-stain-pa-kuti",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0922/7416/4010/files/Untitleddesign-2026-03-05T175420.019.jpg?v=1772729619",
+      "licence": "Katalogu i kfarmacosmetics.al",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0001_95090.jpg",
+      "bytes": 63683
+    },
+    {
+      "number": 2,
+      "code": "95091",
+      "name": "LIP OIL GLOSS BLACBERRY",
+      "barcode": "8683489704793",
+      "brand": "",
+      "confidence": "E mesme",
+      "status": "Për verifikim",
+      "note": "Gjetur te katalogu i depos kfarmacosmetics.al si \"Fenty Beauty Gloss Bomb Oil Luminizing Lip Oil 'N Gloss - Wine Stain (Pa Kuti)\". Përputhja është sipas emrit, jo barkodit — krahasoje me paketimin para se ta pranosh.",
+      "packSizeOurs": null,
+      "packSizeFound": null,
+      "sourcePage": "https://kfarmacosmetics.al/products/fenty-beauty-gloss-bomb-oil-luminizing-lip-oil-n-gloss-wine-stain-pa-kuti",
+      "imageUrl": "https://cdn.shopify.com/s/files/1/0922/7416/4010/files/Untitleddesign-2026-03-05T175420.019.jpg?v=1772729619",
+      "licence": "Katalogu i kfarmacosmetics.al",
+      "matchScore": 0.75,
+      "file": ".image-cache/brands/0002_95091.jpg",
+      "bytes": 63683
+    }
+  ]
+}
