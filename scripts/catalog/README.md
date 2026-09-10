@@ -45,6 +45,18 @@ Secila kontrollohet edhe kundrejt listës ALBTRIX: a ekziston vërtet artikulli,
 është mall tregtar, a përputhet barkodi. Të 150-ta kaluan; njëra fotografi
 (`222HM`) është e cunguar dhe duhet marrë sërish.
 
+Seritë e mëvonshme lexohen me të njëjtin skript, një raport për seri:
+
+```bash
+node scripts/catalog/rescue-gpt-photos.mjs --source "9460 Produkte/JARA_Fotografite_e_Produkteve_Seria_016_me_foto.xlsx" --label gpt-016
+```
+
+(Seritë 011–015 hynë bashkë si `gpt-011-015`, me `--match _me_foto`; sot ai
+emër do të kapte edhe seritë e mëvonshme.) Merren të gjitha fotografitë e
+serisë, edhe për produktet që i kemi tashmë: bashkimi (hapi 4) vendos cila është
+më e mira, dhe tjetra mbetet alternativë. Një barnë në seri (Seria 018 kishte
+një pilulë kontraceptive) nuk hyn fare në raport — shënohet vetëm te problemet.
+
 ## 3. Kërkimi i fotografive
 
 Dy burime, të ndara qëllimisht sepse kanë siguri të ndryshme.
@@ -151,12 +163,16 @@ python scripts/catalog/rescue-pdf-photos.py "9460 Produkte/…_008.pdf" --label 
   `9460 Produkte/Kimi_Agent_9460 Product Image Retrieval/`. Prej tyre 456 janë
   barna dhe rreth 1.200 i kishim tashmë; mbetën 467 artikuj të rinj, 376 me
   barkodin e konfirmuar.
-- **Seritë si PDF (008, 009).** Seritë e mëparshme erdhën si .xlsx dhe lexohen
+- **Seritë si PDF (008, 009, 010).** Seritë e mëparshme erdhën si .xlsx dhe lexohen
   nga `rescue-gpt-photos.mjs`; këto erdhën si PDF. Një PDF nuk lexohet me mjetet
   e projektit, prandaj ky është i vetmi skript me Python këtu (`pip install
   pymupdf`). Fotografia çiftëzohet me rreshtin **sipas vendit në faqe**, jo sipas
   radhës: mjafton një fotografi e humbur që radha të rrëshqasë dhe secili produkt
   të marrë fotografinë e fqinjit.
+  Fotografitë brenda PDF-së janë miniatura 174–229 px. Kur PDF-ja e shënon edhe
+  "URL e fotografisë" (Seria 010 po, 008 e 009 jo), merret origjinali prej aty,
+  i lidhur me rreshtin sipas barkodit që mban emri i skedarit
+  (`451_8058664109715.jpeg`); kur burimi nuk përgjigjet, mbetet miniatura.
 
 ### f) Kontrolli i vetë punës
 
@@ -188,48 +204,84 @@ prodhuesit, pastaj dyqani që e shet (edhe ai e merr fotografinë nga prodhuesi)
 pastaj kërkimi i bërë një nga një, dhe në fund ngarkimi i një përdoruesi te baza
 me barkod.
 
+Kur edhe burimi është i të njëjtit lloj, fiton përputhja më e sigurt: barkodi
+para emrit, dhe emri pa vërejtje para emrit me vërejtje. Dy përputhje me barkod
+tregojnë të njëjtin artikull, prandaj aty fiton fotografia më e pastër, pastaj më
+e madhja. Dy përputhje sipas emrit e mbajnë radhën që kishin: asgjë nuk thotë
+cila prej tyre është artikulli i duhur, dhe ndërrimi sipas madhësisë vetëm
+zëvendësonte një hamendje me një tjetër.
+
 Fotot që humbin nuk fshihen: raporti i mban si alternativa, që të ketë ku të
 kthehet kontrolluesi nëse e refuzon të parën.
 
 ## 5. Faqja e kontrollit
 
-```bash
-node scripts/catalog/build-review-page.mjs
-node scripts/catalog/build-review-page.mjs --report reports/seria-02.json --seria "Seria 02"
-```
-
-Ndërton një faqe të vetme HTML në `.catalog-cache/`, me të gjitha fotografitë
-brenda saj. Publikohet si faqe private (Artifact) dhe hapet me link — edhe në
+Ekipi punon te **https://jara-fotografite.vercel.app** — pa llogari, edhe në
 telefon, para raftit.
 
-- Vendimet ruhen bashkërisht, kështu që disa persona kontrollojnë njëkohësisht
-  dhe secili sheh çka është bërë tashmë.
-- Kush kontrollon e shkruan emrin një herë; emri ruhet me çdo vendim.
-- Klikimi i dytë mbi të njëjtin buton e kthen vendimin.
+```bash
+node scripts/catalog/build-review-page.mjs --web --report reports/te-gjitha.json --title "Fotografitë Jara" --seria "Të gjitha produktet me fotografi"
+node scripts/catalog/upload-photos.mjs      # vetëm fotot që s'janë ende atje
+cd .catalog-cache/web && vercel deploy --prod
+```
+
+- **Fotografitë si skedarë, jo brenda faqes.** Secila foto bëhet dy herë WebP:
+  400 px për kartën, 1200 px për pamjen e madhe (`lib/photo-derivatives.mjs`).
+  Emri i skedarit është gjurma e përmbajtjes (SHA-1, 16 shenja), prandaj e
+  njëjta foto nën dy emra ruhet një herë dhe asgjë nuk ngarkohet dy herë. Fotot
+  rrinë te Supabase Storage (projekti `jara-fotografite`, kova publike `fotot`),
+  sepse Vercel Hobby pranon vetëm 100 MB për ngarkim.
+- **Pamja e madhe.** Prekja e fotografisë e hap të madhe, me barkodin të madh
+  pranë për ta krahasuar me paketimin, dhe me zmadhim. Pas çdo vendimi kalon vetë
+  te produkti tjetër; "Fillo kontrollin" nis nga i pari i pakontrolluar.
+- **Fotografitë e tjera.** Kur një produkt ka edhe foto nga burime të tjera,
+  pamja e madhe i tregon. Nëse e para s'përshtatet, kontrolluesi merr njërën prej
+  tyre ("Përdor këtë foto") dhe produkti nuk mbetet pa foto.
+- **Vendimet i sheh i gjithë ekipi.** Ruhen te tabela `vendimet`
+  (`supabase/vendimet.sql`). Faqja mund vetëm të shtojë rreshta, kurrë të ndryshojë
+  apo të fshijë: vendimi që vlen është më i riu për produkt (`vendimet_aktuale`),
+  dhe secili rresht mban emrin dhe orën. Pa internet, vendimet mbeten në telefon
+  dhe dërgohen vetë kur kthehet lidhja.
+- Kush kontrollon e shkruan emrin një herë; klikimi i dytë mbi të njëjtin buton
+  e kthen vendimin. "Foto e dobët" shënon çdo fotografi që nuk duket si foto
+  produkti, dhe një filtër i mbledh të gjitha bashkë.
+
+Çelësi te `web.json` është çelësi publik i Supabase: është bërë për t'u parë në
+një faqe publike, dhe rregullat te `vendimet.sql` vendosin çka mund të bëjë.
+Ngarkimi i fotove kërkon një leje që faqja s'duhet ta ketë — hapet vetëm sa zgjat
+ngarkimi (komandat janë në krye të `upload-photos.mjs`).
+
+Projekti falas i Supabase fle pas 7 ditësh pa përdorim; vendimet e ruajtura nuk
+humbin, dhe projekti zgjohet nga paneli i Supabase. Vendimet lexohen me
+`select * from vendimet_aktuale`.
 
 Për ta parë faqen para se ta marrë ekipi:
 
 ```bash
-node scripts/catalog/preview-server.mjs     # http://localhost:5400
+node scripts/catalog/preview-server.mjs     # http://localhost:5400/web/?lokal
 ```
 
-Faqja shënon me "Foto e dobët" çdo fotografi që nuk duket si foto produkti, dhe
-një filtër i veçantë i mbledh të gjitha bashkë — kështu ekipi i gjen menjëherë
-ato që duhen zëvendësuar.
+Me `?lokal` fotot merren nga ky kompjuter, para se të ngarkohet qoftë një; vendimet
+shkojnë megjithatë në tabelën e vërtetë.
 
-Krahas faqes për publikim shkruhet edhe një kopje e pavarur
-(`*-vetestrukturuar.html`), që hapet me dopio-klik pa asnjë llogari.
+### Faqja e vjetër (Artifact)
 
-**Kufijtë:** faqja nuk guxon të kalojë 16 MB dhe fotografitë duhet të jenë brenda
-saj (shfaqja bllokon burimet e jashtme). Miniaturat zvogëlohen vetë sa rritet
-grupi — 300 px deri në 1.500 produkte, 150 px mbi 4.800 — kështu që një faqe e
-vetme mban gjithë katalogun; ndaji seritë me `--limit` vetëm nëse duhet.
+```bash
+node scripts/catalog/build-review-page.mjs --report reports/te-gjitha.json --title "Fotografitë Jara" --seria "Të gjitha produktet me fotografi"
+```
+
+Një faqe e vetme HTML në `.catalog-cache/`, me miniaturat brenda saj, e publikuar
+si faqe private (Artifact). Faqja nuk guxon të kalojë 16 MB dhe shfaqja bllokon
+burimet e jashtme, prandaj miniaturat zvogëlohen sa rritet grupi — 170 px për
+4.600 produkte, shumë pak për të lexuar paketimin. Hapet vetëm për anëtarët e
+organizatës në Claude. Mbetet si rezervë dhe e dërgon lexuesin te faqja web;
+krahas saj shkruhet edhe një kopje e pavarur (`*-vetestrukturuar.html`).
 
 ## Ku është kufiri i kërkimit automatik
 
 Më 8 shtator 2026, pas një sweep-i të plotë dhe pas dy dorëzimeve të jashtme:
 **4.393 nga 7.176 artikuj tregtarë kanë një fotografi (61 %)**, 82 % e tyre foto
-studioje.
+studioje. Më 10 shtator, me seritë 010–018 të ChatGPT-së: **4.658 (65 %)**.
 
 Sa solli secili burim, dhe sa nga ato s'i kishte askush tjetër:
 
@@ -267,4 +319,6 @@ Dy rrugë mbeten, të dyja jashtë skripteve:
 
 ## Çka nuk është ndërtuar ende
 
-- ndërtimi i katalogut për faqen nga vendimet e ekipit.
+- ndërtimi i katalogut për faqen nga vendimet e ekipit (`vendimet_aktuale`);
+- fotografitë origjinale më të mëdha (p.sh. Open Facts `.full.jpg`) për ato që
+  ekipi i pranon.

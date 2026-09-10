@@ -20,10 +20,12 @@ import sharp from "sharp";
 
 const SAMPLE = 64; // the image is judged from a small thumbnail — plenty, and fast
 const BORDER = 12; // size of each corner patch that counts as "background"
+const STANDS_OUT = 20; // grey levels a pixel must differ from the ground to be the product
 
 /**
  * @returns {Promise<{score: number, brightness: number, uniformity: number,
- *   width: number, height: number, verdict: string} | null>}
+ *   width: number, height: number, subjectWidth: number, subjectHeight: number,
+ *   verdict: string} | null>}
  *   `score` runs 0..1; null when the image cannot be read.
  */
 export async function packshotScore(input) {
@@ -79,12 +81,30 @@ export async function packshotScore(input) {
   // a bright but cluttered kitchen counter is not.
   const score = brightness * 0.4 + uniformity * 0.6;
 
+  // How large the product itself is: the box around everything that stands out
+  // from the ground. A 1910×1000 canvas with a small jar in the middle is not a
+  // large photo of the jar, nor is a colour swatch on white one of the box.
+  let [left, right, top, bottom] = [SAMPLE, -1, SAMPLE, -1];
+  for (let y = 0; y < SAMPLE; y += 1) {
+    for (let x = 0; x < SAMPLE; x += 1) {
+      if (Math.abs(pixels[y * SAMPLE + x] - mean) <= STANDS_OUT) continue;
+      left = Math.min(left, x);
+      right = Math.max(right, x);
+      top = Math.min(top, y);
+      bottom = Math.max(bottom, y);
+    }
+  }
+  const spanX = right < 0 ? 1 : (right - left + 1) / SAMPLE;
+  const spanY = bottom < 0 ? 1 : (bottom - top + 1) / SAMPLE;
+
   return {
     score: round(score),
     brightness: round(brightness),
     uniformity: round(uniformity),
     width: meta.width ?? 0,
     height: meta.height ?? 0,
+    subjectWidth: Math.round((meta.width ?? 0) * spanX),
+    subjectHeight: Math.round((meta.height ?? 0) * spanY),
     verdict: verdictFor(score),
   };
 }

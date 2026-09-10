@@ -16,7 +16,11 @@
  *      because that is exactly the difference the site's visual standard hangs
  *      on, and it is measured rather than assumed,
  *   2. on a near-tie, the more trustworthy origin: a manufacturer's own
- *      catalogue beats curated research, which beats a community upload.
+ *      catalogue beats curated research, which beats a community upload,
+ *   3. between two of the same kind of origin, the surer match: a barcode over
+ *      a name, a name over one already carrying a warning. Two barcode matches
+ *      are the same article twice, so there the cleaner and then the larger
+ *      picture wins; two name matches keep their order.
  *
  * The photos that lose are not deleted; the report keeps them as alternatives,
  * so a reviewer rejecting the chosen one leaves something to fall back on.
@@ -42,6 +46,8 @@ const ORIGIN_RANK = {
   bazë: 1, // community upload against a barcode
 };
 const TIE = 0.08;
+/** Between two photos from the same kind of source, the surer match wins. */
+const CONFIDENCE_RANK = { "E lartë": 3, "E mesme": 2, "E ulët": 1 };
 
 function main() {
   const args = readArgs(process.argv.slice(2));
@@ -123,7 +129,9 @@ for (const [code, candidates] of byCode) {
     if (!fs.existsSync(file)) continue;
     const score = await packshotScore(file);
     if (!score) continue;
-    scored.push({ ...candidate, score: score.score, verdict: score.verdict });
+    // The product's size in the picture, not the canvas's.
+    const side = Math.min(score.subjectWidth, score.subjectHeight);
+    scored.push({ ...candidate, score: score.score, verdict: score.verdict, side });
   }
   if (!scored.length) {
     missing.push(code);
@@ -132,7 +140,19 @@ for (const [code, candidates] of byCode) {
 
   scored.sort((a, b) => {
     if (Math.abs(a.score - b.score) > TIE) return b.score - a.score;
-    return (ORIGIN_RANK[b.origin] ?? 0) - (ORIGIN_RANK[a.origin] ?? 0);
+    const trust = (ORIGIN_RANK[b.origin] ?? 0) - (ORIGIN_RANK[a.origin] ?? 0);
+    if (trust) return trust;
+    // A barcode match over a name match, and a plain name match over one that
+    // already carries a warning (a size or strength that differs from ours).
+    const sure = (CONFIDENCE_RANK[b.confidence] ?? 0) - (CONFIDENCE_RANK[a.confidence] ?? 0);
+    if (sure) return sure;
+    // Two barcode matches show the same article: the cleaner picture wins, then
+    // the larger — not the report that sorts first, which is how a 320 px copy
+    // beat Kimi's 800 px one. Two name matches keep their order: nothing here
+    // says which of them is the right article, and swapping them by size only
+    // traded one guess for another (Golapiol Junior got the adult spray).
+    if (a.confidence === "E lartë") return b.score - a.score || b.side - a.side;
+    return 0;
   });
 
   const best = scored[0];

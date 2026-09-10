@@ -100,8 +100,19 @@ function main() {
         continue;
       }
 
-      const bytes = workbook.part(part);
       const article = assortment.get(record.code);
+      // Only an article that exists and goes to the website gets its photo in.
+      // Seria 018 carried a contraceptive pill; merely listing it as a problem
+      // still let it into the merged list, and so onto the review page.
+      if (!article || !article.forWebsite) {
+        problems.push({
+          code: record.code,
+          problem: article ? "Nuk është mall tregtar — nuk shkon në faqe" : "Artikulli nuk gjendet në listën ALBTRIX",
+        });
+        continue;
+      }
+
+      const bytes = workbook.part(part);
       const fileName = safe(record.fileName || `${record.number || taken + 1}_${record.code}.png`);
 
       photos.push({
@@ -132,11 +143,7 @@ function main() {
   }
 
   for (const photo of photos) {
-    if (!photo.inAssortment) {
-      problems.push({ code: photo.code, problem: "Artikulli nuk gjendet në listën ALBTRIX" });
-    } else if (!photo.forWebsite) {
-      problems.push({ code: photo.code, problem: "Nuk është mall tregtar — nuk shkon në faqe" });
-    } else if (photo.barcodeMatches === false) {
+    if (photo.barcodeMatches === false) {
       problems.push({ code: photo.code, problem: "Barkodi ndryshon nga ai i listës ALBTRIX" });
     }
   }

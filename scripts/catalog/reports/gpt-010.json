@@ -1,0 +1,35 @@
+{
+  "generatedAt": "2026-09-10T17:02:41.586449+02:00",
+  "label": "gpt-010",
+  "source": "Seri e jashtme fotografish (JARA_Fotografite_e_Produkteve_Seria_010_me_foto.pdf)",
+  "totals": {
+    "pairs": 24,
+    "taken": 1,
+    "originals": 1,
+    "skipped": {
+      "unknown": 0,
+      "medicine": 0,
+      "have": 23,
+      "barcodeClash": 0,
+      "tooSmall": 0
+    }
+  },
+  "failed": [],
+  "photos": [
+    {
+      "number": 1,
+      "code": "461162",
+      "name": "TT MASHTRUSE 6-18M URBAN STYLE GIRL",
+      "barcode": "5010415334190",
+      "brand": "TOMMEE TIPPEE",
+      "confidence": "E lartë",
+      "status": "Për verifikim",
+      "note": "Nga seria e kërkimit \"TT MASHTRUSE 6-18M URBAN STYLE GIRL\". Barkodi 5010415334190 përputhet me tonin. Fotografia origjinale nga www.ilkebebe.com. Krahasoje me paketimin para publikimit.",
+      "sourcePage": "",
+      "imageUrl": "https://www.ilkebebe.com/UserFiles/ProductImages/0/ib44369/orj/tommee-tippee-urban-emzik-2li-6-18-ay-pembe-230018.jpg",
+      "licence": "Kërkim i jashtëm, JARA_Fotografite_e_Produkteve_Seria_010_me_foto.pdf",
+      "file": ".image-cache/gpt-010/0001_461162.jpg",
+      "bytes": 198702
+    }
+  ]
+}
