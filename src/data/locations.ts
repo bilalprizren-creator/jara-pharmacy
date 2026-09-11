@@ -22,6 +22,15 @@ const standardHours: OpeningHours[] = [
  * Xërxë (Rahovec) — plus the JARA Pharmacy DEPO (warehouse). Addresses and map
  * queries are taken verbatim from that export. `mapsQuery` drives a resilient
  * Google Maps search; new branches can be appended without any refactor.
+ *
+ * `coords` are the pins from the branch Google Maps links, not estimates:
+ * each one reverse-geocodes to the street and neighbourhood the registry
+ * lists. The values before the August 2026 audit were off by 50 m to 6 km —
+ * Nr. 5 sat in the village of Kobajë instead of on Rr. Afrim Gashi.
+ * Nr. 4 in Xerxe was the last one to get a real link, and it was the worst of
+ * them: nearly a kilometre out. The depot is its own unit some 17 m from
+ * Nr. 8, not the same door, but it stays out of the public branch list (it is
+ * a warehouse with pickup, not a shop to browse).
  */
 const branches: Location[] = [
   {
@@ -32,8 +41,8 @@ const branches: Location[] = [
     address: "Rr. William Walker H1/L1, Nr. 8, Prizren",
     alias: "Rr. William Vokeri",
     mapsQuery: "Jara Pharmacy 3, Rr. William Walker H1/L1, Prizren, Kosovo",
-    coords: { lat: 42.21069, lng: 20.7316 },
-    phone: "+383 49 500 763",
+    coords: { lat: 42.208539, lng: 20.724414 },
+    phone: "+383 49 200 239",
     featured: true,
     note: { al: "Lokacioni kryesor", en: "Main location" },
   },
@@ -44,7 +53,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "JONI PN, Rr. Jonit, Prizren",
     mapsQuery: "Jara Pharmacy 0, JONI PN, Rr. Jonit, Prizren, Kosovo",
-    coords: { lat: 42.2142, lng: 20.7308 },
+    coords: { lat: 42.215464, lng: 20.732547 },
+    phone: "+383 49 500 763",
     note: { al: "Lokacioni primar", en: "Primary location" },
   },
   {
@@ -54,7 +64,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Galeria Shopping Mall, Rruga Tirana, Prizren",
     mapsQuery: "Jara Pharmacy 1, Galeria Shopping Mall, Rruga Tirana, Prizren, Kosovo",
-    coords: { lat: 42.21518, lng: 20.72505 },
+    coords: { lat: 42.21516, lng: 20.725742 },
+    phone: "+383 49 550 809",
     note: { al: "Brenda qendrës tregtare", en: "Inside the shopping mall" },
   },
   {
@@ -64,7 +75,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Ahmet Prishtina Nr. 5, Bazhdarhane, Prizren",
     mapsQuery: "Jara Pharmacy 2, Rr. Ahmet Prishtina 5, Bazhdarhane, Prizren, Kosovo",
-    coords: { lat: 42.2173, lng: 20.7428 },
+    coords: { lat: 42.217013, lng: 20.743241 },
+    phone: "+383 49 200 840",
     note: { al: "Lagjja Bazhdarhane", en: "Bazhdarhane neighborhood" },
   },
   {
@@ -74,7 +86,8 @@ const branches: Location[] = [
     city: "Xërxë, Rahovec",
     address: "QTX, Rr. Egzodi 99, Xërxë, Rahovec",
     mapsQuery: "Jara Pharmacy 4, QTX, Rr. Egzodi 99, Xërxë, Rahovec, Kosovo",
-    coords: { lat: 42.35024, lng: 20.56768 },
+    coords: { lat: 42.35745, lng: 20.561295 },
+    phone: "+383 49 200 418",
     note: { al: "Qendra tregtare QTX", en: "QTX shopping center" },
   },
   {
@@ -84,7 +97,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Transiti PN, Rruga Afrim Gashi, Landovicë, Prizren",
     mapsQuery: "Jara Pharmacy 5, Transiti, Rruga Afrim Gashi, Landovicë, Prizren, Kosovo",
-    coords: { lat: 42.2053, lng: 20.6679 },
+    coords: { lat: 42.251466, lng: 20.707742 },
+    phone: "+383 48 550 012",
     note: { al: "Rruga e transitit", en: "On the transit road" },
   },
   {
@@ -94,7 +108,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Ukë Bytyqi PN, Prizren",
     mapsQuery: "Jara Pharmacy 6, Rr. Ukë Bytyqi, Prizren, Kosovo",
-    coords: { lat: 42.2213, lng: 20.7439 },
+    coords: { lat: 42.231691, lng: 20.755972 },
+    phone: "+383 43 580 645",
   },
   {
     id: "qazim-berisha",
@@ -103,7 +118,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Qazim Berisha Nr. 41, Prizren",
     mapsQuery: "Jara Pharmacy 7, Rr. Qazim Berisha 41, Prizren, Kosovo",
-    coords: { lat: 42.21792, lng: 20.74636 },
+    coords: { lat: 42.21768, lng: 20.745664 },
+    phone: "+383 48 300 318",
   },
   {
     id: "kadri-zeka",
@@ -112,16 +128,18 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Kadri Zeka PN, Prizren",
     mapsQuery: "Jara Pharmacy 8, Rr. Kadri Zeka, Prizren, Kosovo",
-    coords: { lat: 42.2198, lng: 20.7486 },
+    coords: { lat: 42.232439, lng: 20.75914 },
+    phone: "+383 48 550 002",
   },
   {
     id: "reshat-kajragliu",
     branch: 9,
-    name: "Rr. Reshat Kajragliu 7",
+    name: "Rr. Reshat Karjagdiu 7",
     city: "Prizren",
-    address: "Rr. Reshat Kajragliu Nr. 7, Prizren",
-    mapsQuery: "Jara Pharmacy 9, Rr. Reshat Kajragliu 7, Prizren, Kosovo",
-    coords: { lat: 42.2139, lng: 20.7411 },
+    address: "Rr. Reshat Karjagdiu Nr. 7, Prizren",
+    mapsQuery: "Jara Pharmacy 9, Rr. Reshat Karjagdiu 7, Prizren, Kosovo",
+    coords: { lat: 42.212556, lng: 20.734294 },
+    phone: "+383 49 300 286",
   },
   {
     id: "shuaip-spahiu",
@@ -130,7 +148,8 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Shuaip Spahiu Nr. 22, Prizren",
     mapsQuery: "Jara Pharmacy 10, Rr. Shuaip Spahiu 22, Prizren, Kosovo",
-    coords: { lat: 42.2089, lng: 20.7392 },
+    coords: { lat: 42.209409, lng: 20.738202 },
+    phone: "+383 48 400 210",
   },
   {
     id: "depo",
@@ -138,7 +157,7 @@ const branches: Location[] = [
     city: "Prizren",
     address: "Rr. Kadri Zeka PN, Prizren",
     mapsQuery: "Jara Pharmacy Depo, Rr. Kadri Zeka, Prizren, Kosovo",
-    coords: { lat: 42.2198, lng: 20.7486 },
+    coords: { lat: 42.232472, lng: 20.758944 },
     note: { al: "Depo (magazina)", en: "Warehouse / depot" },
   },
 ];

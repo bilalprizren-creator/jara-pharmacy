@@ -71,6 +71,11 @@ components. Key files:
   icon** + `accent` color + bilingual title/description.
 - Other data: `locations.ts` (the **12 real branches** + map), `socials.ts`,
   `blog.ts`, `testimonials.ts`, `trust.ts`, `stats.ts`, `nav.ts`, `brand.ts`.
+- `locations.ts` is also the single source for what goes to **Google Business
+  Profile** — coordinates, per-branch phone numbers, hours. The state of the
+  Google side (verification case, naming rules, the Kosovo import quirks that
+  cost us three failed uploads) lives in [docs/google-business-profile.md](docs/google-business-profile.md);
+  read it before touching anything on Google.
 
 The `neon` MCP server is configured in `.mcp.json` but content is currently
 **static TS files**, not a database. Don't assume a live backend.
