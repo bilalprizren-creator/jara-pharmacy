@@ -1,5 +1,5 @@
 import { useMemo } from "react";
-import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { MapContainer, Marker, Popup } from "react-leaflet";
 import L, { type LatLngTuple } from "leaflet";
 import "leaflet/dist/leaflet.css";
 import "./leaflet-overrides.css";
@@ -11,6 +11,7 @@ import { mapsHref } from "@/lib/links";
 import { Button } from "@/components/ui/Button";
 import { cn } from "@/lib/cn";
 import { MAP_PANEL_SHELL, MAP_PANEL_HEIGHT } from "./mapPanel.constants";
+import { Basemap } from "./Basemap";
 
 type PinnedLocation = Location & { coords: { lat: number; lng: number } };
 
@@ -61,15 +62,11 @@ export function LocationsMap({ className }: LocationsMapProps) {
       <MapContainer
         bounds={bounds}
         boundsOptions={{ padding: [32, 32], maxZoom: 15 }}
+        maxZoom={19}
         scrollWheelZoom={false}
         className={MAP_PANEL_HEIGHT}
       >
-        <TileLayer
-          url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
-          subdomains="abcd"
-          maxZoom={20}
-          attribution='&copy; <a href="https://www.openstreetmap.org/copyright" target="_blank" rel="noopener noreferrer">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions" target="_blank" rel="noopener noreferrer">CARTO</a>'
-        />
+        <Basemap />
         {pinned.map((loc) => (
           <Marker
             key={loc.id}

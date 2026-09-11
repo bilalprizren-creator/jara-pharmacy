@@ -1,5 +1,5 @@
-import { lazy, Suspense } from "react";
-import { motion } from "framer-motion";
+import { lazy, Suspense, useRef } from "react";
+import { motion, useInView } from "framer-motion";
 import { MapPin, Navigation, Phone, Clock, ArrowRight, Warehouse } from "lucide-react";
 import { useI18n } from "@/context/I18nContext";
 import { locations, publicBranches } from "@/data/locations";
@@ -27,6 +27,10 @@ export function Locations() {
   const cities = [...new Set(locations.map((l) => l.city.split(",")[0].trim()))];
   // The depot has no page of its own — it is not somewhere customers go.
   const hasOwnPage = new Set(publicBranches.map((l) => l.id));
+  // MapLibre + Leaflet weigh ~300 KB: fetch the map only when it is about to
+  // scroll into view, not with the rest of the page.
+  const mapSlot = useRef<HTMLDivElement>(null);
+  const mapNear = useInView(mapSlot, { once: true, margin: "600px 0px" });
 
   return (
     <section id="locations" className="section bg-surface-soft" aria-labelledby="locations-heading">
@@ -111,15 +115,20 @@ export function Locations() {
         </motion.div>
 
         <motion.div
+          ref={mapSlot}
           variants={fadeUp}
           initial="hidden"
           whileInView="show"
           viewport={viewportOnce}
           className="mt-6"
         >
-          <Suspense fallback={<LocationsMapSkeleton label={c.locations_map_loading} />}>
-            <LocationsMap />
-          </Suspense>
+          {mapNear ? (
+            <Suspense fallback={<LocationsMapSkeleton label={c.locations_map_loading} />}>
+              <LocationsMap />
+            </Suspense>
+          ) : (
+            <LocationsMapSkeleton label={c.locations_map_loading} />
+          )}
         </motion.div>
 
         {/* All other branches — single-row horizontal slider (compact). */}
