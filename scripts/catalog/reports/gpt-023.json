@@ -1,0 +1,427 @@
+{
+  "generatedAt": "2026-09-12T21:23:10.296Z",
+  "label": "gpt-023",
+  "sources": [
+    "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx"
+  ],
+  "totals": {
+    "photos": 12,
+    "inAssortment": 12,
+    "forWebsite": 12,
+    "byConfidence": {
+      "E lartë": 12
+    },
+    "byStatus": {
+      "Foto e integruar": 12
+    },
+    "problems": 38
+  },
+  "problems": [
+    {
+      "code": "44126",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "10777",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "41202",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "45161",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "33139",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "411860",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "411861",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "78326",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "75511",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "94711",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "94722",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "94733",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "111115",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "06087",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "022P",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "2500A",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "2500B",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "2500C",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500B",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1510A",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "2500D",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500C",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500D",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500E",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500F",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500G",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "2500F",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500H",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500I",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500J",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "2500G",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "2500H",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500K",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500L",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "1500M",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500N",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    },
+    {
+      "code": "2500I",
+      "problem": "Nuk ka fotografi në këtë rresht"
+    },
+    {
+      "code": "1500O",
+      "problem": "Nuk është mall tregtar — nuk shkon në faqe"
+    }
+  ],
+  "photos": [
+    {
+      "number": 1,
+      "code": "655657",
+      "name": "TENSILEN CAPS",
+      "barcode": "8606108099384",
+      "brand": "ABELAPHARM",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://zdravoteka.hr/products/tensilen-10-10-kapsula",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: AbelaPharm Tensilen, 10 kapsula.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1101.png",
+      "bytes": 228681,
+      "width": 700,
+      "height": 700,
+      "sha256": "98a0cc5d9982d069954f80ec401a2ef7adb29fda4773830474993387b988be82",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 2,
+      "code": "40453",
+      "name": "FLOBIAN CAPS",
+      "barcode": "8606018600052",
+      "brand": "TECH",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://mandispharmljekarne.hr/flobian-caps-a10-proizvod-4514/",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Flobian, 10 kapsula.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1102.png",
+      "bytes": 96411,
+      "width": 600,
+      "height": 514,
+      "sha256": "082aa6ba236f0dacf6afb8e33b2d3f68d27479b26c15af9d4f7f0ee2ceaeb569",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 3,
+      "code": "3261",
+      "name": "BULARDI JUNIOR SACHES A10",
+      "barcode": "8606018606658",
+      "brand": "ABELAPHARM",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://mandispharmljekarne.hr/bulardi-junior-vrecice-a-10-proizvod-25879/",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Bulardi Junior, 10 qese.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1103.png",
+      "bytes": 211467,
+      "width": 498,
+      "height": 640,
+      "sha256": "e0a8405645dd00f37ec8aeaf5f36a6d71f68ea2b171862c4412df63b4c0d794d",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 4,
+      "code": "5069093",
+      "name": "REMARGIN COLOSTRUM CREAM 30ML",
+      "barcode": "8001774138489",
+      "brand": "SOLIME",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.afarma.it/remargin-colostrum-crema-lenitiva",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Remargin Colostrum krem 30 ml.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1105.png",
+      "bytes": 177792,
+      "width": 900,
+      "height": 900,
+      "sha256": "9e45fd79e7640f46029c1d4e9834c22fd99899154488574e02e6160307e78986",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 5,
+      "code": "1062014",
+      "name": "SOLIME FLEX 500MG CPS",
+      "barcode": "8001774137963",
+      "brand": "SOLIME",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.solime.it/products/integratore-naturale-flex",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Solime Flex 500 mg.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1106.png",
+      "bytes": 219386,
+      "width": 900,
+      "height": 900,
+      "sha256": "e2e22f32ae1eff495634cab5489659885a66485e3ab9dd880074583b710823f6",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 6,
+      "code": "10620",
+      "name": "AGLIO COMPLEX 60 CPS",
+      "barcode": "8001774136614",
+      "brand": "SOLIME",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.solime.it/products/integratore-naturale-aglio-complex",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Solime Aglio Complex, 60 kapsula.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1107.png",
+      "bytes": 308754,
+      "width": 900,
+      "height": 900,
+      "sha256": "e0985061242e4ccf517caee53e902bc03375fe573641a2bd0dbb9d0afea536b0",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 7,
+      "code": "1062016",
+      "name": "HDL PLUS 30 CAPS / 810 MG",
+      "barcode": "8001774138441",
+      "brand": "SOLIME",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.solime.it/products/integratore-naturale-hdl-plus",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Solime HDL Plus, 30 kapsula.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1108.png",
+      "bytes": 218160,
+      "width": 900,
+      "height": 900,
+      "sha256": "85bdf61a8b86c1ee3e46204e7904b84a02de11527dfc8595263ac3669595c510",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 8,
+      "code": "83570",
+      "name": "SOLIME GELEVITAL TONIC SIR 200 ML",
+      "barcode": "8001774005521",
+      "brand": "SOLIME",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.medivital.si/gelevital-classic",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Solime Gelevital Classic 200 ml.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1109.png",
+      "bytes": 377432,
+      "width": 900,
+      "height": 900,
+      "sha256": "4cf418160f1d0a9b23f62935cc8e7bfe37835e5170ec22f5bb06b87b36db2db2",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 9,
+      "code": "221129",
+      "name": "AFRIKAN PLUM FORTE",
+      "barcode": "8606018600267",
+      "brand": "ABELAPHARM",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://www.phama.hr/product/7366/abela-pharm-africka-sljiva-forte-10-kapsula",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: AbelaPharm Africka Sljiva Forte.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1112.png",
+      "bytes": 303708,
+      "width": 798,
+      "height": 798,
+      "sha256": "1ffc8c6d059cfe1d71ee3e56221edbcb7a1ae29db9df300c6a290e704231f0e8",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 10,
+      "code": "28695",
+      "name": "BEBICOL ZINC SOL 10ML",
+      "barcode": "8606018600519",
+      "brand": "ABELAPHARM",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://spirit.com.kw/products/bebicol-with-zinc-10ml-drops/",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: BebiCol me zink 10 ml.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1113.png",
+      "bytes": 115893,
+      "width": 750,
+      "height": 750,
+      "sha256": "02ccea8cf9c618cdd6e899d574edad6f15d5f2cf23e029257a2169f47d39af15",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 11,
+      "code": "15041",
+      "name": "BRONLES SIR PER FEMIJE  125MG/5ML",
+      "barcode": "5310001222185",
+      "brand": "ALKALOID",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://viafarm.mk/p/3412/bronles-sirup-za-deca-150ml",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Bronles për fëmijë 125 mg/5 ml.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1124.png",
+      "bytes": 298722,
+      "width": 800,
+      "height": 800,
+      "sha256": "0de11ecea56976185fc22119a2e7c227078e1e49a4fc5cbe0001c14999ccbc20",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    },
+    {
+      "number": 12,
+      "code": "2500E",
+      "name": "MAGNEZIUM 400 MULTI ESSENCE + B COMPLEX X20",
+      "barcode": "5310001271824",
+      "brand": "ALKALOID",
+      "confidence": "E lartë",
+      "status": "Foto e integruar",
+      "decision": "Përputhje e sigurt",
+      "sourcePage": "https://comenzi.farmaciatei.ro/vitamine-si-suplimente/sistem-nervos/tonice-nervoase/magnesium-400-b-complex-20-plicuri-alkaloid-p333012",
+      "note": "U kontrolluan barkodi, brendi, modeli/varianti, madhësia dhe pamja e paketimit. Burimi përshkruan: Magnesium 400 + B Complex, 20 qese.",
+      "batch": "JARA_Fotografite_e_Produkteve_Seria_023_me_foto.xlsx",
+      "file": ".image-cache/gpt-023/1133.png",
+      "bytes": 216626,
+      "width": 553,
+      "height": 554,
+      "sha256": "8a95f8b0dcc566decf96b8950347518ef73f2736aa0104812ca2f941b006fe9a",
+      "inAssortment": true,
+      "forWebsite": true,
+      "barcodeMatches": true
+    }
+  ]
+}
