@@ -332,6 +332,9 @@ const al = {
     "Karta u refuzua ose pagesa u ndërpre. Mund të provoni përsëri, ose na shkruani që ta paguani me para në dorë.",
   order_cancelled_title: "Pagesa u anulua",
   order_cancelled_body: "Asgjë nuk është paguar. Mund ta provoni përsëri kur të doni.",
+  order_stale_title: "Pagesa ende nuk është konfirmuar",
+  order_stale_body:
+    "Nuk kemi marrë ende konfirmim nga banka. Nëse e keni mbyllur faqen e pagesës, provoni përsëri; nëse keni paguar, na shkruani në WhatsApp dhe e kontrollojmë menjëherë.",
   order_retry: "Provo përsëri pagesën",
   order_not_found_title: "Porosia nuk u gjet",
   order_not_found_body:
@@ -666,6 +669,9 @@ const en: CopyShape = {
     "The card was declined or the payment was interrupted. You can try again, or message us to pay in cash instead.",
   order_cancelled_title: "Payment cancelled",
   order_cancelled_body: "Nothing was charged. You can try again whenever you like.",
+  order_stale_title: "Payment not confirmed yet",
+  order_stale_body:
+    "We have not received a confirmation from the bank yet. If you closed the payment page, try again; if you did pay, message us on WhatsApp and we will check right away.",
   order_retry: "Try the payment again",
   order_not_found_title: "Order not found",
   order_not_found_body: "Check the link, or message us on WhatsApp with your order number.",

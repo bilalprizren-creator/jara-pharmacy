@@ -86,18 +86,36 @@ export function OrderStatus({ id }: { id: string }) {
     }
   };
 
-  const status: Status | "loading" | "missing" = notFound
+  /**
+   * What to show. The server keeps an abandoned or cancelled card payment at
+   * `pending_payment` (truthfully: nothing was paid), so the browser's own
+   * outcome from the gateway redirect decides the view for that case — a
+   * cancel is a cancel, a decline a decline. Only a claimed success keeps
+   * polling, since the webhook can arrive a moment after the redirect; once
+   * the polling budget is spent the page stops pretending and offers a retry.
+   */
+  const pollingDone = polls >= POLL_LIMIT;
+  const status: Status | "loading" | "missing" | "stale" = notFound
     ? "missing"
-    : order
-      ? order.status
-      : hint === "anuluar"
+    : !order
+      ? hint === "anuluar"
         ? "cancelled"
-        : "loading";
+        : "loading"
+      : order.status !== "pending_payment"
+        ? order.status
+        : hint === "anuluar"
+          ? "cancelled"
+          : hint === "deshtoi"
+            ? "payment_failed"
+            : pollingDone
+              ? "stale"
+              : "pending_payment";
 
   const view = statusView(status, c);
   const Icon = view.icon;
   const canRetry =
-    order?.paymentMethod === "card" && (status === "payment_failed" || status === "cancelled");
+    order?.paymentMethod === "card" &&
+    (status === "payment_failed" || status === "cancelled" || status === "stale");
 
   return (
     <>
@@ -119,7 +137,10 @@ export function OrderStatus({ id }: { id: string }) {
                     view.tone,
                   )}
                 >
-                  <Icon className={cn("h-6 w-6", status === "pending_payment" || status === "loading" ? "animate-spin" : "")} aria-hidden="true" />
+                  <Icon
+                    className={cn("h-6 w-6", (status === "pending_payment" || status === "loading") && "animate-spin")}
+                    aria-hidden="true"
+                  />
                 </span>
                 <div className="min-w-0 flex-1">
                   <p className="text-xs font-semibold uppercase tracking-wide text-ink-muted">{c.order_number}</p>
@@ -272,8 +293,10 @@ function InfoCard({
 
 type Copy = ReturnType<typeof useI18n>["c"];
 
-function statusView(status: Status | "loading" | "missing", c: Copy) {
+function statusView(status: Status | "loading" | "missing" | "stale", c: Copy) {
   switch (status) {
+    case "stale":
+      return { icon: Clock, tone: "bg-warningsoft text-ink-strong", title: c.order_stale_title, body: c.order_stale_body, label: c.order_status_pending };
     case "paid":
     case "done":
       return { icon: CheckCircle2, tone: "bg-successsoft text-forest", title: c.order_paid_title, body: c.order_paid_body, label: status === "done" ? c.order_status_done : c.order_status_paid };

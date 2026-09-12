@@ -150,7 +150,11 @@ export function Checkout() {
       });
       trackShop("order_placed", { items: count, method: data.paymentMethod, totalCents: totals.totalCents });
       clear();
-      window.location.assign(result.paymentUrl ?? orderPath(result.id));
+      // Card: off to the bank. Cash: the order page. Bank unreachable: the
+      // order page in its "not paid" state, which offers to try again.
+      window.location.assign(
+        result.paymentUrl ?? (result.paymentError ? `${orderPath(result.id)}?pagesa=deshtoi` : orderPath(result.id)),
+      );
     } catch {
       setSubmitError(c.checkout_error_generic);
     }
@@ -334,11 +338,14 @@ export function Checkout() {
                               })}
                             >
                               <option value="">—</option>
-                              {kosovoCities.map((name) => (
-                                <option key={name} value={name}>
-                                  {name}
-                                </option>
-                              ))}
+                              {/* Prizren has its own, cheaper option above. */}
+                              {kosovoCities
+                                .filter((name) => name !== LOCAL_CITY)
+                                .map((name) => (
+                                  <option key={name} value={name}>
+                                    {name}
+                                  </option>
+                                ))}
                               <option value={OTHER_CITY}>{c.checkout_city_other}</option>
                             </select>
                           </Field>

@@ -111,7 +111,8 @@ const paymentLabel = (order: OrderRecord, locale: "al" | "en") =>
 export async function notifyPharmacy(order: OrderRecord, siteUrl: string): Promise<void> {
   const number = orderNumber(order);
   const phone = order.customer.phone;
-  const wa = whatsappHref(`Përshëndetje ${order.customer.name}, ju shkruajmë nga Jara Pharmacy për porosinë ${number}.`, phone.replace(/^\+/, ""));
+  // wa.me wants bare digits with the country code — normalizePhone keeps spaces for people.
+  const wa = whatsappHref(`Përshëndetje ${order.customer.name}, ju shkruajmë nga Jara Pharmacy për porosinë ${number}.`, phone.replace(/\D/g, ""));
   const body = `
     <p><strong>${esc(order.customer.name)}</strong><br>
     ${esc(phone)}${order.customer.email ? `<br>${esc(order.customer.email)}` : ""}</p>

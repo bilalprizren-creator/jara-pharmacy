@@ -83,6 +83,11 @@ export interface CreateOrderResponse {
   number: string;
   /** Present for card payments: where to send the customer next. */
   paymentUrl?: string;
+  /**
+   * Card order saved, but the gateway could not be reached to start the
+   * payment. The order page offers "try again"; nothing was charged.
+   */
+  paymentError?: true;
 }
 
 /** The public view of an order, as returned by GET /api/orders/<id>. */

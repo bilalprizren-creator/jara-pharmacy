@@ -68,6 +68,8 @@ export interface OrderStore {
   findByNumber(number: number): Promise<OrderRecord | null>;
   update(id: string, patch: OrderPatch): Promise<OrderRecord>;
   addEvent(orderId: string, type: string, payload: unknown): Promise<void>;
+  /** Orders created from one address in the last `minutes` — the spam brake. */
+  countRecentOrders(ip: string, minutes: number): Promise<number>;
 }
 
 /* ---- Neon ---------------------------------------------------------------- */
@@ -125,6 +127,13 @@ function neonStore(url: string): OrderStore {
     async addEvent(orderId, type, payload) {
       await sql`insert into order_events (order_id, type, payload)
         values (${orderId}, ${type}, ${JSON.stringify(payload ?? null)}::jsonb)`;
+    },
+    async countRecentOrders(ip, minutes) {
+      const rows = await sql`
+        select count(*)::int as n from order_events
+        where type = 'created' and payload->>'ip' = ${ip}
+          and created_at > now() - make_interval(mins => ${minutes})`;
+      return Number((rows[0] as { n: number } | undefined)?.n ?? 0);
     },
   };
 }
@@ -191,6 +200,15 @@ function fileStore(dir: string): OrderStore {
       const state = load();
       state.events.push({ orderId, type, payload, at: new Date().toISOString() });
       save(state);
+    },
+    async countRecentOrders(ip, minutes) {
+      const since = Date.now() - minutes * 60_000;
+      return load().events.filter(
+        (e) =>
+          e.type === "created" &&
+          (e.payload as { ip?: string } | null)?.ip === ip &&
+          Date.parse(e.at) > since,
+      ).length;
     },
   };
 }

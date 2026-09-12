@@ -90,11 +90,22 @@ function orderBody(p: CheckoutParams) {
   const { order } = p;
   const [firstName, ...rest] = order.customer.name.trim().split(/\s+/);
   const lastName = rest.join(" ") || firstName;
+  // Every field here is "recommended", and each has a format rule — so an
+  // unknown value is left out rather than sent empty. (Kosovo has no official
+  // ISO 3166 code; XKX is the user-assigned one banks and card schemes use.)
   const address =
     order.fulfilment.method === "pickup"
-      ? { addressStreet1: "Marrje në barnatore", city: "Prizren", postalCode: "20000", country: "XKX" }
-      : { addressStreet1: order.fulfilment.street.slice(0, 50), city: order.fulfilment.city.slice(0, 50), postalCode: "", country: "XKX" };
+      ? { addressStreet1: "Marrje ne barnatore", city: "Prizren", postalCode: "20000", country: "XKX" }
+      : { addressStreet1: order.fulfilment.street.slice(0, 50), city: order.fulfilment.city.slice(0, 50), country: "XKX" };
   const named = { firstName: firstName.slice(0, 32), lastName: lastName.slice(0, 32), ...address };
+
+  const consumer: Record<string, string> = {
+    firstName: named.firstName,
+    lastName: named.lastName,
+    mobilePhone: order.customer.phone.replace(/\s+/g, ""),
+  };
+  if (order.customer.email) consumer.email = order.customer.email;
+  if (p.ip) consumer.ipAddress = p.ip;
 
   const items = order.items.map((line) => ({
     description: line.name.slice(0, 100),
@@ -108,13 +119,7 @@ function orderBody(p: CheckoutParams) {
   const back = (result: string) => `${p.siteUrl}${p.returnPath}?pagesa=${result}`;
 
   return {
-    consumer: {
-      firstName: named.firstName,
-      lastName: named.lastName,
-      email: order.customer.email ?? "",
-      mobilePhone: order.customer.phone.replace(/\s+/g, ""),
-      ipAddress: p.ip,
-    },
+    consumer,
     billingAddress: named,
     shippingAddress: named,
     invoice: {

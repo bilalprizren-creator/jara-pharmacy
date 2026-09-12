@@ -95,7 +95,15 @@ Sandbox-Testkarten (nur Sandbox, beliebiger Name/CVV/Zukunftsdatum):
 - Refund: im Händlerportal per Klick, oder
   `POST …/orders/{id}/transactions/{txId}/refund { amount, currency }`.
 - Offen bis zum Sandbox-Test: ob RaiAccept den Ländercode `XKX` (Kosovo)
-  akzeptiert; wenn nicht, das Feld `country` in `orderBody()` weglassen.
+  akzeptiert (wenn nicht, das Feld `country` in `orderBody()` weglassen), und
+  ob der Sprach-Parameter der Bezahlseite `lang=al` heißt (die Docs nennen
+  nur „Language prerequisites“; der Code hängt ihn an `paymentRedirectURL` an).
+- Was der Server bei Störungen tut: Bank beim Bestellen nicht erreichbar →
+  Bestellung wird gespeichert, Status `payment_failed`, Kunde landet auf der
+  Bestellseite mit „Provo përsëri“. Kunde bricht auf der Bankseite ab →
+  Bestellseite zeigt „anuluar“ + Retry; kommt nie eine Bestätigung, zeigt sie
+  nach ~30 s „ende nuk është konfirmuar“ + Retry + WhatsApp. Mehr als 5
+  Bestellungen in 10 Minuten von einer Adresse → 429 (Spam-Bremse).
 
 ## Go-live-Checkliste
 
@@ -117,7 +125,14 @@ Maintainers / der Apotheke.
    | `RESEND_API_KEY` | Key | Key |
    | `ORDER_NOTIFY_EMAIL` | Testadresse | `jarapharm@gmail.com` |
    | `ORDER_MAIL_FROM` | `Jara Pharmacy <porosite@jara-pharmacy.com>` | gleich |
-   | `SITE_URL` | leer (Vercel-URL) | `https://jara-pharmacy.com` |
+   | `SITE_URL` | leer (Vercel-URL wird genommen) | leer (fällt auf `https://jara-pharmacy.com`) |
+
+   **Deployment Protection:** Vercel schützt Vorschau-Deployments standardmäßig
+   mit Login. Für den Sandbox-Test muss die Preview-URL **öffentlich** sein —
+   sonst erreicht weder der RaiAccept-Webhook noch der Prüfer der Bank die
+   Seite. Vercel → Project → Settings → *Deployment Protection* → für Preview
+   ausschalten (oder einen *Shareable Link* erzeugen und diesen der Bank geben).
+   Nach dem Test wieder einschalten.
 
 5. **Echte Preise** in `src/data/prices.ts`, echte **Lieferkosten** in
    `src/data/shipping.ts`, **Rechtstexte** freigeben (`src/data/legal.ts`).

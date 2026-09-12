@@ -18,6 +18,9 @@ export function CartDrawer() {
   const { c, locale, fmt, tr } = useI18n();
   const { lines, count, subtotalCents, setQty, remove, drawerOpen, closeDrawer } = useCart();
   const titleId = "cart-drawer-title";
+  // On the checkout itself the drawer is only a quick look at the lines; the
+  // page underneath already is the next step, so no "go to checkout" link.
+  const onCheckout = window.location.pathname.replace(/\/+$/, "") === CHECKOUT_PATH;
 
   return (
     <Modal open={drawerOpen} onClose={closeDrawer} labelledBy={titleId} closeLabel={c.nav_close} placement="right">
@@ -94,20 +97,28 @@ export function CartDrawer() {
                 <Truck className="h-3.5 w-3.5" aria-hidden="true" />
                 {c.cart_delivery_note}
               </p>
-              <Button
-                href={CHECKOUT_PATH}
-                onClick={() => trackShop("checkout_started", { items: count })}
-                variant="primary"
-                fullWidth
-                size="lg"
-                className="mt-4"
-                rightIcon={<ArrowRight className="h-4 w-4" aria-hidden="true" />}
-              >
-                {c.cart_checkout}
-              </Button>
-              <Button onClick={closeDrawer} variant="ghost" fullWidth className="mt-2">
-                {c.cart_continue}
-              </Button>
+              {onCheckout ? (
+                <Button onClick={closeDrawer} variant="primary" fullWidth size="lg" className="mt-4">
+                  {c.nav_close}
+                </Button>
+              ) : (
+                <>
+                  <Button
+                    href={CHECKOUT_PATH}
+                    onClick={() => trackShop("checkout_started", { items: count })}
+                    variant="primary"
+                    fullWidth
+                    size="lg"
+                    className="mt-4"
+                    rightIcon={<ArrowRight className="h-4 w-4" aria-hidden="true" />}
+                  >
+                    {c.cart_checkout}
+                  </Button>
+                  <Button onClick={closeDrawer} variant="ghost" fullWidth className="mt-2">
+                    {c.cart_continue}
+                  </Button>
+                </>
+              )}
             </div>
           </>
         )}

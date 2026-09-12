@@ -1,5 +1,6 @@
 import type { VercelRequest, VercelResponse } from "@vercel/node";
 import type { ZodType } from "zod";
+import { brand } from "../../src/data/brand";
 
 /**
  * The little that every function shares: typed errors, JSON replies, body
@@ -73,13 +74,15 @@ export function queryParam(req: VercelRequest, name: string): string | undefined
 }
 
 /**
- * Where this deployment is reachable. `SITE_URL` wins (set it to the real
- * domain in production); otherwise Vercel's own URL for a preview, and the
- * request's host when running the dev server.
+ * Where this deployment is reachable — the base of every redirect, webhook
+ * and email link. `SITE_URL` wins when set; production falls back to the
+ * real domain (so no email ever links to a `*.vercel.app` address); a preview
+ * uses Vercel's own URL; the dev server uses the request's host.
  */
 export function siteUrl(req: VercelRequest): string {
   const configured = process.env.SITE_URL?.replace(/\/+$/, "");
   if (configured) return configured;
+  if (process.env.VERCEL_ENV === "production") return brand.websiteUrl;
   if (process.env.VERCEL_URL) return `https://${process.env.VERCEL_URL}`;
   const proto = (req.headers["x-forwarded-proto"] as string | undefined) ?? "http";
   return `${proto}://${req.headers.host ?? "localhost"}`;
