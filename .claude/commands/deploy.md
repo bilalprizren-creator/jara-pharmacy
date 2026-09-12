@@ -71,8 +71,9 @@ wurden):
   verbunden ist, überspringe diesen Teilschritt einfach (kein Fehler, keine
   Rückfrage) und verlass dich auf den WebFetch-Check darunter.
 - Bestätige in jedem Fall zusätzlich per Aufruf von **`https://jara-pharmacy.com`**
-  (der Live-Domain), dass die Seite tatsächlich lädt. Die `*.vercel.app`-Adressen
-  sind nur Aliase desselben Deployments — nimm die echte Domain.
+  (der Live-Domain), dass die Seite tatsächlich lädt. `jara-pharmacy.vercel.app` leitet
+  per 308 auf die echte Domain um, die `-biar1`-Adresse hängt hinter dem
+  Vercel-Login — nimm immer die echte Domain.
   **Achte auf den Bindestrich:** `jarapharmacy.com` ohne ihn gehört **nicht
   uns** — die Domain ist fremd und leitet auf `shemofarm.com` weiter.
 - Falls das Deployment fehlschlägt oder die Seite nicht erreichbar ist: das
