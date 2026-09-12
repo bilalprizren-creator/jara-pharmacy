@@ -1,7 +1,7 @@
 import { mkdir, readFile, writeFile } from "node:fs/promises";
 import { dirname, join } from "node:path";
 import type { Plugin } from "vite";
-import { seoRoutes } from "../../src/lib/routes";
+import { indexableRoutes, seoRoutes } from "../../src/lib/routes";
 import { renderPage } from "./render";
 import { homeGraph, jsonLdScript, SITE } from "./schema";
 
@@ -25,7 +25,7 @@ export const JSON_LD_PLACEHOLDER = "<!--jara:json-ld-->";
 function sitemap(): string {
   const lastmod = new Date().toISOString().slice(0, 10);
 
-  const entries = seoRoutes.map((route) => {
+  const entries = indexableRoutes.map((route) => {
     const priority = route.kind === "home" ? "1.0" : route.kind === "hub" ? "0.9" : "0.7";
     const changefreq = route.kind === "article" ? "monthly" : "weekly";
     return [

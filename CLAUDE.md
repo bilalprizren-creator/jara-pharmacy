@@ -95,6 +95,14 @@ articles and twelve branches were invisible to search engines.
   `dist/`, plus `sitemap.xml`. Each page ships its real text inside `#root`;
   `createRoot` clears it on mount, so visitors still get the normal app.
   There is **no sitemap in `public/`** any more — it is generated.
+- ⚠️ **Every address needs its own static file plus a rewrite in
+  `vercel.json`.** The SPA catch-all `"/(.*)" → "/index.html"` that used to sit
+  in `vercel.json` never worked on this project (with `cleanUrls`, Vercel
+  answered every path without a file with a 404 — verified against the live
+  site on 12 Sept 2026), so it was removed. A new route = an entry in
+  `seoRoutes` (the build writes `dist/<path>/index.html`) + a rewrite line,
+  exactly like `/lokacionet/:id`. The shop pages share one shell:
+  `/porosia` and `/porosia/:id` both rewrite to `/porosia/index.html`.
 - ⚠️ **`src/lib/routes.ts` and `src/lib/links.ts` import their runtime
   dependencies relatively (`../data/...`), not via `@/`.** `vite.config.ts`
   imports them, and esbuild bundles the config before Vite's `resolve.alias`

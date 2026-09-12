@@ -33,6 +33,7 @@
     { "source": "/keshilla/:slug", "destination": "/keshilla/:slug/index.html" },
     { "source": "/lokacionet/:id", "destination": "/lokacionet/:id/index.html" },
     { "source": "/info/:slug", "destination": "/info/:slug/index.html" },
-    { "source": "/(.*)", "destination": "/index.html" }
+    { "source": "/porosia", "destination": "/porosia/index.html" },
+    { "source": "/porosia/:id", "destination": "/porosia/index.html" }
   ]
 }

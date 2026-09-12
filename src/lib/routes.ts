@@ -139,7 +139,16 @@ export type SeoRoute =
   | { kind: "hub"; path: string }
   | { kind: "article"; path: string; article: BlogArticle }
   | { kind: "branch"; path: string; branch: Location }
-  | { kind: "legal"; path: string; page: LegalPage };
+  | { kind: "legal"; path: string; page: LegalPage }
+  /**
+   * The shop shell: one static file at /porosia that the app takes over for
+   * both the checkout and every /porosia/<id> page (vercel.json rewrites the
+   * latter to it). It exists because Vercel never served the catch-all
+   * "/(.*) → /index.html" rewrite here — every unknown path is a 404 — so a
+   * route with no file of its own simply did not exist. Marked noindex and
+   * kept out of the sitemap: it is personal, not content.
+   */
+  | { kind: "shop"; path: string };
 
 /**
  * The full set of addresses the build turns into real HTML files. Albanian
@@ -164,4 +173,8 @@ export const seoRoutes: SeoRoute[] = [
     path: legalPath(page.slug),
     page,
   })),
+  { kind: "shop", path: CHECKOUT_PATH },
 ];
+
+/** The addresses search engines are invited to — everything but the shop shell. */
+export const indexableRoutes: SeoRoute[] = seoRoutes.filter((r) => r.kind !== "shop");

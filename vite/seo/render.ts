@@ -238,6 +238,21 @@ function legalArticle(route: Extract<SeoRoute, { kind: "legal" }>): string {
 
 function contentFor(route: SeoRoute): PageContent {
   switch (route.kind) {
+    case "shop":
+      // A shell only: the app renders the checkout or the order page from
+      // the path the moment it mounts. The text here is for the second before.
+      return {
+        title: `${copy.al.checkout_title} · ${brand.name}`,
+        description: copy.al.checkout_subtitle,
+        body: `
+      <article>
+        <p class="seo-eyebrow">${escapeHtml(copy.al.checkout_eyebrow)}</p>
+        <h1>${escapeHtml(copy.al.checkout_title)}</h1>
+        <p>${escapeHtml(copy.al.checkout_subtitle)}</p>
+        <nav><a href="/#products">${escapeHtml(copy.al.checkout_back)}</a></nav>
+      </article>`,
+        jsonLd: jsonLdScript(homeGraph()),
+      };
     case "legal":
       return {
         title: `${route.page.title.al} · ${brand.name}`,
@@ -344,7 +359,13 @@ export function renderPage(template: string, route: SeoRoute): string {
     return swap(html, /<div id="root"><\/div>/, `${STATIC_STYLE}\n    <div id="root">${body}\n    </div>`);
   }
 
-  html = swap(html, /<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
+  html = swap(
+    html,
+    /<title>[\s\S]*?<\/title>/,
+    `<title>${escapeHtml(title)}</title>${
+      route.kind === "shop" ? '\n    <meta name="robots" content="noindex, nofollow" />' : ""
+    }`,
+  );
   html = swap(
     html,
     /<meta\s+name="description"[\s\S]*?\/>/,
