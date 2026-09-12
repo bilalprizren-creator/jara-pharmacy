@@ -28,7 +28,7 @@ import { branchesByNumber, branchName } from "@/lib/branches";
 import { formatEur } from "@/lib/money";
 import { computeTotals, deliveryFee, priceLines } from "@/lib/orderTotals";
 import { legalPath, orderPath } from "@/lib/routes";
-import { createOrder } from "@/lib/shopApi";
+import { createOrder, ShopApiError } from "@/lib/shopApi";
 import { trackShop } from "@/lib/track";
 import type { OrderFulfilment, ShippingMethodId } from "@/types/shop";
 
@@ -155,8 +155,15 @@ export function Checkout() {
       window.location.assign(
         result.paymentUrl ?? (result.paymentError ? `${orderPath(result.id)}?pagesa=deshtoi` : orderPath(result.id)),
       );
-    } catch {
-      setSubmitError(c.checkout_error_generic);
+    } catch (err) {
+      const code = err instanceof ShopApiError ? err.code : undefined;
+      setSubmitError(
+        code === "not_configured"
+          ? c.checkout_error_unavailable
+          : code === "too_many_orders"
+            ? c.checkout_error_too_many
+            : c.checkout_error_generic,
+      );
     }
   };
 

@@ -1,6 +1,7 @@
 import { existsSync, mkdirSync, readFileSync, writeFileSync } from "node:fs";
 import { join } from "node:path";
 import { neon } from "@neondatabase/serverless";
+import { HttpError } from "./http";
 import type {
   OrderCustomer,
   OrderFulfilment,
@@ -223,7 +224,9 @@ export function store(): OrderStore {
   if (url) {
     cached = neonStore(url);
   } else if (process.env.VERCEL) {
-    throw new Error("DATABASE_URL is not set");
+    // A deployment without a database is a shop that is not switched on yet
+    // (a preview before Neon exists). Say so, instead of a generic failure.
+    throw new HttpError(503, "The shop is not activated on this deployment", "not_configured");
   } else {
     console.warn("[api] DATABASE_URL not set — using .orders-dev/orders.json (development only)");
     cached = fileStore(join(process.cwd(), ".orders-dev"));

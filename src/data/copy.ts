@@ -314,6 +314,9 @@ const al = {
   checkout_error_city: "Zgjidhni qytetin.",
   checkout_error_terms: "Duhet të pranoni kushtet e blerjes.",
   checkout_error_generic: "Diçka shkoi keq. Provoni përsëri ose na shkruani në WhatsApp.",
+  checkout_error_unavailable:
+    "Porositë online nuk janë aktivizuar ende në këtë faqe. Na shkruani në WhatsApp — ju përgjigjemi menjëherë.",
+  checkout_error_too_many: "Shumë porosi brenda pak minutash. Ju lutemi provoni pak më vonë.",
   checkout_error_empty: "Shporta është bosh.",
   checkout_back: "Kthehu te produktet",
 
@@ -652,6 +655,9 @@ const en: CopyShape = {
   checkout_error_city: "Choose your city.",
   checkout_error_terms: "You need to accept the terms of purchase.",
   checkout_error_generic: "Something went wrong. Try again or message us on WhatsApp.",
+  checkout_error_unavailable:
+    "Online orders are not switched on for this site yet. Message us on WhatsApp — we reply right away.",
+  checkout_error_too_many: "Too many orders within a few minutes. Please try again a little later.",
   checkout_error_empty: "Your cart is empty.",
   checkout_back: "Back to products",
 
