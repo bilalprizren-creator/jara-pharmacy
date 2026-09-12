@@ -1,24 +1,41 @@
-import { useRef } from "react";
-import { Check, MessageCircle, Phone, Send, Info } from "lucide-react";
+import { useEffect, useRef, useState } from "react";
+import { Check, MessageCircle, Phone, Send, Info, ShoppingBag } from "lucide-react";
 import type { Product } from "@/types";
 import { useI18n } from "@/context/I18nContext";
 import { useInquiry } from "@/context/InquiryContext";
+import { useCart } from "@/context/CartContext";
 import { Modal } from "@/components/ui/Modal";
 import { Badge } from "@/components/ui/Badge";
 import { Button } from "@/components/ui/Button";
 import { ProductMedia } from "@/components/ui/ProductMedia";
+import { PriceTag } from "@/components/ui/PriceTag";
+import { QtyStepper } from "@/components/shop/QtyStepper";
 import { brand } from "@/data/brand";
 import { telHref, whatsappHref, productInquiryMessage } from "@/lib/links";
-import { trackInquiry } from "@/lib/track";
+import { trackInquiry, trackShop } from "@/lib/track";
 
 export function ProductModal() {
   const { locale, c, tr } = useI18n();
   const { modalProduct, closeModal, selectForInquiry } = useInquiry();
+  const { add, openDrawer } = useCart();
 
   // Keep the last product mounted during the exit animation.
   const lastRef = useRef<Product | null>(null);
   if (modalProduct) lastRef.current = modalProduct;
   const product = modalProduct ?? lastRef.current;
+
+  // Quantity to add, reset whenever a different product opens.
+  const [qty, setQty] = useState(1);
+  useEffect(() => setQty(1), [modalProduct?.id]);
+
+  const buyable = product?.price != null;
+  const addToCart = () => {
+    if (!product) return;
+    add(product, qty);
+    trackShop("add_to_cart", { product });
+    closeModal();
+    openDrawer();
+  };
 
   const titleId = "product-modal-title";
 
@@ -52,6 +69,23 @@ export function ProductModal() {
               <p className="mt-2 text-sm leading-relaxed text-ink-muted">
                 {tr(product.shortDescription)}
               </p>
+            )}
+
+            {buyable && (
+              <div className="mt-4 flex flex-wrap items-center justify-between gap-3 rounded-xl border border-line bg-surface-soft p-3.5">
+                <PriceTag price={product.price!} oldPrice={product.oldPrice} size="md" />
+                <div className="flex items-center gap-2">
+                  <QtyStepper value={qty} onChange={setQty} label={product.name} />
+                  <Button
+                    onClick={addToCart}
+                    variant="primary"
+                    size="sm"
+                    leftIcon={<ShoppingBag className="h-4 w-4" aria-hidden="true" />}
+                  >
+                    {c.cart_add}
+                  </Button>
+                </div>
+              </div>
             )}
 
             {/* Specs — only rendered for fields that actually exist (imported products). */}

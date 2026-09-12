@@ -7,9 +7,10 @@ patterns the maintainer likes, and the gotchas that have bitten us before.**
 ## What this is
 
 A modern, premium, **bilingual (Albanian `al` / English `en`)** marketing/catalog
-web app for **Jara Pharmacy** (Prizren, Kosovo). It is **inquiry-first**: there is
-**no checkout**. Every product routes into a WhatsApp / phone / contact-form
-inquiry. Albanian is the default language.
+web app for **Jara Pharmacy** (Prizren, Kosovo). It is **inquiry-first**: every
+product routes into a WhatsApp / phone / contact-form inquiry. Products that
+carry a price (`src/data/prices.ts`) can additionally be bought online — see
+"Shop" below. Albanian is the default language.
 
 ## Stack & commands
 
@@ -105,6 +106,39 @@ articles and twelve branches were invisible to search engines.
 - Opening hours live in `src/data/locations.ts` as data (`hours`), rendered via
   `@/lib/hours` and emitted as `openingHoursSpecification` — visible text and
   structured data come from the same place on purpose.
+
+## Shop (online orders) — branch `shop` until the maintainer merges
+
+Read [docs/online-payment.md](docs/online-payment.md) before touching anything
+here; it holds the bank onboarding state, the go-live checklist and the
+RaiAccept API reference.
+
+- **A price makes a product buyable.** `src/data/prices.ts` is the only place a
+  price is entered (EUR incl. VAT); `products.ts` merges it in by id. No entry =
+  the card keeps its inquiry buttons. The pilot list holds **placeholder**
+  prices the pharmacy must replace. Delivery fees: `src/data/shipping.ts`.
+- **Money is integer cents** (`src/lib/money.ts`); totals come from
+  `src/lib/orderTotals.ts`, which both the checkout and `api/` import — never
+  compute a total anywhere else, and never trust an amount from the browser.
+- **`api/` is Vercel Functions** (Node, `@vercel/node` types). Shared code in
+  `api/_lib/`. Everything `api/` imports from `src/` must use **relative
+  imports** (same rule as `src/lib/routes.ts`) — the function bundle has no
+  `@/` alias; type-only imports may stay aliased.
+- **Payment truth comes from the gateway API**, never from the redirect URL
+  or the webhook body: `api/_lib/orders.ts` → `reconcile()` /
+  `applyPaymentResult()` (idempotent; a paid order stays paid).
+- **`RAIACCEPT_MODE=mock`** (default outside production) replaces the bank
+  with `api/payments/mock` — a local page with Paguaj / Refuzo / Anulo — so the
+  full flow is testable without credentials. Without `DATABASE_URL` the dev
+  server stores orders in `.orders-dev/orders.json` (gitignored).
+- `npm run dev` serves `api/` through `vite/api-dev.ts`; no `vercel dev`, no
+  Vercel login. Env for dev lives in `.env.local` (see `.env.example`).
+- Routes: `/porosia` (checkout), `/porosia/<id>` (status; random id, noindex),
+  `/info/<slug>` (terms, privacy, delivery — from `src/data/legal.ts`, also
+  built as static pages for the bank's website audit). All in `src/lib/routes.ts`.
+- ⚠️ Vercel is on the **Hobby** plan; a live shop needs **Pro** (commercial use).
+  Stripe/PayPal are not available to Kosovo merchants — the bank gateway is
+  the way, and Jara banks with Raiffeisen (RaiAccept).
 
 ## Design language the maintainer likes
 

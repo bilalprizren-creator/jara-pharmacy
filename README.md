@@ -5,7 +5,9 @@ a pharmacy, health, beauty & wellness brand in **Prizren, Kosovo**.
 
 Built as an inquiry-first product experience: browse categories, discover
 products, find locations, and reach the pharmacy in one tap via WhatsApp, phone
-or the contact form. No checkout — every product routes into a smart inquiry flow.
+or the contact form. Products with a price can also be bought online (card via
+Raiffeisen RaiAccept, or cash on delivery/pickup); everything else routes into
+the smart inquiry flow. See [docs/online-payment.md](docs/online-payment.md).
 
 > **Cilësi. Besim. Kujdes.** — Quality. Trust. Care.
 
@@ -46,8 +48,12 @@ src/
   context/                # I18nContext (locale) + InquiryContext (smart inquiry flow)
   hooks/                  # useReducedMotion, useScrolled, useCountUp, useActiveSection…
   lib/                    # cn, links (WhatsApp/Maps/tel/mailto), motion presets, accents
-  types/                  # shared TypeScript models
+  types/                  # shared TypeScript models (+ shop.ts for orders)
   styles/global.css       # Tailwind layers, tokens, reduced-motion baseline
+api/                      # Vercel serverless functions: orders, payment webhook, mock bank
+  _lib/                   # db (Neon), RaiAccept client, mail (Resend), order logic
+db/schema.sql             # Postgres tables for orders
+vite/api-dev.ts           # serves api/ inside `npm run dev` (no Vercel login needed)
 public/                   # favicon.svg, logo-mark.svg, logo-full.svg, og-image.svg
 reference/                # original brand screenshots + research dossier (source of truth)
 ```
@@ -121,11 +127,27 @@ gantt
     Build & verify               :active, s2, 9, 10
 ```
 
+## Shop (online orders)
+
+- **Prices** live in `src/data/prices.ts`; a product is buyable exactly when it
+  has an entry there. Delivery methods and fees are in `src/data/shipping.ts`.
+- **Cart** (`context/CartContext.tsx`) persists in localStorage; the drawer is
+  `components/shop/CartDrawer.tsx`. Checkout is `/porosia`, an order's status
+  page `/porosia/<id>` (both `noindex`); terms/privacy/delivery pages are
+  `/info/<slug>` from `src/data/legal.ts` and are built as static HTML.
+- **Server**: `api/orders` recomputes every amount from the price list, stores
+  the order in Neon Postgres and, for card payments, creates a RaiAccept
+  checkout session. `api/payments/raiaccept` is the webhook; the order page
+  also re-checks with the gateway itself. `RAIACCEPT_MODE=mock` swaps the
+  bank for a local test page so the whole flow runs offline.
+- Environment variables: see `.env.example`. Bank onboarding, go-live
+  checklist and the RaiAccept reference: [docs/online-payment.md](docs/online-payment.md).
+
 ## Extending later (CMS-ready)
 
-Content models in `src/data` are shaped for a future backend/CMS: add locations,
-products or a `price` field without refactoring, and swap the resilient
-search-based Google Maps links for exact per-branch URLs.
+Content models in `src/data` are shaped for a future backend/CMS: add locations
+or products without refactoring, and swap the resilient search-based Google
+Maps links for exact per-branch URLs.
 
 ---
 

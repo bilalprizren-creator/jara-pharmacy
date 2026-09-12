@@ -59,3 +59,32 @@ export function trackInquiry(
     source,
   });
 }
+
+/** The shop funnel, from the first "add" to a placed order. */
+type ShopEvent = "add_to_cart" | "checkout_started" | "order_placed";
+
+/**
+ * Record a shop step. As anonymous as the inquiries: a product name, a count,
+ * a payment method and a rounded total bucket — never a customer, an address
+ * or an order number. The order itself lives in the database, not here.
+ */
+export function trackShop(
+  event: ShopEvent,
+  data: { product?: Product; items?: number; method?: "card" | "cash"; totalCents?: number } = {},
+): void {
+  track(`shop_${event}`, {
+    product: data.product ? clip(data.product.name) : NONE,
+    items: data.items ?? 0,
+    method: data.method ?? NONE,
+    total: data.totalCents != null ? totalBucket(data.totalCents) : NONE,
+  });
+}
+
+/** "0-10", "10-25", "25-50", "50+" — enough to see the order sizes, no exact amounts. */
+function totalBucket(cents: number): string {
+  const eur = cents / 100;
+  if (eur < 10) return "0-10";
+  if (eur < 25) return "10-25";
+  if (eur < 50) return "25-50";
+  return "50+";
+}

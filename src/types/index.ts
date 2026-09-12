@@ -119,6 +119,15 @@ export interface Product {
   contactMessage?: Bilingual;
 
   /* ---------------------------------------------------------------- */
+  /*  Shop — only products with a price can be bought online.         */
+  /*  Prices live in src/data/prices.ts and are merged in by id.       */
+  /* ---------------------------------------------------------------- */
+  /** Retail price in EUR incl. VAT. Present = "Shto në shportë"; absent = inquiry only. */
+  price?: number;
+  /** Previous price for offers, rendered struck through next to `price`. */
+  oldPrice?: number;
+
+  /* ---------------------------------------------------------------- */
   /*  Import metadata — populated for catalog-imported products only.  */
   /*  All optional so hand-authored products remain valid unchanged.   */
   /* ---------------------------------------------------------------- */

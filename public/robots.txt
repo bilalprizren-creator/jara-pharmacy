@@ -7,4 +7,8 @@ Allow: /
 # real pharmacy photos (hero / "Our pharmacy" section).
 Disallow: /social/
 
+# The checkout and every order's status page are personal, never content.
+Disallow: /porosia
+Disallow: /api/
+
 Sitemap: https://jara-pharmacy.com/sitemap.xml

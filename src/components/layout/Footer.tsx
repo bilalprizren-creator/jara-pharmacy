@@ -3,11 +3,13 @@ import { useI18n } from "@/context/I18nContext";
 import { brand } from "@/data/brand";
 import { navLinks } from "@/data/nav";
 import { categories } from "@/data/categories";
+import { legalPages } from "@/data/legal";
 import { Container } from "@/components/ui/Container";
 import { BrandLogo } from "@/components/ui/BrandLogo";
 import { LanguageToggle } from "@/components/ui/LanguageToggle";
+import { PaymentLogos } from "@/components/shop/PaymentLogos";
 import { telHref, mailtoHref, instagramHref } from "@/lib/links";
-import { BRANCHES_HUB_PATH } from "@/lib/routes";
+import { BRANCHES_HUB_PATH, legalPath } from "@/lib/routes";
 import { trackInquiry } from "@/lib/track";
 import { scrollToId } from "@/lib/dom";
 
@@ -134,6 +136,32 @@ export function Footer() {
                 </a>
               </li>
             </ul>
+          </div>
+        </div>
+
+        {/*
+          The info pages and the accepted cards. Real links (not in-page
+          scrolls): the card-acquiring bank's website audit looks for exactly
+          these — terms, privacy, delivery & returns, and the card marks.
+        */}
+        <div className="flex flex-col gap-4 border-t border-white/10 py-5 sm:flex-row sm:items-center sm:justify-between">
+          <nav aria-label={c.footer_legal}>
+            <ul className="flex flex-wrap gap-x-5 gap-y-2">
+              {legalPages.map((page) => (
+                <li key={page.slug}>
+                  <a
+                    href={legalPath(page.slug)}
+                    className="text-sm text-white/60 transition-colors hover:text-lime"
+                  >
+                    {tr(page.title)}
+                  </a>
+                </li>
+              ))}
+            </ul>
+          </nav>
+          <div className="flex items-center gap-3">
+            <span className="text-xs text-white/50">{c.footer_payments}</span>
+            <PaymentLogos tone="dark" />
           </div>
         </div>
 

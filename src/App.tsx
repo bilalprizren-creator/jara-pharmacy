@@ -2,11 +2,13 @@ import { useMemo } from "react";
 import { I18nProvider } from "@/context/I18nContext";
 import { InquiryProvider } from "@/context/InquiryContext";
 import { ArticleProvider } from "@/context/ArticleContext";
+import { CartProvider } from "@/context/CartContext";
 import { Navbar } from "@/components/navigation/Navbar";
 import { Footer } from "@/components/layout/Footer";
 import { FloatingWhatsApp } from "@/components/common/FloatingWhatsApp";
 import { ProductModal } from "@/components/products/ProductModal";
 import { ArticleModal } from "@/components/blog/ArticleModal";
+import { CartDrawer } from "@/components/shop/CartDrawer";
 import { Hero } from "@/sections/Hero";
 import { RouteHero } from "@/sections/RouteHero";
 import { Trust } from "@/sections/Trust";
@@ -20,8 +22,24 @@ import { Testimonials } from "@/sections/Testimonials";
 import { Stats } from "@/sections/Stats";
 import { Blog } from "@/sections/Blog";
 import { Contact } from "@/sections/Contact";
+import { Checkout } from "@/sections/Checkout";
+import { OrderStatus } from "@/sections/OrderStatus";
+import { LegalPage } from "@/sections/LegalPage";
 import { SkipLink } from "@/components/common/SkipLink";
-import { resolveRoute } from "@/lib/routes";
+import { resolveRoute, type AppRoute } from "@/lib/routes";
+
+/**
+ * The shop and info pages stand on their own: a checkout with the whole
+ * homepage scrolling underneath it would be noise, and the bank's audit
+ * wants the terms page to be *the* page. Everything else keeps the
+ * one-scrolling-page layout, with the hub/branch hero swapped in on top.
+ */
+function isStandalone(route: AppRoute | null): route is Extract<
+  AppRoute,
+  { kind: "checkout" | "order" | "legal" }
+> {
+  return route?.kind === "checkout" || route?.kind === "order" || route?.kind === "legal";
+}
 
 export default function App() {
   /**
@@ -36,31 +54,55 @@ export default function App() {
 
   return (
     <I18nProvider>
-      <InquiryProvider>
-        <ArticleProvider>
-          <SkipLink />
-          <Navbar />
-          <main id="main">
-          {route ? <RouteHero route={route} /> : <Hero />}
-          <Trust />
-          <Categories />
-          <Products />
-          <Social />
-          <Locations />
-          <About />
-          <OurPharmacy />
-          <Testimonials />
-          <Stats />
-          <Blog />
-          <Contact />
-          </main>
-          <Footer />
-          <FloatingWhatsApp />
-          {/* Global, accessible detail dialogs driven by their contexts. */}
-          <ProductModal />
-          <ArticleModal />
-        </ArticleProvider>
-      </InquiryProvider>
+      <CartProvider>
+        <InquiryProvider>
+          <ArticleProvider>
+            <SkipLink />
+            <Navbar />
+            <main id="main">
+              {isStandalone(route) ? (
+                <StandalonePage route={route} />
+              ) : (
+                <>
+                  {route ? <RouteHero route={route} /> : <Hero />}
+                  <Trust />
+                  <Categories />
+                  <Products />
+                  <Social />
+                  <Locations />
+                  <About />
+                  <OurPharmacy />
+                  <Testimonials />
+                  <Stats />
+                  <Blog />
+                  <Contact />
+                </>
+              )}
+            </main>
+            <Footer />
+            <FloatingWhatsApp />
+            {/* Global, accessible detail dialogs driven by their contexts. */}
+            <ProductModal />
+            <ArticleModal />
+            <CartDrawer />
+          </ArticleProvider>
+        </InquiryProvider>
+      </CartProvider>
     </I18nProvider>
   );
+}
+
+function StandalonePage({
+  route,
+}: {
+  route: Extract<AppRoute, { kind: "checkout" | "order" | "legal" }>;
+}) {
+  switch (route.kind) {
+    case "checkout":
+      return <Checkout />;
+    case "order":
+      return <OrderStatus id={route.id} />;
+    case "legal":
+      return <LegalPage page={route.page} />;
+  }
 }

@@ -1,14 +1,17 @@
 import { forwardRef } from "react";
 import { motion } from "framer-motion";
-import { Heart, MessageCircle } from "lucide-react";
+import { Heart, MessageCircle, ShoppingBag } from "lucide-react";
 import type { Product } from "@/types";
 import { useI18n } from "@/context/I18nContext";
 import { useInquiry } from "@/context/InquiryContext";
+import { useCart } from "@/context/CartContext";
 import { useFavorite } from "@/hooks/useFavorite";
 import { ProductMedia } from "@/components/ui/ProductMedia";
 import { Badge } from "@/components/ui/Badge";
+import { PriceTag } from "@/components/ui/PriceTag";
 import { cn } from "@/lib/cn";
 import { fadeUp } from "@/lib/motion";
+import { trackShop } from "@/lib/track";
 
 // forwardRef: AnimatePresence (mode="popLayout") measures direct children via ref.
 export const ProductCard = forwardRef<HTMLElement, { product: Product }>(function ProductCard(
@@ -17,7 +20,16 @@ export const ProductCard = forwardRef<HTMLElement, { product: Product }>(functio
 ) {
   const { tr, c } = useI18n();
   const { openModal, selectForInquiry } = useInquiry();
+  const { add, openDrawer } = useCart();
   const [favorite, toggleFavorite] = useFavorite(product.id);
+  // A price is what makes a product buyable; everything else stays inquiry-first.
+  const buyable = product.price != null;
+
+  const addToCart = () => {
+    add(product);
+    trackShop("add_to_cart", { product });
+    openDrawer();
+  };
 
   return (
     <motion.article
@@ -77,16 +89,30 @@ export const ProductCard = forwardRef<HTMLElement, { product: Product }>(functio
         <p className="mt-1.5 line-clamp-2 flex-1 text-sm leading-relaxed text-ink-muted">
           {product.shortDescription ? tr(product.shortDescription) : null}
         </p>
+        {buyable && (
+          <PriceTag price={product.price!} oldPrice={product.oldPrice} className="mt-2" />
+        )}
 
         <div className="mt-4 flex flex-col gap-2">
-          <button
-            type="button"
-            onClick={() => selectForInquiry(product)}
-            className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-forest px-3 py-2 text-center text-xs font-semibold leading-tight text-white transition-all duration-300 hover:bg-forest-600 active:scale-[0.98] sm:gap-2 sm:px-4 sm:text-sm"
-          >
-            <MessageCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
-            {c.product_ask}
-          </button>
+          {buyable ? (
+            <button
+              type="button"
+              onClick={addToCart}
+              className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-forest px-3 py-2 text-center text-xs font-semibold leading-tight text-white transition-all duration-300 hover:bg-forest-600 active:scale-[0.98] sm:gap-2 sm:px-4 sm:text-sm"
+            >
+              <ShoppingBag className="h-4 w-4 shrink-0" aria-hidden="true" />
+              {c.cart_add}
+            </button>
+          ) : (
+            <button
+              type="button"
+              onClick={() => selectForInquiry(product)}
+              className="inline-flex min-h-10 items-center justify-center gap-1.5 rounded-full bg-forest px-3 py-2 text-center text-xs font-semibold leading-tight text-white transition-all duration-300 hover:bg-forest-600 active:scale-[0.98] sm:gap-2 sm:px-4 sm:text-sm"
+            >
+              <MessageCircle className="h-4 w-4 shrink-0" aria-hidden="true" />
+              {c.product_ask}
+            </button>
+          )}
           <button
             type="button"
             onClick={() => openModal(product)}

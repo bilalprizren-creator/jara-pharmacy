@@ -6,6 +6,7 @@ import {
   categorySectionRemap,
   categoryCodeOverrides,
 } from "@/data/curationOverrides";
+import { shopPrices } from "@/data/prices";
 
 /**
  * Real SHEMO products already represented above via a curated entry with the
@@ -447,6 +448,17 @@ function withCategoryFix(p: Product): Product {
   return { ...p, category: target, categoryLabel: labelBySlug[target] };
 }
 
+/**
+ * Attach the shop price where the price list has one. The list is the single
+ * source of truth for what can be bought online — nothing else in the catalog
+ * says "buyable", and a product with no entry keeps its inquiry-only buttons.
+ */
+function withPrice(p: Product): Product {
+  const entry = shopPrices[p.id];
+  if (!entry) return p;
+  return { ...p, price: entry.price, oldPrice: entry.oldPrice };
+}
+
 export const products: Product[] = [
   ...curatedProducts,
   ...importedProducts
@@ -455,4 +467,9 @@ export const products: Product[] = [
       featuredOverrideCodes.has(p.productCode ?? "") ? { ...p, featured: true } : p,
     )
     .map(withCategoryFix),
-];
+].map(withPrice);
+
+/** Quick lookup by id — the cart stores ids only. */
+export const productById: ReadonlyMap<string, Product> = new Map(
+  products.map((p) => [p.id, p]),
+);

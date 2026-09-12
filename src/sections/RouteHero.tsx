@@ -43,7 +43,7 @@ import type { Locale, Location } from "@/types";
  * a visitor who lands here from a search. The entrance animation is the same
  * mount-time fade the hero uses.
  */
-export function RouteHero({ route }: { route: AppRoute }) {
+export function RouteHero({ route }: { route: Extract<AppRoute, { kind: "hub" | "branch" }> }) {
   return route.kind === "hub" ? <HubPage /> : <BranchPage branch={route.branch} />;
 }
 

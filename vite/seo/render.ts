@@ -2,13 +2,17 @@ import { blogArticles } from "../../src/data/blog";
 import { brand } from "../../src/data/brand";
 import { copy } from "../../src/data/copy";
 import { branchIntro, hubFaq, hubIntro } from "../../src/data/seoPages";
+import { legalPages } from "../../src/data/legal";
+import { shippingMethods } from "../../src/data/shipping";
 import { branchesByNumber, nearestBranches } from "../../src/lib/branches";
 import { formatHours } from "../../src/lib/hours";
 import { mapsHref } from "../../src/lib/links";
+import { formatEur } from "../../src/lib/money";
 import {
   articlePath,
   BRANCHES_HUB_PATH,
   branchPath,
+  legalPath,
   type SeoRoute,
 } from "../../src/lib/routes";
 import type { Location, OpeningHours } from "../../src/types";
@@ -182,8 +186,65 @@ function articleArticle(route: Extract<SeoRoute, { kind: "article" }>): string {
       </article>`;
 }
 
+/** Delivery fee table for /info/dergesa-dhe-kthimi, from the same data the checkout charges. */
+function shippingTable(): string {
+  const rows = shippingMethods
+    .filter((m) => m.enabled)
+    .map((m) => {
+      const fee = m.feeCents === 0 ? copy.al.checkout_free : formatEur(m.feeCents, "al");
+      const free =
+        m.freeFromCents != null
+          ? ` (${copy.al.checkout_free_from.replace("{amount}", formatEur(m.freeFromCents, "al"))})`
+          : "";
+      return `
+          <tr><td>${escapeHtml(m.title.al)}</td><td>${escapeHtml(fee)}${escapeHtml(free)}</td><td>${escapeHtml(m.eta.al)}</td></tr>`;
+    })
+    .join("");
+  return `
+        <table>
+          <thead><tr><th>${escapeHtml(copy.al.legal_method)}</th><th>${escapeHtml(copy.al.legal_fee)}</th><th>${escapeHtml(copy.al.legal_eta)}</th></tr></thead>
+          <tbody>${rows}
+          </tbody>
+        </table>`;
+}
+
+function legalArticle(route: Extract<SeoRoute, { kind: "legal" }>): string {
+  const { page } = route;
+  const sections = page.sections
+    .map(
+      (section) => `
+        <h2>${escapeHtml(section.title.al)}</h2>${section.paragraphs.al
+          .map((p) => `\n        <p>${escapeHtml(p)}</p>`)
+          .join("")}`,
+    )
+    .join("");
+  const others = legalPages
+    .filter((p) => p.slug !== page.slug)
+    .map((p) => `<a href="${legalPath(p.slug)}">${escapeHtml(p.title.al)}</a>`)
+    .join(" ·\n          ");
+
+  return `
+      <article>
+        <p class="seo-eyebrow">${escapeHtml(copy.al.legal_eyebrow)}</p>
+        <h1>${escapeHtml(page.title.al)}</h1>
+        <p><strong>${escapeHtml(page.intro.al)}</strong></p>${page.showShippingTable ? shippingTable() : ""}${sections}
+        <p><em>${escapeHtml(copy.al.legal_updated.replace("{date}", page.updated))}</em></p>
+        <nav>
+          ${others} ·
+          <a href="/">Ballina</a>
+        </nav>
+      </article>`;
+}
+
 function contentFor(route: SeoRoute): PageContent {
   switch (route.kind) {
+    case "legal":
+      return {
+        title: `${route.page.title.al} · ${brand.name}`,
+        description: route.page.intro.al,
+        body: legalArticle(route),
+        jsonLd: jsonLdScript(homeGraph()),
+      };
     case "hub":
       return {
         title: `Barnatore në Prizren — të gjitha lokacionet | ${brand.name}`,
@@ -249,6 +310,8 @@ const STATIC_STYLE = `<style>
       #root>article dd{margin:0}
       #root>article a{color:#0A5C44}
       #root>article nav{margin-top:2.5rem;font-size:.9rem}
+      #root>article table{border-collapse:collapse;width:100%;margin:1rem 0;font-size:.95rem}
+      #root>article th,#root>article td{text-align:left;padding:.5rem .6rem;border-bottom:1px solid #dce7e1}
       #root>nav{max-width:44rem;margin:0 auto;padding:6rem 1.25rem 4rem;
         font:16px/1.65 Inter,system-ui,sans-serif;color:#14342a}
       #root>nav h2{font-size:1.15rem;margin:1.5rem 0 .5rem;color:#0A5C44}

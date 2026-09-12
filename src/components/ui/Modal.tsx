@@ -22,6 +22,7 @@ export function Modal({
   children,
   className,
   closeLabel = "Close",
+  placement = "center",
 }: {
   open: boolean;
   onClose: () => void;
@@ -29,6 +30,12 @@ export function Modal({
   children: ReactNode;
   className?: string;
   closeLabel?: string;
+  /**
+   * `center` is the detail dialog (bottom sheet on phones). `right` slides a
+   * full-height panel in from the edge — the cart drawer — with the same
+   * focus trap, Escape handling and body-scroll lock.
+   */
+  placement?: "center" | "right";
 }) {
   const panelRef = useRef<HTMLDivElement>(null);
   const previouslyFocused = useRef<HTMLElement | null>(null);
@@ -81,7 +88,14 @@ export function Modal({
   return createPortal(
     <AnimatePresence>
       {open && (
-        <div className="fixed inset-0 z-[100] flex items-end justify-center sm:items-center">
+        <div
+          className={cn(
+            "fixed inset-0 z-[100] flex",
+            placement === "right"
+              ? "items-stretch justify-end"
+              : "items-end justify-center sm:items-center",
+          )}
+        >
           <motion.div
             className="absolute inset-0 bg-deep/60 backdrop-blur-sm"
             initial={{ opacity: 0 }}
@@ -98,13 +112,15 @@ export function Modal({
             aria-labelledby={labelledBy}
             tabIndex={-1}
             className={cn(
-              "relative z-10 max-h-[92vh] w-full overflow-y-auto bg-white shadow-lift outline-none",
-              "rounded-t-2xl sm:max-w-lg sm:rounded-2xl",
+              "relative z-10 w-full overflow-y-auto bg-white shadow-lift outline-none",
+              placement === "right"
+                ? "h-full max-w-md sm:rounded-l-2xl"
+                : "max-h-[92vh] rounded-t-2xl sm:max-w-lg sm:rounded-2xl",
               className,
             )}
-            initial={{ opacity: 0, y: 40, scale: 0.98 }}
-            animate={{ opacity: 1, y: 0, scale: 1 }}
-            exit={{ opacity: 0, y: 20, scale: 0.98 }}
+            initial={placement === "right" ? { opacity: 0, x: 48 } : { opacity: 0, y: 40, scale: 0.98 }}
+            animate={placement === "right" ? { opacity: 1, x: 0 } : { opacity: 1, y: 0, scale: 1 }}
+            exit={placement === "right" ? { opacity: 0, x: 48 } : { opacity: 0, y: 20, scale: 0.98 }}
             transition={{ duration: 0.35, ease: EASE }}
           >
             <button

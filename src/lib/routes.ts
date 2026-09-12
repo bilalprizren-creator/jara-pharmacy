@@ -4,6 +4,7 @@
 // there. Type-only imports are erased at build time and can stay aliased.
 import { blogArticles } from "../data/blog";
 import { publicBranches } from "../data/locations";
+import { legalPages, type LegalPage } from "../data/legal";
 import type { BlogArticle, Locale, Location } from "@/types";
 
 /**
@@ -25,6 +26,25 @@ export const BRANCH_SEGMENT = "lokacionet";
 
 /** The hub page aimed straight at the "barnatore në Prizren" search. */
 export const BRANCHES_HUB_PATH = "/barnatore-ne-prizren";
+
+/**
+ * The shop. `/porosia` is the checkout, `/porosia/<id>` one order's status
+ * page. Neither is in `seoRoutes`: they are personal, never indexed
+ * (robots.txt + a runtime noindex), and the catch-all rewrite in vercel.json
+ * already serves the app for them.
+ */
+export const CHECKOUT_PATH = "/porosia";
+
+export function orderPath(id: string): string {
+  return `${CHECKOUT_PATH}/${id}`;
+}
+
+/** The info pages the bank's website audit looks for: terms, privacy, delivery. */
+export const LEGAL_SEGMENT = "info";
+
+export function legalPath(slug: string): string {
+  return `/${LEGAL_SEGMENT}/${slug}`;
+}
 
 export function articlePath(slug: string, locale: Locale = "al"): string {
   return `/${ARTICLE_SEGMENT[locale]}/${slug}`;
@@ -64,6 +84,24 @@ export function branchIdFrom(pathname: string): string | null {
   return publicBranches.some((b) => b.id === parts[1]) ? parts[1] : null;
 }
 
+/** Resolve `/porosia/<id>` to the order id (format only; the API decides if it exists). */
+export function orderIdFrom(pathname: string): string | null {
+  const parts = segmentsOf(pathname);
+  if (parts.length !== 2 || `/${parts[0]}` !== CHECKOUT_PATH) return null;
+  return /^[A-Za-z0-9_-]{6,40}$/.test(parts[1]) ? parts[1] : null;
+}
+
+export function isCheckoutPath(pathname: string): boolean {
+  return `/${segmentsOf(pathname).join("/")}` === CHECKOUT_PATH;
+}
+
+/** Resolve `/info/<slug>` to a legal page we actually have. */
+export function legalPageFrom(pathname: string): LegalPage | null {
+  const parts = segmentsOf(pathname);
+  if (parts.length !== 2 || parts[0] !== LEGAL_SEGMENT) return null;
+  return legalPages.find((p) => p.slug === parts[1]) ?? null;
+}
+
 /** True for the branches hub, tolerating a trailing slash. */
 export function isHubPath(pathname: string): boolean {
   return `/${segmentsOf(pathname).join("/")}` === BRANCHES_HUB_PATH;
@@ -71,7 +109,10 @@ export function isHubPath(pathname: string): boolean {
 
 export type AppRoute =
   | { kind: "hub" }
-  | { kind: "branch"; branch: Location };
+  | { kind: "branch"; branch: Location }
+  | { kind: "checkout" }
+  | { kind: "order"; id: string }
+  | { kind: "legal"; page: LegalPage };
 
 /**
  * What the app should open on for a path. The hub and the branch pages render
@@ -83,6 +124,11 @@ export type AppRoute =
  */
 export function resolveRoute(pathname: string): AppRoute | null {
   if (isHubPath(pathname)) return { kind: "hub" };
+  if (isCheckoutPath(pathname)) return { kind: "checkout" };
+  const orderId = orderIdFrom(pathname);
+  if (orderId) return { kind: "order", id: orderId };
+  const legal = legalPageFrom(pathname);
+  if (legal) return { kind: "legal", page: legal };
   const id = branchIdFrom(pathname);
   const branch = id ? publicBranches.find((b) => b.id === id) : undefined;
   return branch ? { kind: "branch", branch } : null;
@@ -92,7 +138,8 @@ export type SeoRoute =
   | { kind: "home"; path: "/" }
   | { kind: "hub"; path: string }
   | { kind: "article"; path: string; article: BlogArticle }
-  | { kind: "branch"; path: string; branch: Location };
+  | { kind: "branch"; path: string; branch: Location }
+  | { kind: "legal"; path: string; page: LegalPage };
 
 /**
  * The full set of addresses the build turns into real HTML files. Albanian
@@ -111,5 +158,10 @@ export const seoRoutes: SeoRoute[] = [
     kind: "branch" as const,
     path: branchPath(branch.id),
     branch,
+  })),
+  ...legalPages.map((page) => ({
+    kind: "legal" as const,
+    path: legalPath(page.slug),
+    page,
   })),
 ];

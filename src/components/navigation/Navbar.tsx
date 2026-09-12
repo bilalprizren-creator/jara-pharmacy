@@ -1,9 +1,10 @@
 import { useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { Menu, Phone, X } from "lucide-react";
+import { Menu, Phone, ShoppingBag, X } from "lucide-react";
 import { navLinks } from "@/data/nav";
 import { brand } from "@/data/brand";
 import { useI18n } from "@/context/I18nContext";
+import { useCart } from "@/context/CartContext";
 import { useScrolled } from "@/hooks/useScrolled";
 import { useScrollProgress } from "@/hooks/useScrollProgress";
 import { useActiveSection } from "@/hooks/useActiveSection";
@@ -22,6 +23,7 @@ const sectionIds = navLinks.map((l) => l.id);
 
 export function Navbar() {
   const { c, tr } = useI18n();
+  const { count, openDrawer } = useCart();
   const scrolled = useScrolled(24);
   const active = useActiveSection(sectionIds);
   const [menuOpen, setMenuOpen] = useState(false);
@@ -122,6 +124,34 @@ export function Navbar() {
             >
               {c.cta_call}
             </Button>
+
+            {/* Cart — the badge only appears once something is in it. */}
+            <button
+              type="button"
+              onClick={() => {
+                setMenuOpen(false);
+                openDrawer();
+              }}
+              aria-label={count > 0 ? `${c.cart_open} (${count})` : c.cart_open}
+              className={cn(
+                "relative inline-flex h-10 w-10 items-center justify-center rounded-full transition",
+                solid ? "text-forest hover:bg-forest/5" : "text-white hover:bg-white/10",
+              )}
+            >
+              <ShoppingBag className="h-5 w-5" aria-hidden="true" />
+              {count > 0 && (
+                <motion.span
+                  key={count}
+                  initial={{ scale: 0.6 }}
+                  animate={{ scale: 1 }}
+                  transition={{ duration: 0.25, ease: EASE }}
+                  className="absolute -right-0.5 -top-0.5 inline-flex h-5 min-w-5 items-center justify-center rounded-full bg-lime px-1 text-[11px] font-extrabold tabular-nums text-deep shadow-soft"
+                  aria-hidden="true"
+                >
+                  {count > 9 ? "9+" : count}
+                </motion.span>
+              )}
+            </button>
 
             {/* Mobile menu button */}
             <button

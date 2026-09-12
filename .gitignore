@@ -46,7 +46,6 @@ Thumbs.db
 !.env.example
 
 .vercel
-.env*
 
 # Materiali i punes per katalogun: fotografite e shkarkuara qe nuk jane
 # kontrolluar ende nga ekipi (shih scripts/catalog/)
@@ -58,3 +57,6 @@ Thumbs.db
 # Eksportet e paperpunuara te ERP-se (cmime, furnitore). Gjendja e perpunuar
 # ruhet si scripts/catalog/data/albtrix-products.json
 /9460 Produkte/
+
+# Porosite e dev-serverit (kur DATABASE_URL mungon), shih api/_lib/db.ts
+.orders-dev
