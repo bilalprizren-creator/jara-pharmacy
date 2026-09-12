@@ -30,7 +30,9 @@ export type InquirySource =
   | "navbar"
   | "footer"
   | "contact"
-  | "locations";
+  | "locations"
+  | "branch_page"
+  | "hub_page";
 
 /** Stand-in for a dimension that does not apply, e.g. a plain footer call. */
 const NONE = "—";

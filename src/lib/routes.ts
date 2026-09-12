@@ -64,6 +64,30 @@ export function branchIdFrom(pathname: string): string | null {
   return publicBranches.some((b) => b.id === parts[1]) ? parts[1] : null;
 }
 
+/** True for the branches hub, tolerating a trailing slash. */
+export function isHubPath(pathname: string): boolean {
+  return `/${segmentsOf(pathname).join("/")}` === BRANCHES_HUB_PATH;
+}
+
+export type AppRoute =
+  | { kind: "hub" }
+  | { kind: "branch"; branch: Location };
+
+/**
+ * What the app should open on for a path. The hub and the branch pages render
+ * their own content at the top of the page (see sections/RouteHero) — before
+ * they did, every one of these addresses showed the homepage, so a search
+ * engine that renders JavaScript saw nineteen copies of one page and indexed
+ * three of them. Articles are not here: ArticleProvider opens those in their
+ * dialog. Anything else is the homepage.
+ */
+export function resolveRoute(pathname: string): AppRoute | null {
+  if (isHubPath(pathname)) return { kind: "hub" };
+  const id = branchIdFrom(pathname);
+  const branch = id ? publicBranches.find((b) => b.id === id) : undefined;
+  return branch ? { kind: "branch", branch } : null;
+}
+
 export type SeoRoute =
   | { kind: "home"; path: "/" }
   | { kind: "hub"; path: string }

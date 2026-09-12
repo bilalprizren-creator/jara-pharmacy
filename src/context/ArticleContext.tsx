@@ -9,7 +9,7 @@ import {
 } from "react";
 import { blogArticles } from "@/data/blog";
 import { useI18n } from "@/context/I18nContext";
-import { articlePath, articleSlugFrom } from "@/lib/routes";
+import { articlePath, articleSlugFrom, resolveRoute } from "@/lib/routes";
 import type { BlogArticle } from "@/types";
 
 /**
@@ -36,6 +36,18 @@ interface ArticleValue {
 }
 
 const ArticleContext = createContext<ArticleValue | null>(null);
+
+/**
+ * Where closing an article returns to, read once before any article path is
+ * pushed. A visitor who opened a tip from a branch page (/lokacionet/<id>) or
+ * the hub is still on that page — the app renders it around the dialog — so
+ * the address has to say so again, not "/".
+ */
+function basePath(): string {
+  if (typeof window === "undefined") return "/";
+  const { pathname } = window.location;
+  return resolveRoute(pathname) ? pathname : "/";
+}
 
 /** Current article slug from the path, falling back to the legacy hash. */
 function slugFromUrl(): string | null {
@@ -68,6 +80,7 @@ function setMeta(selector: string, attr: "name" | "property", key: string, conte
 export function ArticleProvider({ children }: { children: ReactNode }) {
   const { locale, tr } = useI18n();
   const [slug, setSlug] = useState<string | null>(() => slugFromUrl());
+  const base = useMemo(() => basePath(), []);
 
   const article = useMemo(() => blogArticles.find((a) => a.slug === slug) ?? null, [slug]);
 
@@ -93,8 +106,8 @@ export function ArticleProvider({ children }: { children: ReactNode }) {
 
   const closeArticle = useCallback(() => {
     setSlug(null);
-    window.history.pushState(null, "", withQuery("/"));
-  }, []);
+    window.history.pushState(null, "", withQuery(base));
+  }, [base]);
 
   // Reflect the open article in the document head, and put every value back on
   // close. The og:* pair used to be set but never restored, so once an article

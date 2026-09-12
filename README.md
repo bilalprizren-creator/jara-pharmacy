@@ -93,7 +93,12 @@ contact flow via `InquiryContext`:
   icon-only buttons, comfortable touch targets, `prefers-reduced-motion` honored
   globally (CSS) and per-component.
 - SEO: Albanian-first title/description, Open Graph + Twitter tags, canonical
-  URL, and `Pharmacy` JSON-LD structured data in `index.html`.
+  URL, and `Pharmacy` JSON-LD structured data generated from `src/data` at
+  build time (`vite/seo/`). Every route in `src/lib/routes.ts` gets its own
+  static HTML file and its own content in the app too: `/barnatore-ne-prizren`
+  and `/lokacionet/<id>` open on `sections/RouteHero.tsx` (branch details,
+  nearby branches, FAQ from `src/data/seoPages.ts`) instead of the homepage
+  hero, so a crawler that renders JavaScript sees nineteen different pages.
 
 ## Delivery timeline
 

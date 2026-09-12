@@ -1,5 +1,6 @@
 import { brand } from "../../src/data/brand";
 import { publicBranches } from "../../src/data/locations";
+import { branchName } from "../../src/lib/branches";
 import { mapsHref } from "../../src/lib/links";
 import { articlePath, branchPath, BRANCHES_HUB_PATH } from "../../src/lib/routes";
 import type { BlogArticle, Location, OpeningHours } from "../../src/types";
@@ -17,6 +18,10 @@ import type { BlogArticle, Location, OpeningHours } from "../../src/types";
  */
 
 export const SITE = brand.websiteUrl;
+
+// The app shows the same names on its branch pages, so the helper lives in
+// src/lib and is only re-exported here for render.ts.
+export { branchName };
 
 const ORG_ID = `${SITE}/#organization`;
 const WEBSITE_ID = `${SITE}/#website`;
@@ -50,13 +55,6 @@ function openingHoursSpecification(hours: OpeningHours[]) {
     opens: slot.opens,
     closes: slot.closes,
   }));
-}
-
-/** "Jara Pharmacy 3 — Rr. William Walker" (the depot has no branch number). */
-export function branchName(branch: Location): string {
-  return branch.branch === undefined
-    ? `${brand.name} — ${branch.name}`
-    : `${brand.name} ${branch.branch} — ${branch.name}`;
 }
 
 function branchId(branch: Location): string {

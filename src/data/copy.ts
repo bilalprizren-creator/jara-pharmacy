@@ -136,6 +136,24 @@ const al = {
   locations_map_legend_pharmacy: "Farmaci",
   locations_map_legend_depo: "Depo (jo për klientë)",
 
+  // Branch pages (/lokacionet/<id>) and the hub (/barnatore-ne-prizren)
+  route_branch_eyebrow: "Barnatore në {city}",
+  route_hub_title: "Barnatore në Prizren — Jara Pharmacy",
+  route_whatsapp: "Pyet në WhatsApp",
+  route_call: "Telefono",
+  route_map_cta: "Shiko hartën e lokacioneve",
+  route_nearby_eyebrow: "Në afërsi",
+  route_nearby_title: "Barnatore të tjera Jara afër",
+  route_distance: "{km} km larg",
+  route_all_branches: "Të gjitha barnatoret në Prizren",
+  route_branches_eyebrow: "Lokacionet",
+  route_branches_title: "Të gjitha barnatoret Jara",
+  route_branches_subtitle:
+    "Zgjidhni barnatoren më të afërt — secila ka faqen e vet me adresë, orar dhe telefon.",
+  route_view_branch: "Shiko barnatoren",
+  route_faq_eyebrow: "Pyetje të shpeshta",
+  route_faq_title: "Pyetjet që na bëni më shpesh",
+
   // About
   about_eyebrow: "Rreth nesh",
   about_title: "Një barnatore moderne në Prizren, e ndërtuar mbi besim",
@@ -351,6 +369,23 @@ const en: CopyShape = {
   locations_map_loading: "Loading map…",
   locations_map_legend_pharmacy: "Pharmacy branch",
   locations_map_legend_depo: "Depot (not customer-facing)",
+
+  route_branch_eyebrow: "Pharmacy in {city}",
+  route_hub_title: "Pharmacies in Prizren — Jara Pharmacy",
+  route_whatsapp: "Ask on WhatsApp",
+  route_call: "Call",
+  route_map_cta: "See the map of locations",
+  route_nearby_eyebrow: "Nearby",
+  route_nearby_title: "Other Jara pharmacies nearby",
+  route_distance: "{km} km away",
+  route_all_branches: "All pharmacies in Prizren",
+  route_branches_eyebrow: "Locations",
+  route_branches_title: "All Jara pharmacies",
+  route_branches_subtitle:
+    "Pick the pharmacy nearest to you — each has its own page with address, hours and phone.",
+  route_view_branch: "View pharmacy",
+  route_faq_eyebrow: "FAQ",
+  route_faq_title: "The questions we hear most",
 
   about_eyebrow: "About us",
   about_title: "A modern pharmacy in Prizren, built on trust",

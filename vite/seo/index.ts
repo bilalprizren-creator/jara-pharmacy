@@ -12,7 +12,8 @@ import { homeGraph, jsonLdScript, SITE } from "./schema";
  *   1. fill the JSON-LD placeholder in index.html with a graph derived from
  *      src/data (organisation, site, and all eleven branches with coordinates
  *      and opening hours);
- *   2. write one static HTML file per entry in `seoRoutes`, plus the sitemap.
+ *   2. write one static HTML file per entry in `seoRoutes` (the homepage
+ *      included, so its raw HTML links to every other page), plus the sitemap.
  *
  * Deliberately no SSR and no headless browser: the app uses Leaflet,
  * localStorage and IntersectionObserver, all of which would need shimming, and
@@ -61,9 +62,10 @@ export function seoPlugin(): Plugin {
 
       const template = await readFile(join(outDir, "index.html"), "utf8");
 
-      const pages = seoRoutes.filter((route) => route.kind !== "home");
+      // The homepage is in the list too: its file is the template itself,
+      // rewritten with the crawlable link list inside #root.
       await Promise.all(
-        pages.map(async (route) => {
+        seoRoutes.map(async (route) => {
           const file = join(outDir, route.path.slice(1), "index.html");
           await mkdir(dirname(file), { recursive: true });
           await writeFile(file, renderPage(template, route), "utf8");
@@ -72,7 +74,7 @@ export function seoPlugin(): Plugin {
 
       await writeFile(join(outDir, "sitemap.xml"), sitemap(), "utf8");
 
-      this.info(`wrote ${pages.length} static pages + sitemap.xml`);
+      this.info(`wrote ${seoRoutes.length} static pages + sitemap.xml`);
     },
   };
 }

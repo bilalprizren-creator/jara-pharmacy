@@ -44,6 +44,13 @@ export function generalInquiryMessage(locale: Locale): string {
     : "Hello Jara Pharmacy, I would like to ask about a product.";
 }
 
+/** Opening line from a branch page — names the pharmacy the visitor was reading about. */
+export function branchInquiryMessage(locale: Locale, branchName: string): string {
+  return locale === "al"
+    ? `Përshëndetje ${branchName}, dua të pyes për një produkt.`
+    : `Hello ${branchName}, I would like to ask about a product.`;
+}
+
 export function productInquiryMessage(locale: Locale, productName: string): string {
   return locale === "al"
     ? `Përshëndetje Jara Pharmacy, dua të pyes për produktin: ${productName}.`

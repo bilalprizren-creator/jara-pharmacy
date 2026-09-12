@@ -1,9 +1,16 @@
+import { blogArticles } from "../../src/data/blog";
 import { brand } from "../../src/data/brand";
 import { copy } from "../../src/data/copy";
-import { publicBranches } from "../../src/data/locations";
+import { branchIntro, hubFaq, hubIntro } from "../../src/data/seoPages";
+import { branchesByNumber, nearestBranches } from "../../src/lib/branches";
 import { formatHours } from "../../src/lib/hours";
 import { mapsHref } from "../../src/lib/links";
-import { BRANCHES_HUB_PATH, branchPath, type SeoRoute } from "../../src/lib/routes";
+import {
+  articlePath,
+  BRANCHES_HUB_PATH,
+  branchPath,
+  type SeoRoute,
+} from "../../src/lib/routes";
 import type { Location, OpeningHours } from "../../src/types";
 import {
   articleGraph,
@@ -46,6 +53,22 @@ interface PageContent {
   jsonLd: string;
 }
 
+/** The three closest other branches, as the app lists them under the hero. */
+function nearbyList(branch: Location): string {
+  const items = nearestBranches(branch, 3)
+    .map(
+      ({ branch: other, km }) => `
+          <li><a href="${branchPath(other.id)}">${escapeHtml(branchName(other))}</a> — ${escapeHtml(other.address)} (${km.toFixed(1).replace(".", ",")} km)</li>`,
+    )
+    .join("");
+  return items
+    ? `
+        <h2>${escapeHtml(copy.al.route_nearby_title)}</h2>
+        <ul>${items}
+        </ul>`
+    : "";
+}
+
 function branchArticle(branch: Location): string {
   const hours = hoursText(branch.hours);
   const phone = branch.phone ?? brand.phonePrimary.label;
@@ -53,7 +76,7 @@ function branchArticle(branch: Location): string {
       <article>
         <p class="seo-eyebrow">Barnatore në ${escapeHtml(branch.city)}</p>
         <h1>${escapeHtml(branchName(branch))}</h1>
-        ${branch.note ? `<p>${escapeHtml(branch.note.al)}</p>` : ""}
+        <p>${branch.note ? `${escapeHtml(branch.note.al)}. ` : ""}${escapeHtml(branchIntro(branch, "al"))}</p>
         <dl>
           <dt>Adresa</dt>
           <dd>${escapeHtml(branch.address)}</dd>
@@ -61,7 +84,7 @@ function branchArticle(branch: Location): string {
           <dt>Telefoni</dt>
           <dd><a href="tel:${escapeHtml(phone.replace(/\s/g, ""))}">${escapeHtml(phone)}</a></dd>
         </dl>
-        <p><a href="${escapeHtml(mapsHref(branch.mapsQuery))}">Hap në Google Maps</a></p>
+        <p><a href="${escapeHtml(mapsHref(branch.mapsQuery))}">Hap në Google Maps</a></p>${nearbyList(branch)}
         <nav>
           <a href="${BRANCHES_HUB_PATH}">Të gjitha barnatoret në Prizren</a> ·
           <a href="/">Ballina</a>
@@ -70,7 +93,7 @@ function branchArticle(branch: Location): string {
 }
 
 function hubArticle(): string {
-  const items = publicBranches
+  const items = branchesByNumber
     .map((branch) => {
       const hours = hoursText(branch.hours);
       return `
@@ -83,19 +106,59 @@ function hubArticle(): string {
     })
     .join("");
 
+  const intro = hubIntro
+    .map(
+      (paragraph) => `
+        <p>${escapeHtml(paragraph.al)}</p>`,
+    )
+    .join("");
+
+  const faq = hubFaq
+    .map(
+      (item) => `
+          <dt>${escapeHtml(item.q.al)}</dt>
+          <dd>${escapeHtml(item.a.al)}</dd>`,
+    )
+    .join("");
+
   return `
       <article>
         <p class="seo-eyebrow">Lokacionet</p>
-        <h1>Barnatore në Prizren — Jara Pharmacy</h1>
-        <p>
-          Jara Pharmacy është rrjet barnatoresh moderne në Prizren dhe Rahovec.
-          Më poshtë i gjeni të gjitha barnatoret tona me adresë, orar dhe
-          udhëzime në Google Maps — zgjidhni atë që ju bie më afër.
-        </p>
+        <h1>${escapeHtml(copy.al.route_hub_title)}</h1>${intro}
+        <h2>${escapeHtml(copy.al.route_branches_title)}</h2>
         <ul>${items}
         </ul>
+        <h2>${escapeHtml(copy.al.route_faq_title)}</h2>
+        <dl>${faq}
+        </dl>
         <nav><a href="/">Ballina</a></nav>
       </article>`;
+}
+
+/**
+ * The homepage's crawlable table of contents. The app renders these links
+ * too, but only after JavaScript runs; in the raw response the homepage used
+ * to be an empty div, so nothing led from the one address a crawler starts at
+ * to the other eighteen. React clears this on mount like everything else.
+ */
+function homeNav(): string {
+  const link = (href: string, label: string) => `
+          <li><a href="${href}">${escapeHtml(label)}</a></li>`;
+  const branches = branchesByNumber
+    .map((branch) => link(branchPath(branch.id), branchName(branch)))
+    .join("");
+  const articles = blogArticles
+    .map((article) => link(articlePath(article.slug), article.title.al))
+    .join("");
+  return `
+      <nav aria-label="${escapeHtml(copy.al.footer_quicklinks)}">
+        <h2><a href="${BRANCHES_HUB_PATH}">${escapeHtml(copy.al.route_hub_title)}</a></h2>
+        <ul>${branches}
+        </ul>
+        <h2>${escapeHtml(copy.al.section_blog)}</h2>
+        <ul>${articles}
+        </ul>
+      </nav>`;
 }
 
 function articleArticle(route: Extract<SeoRoute, { kind: "article" }>): string {
@@ -153,7 +216,7 @@ function contentFor(route: SeoRoute): PageContent {
       return {
         title: "",
         description: "",
-        body: "",
+        body: homeNav(),
         jsonLd: jsonLdScript(homeGraph()),
       };
   }
@@ -164,8 +227,9 @@ function contentFor(route: SeoRoute): PageContent {
  * this markup the moment it mounts, so this only ever has to serve a crawler
  * or a visitor whose JavaScript did not run.
  *
- * Every selector is anchored on `#root>article` — the static copy's own
- * wrapper — and never on `#root` alone. React mounts *into* `#root`, and an id
+ * Every selector is anchored on `#root>article` (or `#root>nav` for the
+ * homepage's link list) — the static copy's own wrapper — and never on
+ * `#root` alone. React mounts *into* `#root`, and an id
  * selector outranks any Tailwind class, so a bare `#root a{color:…}` kept
  * repainting every link in the running app: on each generated page the footer
  * links turned forest-on-deep-green and unreadable, list spacing tripled, and
@@ -185,6 +249,12 @@ const STATIC_STYLE = `<style>
       #root>article dd{margin:0}
       #root>article a{color:#0A5C44}
       #root>article nav{margin-top:2.5rem;font-size:.9rem}
+      #root>nav{max-width:44rem;margin:0 auto;padding:6rem 1.25rem 4rem;
+        font:16px/1.65 Inter,system-ui,sans-serif;color:#14342a}
+      #root>nav h2{font-size:1.15rem;margin:1.5rem 0 .5rem;color:#0A5C44}
+      #root>nav ul{list-style:none;padding:0;margin:0}
+      #root>nav li{margin:0 0 .35rem}
+      #root>nav a{color:#0A5C44}
     </style>
     <noscript><style>#jara-splash{display:none!important}</style></noscript>`;
 
@@ -207,7 +277,9 @@ export function renderPage(template: string, route: SeoRoute): string {
     jsonLd,
   );
 
-  if (route.kind === "home") return html;
+  if (route.kind === "home") {
+    return swap(html, /<div id="root"><\/div>/, `${STATIC_STYLE}\n    <div id="root">${body}\n    </div>`);
+  }
 
   html = swap(html, /<title>[\s\S]*?<\/title>/, `<title>${escapeHtml(title)}</title>`);
   html = swap(
