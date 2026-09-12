@@ -32,9 +32,11 @@ There are **no unit tests**. Verification = `npm run lint` (types) + `npm run bu
 
 - Hosted on **Vercel**. Live site: **https://jara-pharmacy.com** — use this URL.
   Push to `main` → Vercel auto-deploys.
-- `jara-pharmacy.vercel.app` and `jara-pharmacy-biar1.vercel.app` are aliases of
-  the *same* production deployment, not separate sites — they serve byte-identical
-  files. Prefer the real domain everywhere (user's standing preference).
+- `jara-pharmacy.vercel.app` is the same production deployment, but it **308-redirects
+  to the real domain** (the host-conditioned `redirects` entry in `vercel.json`, added
+  13 Sept 2026 so Google never sees a second copy of the site). Keep that entry.
+  `jara-pharmacy-biar1.vercel.app` sits behind Vercel Authentication (`X-Robots-Tag:
+  noindex`) and is not reachable without a Vercel login. Use the real domain everywhere.
 - ⚠️ **Mind the hyphen.** `jarapharmacy.com` (without it) is **not ours** — it
   belongs to a third party and forwards to `shemofarm.com`. Never use that
   spelling anywhere: not in links, not in copy, not in crawler user-agents. Our
